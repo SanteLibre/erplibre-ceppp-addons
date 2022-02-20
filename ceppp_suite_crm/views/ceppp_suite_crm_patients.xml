@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_suite_crm_patients_view_form" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_form</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="nas_perso_" />
+                    </group>
+                    <group>
+                        <field name="assistance_audition" />
+                    </group>
+                    <group>
+                        <field name="assistance_vision" />
+                    </group>
+                    <group>
+                        <field name="centre_recrutement" />
+                    </group>
+                    <group>
+                        <field name="code_ident" />
+                    </group>
+                    <group>
+                        <field name="comm_recruteur" />
+                    </group>
+                    <group>
+                        <field name="comment_refere" />
+                    </group>
+                    <group>
+                        <field name="conflit_interet" />
+                    </group>
+                    <group>
+                        <field name="conflit_interet_detail" />
+                    </group>
+                    <group>
+                        <field name="consentement_dcpp_recrut" />
+                    </group>
+                    <group>
+                        <field name="consentement_miseajour" />
+                    </group>
+                    <group>
+                        <field name="consentement_recherche" />
+                    </group>
+                    <group>
+                        <field name="consentement_usage_donnees" />
+                    </group>
+                    <group>
+                        <field name="date_entrevue" />
+                    </group>
+                    <group>
+                        <field name="descr_exp" />
+                    </group>
+                    <group>
+                        <field name="doul_chron" />
+                    </group>
+                    <group>
+                        <field name="duree_experience" />
+                    </group>
+                    <group>
+                        <field name="education_perso_autre" />
+                    </group>
+                    <group>
+                        <field name="email_perso" />
+                    </group>
+                    <group>
+                        <field name="etabl_prem_ligne_pa_" />
+                    </group>
+                    <group>
+                        <field name="etabl_sante_pa_" />
+                    </group>
+                    <group>
+                        <field name="exp_sante" />
+                    </group>
+                    <group>
+                        <field name="exp_sante_detail" />
+                    </group>
+                    <group>
+                        <field name="experience_maladie_pa" />
+                    </group>
+                    <group>
+                        <field name="experience_maladie_pp" />
+                    </group>
+                    <group>
+                        <field name="experience_maladie_proche" />
+                    </group>
+                    <group>
+                        <field name="formation_date" />
+                    </group>
+                    <group>
+                        <field name="formation_oui" />
+                    </group>
+                    <group>
+                        <field name="formation_pp" />
+                    </group>
+                    <group>
+                        <field name="formation_qui" />
+                    </group>
+                    <group>
+                        <field name="membre_assoc_comite" />
+                    </group>
+                    <group>
+                        <field name="membre_assoc_comite_detail" />
+                    </group>
+                    <group>
+                        <field name="motivations_implication" />
+                    </group>
+                    <group>
+                        <field name="naissance_perso" />
+                    </group>
+                    <group>
+                        <field name="nas_perso" />
+                    </group>
+                    <group>
+                        <field name="niveau_aud" />
+                    </group>
+                    <group>
+                        <field name="niveau_autre" />
+                    </group>
+                    <group>
+                        <field name="niveau_fatigabilite" />
+                    </group>
+                    <group>
+                        <field name="niveau_mob" />
+                    </group>
+                    <group>
+                        <field name="niveau_vue" />
+                    </group>
+                    <group>
+                        <field name="nom" />
+                    </group>
+                    <group>
+                        <field name="org_ref_recrut" />
+                    </group>
+                    <group>
+                        <field name="patient_ajout" />
+                    </group>
+                    <group>
+                        <field name="personne_reference_recrut" />
+                    </group>
+                    <group>
+                        <field name="preferences_autre" />
+                    </group>
+                    <group>
+                        <field name="prenom" />
+                    </group>
+                    <group>
+                        <field name="prob_resp" />
+                    </group>
+                    <group>
+                        <field name="prob_somm" />
+                    </group>
+                    <group>
+                        <field name="recruteur" />
+                    </group>
+                    <group>
+                        <field name="tel_dom_perso" />
+                    </group>
+                    <group>
+                        <field name="tel_mobile_perso" />
+                    </group>
+                    <group>
+                        <field name="tel_travail_perso" />
+                    </group>
+                    <group>
+                        <field name="test_int_field" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_graph</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp suite crm patients">
+                <field name="nas_perso_" type="row" />
+                <field name="assistance_audition" type="row" />
+                <field name="assistance_vision" type="row" />
+                <field name="centre_recrutement" type="row" />
+                <field name="code_ident" type="row" />
+                <field name="comm_recruteur" type="row" />
+                <field name="comment_refere" type="row" />
+                <field name="conflit_interet" type="row" />
+                <field name="conflit_interet_detail" type="row" />
+                <field name="consentement_dcpp_recrut" type="row" />
+                <field name="consentement_miseajour" type="row" />
+                <field name="consentement_recherche" type="row" />
+                <field name="consentement_usage_donnees" type="row" />
+                <field name="date_entrevue" type="row" />
+                <field name="descr_exp" type="row" />
+                <field name="doul_chron" type="row" />
+                <field name="duree_experience" type="row" />
+                <field name="education_perso_autre" type="row" />
+                <field name="email_perso" type="row" />
+                <field name="etabl_prem_ligne_pa_" type="row" />
+                <field name="etabl_sante_pa_" type="row" />
+                <field name="exp_sante" type="row" />
+                <field name="exp_sante_detail" type="row" />
+                <field name="experience_maladie_pa" type="row" />
+                <field name="experience_maladie_pp" type="row" />
+                <field name="experience_maladie_proche" type="row" />
+                <field name="formation_date" type="row" />
+                <field name="formation_oui" type="row" />
+                <field name="formation_pp" type="row" />
+                <field name="formation_qui" type="row" />
+                <field name="membre_assoc_comite" type="row" />
+                <field name="membre_assoc_comite_detail" type="row" />
+                <field name="motivations_implication" type="row" />
+                <field name="naissance_perso" type="row" />
+                <field name="nas_perso" type="measure" />
+                <field name="niveau_aud" type="row" />
+                <field name="niveau_autre" type="row" />
+                <field name="niveau_fatigabilite" type="row" />
+                <field name="niveau_mob" type="row" />
+                <field name="niveau_vue" type="row" />
+                <field name="nom" type="row" />
+                <field name="org_ref_recrut" type="row" />
+                <field name="patient_ajout" type="row" />
+                <field name="personne_reference_recrut" type="row" />
+                <field name="preferences_autre" type="row" />
+                <field name="prenom" type="row" />
+                <field name="prob_resp" type="row" />
+                <field name="prob_somm" type="row" />
+                <field name="recruteur" type="row" />
+                <field name="tel_dom_perso" type="row" />
+                <field name="tel_mobile_perso" type="row" />
+                <field name="tel_travail_perso" type="row" />
+                <field name="test_int_field" type="measure" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_kanban</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="nas_perso_" />
+                <field name="assistance_audition" />
+                <field name="assistance_vision" />
+                <field name="centre_recrutement" />
+                <field name="code_ident" />
+                <field name="comm_recruteur" />
+                <field name="comment_refere" />
+                <field name="conflit_interet" />
+                <field name="conflit_interet_detail" />
+                <field name="consentement_dcpp_recrut" />
+                <field name="consentement_miseajour" />
+                <field name="consentement_recherche" />
+                <field name="consentement_usage_donnees" />
+                <field name="date_entrevue" />
+                <field name="descr_exp" />
+                <field name="doul_chron" />
+                <field name="duree_experience" />
+                <field name="education_perso_autre" />
+                <field name="email_perso" />
+                <field name="etabl_prem_ligne_pa_" />
+                <field name="etabl_sante_pa_" />
+                <field name="exp_sante" />
+                <field name="exp_sante_detail" />
+                <field name="experience_maladie_pa" />
+                <field name="experience_maladie_pp" />
+                <field name="experience_maladie_proche" />
+                <field name="formation_date" />
+                <field name="formation_oui" />
+                <field name="formation_pp" />
+                <field name="formation_qui" />
+                <field name="membre_assoc_comite" />
+                <field name="membre_assoc_comite_detail" />
+                <field name="motivations_implication" />
+                <field name="naissance_perso" />
+                <field name="nas_perso" />
+                <field name="niveau_aud" />
+                <field name="niveau_autre" />
+                <field name="niveau_fatigabilite" />
+                <field name="niveau_mob" />
+                <field name="niveau_vue" />
+                <field name="nom" />
+                <field name="org_ref_recrut" />
+                <field name="patient_ajout" />
+                <field name="personne_reference_recrut" />
+                <field name="preferences_autre" />
+                <field name="prenom" />
+                <field name="prob_resp" />
+                <field name="prob_somm" />
+                <field name="recruteur" />
+                <field name="tel_dom_perso" />
+                <field name="tel_mobile_perso" />
+                <field name="tel_travail_perso" />
+                <field name="test_int_field" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nas_perso_" />
+                                        </strong>
+                                    </li>
+                                    <li
+                                        class="text-success float-right mb4"
+                                        t-if="record.assistance_audition.raw_value"
+                                    >
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li
+                                        class="text-danger float-right mb4"
+                                        t-if="!record.assistance_audition.raw_value"
+                                    >
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.assistance_vision.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.assistance_vision.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="centre_recrutement" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="code_ident" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="comm_recruteur" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="comment_refere" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.conflit_interet.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.conflit_interet.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="conflit_interet_detail" />
+                                        </strong>
+                                    </li>
+                                    <li
+                                        class="text-success float-right mb4"
+                                        t-if="record.consentement_dcpp_recrut.raw_value"
+                                    >
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li
+                                        class="text-danger float-right mb4"
+                                        t-if="!record.consentement_dcpp_recrut.raw_value"
+                                    >
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li
+                                        class="text-success float-right mb4"
+                                        t-if="record.consentement_miseajour.raw_value"
+                                    >
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li
+                                        class="text-danger float-right mb4"
+                                        t-if="!record.consentement_miseajour.raw_value"
+                                    >
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li
+                                        class="text-success float-right mb4"
+                                        t-if="record.consentement_recherche.raw_value"
+                                    >
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li
+                                        class="text-danger float-right mb4"
+                                        t-if="!record.consentement_recherche.raw_value"
+                                    >
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li
+                                        class="text-success float-right mb4"
+                                        t-if="record.consentement_usage_donnees.raw_value"
+                                    >
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li
+                                        class="text-danger float-right mb4"
+                                        t-if="!record.consentement_usage_donnees.raw_value"
+                                    >
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="date_entrevue" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="descr_exp" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.doul_chron.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.doul_chron.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="duree_experience" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="education_perso_autre" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="email_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etabl_prem_ligne_pa_" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etabl_sante_pa_" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.exp_sante.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.exp_sante.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="exp_sante_detail" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="experience_maladie_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="experience_maladie_pp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="experience_maladie_proche" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_date" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_oui" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.formation_pp.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.formation_pp.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_qui" />
+                                        </strong>
+                                    </li>
+                                    <li
+                                        class="text-success float-right mb4"
+                                        t-if="record.membre_assoc_comite.raw_value"
+                                    >
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li
+                                        class="text-danger float-right mb4"
+                                        t-if="!record.membre_assoc_comite.raw_value"
+                                    >
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="membre_assoc_comite_detail" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="motivations_implication" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="naissance_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nas_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.niveau_aud.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.niveau_aud.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="niveau_autre" />
+                                        </strong>
+                                    </li>
+                                    <li
+                                        class="text-success float-right mb4"
+                                        t-if="record.niveau_fatigabilite.raw_value"
+                                    >
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li
+                                        class="text-danger float-right mb4"
+                                        t-if="!record.niveau_fatigabilite.raw_value"
+                                    >
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.niveau_mob.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.niveau_mob.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.niveau_vue.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.niveau_vue.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nom" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="org_ref_recrut" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="patient_ajout" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="personne_reference_recrut" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="preferences_autre" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prenom" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.prob_resp.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.prob_resp.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.prob_somm.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.prob_somm.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="recruteur" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="tel_dom_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="tel_mobile_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="tel_travail_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="test_int_field" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_pivot</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp suite crm patients">
+                <field name="nas_perso_" type="row" />
+                <field name="assistance_audition" type="row" />
+                <field name="assistance_vision" type="row" />
+                <field name="centre_recrutement" type="row" />
+                <field name="code_ident" type="row" />
+                <field name="comm_recruteur" type="row" />
+                <field name="comment_refere" type="row" />
+                <field name="conflit_interet" type="row" />
+                <field name="conflit_interet_detail" type="row" />
+                <field name="consentement_dcpp_recrut" type="row" />
+                <field name="consentement_miseajour" type="row" />
+                <field name="consentement_recherche" type="row" />
+                <field name="consentement_usage_donnees" type="row" />
+                <field name="date_entrevue" type="row" />
+                <field name="descr_exp" type="row" />
+                <field name="doul_chron" type="row" />
+                <field name="duree_experience" type="row" />
+                <field name="education_perso_autre" type="row" />
+                <field name="email_perso" type="row" />
+                <field name="etabl_prem_ligne_pa_" type="row" />
+                <field name="etabl_sante_pa_" type="row" />
+                <field name="exp_sante" type="row" />
+                <field name="exp_sante_detail" type="row" />
+                <field name="experience_maladie_pa" type="row" />
+                <field name="experience_maladie_pp" type="row" />
+                <field name="experience_maladie_proche" type="row" />
+                <field name="formation_date" type="row" />
+                <field name="formation_oui" type="row" />
+                <field name="formation_pp" type="row" />
+                <field name="formation_qui" type="row" />
+                <field name="membre_assoc_comite" type="row" />
+                <field name="membre_assoc_comite_detail" type="row" />
+                <field name="motivations_implication" type="row" />
+                <field name="naissance_perso" type="row" />
+                <field name="nas_perso" type="measure" />
+                <field name="niveau_aud" type="row" />
+                <field name="niveau_autre" type="row" />
+                <field name="niveau_fatigabilite" type="row" />
+                <field name="niveau_mob" type="row" />
+                <field name="niveau_vue" type="row" />
+                <field name="nom" type="row" />
+                <field name="org_ref_recrut" type="row" />
+                <field name="patient_ajout" type="row" />
+                <field name="personne_reference_recrut" type="row" />
+                <field name="preferences_autre" type="row" />
+                <field name="prenom" type="row" />
+                <field name="prob_resp" type="row" />
+                <field name="prob_somm" type="row" />
+                <field name="recruteur" type="row" />
+                <field name="tel_dom_perso" type="row" />
+                <field name="tel_mobile_perso" type="row" />
+                <field name="tel_travail_perso" type="row" />
+                <field name="test_int_field" type="measure" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_search" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_search</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp suite crm patients">
+                <filter domain="[('nas_perso_','!=',False)]" name="nas_perso_" string="Nas Perso " />
+                <filter
+                    domain="[('assistance_audition','=',True)]"
+                    name="assistance_audition"
+                    string="Assistance Audition"
+                />
+                <filter domain="[('assistance_vision','=',True)]" name="assistance_vision" string="Assistance Vision" />
+                <filter
+                    domain="[('centre_recrutement','!=',False)]"
+                    name="centre_recrutement"
+                    string="Centre Recrutement"
+                />
+                <filter domain="[('code_ident','!=',False)]" name="code_ident" string="Code Ident" />
+                <filter domain="[('comm_recruteur','!=',False)]" name="comm_recruteur" string="Comm Recruteur" />
+                <filter domain="[('comment_refere','!=',False)]" name="comment_refere" string="Comment Refere" />
+                <filter domain="[('conflit_interet','=',True)]" name="conflit_interet" string="Conflit Interet" />
+                <filter
+                    domain="[('conflit_interet_detail','!=',False)]"
+                    name="conflit_interet_detail"
+                    string="Conflit Interet Detail"
+                />
+                <filter
+                    domain="[('consentement_dcpp_recrut','=',True)]"
+                    name="consentement_dcpp_recrut"
+                    string="Consentement Dcpp Recrut"
+                />
+                <filter
+                    domain="[('consentement_miseajour','=',True)]"
+                    name="consentement_miseajour"
+                    string="Consentement Miseajour"
+                />
+                <filter
+                    domain="[('consentement_recherche','=',True)]"
+                    name="consentement_recherche"
+                    string="Consentement Recherche"
+                />
+                <filter
+                    domain="[('consentement_usage_donnees','=',True)]"
+                    name="consentement_usage_donnees"
+                    string="Consentement Usage Donnees"
+                />
+                <filter domain="[('date_entrevue','!=',False)]" name="date_entrevue" string="Date Entrevue" />
+                <filter domain="[('descr_exp','!=',False)]" name="descr_exp" string="Descr Exp" />
+                <filter domain="[('doul_chron','=',True)]" name="doul_chron" string="Doul Chron" />
+                <filter domain="[('duree_experience','!=',False)]" name="duree_experience" string="Duree Experience" />
+                <filter
+                    domain="[('education_perso_autre','!=',False)]"
+                    name="education_perso_autre"
+                    string="Education Perso Autre"
+                />
+                <filter domain="[('email_perso','!=',False)]" name="email_perso" string="Email Perso" />
+                <filter
+                    domain="[('etabl_prem_ligne_pa_','!=',False)]"
+                    name="etabl_prem_ligne_pa_"
+                    string="Etabl Prem Ligne Pa "
+                />
+                <filter domain="[('etabl_sante_pa_','!=',False)]" name="etabl_sante_pa_" string="Etabl Sante Pa " />
+                <filter domain="[('exp_sante','=',True)]" name="exp_sante" string="Exp Sante" />
+                <filter domain="[('exp_sante_detail','!=',False)]" name="exp_sante_detail" string="Exp Sante Detail" />
+                <filter
+                    domain="[('experience_maladie_pa','!=',False)]"
+                    name="experience_maladie_pa"
+                    string="Experience Maladie Pa"
+                />
+                <filter
+                    domain="[('experience_maladie_pp','!=',False)]"
+                    name="experience_maladie_pp"
+                    string="Experience Maladie Pp"
+                />
+                <filter
+                    domain="[('experience_maladie_proche','!=',False)]"
+                    name="experience_maladie_proche"
+                    string="Experience Maladie Proche"
+                />
+                <filter domain="[('formation_date','!=',False)]" name="formation_date" string="Formation Date" />
+                <filter domain="[('formation_oui','!=',False)]" name="formation_oui" string="Formation Oui" />
+                <filter domain="[('formation_pp','=',True)]" name="formation_pp" string="Formation Pp" />
+                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation Qui" />
+                <filter
+                    domain="[('membre_assoc_comite','=',True)]"
+                    name="membre_assoc_comite"
+                    string="Membre Assoc Comite"
+                />
+                <filter
+                    domain="[('membre_assoc_comite_detail','!=',False)]"
+                    name="membre_assoc_comite_detail"
+                    string="Membre Assoc Comite Detail"
+                />
+                <filter
+                    domain="[('motivations_implication','!=',False)]"
+                    name="motivations_implication"
+                    string="Motivations Implication"
+                />
+                <filter domain="[('naissance_perso','!=',False)]" name="naissance_perso" string="Naissance Perso" />
+                <filter domain="[('nas_perso','!=',False)]" name="nas_perso" string="Nas Perso" />
+                <filter domain="[('niveau_aud','=',True)]" name="niveau_aud" string="Niveau Aud" />
+                <filter domain="[('niveau_autre','!=',False)]" name="niveau_autre" string="Niveau Autre" />
+                <filter
+                    domain="[('niveau_fatigabilite','=',True)]"
+                    name="niveau_fatigabilite"
+                    string="Niveau Fatigabilite"
+                />
+                <filter domain="[('niveau_mob','=',True)]" name="niveau_mob" string="Niveau Mob" />
+                <filter domain="[('niveau_vue','=',True)]" name="niveau_vue" string="Niveau Vue" />
+                <filter domain="[('nom','!=',False)]" name="nom" string="Nom" />
+                <filter domain="[('org_ref_recrut','!=',False)]" name="org_ref_recrut" string="Org Ref Recrut" />
+                <filter domain="[('patient_ajout','!=',False)]" name="patient_ajout" string="Patient Ajout" />
+                <filter
+                    domain="[('personne_reference_recrut','!=',False)]"
+                    name="personne_reference_recrut"
+                    string="Personne Reference Recrut"
+                />
+                <filter
+                    domain="[('preferences_autre','!=',False)]"
+                    name="preferences_autre"
+                    string="Preferences Autre"
+                />
+                <filter domain="[('prenom','!=',False)]" name="prenom" string="Prenom" />
+                <filter domain="[('prob_resp','=',True)]" name="prob_resp" string="Prob Resp" />
+                <filter domain="[('prob_somm','=',True)]" name="prob_somm" string="Prob Somm" />
+                <filter domain="[('recruteur','!=',False)]" name="recruteur" string="Recruteur" />
+                <filter domain="[('tel_dom_perso','!=',False)]" name="tel_dom_perso" string="Tel Dom Perso" />
+                <filter domain="[('tel_mobile_perso','!=',False)]" name="tel_mobile_perso" string="Tel Mobile Perso" />
+                <filter
+                    domain="[('tel_travail_perso','!=',False)]"
+                    name="tel_travail_perso"
+                    string="Tel Travail Perso"
+                />
+                <filter domain="[('test_int_field','!=',False)]" name="test_int_field" string="Test Int Field" />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_tree</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nas_perso_" />
+                <field name="assistance_audition" />
+                <field name="assistance_vision" />
+                <field name="centre_recrutement" />
+                <field name="code_ident" />
+                <field name="comm_recruteur" />
+                <field name="comment_refere" />
+                <field name="conflit_interet" />
+                <field name="conflit_interet_detail" />
+                <field name="consentement_dcpp_recrut" />
+                <field name="consentement_miseajour" />
+                <field name="consentement_recherche" />
+                <field name="consentement_usage_donnees" />
+                <field name="date_entrevue" />
+                <field name="descr_exp" />
+                <field name="doul_chron" />
+                <field name="duree_experience" />
+                <field name="education_perso_autre" />
+                <field name="email_perso" />
+                <field name="etabl_prem_ligne_pa_" />
+                <field name="etabl_sante_pa_" />
+                <field name="exp_sante" />
+                <field name="exp_sante_detail" />
+                <field name="experience_maladie_pa" />
+                <field name="experience_maladie_pp" />
+                <field name="experience_maladie_proche" />
+                <field name="formation_date" />
+                <field name="formation_oui" />
+                <field name="formation_pp" />
+                <field name="formation_qui" />
+                <field name="membre_assoc_comite" />
+                <field name="membre_assoc_comite_detail" />
+                <field name="motivations_implication" />
+                <field name="naissance_perso" />
+                <field name="nas_perso" />
+                <field name="niveau_aud" />
+                <field name="niveau_autre" />
+                <field name="niveau_fatigabilite" />
+                <field name="niveau_mob" />
+                <field name="niveau_vue" />
+                <field name="nom" />
+                <field name="org_ref_recrut" />
+                <field name="patient_ajout" />
+                <field name="personne_reference_recrut" />
+                <field name="preferences_autre" />
+                <field name="prenom" />
+                <field name="prob_resp" />
+                <field name="prob_somm" />
+                <field name="recruteur" />
+                <field name="tel_dom_perso" />
+                <field name="tel_mobile_perso" />
+                <field name="tel_travail_perso" />
+                <field name="test_int_field" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_suite_crm_patients_suite_crm_patients_action_window"
+        name="Suite crm patients"
+        res_model="ceppp.suite_crm.patients"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

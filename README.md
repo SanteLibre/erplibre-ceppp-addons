@@ -2,6 +2,30 @@
 
 Centre d'Excellence sur le partenariat avec les patients et le public Canada, addons de ERPLibre
 
+## Exécution
+
+### Le suite_crm migrator
+
+Itération 1, faire la migration
+
+À la racine de ERPLibre, exécuter :
+
+```bash
+./script/db_restore.py --database code_generator
+./run.sh --stop-after-init --dev all -d code_generator -i code_generator_migrator_ceppp_suite_crm -u code_generator_migrator_ceppp_suite_crm
+```
+
+Et le module `ceppp_suite_crm` sera généré.
+
+### Installer ceppp_suite_crm pour test
+
+Pour tester le module, à la racine de ERPLibre, exécuter :
+
+```bash
+./script/db_restore.py --database test
+./run.sh --stop-after-init -d test -i ceppp_suite_crm -u ceppp_suite_crm
+```
+
 ## Dépendance
 
 Le module `code_generator_migrator_ceppp_suite_crm` a besoin du repo :
@@ -15,5 +39,7 @@ Le module `code_generator_migrator_ceppp_suite_crm` a besoin du repo :
 
 From ERPLibre project:
 
-- ./script/maintenance/black.sh ./addons/SanteLibre_erplibre-ceppp-addons/ --extend-exclude "/(php_parser/*|ceppp_crm)/"
-- .venv/bin/isort ./addons/SanteLibre_erplibre-ceppp-addons --skip php_parser --skip ceppp_crm
+```bash
+./script/maintenance/black.sh ./addons/SanteLibre_erplibre-ceppp-addons/ --extend-exclude "/(php_parser/*|ceppp_crm)/"
+.venv/bin/isort ./addons/SanteLibre_erplibre-ceppp-addons --skip php_parser --skip ceppp_crm
+```

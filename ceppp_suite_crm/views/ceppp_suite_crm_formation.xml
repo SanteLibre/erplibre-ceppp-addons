@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_suite_crm_formation_view_form" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_formation_form</field>
+        <field name="model">ceppp.suite_crm.formation</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="formation_par_qui" />
+                    </group>
+                    <group>
+                        <field name="date_formation" />
+                    </group>
+                    <group>
+                        <field name="exp_sante" />
+                    </group>
+                    <group>
+                        <field name="exp_sante_details" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_formation_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_formation_graph</field>
+        <field name="model">ceppp.suite_crm.formation</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp suite crm formation">
+                <field name="formation_par_qui" type="row" />
+                <field name="date_formation" type="row" />
+                <field name="exp_sante" type="row" />
+                <field name="exp_sante_details" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_formation_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_formation_kanban</field>
+        <field name="model">ceppp.suite_crm.formation</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="formation_par_qui" />
+                <field name="date_formation" />
+                <field name="exp_sante" />
+                <field name="exp_sante_details" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_par_qui" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="date_formation" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.exp_sante.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.exp_sante.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="exp_sante_details" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_formation_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_formation_pivot</field>
+        <field name="model">ceppp.suite_crm.formation</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp suite crm formation">
+                <field name="formation_par_qui" type="row" />
+                <field name="date_formation" type="row" />
+                <field name="exp_sante" type="row" />
+                <field name="exp_sante_details" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_formation_view_search" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_formation_search</field>
+        <field name="model">ceppp.suite_crm.formation</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp suite crm formation">
+                <filter
+                    domain="[('formation_par_qui','!=',False)]"
+                    name="formation_par_qui"
+                    string="Formation Par Qui"
+                />
+                <filter domain="[('date_formation','!=',False)]" name="date_formation" string="Date Formation" />
+                <filter domain="[('exp_sante','=',True)]" name="exp_sante" string="Exp Sante" />
+                <filter
+                    domain="[('exp_sante_details','!=',False)]"
+                    name="exp_sante_details"
+                    string="Exp Sante Details"
+                />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_formation_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_formation_tree</field>
+        <field name="model">ceppp.suite_crm.formation</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="formation_par_qui" />
+                <field name="date_formation" />
+                <field name="exp_sante" />
+                <field name="exp_sante_details" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_suite_crm_formation_suite_crm_formation_action_window"
+        name="Suite crm formation"
+        res_model="ceppp.suite_crm.formation"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

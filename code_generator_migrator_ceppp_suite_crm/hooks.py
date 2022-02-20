@@ -6,6 +6,23 @@ from odoo import SUPERUSER_ID, _, api, fields, models
 
 _logger = logging.getLogger(__name__)
 
+MODULE_NAME = "ceppp_suite_crm"
+MAPPING_FIELD_SUITE_CRM = {
+    "date": "date",
+    "varchar": "char",
+    "text": "text",
+    "name": "char",
+    "radioenum": None,  # check options
+    "SmartDropdown": None,  # Special case
+    "enum": None,  # Special case
+    "int": "integer",
+    "phone": "char",
+}
+
+MAPPING_FIELD_OPTIONS_SUITE_CRM = {
+    "yes_no_list": "boolean",
+}
+
 
 class PHPParser:
     def __init__(self):
@@ -71,7 +88,7 @@ class PHPParser:
                     "vardefs.php",
                 )
             ),
-            "experience_patient_partenaire": os.path.normpath(
+            "exp_patient_partenaire": os.path.normpath(
                 os.path.join(
                     os.path.dirname(__file__),
                     "ceppp_crm",
@@ -165,9 +182,12 @@ class PHPParser:
         self.node_finder = NodeFinder
 
     def _extract_ast(self):
+        # Parser in alpha order
         self._dct_parser = {
             key: self.get_node_from_file(value)
-            for key, value in self._dct_php_model_crm.items()
+            for key, value in sorted(
+                self._dct_php_model_crm.items(), key=lambda x: x[0]
+            )
         }
 
     def get_dct_parse(self):
@@ -243,9 +263,9 @@ class PHPParser:
 def post_init_hook(cr, e):
     php_parser = PHPParser()
     dct_parse = php_parser.get_dct_parse()
+    debug = False
 
-    with api.Environment.manage():
-        env = api.Environment(cr, SUPERUSER_ID, {})
+    if debug:
         for key, value in dct_parse.items():
             print(f"Modèle : {key}")
             i = -1
@@ -267,7 +287,6 @@ def post_init_hook(cr, e):
                     )
                 if dct_field.get("help"):
                     str_print += f"\n\t\t\thelp '{dct_field.get('help')}', "
-                # str_print += f"size '{dct_field.get('size')}', "
                 if dct_field.get("qdetail"):
                     str_print += (
                         f"\n\t\t\tqdetail '{dct_field.get('qdetail')}', "
@@ -282,4 +301,145 @@ def post_init_hook(cr, e):
                     )
                 print(str_print)
 
-    raise Exception("Not finish")
+    with api.Environment.manage():
+        env = api.Environment(cr, SUPERUSER_ID, {})
+
+        # The path of the actual file
+        path_module_generate = os.path.normpath(
+            os.path.join(os.path.dirname(__file__), "..")
+        )
+
+        short_name = MODULE_NAME.replace("_", " ").title()
+
+        # Add code generator
+        categ_id = env["ir.module.category"].search(
+            [("name", "=", "Uncategorized")], limit=1
+        )
+        value = {
+            "shortdesc": short_name,
+            "name": MODULE_NAME,
+            "license": "AGPL-3",
+            "category_id": categ_id.id,
+            "summary": "",
+            "author": "SantéLibre",
+            "website": "https://santelibre.ca",
+            "application": True,
+            "enable_sync_code": True,
+            "path_sync_code": path_module_generate,
+            "icon": os.path.join(
+                os.path.dirname(__file__),
+                "static",
+                "description",
+                "icon.png",
+            ),
+        }
+
+        code_generator_id = env["code.generator.module"].create(value)
+
+        # Add dependencies
+        # code_generator_id.add_module_dependency("mail")
+
+        prefix_model = "ceppp.suite_crm."
+        # lst_depend_model = ["mail.thread", "mail.activity.mixin"]
+        lst_depend_model = []
+        for php_model, dct_php_value in dct_parse.items():
+            field_rec_name = None
+            model_model = f"{prefix_model}{php_model}"
+            dct_field = {}
+            dct_php_fields = dct_php_value.get("fields")
+            if not dct_php_fields:
+                _logger.warning(
+                    f"Model {model_model} has no field... check value"
+                    f" {dct_php_value}"
+                )
+            else:
+                for field_name, dct_php_field_value in dct_php_fields.items():
+                    suite_crm_type = dct_php_field_value.get("type")
+                    new_type = MAPPING_FIELD_SUITE_CRM.get(suite_crm_type)
+                    if new_type is None:
+                        if suite_crm_type in ("SmartDropdown", "enum"):
+                            # TODO support later
+                            _logger.error(
+                                f"Not support suite_crm type {suite_crm_type},"
+                                f" ignore field {field_name} from model"
+                                f" {model_model}"
+                            )
+                            continue
+                        # Check option
+                        suite_crm_option = dct_php_field_value.get("options")
+                        if suite_crm_option:
+                            new_type_from_option = (
+                                MAPPING_FIELD_OPTIONS_SUITE_CRM.get(
+                                    suite_crm_option
+                                )
+                            )
+                            if new_type_from_option:
+                                new_type = new_type_from_option
+                            else:
+                                _logger.error(
+                                    "Not support suite_crm type"
+                                    f" {suite_crm_type} options"
+                                    f" {suite_crm_option}, ignore field"
+                                    f" {field_name} from model {model_model}"
+                                )
+                                continue
+                        else:
+                            _logger.error(
+                                f"Not support suite_crm type {suite_crm_type},"
+                                f" ignore field {field_name} from model"
+                                f" {model_model}"
+                            )
+                            continue
+
+                    # Support rec_name
+                    if new_type in ("char", "text") and field_rec_name is None:
+                        # Take first to be rec_name
+                        field_rec_name = field_name
+                    if suite_crm_type == "name":
+                        # Force to use this name, a special type in suite_crm
+                        field_rec_name = field_name
+
+                    # Special type
+                    if suite_crm_type == "phone":
+                        # TODO force widget "phone"
+                        pass
+
+                    dct_field_info = {
+                        "ttype": new_type,
+                    }
+                    help_value = dct_php_field_value.get("help")
+                    if help_value:
+                        dct_field_info["help"] = help_value
+                    required = dct_php_field_value.get("required")
+                    if required:
+                        dct_field_info["required"] = required
+                    dct_field[field_name] = dct_field_info
+
+            dct_model = {}
+            if field_rec_name:
+                dct_model["rec_name"] = field_rec_name
+            else:
+                dct_field["name"] = {"ttype": "char"}
+                dct_model["rec_name"] = "name"
+
+            model_id = code_generator_id.add_update_model(
+                model_model,
+                dct_field=dct_field,
+                dct_model=dct_model,
+                lst_depend_model=lst_depend_model,
+            )
+
+        # Generate view
+        # Action generate view
+        wizard_view = env["code.generator.generate.views.wizard"].create(
+            {
+                "code_generator_id": code_generator_id.id,
+                "enable_generate_all": True,
+            }
+        )
+
+        wizard_view.button_generate_views()
+
+        # Generate module
+        value = {"code_generator_ids": code_generator_id.ids}
+        env["code.generator.writer"].create(value)

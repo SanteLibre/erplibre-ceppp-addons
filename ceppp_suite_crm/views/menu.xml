@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!--Root menu-->
+
+    <menuitem
+        id="ceppp_suite_crm"
+        name="Ceppp Suite Crm"
+        sequence="20"
+        web_icon="ceppp_suite_crm,static/description/icon.png"
+    />
+
+    <!--Sub menu-->
+
+    <menuitem id="menu" name="Menu" sequence="1" parent="ceppp_suite_crm" />
+
+    <!--Child menu-->
+
+    <menuitem
+        id="suite_crm_commentaires_recruteur"
+        name="Suite crm commentaires recruteur"
+        action="ceppp_suite_crm_commentaires_recruteur_suite_crm_commentaires_recruteur_action_window"
+        sequence="1"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_entrevues"
+        name="Suite crm entrevues"
+        action="ceppp_suite_crm_entrevues_suite_crm_entrevues_action_window"
+        sequence="2"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_exp_patient_partenaire"
+        name="Suite crm exp patient partenaire"
+        action="ceppp_suite_crm_exp_patient_partenaire_suite_crm_exp_patient_partenaire_action_window"
+        sequence="3"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_formation"
+        name="Suite crm formation"
+        action="ceppp_suite_crm_formation_suite_crm_formation_action_window"
+        sequence="4"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_partenariats"
+        name="Suite crm partenariats"
+        action="ceppp_suite_crm_partenariats_suite_crm_partenariats_action_window"
+        sequence="5"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_patients"
+        name="Suite crm patients"
+        action="ceppp_suite_crm_patients_suite_crm_patients_action_window"
+        sequence="6"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_perspective_patient"
+        name="Suite crm perspective patient"
+        action="ceppp_suite_crm_perspective_patient_suite_crm_perspective_patient_action_window"
+        sequence="7"
+        parent="menu"
+    />
+</odoo>

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_suite_crm_perspective_patient_view_form" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_perspective_patient_form</field>
+        <field name="model">ceppp.suite_crm.perspective_patient</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="adresse_perso_city" />
+                    </group>
+                    <group>
+                        <field name="adresse_perso" />
+                    </group>
+                    <group>
+                        <field name="adresse_perso_country" />
+                    </group>
+                    <group>
+                        <field name="adresse_perso_postalcode" />
+                    </group>
+                    <group>
+                        <field name="adresse_perso_state" />
+                    </group>
+                    <group>
+                        <field name="conflit_interet" />
+                    </group>
+                    <group>
+                        <field name="conflit_interet_detail" />
+                    </group>
+                    <group>
+                        <field name="descr_exp" />
+                    </group>
+                    <group>
+                        <field name="duree_experience" />
+                    </group>
+                    <group>
+                        <field name="etabl_prem_ligne_pa" />
+                    </group>
+                    <group>
+                        <field name="etabl_sante_pa" />
+                    </group>
+                    <group>
+                        <field name="exp_sante" />
+                    </group>
+                    <group>
+                        <field name="exp_sante_detail" />
+                    </group>
+                    <group>
+                        <field name="experience_maladie" />
+                    </group>
+                    <group>
+                        <field name="experience_maladie_pa" />
+                    </group>
+                    <group>
+                        <field name="experience_maladie_proche" />
+                    </group>
+                    <group>
+                        <field name="formation_date" />
+                    </group>
+                    <group>
+                        <field name="formation_oui" />
+                    </group>
+                    <group>
+                        <field name="formation_pp" />
+                    </group>
+                    <group>
+                        <field name="formation_qui" />
+                    </group>
+                    <group>
+                        <field name="maladie_rare_details" />
+                    </group>
+                    <group>
+                        <field name="med_1" />
+                    </group>
+                    <group>
+                        <field name="membre_assoc_comite" />
+                    </group>
+                    <group>
+                        <field name="membre_assoc_comite_detail" />
+                    </group>
+                    <group>
+                        <field name="motivations_implication" />
+                    </group>
+                    <group>
+                        <field name="perspective" />
+                    </group>
+                    <group>
+                        <field name="preferences_autre" />
+                    </group>
+                    <group>
+                        <field name="preneur_decisions" />
+                    </group>
+                    <group>
+                        <field name="professionnels_sante" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_perspective_patient_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_perspective_patient_graph</field>
+        <field name="model">ceppp.suite_crm.perspective_patient</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp suite crm perspective patient">
+                <field name="adresse_perso_city" type="row" />
+                <field name="adresse_perso" type="row" />
+                <field name="adresse_perso_country" type="row" />
+                <field name="adresse_perso_postalcode" type="row" />
+                <field name="adresse_perso_state" type="row" />
+                <field name="conflit_interet" type="row" />
+                <field name="conflit_interet_detail" type="row" />
+                <field name="descr_exp" type="row" />
+                <field name="duree_experience" type="row" />
+                <field name="etabl_prem_ligne_pa" type="row" />
+                <field name="etabl_sante_pa" type="row" />
+                <field name="exp_sante" type="row" />
+                <field name="exp_sante_detail" type="row" />
+                <field name="experience_maladie" type="row" />
+                <field name="experience_maladie_pa" type="row" />
+                <field name="experience_maladie_proche" type="row" />
+                <field name="formation_date" type="row" />
+                <field name="formation_oui" type="row" />
+                <field name="formation_pp" type="row" />
+                <field name="formation_qui" type="row" />
+                <field name="maladie_rare_details" type="row" />
+                <field name="med_1" type="row" />
+                <field name="membre_assoc_comite" type="row" />
+                <field name="membre_assoc_comite_detail" type="row" />
+                <field name="motivations_implication" type="row" />
+                <field name="perspective" type="row" />
+                <field name="preferences_autre" type="row" />
+                <field name="preneur_decisions" type="row" />
+                <field name="professionnels_sante" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_perspective_patient_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_perspective_patient_kanban</field>
+        <field name="model">ceppp.suite_crm.perspective_patient</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="adresse_perso_city" />
+                <field name="adresse_perso" />
+                <field name="adresse_perso_country" />
+                <field name="adresse_perso_postalcode" />
+                <field name="adresse_perso_state" />
+                <field name="conflit_interet" />
+                <field name="conflit_interet_detail" />
+                <field name="descr_exp" />
+                <field name="duree_experience" />
+                <field name="etabl_prem_ligne_pa" />
+                <field name="etabl_sante_pa" />
+                <field name="exp_sante" />
+                <field name="exp_sante_detail" />
+                <field name="experience_maladie" />
+                <field name="experience_maladie_pa" />
+                <field name="experience_maladie_proche" />
+                <field name="formation_date" />
+                <field name="formation_oui" />
+                <field name="formation_pp" />
+                <field name="formation_qui" />
+                <field name="maladie_rare_details" />
+                <field name="med_1" />
+                <field name="membre_assoc_comite" />
+                <field name="membre_assoc_comite_detail" />
+                <field name="motivations_implication" />
+                <field name="perspective" />
+                <field name="preferences_autre" />
+                <field name="preneur_decisions" />
+                <field name="professionnels_sante" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="adresse_perso_city" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="adresse_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="adresse_perso_country" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="adresse_perso_postalcode" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="adresse_perso_state" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.conflit_interet.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.conflit_interet.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="conflit_interet_detail" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="descr_exp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="duree_experience" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etabl_prem_ligne_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etabl_sante_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.exp_sante.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.exp_sante.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="exp_sante_detail" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="experience_maladie" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="experience_maladie_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="experience_maladie_proche" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_date" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_oui" />
+                                        </strong>
+                                    </li>
+                                    <li class="text-success float-right mb4" t-if="record.formation_pp.raw_value">
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li class="text-danger float-right mb4" t-if="!record.formation_pp.raw_value">
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_qui" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="maladie_rare_details" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="med_1" />
+                                        </strong>
+                                    </li>
+                                    <li
+                                        class="text-success float-right mb4"
+                                        t-if="record.membre_assoc_comite.raw_value"
+                                    >
+                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
+                                    </li>
+                                    <li
+                                        class="text-danger float-right mb4"
+                                        t-if="!record.membre_assoc_comite.raw_value"
+                                    >
+                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="membre_assoc_comite_detail" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="motivations_implication" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="perspective" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="preferences_autre" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="preneur_decisions" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="professionnels_sante" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_perspective_patient_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_perspective_patient_pivot</field>
+        <field name="model">ceppp.suite_crm.perspective_patient</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp suite crm perspective patient">
+                <field name="adresse_perso_city" type="row" />
+                <field name="adresse_perso" type="row" />
+                <field name="adresse_perso_country" type="row" />
+                <field name="adresse_perso_postalcode" type="row" />
+                <field name="adresse_perso_state" type="row" />
+                <field name="conflit_interet" type="row" />
+                <field name="conflit_interet_detail" type="row" />
+                <field name="descr_exp" type="row" />
+                <field name="duree_experience" type="row" />
+                <field name="etabl_prem_ligne_pa" type="row" />
+                <field name="etabl_sante_pa" type="row" />
+                <field name="exp_sante" type="row" />
+                <field name="exp_sante_detail" type="row" />
+                <field name="experience_maladie" type="row" />
+                <field name="experience_maladie_pa" type="row" />
+                <field name="experience_maladie_proche" type="row" />
+                <field name="formation_date" type="row" />
+                <field name="formation_oui" type="row" />
+                <field name="formation_pp" type="row" />
+                <field name="formation_qui" type="row" />
+                <field name="maladie_rare_details" type="row" />
+                <field name="med_1" type="row" />
+                <field name="membre_assoc_comite" type="row" />
+                <field name="membre_assoc_comite_detail" type="row" />
+                <field name="motivations_implication" type="row" />
+                <field name="perspective" type="row" />
+                <field name="preferences_autre" type="row" />
+                <field name="preneur_decisions" type="row" />
+                <field name="professionnels_sante" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_perspective_patient_view_search" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_perspective_patient_search</field>
+        <field name="model">ceppp.suite_crm.perspective_patient</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp suite crm perspective patient">
+                <filter
+                    domain="[('adresse_perso_city','!=',False)]"
+                    name="adresse_perso_city"
+                    string="Adresse Perso City"
+                />
+                <filter domain="[('adresse_perso','!=',False)]" name="adresse_perso" string="Adresse Perso" />
+                <filter
+                    domain="[('adresse_perso_country','!=',False)]"
+                    name="adresse_perso_country"
+                    string="Adresse Perso Country"
+                />
+                <filter
+                    domain="[('adresse_perso_postalcode','!=',False)]"
+                    name="adresse_perso_postalcode"
+                    string="Adresse Perso Postalcode"
+                />
+                <filter
+                    domain="[('adresse_perso_state','!=',False)]"
+                    name="adresse_perso_state"
+                    string="Adresse Perso State"
+                />
+                <filter domain="[('conflit_interet','=',True)]" name="conflit_interet" string="Conflit Interet" />
+                <filter
+                    domain="[('conflit_interet_detail','!=',False)]"
+                    name="conflit_interet_detail"
+                    string="Conflit Interet Detail"
+                />
+                <filter domain="[('descr_exp','!=',False)]" name="descr_exp" string="Descr Exp" />
+                <filter domain="[('duree_experience','!=',False)]" name="duree_experience" string="Duree Experience" />
+                <filter
+                    domain="[('etabl_prem_ligne_pa','!=',False)]"
+                    name="etabl_prem_ligne_pa"
+                    string="Etabl Prem Ligne Pa"
+                />
+                <filter domain="[('etabl_sante_pa','!=',False)]" name="etabl_sante_pa" string="Etabl Sante Pa" />
+                <filter domain="[('exp_sante','=',True)]" name="exp_sante" string="Exp Sante" />
+                <filter domain="[('exp_sante_detail','!=',False)]" name="exp_sante_detail" string="Exp Sante Detail" />
+                <filter
+                    domain="[('experience_maladie','!=',False)]"
+                    name="experience_maladie"
+                    string="Experience Maladie"
+                />
+                <filter
+                    domain="[('experience_maladie_pa','!=',False)]"
+                    name="experience_maladie_pa"
+                    string="Experience Maladie Pa"
+                />
+                <filter
+                    domain="[('experience_maladie_proche','!=',False)]"
+                    name="experience_maladie_proche"
+                    string="Experience Maladie Proche"
+                />
+                <filter domain="[('formation_date','!=',False)]" name="formation_date" string="Formation Date" />
+                <filter domain="[('formation_oui','!=',False)]" name="formation_oui" string="Formation Oui" />
+                <filter domain="[('formation_pp','=',True)]" name="formation_pp" string="Formation Pp" />
+                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation Qui" />
+                <filter
+                    domain="[('maladie_rare_details','!=',False)]"
+                    name="maladie_rare_details"
+                    string="Maladie Rare Details"
+                />
+                <filter domain="[('med_1','!=',False)]" name="med_1" string="Med 1" />
+                <filter
+                    domain="[('membre_assoc_comite','=',True)]"
+                    name="membre_assoc_comite"
+                    string="Membre Assoc Comite"
+                />
+                <filter
+                    domain="[('membre_assoc_comite_detail','!=',False)]"
+                    name="membre_assoc_comite_detail"
+                    string="Membre Assoc Comite Detail"
+                />
+                <filter
+                    domain="[('motivations_implication','!=',False)]"
+                    name="motivations_implication"
+                    string="Motivations Implication"
+                />
+                <filter domain="[('perspective','!=',False)]" name="perspective" string="Perspective" />
+                <filter
+                    domain="[('preferences_autre','!=',False)]"
+                    name="preferences_autre"
+                    string="Preferences Autre"
+                />
+                <filter
+                    domain="[('preneur_decisions','!=',False)]"
+                    name="preneur_decisions"
+                    string="Preneur Decisions"
+                />
+                <filter
+                    domain="[('professionnels_sante','!=',False)]"
+                    name="professionnels_sante"
+                    string="Professionnels Sante"
+                />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_perspective_patient_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_perspective_patient_tree</field>
+        <field name="model">ceppp.suite_crm.perspective_patient</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="adresse_perso_city" />
+                <field name="adresse_perso" />
+                <field name="adresse_perso_country" />
+                <field name="adresse_perso_postalcode" />
+                <field name="adresse_perso_state" />
+                <field name="conflit_interet" />
+                <field name="conflit_interet_detail" />
+                <field name="descr_exp" />
+                <field name="duree_experience" />
+                <field name="etabl_prem_ligne_pa" />
+                <field name="etabl_sante_pa" />
+                <field name="exp_sante" />
+                <field name="exp_sante_detail" />
+                <field name="experience_maladie" />
+                <field name="experience_maladie_pa" />
+                <field name="experience_maladie_proche" />
+                <field name="formation_date" />
+                <field name="formation_oui" />
+                <field name="formation_pp" />
+                <field name="formation_qui" />
+                <field name="maladie_rare_details" />
+                <field name="med_1" />
+                <field name="membre_assoc_comite" />
+                <field name="membre_assoc_comite_detail" />
+                <field name="motivations_implication" />
+                <field name="perspective" />
+                <field name="preferences_autre" />
+                <field name="preneur_decisions" />
+                <field name="professionnels_sante" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_suite_crm_perspective_patient_suite_crm_perspective_patient_action_window"
+        name="Suite crm perspective patient"
+        res_model="ceppp.suite_crm.perspective_patient"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

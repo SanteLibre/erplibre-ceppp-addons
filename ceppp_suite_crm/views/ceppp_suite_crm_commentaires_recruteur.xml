@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_suite_crm_commentaires_recruteur_view_form" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_commentaires_recruteur_form</field>
+        <field name="model">ceppp.suite_crm.commentaires_recruteur</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="commentaires_recruteur" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_commentaires_recruteur_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_commentaires_recruteur_graph</field>
+        <field name="model">ceppp.suite_crm.commentaires_recruteur</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp suite crm commentaires recruteur">
+                <field name="commentaires_recruteur" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_commentaires_recruteur_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_commentaires_recruteur_kanban</field>
+        <field name="model">ceppp.suite_crm.commentaires_recruteur</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="commentaires_recruteur" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="commentaires_recruteur" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_commentaires_recruteur_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_commentaires_recruteur_pivot</field>
+        <field name="model">ceppp.suite_crm.commentaires_recruteur</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp suite crm commentaires recruteur">
+                <field name="commentaires_recruteur" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_commentaires_recruteur_view_search" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_commentaires_recruteur_search</field>
+        <field name="model">ceppp.suite_crm.commentaires_recruteur</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp suite crm commentaires recruteur">
+                <filter
+                    domain="[('commentaires_recruteur','!=',False)]"
+                    name="commentaires_recruteur"
+                    string="Commentaires Recruteur"
+                />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_commentaires_recruteur_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_commentaires_recruteur_tree</field>
+        <field name="model">ceppp.suite_crm.commentaires_recruteur</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="commentaires_recruteur" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_suite_crm_commentaires_recruteur_suite_crm_commentaires_recruteur_action_window"
+        name="Suite crm commentaires recruteur"
+        res_model="ceppp.suite_crm.commentaires_recruteur"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>
