@@ -3,6 +3,8 @@ import logging
 import os
 import sys
 
+import polib
+
 from odoo import SUPERUSER_ID, _, api, fields, models
 
 _logger = logging.getLogger(__name__)
@@ -582,6 +584,13 @@ def post_init_hook(cr, e):
 
         code_generator_id = env["code.generator.module"].create(value)
 
+        # Search po en_CA.po if exist, and fill it, write after code generator write code
+        po_en_ca = None
+        i18n_dir = os.path.join(path_module_generate, MODULE_NAME, "i18n")
+        po_en_ca_file_name = os.path.join(i18n_dir, "en_CA.po")
+        if os.path.exists(po_en_ca_file_name):
+            po_en_ca = polib.pofile(po_en_ca_file_name)
+
         # Add dependencies
         # code_generator_id.add_module_dependency("mail")
 
@@ -666,6 +675,7 @@ def post_init_hook(cr, e):
                     coded_name = dct_php_field_value.get("vname")
                     # Use coded_name to find associated label
                     string_fr = dct_php_value_fr_label.get(coded_name)
+                    string_en = dct_php_value_en_label.get(coded_name)
                     if not string_fr:
                         _logger.warning(
                             f"Cannot find string label for vname {coded_name},"
@@ -673,9 +683,29 @@ def post_init_hook(cr, e):
                         )
                     else:
                         # Transform '&amp;' to '&'
-                        dct_field_info["field_description"] = html.unescape(
-                            string_fr
-                        )
+                        string_fr = html.unescape(string_fr)
+                        dct_field_info["field_description"] = string_fr
+
+                        if not string_en:
+                            _logger.warning(
+                                "Cannot find english string label for vname"
+                                f" '{coded_name}', for field '{field_name}'"
+                                f" and model {model_model}"
+                            )
+                        elif po_en_ca:
+                            string_en = html.unescape(string_en)
+                            # Search msgid and update msgstr
+                            for po_entry in po_en_ca:
+                                if po_entry.msgid == string_fr:
+                                    po_entry.msgstr = string_en
+                                    break
+                            else:
+                                _logger.warning(
+                                    f"Cannot find translation '{string_fr}' in"
+                                    f" file '{po_en_ca_file_name}' for new msg"
+                                    f" '{string_en}' for field '{field_name}'"
+                                    f" and model '{model_model}'"
+                                )
 
                     dct_field[field_name] = dct_field_info
 
@@ -707,3 +737,13 @@ def post_init_hook(cr, e):
         # Generate module
         value = {"code_generator_ids": code_generator_id.ids}
         env["code.generator.writer"].create(value)
+
+        # Overwrite i18n en_CA.po
+        if po_en_ca:
+            # Create directory, because the cg write delete it
+            os.mkdir(i18n_dir)
+            # Create empty file to help polib
+            with open(po_en_ca_file_name, "w") as fp:
+                pass
+            po_en_ca.save(po_en_ca_file_name)
+            _logger.info(f"Write i18n en_CA on file '{po_en_ca_file_name}'.")

@@ -26,6 +26,15 @@ Pour tester le module, à la racine de ERPLibre, exécuter :
 ./run.sh --stop-after-init -d test -i ceppp_suite_crm -u ceppp_suite_crm
 ```
 
+### La traduction vers l'anglais
+
+Le fichier i18n a été généré manuellement pour accélérer le travail et mis dans le
+répertoire `ceppp_suite_crm/i18n/ceppp_suite_crm.pot` et une copie sur `ceppp_suite_crm/i18n/fr_CA.po`.
+
+Lorsqu'on exécute le `suite_crm migrator`, il crée la version en anglais sur le fichier `ceppp_suite_crm/i18n/en_CA.po`.
+Il faut ensuite aller activer l'anglais sur l'instance dans Configuration/Traductions/Langues pour choisir English (CA),
+code local en_CA.
+
 ## Dépendance
 
 Le module `code_generator_migrator_ceppp_suite_crm` a besoin du repo :
