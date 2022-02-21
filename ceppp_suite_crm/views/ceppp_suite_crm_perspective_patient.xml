@@ -40,6 +40,9 @@
                         <field name="etabl_sante_pa" />
                     </group>
                     <group>
+                        <field name="exp_decision" />
+                    </group>
+                    <group>
                         <field name="exp_sante" />
                     </group>
                     <group>
@@ -114,6 +117,7 @@
                 <field name="duree_experience" type="row" />
                 <field name="etabl_prem_ligne_pa" type="row" />
                 <field name="etabl_sante_pa" type="row" />
+                <field name="exp_decision" type="row" />
                 <field name="exp_sante" type="row" />
                 <field name="exp_sante_detail" type="row" />
                 <field name="experience_maladie" type="row" />
@@ -152,6 +156,7 @@
                 <field name="duree_experience" />
                 <field name="etabl_prem_ligne_pa" />
                 <field name="etabl_sante_pa" />
+                <field name="exp_decision" />
                 <field name="exp_sante" />
                 <field name="exp_sante_detail" />
                 <field name="experience_maladie" />
@@ -229,6 +234,11 @@
                                     <li class="mb4">
                                         <strong>
                                             <field name="etabl_sante_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="exp_decision" />
                                         </strong>
                                     </li>
                                     <li class="text-success float-right mb4" t-if="record.exp_sante.raw_value">
@@ -355,6 +365,7 @@
                 <field name="duree_experience" type="row" />
                 <field name="etabl_prem_ligne_pa" type="row" />
                 <field name="etabl_sante_pa" type="row" />
+                <field name="exp_decision" type="row" />
                 <field name="exp_sante" type="row" />
                 <field name="exp_sante_detail" type="row" />
                 <field name="experience_maladie" type="row" />
@@ -420,6 +431,11 @@
                     domain="[('etabl_sante_pa','!=',False)]"
                     name="etabl_sante_pa"
                     string="&#201;tablissement de sant&#233; principal"
+                />
+                <filter
+                    domain="[('exp_decision','!=',False)]"
+                    name="exp_decision"
+                    string="Exp&#233;rience prise de d&#233;cision relative &#224; ses soins m&#233;dicaux"
                 />
                 <filter
                     domain="[('exp_sante','=',True)]"
@@ -507,6 +523,7 @@
                 <field name="duree_experience" />
                 <field name="etabl_prem_ligne_pa" />
                 <field name="etabl_sante_pa" />
+                <field name="exp_decision" />
                 <field name="exp_sante" />
                 <field name="exp_sante_detail" />
                 <field name="experience_maladie" />

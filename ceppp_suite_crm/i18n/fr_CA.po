@@ -339,6 +339,12 @@ msgid "Expérience maladie proche"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__exp_decision
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_perspective_patient_view_search
+msgid "Expérience prise de décision relative à ses soins médicaux"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__exp_sante
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__exp_sante
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__exp_sante
@@ -377,6 +383,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__id
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__id
 msgid "ID"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: selection:ceppp.suite_crm.perspective_patient,exp_decision:0
+msgid "Je ne sais pas"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -520,9 +531,19 @@ msgid "Nom de famille"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: selection:ceppp.suite_crm.perspective_patient,exp_decision:0
+msgid "Non"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__nas_perso_
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_search
 msgid "Numéro d'assurance social"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: selection:ceppp.suite_crm.perspective_patient,exp_decision:0
+msgid "Oui"
 msgstr ""
 
 #. module: ceppp_suite_crm

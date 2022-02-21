@@ -28,6 +28,11 @@ class CepppSuiteCrmPerspectivePatient(models.Model):
 
     etabl_sante_pa = fields.Char(string="Établissement de santé principal")
 
+    exp_decision = fields.Selection(
+        selection=[("dunno", "Je ne sais pas"), ("yes", "Oui"), ("no", "Non")],
+        string="Expérience prise de décision relative à ses soins médicaux",
+    )
+
     exp_sante = fields.Boolean(
         string="Expérience professionnelle dans le milieu de la santé"
     )

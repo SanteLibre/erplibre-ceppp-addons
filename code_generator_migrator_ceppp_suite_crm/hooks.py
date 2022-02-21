@@ -496,6 +496,8 @@ def post_init_hook(cr, e):
     php_parser = PHPParser()
     dct_parse = php_parser.get_dct_parse()
     debug = True
+    # Key is origin, value is eng
+    dct_new_translate = {}
 
     if debug:
         for key, dct_value in dct_parse.items():
@@ -612,6 +614,7 @@ def post_init_hook(cr, e):
                 )
             else:
                 for field_name, dct_php_field_value in dct_php_fields.items():
+                    dct_field_info = {}
                     suite_crm_type = dct_php_field_value.get("type")
                     new_type = MAPPING_FIELD_SUITE_CRM.get(suite_crm_type)
                     if new_type is None:
@@ -633,6 +636,17 @@ def post_init_hook(cr, e):
                             )
                             if new_type_from_option:
                                 new_type = new_type_from_option
+                            elif suite_crm_option == "yes_no_dunno_list":
+                                new_type = "selection"
+                                dct_field_info["selection"] = (
+                                    "[('dunno', 'Je ne sais pas'),"
+                                    " ('yes', 'Oui'), ('no', 'Non')]"
+                                )
+                                dct_new_translate[
+                                    "Je ne sais pas"
+                                ] = "I don't know"
+                                dct_new_translate["Oui"] = "Yes"
+                                dct_new_translate["Non"] = "No"
                             else:
                                 _logger.error(
                                     "Not support suite_crm type"
@@ -662,9 +676,8 @@ def post_init_hook(cr, e):
                         # TODO force widget "phone"
                         pass
 
-                    dct_field_info = {
-                        "ttype": new_type,
-                    }
+                    dct_field_info["ttype"] = new_type
+
                     help_value = dct_php_field_value.get("help")
                     if help_value:
                         dct_field_info["help"] = help_value
@@ -740,6 +753,20 @@ def post_init_hook(cr, e):
 
         # Overwrite i18n en_CA.po
         if po_en_ca:
+            # Update list of translation
+            dct_new_translate_copy = dct_new_translate.copy()
+            for po_entry in po_en_ca:
+                translation_en = dct_new_translate.get(po_entry.msgid)
+                if translation_en:
+                    po_entry.msgstr = translation_en
+                    del dct_new_translate[po_entry.msgid]
+            if dct_new_translate:
+                for key_fr, key_en in dct_new_translate.items():
+                    _logger.warning(
+                        f"Cannot find translation '{key_fr}' in"
+                        f" file '{po_en_ca_file_name}' for new msg"
+                        f" '{key_en}'."
+                    )
             # Create directory, because the cg write delete it
             os.mkdir(i18n_dir)
             # Create empty file to help polib
