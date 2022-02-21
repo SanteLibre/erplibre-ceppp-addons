@@ -6,4 +6,4 @@ class CepppSuiteCrmCommentairesRecruteur(models.Model):
     _description = "ceppp_suite_crm_commentaires_recruteur"
     _rec_name = "commentaires_recruteur"
 
-    commentaires_recruteur = fields.Text()
+    commentaires_recruteur = fields.Text(string="Commentaires additionnels")

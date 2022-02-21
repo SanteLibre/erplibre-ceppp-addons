@@ -98,18 +98,14 @@
         <field name="model">ceppp.suite_crm.formation</field>
         <field name="arch" type="xml">
             <search string="Ceppp suite crm formation">
+                <filter domain="[('formation_par_qui','!=',False)]" name="formation_par_qui" string="Par qui" />
+                <filter domain="[('date_formation','!=',False)]" name="date_formation" string="Date de formation" />
                 <filter
-                    domain="[('formation_par_qui','!=',False)]"
-                    name="formation_par_qui"
-                    string="Formation Par Qui"
+                    domain="[('exp_sante','=',True)]"
+                    name="exp_sante"
+                    string="Exp&#233;rience professionnelle dans le milieu de la sant&#233;"
                 />
-                <filter domain="[('date_formation','!=',False)]" name="date_formation" string="Date Formation" />
-                <filter domain="[('exp_sante','=',True)]" name="exp_sante" string="Exp Sante" />
-                <filter
-                    domain="[('exp_sante_details','!=',False)]"
-                    name="exp_sante_details"
-                    string="Exp Sante Details"
-                />
+                <filter domain="[('exp_sante_details','!=',False)]" name="exp_sante_details" string="D&#233;tails" />
             </search>
         </field>
     </record>

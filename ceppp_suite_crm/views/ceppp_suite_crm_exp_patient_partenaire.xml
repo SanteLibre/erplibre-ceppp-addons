@@ -142,21 +142,25 @@
         <field name="model">ceppp.suite_crm.exp_patient_partenaire</field>
         <field name="arch" type="xml">
             <search string="Ceppp suite crm exp patient partenaire">
-                <filter domain="[('name','!=',False)]" name="name" string="Name" />
-                <filter domain="[('comite','!=',False)]" name="comite" string="Comite" />
-                <filter domain="[('date_formation','!=',False)]" name="date_formation" string="Date Formation" />
+                <filter domain="[('name','!=',False)]" name="name" string="Nom" />
+                <filter domain="[('comite','!=',False)]" name="comite" string="Comit&#233; / Groupe" />
+                <filter domain="[('date_formation','!=',False)]" name="date_formation" string="Date de formation" />
                 <filter
                     domain="[('description_experience','!=',False)]"
                     name="description_experience"
-                    string="Description Experience"
+                    string="Description de l'exp&#233;rience"
                 />
-                <filter domain="[('duree','!=',False)]" name="duree" string="Duree" />
-                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation Qui" />
-                <filter domain="[('formation_suivie','=',True)]" name="formation_suivie" string="Formation Suivie" />
+                <filter domain="[('duree','!=',False)]" name="duree" string="Dur&#233;e" />
+                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation par qui" />
+                <filter
+                    domain="[('formation_suivie','=',True)]"
+                    name="formation_suivie"
+                    string="Formation suivie sur le partenariat patient"
+                />
                 <filter
                     domain="[('nom_formation_suivie','!=',False)]"
                     name="nom_formation_suivie"
-                    string="Nom Formation Suivie"
+                    string="nom formation suivie"
                 />
             </search>
         </field>

@@ -1,3 +1,4 @@
+import html
 import logging
 import os
 import sys
@@ -60,115 +61,341 @@ class PHPParser:
 
         # List of php file to extract
         self._dct_php_model_crm = {
-            "entrevues": os.path.normpath(
-                os.path.join(
-                    os.path.dirname(__file__),
-                    "ceppp_crm",
-                    "custom",
-                    "modulebuilder",
-                    "builds",
-                    "Entrevues",
-                    "SugarModules",
-                    "modules",
-                    "ent_Entrevues",
-                    "vardefs.php",
-                )
-            ),
-            "commentaires_recruteur": os.path.normpath(
-                os.path.join(
-                    os.path.dirname(__file__),
-                    "ceppp_crm",
-                    "custom",
-                    "modulebuilder",
-                    "builds",
-                    "Patients",
-                    "SugarModules",
-                    "modules",
-                    "pat_CommentairesRecruteur",
-                    "vardefs.php",
-                )
-            ),
-            "exp_patient_partenaire": os.path.normpath(
-                os.path.join(
-                    os.path.dirname(__file__),
-                    "ceppp_crm",
-                    "custom",
-                    "modulebuilder",
-                    "builds",
-                    "Patients",
-                    "SugarModules",
-                    "modules",
-                    "pat_ExperiencePatientPartenaire",
-                    "vardefs.php",
-                )
-            ),
-            "formation": os.path.normpath(
-                os.path.join(
-                    os.path.dirname(__file__),
-                    "ceppp_crm",
-                    "custom",
-                    "modulebuilder",
-                    "builds",
-                    "Patients",
-                    "SugarModules",
-                    "modules",
-                    "pat_Formation",
-                    "vardefs.php",
-                )
-            ),
-            "partenariats": os.path.normpath(
-                os.path.join(
-                    os.path.dirname(__file__),
-                    "ceppp_crm",
-                    "custom",
-                    "modulebuilder",
-                    "builds",
-                    "Patients",
-                    "SugarModules",
-                    "modules",
-                    "pat_Partenariats",
-                    "vardefs.php",
-                )
-            ),
-            "patients": os.path.normpath(
-                os.path.join(
-                    os.path.dirname(__file__),
-                    "ceppp_crm",
-                    "custom",
-                    "modulebuilder",
-                    "builds",
-                    "Patients",
-                    "SugarModules",
-                    "modules",
-                    "pat_Patients",
-                    "vardefs.php",
-                )
-            ),
-            "perspective_patient": os.path.normpath(
-                os.path.join(
-                    os.path.dirname(__file__),
-                    "ceppp_crm",
-                    "custom",
-                    "modulebuilder",
-                    "builds",
-                    "Patients",
-                    "SugarModules",
-                    "modules",
-                    "pat_PerspectivePatient",
-                    "vardefs.php",
-                )
-            ),
+            "entrevues": {
+                "var": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Entrevues",
+                        "SugarModules",
+                        "modules",
+                        "ent_Entrevues",
+                        "vardefs.php",
+                    )
+                ),
+                "var_fr": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Entrevues",
+                        "SugarModules",
+                        "modules",
+                        "ent_Entrevues",
+                        "language",
+                        "fr_FR.lang.php",
+                    )
+                ),
+                "var_en": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Entrevues",
+                        "SugarModules",
+                        "modules",
+                        "ent_Entrevues",
+                        "language",
+                        "en_us.lang.php",
+                    )
+                ),
+            },
+            "commentaires_recruteur": {
+                "var": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_CommentairesRecruteur",
+                        "vardefs.php",
+                    )
+                ),
+                "var_fr": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_CommentairesRecruteur",
+                        "language",
+                        "fr_FR.lang.php",
+                    )
+                ),
+                "var_en": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_CommentairesRecruteur",
+                        "language",
+                        "en_us.lang.php",
+                    )
+                ),
+            },
+            "exp_patient_partenaire": {
+                "var": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_ExperiencePatientPartenaire",
+                        "vardefs.php",
+                    )
+                ),
+                "var_fr": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_ExperiencePatientPartenaire",
+                        "language",
+                        "fr_FR.lang.php",
+                    )
+                ),
+                "var_en": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_ExperiencePatientPartenaire",
+                        "language",
+                        "en_us.lang.php",
+                    )
+                ),
+            },
+            "formation": {
+                "var": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_Formation",
+                        "vardefs.php",
+                    )
+                ),
+                "var_fr": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_Formation",
+                        "language",
+                        "fr_FR.lang.php",
+                    )
+                ),
+                "var_en": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_Formation",
+                        "language",
+                        "en_us.lang.php",
+                    )
+                ),
+            },
+            "partenariats": {
+                "var": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_Partenariats",
+                        "vardefs.php",
+                    )
+                ),
+                "var_fr": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_Partenariats",
+                        "language",
+                        "fr_FR.lang.php",
+                    )
+                ),
+                "var_en": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_Partenariats",
+                        "language",
+                        "en_us.lang.php",
+                    )
+                ),
+            },
+            "patients": {
+                "var": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_Patients",
+                        "vardefs.php",
+                    )
+                ),
+                "var_fr": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_Patients",
+                        "language",
+                        "fr_FR.lang.php",
+                    )
+                ),
+                "var_en": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_Patients",
+                        "language",
+                        "en_us.lang.php",
+                    )
+                ),
+            },
+            "perspective_patient": {
+                "var": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_PerspectivePatient",
+                        "vardefs.php",
+                    )
+                ),
+                "var_fr": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_PerspectivePatient",
+                        "language",
+                        "fr_FR.lang.php",
+                    )
+                ),
+                "var_en": os.path.normpath(
+                    os.path.join(
+                        os.path.dirname(__file__),
+                        "ceppp_crm",
+                        "custom",
+                        "modulebuilder",
+                        "builds",
+                        "Patients",
+                        "SugarModules",
+                        "modules",
+                        "pat_PerspectivePatient",
+                        "language",
+                        "en_us.lang.php",
+                    )
+                ),
+            },
         }
 
         # Validate file exist before extract AST
-        for model_name, file_path in self._dct_php_model_crm.items():
-            if not os.path.exists(file_path):
-                raise Exception(
-                    f"Missing file '{file_path}' for model '{model_name}'. Do"
-                    " you have the repo"
-                    " 'https://github.com/lerenardprudent/ceppp_crm.git' in"
-                    f" path '{ceppp_crm_path}', read file '{readme_path}'"
-                )
+        for model_name, dct_file_path in self._dct_php_model_crm.items():
+            for file_type, file_path in dct_file_path.items():
+                if not os.path.exists(file_path):
+                    raise Exception(
+                        f"Missing file '{file_path}' for model '{model_name}'"
+                        f" and filetype '{file_type}'. Do you have the repo"
+                        " 'https://github.com/lerenardprudent/ceppp_crm.git'"
+                        f" in path '{ceppp_crm_path}', read file"
+                        f" '{readme_path}'"
+                    )
 
         # TODO change this way to import when refactor the library (who is coded in java style...)
         from src.compiler.php import phpast
@@ -182,13 +409,16 @@ class PHPParser:
         self.node_finder = NodeFinder
 
     def _extract_ast(self):
+        dct_ordered_php_model = sorted(
+            self._dct_php_model_crm.items(), key=lambda x: x[0]
+        )
         # Parser in alpha order
-        self._dct_parser = {
-            key: self.get_node_from_file(value)
-            for key, value in sorted(
-                self._dct_php_model_crm.items(), key=lambda x: x[0]
-            )
-        }
+        self._dct_parser = {}
+        for key, dct_php_value in dct_ordered_php_model:
+            dct_value = {}
+            for file_type, file_path in dct_php_value.items():
+                dct_value[file_type] = self.get_node_from_file(file_path)
+            self._dct_parser[key] = dct_value
 
     def get_dct_parse(self):
         return self._dct_parser
@@ -263,43 +493,59 @@ class PHPParser:
 def post_init_hook(cr, e):
     php_parser = PHPParser()
     dct_parse = php_parser.get_dct_parse()
-    debug = False
+    debug = True
 
     if debug:
-        for key, value in dct_parse.items():
+        for key, dct_value in dct_parse.items():
             print(f"Modèle : {key}")
-            i = -1
-            for field_name, dct_field in value.get("fields").items():
-                i += 1
-                str_print = f"\t {i} - field name '{dct_field.get('name')}', "
-                str_print += f"type '{dct_field.get('type')}', "
-                if dct_field.get("required") == "True":
-                    str_print += (
-                        f"\n\t\t\trequired '{dct_field.get('required')}', "
-                    )
-                if dct_field.get("default"):
-                    str_print += (
-                        f"\n\t\t\tdefault '{dct_field.get('default')}', "
-                    )
-                if dct_field.get("comments"):
-                    str_print += (
-                        f"\n\t\t\tcomments '{dct_field.get('comments')}', "
-                    )
-                if dct_field.get("help"):
-                    str_print += f"\n\t\t\thelp '{dct_field.get('help')}', "
-                if dct_field.get("qdetail"):
-                    str_print += (
-                        f"\n\t\t\tqdetail '{dct_field.get('qdetail')}', "
-                    )
-                if dct_field.get("qdetail_en"):
-                    str_print += (
-                        f"\n\t\t\tqdetail_en '{dct_field.get('qdetail_en')}', "
-                    )
-                if dct_field.get("options"):
-                    str_print += (
-                        f"\n\t\t\toptions '{dct_field.get('options')}', "
-                    )
-                print(str_print)
+            for file_type, value in dct_value.items():
+                i = -1
+                if file_type == "var":
+                    for field_name, dct_field in value.get("fields").items():
+                        i += 1
+                        str_print = (
+                            f"\t {i} - field name '{dct_field.get('name')}', "
+                        )
+                        str_print += f"type '{dct_field.get('type')}', "
+                        if dct_field.get("required") == "True":
+                            str_print += (
+                                "\n\t\t\trequired"
+                                f" '{dct_field.get('required')}', "
+                            )
+                        if dct_field.get("default"):
+                            str_print += (
+                                "\n\t\t\tdefault"
+                                f" '{dct_field.get('default')}', "
+                            )
+                        if dct_field.get("comments"):
+                            str_print += (
+                                "\n\t\t\tcomments"
+                                f" '{dct_field.get('comments')}', "
+                            )
+                        if dct_field.get("help"):
+                            str_print += (
+                                f"\n\t\t\thelp '{dct_field.get('help')}', "
+                            )
+                        if dct_field.get("qdetail"):
+                            str_print += (
+                                "\n\t\t\tqdetail"
+                                f" '{dct_field.get('qdetail')}', "
+                            )
+                        if dct_field.get("qdetail_en"):
+                            str_print += (
+                                "\n\t\t\tqdetail_en"
+                                f" '{dct_field.get('qdetail_en')}', "
+                            )
+                        if dct_field.get("options"):
+                            str_print += (
+                                "\n\t\t\toptions"
+                                f" '{dct_field.get('options')}', "
+                            )
+                        print(str_print)
+                else:
+                    print(f"Traduction {file_type}")
+                    for sub_key, sub_value in value.items():
+                        print(f"\t{sub_key} : '{sub_value}'")
 
     with api.Environment.manage():
         env = api.Environment(cr, SUPERUSER_ID, {})
@@ -342,7 +588,10 @@ def post_init_hook(cr, e):
         prefix_model = "ceppp.suite_crm."
         # lst_depend_model = ["mail.thread", "mail.activity.mixin"]
         lst_depend_model = []
-        for php_model, dct_php_value in dct_parse.items():
+        for php_model, dct_php_value_dct_type in dct_parse.items():
+            dct_php_value = dct_php_value_dct_type.get("var")
+            dct_php_value_en_label = dct_php_value_dct_type.get("var_en")
+            dct_php_value_fr_label = dct_php_value_dct_type.get("var_fr")
             field_rec_name = None
             model_model = f"{prefix_model}{php_model}"
             dct_field = {}
@@ -395,7 +644,7 @@ def post_init_hook(cr, e):
                     if new_type in ("char", "text") and field_rec_name is None:
                         # Take first to be rec_name
                         field_rec_name = field_name
-                    if suite_crm_type == "name":
+                    if suite_crm_type == "name" or field_name == "nom":
                         # Force to use this name, a special type in suite_crm
                         field_rec_name = field_name
 
@@ -413,6 +662,21 @@ def post_init_hook(cr, e):
                     required = dct_php_field_value.get("required")
                     if required:
                         dct_field_info["required"] = required
+
+                    coded_name = dct_php_field_value.get("vname")
+                    # Use coded_name to find associated label
+                    string_fr = dct_php_value_fr_label.get(coded_name)
+                    if not string_fr:
+                        _logger.warning(
+                            f"Cannot find string label for vname {coded_name},"
+                            f" for field {field_name} and model {model_model}"
+                        )
+                    else:
+                        # Transform '&amp;' to '&'
+                        dct_field_info["field_description"] = html.unescape(
+                            string_fr
+                        )
+
                     dct_field[field_name] = dct_field_info
 
             dct_model = {}

@@ -6,62 +6,69 @@ class CepppSuiteCrmPerspectivePatient(models.Model):
     _description = "ceppp_suite_crm_perspective_patient"
     _rec_name = "adresse_perso_city"
 
-    adresse_perso_city = fields.Char()
+    adresse_perso_city = fields.Char(string="Ville")
 
-    adresse_perso = fields.Char()
+    adresse_perso = fields.Char(string="Adresse")
 
-    adresse_perso_country = fields.Char()
+    adresse_perso_country = fields.Char(string="Pays")
 
-    adresse_perso_postalcode = fields.Char()
+    adresse_perso_postalcode = fields.Char(string="Code postal")
 
-    adresse_perso_state = fields.Char()
+    adresse_perso_state = fields.Char(string="Province")
 
-    conflit_interet = fields.Boolean()
+    conflit_interet = fields.Boolean(string="Conflits d'intérêt")
 
-    conflit_interet_detail = fields.Text()
+    conflit_interet_detail = fields.Text(string="Lesquels")
 
-    descr_exp = fields.Text()
+    descr_exp = fields.Text(string="Description de l'expérience")
 
-    duree_experience = fields.Char()
+    duree_experience = fields.Char(string="Durée d'expérience (Années / Mois)")
 
-    etabl_prem_ligne_pa = fields.Char()
+    etabl_prem_ligne_pa = fields.Char(string="Établissement de première ligne")
 
-    etabl_sante_pa = fields.Char()
+    etabl_sante_pa = fields.Char(string="Établissement de santé principal")
 
-    exp_sante = fields.Boolean()
-
-    exp_sante_detail = fields.Text()
-
-    experience_maladie = fields.Text()
-
-    experience_maladie_pa = fields.Text()
-
-    experience_maladie_proche = fields.Text(
-        help="What is your family member's experience with illness?"
+    exp_sante = fields.Boolean(
+        string="Expérience professionnelle dans le milieu de la santé"
     )
 
-    formation_date = fields.Date()
+    exp_sante_detail = fields.Text(string="Précisions")
 
-    formation_oui = fields.Char()
+    experience_maladie = fields.Text(string="Expérience maladie")
 
-    formation_pp = fields.Boolean()
+    experience_maladie_pa = fields.Text(string="Expérience comme pair aidant")
 
-    formation_qui = fields.Char()
+    experience_maladie_proche = fields.Text(
+        string="Expérience maladie proche",
+        help="What is your family member's experience with illness?",
+    )
 
-    maladie_rare_details = fields.Text()
+    formation_date = fields.Date(string="Date de formation")
 
-    med_1 = fields.Text()
+    formation_oui = fields.Char(string="Si oui, laquelle")
 
-    membre_assoc_comite = fields.Boolean()
+    formation_pp = fields.Boolean(
+        string="Formation suivie sur le partenariat patient"
+    )
 
-    membre_assoc_comite_detail = fields.Text()
+    formation_qui = fields.Char(string="Formation par qui")
 
-    motivations_implication = fields.Text()
+    maladie_rare_details = fields.Text(string="Maladie rare")
+
+    med_1 = fields.Text(string="Médicaments")
+
+    membre_assoc_comite = fields.Boolean(
+        string="Membre d'une association ou comité"
+    )
+
+    membre_assoc_comite_detail = fields.Text(string="Laquelle")
+
+    motivations_implication = fields.Text(string="Motivations à s'impliquer")
 
     perspective = fields.Char()
 
-    preferences_autre = fields.Text()
+    preferences_autre = fields.Text(string="Autres préférences")
 
-    preneur_decisions = fields.Text()
+    preneur_decisions = fields.Text(string="Preneur de décisions")
 
-    professionnels_sante = fields.Char()
+    professionnels_sante = fields.Char(string="Professionnels de la santé")

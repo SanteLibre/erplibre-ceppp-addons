@@ -6,8 +6,17 @@ class CepppSuiteCrmEntrevues(models.Model):
     _description = "ceppp_suite_crm_entrevues"
     _rec_name = "comment_refere"
 
-    comment_refere = fields.Char(help="Comment avez-vous été référé? ")
+    comment_refere = fields.Char(
+        string="Comment",
+        help="Comment avez-vous été référé? ",
+    )
 
-    date_entrevue = fields.Date(help="Date de la rencontre téléphonique")
+    date_entrevue = fields.Date(
+        string="Date d'entrevue",
+        help="Date de la rencontre téléphonique",
+    )
 
-    org_ref_recrut = fields.Char(help="Quel organisme?")
+    org_ref_recrut = fields.Char(
+        string="Établissement de recrutement",
+        help="Quel organisme?",
+    )

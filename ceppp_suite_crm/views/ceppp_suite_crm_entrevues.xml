@@ -86,9 +86,13 @@
         <field name="model">ceppp.suite_crm.entrevues</field>
         <field name="arch" type="xml">
             <search string="Ceppp suite crm entrevues">
-                <filter domain="[('comment_refere','!=',False)]" name="comment_refere" string="Comment Refere" />
-                <filter domain="[('date_entrevue','!=',False)]" name="date_entrevue" string="Date Entrevue" />
-                <filter domain="[('org_ref_recrut','!=',False)]" name="org_ref_recrut" string="Org Ref Recrut" />
+                <filter domain="[('comment_refere','!=',False)]" name="comment_refere" string="Comment" />
+                <filter domain="[('date_entrevue','!=',False)]" name="date_entrevue" string="Date d'entrevue" />
+                <filter
+                    domain="[('org_ref_recrut','!=',False)]"
+                    name="org_ref_recrut"
+                    string="&#201;tablissement de recrutement"
+                />
             </search>
         </field>
     </record>

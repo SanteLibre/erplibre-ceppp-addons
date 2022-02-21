@@ -7,7 +7,7 @@
             <form string="Titre">
                 <sheet>
                     <group>
-                        <field name="nas_perso_" />
+                        <field name="nom" />
                     </group>
                     <group>
                         <field name="assistance_audition" />
@@ -112,6 +112,9 @@
                         <field name="nas_perso" />
                     </group>
                     <group>
+                        <field name="nas_perso_" />
+                    </group>
+                    <group>
                         <field name="niveau_aud" />
                     </group>
                     <group>
@@ -125,9 +128,6 @@
                     </group>
                     <group>
                         <field name="niveau_vue" />
-                    </group>
-                    <group>
-                        <field name="nom" />
                     </group>
                     <group>
                         <field name="org_ref_recrut" />
@@ -175,7 +175,7 @@
         <field name="model">ceppp.suite_crm.patients</field>
         <field name="arch" type="xml">
             <graph string="Ceppp suite crm patients">
-                <field name="nas_perso_" type="row" />
+                <field name="nom" type="row" />
                 <field name="assistance_audition" type="row" />
                 <field name="assistance_vision" type="row" />
                 <field name="centre_recrutement" type="row" />
@@ -210,12 +210,12 @@
                 <field name="motivations_implication" type="row" />
                 <field name="naissance_perso" type="row" />
                 <field name="nas_perso" type="measure" />
+                <field name="nas_perso_" type="row" />
                 <field name="niveau_aud" type="row" />
                 <field name="niveau_autre" type="row" />
                 <field name="niveau_fatigabilite" type="row" />
                 <field name="niveau_mob" type="row" />
                 <field name="niveau_vue" type="row" />
-                <field name="nom" type="row" />
                 <field name="org_ref_recrut" type="row" />
                 <field name="patient_ajout" type="row" />
                 <field name="personne_reference_recrut" type="row" />
@@ -237,7 +237,7 @@
         <field name="model">ceppp.suite_crm.patients</field>
         <field name="arch" type="xml">
             <kanban class="o_kanban_mobile">
-                <field name="nas_perso_" />
+                <field name="nom" />
                 <field name="assistance_audition" />
                 <field name="assistance_vision" />
                 <field name="centre_recrutement" />
@@ -272,12 +272,12 @@
                 <field name="motivations_implication" />
                 <field name="naissance_perso" />
                 <field name="nas_perso" />
+                <field name="nas_perso_" />
                 <field name="niveau_aud" />
                 <field name="niveau_autre" />
                 <field name="niveau_fatigabilite" />
                 <field name="niveau_mob" />
                 <field name="niveau_vue" />
-                <field name="nom" />
                 <field name="org_ref_recrut" />
                 <field name="patient_ajout" />
                 <field name="personne_reference_recrut" />
@@ -297,7 +297,7 @@
                                 <ul>
                                     <li class="mb4">
                                         <strong>
-                                            <field name="nas_perso_" />
+                                            <field name="nom" />
                                         </strong>
                                     </li>
                                     <li
@@ -517,6 +517,11 @@
                                             <field name="nas_perso" />
                                         </strong>
                                     </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nas_perso_" />
+                                        </strong>
+                                    </li>
                                     <li class="text-success float-right mb4" t-if="record.niveau_aud.raw_value">
                                         <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
                                     </li>
@@ -551,11 +556,6 @@
                                     </li>
                                     <li class="text-danger float-right mb4" t-if="!record.niveau_vue.raw_value">
                                         <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
-                                    </li>
-                                    <li class="mb4">
-                                        <strong>
-                                            <field name="nom" />
-                                        </strong>
                                     </li>
                                     <li class="mb4">
                                         <strong>
@@ -633,7 +633,7 @@
         <field name="model">ceppp.suite_crm.patients</field>
         <field name="arch" type="xml">
             <pivot string="Ceppp suite crm patients">
-                <field name="nas_perso_" type="row" />
+                <field name="nom" type="row" />
                 <field name="assistance_audition" type="row" />
                 <field name="assistance_vision" type="row" />
                 <field name="centre_recrutement" type="row" />
@@ -668,12 +668,12 @@
                 <field name="motivations_implication" type="row" />
                 <field name="naissance_perso" type="row" />
                 <field name="nas_perso" type="measure" />
+                <field name="nas_perso_" type="row" />
                 <field name="niveau_aud" type="row" />
                 <field name="niveau_autre" type="row" />
                 <field name="niveau_fatigabilite" type="row" />
                 <field name="niveau_mob" type="row" />
                 <field name="niveau_vue" type="row" />
-                <field name="nom" type="row" />
                 <field name="org_ref_recrut" type="row" />
                 <field name="patient_ajout" type="row" />
                 <field name="personne_reference_recrut" type="row" />
@@ -695,135 +695,187 @@
         <field name="model">ceppp.suite_crm.patients</field>
         <field name="arch" type="xml">
             <search string="Ceppp suite crm patients">
-                <filter domain="[('nas_perso_','!=',False)]" name="nas_perso_" string="Nas Perso " />
+                <filter domain="[('nom','!=',False)]" name="nom" string="Nom de famille" />
                 <filter
                     domain="[('assistance_audition','=',True)]"
                     name="assistance_audition"
-                    string="Assistance Audition"
+                    string="Besoin d'assistance"
                 />
-                <filter domain="[('assistance_vision','=',True)]" name="assistance_vision" string="Assistance Vision" />
+                <filter
+                    domain="[('assistance_vision','=',True)]"
+                    name="assistance_vision"
+                    string="Besoin d'assistance"
+                />
                 <filter
                     domain="[('centre_recrutement','!=',False)]"
                     name="centre_recrutement"
-                    string="Centre Recrutement"
+                    string="Centre de recrutement"
                 />
-                <filter domain="[('code_ident','!=',False)]" name="code_ident" string="Code Ident" />
-                <filter domain="[('comm_recruteur','!=',False)]" name="comm_recruteur" string="Comm Recruteur" />
-                <filter domain="[('comment_refere','!=',False)]" name="comment_refere" string="Comment Refere" />
-                <filter domain="[('conflit_interet','=',True)]" name="conflit_interet" string="Conflit Interet" />
+                <filter domain="[('code_ident','!=',False)]" name="code_ident" string="Code" />
+                <filter
+                    domain="[('comm_recruteur','!=',False)]"
+                    name="comm_recruteur"
+                    string="Commentaires recruteur"
+                />
+                <filter domain="[('comment_refere','!=',False)]" name="comment_refere" string="Comment" />
+                <filter
+                    domain="[('conflit_interet','=',True)]"
+                    name="conflit_interet"
+                    string="Conflit d'int&#233;r&#234;t"
+                />
                 <filter
                     domain="[('conflit_interet_detail','!=',False)]"
                     name="conflit_interet_detail"
-                    string="Conflit Interet Detail"
+                    string="Lequel"
                 />
                 <filter
                     domain="[('consentement_dcpp_recrut','=',True)]"
                     name="consentement_dcpp_recrut"
-                    string="Consentement Dcpp Recrut"
+                    string="Consentement sur l'implication"
                 />
                 <filter
                     domain="[('consentement_miseajour','=',True)]"
                     name="consentement_miseajour"
-                    string="Consentement Miseajour"
+                    string="Consentement sur la communication"
                 />
                 <filter
                     domain="[('consentement_recherche','=',True)]"
                     name="consentement_recherche"
-                    string="Consentement Recherche"
+                    string="Consentement sur la recherche"
                 />
                 <filter
                     domain="[('consentement_usage_donnees','=',True)]"
                     name="consentement_usage_donnees"
-                    string="Consentement Usage Donnees"
+                    string="Consentement sur les donn&#233;es"
                 />
-                <filter domain="[('date_entrevue','!=',False)]" name="date_entrevue" string="Date Entrevue" />
-                <filter domain="[('descr_exp','!=',False)]" name="descr_exp" string="Descr Exp" />
-                <filter domain="[('doul_chron','=',True)]" name="doul_chron" string="Doul Chron" />
-                <filter domain="[('duree_experience','!=',False)]" name="duree_experience" string="Duree Experience" />
+                <filter
+                    domain="[('date_entrevue','!=',False)]"
+                    name="date_entrevue"
+                    string="Date de la rencontre t&#233;l&#233;phonique"
+                />
+                <filter
+                    domain="[('descr_exp','!=',False)]"
+                    name="descr_exp"
+                    string="Description de l'exp&#233;rience"
+                />
+                <filter domain="[('doul_chron','=',True)]" name="doul_chron" string="Douleur chronique" />
+                <filter
+                    domain="[('duree_experience','!=',False)]"
+                    name="duree_experience"
+                    string="Dur&#233;e d'exp&#233;rience (Ann&#233;es / Mois)"
+                />
                 <filter
                     domain="[('education_perso_autre','!=',False)]"
                     name="education_perso_autre"
-                    string="Education Perso Autre"
+                    string="Autre niveau (pr&#233;ciser)"
                 />
-                <filter domain="[('email_perso','!=',False)]" name="email_perso" string="Email Perso" />
+                <filter domain="[('email_perso','!=',False)]" name="email_perso" string="Adresse courriel" />
                 <filter
                     domain="[('etabl_prem_ligne_pa_','!=',False)]"
                     name="etabl_prem_ligne_pa_"
-                    string="Etabl Prem Ligne Pa "
+                    string="&#201;tablissement de premi&#232;re ligne"
                 />
-                <filter domain="[('etabl_sante_pa_','!=',False)]" name="etabl_sante_pa_" string="Etabl Sante Pa " />
-                <filter domain="[('exp_sante','=',True)]" name="exp_sante" string="Exp Sante" />
-                <filter domain="[('exp_sante_detail','!=',False)]" name="exp_sante_detail" string="Exp Sante Detail" />
+                <filter
+                    domain="[('etabl_sante_pa_','!=',False)]"
+                    name="etabl_sante_pa_"
+                    string="&#201;tablissement de sant&#233; principal"
+                />
+                <filter
+                    domain="[('exp_sante','=',True)]"
+                    name="exp_sante"
+                    string="Exp&#233;rience professionnelle dans le milieu de la sant&#233;"
+                />
+                <filter domain="[('exp_sante_detail','!=',False)]" name="exp_sante_detail" string="Pr&#233;cisions" />
                 <filter
                     domain="[('experience_maladie_pa','!=',False)]"
                     name="experience_maladie_pa"
-                    string="Experience Maladie Pa"
+                    string="Exp&#233;rience comme pair aidant"
                 />
                 <filter
                     domain="[('experience_maladie_pp','!=',False)]"
                     name="experience_maladie_pp"
-                    string="Experience Maladie Pp"
+                    string="Description de l'exp&#233;rience"
                 />
                 <filter
                     domain="[('experience_maladie_proche','!=',False)]"
                     name="experience_maladie_proche"
-                    string="Experience Maladie Proche"
+                    string="Exp&#233;rience maladie proche"
                 />
-                <filter domain="[('formation_date','!=',False)]" name="formation_date" string="Formation Date" />
-                <filter domain="[('formation_oui','!=',False)]" name="formation_oui" string="Formation Oui" />
-                <filter domain="[('formation_pp','=',True)]" name="formation_pp" string="Formation Pp" />
-                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation Qui" />
+                <filter domain="[('formation_date','!=',False)]" name="formation_date" string="Date de formation" />
+                <filter domain="[('formation_oui','!=',False)]" name="formation_oui" string="Si oui, laquelle" />
+                <filter
+                    domain="[('formation_pp','=',True)]"
+                    name="formation_pp"
+                    string="Formation suivie sur le partenariat patient"
+                />
+                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation par qui" />
                 <filter
                     domain="[('membre_assoc_comite','=',True)]"
                     name="membre_assoc_comite"
-                    string="Membre Assoc Comite"
+                    string="Membre d'une association ou comit&#233;"
                 />
                 <filter
                     domain="[('membre_assoc_comite_detail','!=',False)]"
                     name="membre_assoc_comite_detail"
-                    string="Membre Assoc Comite Detail"
+                    string="Laquelle"
                 />
                 <filter
                     domain="[('motivations_implication','!=',False)]"
                     name="motivations_implication"
-                    string="Motivations Implication"
+                    string="Motivations &#224; s'impliquer"
                 />
-                <filter domain="[('naissance_perso','!=',False)]" name="naissance_perso" string="Naissance Perso" />
+                <filter domain="[('naissance_perso','!=',False)]" name="naissance_perso" string="Date de naissance" />
                 <filter domain="[('nas_perso','!=',False)]" name="nas_perso" string="Nas Perso" />
-                <filter domain="[('niveau_aud','=',True)]" name="niveau_aud" string="Niveau Aud" />
-                <filter domain="[('niveau_autre','!=',False)]" name="niveau_autre" string="Niveau Autre" />
+                <filter
+                    domain="[('nas_perso_','!=',False)]"
+                    name="nas_perso_"
+                    string="Num&#233;ro d'assurance social"
+                />
+                <filter domain="[('niveau_aud','=',True)]" name="niveau_aud" string="Ou&#239;e" />
+                <filter
+                    domain="[('niveau_autre','!=',False)]"
+                    name="niveau_autre"
+                    string="Autres besoins sp&#233;cifiques"
+                />
                 <filter
                     domain="[('niveau_fatigabilite','=',True)]"
                     name="niveau_fatigabilite"
-                    string="Niveau Fatigabilite"
+                    string="Niveau de fatigabilit&#233;"
                 />
-                <filter domain="[('niveau_mob','=',True)]" name="niveau_mob" string="Niveau Mob" />
-                <filter domain="[('niveau_vue','=',True)]" name="niveau_vue" string="Niveau Vue" />
-                <filter domain="[('nom','!=',False)]" name="nom" string="Nom" />
-                <filter domain="[('org_ref_recrut','!=',False)]" name="org_ref_recrut" string="Org Ref Recrut" />
-                <filter domain="[('patient_ajout','!=',False)]" name="patient_ajout" string="Patient Ajout" />
+                <filter domain="[('niveau_mob','=',True)]" name="niveau_mob" string="Mobilit&#233;" />
+                <filter domain="[('niveau_vue','=',True)]" name="niveau_vue" string="Vue" />
+                <filter
+                    domain="[('org_ref_recrut','!=',False)]"
+                    name="org_ref_recrut"
+                    string="&#201;tablissement de recrutement"
+                />
+                <filter domain="[('patient_ajout','!=',False)]" name="patient_ajout" string="Commentaires patient" />
                 <filter
                     domain="[('personne_reference_recrut','!=',False)]"
                     name="personne_reference_recrut"
-                    string="Personne Reference Recrut"
+                    string="R&#233;f&#233;rence"
                 />
                 <filter
                     domain="[('preferences_autre','!=',False)]"
                     name="preferences_autre"
-                    string="Preferences Autre"
+                    string="Autres pr&#233;f&#233;rences"
                 />
-                <filter domain="[('prenom','!=',False)]" name="prenom" string="Prenom" />
-                <filter domain="[('prob_resp','=',True)]" name="prob_resp" string="Prob Resp" />
-                <filter domain="[('prob_somm','=',True)]" name="prob_somm" string="Prob Somm" />
-                <filter domain="[('recruteur','!=',False)]" name="recruteur" string="Recruteur" />
-                <filter domain="[('tel_dom_perso','!=',False)]" name="tel_dom_perso" string="Tel Dom Perso" />
-                <filter domain="[('tel_mobile_perso','!=',False)]" name="tel_mobile_perso" string="Tel Mobile Perso" />
+                <filter domain="[('prenom','!=',False)]" name="prenom" string="Pr&#233;nom" />
+                <filter domain="[('prob_resp','=',True)]" name="prob_resp" string="Probl&#232;me respiratoire" />
+                <filter domain="[('prob_somm','=',True)]" name="prob_somm" string="Probl&#232;mes de sommeil" />
+                <filter domain="[('recruteur','!=',False)]" name="recruteur" string="Responsable de l'entrevue" />
+                <filter
+                    domain="[('tel_dom_perso','!=',False)]"
+                    name="tel_dom_perso"
+                    string="No. de t&#233;l&#233;phone (domicile)"
+                />
+                <filter domain="[('tel_mobile_perso','!=',False)]" name="tel_mobile_perso" string="No. de cellulaire" />
                 <filter
                     domain="[('tel_travail_perso','!=',False)]"
                     name="tel_travail_perso"
-                    string="Tel Travail Perso"
+                    string="No. de t&#233;l&#233;phone (travail)"
                 />
-                <filter domain="[('test_int_field','!=',False)]" name="test_int_field" string="Test Int Field" />
+                <filter domain="[('test_int_field','!=',False)]" name="test_int_field" string="test int field" />
             </search>
         </field>
     </record>
@@ -833,7 +885,7 @@
         <field name="model">ceppp.suite_crm.patients</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="nas_perso_" />
+                <field name="nom" />
                 <field name="assistance_audition" />
                 <field name="assistance_vision" />
                 <field name="centre_recrutement" />
@@ -868,12 +920,12 @@
                 <field name="motivations_implication" />
                 <field name="naissance_perso" />
                 <field name="nas_perso" />
+                <field name="nas_perso_" />
                 <field name="niveau_aud" />
                 <field name="niveau_autre" />
                 <field name="niveau_fatigabilite" />
                 <field name="niveau_mob" />
                 <field name="niveau_vue" />
-                <field name="nom" />
                 <field name="org_ref_recrut" />
                 <field name="patient_ajout" />
                 <field name="personne_reference_recrut" />

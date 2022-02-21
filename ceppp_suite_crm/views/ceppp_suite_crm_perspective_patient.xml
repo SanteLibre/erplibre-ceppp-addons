@@ -382,98 +382,110 @@
         <field name="model">ceppp.suite_crm.perspective_patient</field>
         <field name="arch" type="xml">
             <search string="Ceppp suite crm perspective patient">
-                <filter
-                    domain="[('adresse_perso_city','!=',False)]"
-                    name="adresse_perso_city"
-                    string="Adresse Perso City"
-                />
-                <filter domain="[('adresse_perso','!=',False)]" name="adresse_perso" string="Adresse Perso" />
-                <filter
-                    domain="[('adresse_perso_country','!=',False)]"
-                    name="adresse_perso_country"
-                    string="Adresse Perso Country"
-                />
+                <filter domain="[('adresse_perso_city','!=',False)]" name="adresse_perso_city" string="Ville" />
+                <filter domain="[('adresse_perso','!=',False)]" name="adresse_perso" string="Adresse" />
+                <filter domain="[('adresse_perso_country','!=',False)]" name="adresse_perso_country" string="Pays" />
                 <filter
                     domain="[('adresse_perso_postalcode','!=',False)]"
                     name="adresse_perso_postalcode"
-                    string="Adresse Perso Postalcode"
+                    string="Code postal"
                 />
+                <filter domain="[('adresse_perso_state','!=',False)]" name="adresse_perso_state" string="Province" />
                 <filter
-                    domain="[('adresse_perso_state','!=',False)]"
-                    name="adresse_perso_state"
-                    string="Adresse Perso State"
+                    domain="[('conflit_interet','=',True)]"
+                    name="conflit_interet"
+                    string="Conflits d'int&#233;r&#234;t"
                 />
-                <filter domain="[('conflit_interet','=',True)]" name="conflit_interet" string="Conflit Interet" />
                 <filter
                     domain="[('conflit_interet_detail','!=',False)]"
                     name="conflit_interet_detail"
-                    string="Conflit Interet Detail"
+                    string="Lesquels"
                 />
-                <filter domain="[('descr_exp','!=',False)]" name="descr_exp" string="Descr Exp" />
-                <filter domain="[('duree_experience','!=',False)]" name="duree_experience" string="Duree Experience" />
+                <filter
+                    domain="[('descr_exp','!=',False)]"
+                    name="descr_exp"
+                    string="Description de l'exp&#233;rience"
+                />
+                <filter
+                    domain="[('duree_experience','!=',False)]"
+                    name="duree_experience"
+                    string="Dur&#233;e d'exp&#233;rience (Ann&#233;es / Mois)"
+                />
                 <filter
                     domain="[('etabl_prem_ligne_pa','!=',False)]"
                     name="etabl_prem_ligne_pa"
-                    string="Etabl Prem Ligne Pa"
+                    string="&#201;tablissement de premi&#232;re ligne"
                 />
-                <filter domain="[('etabl_sante_pa','!=',False)]" name="etabl_sante_pa" string="Etabl Sante Pa" />
-                <filter domain="[('exp_sante','=',True)]" name="exp_sante" string="Exp Sante" />
-                <filter domain="[('exp_sante_detail','!=',False)]" name="exp_sante_detail" string="Exp Sante Detail" />
+                <filter
+                    domain="[('etabl_sante_pa','!=',False)]"
+                    name="etabl_sante_pa"
+                    string="&#201;tablissement de sant&#233; principal"
+                />
+                <filter
+                    domain="[('exp_sante','=',True)]"
+                    name="exp_sante"
+                    string="Exp&#233;rience professionnelle dans le milieu de la sant&#233;"
+                />
+                <filter domain="[('exp_sante_detail','!=',False)]" name="exp_sante_detail" string="Pr&#233;cisions" />
                 <filter
                     domain="[('experience_maladie','!=',False)]"
                     name="experience_maladie"
-                    string="Experience Maladie"
+                    string="Exp&#233;rience maladie"
                 />
                 <filter
                     domain="[('experience_maladie_pa','!=',False)]"
                     name="experience_maladie_pa"
-                    string="Experience Maladie Pa"
+                    string="Exp&#233;rience comme pair aidant"
                 />
                 <filter
                     domain="[('experience_maladie_proche','!=',False)]"
                     name="experience_maladie_proche"
-                    string="Experience Maladie Proche"
+                    string="Exp&#233;rience maladie proche"
                 />
-                <filter domain="[('formation_date','!=',False)]" name="formation_date" string="Formation Date" />
-                <filter domain="[('formation_oui','!=',False)]" name="formation_oui" string="Formation Oui" />
-                <filter domain="[('formation_pp','=',True)]" name="formation_pp" string="Formation Pp" />
-                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation Qui" />
+                <filter domain="[('formation_date','!=',False)]" name="formation_date" string="Date de formation" />
+                <filter domain="[('formation_oui','!=',False)]" name="formation_oui" string="Si oui, laquelle" />
+                <filter
+                    domain="[('formation_pp','=',True)]"
+                    name="formation_pp"
+                    string="Formation suivie sur le partenariat patient"
+                />
+                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation par qui" />
                 <filter
                     domain="[('maladie_rare_details','!=',False)]"
                     name="maladie_rare_details"
-                    string="Maladie Rare Details"
+                    string="Maladie rare"
                 />
-                <filter domain="[('med_1','!=',False)]" name="med_1" string="Med 1" />
+                <filter domain="[('med_1','!=',False)]" name="med_1" string="M&#233;dicaments" />
                 <filter
                     domain="[('membre_assoc_comite','=',True)]"
                     name="membre_assoc_comite"
-                    string="Membre Assoc Comite"
+                    string="Membre d'une association ou comit&#233;"
                 />
                 <filter
                     domain="[('membre_assoc_comite_detail','!=',False)]"
                     name="membre_assoc_comite_detail"
-                    string="Membre Assoc Comite Detail"
+                    string="Laquelle"
                 />
                 <filter
                     domain="[('motivations_implication','!=',False)]"
                     name="motivations_implication"
-                    string="Motivations Implication"
+                    string="Motivations &#224; s'impliquer"
                 />
                 <filter domain="[('perspective','!=',False)]" name="perspective" string="Perspective" />
                 <filter
                     domain="[('preferences_autre','!=',False)]"
                     name="preferences_autre"
-                    string="Preferences Autre"
+                    string="Autres pr&#233;f&#233;rences"
                 />
                 <filter
                     domain="[('preneur_decisions','!=',False)]"
                     name="preneur_decisions"
-                    string="Preneur Decisions"
+                    string="Preneur de d&#233;cisions"
                 />
                 <filter
                     domain="[('professionnels_sante','!=',False)]"
                     name="professionnels_sante"
-                    string="Professionnels Sante"
+                    string="Professionnels de la sant&#233;"
                 />
             </search>
         </field>

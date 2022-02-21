@@ -67,7 +67,7 @@
                 <filter
                     domain="[('commentaires_recruteur','!=',False)]"
                     name="commentaires_recruteur"
-                    string="Commentaires Recruteur"
+                    string="Commentaires additionnels"
                 />
             </search>
         </field>
