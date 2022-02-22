@@ -8,7 +8,7 @@ class CepppSuiteCrmEntrevues(models.Model):
 
     comment_refere = fields.Char(
         string="Comment",
-        help="Comment avez-vous été référé? ",
+        help="Comment avez-vous été référé?",
     )
 
     date_entrevue = fields.Date(

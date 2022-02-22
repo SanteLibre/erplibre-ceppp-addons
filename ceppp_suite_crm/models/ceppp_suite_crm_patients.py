@@ -84,7 +84,7 @@ class CepppSuiteCrmPatients(models.Model):
             ("est_a_l_ecoute", "Est à l'écoute"),
             (
                 "mobilise_ses_experiences_sociales_et_professionnelles",
-                "Mobilise ses expériences sociales et professionnelles ",
+                "Mobilise ses expériences sociales et professionnelles",
             ),
             ("assume_un_co_leadership", "Assume un co-leadership"),
             (
@@ -123,7 +123,7 @@ class CepppSuiteCrmPatients(models.Model):
         selection=[
             (
                 "mobilise_ses_experiences_sociales_et_professionnelles",
-                "Mobilise ses expériences sociales et professionnelles ",
+                "Mobilise ses expériences sociales et professionnelles",
             ),
             ("assume_un_co_leadership", "Assume un co-leadership"),
             (

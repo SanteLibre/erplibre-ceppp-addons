@@ -16,14 +16,10 @@ MAPPING_FIELD_SUITE_CRM = {
     "text": "text",
     "name": "char",
     "radioenum": None,  # check options
-    "SmartDropdown": None,  # Special case
-    "enum": None,  # Special case
+    "SmartDropdown": None,  # check options
+    "enum": None,  # check options
     "int": "integer",
     "phone": "char",
-}
-
-MAPPING_FIELD_OPTIONS_SUITE_CRM = {
-    "yes_no_list": "boolean",
 }
 
 
@@ -410,6 +406,7 @@ class PHPParser:
         }
 
         # Validate file exist before extract AST
+        lst_file_stat = []
         for lang, file_path in self._dct_php_enum_option_crm.items():
             if not os.path.exists(file_path):
                 raise Exception(
@@ -418,6 +415,8 @@ class PHPParser:
                     " 'https://github.com/lerenardprudent/ceppp_crm.git' in"
                     f" path '{ceppp_crm_path}', read file '{readme_path}'"
                 )
+            else:
+                lst_file_stat.append(file_path)
         for model_name, dct_file_path in self._dct_php_model_crm.items():
             for file_type, file_path in dct_file_path.items():
                 if not os.path.exists(file_path):
@@ -428,6 +427,11 @@ class PHPParser:
                         f" in path '{ceppp_crm_path}', read file"
                         f" '{readme_path}'"
                     )
+                else:
+                    lst_file_stat.append(file_path)
+        print(f"\n{len(lst_file_stat)} files extracted.")
+        for file_path in lst_file_stat:
+            print(f"\t{file_path}")
 
         # TODO change this way to import when refactor the library (who is coded in java style...)
         from src.compiler.php import phpast
@@ -482,7 +486,7 @@ class PHPParser:
                         f"Not supported constant php: {node.value}"
                     )
             elif isinstance(node.value, str):
-                value = node.value
+                value = html.unescape(node.value.strip())
             elif isinstance(node.value, int):
                 value = node.value
             elif isinstance(node.value, self.ast_php_type.Array):
@@ -566,6 +570,7 @@ def post_init_hook(cr, e):
     dct_new_translate = {}
 
     if debug:
+        nb_data = 0
         for key, dct_value in dct_parser.items():
             print(f"Modèle : {key}")
             for file_type, value in dct_value.items():
@@ -573,6 +578,7 @@ def post_init_hook(cr, e):
                 if file_type == "var":
                     for field_name, dct_field in value.get("fields").items():
                         i += 1
+                        nb_data += 1
                         str_print = (
                             f"\t {i} - field name '{dct_field.get('name')}', "
                         )
@@ -612,17 +618,47 @@ def post_init_hook(cr, e):
                                 f" '{dct_field.get('options')}', "
                             )
                         print(str_print)
+                        print("\n")
+                    print("\n")
                 else:
                     print(f"Traduction {file_type}")
                     for sub_key, sub_value in value.items():
-                        print(f"\t{sub_key} : '{sub_value}'")
+                        i += 1
+                        nb_data += 1
+                        print(f"\t{i} {sub_key} : '{sub_value}'")
+                    print("\n")
+            print("\n")
         for key_lang, dct_option in dct_lang_option_parser.items():
             print(f"Option langue : {key_lang}")
+            i = -1
             for key_option, dct_sub_option in dct_option.items():
-                print(f"\tOption name : {key_option}")
+                i += 1
+                nb_data += 1
+                print(f"\t{i} Option name : {key_option}")
+                j = -1
                 for option_name, option_translate in dct_sub_option.items():
-                    print(f"\t\t{option_name} : '{option_translate}'")
-            print("\n\n")
+                    if not option_name or not option_translate:
+                        continue
+                    j += 1
+                    nb_data += 1
+                    if type(option_translate) is not dict:
+                        print(f"\t\t{j} {option_name} : '{option_translate}'")
+                    else:
+                        print(f"\t\t{j} SUB option name : {key_option}")
+                        k = -1
+                        for (
+                            sub_option_name,
+                            sub_option_translate,
+                        ) in option_translate.items():
+                            k += 1
+                            nb_data += 1
+                            print(
+                                f"\t\t\t{k} {sub_option_name} :"
+                                f" '{sub_option_translate}'"
+                            )
+                        print("\n")
+                print("\n")
+        print(f"Summary: {nb_data} data extracted :-)\n")
 
     with api.Environment.manage():
         env = api.Environment(cr, SUPERUSER_ID, {})
@@ -775,7 +811,6 @@ def post_init_hook(cr, e):
                         )
                     else:
                         # Transform '&amp;' to '&'
-                        string_fr = html.unescape(string_fr)
                         dct_field_info["field_description"] = string_fr
 
                         if not string_en:
@@ -785,7 +820,6 @@ def post_init_hook(cr, e):
                                 f" and model {model_model}"
                             )
                         elif po_en_ca:
-                            string_en = html.unescape(string_en)
                             # Search msgid and update msgstr
                             for po_entry in po_en_ca:
                                 if po_entry.msgid == string_fr:
