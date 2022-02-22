@@ -62,6 +62,28 @@ class PHPParser:
             )
 
         # List of php file to extract
+        self._dct_php_enum_option_crm = {
+            "fr": os.path.normpath(
+                os.path.join(
+                    os.path.dirname(__file__),
+                    "ceppp_crm",
+                    "custom",
+                    "include",
+                    "language",
+                    "fr_FR.lang.php",
+                )
+            ),
+            "en": os.path.normpath(
+                os.path.join(
+                    os.path.dirname(__file__),
+                    "ceppp_crm",
+                    "custom",
+                    "include",
+                    "language",
+                    "en_us.lang.php",
+                )
+            ),
+        }
         self._dct_php_model_crm = {
             "entrevues": {
                 "var": os.path.normpath(
@@ -388,6 +410,14 @@ class PHPParser:
         }
 
         # Validate file exist before extract AST
+        for lang, file_path in self._dct_php_enum_option_crm.items():
+            if not os.path.exists(file_path):
+                raise Exception(
+                    f"Missing file '{file_path}' for language '{lang}'. Do you"
+                    " have the repo"
+                    " 'https://github.com/lerenardprudent/ceppp_crm.git' in"
+                    f" path '{ceppp_crm_path}', read file '{readme_path}'"
+                )
         for model_name, dct_file_path in self._dct_php_model_crm.items():
             for file_type, file_path in dct_file_path.items():
                 if not os.path.exists(file_path):
@@ -411,10 +441,15 @@ class PHPParser:
         self.node_finder = NodeFinder
 
     def _extract_ast(self):
+        self._dct_lang_option_parser = {}
+        for lang, file_path in self._dct_php_enum_option_crm.items():
+            self._dct_lang_option_parser[lang] = self.get_node_from_file(
+                file_path, search_global_var=True
+            )
+        # Parser in alpha order
         dct_ordered_php_model = sorted(
             self._dct_php_model_crm.items(), key=lambda x: x[0]
         )
-        # Parser in alpha order
         self._dct_parser = {}
         for key, dct_php_value in dct_ordered_php_model:
             dct_value = {}
@@ -422,8 +457,11 @@ class PHPParser:
                 dct_value[file_type] = self.get_node_from_file(file_path)
             self._dct_parser[key] = dct_value
 
-    def get_dct_parse(self):
+    def get_dct_parser(self):
         return self._dct_parser
+
+    def get_dct_lang_option_parser(self):
+        return self._dct_lang_option_parser
 
     def extract_assignment_array_to_dict(self, node):
         if isinstance(node, self.ast_php_type.Array):
@@ -462,45 +500,73 @@ class PHPParser:
         else:
             raise Exception(f"Not supported node type : {type(node)}")
 
-    def get_node_from_file(self, file_path):
+    def get_node_from_file(self, file_path, search_global_var=False):
+        # TODO can do without search_global_var, just ignore var name storage for vardefs.php
+        # if search_global_var, search $GLOBALS to extract dict
+        # else, search first var with array value
         tree = self.build_syntax_tree(file_path)
 
         bft = self.bft_traverser(tree)
-        node_finder = self.node_finder(self.parser_function_has_no_params)
+        if search_global_var:
+            node_finder = self.node_finder(
+                self.parser_function_with_multiple_array
+            )
+        else:
+            node_finder = self.node_finder(self.parser_function_has_no_params)
         bft.register_visitor(node_finder)
         bft.traverse()
+        dct_node = {}
         if node_finder.found:
-            if len(node_finder.found) == 1:
-                dct_from_node = self.extract_assignment_array_to_dict(
-                    node_finder.found[0].get("node").expr
-                )
-                return dct_from_node
+            if search_global_var:
+                for dct_node_find in node_finder.found:
+                    node = dct_node_find.get("node")
+                    dct_from_node = self.extract_assignment_array_to_dict(
+                        node.expr
+                    )
+                    node_name = node.node.expr
+                    dct_node[node_name] = dct_from_node
             else:
-                _logger.error(
-                    "Find multiple node assignment with $dictionary[''] ="
-                    " array(), expect only 1. Please check code in file"
-                    f" {file_path}."
-                )
+                if len(node_finder.found) == 1:
+                    dct_node = self.extract_assignment_array_to_dict(
+                        node_finder.found[0].get("node").expr
+                    )
+                else:
+                    _logger.error(
+                        "Find multiple node assignment with $dictionary[''] ="
+                        " array(), expect only 1. Please check code in file"
+                        f" {file_path}."
+                    )
         else:
             _logger.error(
                 f"Cannot find assignment in file {file_path}, search"
                 " $dictionary[''] = array()"
             )
-        return node_finder.found
+        return dct_node
 
     def parser_function_has_no_params(self, node):
         return isinstance(node, self.ast_php_type.Assignment)
 
+    def parser_function_with_multiple_array(self, node):
+        return (
+            isinstance(node, self.ast_php_type.Assignment)
+            and isinstance(node.expr, self.ast_php_type.Array)
+            and len(node.expr.nodes) > 0
+            and isinstance(node.expr.nodes[0], self.ast_php_type.ArrayElement)
+        )
+
 
 def post_init_hook(cr, e):
     php_parser = PHPParser()
-    dct_parse = php_parser.get_dct_parse()
+    dct_parser = php_parser.get_dct_parser()
+    dct_lang_option_parser = php_parser.get_dct_lang_option_parser()
+    dct_lang_option_parser_fr = dct_lang_option_parser.get("fr")
+    dct_lang_option_parser_en = dct_lang_option_parser.get("en")
     debug = True
     # Key is origin, value is eng
     dct_new_translate = {}
 
     if debug:
-        for key, dct_value in dct_parse.items():
+        for key, dct_value in dct_parser.items():
             print(f"Modèle : {key}")
             for file_type, value in dct_value.items():
                 i = -1
@@ -550,6 +616,13 @@ def post_init_hook(cr, e):
                     print(f"Traduction {file_type}")
                     for sub_key, sub_value in value.items():
                         print(f"\t{sub_key} : '{sub_value}'")
+        for key_lang, dct_option in dct_lang_option_parser.items():
+            print(f"Option langue : {key_lang}")
+            for key_option, dct_sub_option in dct_option.items():
+                print(f"\tOption name : {key_option}")
+                for option_name, option_translate in dct_sub_option.items():
+                    print(f"\t\t{option_name} : '{option_translate}'")
+            print("\n\n")
 
     with api.Environment.manage():
         env = api.Environment(cr, SUPERUSER_ID, {})
@@ -599,7 +672,7 @@ def post_init_hook(cr, e):
         prefix_model = "ceppp.suite_crm."
         # lst_depend_model = ["mail.thread", "mail.activity.mixin"]
         lst_depend_model = []
-        for php_model, dct_php_value_dct_type in dct_parse.items():
+        for php_model, dct_php_value_dct_type in dct_parser.items():
             dct_php_value = dct_php_value_dct_type.get("var")
             dct_php_value_en_label = dct_php_value_dct_type.get("var_en")
             dct_php_value_fr_label = dct_php_value_dct_type.get("var_fr")
@@ -618,43 +691,49 @@ def post_init_hook(cr, e):
                     suite_crm_type = dct_php_field_value.get("type")
                     new_type = MAPPING_FIELD_SUITE_CRM.get(suite_crm_type)
                     if new_type is None:
-                        if suite_crm_type in ("SmartDropdown", "enum"):
-                            # TODO support later
-                            _logger.error(
-                                f"Not support suite_crm type {suite_crm_type},"
-                                f" ignore field {field_name} from model"
-                                f" {model_model}"
-                            )
-                            continue
                         # Check option
                         suite_crm_option = dct_php_field_value.get("options")
                         if suite_crm_option:
-                            new_type_from_option = (
-                                MAPPING_FIELD_OPTIONS_SUITE_CRM.get(
+                            # Take only element with value (no empty)
+                            dct_option_fr = {
+                                a: b
+                                for a, b in dct_lang_option_parser_fr.get(
                                     suite_crm_option
+                                ).items()
+                                if a and b
+                            }
+                            dct_option_en = {
+                                a: b
+                                for a, b in dct_lang_option_parser_en.get(
+                                    suite_crm_option
+                                ).items()
+                                if a and b
+                            }
+                            new_type = "selection"
+                            if dct_option_fr:
+                                dct_field_info["selection"] = str(
+                                    list(dct_option_fr.items())
                                 )
-                            )
-                            if new_type_from_option:
-                                new_type = new_type_from_option
-                            elif suite_crm_option == "yes_no_dunno_list":
-                                new_type = "selection"
-                                dct_field_info["selection"] = (
-                                    "[('dunno', 'Je ne sais pas'),"
-                                    " ('yes', 'Oui'), ('no', 'Non')]"
-                                )
-                                dct_new_translate[
-                                    "Je ne sais pas"
-                                ] = "I don't know"
-                                dct_new_translate["Oui"] = "Yes"
-                                dct_new_translate["Non"] = "No"
-                            else:
-                                _logger.error(
-                                    "Not support suite_crm type"
-                                    f" {suite_crm_type} options"
-                                    f" {suite_crm_option}, ignore field"
-                                    f" {field_name} from model {model_model}"
-                                )
-                                continue
+                                has_error_value_is_not_str = False
+                                for (
+                                    key_option,
+                                    value_option,
+                                ) in dct_option_en.items():
+                                    if type(value_option) is str:
+                                        dct_new_translate[
+                                            key_option
+                                        ] = value_option
+                                    else:
+                                        _logger.error(
+                                            "Not supported type"
+                                            f" {type(value_option)} for dct"
+                                            " option en."
+                                        )
+                                        has_error_value_is_not_str = True
+                                        break
+                                if has_error_value_is_not_str:
+                                    # Don't create the field who will bug the system
+                                    continue
                         else:
                             _logger.error(
                                 f"Not support suite_crm type {suite_crm_type},"

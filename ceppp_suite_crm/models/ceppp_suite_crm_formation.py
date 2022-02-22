@@ -10,8 +10,9 @@ class CepppSuiteCrmFormation(models.Model):
 
     date_formation = fields.Date(string="Date de formation")
 
-    exp_sante = fields.Boolean(
-        string="Expérience professionnelle dans le milieu de la santé"
+    exp_sante = fields.Selection(
+        selection=[("oui", "Oui"), ("non", "Non")],
+        string="Expérience professionnelle dans le milieu de la santé",
     )
 
     exp_sante_details = fields.Text(string="Détails")

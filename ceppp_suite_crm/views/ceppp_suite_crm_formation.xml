@@ -60,11 +60,10 @@
                                             <field name="date_formation" />
                                         </strong>
                                     </li>
-                                    <li class="text-success float-right mb4" t-if="record.exp_sante.raw_value">
-                                        <i aria-label="Ok" class="fa fa-circle" role="img" title="Ok" />
-                                    </li>
-                                    <li class="text-danger float-right mb4" t-if="!record.exp_sante.raw_value">
-                                        <i aria-label="Invalid" class="fa fa-circle" role="img" title="Invalid" />
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="exp_sante" />
+                                        </strong>
                                     </li>
                                     <li class="mb4">
                                         <strong>
@@ -101,7 +100,7 @@
                 <filter domain="[('formation_par_qui','!=',False)]" name="formation_par_qui" string="Par qui" />
                 <filter domain="[('date_formation','!=',False)]" name="date_formation" string="Date de formation" />
                 <filter
-                    domain="[('exp_sante','=',True)]"
+                    domain="[('exp_sante','!=',False)]"
                     name="exp_sante"
                     string="Exp&#233;rience professionnelle dans le milieu de la sant&#233;"
                 />

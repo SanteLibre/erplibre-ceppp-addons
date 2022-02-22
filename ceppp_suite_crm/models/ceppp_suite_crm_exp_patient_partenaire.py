@@ -20,8 +20,20 @@ class CepppSuiteCrmExpPatientPartenaire(models.Model):
 
     formation_qui = fields.Char(string="Formation par qui")
 
-    formation_suivie = fields.Boolean(
-        string="Formation suivie sur le partenariat patient"
+    formation_suivie = fields.Selection(
+        selection=[("oui", "Oui"), ("non", "Non")],
+        string="Formation suivie sur le partenariat patient",
     )
 
     nom_formation_suivie = fields.Char(string="nom formation suivie")
+
+    role_experience = fields.Selection(
+        selection=[
+            ("coach", "Coach"),
+            ("co_chercheur", "Co-chercheur"),
+            ("formateur", "Formateur"),
+            ("accompagnateur", "Accompagnateur"),
+            ("aviseur", "Aviseur"),
+        ],
+        string="Rôle",
+    )
