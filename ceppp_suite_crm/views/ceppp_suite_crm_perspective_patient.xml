@@ -43,7 +43,13 @@
                         <field name="duree_experience" />
                     </group>
                     <group>
+                        <field name="etabl_prem_ligne" />
+                    </group>
+                    <group>
                         <field name="etabl_prem_ligne_pa" />
+                    </group>
+                    <group>
+                        <field name="etabl_sante" />
                     </group>
                     <group>
                         <field name="etabl_sante_pa" />
@@ -142,7 +148,9 @@
                 <field name="domaine_soin" type="row" />
                 <field name="domaine_soin_pa" type="row" />
                 <field name="duree_experience" type="row" />
+                <field name="etabl_prem_ligne" type="row" />
                 <field name="etabl_prem_ligne_pa" type="row" />
+                <field name="etabl_sante" type="row" />
                 <field name="etabl_sante_pa" type="row" />
                 <field name="exp_decision" type="row" />
                 <field name="exp_sante" type="row" />
@@ -189,7 +197,9 @@
                 <field name="domaine_soin" />
                 <field name="domaine_soin_pa" />
                 <field name="duree_experience" />
+                <field name="etabl_prem_ligne" />
                 <field name="etabl_prem_ligne_pa" />
+                <field name="etabl_sante" />
                 <field name="etabl_sante_pa" />
                 <field name="exp_decision" />
                 <field name="exp_sante" />
@@ -282,7 +292,17 @@
                                     </li>
                                     <li class="mb4">
                                         <strong>
+                                            <field name="etabl_prem_ligne" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
                                             <field name="etabl_prem_ligne_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etabl_sante" />
                                         </strong>
                                     </li>
                                     <li class="mb4">
@@ -436,7 +456,9 @@
                 <field name="domaine_soin" type="row" />
                 <field name="domaine_soin_pa" type="row" />
                 <field name="duree_experience" type="row" />
+                <field name="etabl_prem_ligne" type="row" />
                 <field name="etabl_prem_ligne_pa" type="row" />
+                <field name="etabl_sante" type="row" />
                 <field name="etabl_sante_pa" type="row" />
                 <field name="exp_decision" type="row" />
                 <field name="exp_sante" type="row" />
@@ -512,9 +534,19 @@
                     string="Dur&#233;e d'exp&#233;rience (Ann&#233;es / Mois)"
                 />
                 <filter
+                    domain="[('etabl_prem_ligne','!=',False)]"
+                    name="etabl_prem_ligne"
+                    string="&#201;tablissement de premi&#232;re ligne"
+                />
+                <filter
                     domain="[('etabl_prem_ligne_pa','!=',False)]"
                     name="etabl_prem_ligne_pa"
                     string="&#201;tablissement de premi&#232;re ligne"
+                />
+                <filter
+                    domain="[('etabl_sante','!=',False)]"
+                    name="etabl_sante"
+                    string="&#201;tablissement de sant&#233; principal"
                 />
                 <filter
                     domain="[('etabl_sante_pa','!=',False)]"
@@ -618,7 +650,9 @@
                 <field name="domaine_soin" />
                 <field name="domaine_soin_pa" />
                 <field name="duree_experience" />
+                <field name="etabl_prem_ligne" />
                 <field name="etabl_prem_ligne_pa" />
+                <field name="etabl_sante" />
                 <field name="etabl_sante_pa" />
                 <field name="exp_decision" />
                 <field name="exp_sante" />

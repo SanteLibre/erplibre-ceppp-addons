@@ -407,6 +407,11 @@ class CepppSuiteCrmPatients(models.Model):
         string="Établissement de première ligne"
     )
 
+    etabl_sante_pa = fields.Many2one(
+        comodel_name="ceppp.suite_crm.hopital",
+        string="Établissement de santé principal",
+    )
+
     etabl_sante_pa_ = fields.Char(string="Établissement de santé principal")
 
     etat = fields.Selection(

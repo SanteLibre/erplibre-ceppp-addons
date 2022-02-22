@@ -708,6 +708,8 @@ def post_init_hook(cr, e):
         prefix_model = "ceppp.suite_crm."
         # lst_depend_model = ["mail.thread", "mail.activity.mixin"]
         lst_depend_model = []
+        lst_added_model_name = []
+        lst_tool_model_name = []
         for php_model, dct_php_value_dct_type in dct_parser.items():
             dct_php_value = dct_php_value_dct_type.get("var")
             dct_php_value_en_label = dct_php_value_dct_type.get("var_en")
@@ -746,27 +748,139 @@ def post_init_hook(cr, e):
                                 if a and b
                             }
                             new_type = "selection"
+                            ignore_en_translation = False
                             if dct_option_fr:
-                                dct_field_info["selection"] = str(
-                                    list(dct_option_fr.items())
-                                )
-                                has_error_value_is_not_str = False
-                                for (
-                                    key_option,
-                                    value_option,
-                                ) in dct_option_en.items():
-                                    if type(value_option) is str:
-                                        dct_new_translate[
-                                            key_option
-                                        ] = value_option
+                                dct_option_fr_value = dct_option_fr.values()
+                                if len(dct_option_fr_value):
+                                    if (
+                                        type(list(dct_option_fr_value)[0])
+                                        is str
+                                    ):
+                                        dct_field_info["selection"] = str(
+                                            list(dct_option_fr.items())
+                                        )
+                                    elif suite_crm_option == "etab_sante_list":
+                                        # Hardcode hack to support this
+                                        new_model_region_admin_name = (
+                                            f"{prefix_model}region_admin"
+                                        )
+                                        dct_region_admin_data_id = {}
+                                        if (
+                                            new_model_region_admin_name
+                                            not in lst_added_model_name
+                                        ):
+                                            dct_new_field = {
+                                                "nom": {
+                                                    "ttype": "char",
+                                                }
+                                            }
+                                            dct_new_model = {
+                                                "rec_name": "nom",
+                                                "nomenclator": True,
+                                            }
+                                            region_admin_model_id = code_generator_id.add_update_model(
+                                                new_model_region_admin_name,
+                                                dct_field=dct_new_field,
+                                                dct_model=dct_new_model,
+                                            )
+                                            lst_added_model_name.append(
+                                                new_model_region_admin_name
+                                            )
+                                            # Add data
+                                            lst_data_region_admin = [
+                                                {"nom": a}
+                                                for a in dct_option_fr.keys()
+                                            ]
+                                            for (
+                                                dat_region_admin
+                                            ) in lst_data_region_admin:
+                                                data_id = region_admin_model_id.create(
+                                                    dat_region_admin
+                                                )
+                                                dct_region_admin_data_id[
+                                                    data_id.nom
+                                                ] = data_id.id
+                                        new_model_hopital_name = (
+                                            f"{prefix_model}hopital"
+                                        )
+                                        if (
+                                            new_model_hopital_name
+                                            not in lst_added_model_name
+                                        ):
+                                            dct_new_field = {
+                                                "nom": {
+                                                    "ttype": "char",
+                                                },
+                                                "region_admin_id": {
+                                                    "ttype": "many2one",
+                                                    "field_description": (
+                                                        "Région administrative"
+                                                    ),
+                                                    "relation": new_model_region_admin_name,
+                                                },
+                                            }
+                                            dct_new_model = {
+                                                "rec_name": "nom",
+                                                "nomenclator": True,
+                                            }
+                                            hopital_model_id = code_generator_id.add_update_model(
+                                                new_model_hopital_name,
+                                                dct_field=dct_new_field,
+                                                dct_model=dct_new_model,
+                                            )
+                                            lst_added_model_name.append(
+                                                new_model_hopital_name
+                                            )
+                                            # Add data
+                                            for (
+                                                region_admin,
+                                                dct_hopital,
+                                            ) in dct_option_fr.items():
+                                                for (
+                                                    hopital_name
+                                                ) in dct_hopital.values():
+                                                    hopital_model_id.create(
+                                                        {
+                                                            "nom": hopital_name,
+                                                            "region_admin_id": dct_region_admin_data_id.get(
+                                                                region_admin
+                                                            ),
+                                                        }
+                                                    )
+                                        new_type = "many2one"
+                                        dct_field_info["relation"] = new_model_hopital_name
+                                        # No need translation in english for this software with hospital
+                                        ignore_en_translation = True
+                                        # TODO added field linked to this model
+                                    elif suite_crm_option == "cim10_list":
+                                        # Hardcode hack to support this
+                                        # TODO
+                                        print("fds")
+                                        continue
                                     else:
                                         _logger.error(
-                                            "Not supported type"
-                                            f" {type(value_option)} for dct"
-                                            " option en."
+                                            "Not supported option"
+                                            f" {suite_crm_option}"
                                         )
-                                        has_error_value_is_not_str = True
-                                        break
+                                        continue
+                                    if not ignore_en_translation:
+                                        has_error_value_is_not_str = False
+                                        for (
+                                            key_option,
+                                            value_option,
+                                        ) in dct_option_en.items():
+                                            if type(value_option) is str:
+                                                dct_new_translate[
+                                                    key_option
+                                                ] = value_option
+                                            else:
+                                                _logger.error(
+                                                    "Not supported type"
+                                                    f" {type(value_option)} for"
+                                                    " dct option en."
+                                                )
+                                                has_error_value_is_not_str = True
+                                                break
                                 if has_error_value_is_not_str:
                                     # Don't create the field who will bug the system
                                     continue
@@ -848,6 +962,7 @@ def post_init_hook(cr, e):
                 dct_model=dct_model,
                 lst_depend_model=lst_depend_model,
             )
+            lst_added_model_name.append(model_model)
 
         # Generate view
         # Action generate view

@@ -103,6 +103,9 @@
                         <field name="etabl_prem_ligne_pa_" />
                     </group>
                     <group>
+                        <field name="etabl_sante_pa" />
+                    </group>
+                    <group>
                         <field name="etabl_sante_pa_" />
                     </group>
                     <group>
@@ -270,6 +273,7 @@
                 <field name="email_perso" type="row" />
                 <field name="emploi_perso" type="row" />
                 <field name="etabl_prem_ligne_pa_" type="row" />
+                <field name="etabl_sante_pa" type="row" />
                 <field name="etabl_sante_pa_" type="row" />
                 <field name="etat" type="row" />
                 <field name="exp_sante" type="row" />
@@ -353,6 +357,7 @@
                 <field name="email_perso" />
                 <field name="emploi_perso" />
                 <field name="etabl_prem_ligne_pa_" />
+                <field name="etabl_sante_pa" />
                 <field name="etabl_sante_pa_" />
                 <field name="etat" />
                 <field name="exp_sante" />
@@ -558,6 +563,11 @@
                                     <li class="mb4">
                                         <strong>
                                             <field name="etabl_prem_ligne_pa_" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etabl_sante_pa" />
                                         </strong>
                                     </li>
                                     <li class="mb4">
@@ -816,6 +826,7 @@
                 <field name="email_perso" type="row" />
                 <field name="emploi_perso" type="row" />
                 <field name="etabl_prem_ligne_pa_" type="row" />
+                <field name="etabl_sante_pa" type="row" />
                 <field name="etabl_sante_pa_" type="row" />
                 <field name="etat" type="row" />
                 <field name="exp_sante" type="row" />
@@ -988,6 +999,11 @@
                     string="&#201;tablissement de premi&#232;re ligne"
                 />
                 <filter
+                    domain="[('etabl_sante_pa','!=',False)]"
+                    name="etabl_sante_pa"
+                    string="&#201;tablissement de sant&#233; principal"
+                />
+                <filter
                     domain="[('etabl_sante_pa_','!=',False)]"
                     name="etabl_sante_pa_"
                     string="&#201;tablissement de sant&#233; principal"
@@ -1146,6 +1162,7 @@
                 <field name="email_perso" />
                 <field name="emploi_perso" />
                 <field name="etabl_prem_ligne_pa_" />
+                <field name="etabl_sante_pa" />
                 <field name="etabl_sante_pa_" />
                 <field name="etat" />
                 <field name="exp_sante" />

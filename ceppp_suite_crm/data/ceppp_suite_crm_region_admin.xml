@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_region_admin_abitibi_temiscamingue" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Abitibi-T&#233;miscamingue</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_bas_saint_laurent" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Bas Saint-Laurent</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_capitale_nationale" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Capitale Nationale</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_centre_du_quebec" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Centre-du-Qu&#233;bec</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_chaudiere_appalaches" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Chaudi&#232;re-Appalaches</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_cote_nord" model="ceppp.suite_crm.region_admin">
+            <field name="nom">C&#244;te Nord</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_estrie" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Estrie</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_gaspesie_iles_de_la_madeleine" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Gasp&#233;sie-&#238;les-de-la-Madeleine</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_lanaudiere" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Lanaudi&#232;re</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_laurentides" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Laurentides</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_laval" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Laval</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_mauricie" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Mauricie</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_monteregie" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Mont&#233;r&#233;gie</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_montreal" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Montr&#233;al</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_nord_du_quebec" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Nord-du-Qu&#233;bec</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_outaouais" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Outaouais</field>
+        </record>
+        <record id="ceppp_suite_crm_region_admin_saguenay_lac_saint_jean" model="ceppp.suite_crm.region_admin">
+            <field name="nom">Saguenay-Lac-Saint-Jean</field>
+        </record>
+    </data>
+</odoo>

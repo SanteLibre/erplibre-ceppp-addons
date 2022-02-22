@@ -48,10 +48,18 @@
     />
 
     <menuitem
+        id="suite_crm_hopital"
+        name="Suite crm hopital"
+        action="ceppp_suite_crm_hopital_suite_crm_hopital_action_window"
+        sequence="5"
+        parent="menu"
+    />
+
+    <menuitem
         id="suite_crm_partenariats"
         name="Suite crm partenariats"
         action="ceppp_suite_crm_partenariats_suite_crm_partenariats_action_window"
-        sequence="5"
+        sequence="6"
         parent="menu"
     />
 
@@ -59,7 +67,7 @@
         id="suite_crm_patients"
         name="Suite crm patients"
         action="ceppp_suite_crm_patients_suite_crm_patients_action_window"
-        sequence="6"
+        sequence="7"
         parent="menu"
     />
 
@@ -67,7 +75,15 @@
         id="suite_crm_perspective_patient"
         name="Suite crm perspective patient"
         action="ceppp_suite_crm_perspective_patient_suite_crm_perspective_patient_action_window"
-        sequence="7"
+        sequence="8"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_region_admin"
+        name="Suite crm region admin"
+        action="ceppp_suite_crm_region_admin_suite_crm_region_admin_action_window"
+        sequence="9"
         parent="menu"
     />
 </odoo>

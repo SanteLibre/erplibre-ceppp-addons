@@ -144,7 +144,17 @@ class CepppSuiteCrmPerspectivePatient(models.Model):
 
     duree_experience = fields.Char(string="Durée d'expérience (Années / Mois)")
 
+    etabl_prem_ligne = fields.Many2one(
+        comodel_name="ceppp.suite_crm.hopital",
+        string="Établissement de première ligne",
+    )
+
     etabl_prem_ligne_pa = fields.Char(string="Établissement de première ligne")
+
+    etabl_sante = fields.Many2one(
+        comodel_name="ceppp.suite_crm.hopital",
+        string="Établissement de santé principal",
+    )
 
     etabl_sante_pa = fields.Char(string="Établissement de santé principal")
 
