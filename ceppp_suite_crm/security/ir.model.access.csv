@@ -1,9 +1,11 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+ceppp_suite_crm_chapitre_maladie_access_user_types_/_internal_user,ceppp_suite_crm_chapitre_maladie Access User types / Internal User,model_ceppp_suite_crm_chapitre_maladie,base.group_user,1,1,1,1
 ceppp_suite_crm_commentaires_recruteur_access_user_types_/_internal_user,ceppp_suite_crm_commentaires_recruteur Access User types / Internal User,model_ceppp_suite_crm_commentaires_recruteur,base.group_user,1,1,1,1
 ceppp_suite_crm_entrevues_access_user_types_/_internal_user,ceppp_suite_crm_entrevues Access User types / Internal User,model_ceppp_suite_crm_entrevues,base.group_user,1,1,1,1
 ceppp_suite_crm_exp_patient_partenaire_access_user_types_/_internal_user,ceppp_suite_crm_exp_patient_partenaire Access User types / Internal User,model_ceppp_suite_crm_exp_patient_partenaire,base.group_user,1,1,1,1
 ceppp_suite_crm_formation_access_user_types_/_internal_user,ceppp_suite_crm_formation Access User types / Internal User,model_ceppp_suite_crm_formation,base.group_user,1,1,1,1
 ceppp_suite_crm_hopital_access_user_types_/_internal_user,ceppp_suite_crm_hopital Access User types / Internal User,model_ceppp_suite_crm_hopital,base.group_user,1,1,1,1
+ceppp_suite_crm_maladie_access_user_types_/_internal_user,ceppp_suite_crm_maladie Access User types / Internal User,model_ceppp_suite_crm_maladie,base.group_user,1,1,1,1
 ceppp_suite_crm_partenariats_access_user_types_/_internal_user,ceppp_suite_crm_partenariats Access User types / Internal User,model_ceppp_suite_crm_partenariats,base.group_user,1,1,1,1
 ceppp_suite_crm_patients_access_user_types_/_internal_user,ceppp_suite_crm_patients Access User types / Internal User,model_ceppp_suite_crm_patients,base.group_user,1,1,1,1
 ceppp_suite_crm_perspective_patient_access_user_types_/_internal_user,ceppp_suite_crm_perspective_patient Access User types / Internal User,model_ceppp_suite_crm_perspective_patient,base.group_user,1,1,1,1

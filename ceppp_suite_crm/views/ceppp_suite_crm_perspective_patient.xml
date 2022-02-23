@@ -118,6 +118,12 @@
                         <field name="preneur_decisions" />
                     </group>
                     <group>
+                        <field name="prob_sant" />
+                    </group>
+                    <group>
+                        <field name="prob_sant_pa" />
+                    </group>
+                    <group>
                         <field name="professionnels_sante" />
                     </group>
                     <group>
@@ -173,6 +179,8 @@
                 <field name="preferences" type="row" />
                 <field name="preferences_autre" type="row" />
                 <field name="preneur_decisions" type="row" />
+                <field name="prob_sant" type="row" />
+                <field name="prob_sant_pa" type="row" />
                 <field name="professionnels_sante" type="row" />
                 <field name="rel_patient" type="row" />
                 <field name="role_pp" type="row" />
@@ -222,6 +230,8 @@
                 <field name="preferences" />
                 <field name="preferences_autre" />
                 <field name="preneur_decisions" />
+                <field name="prob_sant" />
+                <field name="prob_sant_pa" />
                 <field name="professionnels_sante" />
                 <field name="rel_patient" />
                 <field name="role_pp" />
@@ -417,6 +427,16 @@
                                     </li>
                                     <li class="mb4">
                                         <strong>
+                                            <field name="prob_sant" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prob_sant_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
                                             <field name="professionnels_sante" />
                                         </strong>
                                     </li>
@@ -481,6 +501,8 @@
                 <field name="preferences" type="row" />
                 <field name="preferences_autre" type="row" />
                 <field name="preneur_decisions" type="row" />
+                <field name="prob_sant" type="row" />
+                <field name="prob_sant_pa" type="row" />
                 <field name="professionnels_sante" type="row" />
                 <field name="rel_patient" type="row" />
                 <field name="role_pp" type="row" />
@@ -623,6 +645,16 @@
                     string="Preneur de d&#233;cisions"
                 />
                 <filter
+                    domain="[('prob_sant','!=',False)]"
+                    name="prob_sant"
+                    string="Probl&#233;matiques de sant&#233;"
+                />
+                <filter
+                    domain="[('prob_sant_pa','!=',False)]"
+                    name="prob_sant_pa"
+                    string="Probl&#233;matiques de sant&#233;"
+                />
+                <filter
                     domain="[('professionnels_sante','!=',False)]"
                     name="professionnels_sante"
                     string="Professionnels de la sant&#233;"
@@ -675,6 +707,8 @@
                 <field name="preferences" />
                 <field name="preferences_autre" />
                 <field name="preneur_decisions" />
+                <field name="prob_sant" />
+                <field name="prob_sant_pa" />
                 <field name="professionnels_sante" />
                 <field name="rel_patient" />
                 <field name="role_pp" />

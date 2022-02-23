@@ -568,6 +568,21 @@ class CepppSuiteCrmPatients(models.Model):
         string="Problème respiratoire",
     )
 
+    prob_sant_pa = fields.Many2one(
+        comodel_name="ceppp.suite_crm.maladie",
+        string="Problématiques de santé",
+    )
+
+    prob_sant_pa_2 = fields.Many2one(
+        comodel_name="ceppp.suite_crm.maladie",
+        string="Problématique de santé #2",
+    )
+
+    prob_sant_pa_3 = fields.Many2one(
+        comodel_name="ceppp.suite_crm.maladie",
+        string="Problématique de santé #3",
+    )
+
     prob_somm = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Problèmes de sommeil",

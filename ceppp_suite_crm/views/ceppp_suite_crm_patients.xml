@@ -208,6 +208,15 @@
                         <field name="prob_resp" />
                     </group>
                     <group>
+                        <field name="prob_sant_pa" />
+                    </group>
+                    <group>
+                        <field name="prob_sant_pa_2" />
+                    </group>
+                    <group>
+                        <field name="prob_sant_pa_3" />
+                    </group>
+                    <group>
                         <field name="prob_somm" />
                     </group>
                     <group>
@@ -308,6 +317,9 @@
                 <field name="preferences_autre" type="row" />
                 <field name="prenom" type="row" />
                 <field name="prob_resp" type="row" />
+                <field name="prob_sant_pa" type="row" />
+                <field name="prob_sant_pa_2" type="row" />
+                <field name="prob_sant_pa_3" type="row" />
                 <field name="prob_somm" type="row" />
                 <field name="recruteur" type="row" />
                 <field name="rel_patient" type="row" />
@@ -392,6 +404,9 @@
                 <field name="preferences_autre" />
                 <field name="prenom" />
                 <field name="prob_resp" />
+                <field name="prob_sant_pa" />
+                <field name="prob_sant_pa_2" />
+                <field name="prob_sant_pa_3" />
                 <field name="prob_somm" />
                 <field name="recruteur" />
                 <field name="rel_patient" />
@@ -742,6 +757,21 @@
                                     </li>
                                     <li class="mb4">
                                         <strong>
+                                            <field name="prob_sant_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prob_sant_pa_2" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prob_sant_pa_3" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
                                             <field name="prob_somm" />
                                         </strong>
                                     </li>
@@ -861,6 +891,9 @@
                 <field name="preferences_autre" type="row" />
                 <field name="prenom" type="row" />
                 <field name="prob_resp" type="row" />
+                <field name="prob_sant_pa" type="row" />
+                <field name="prob_sant_pa_2" type="row" />
+                <field name="prob_sant_pa_3" type="row" />
                 <field name="prob_somm" type="row" />
                 <field name="recruteur" type="row" />
                 <field name="rel_patient" type="row" />
@@ -1105,6 +1138,21 @@
                 />
                 <filter domain="[('prenom','!=',False)]" name="prenom" string="Pr&#233;nom" />
                 <filter domain="[('prob_resp','!=',False)]" name="prob_resp" string="Probl&#232;me respiratoire" />
+                <filter
+                    domain="[('prob_sant_pa','!=',False)]"
+                    name="prob_sant_pa"
+                    string="Probl&#233;matiques de sant&#233;"
+                />
+                <filter
+                    domain="[('prob_sant_pa_2','!=',False)]"
+                    name="prob_sant_pa_2"
+                    string="Probl&#233;matique de sant&#233; #2"
+                />
+                <filter
+                    domain="[('prob_sant_pa_3','!=',False)]"
+                    name="prob_sant_pa_3"
+                    string="Probl&#233;matique de sant&#233; #3"
+                />
                 <filter domain="[('prob_somm','!=',False)]" name="prob_somm" string="Probl&#232;mes de sommeil" />
                 <filter domain="[('recruteur','!=',False)]" name="recruteur" string="Responsable de l'entrevue" />
                 <filter domain="[('rel_patient','!=',False)]" name="rel_patient" string="Relation avec le patient" />
@@ -1197,6 +1245,9 @@
                 <field name="preferences_autre" />
                 <field name="prenom" />
                 <field name="prob_resp" />
+                <field name="prob_sant_pa" />
+                <field name="prob_sant_pa_2" />
+                <field name="prob_sant_pa_3" />
                 <field name="prob_somm" />
                 <field name="recruteur" />
                 <field name="rel_patient" />

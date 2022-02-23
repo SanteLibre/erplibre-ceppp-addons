@@ -1084,6 +1084,16 @@ class CepppSuiteCrmPerspectivePatient(models.Model):
 
     preneur_decisions = fields.Text(string="Preneur de décisions")
 
+    prob_sant = fields.Many2one(
+        comodel_name="ceppp.suite_crm.maladie",
+        string="Problématiques de santé",
+    )
+
+    prob_sant_pa = fields.Many2one(
+        comodel_name="ceppp.suite_crm.maladie",
+        string="Problématiques de santé",
+    )
+
     professionnels_sante = fields.Char(string="Professionnels de la santé")
 
     rel_patient = fields.Selection(

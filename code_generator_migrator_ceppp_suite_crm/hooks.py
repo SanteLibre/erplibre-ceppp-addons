@@ -559,6 +559,76 @@ class PHPParser:
         )
 
 
+def generate_model_from_2_level_selection(
+    lst_added_model_name,
+    code_generator_id,
+    dct_option_fr,
+    dct_field_info,
+    model_name_level_1,
+    model_name_level_2,
+    field_description_level_1,
+    field_name_level_1,
+):
+    dct_region_admin_data_id = {}
+    if model_name_level_1 not in lst_added_model_name:
+        dct_new_field = {
+            "nom": {
+                "ttype": "char",
+            }
+        }
+        dct_new_model = {
+            "rec_name": "nom",
+            "nomenclator": True,
+        }
+        region_admin_model_id = code_generator_id.add_update_model(
+            model_name_level_1,
+            dct_field=dct_new_field,
+            dct_model=dct_new_model,
+        )
+        lst_added_model_name.append(model_name_level_1)
+        # Add data
+        lst_data_region_admin = [{"nom": a} for a in dct_option_fr.keys()]
+        for dat_region_admin in lst_data_region_admin:
+            data_id = region_admin_model_id.create(dat_region_admin)
+            dct_region_admin_data_id[data_id.nom] = data_id.id
+    if model_name_level_2 not in lst_added_model_name:
+        dct_new_field = {
+            "nom": {
+                "ttype": "char",
+            },
+            field_name_level_1: {
+                "ttype": "many2one",
+                "field_description": field_description_level_1,
+                "relation": model_name_level_1,
+            },
+        }
+        dct_new_model = {
+            "rec_name": "nom",
+            "nomenclator": True,
+        }
+        hopital_model_id = code_generator_id.add_update_model(
+            model_name_level_2,
+            dct_field=dct_new_field,
+            dct_model=dct_new_model,
+        )
+        lst_added_model_name.append(model_name_level_2)
+        # Add data
+        for (
+            region_admin,
+            dct_hopital,
+        ) in dct_option_fr.items():
+            for hopital_name in dct_hopital.values():
+                hopital_model_id.create(
+                    {
+                        "nom": hopital_name,
+                        field_name_level_1: dct_region_admin_data_id.get(
+                            region_admin
+                        ),
+                    }
+                )
+    dct_field_info["relation"] = model_name_level_2
+
+
 def post_init_hook(cr, e):
     php_parser = PHPParser()
     dct_parser = php_parser.get_dct_parser()
@@ -760,103 +830,32 @@ def post_init_hook(cr, e):
                                             list(dct_option_fr.items())
                                         )
                                     elif suite_crm_option == "etab_sante_list":
-                                        # Hardcode hack to support this
-                                        new_model_region_admin_name = (
-                                            f"{prefix_model}region_admin"
+                                        generate_model_from_2_level_selection(
+                                            lst_added_model_name,
+                                            code_generator_id,
+                                            dct_option_fr,
+                                            dct_field_info,
+                                            f"{prefix_model}region_admin",
+                                            f"{prefix_model}hopital",
+                                            "Région administrative",
+                                            "region_admin_id",
                                         )
-                                        dct_region_admin_data_id = {}
-                                        if (
-                                            new_model_region_admin_name
-                                            not in lst_added_model_name
-                                        ):
-                                            dct_new_field = {
-                                                "nom": {
-                                                    "ttype": "char",
-                                                }
-                                            }
-                                            dct_new_model = {
-                                                "rec_name": "nom",
-                                                "nomenclator": True,
-                                            }
-                                            region_admin_model_id = code_generator_id.add_update_model(
-                                                new_model_region_admin_name,
-                                                dct_field=dct_new_field,
-                                                dct_model=dct_new_model,
-                                            )
-                                            lst_added_model_name.append(
-                                                new_model_region_admin_name
-                                            )
-                                            # Add data
-                                            lst_data_region_admin = [
-                                                {"nom": a}
-                                                for a in dct_option_fr.keys()
-                                            ]
-                                            for (
-                                                dat_region_admin
-                                            ) in lst_data_region_admin:
-                                                data_id = region_admin_model_id.create(
-                                                    dat_region_admin
-                                                )
-                                                dct_region_admin_data_id[
-                                                    data_id.nom
-                                                ] = data_id.id
-                                        new_model_hopital_name = (
-                                            f"{prefix_model}hopital"
-                                        )
-                                        if (
-                                            new_model_hopital_name
-                                            not in lst_added_model_name
-                                        ):
-                                            dct_new_field = {
-                                                "nom": {
-                                                    "ttype": "char",
-                                                },
-                                                "region_admin_id": {
-                                                    "ttype": "many2one",
-                                                    "field_description": (
-                                                        "Région administrative"
-                                                    ),
-                                                    "relation": new_model_region_admin_name,
-                                                },
-                                            }
-                                            dct_new_model = {
-                                                "rec_name": "nom",
-                                                "nomenclator": True,
-                                            }
-                                            hopital_model_id = code_generator_id.add_update_model(
-                                                new_model_hopital_name,
-                                                dct_field=dct_new_field,
-                                                dct_model=dct_new_model,
-                                            )
-                                            lst_added_model_name.append(
-                                                new_model_hopital_name
-                                            )
-                                            # Add data
-                                            for (
-                                                region_admin,
-                                                dct_hopital,
-                                            ) in dct_option_fr.items():
-                                                for (
-                                                    hopital_name
-                                                ) in dct_hopital.values():
-                                                    hopital_model_id.create(
-                                                        {
-                                                            "nom": hopital_name,
-                                                            "region_admin_id": dct_region_admin_data_id.get(
-                                                                region_admin
-                                                            ),
-                                                        }
-                                                    )
                                         new_type = "many2one"
-                                        dct_field_info["relation"] = new_model_hopital_name
                                         # No need translation in english for this software with hospital
                                         ignore_en_translation = True
-                                        # TODO added field linked to this model
                                     elif suite_crm_option == "cim10_list":
-                                        # Hardcode hack to support this
-                                        # TODO
-                                        print("fds")
-                                        continue
+                                        generate_model_from_2_level_selection(
+                                            lst_added_model_name,
+                                            code_generator_id,
+                                            dct_option_fr,
+                                            dct_field_info,
+                                            f"{prefix_model}chapitre_maladie",
+                                            f"{prefix_model}maladie",
+                                            "Chapitre maladie",
+                                            "chapitre_maladie_id",
+                                        )
+                                        new_type = "many2one"
+                                        ignore_en_translation = True
                                     else:
                                         _logger.error(
                                             "Not supported option"
@@ -879,7 +878,9 @@ def post_init_hook(cr, e):
                                                     f" {type(value_option)} for"
                                                     " dct option en."
                                                 )
-                                                has_error_value_is_not_str = True
+                                                has_error_value_is_not_str = (
+                                                    True
+                                                )
                                                 break
                                 if has_error_value_is_not_str:
                                     # Don't create the field who will bug the system

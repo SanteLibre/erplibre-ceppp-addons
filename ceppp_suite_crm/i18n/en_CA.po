@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-23 05:23+0000\n"
-"PO-Revision-Date: 2022-02-23 05:23+0000\n"
+"POT-Creation-Date: 2022-02-23 06:41+0000\n"
+"PO-Revision-Date: 2022-02-23 06:41+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -593,6 +593,13 @@ msgid "Ceppp Suite Crm"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_view_search
+msgid "Ceppp suite crm chapitre maladie"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_commentaires_recruteur_view_graph
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_commentaires_recruteur_view_pivot
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_commentaires_recruteur_view_search
@@ -628,6 +635,13 @@ msgid "Ceppp suite crm hopital"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_maladie_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_maladie_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_maladie_view_search
+msgid "Ceppp suite crm maladie"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_partenariats_view_graph
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_partenariats_view_pivot
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_partenariats_view_search
@@ -658,6 +672,12 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,education_perso:0
 msgid "Certificat"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie__chapitre_maladie_id
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_maladie_view_search
+msgid "Chapitre maladie"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -987,11 +1007,13 @@ msgid "Cozaar"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__create_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_commentaires_recruteur__create_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__create_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__create_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__create_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_hopital__create_uid
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie__create_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_partenariats__create_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__create_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__create_uid
@@ -1000,11 +1022,13 @@ msgid "Created by"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__create_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_commentaires_recruteur__create_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__create_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__create_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__create_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_hopital__create_date
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie__create_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_partenariats__create_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__create_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__create_date
@@ -1243,11 +1267,13 @@ msgid "Diprolene gel / lotion / oint"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__display_name
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_commentaires_recruteur__display_name
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__display_name
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__display_name
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__display_name
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_hopital__display_name
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie__display_name
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_partenariats__display_name
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__display_name
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__display_name
@@ -1805,11 +1831,19 @@ msgid "Hépatologie"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_region_admin__hopital_ids
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_region_admin_view_search
+msgid "Hôpitaux"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__id
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_commentaires_recruteur__id
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__id
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__id
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__id
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_hopital__id
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie__id
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_partenariats__id
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__id
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__id
@@ -1984,11 +2018,13 @@ msgid "Lasix"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie____last_update
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_commentaires_recruteur____last_update
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_entrevues____last_update
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire____last_update
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation____last_update
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_hopital____last_update
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie____last_update
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_partenariats____last_update
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients____last_update
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient____last_update
@@ -1997,11 +2033,13 @@ msgid "Last Modified on"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__write_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_commentaires_recruteur__write_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__write_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__write_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__write_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_hopital__write_uid
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie__write_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_partenariats__write_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__write_uid
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__write_uid
@@ -2010,11 +2048,13 @@ msgid "Last Updated by"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__write_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_commentaires_recruteur__write_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__write_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__write_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__write_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_hopital__write_date
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie__write_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_partenariats__write_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__write_date
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__write_date
@@ -2177,6 +2217,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_perspective_patient_view_search
 msgid "Maladie rare"
 msgstr "Rare disease"
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__maladie_ids
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_view_search
+msgid "Maladies"
+msgstr ""
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
@@ -2629,11 +2675,15 @@ msgid "Noir"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__nom
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__name
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_hopital__nom
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie__nom
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_region_admin__nom
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_view_search
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_exp_patient_partenaire_view_search
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_hopital_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_maladie_view_search
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_region_admin_view_search
 msgid "Nom"
 msgstr "Name"
@@ -3174,6 +3224,27 @@ msgid "Problèmes de sommeil"
 msgstr "Sleeping problems"
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__prob_sant_pa_2
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_search
+msgid "Problématique de santé #2"
+msgstr "Health concern #2"
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__prob_sant_pa_3
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_search
+msgid "Problématique de santé #3"
+msgstr "Health concern #3"
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__prob_sant_pa
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__prob_sant
+#: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__prob_sant_pa
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_perspective_patient_view_search
+msgid "Problématiques de santé"
+msgstr "Health concerns"
+
+#. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Procardia XL"
@@ -3693,6 +3764,12 @@ msgid "Starlix"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.actions.act_window,name:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_suite_crm_chapitre_maladie_action_window
+#: model:ir.ui.menu,name:ceppp_suite_crm.suite_crm_chapitre_maladie
+msgid "Suite crm chapitre maladie"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model:ir.actions.act_window,name:ceppp_suite_crm.ceppp_suite_crm_commentaires_recruteur_suite_crm_commentaires_recruteur_action_window
 #: model:ir.ui.menu,name:ceppp_suite_crm.suite_crm_commentaires_recruteur
 msgid "Suite crm commentaires recruteur"
@@ -3720,6 +3797,12 @@ msgstr ""
 #: model:ir.actions.act_window,name:ceppp_suite_crm.ceppp_suite_crm_hopital_suite_crm_hopital_action_window
 #: model:ir.ui.menu,name:ceppp_suite_crm.suite_crm_hopital
 msgid "Suite crm hopital"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.actions.act_window,name:ceppp_suite_crm.ceppp_suite_crm_maladie_suite_crm_maladie_action_window
+#: model:ir.ui.menu,name:ceppp_suite_crm.suite_crm_maladie
+msgid "Suite crm maladie"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -3879,11 +3962,13 @@ msgid "Tisse et entretien des réseaux"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_view_form
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_commentaires_recruteur_view_form
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_entrevues_view_form
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_exp_patient_partenaire_view_form
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_formation_view_form
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_hopital_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_maladie_view_form
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_partenariats_view_form
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_form
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_perspective_patient_view_form
@@ -4313,6 +4398,11 @@ msgid "Zyrtec"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model,name:ceppp_suite_crm.model_ceppp_suite_crm_chapitre_maladie
+msgid "ceppp_suite_crm_chapitre_maladie"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model:ir.model,name:ceppp_suite_crm.model_ceppp_suite_crm_commentaires_recruteur
 msgid "ceppp_suite_crm_commentaires_recruteur"
 msgstr ""
@@ -4335,6 +4425,11 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: model:ir.model,name:ceppp_suite_crm.model_ceppp_suite_crm_hopital
 msgid "ceppp_suite_crm_hopital"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model,name:ceppp_suite_crm.model_ceppp_suite_crm_maladie
+msgid "ceppp_suite_crm_maladie"
 msgstr ""
 
 #. module: ceppp_suite_crm
