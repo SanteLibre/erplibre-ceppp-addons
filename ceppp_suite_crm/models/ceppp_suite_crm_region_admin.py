@@ -6,7 +6,7 @@ class CepppSuiteCrmRegionAdmin(models.Model):
     _description = "ceppp_suite_crm_region_admin"
     _rec_name = "nom"
 
-    nom = fields.Char()
+    nom = fields.Char(translate=True)
 
     hopital_ids = fields.One2many(
         comodel_name="ceppp.suite_crm.hopital",

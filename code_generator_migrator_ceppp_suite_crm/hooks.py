@@ -576,6 +576,7 @@ def generate_model_from_2_level_selection(
         dct_new_field = {
             "nom": {
                 "ttype": "char",
+                "translate": True,
             }
         }
         dct_new_model = {
@@ -597,6 +598,7 @@ def generate_model_from_2_level_selection(
         dct_new_field = {
             "nom": {
                 "ttype": "char",
+                "translate": True,
             },
             field_name_level_1: {
                 "ttype": "many2one",

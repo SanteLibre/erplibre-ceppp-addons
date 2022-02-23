@@ -6,7 +6,7 @@ class CepppSuiteCrmMaladie(models.Model):
     _description = "ceppp_suite_crm_maladie"
     _rec_name = "nom"
 
-    nom = fields.Char()
+    nom = fields.Char(translate=True)
 
     chapitre_maladie_id = fields.Many2one(
         comodel_name="ceppp.suite_crm.chapitre_maladie",
