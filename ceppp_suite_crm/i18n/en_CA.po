@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-23 07:39+0000\n"
-"PO-Revision-Date: 2022-02-23 07:39+0000\n"
+"POT-Creation-Date: 2022-02-23 09:44+0000\n"
+"PO-Revision-Date: 2022-02-23 09:44+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,135 +18,135 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_abitibi_temiscamingue
 msgid "Abitibi-Témiscamingue"
-msgstr ""
+msgstr "Abitibi-Témiscamingue"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_absence_acquise_du_sein_et_du_poumon_en_raison_d'une_tumeur_maligne_primitive
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_absence_acquise_du_sein_et_du_poumon_en_raison_dune_tumeur_maligne_primitive
 msgid ""
 "Absence acquise du sein et du poumon en raison d’une tumeur maligne "
 "primitive"
-msgstr ""
+msgstr "Acquired Absence of Breast and Lung Due to Primary Malignancy"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_absence_de_signes_vitaux_(asv)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_absence_de_signes_vitaux_asv
 msgid "Absence de signes vitaux (ASV)"
-msgstr ""
+msgstr "Vital Signs Absent (VSA)"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accident_vasculaire_cerebral_(avc)_perinatal
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accident_vasculaire_cerebral_avc_perinatal
 msgid "Accident vasculaire cérébral (AVC) périnatal"
-msgstr ""
+msgstr "Perinatal Stroke"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accidents_vasculaires_cerebraux_(avc)_hemorragiques,_ischemiques_et_non_precises
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accidents_vasculaires_cerebraux_avc_hemorragiques_ischemiques_et_non_precises
 msgid ""
 "Accidents vasculaires cérébraux (AVC) hémorragiques, ischémiques et non "
 "précisés"
-msgstr ""
+msgstr "Strokes: Hemorrhagic, Ischemic and Unspecified"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Accolate"
-msgstr ""
+msgstr "Accolate"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.exp_patient_partenaire,role_experience:0
 #: selection:ceppp.suite_crm.patients,role_pp:0
 #: selection:ceppp.suite_crm.perspective_patient,role_pp:0
 msgid "Accompagnateur"
-msgstr ""
+msgstr "Guide"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_ppc:0
 msgid "Accompagne un individu ou un groupe"
-msgstr ""
+msgstr "Assists individuals or groups"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accouchement_avec_antecedent_de_cesarienne
 msgid "Accouchement avec antécédent de césarienne"
-msgstr ""
+msgstr "Delivery With History of Cesarean Section"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accouchement_normal
 msgid "Accouchement normal"
-msgstr ""
+msgstr "Delivery in a Normal Case"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Accuneb"
-msgstr ""
+msgstr "Accuneb"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Accuretic"
-msgstr ""
+msgstr "Accuretic"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Aceon"
-msgstr ""
+msgstr "Aceon"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_acidemie_foetale
 msgid "Acidémie foetale"
-msgstr ""
+msgstr "Fetal Acidemia"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Aclovate"
-msgstr ""
+msgstr "Aclovate"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,etat:0
 msgid "Actif"
-msgstr ""
+msgstr "Active"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Actigall"
-msgstr ""
+msgstr "Actigall"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Actiq"
-msgstr ""
+msgstr "Actiq"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Adalat CC"
-msgstr ""
+msgstr "Adalat CC"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Adderall"
-msgstr ""
+msgstr "Adderall"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Adderall XR"
-msgstr ""
+msgstr "Adderall XR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Adipex-P"
-msgstr ""
+msgstr "Adipex-P"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_admissions_a_la_suite_d'un_diagnostic_de_cancer
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_admissions_a_la_suite_dun_diagnostic_de_cancer
 msgid "Admissions à la suite d’un diagnostic de cancer"
-msgstr ""
+msgstr "Admissions Following Diagnosis of Cancer"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__adresse_perso
@@ -163,18 +163,18 @@ msgstr "Email"
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_affections_post_intervention
 msgid "Affections post-intervention"
-msgstr ""
+msgstr "Post-Intervention Conditions"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,groupe_designe:0
 msgid "Afro-Américain"
-msgstr ""
+msgstr "Afro-American"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Agrylin"
-msgstr ""
+msgstr "Agrylin"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__assistance_mob
@@ -186,25 +186,25 @@ msgstr "Aides à la mobilité"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Aldactazide"
-msgstr ""
+msgstr "Aldactazide"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Aldactone"
-msgstr ""
+msgstr "Aldactone"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Aldara"
-msgstr ""
+msgstr "Aldara"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Allegra"
-msgstr ""
+msgstr "Allegra"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -213,62 +213,62 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Allergologie ou l'immunologie"
-msgstr ""
+msgstr "Allergologie ou l'immunologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Alphagan P"
-msgstr ""
+msgstr "Alphagan P"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Altace"
-msgstr ""
+msgstr "Altace"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Amaryl"
-msgstr ""
+msgstr "Amaryl"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ambien"
-msgstr ""
+msgstr "Ambien"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ambien CR"
-msgstr ""
+msgstr "Ambien CR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Amerge"
-msgstr ""
+msgstr "Amerge"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Anafranil"
-msgstr ""
+msgstr "Anafranil"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_ppc:0
 msgid ""
 "Analyse des situations relationelles de différents niveaux de complexité"
-msgstr ""
+msgstr "Analyzes relational scenarios at many levels of complexity"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Anaprox"
-msgstr ""
+msgstr "Anaprox"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -277,7 +277,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Andrologie"
-msgstr ""
+msgstr "Andrologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -286,123 +286,123 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Anesthésiologie"
-msgstr ""
+msgstr "Anesthésiologie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_angine_de_poitrine
 msgid "Angine de poitrine"
-msgstr ""
+msgstr "Angina"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,langue_corresp:0
 #: selection:ceppp.suite_crm.patients,langue_parlee:0
 msgid "Anglais"
-msgstr ""
+msgstr "English"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_anticoagulotherapie_:_gestion_et_effets_indesirables
 msgid "Anticoagulothérapie : gestion et effets indésirables"
-msgstr ""
+msgstr "Anticoagulation Therapy: Management and Adverse Effects"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Antivert"
-msgstr ""
+msgstr "Antivert"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_anemie_au_cours_d'une_maladie_chronique
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_anemie_au_cours_dune_maladie_chronique
 msgid "Anémie au cours d’une maladie chronique"
-msgstr ""
+msgstr "Anemia of Chronic Disease"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_anemie_due_a_une_perte_de_sang_aigue
 msgid "Anémie due à une perte de sang aiguë"
-msgstr ""
+msgstr "Acute Blood Loss Anemia"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_anevrismes
 msgid "Anévrismes"
-msgstr ""
+msgstr "Aneurysms"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,disponibilites:0
 #: selection:ceppp.suite_crm.perspective_patient,disponibilites:0
 msgid "Après-midi"
-msgstr ""
+msgstr "Afternoons"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Aralen"
-msgstr ""
+msgstr "Aralen"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Arava"
-msgstr ""
+msgstr "Arava"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Aricept"
-msgstr ""
+msgstr "Aricept"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Aricept ODT"
-msgstr ""
+msgstr "Aricept ODT"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_arret_cardiaque
 msgid "Arrêt cardiaque"
-msgstr ""
+msgstr "Cardiac Arrest"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_arthrectomie_et_arthroplastie
 msgid "Arthrectomie et arthroplastie"
-msgstr ""
+msgstr "Arthrectomy and Arthroplasty"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_arthrose
 msgid "Arthrose"
-msgstr ""
+msgstr "Osteoarthritis"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,groupe_designe:0
 msgid "Asiatique"
-msgstr ""
+msgstr "Asian"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_ppc:0
 msgid "Assume un co-leadership"
-msgstr ""
+msgstr "Able to share leadership responsibilities"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Astelin"
-msgstr ""
+msgstr "Astelin"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_asthme
 msgid "Asthme"
-msgstr ""
+msgstr "Asthma"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ativan"
-msgstr ""
+msgstr "Ativan"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Atrovent Nasal Spray"
-msgstr ""
+msgstr "Atrovent Nasal Spray"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_de_codes_pour_des_lesions_superficielles_multiples_ou_plaies_ouvertes_multiples
@@ -410,20 +410,25 @@ msgid ""
 "Attribution de codes pour des lésions superficielles multiples ou plaies "
 "ouvertes multiples"
 msgstr ""
+"Code Assignment for Multiple Superficial Injuries or Multiple Open Wounds"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_plusieurs_regions_corporelles
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_plusieurs_regions_c
 msgid ""
 "Attribution de codes pour plusieurs types de lésions significatives touchant"
 " plusieurs régions corporelles"
 msgstr ""
+"Code Assignment for Multiple Types of Significant Injuries Involving "
+"Multiple Body Regions"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_une_seule_region_corporelle
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_une_seule_region_co
 msgid ""
 "Attribution de codes pour plusieurs types de lésions significatives touchant"
 " une seule région corporelle"
 msgstr ""
+"Code Assignment for Multiple Types of Significant Injuries Involving a "
+"Single Body Region"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_du_diagnostic_principal_et_du_probleme_principal_dans_le_cas_de_brulures_multiples
@@ -431,18 +436,19 @@ msgid ""
 "Attribution du diagnostic principal et du problème principal dans le cas de "
 "brûlures multiples"
 msgstr ""
+"Assignment of Most Responsible Diagnosis/Main Problem in Multiple Burns"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Augmentin"
-msgstr ""
+msgstr "Augmentin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Augmentin XR"
-msgstr ""
+msgstr "Augmentin XR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,education_perso:0
@@ -455,7 +461,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,preferences:0
 #: selection:ceppp.suite_crm.perspective_patient,rel_patient:0
 msgid "Autre"
-msgstr ""
+msgstr "Other"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__education_perso_autre
@@ -466,7 +472,7 @@ msgstr "Other level (specify)"
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,deplacements:0
 msgid "Autrement"
-msgstr ""
+msgstr "Other means"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_autre
@@ -487,60 +493,60 @@ msgstr "Other information about preferences?"
 #: selection:ceppp.suite_crm.patients,role_pp:0
 #: selection:ceppp.suite_crm.perspective_patient,role_pp:0
 msgid "Aviseur"
-msgstr ""
+msgstr "Advisor"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Axid"
-msgstr ""
+msgstr "Axid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Aygestin"
-msgstr ""
+msgstr "Aygestin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Azulfidine"
-msgstr ""
+msgstr "Azulfidine"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Azulfidine EN-TABS"
-msgstr ""
+msgstr "Azulfidine EN-TABS"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Bactroban"
-msgstr ""
+msgstr "Bactroban"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_bas_saint_laurent
 msgid "Bas Saint-Laurent"
-msgstr ""
+msgstr "Bas Saint-Laurent"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Bentyl"
-msgstr ""
+msgstr "Bentyl"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Benzac AC"
-msgstr ""
+msgstr "Benzac AC"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Benzamycin"
-msgstr ""
+msgstr "Benzamycin"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__assistance_audition
@@ -553,153 +559,153 @@ msgstr "Besoin d'assistance"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Betagan"
-msgstr ""
+msgstr "Betagan"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Betapace AF"
-msgstr ""
+msgstr "Betapace AF"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Biaxin"
-msgstr ""
+msgstr "Biaxin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Biaxin XL"
-msgstr ""
+msgstr "Biaxin XL"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_biopsie_des_ganglions_sentinelles
 msgid "Biopsie des ganglions sentinelles"
-msgstr ""
+msgstr "Sentinel Lymph Node Biopsy"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,groupe_designe:0
 msgid "Blanc"
-msgstr ""
+msgstr "Caucasian"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Bleph-10"
-msgstr ""
+msgstr "Bleph-10"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_blessures_par_ecrasement
 msgid "Blessures par écrasement"
-msgstr ""
+msgstr "Crush Injuries"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Bontril"
-msgstr ""
+msgstr "Bontril"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_brachytherapie
 msgid "Brachythérapie"
-msgstr ""
+msgstr "Brachytherapy"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Brethine"
-msgstr ""
+msgstr "Brethine"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Brevicon"
-msgstr ""
+msgstr "Brevicon"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_brulures_et_corrosions
 msgid "Brûlures et corrosions"
-msgstr ""
+msgstr "Burns and Corrosions"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_brulures_touchant_plusieurs_regions_corporelles
 msgid "Brûlures touchant plusieurs régions corporelles"
-msgstr ""
+msgstr "Burns of Multiple Body Regions"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,emploi_perso:0
 msgid "Bénévolat"
-msgstr ""
+msgstr "Volunteering"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "CANet"
-msgstr ""
+msgstr "CANet"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "CEPPP"
-msgstr ""
+msgstr "CEPPP"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_chu_sainte_justine_centre_universitaire_mere_enfant
 msgid "CHU Sainte-Justine - Centre Universitaire mère-enfant"
-msgstr ""
+msgstr "CHU Sainte-Justine - Centre Universitaire mère-enfant"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_chul_et_centre_mere_enfant_soleil_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_chul_et_centre_mere_enfant_soleil_chu_de_quebec_universite_laval
 msgid "CHUL et Centre mère-enfant Soleil (CHU de Québec Université Laval)"
-msgstr ""
+msgstr "CHUL et Centre mère-enfant Soleil (CHU de Québec Université Laval)"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "CHUM"
-msgstr ""
+msgstr "CHUM"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_crsss_de_la_baie_james_(centre_de_sante_de_chibougamau)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_crsss_de_la_baie_james_centre_de_sante_de_chibougamau
 msgid "CRSSS de la Baie-James (Centre de santé de Chibougamau)"
-msgstr ""
+msgstr "CRSSS de la Baie-James (Centre de santé de Chibougamau)"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cafergot"
-msgstr ""
+msgstr "Cafergot"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Calan"
-msgstr ""
+msgstr "Calan"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Calan SR"
-msgstr ""
+msgstr "Calan SR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "CanVector"
-msgstr ""
+msgstr "CanVector"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,assistance_mob:0
 msgid "Canne"
-msgstr ""
+msgstr "Walking stick"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_capitale_nationale
 msgid "Capitale Nationale"
-msgstr ""
+msgstr "Capitale Nationale"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Carafate"
-msgstr ""
+msgstr "Carafate"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -708,105 +714,105 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Cardiologie"
-msgstr ""
+msgstr "Cardiologie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_cardiopathie_ischemique_chronique
 msgid "Cardiopathie ischémique chronique"
-msgstr ""
+msgstr "Chronic Ischemic Heart Disease"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cardizem"
-msgstr ""
+msgstr "Cardizem"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cardizem CD"
-msgstr ""
+msgstr "Cardizem CD"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cardizem LA"
-msgstr ""
+msgstr "Cardizem LA"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cardura"
-msgstr ""
+msgstr "Cardura"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cataflam"
-msgstr ""
+msgstr "Cataflam"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Catapres"
-msgstr ""
+msgstr "Catapres"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_catheters_veineux_centraux
 msgid "Cathéters veineux centraux"
-msgstr ""
+msgstr "Central Venous Catheters"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ceftin"
-msgstr ""
+msgstr "Ceftin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cellcept"
-msgstr ""
+msgstr "Cellcept"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_cellulite
 msgid "Cellulite"
-msgstr ""
+msgstr "Cellulitis"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_cloutier_du_rivage
 msgid "Centre Cloutier-du-Rivage"
-msgstr ""
+msgstr "Centre Cloutier-du-Rivage"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_la_sarre
 msgid "Centre Hospitalier La sarre"
-msgstr ""
+msgstr "Centre Hospitalier La sarre"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_magog
 msgid "Centre Hospitalier Magog"
-msgstr ""
+msgstr "Centre Hospitalier Magog"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_de_st_mary
 msgid "Centre Hospitalier de St Mary"
-msgstr ""
+msgstr "Centre Hospitalier de St Mary"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_du_pontiac
 msgid "Centre Hospitalier du Pontiac"
-msgstr ""
+msgstr "Centre Hospitalier du Pontiac"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_regional_du_grand_portage
 msgid "Centre Hospitalier régional du Grand-Portage"
-msgstr ""
+msgstr "Centre Hospitalier régional du Grand-Portage"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_universitaire_de_sante_mcgill_(cusm)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_universitaire_de_sante_mcgill_cusm
 msgid "Centre Universitaire de santé McGill (CUSM)"
-msgstr ""
+msgstr "Centre Universitaire de santé McGill (CUSM)"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__centre_recrutement
@@ -817,37 +823,37 @@ msgstr "Centre de recrutement assigné"
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_geriatrique_maimonides_donald_berman
 msgid "Centre gériatrique Maimonides Donald Berman"
-msgstr ""
+msgstr "Centre gériatrique Maimonides Donald Berman"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_trois_pistoles
 msgid "Centre hospitalier Trois-Pistoles"
-msgstr ""
+msgstr "Centre hospitalier Trois-Pistoles"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_affilie_universitaire_regional
 msgid "Centre hospitalier affilié universitaire régional"
-msgstr ""
+msgstr "Centre hospitalier affilié universitaire régional"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_de_coaticook
 msgid "Centre hospitalier de Coaticook"
-msgstr ""
+msgstr "Centre hospitalier de Coaticook"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_de_l_universite_de_montreal_(chum)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_de_l_universite_de_montreal_chum
 msgid "Centre hospitalier de l'Université de Montréal (CHUM)"
-msgstr ""
+msgstr "Centre hospitalier de l'Université de Montréal (CHUM)"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_regional_de_lanaudiere_(chrdl)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_regional_de_lanaudiere_chrdl
 msgid "Centre hospitalier régional de Lanaudière (CHRDL)"
-msgstr ""
+msgstr "Centre hospitalier régional de Lanaudière (CHRDL)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_centre_du_quebec
 msgid "Centre-du-Québec"
-msgstr ""
+msgstr "Centre-du-Québec"
 
 #. module: ceppp_suite_crm
 #: model:ir.ui.menu,name:ceppp_suite_crm.ceppp_suite_crm
@@ -934,99 +940,108 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,education_perso:0
 msgid "Certificat"
-msgstr ""
+msgstr "Undergraduate degree"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_i_certaines_maladies_infectieuses_et_parasitaires
 msgid "Chapitre I - Certaines maladies infectieuses et parasitaires"
-msgstr ""
+msgstr "Chapter I — Certain infectious and parasitic diseases"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs
 msgid "Chapitre II - Tumeurs"
-msgstr ""
+msgstr "Chapter II — Neoplasms"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_systeme_immunitaire
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_s
 msgid ""
 "Chapitre III - Maladies du sang et des organes hematopoietiques et certains "
 "troubles du systeme immunitaire"
 msgstr ""
+"Chapter III — Diseases of the blood and blood-forming organs and certain "
+"disorders involving the immune mechanism"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_iv_maladies_endocriniennes,_nutritionnelles_et_metaboliques
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_iv_maladies_endocriniennes_nutritionnelles_et_metaboliques
 msgid "Chapitre IV - Maladies endocriniennes, nutritionnelles et metaboliques"
-msgstr ""
+msgstr "Chapter IV — Endocrine, nutritional and metabolic diseases"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire
 msgid "Chapitre IX - Maladies de l'appareil circulatoire"
-msgstr ""
+msgstr "Chapter IX — Diseases of the circulatory system"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_vi_maladies_du_systeme_nerveux
 msgid "Chapitre VI - Maladies du système nerveux"
-msgstr ""
+msgstr "Chapter VI — Diseases of the nervous system"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire
 msgid "Chapitre X - Maladies de l'appareil respiratoire"
-msgstr ""
+msgstr "Chapter X — Diseases of the respiratory system"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xi_maladies_de_l_appareil_digestif
 msgid "Chapitre XI - Maladies de l'appareil digestif"
-msgstr ""
+msgstr "Chapter XI — Diseases of the digestive system"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xii_maladies_de_la_peau_et_du_tissu_cellulaire_sous_cutane
 msgid "Chapitre XII - Maladies de la peau et du tissu cellulaire sous-cutane"
-msgstr ""
+msgstr "Chapter XII — Diseases of the skin and subcutaneous tissue"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire,_des_muscles_et_du_tissu_conjonctif
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif
 msgid ""
 "Chapitre XIII - Maladies du systeme osteo-articulaire, des muscles et du "
 "tissu conjonctif"
 msgstr ""
+"Chapter XIII — Diseases of the musculoskeletal system and connective tissue"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xiv_maladies_de_l_appareil_genito_urinaire
 msgid "Chapitre XIV - Maladies de l'appareil genito-urinaire"
-msgstr ""
+msgstr "Chapter XIV — Diseases of the genitourinary system"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques,_empoisonnements_et_certaines_autres_consequences_de_causes_externes
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c
 msgid ""
 "Chapitre XIX - Lesions traumatiques, empoisonnements et certaines autres "
 "consequences de causes externes"
 msgstr ""
+"Chapter XIX — Injury, poisonings and certain other consequences of external "
+"causes"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse,_accouchement_et_puerperalite
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite
 msgid "Chapitre XV - Grossesse, accouchement et puerperalite"
-msgstr ""
+msgstr "Chapter XV — Pregnancy, childbirth and the puerperium"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale
 msgid ""
 "Chapitre XVI - Certaines affections dont lorigine se situe dans la periode "
 "perinatale"
-msgstr ""
+msgstr "Chapter XVI — Certain conditions originating in the perinatal period"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xvii_malformations_congenitales,_deformations_et_anomalies_chromosomiques
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xvii_malformations_congenitales_deformations_et_anomalies_chromosomiques
 msgid ""
 "Chapitre XVII - Malformations congenitales, deformations et anomalies "
 "chromosomiques"
 msgstr ""
+"Chapter XVII — Congenital malformations, deformations and chromosomal "
+"abnormalities"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xviii_symptomes,_signes_et_resultats_anormaux_dexamens_cliniques_et_de_laboratoire,_non_classes_ailleurs
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xviii_symptomes_signes_et_resultats_anormaux_dexamens_cliniques_et_de_laborato
 msgid ""
 "Chapitre XVIII - Symptomes, signes et resultats anormaux dexamens cliniques "
 "et de laboratoire, non classes ailleurs"
 msgstr ""
+"Chapter XVIII — Symptoms, signs and abnormal clinical and laboratory "
+"findings, not elsewhere classified"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_maladie__chapitre_maladie_id
@@ -1037,7 +1052,7 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_chaudiere_appalaches
 msgid "Chaudière-Appalaches"
-msgstr ""
+msgstr "Chaudière-Appalaches"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -1046,7 +1061,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Chirurgie cardiaque"
-msgstr ""
+msgstr "Chirurgie cardiaque"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -1055,7 +1070,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Chirurgie esthétique plastique et reconstructive"
-msgstr ""
+msgstr "Chirurgie esthétique plastique et reconstructive"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -1064,7 +1079,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Chirurgie générale"
-msgstr ""
+msgstr "Chirurgie générale"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -1073,7 +1088,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Chirurgie maxillo-faciale"
-msgstr ""
+msgstr "Chirurgie maxillo-faciale"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -1082,7 +1097,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Chirurgie pédiatrique"
-msgstr ""
+msgstr "Chirurgie pédiatrique"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -1091,7 +1106,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Chirurgie thoracique"
-msgstr ""
+msgstr "Chirurgie thoracique"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -1100,91 +1115,91 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Chirurgie vasculaire"
-msgstr ""
+msgstr "Chirurgie vasculaire"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ciloxan"
-msgstr ""
+msgstr "Ciloxan"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cipro"
-msgstr ""
+msgstr "Cipro"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Claritin"
-msgstr ""
+msgstr "Claritin"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_classement_hierarchique_des_resections_de_lesions_intracraniennes
 msgid "Classement hiérarchique des résections de lésions intracrâniennes"
-msgstr ""
+msgstr "Hierarchy for Classification of Intracranial Lesion Resection"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cleocin"
-msgstr ""
+msgstr "Cleocin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cleocin T"
-msgstr ""
+msgstr "Cleocin T"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cleocin Vaginal Cream"
-msgstr ""
+msgstr "Cleocin Vaginal Cream"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Climara"
-msgstr ""
+msgstr "Climara"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_cliniques_externes_specialisees_christ_roi
 msgid "Cliniques externes spécialisées Christ-Roi"
-msgstr ""
+msgstr "Cliniques externes spécialisées Christ-Roi"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Clinoril"
-msgstr ""
+msgstr "Clinoril"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Clomid"
-msgstr ""
+msgstr "Clomid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Clozaril"
-msgstr ""
+msgstr "Clozaril"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.exp_patient_partenaire,role_experience:0
 #: selection:ceppp.suite_crm.patients,role_pp:0
 #: selection:ceppp.suite_crm.perspective_patient,role_pp:0
 msgid "Co-chercheur"
-msgstr ""
+msgstr "Co-Researcher"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.exp_patient_partenaire,role_experience:0
 #: selection:ceppp.suite_crm.patients,role_pp:0
 #: selection:ceppp.suite_crm.perspective_patient,role_pp:0
 msgid "Coach"
-msgstr ""
+msgstr "Coach"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__code_ident
@@ -1199,23 +1214,23 @@ msgid "Code postal"
 msgstr "Post Code"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_codification_des_lesions_multiples_non_specifiques_visites_au_service_d'urgence
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_codification_des_lesions_multiples_non_specifiques_visites_au_service_durgence
 msgid ""
 "Codification des lésions multiples non spécifiques - visites au service "
 "d’urgence"
-msgstr ""
+msgstr "Coding Nonspecific Multiple Injuries for Emergency Department Visits"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Colazal"
-msgstr ""
+msgstr "Colazal"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Colestid"
-msgstr ""
+msgstr "Colestid"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__comite
@@ -1227,7 +1242,7 @@ msgstr "Comité / Groupe"
 #: selection:ceppp.suite_crm.patients,preferences:0
 #: selection:ceppp.suite_crm.perspective_patient,preferences:0
 msgid "Comités"
-msgstr ""
+msgstr "Committees"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__comment_refere
@@ -1270,34 +1285,34 @@ msgstr "Recruter comments"
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_pr:0
 msgid "Communique"
-msgstr ""
+msgstr "Able to communicate"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_consecutives_a_un_avortement_et_a_une_grossesse_extra_uterine_ou_molaire
 msgid ""
 "Complications consécutives à un avortement et à une grossesse extra-utérine "
 "ou molaire"
-msgstr ""
+msgstr "Complications Following Abortion and Ectopic and Molar Pregnancy"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_de_l'anesthesie_au_cours_du_travail_et_de_l'accouchement
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_de_lanesthesie_au_cours_du_travail_et_de_laccouchement
 msgid "Complications de l’anesthésie au cours du travail et de l’accouchement"
-msgstr ""
+msgstr "Complications of Anesthesia During Labor and Delivery"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_d'une_maladie_maligne
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_dune_maladie_maligne
 msgid "Complications d’une maladie maligne"
-msgstr ""
+msgstr "Complications of Malignant Disease"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_liees_aux_protheses,_aux_implants_ou_aux_greffes
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_liees_aux_protheses_aux_implants_ou_aux_greffes
 msgid "Complications liées aux prothèses, aux implants ou aux greffes"
-msgstr ""
+msgstr "Complications of Devices, Implants or Grafts"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_precoces_de_traumatismes
 msgid "Complications précoces de traumatismes"
-msgstr ""
+msgstr "Early Complications of Trauma"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__competences_pp
@@ -1311,7 +1326,7 @@ msgstr "PProfilCoach skills"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Condylox"
-msgstr ""
+msgstr "Condylox"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__conflit_interet
@@ -1329,7 +1344,7 @@ msgstr "Conflicts of interest"
 #: selection:ceppp.suite_crm.patients,rel_patient:0
 #: selection:ceppp.suite_crm.perspective_patient,rel_patient:0
 msgid "Conjoint(e)"
-msgstr ""
+msgstr "Partner"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__consentement_dcpp_recrut
@@ -1358,61 +1373,61 @@ msgstr "Consent - Use of data"
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_convulsions
 msgid "Convulsions"
-msgstr ""
+msgstr "Seizures"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Copegus"
-msgstr ""
+msgstr "Copegus"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cordarone"
-msgstr ""
+msgstr "Cordarone"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Coreg"
-msgstr ""
+msgstr "Coreg"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Corgard"
-msgstr ""
+msgstr "Corgard"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cortef"
-msgstr ""
+msgstr "Cortef"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Corzide"
-msgstr ""
+msgstr "Corzide"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cosopt"
-msgstr ""
+msgstr "Cosopt"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Coumadin"
-msgstr ""
+msgstr "Coumadin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cozaar"
-msgstr ""
+msgstr "Cozaar"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_cranioplastie_et/ou_plastie_de_la_dure_mere_associee_aux_interventions_intracraniennes
@@ -1420,6 +1435,7 @@ msgid ""
 "Cranioplastie et/ou plastie de la dure-mère associée aux interventions "
 "intracrâniennes"
 msgstr ""
+"Cranioplasty and/or Duraplasty Concomitant With Intracranial Interventions"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__create_uid
@@ -1455,53 +1471,53 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cutivate"
-msgstr ""
+msgstr "Cutivate"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cyclogyl"
-msgstr ""
+msgstr "Cyclogyl"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cytomel"
-msgstr ""
+msgstr "Cytomel"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cytotec"
-msgstr ""
+msgstr "Cytotec"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Cytovene"
-msgstr ""
+msgstr "Cytovene"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_cote_nord
 msgid "Côte Nord"
-msgstr ""
+msgstr "Côte Nord"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "D.H.E. 45"
-msgstr ""
+msgstr "D.H.E. 45"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "DCPP"
-msgstr ""
+msgstr "DCPP"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Dantrium"
-msgstr ""
+msgstr "Dantrium"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__date_entrevue
@@ -1538,55 +1554,55 @@ msgstr "Date of birth"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Daypro"
-msgstr ""
+msgstr "Daypro"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ddavp"
-msgstr ""
+msgstr "Ddavp"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Demadex"
-msgstr ""
+msgstr "Demadex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Demerol"
-msgstr ""
+msgstr "Demerol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Depakene"
-msgstr ""
+msgstr "Depakene"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Depakote"
-msgstr ""
+msgstr "Depakote"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Depakote ER"
-msgstr ""
+msgstr "Depakote ER"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Depakote SPRINKLES"
-msgstr ""
+msgstr "Depakote SPRINKLES"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Depo-PROVERA"
-msgstr ""
+msgstr "Depo-PROVERA"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -1595,7 +1611,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Dermatologie"
-msgstr ""
+msgstr "Dermatologie"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__description_experience
@@ -1612,94 +1628,94 @@ msgstr "Description of expérience"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Desogen"
-msgstr ""
+msgstr "Desogen"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Desowen"
-msgstr ""
+msgstr "Desowen"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Dexedrine"
-msgstr ""
+msgstr "Dexedrine"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Dexedrine SPANSULE"
-msgstr ""
+msgstr "Dexedrine SPANSULE"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Diabeta"
-msgstr ""
+msgstr "Diabeta"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_diabete_sucre
 msgid "Diabète sucré"
-msgstr ""
+msgstr "Diabetes Mellitus"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_diagnostic_du_deces_neurologique
 msgid "Diagnostic du décès neurologique"
-msgstr ""
+msgstr "Neurologically Determined Death"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Diamox SEQUELS"
-msgstr ""
+msgstr "Diamox SEQUELS"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Differin"
-msgstr ""
+msgstr "Differin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Diflucan"
-msgstr ""
+msgstr "Diflucan"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Dilacor XR"
-msgstr ""
+msgstr "Dilacor XR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Dilantin"
-msgstr ""
+msgstr "Dilantin"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_dilatation_et_curetage
 msgid "Dilatation et curetage"
-msgstr ""
+msgstr "Dilation and Curettage"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Dilaudid"
-msgstr ""
+msgstr "Dilaudid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Diprolene AF"
-msgstr ""
+msgstr "Diprolene AF"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Diprolene gel / lotion / oint"
-msgstr ""
+msgstr "Diprolene gel / lotion / oint"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__display_name
@@ -1728,18 +1744,18 @@ msgstr "Availability"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ditropan XL"
-msgstr ""
+msgstr "Ditropan XL"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,education_perso:0
 msgid "Doctorat"
-msgstr ""
+msgstr "PhD"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Donnatal"
-msgstr ""
+msgstr "Donnatal"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__doul_chron
@@ -1751,19 +1767,19 @@ msgstr "Chronic pain"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Drisdol"
-msgstr ""
+msgstr "Drisdol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Duoneb"
-msgstr ""
+msgstr "Duoneb"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Duragesic"
-msgstr ""
+msgstr "Duragesic"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__duree
@@ -1783,22 +1799,22 @@ msgstr "Amount of experience (Years / Months)"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Dyazide"
-msgstr ""
+msgstr "Dyazide"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_dystocie
 msgid "Dystocie"
-msgstr ""
+msgstr "Obstructed Labor"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_deficits_neurologiques_a_la_suite_d'un_accident_vasculaire_cerebral
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_deficits_neurologiques_a_la_suite_dun_accident_vasculaire_cerebral
 msgid "Déficits neurologiques à la suite d’un accident vasculaire cérébral"
-msgstr ""
+msgstr "Neurological Deficits Following a Stroke"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_deshydratation
 msgid "Déshydratation"
-msgstr ""
+msgstr "Dehydration"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
@@ -1807,6 +1823,7 @@ msgid ""
 "Désir d'aider autrui et de contribuer à un objectif qui dépasse sa propre "
 "situation"
 msgstr ""
+"Willing to help others and to contribute to a cause larger than themself"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__exp_sante_details
@@ -1817,54 +1834,54 @@ msgstr "Details"
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 msgid "Développe sa résilience"
-msgstr ""
+msgstr "Has developed resilience"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ec-NAPROSYN"
-msgstr ""
+msgstr "Ec-NAPROSYN"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Effexor XR"
-msgstr ""
+msgstr "Effexor XR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Efudex"
-msgstr ""
+msgstr "Efudex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Eldepryl"
-msgstr ""
+msgstr "Eldepryl"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Eldopaque FORTE"
-msgstr ""
+msgstr "Eldopaque FORTE"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Elocon"
-msgstr ""
+msgstr "Elocon"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Emla"
-msgstr ""
+msgstr "Emla"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,emploi_perso:0
 msgid "Emploi"
-msgstr ""
+msgstr "Employment"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__emploi_perso
@@ -1875,12 +1892,12 @@ msgstr "Use of time"
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,deplacements:0
 msgid "En transport adapté"
-msgstr ""
+msgstr "Via paratransit"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,deplacements:0
 msgid "En voiture"
-msgstr ""
+msgstr "Via automobile"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -1889,77 +1906,77 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Endocrinologie"
-msgstr ""
+msgstr "Endocrinologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,rel_patient:0
 #: selection:ceppp.suite_crm.perspective_patient,rel_patient:0
 msgid "Enfant"
-msgstr ""
+msgstr "Child"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,preferences:0
 #: selection:ceppp.suite_crm.perspective_patient,preferences:0
 msgid "Enseignement"
-msgstr ""
+msgstr "Teaching"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Esgic"
-msgstr ""
+msgstr "Esgic"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Esgic-PLUS"
-msgstr ""
+msgstr "Esgic-PLUS"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,langue_corresp:0
 #: selection:ceppp.suite_crm.patients,langue_parlee:0
 msgid "Espagnol"
-msgstr ""
+msgstr "Spanish"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_pr:0
 msgid "Est réflexif et transmet"
-msgstr ""
+msgstr "Is reflective"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_pr:0
 msgid "Est à l'écoute"
-msgstr ""
+msgstr "Listens"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Estrace"
-msgstr ""
+msgstr "Estrace"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_estrie
 msgid "Estrie"
-msgstr ""
+msgstr "Estrie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Estrostep FE"
-msgstr ""
+msgstr "Estrostep FE"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_excision_(de_lesion)_de_l'os,_des_tissus_mous_et_de_la_peau
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_excision_de_lesion_de_los_des_tissus_mous_et_de_la_peau
 msgid "Excision (de lésion) de l’os, des tissus mous et de la peau"
-msgstr ""
+msgstr "Excision (of Lesion) of Bone, Soft Tissue and Skin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Exelon"
-msgstr ""
+msgstr "Exelon"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__experience_maladie_pa
@@ -2002,137 +2019,137 @@ msgstr "Experience as health worker"
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_faible_poids_a_la_naissance_et/ou_enfant_ne_avant_terme
 msgid "Faible poids à la naissance et/ou enfant né avant terme"
-msgstr ""
+msgstr "Low Birth Weight and/or Preterm Infant"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_pr:0
 msgid "Fait preuve d'altruisme"
-msgstr ""
+msgstr "Demonstrates altruism"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,emploi_perso:0
 msgid "Famille"
-msgstr ""
+msgstr "Family"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,rel_patient:0
 #: selection:ceppp.suite_crm.perspective_patient,rel_patient:0
 msgid "Famille élargie"
-msgstr ""
+msgstr "Extended family"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Famvir"
-msgstr ""
+msgstr "Famvir"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,assistance_mob:0
 msgid "Fauteuil roulant"
-msgstr ""
+msgstr "Wheelchair"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Feldene"
-msgstr ""
+msgstr "Feldene"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,genre:0
 msgid "Femme"
-msgstr ""
+msgstr "Female"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,disponibilites:0
 #: selection:ceppp.suite_crm.perspective_patient,disponibilites:0
 msgid "Fins de semaine"
-msgstr ""
+msgstr "Weekends"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Fioricet"
-msgstr ""
+msgstr "Fioricet"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Fiorinal"
-msgstr ""
+msgstr "Fiorinal"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Flagyl"
-msgstr ""
+msgstr "Flagyl"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Flagyl 375"
-msgstr ""
+msgstr "Flagyl 375"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Flagyl ER"
-msgstr ""
+msgstr "Flagyl ER"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Flarex"
-msgstr ""
+msgstr "Flarex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Flexeril"
-msgstr ""
+msgstr "Flexeril"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Flomax"
-msgstr ""
+msgstr "Flomax"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Flonase"
-msgstr ""
+msgstr "Flonase"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Flumadine"
-msgstr ""
+msgstr "Flumadine"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Fml"
-msgstr ""
+msgstr "Fml"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Focalin"
-msgstr ""
+msgstr "Focalin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Foltx"
-msgstr ""
+msgstr "Foltx"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.exp_patient_partenaire,role_experience:0
 #: selection:ceppp.suite_crm.patients,role_pp:0
 #: selection:ceppp.suite_crm.perspective_patient,role_pp:0
 msgid "Formateur"
-msgstr ""
+msgstr "Tutor"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__formation_qui
@@ -2149,7 +2166,7 @@ msgstr "Training by whom"
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__education_perso
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_search
 msgid "Formation professionnelle"
-msgstr "Education level"
+msgstr "Professional training"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__formation_suivie
@@ -2165,33 +2182,33 @@ msgstr "Patient partnership training"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Fosamax"
-msgstr ""
+msgstr "Fosamax"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_fracture_du_crane_et_lesion_intracranienne
 msgid "Fracture du crâne et lésion intracrânienne"
-msgstr ""
+msgstr "Skull Fracture and Intracranial Injury"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_fractures
 msgid "Fractures"
-msgstr ""
+msgstr "Fractures"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_fractures_fermees_versus_ouvertes
 msgid "Fractures - fermées versus ouvertes"
-msgstr ""
+msgstr "Fractures — Closed Versus Open"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,langue_corresp:0
 #: selection:ceppp.suite_crm.patients,langue_parlee:0
 msgid "Français"
-msgstr ""
+msgstr "French"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_gaspesie_iles_de_la_madeleine
 msgid "Gaspésie-îles-de-la-Madeleine"
-msgstr ""
+msgstr "Gaspésie-îles-de-la-Madeleine"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -2200,12 +2217,12 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Gastro-entérologie"
-msgstr ""
+msgstr "Gastro-entérologie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_gastroenterite_et_diarrhee
 msgid "Gastroentérite et diarrhée"
-msgstr ""
+msgstr "Gastroenteritis and Diarrhea"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__genre
@@ -2217,57 +2234,57 @@ msgstr "Gender"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Glucophage"
-msgstr ""
+msgstr "Glucophage"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Glucophage XR"
-msgstr ""
+msgstr "Glucophage XR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Glucotrol"
-msgstr ""
+msgstr "Glucotrol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Glucovance"
-msgstr ""
+msgstr "Glucovance"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Glynase"
-msgstr ""
+msgstr "Glynase"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,preferences:0
 #: selection:ceppp.suite_crm.perspective_patient,preferences:0
 msgid "Gouvernance"
-msgstr ""
+msgstr "Gouvernance"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_grossesse_avec_complication_et_grossesse_sans_complication
 msgid "Grossesse avec complication et grossesse sans complication"
-msgstr ""
+msgstr "Complicated Pregnancy Versus Uncomplicated Pregnancy"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_grossesse_prolongee/naissance_apres_terme
 msgid "Grossesse prolongée/naissance après terme"
-msgstr ""
+msgstr "Prolonged Pregnancy/Post-Dates Pregnancy"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_grossesse_se_terminant_par_un_avortement
 msgid "Grossesse se terminant par un avortement"
-msgstr ""
+msgstr "Pregnancy With Abortive Outcome"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_grossesses_multiples
 msgid "Grossesses multiples"
-msgstr ""
+msgstr "Multiple Gestation"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -2276,7 +2293,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Gynécologie"
-msgstr ""
+msgstr "Gynécologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -2285,7 +2302,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Gériatrie"
-msgstr ""
+msgstr "Gériatrie"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__habiletes_pp
@@ -2297,35 +2314,35 @@ msgstr "Abilities"
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,habiletes_pp:0
 msgid "Habiletés interpersonnelles (écoute, empathie)"
-msgstr ""
+msgstr "Interpersonal abilities (listening, empathy)"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Halcion"
-msgstr ""
+msgstr "Halcion"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,genre:0
 msgid "Homme"
-msgstr ""
+msgstr "Male"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Hydrea"
-msgstr ""
+msgstr "Hydrea"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_hypertension_et_affections_associees
 msgid "Hypertension et affections associées"
-msgstr ""
+msgstr "Hypertension and Associated Conditions"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Hyzaar"
-msgstr ""
+msgstr "Hyzaar"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -2334,12 +2351,12 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Hématologie"
-msgstr ""
+msgstr "Hématologie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_hemorragie_du_post_partum
 msgid "Hémorragie du post-partum"
-msgstr ""
+msgstr "Postpartum Hemorrhage"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -2348,412 +2365,412 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Hépatologie"
-msgstr ""
+msgstr "Hépatologie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_anna_laberge
 msgid "Hôpital Anna-Laberge"
-msgstr ""
+msgstr "Hôpital Anna-Laberge"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_barrie_memorial
 msgid "Hôpital BArrie Memorial"
-msgstr ""
+msgstr "Hôpital BArrie Memorial"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_brome_missisquoi_perkins_(bmp)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_brome_missisquoi_perkins_bmp
 msgid "Hôpital Brome-Missisquoi-Perkins (BMP)"
-msgstr ""
+msgstr "Hôpital Brome-Missisquoi-Perkins (BMP)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_charles_le_moyne
 msgid "Hôpital Charles-Le Moyne"
-msgstr ""
+msgstr "Hôpital Charles-Le Moyne"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_chauveau
 msgid "Hôpital Chauveau"
-msgstr ""
+msgstr "Hôpital Chauveau"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_fleurimont
 msgid "Hôpital Fleurimont"
-msgstr ""
+msgstr "Hôpital Fleurimont"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_general_juif
 msgid "Hôpital Général Juif"
-msgstr ""
+msgstr "Hôpital Général Juif"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_general_de_montreal
 msgid "Hôpital Général de Montréal"
-msgstr ""
+msgstr "Hôpital Général de Montréal"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_general_du_lakeshore
 msgid "Hôpital Général du Lakeshore"
-msgstr ""
+msgstr "Hôpital Général du Lakeshore"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_honore_mercier
 msgid "Hôpital Honoré-Mercier"
-msgstr ""
+msgstr "Hôpital Honoré-Mercier"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_hotel_dieu_d_amos
 msgid "Hôpital Hôtel-Dieu d'Amos"
-msgstr ""
+msgstr "Hôpital Hôtel-Dieu d'Amos"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_hotel_dieu_de_gaspe
 msgid "Hôpital Hôtel-Dieu de Gaspé"
-msgstr ""
+msgstr "Hôpital Hôtel-Dieu de Gaspé"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_hotel_dieu_de_roberval
 msgid "Hôpital Hôtel-Dieu de Roberval"
-msgstr ""
+msgstr "Hôpital Hôtel-Dieu de Roberval"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_jean_talon
 msgid "Hôpital Jean-Talon"
-msgstr ""
+msgstr "Hôpital Jean-Talon"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_juif_de_readaptation
 msgid "Hôpital Juif de réadaptation"
-msgstr ""
+msgstr "Hôpital Juif de réadaptation"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_lac_megantic
 msgid "Hôpital Lac-Mégantic"
-msgstr ""
+msgstr "Hôpital Lac-Mégantic"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_laurentien
 msgid "Hôpital Laurentien"
-msgstr ""
+msgstr "Hôpital Laurentien"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_maisonneuve_rosemont
 msgid "Hôpital Maisonneuve-Rosemont"
-msgstr ""
+msgstr "Hôpital Maisonneuve-Rosemont"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_marie_clarac
 msgid "Hôpital Marie-Clarac"
-msgstr ""
+msgstr "Hôpital Marie-Clarac"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_mont_sinai_montreal
 msgid "Hôpital Mont-Sinaï-Montréal"
-msgstr ""
+msgstr "Hôpital Mont-Sinaï-Montréal"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_memorial_e_wakefield
 msgid "Hôpital Mémorial e Wakefield"
-msgstr ""
+msgstr "Hôpital Mémorial e Wakefield"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_neurologique_de_montreal
 msgid "Hôpital Neurologique de Montréal"
-msgstr ""
+msgstr "Hôpital Neurologique de Montréal"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_notre_dame_de_fatima
 msgid "Hôpital Notre-Dame-de-Fatima"
-msgstr ""
+msgstr "Hôpital Notre-Dame-de-Fatima"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_pierre_boucher
 msgid "Hôpital Pierre-Boucher"
-msgstr ""
+msgstr "Hôpital Pierre-Boucher"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_pierre_janet
 msgid "Hôpital Pierre-Janet"
-msgstr ""
+msgstr "Hôpital Pierre-Janet"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_pierre_le_gardeur
 msgid "Hôpital Pierre-Le Gardeur"
-msgstr ""
+msgstr "Hôpital Pierre-Le Gardeur"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_richardson
 msgid "Hôpital Richardson"
-msgstr ""
+msgstr "Hôpital Richardson"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_riviere_de_prairies
 msgid "Hôpital Rivière-de-Prairies"
-msgstr ""
+msgstr "Hôpital Rivière-de-Prairies"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_regional_de_saint_jerome
 msgid "Hôpital Régional de Saint-Jérôme"
-msgstr ""
+msgstr "Hôpital Régional de Saint-Jérôme"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_saint_francois_d_assise_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_saint_francois_d_assise_chu_de_quebec_universite_laval
 msgid "Hôpital Saint-François d'Assise (CHU de Québec-Université Laval)"
-msgstr ""
+msgstr "Hôpital Saint-François d'Assise (CHU de Québec-Université Laval)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_sainte_anne
 msgid "Hôpital Sainte-Anne"
-msgstr ""
+msgstr "Hôpital Sainte-Anne"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_sainte_anne_de_beaupre
 msgid "Hôpital Sainte-Anne-de-Beaupré"
-msgstr ""
+msgstr "Hôpital Sainte-Anne-de-Beaupré"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_sainte_croix
 msgid "Hôpital Sainte-Croix"
-msgstr ""
+msgstr "Hôpital Sainte-Croix"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_santa_cabrini
 msgid "Hôpital Santa Cabrini"
-msgstr ""
+msgstr "Hôpital Santa Cabrini"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_shriners_pour_enfants
 msgid "Hôpital Shriners pour enfants"
-msgstr ""
+msgstr "Hôpital Shriners pour enfants"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_chinois_de_montreal
 msgid "Hôpital chinois de Montréal"
-msgstr ""
+msgstr "Hôpital chinois de Montréal"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_d_alma
 msgid "Hôpital d'Alma"
-msgstr ""
+msgstr "Hôpital d'Alma"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_d_amqui
 msgid "Hôpital d'Amqui"
-msgstr ""
+msgstr "Hôpital d'Amqui"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_d_asbestos
 msgid "Hôpital d'Asbestos"
-msgstr ""
+msgstr "Hôpital d'Asbestos"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_baie_saint_paul
 msgid "Hôpital de Baie-Saint-Paul"
-msgstr ""
+msgstr "Hôpital de Baie-Saint-Paul"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_chandler
 msgid "Hôpital de Chandler"
-msgstr ""
+msgstr "Hôpital de Chandler"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_chicoutimi
 msgid "Hôpital de Chicoutimi"
-msgstr ""
+msgstr "Hôpital de Chicoutimi"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_dolbeau_mistassini
 msgid "Hôpital de Dolbeau-Mistassini"
-msgstr ""
+msgstr "Hôpital de Dolbeau-Mistassini"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_gatineau
 msgid "Hôpital de Gatineau"
-msgstr ""
+msgstr "Hôpital de Gatineau"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_granby
 msgid "Hôpital de Granby"
-msgstr ""
+msgstr "Hôpital de Granby"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_hull
 msgid "Hôpital de Hull"
-msgstr ""
+msgstr "Hôpital de Hull"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_la_baie
 msgid "Hôpital de La Baie"
-msgstr ""
+msgstr "Hôpital de La Baie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_la_malbaie
 msgid "Hôpital de La Malbaie"
-msgstr ""
+msgstr "Hôpital de La Malbaie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_lasalle
 msgid "Hôpital de LaSalle"
-msgstr ""
+msgstr "Hôpital de LaSalle"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_lachine
 msgid "Hôpital de Lachine"
-msgstr ""
+msgstr "Hôpital de Lachine"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_maniwaki
 msgid "Hôpital de Maniwaki"
-msgstr ""
+msgstr "Hôpital de Maniwaki"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_maria
 msgid "Hôpital de Maria"
-msgstr ""
+msgstr "Hôpital de Maria"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_matane
 msgid "Hôpital de Matane"
-msgstr ""
+msgstr "Hôpital de Matane"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_mont_laurier
 msgid "Hôpital de Mont-Laurier"
-msgstr ""
+msgstr "Hôpital de Mont-Laurier"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_montmagny
 msgid "Hôpital de Montmagny"
-msgstr ""
+msgstr "Hôpital de Montmagny"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_montreal_pour_enfants
 msgid "Hôpital de Montréal pour Enfants"
-msgstr ""
+msgstr "Hôpital de Montréal pour Enfants"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_notre_dame_du_lac
 msgid "Hôpital de Notre-Dame-du-Lac"
-msgstr ""
+msgstr "Hôpital de Notre-Dame-du-Lac"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_rouyn_noranda
 msgid "Hôpital de Rouyn-Noranda"
-msgstr ""
+msgstr "Hôpital de Rouyn-Noranda"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_royer
 msgid "Hôpital de Royer"
-msgstr ""
+msgstr "Hôpital de Royer"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_saint_eustache
 msgid "Hôpital de Saint-Eustache"
-msgstr ""
+msgstr "Hôpital de Saint-Eustache"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_saint_georges
 msgid "Hôpital de Saint-Georges"
-msgstr ""
+msgstr "Hôpital de Saint-Georges"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_sainte_anne_des_monts
 msgid "Hôpital de Sainte-Anne-des-Monts"
-msgstr ""
+msgstr "Hôpital de Sainte-Anne-des-Monts"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_thetford_mines
 msgid "Hôpital de Thetford Mines"
-msgstr ""
+msgstr "Hôpital de Thetford Mines"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_val_d_or
 msgid "Hôpital de Val d'Or"
-msgstr ""
+msgstr "Hôpital de Val d'Or"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_verdun
 msgid "Hôpital de Verdun"
-msgstr ""
+msgstr "Hôpital de Verdun"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_jour_geriatrique
 msgid "Hôpital de jour gériatrique"
-msgstr ""
+msgstr "Hôpital de jour gériatrique"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_l_archipel
 msgid "Hôpital de l'Archipel"
-msgstr ""
+msgstr "Hôpital de l'Archipel"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_l_enfant_jesus_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_l_enfant_jesus_chu_de_quebec_universite_laval
 msgid "Hôpital de l'Enfant-Jésus (CHU de Québec Université Laval)"
-msgstr ""
+msgstr "Hôpital de l'Enfant-Jésus (CHU de Québec Université Laval)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_la_cite_de_la_sante
 msgid "Hôpital de la Cité-de-la-Santé"
-msgstr ""
+msgstr "Hôpital de la Cité-de-la-Santé"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_du_centre_de_la_mauricie
 msgid "Hôpital du Centre-de-la-Mauricie"
-msgstr ""
+msgstr "Hôpital du Centre-de-la-Mauricie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_du_christ_roi
 msgid "Hôpital du Christ-Roi"
-msgstr ""
+msgstr "Hôpital du Christ-Roi"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_du_haut_richelieu
 msgid "Hôpital du Haut-Richelieu"
-msgstr ""
+msgstr "Hôpital du Haut-Richelieu"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_du_sacre_coeur_de_montreal
 msgid "Hôpital du Sacré-Coeur de Montréal"
-msgstr ""
+msgstr "Hôpital du Sacré-Coeur de Montréal"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_du_saint_sacrement_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_du_saint_sacrement_chu_de_quebec_universite_laval
 msgid "Hôpital du Saint-Sacrement (CHU de Québec-Université Laval)"
-msgstr ""
+msgstr "Hôpital du Saint-Sacrement (CHU de Québec-Université Laval)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_du_suroit
 msgid "Hôpital du Suroît"
-msgstr ""
+msgstr "Hôpital du Suroît"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_e_papineau
 msgid "Hôpital e Papineau"
-msgstr ""
+msgstr "Hôpital e Papineau"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_et_centre_d_hebergement_d_youville
 msgid "Hôpital et centre d'hébergement d'Youville"
-msgstr ""
+msgstr "Hôpital et centre d'hébergement d'Youville"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_et_centre_d_hebergement_de_sept_iles
 msgid "Hôpital et centre d'hébergement de Sept-Îles"
-msgstr ""
+msgstr "Hôpital et centre d'hébergement de Sept-Îles"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_et_centre_de_readaptation_de_jonquiere
 msgid "Hôpital et centre de réadaptation de Jonquière"
-msgstr ""
+msgstr "Hôpital et centre de réadaptation de Jonquière"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_regional_de_portneuf
 msgid "Hôpital régional de Portneuf"
-msgstr ""
+msgstr "Hôpital régional de Portneuf"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_regional_de_rimouski
 msgid "Hôpital régional de Rimouski"
-msgstr ""
+msgstr "Hôpital régional de Rimouski"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_region_admin__hopital_ids
@@ -2764,32 +2781,32 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopiutal_flaury
 msgid "Hôpiutal Flaury"
-msgstr ""
+msgstr "Hôpiutal Flaury"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_(chus)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_chus
 msgid "Hôtel-Dieu (CHUS)"
-msgstr ""
+msgstr "Hôtel-Dieu (CHUS)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_d_arthabaska
 msgid "Hôtel-Dieu d'Arthabaska"
-msgstr ""
+msgstr "Hôtel-Dieu d'Arthabaska"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_de_levis
 msgid "Hôtel-Dieu de Lévis"
-msgstr ""
+msgstr "Hôtel-Dieu de Lévis"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_de_quebec_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_de_quebec_chu_de_quebec_universite_laval
 msgid "Hôtel-Dieu de Québec (CHU de Québec Université Laval)"
-msgstr ""
+msgstr "Hôtel-Dieu de Québec (CHU de Québec Université Laval)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_de_sorel
 msgid "Hôtel-Dieu de Sorel"
-msgstr ""
+msgstr "Hôtel-Dieu de Sorel"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__id
@@ -2809,41 +2826,41 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "INESSS"
-msgstr ""
+msgstr "INESSS"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_ictere_neonatal
 msgid "Ictère néonatal"
-msgstr ""
+msgstr "Neonatal Jaundice"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Imdur"
-msgstr ""
+msgstr "Imdur"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Imitrex"
-msgstr ""
+msgstr "Imitrex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Imuran"
-msgstr ""
+msgstr "Imuran"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_incidents_survenus_au_cours_d'actes_medicaux_et_chirurgicaux
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_incidents_survenus_au_cours_dactes_medicaux_et_chirurgicaux
 msgid "Incidents survenus au cours d’actes médicaux et chirurgicaux"
-msgstr ""
+msgstr "Misadventures During Surgical and Medical Care"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Inderal LA"
-msgstr ""
+msgstr "Inderal LA"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -2852,67 +2869,67 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Infectiologie"
-msgstr ""
+msgstr "Infectiologie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_infection_par_les_streptocoques_du_groupe_b/sujet_porteur_au_cours_de_la_grossesse
 msgid ""
 "Infection par les streptocoques du groupe B/sujet porteur au cours de la "
 "grossesse"
-msgstr ""
+msgstr "Streptococcal Group B Infection/ Carrier in Pregnancy"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_infections
 msgid "Infections"
-msgstr ""
+msgstr "Infections"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Inspra"
-msgstr ""
+msgstr "Inspra"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_institut_philippe_pinel_de_montreal
 msgid "Institut Philippe-Pinel de Montréal"
-msgstr ""
+msgstr "Institut Philippe-Pinel de Montréal"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_institut_universitaire_en_sante_mentale_de_montreal
 msgid "Institut Universitaire en santé mentale de Montréal"
-msgstr ""
+msgstr "Institut Universitaire en santé mentale de Montréal"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_institut_de_readaptation_gingras_lindsay_de_montreal
 msgid "Institut de réadaptation Gingras-Lindsay de Montréal"
-msgstr ""
+msgstr "Institut de réadaptation Gingras-Lindsay de Montréal"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_institut_universitaire_en_sante_mentale_douglas
 msgid "Institut universitaire en santé mentale Douglas"
-msgstr ""
+msgstr "Institut universitaire en santé mentale Douglas"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_interventions_associees_a_l'accouchement
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_interventions_associees_a_laccouchement
 msgid "Interventions associées à l’accouchement"
-msgstr ""
+msgstr "Interventions Associated With Delivery"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_interventions_pertinentes_a_la_codification_des_tumeurs
 msgid "Interventions pertinentes à la codification des tumeurs"
-msgstr ""
+msgstr "Interventions Relevant to Neoplasm Coding"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Isoptin SR"
-msgstr ""
+msgstr "Isoptin SR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Isordil"
-msgstr ""
+msgstr "Isordil"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__domaine_soin
@@ -2923,84 +2940,84 @@ msgstr "Healthcare areas of expertise"
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_jeffrey_hale_saint_brigid_s
 msgid "Jeffrey Hale - Saint Brigid's"
-msgstr ""
+msgstr "Jeffrey Hale - Saint Brigid's"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,disponibilites:0
 #: selection:ceppp.suite_crm.perspective_patient,disponibilites:0
 msgid "Jours"
-msgstr ""
+msgstr "Weekdays"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "K-LOR 20"
-msgstr ""
+msgstr "K-LOR 20"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "K-TAB"
-msgstr ""
+msgstr "K-TAB"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Keflex"
-msgstr ""
+msgstr "Keflex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Keppra"
-msgstr ""
+msgstr "Keppra"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Kerlone"
-msgstr ""
+msgstr "Kerlone"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Klaron"
-msgstr ""
+msgstr "Klaron"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Klonopin"
-msgstr ""
+msgstr "Klonopin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Kytril"
-msgstr ""
+msgstr "Kytril"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lac-HYDRIN"
-msgstr ""
+msgstr "Lac-HYDRIN"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lamictal"
-msgstr ""
+msgstr "Lamictal"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lamisil"
-msgstr ""
+msgstr "Lamisil"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_lanaudiere
 msgid "Lanaudière"
-msgstr ""
+msgstr "Lanaudière"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__langue_corresp
@@ -3018,7 +3035,7 @@ msgstr "Spoken languages"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lanoxin"
-msgstr ""
+msgstr "Lanoxin"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__membre_assoc_comite_detail
@@ -3032,7 +3049,7 @@ msgstr "Specify details about membership"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lasix"
-msgstr ""
+msgstr "Lasix"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie____last_update
@@ -3082,12 +3099,12 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_laurentides
 msgid "Laurentides"
-msgstr ""
+msgstr "Laurentides"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_laval
 msgid "Laval"
-msgstr ""
+msgstr "Laval"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__conflit_interet_detail
@@ -3105,164 +3122,164 @@ msgstr "Specify details about conflict"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Levbid"
-msgstr ""
+msgstr "Levbid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Levsin"
-msgstr ""
+msgstr "Levsin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lithobid"
-msgstr ""
+msgstr "Lithobid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lo / OVRAL"
-msgstr ""
+msgstr "Lo / OVRAL"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Locoid"
-msgstr ""
+msgstr "Locoid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Loestrin 1.5 / 30"
-msgstr ""
+msgstr "Loestrin 1.5 / 30"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Loestrin FE 1 / 20"
-msgstr ""
+msgstr "Loestrin FE 1 / 20"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Loestrin FE 1.5 / 30"
-msgstr ""
+msgstr "Loestrin FE 1.5 / 30"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lomotil"
-msgstr ""
+msgstr "Lomotil"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lopid"
-msgstr ""
+msgstr "Lopid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lopressor"
-msgstr ""
+msgstr "Lopressor"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Loprox"
-msgstr ""
+msgstr "Loprox"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lorcet"
-msgstr ""
+msgstr "Lorcet"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lortab"
-msgstr ""
+msgstr "Lortab"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lotensin"
-msgstr ""
+msgstr "Lotensin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lotensin HCT"
-msgstr ""
+msgstr "Lotensin HCT"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lotrel"
-msgstr ""
+msgstr "Lotrel"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Loxitane"
-msgstr ""
+msgstr "Loxitane"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Luride"
-msgstr ""
+msgstr "Luride"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Luride LOZI-TABS"
-msgstr ""
+msgstr "Luride LOZI-TABS"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Lustra"
-msgstr ""
+msgstr "Lustra"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_luxations
 msgid "Luxations"
-msgstr ""
+msgstr "Dislocations"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_lesions_bilaterales
 msgid "Lésions bilatérales"
-msgstr ""
+msgstr "Bilateral Injuries"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_lesions_des_vaisseaux_sanguins
 msgid "Lésions des vaisseaux sanguins"
-msgstr ""
+msgstr "Injury to Blood Vessels"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_lesions_significatives
 msgid "Lésions significatives"
-msgstr ""
+msgstr "Significant Injuries"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_lesions_traumatiques_recentes_versus_anciennes
 msgid "Lésions traumatiques récentes versus anciennes"
-msgstr ""
+msgstr "Current Versus Old Injuries"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Macrobid"
-msgstr ""
+msgstr "Macrobid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Macrodantin"
-msgstr ""
+msgstr "Macrodantin"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__maladie_rare_details
@@ -3273,7 +3290,7 @@ msgstr "Rare disease"
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_maladie_vasculaire_peripherique
 msgid "Maladie vasculaire périphérique"
-msgstr ""
+msgstr "Peripheral Vascular Disease"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__maladie_ids
@@ -3282,74 +3299,74 @@ msgid "Maladies"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_maladies_dues_au_virus_de_l'immunodeficience_humaine_(vih)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_maladies_dues_au_virus_de_limmunodeficience_humaine_vih
 msgid "Maladies dues au virus de l’immunodéficience humaine (VIH)"
-msgstr ""
+msgstr "Human Immunodeficiency Virus (HIV) Disease"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,habiletes_pp:0
 msgid ""
 "Manifeste un désir d'implication (associations, benevolat, temoignages)"
-msgstr ""
+msgstr "Demonstrates a desire to get involved (clubs, volunteering)"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,disponibilites:0
 #: selection:ceppp.suite_crm.perspective_patient,disponibilites:0
 msgid "Matin"
-msgstr ""
+msgstr "Mornings"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_mauricie
 msgid "Mauricie"
-msgstr ""
+msgstr "Mauricie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Mavik"
-msgstr ""
+msgstr "Mavik"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Maxidone"
-msgstr ""
+msgstr "Maxidone"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Maxitrol"
-msgstr ""
+msgstr "Maxitrol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Maxzide"
-msgstr ""
+msgstr "Maxzide"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Maxzide-25"
-msgstr ""
+msgstr "Maxzide-25"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,education_perso:0
 msgid "MaÎtrise"
-msgstr ""
+msgstr "Masters degree"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Medrol"
-msgstr ""
+msgstr "Medrol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Megace"
-msgstr ""
+msgstr "Megace"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__membre_assoc_comite
@@ -3368,113 +3385,113 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Mestinon"
-msgstr ""
+msgstr "Mestinon"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Metadate ER"
-msgstr ""
+msgstr "Metadate ER"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Metaglip"
-msgstr ""
+msgstr "Metaglip"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Metrocream"
-msgstr ""
+msgstr "Metrocream"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Metrogel-VAGINAL"
-msgstr ""
+msgstr "Metrogel-VAGINAL"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Metrolotion"
-msgstr ""
+msgstr "Metrolotion"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Mevacor"
-msgstr ""
+msgstr "Mevacor"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Miacalcin nasal spray"
-msgstr ""
+msgstr "Miacalcin nasal spray"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_micro_organismes_resistants_aux_medicaments
 msgid "Micro-organismes résistants aux médicaments"
-msgstr ""
+msgstr "Drug-Resistant Microorganisms"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Midrin"
-msgstr ""
+msgstr "Midrin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,preferences:0
 #: selection:ceppp.suite_crm.perspective_patient,preferences:0
 msgid "Milieux de soins"
-msgstr ""
+msgstr "Healthcare"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Minipress"
-msgstr ""
+msgstr "Minipress"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Minocin"
-msgstr ""
+msgstr "Minocin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Miralax"
-msgstr ""
+msgstr "Miralax"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Mirapex"
-msgstr ""
+msgstr "Mirapex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Mircette"
-msgstr ""
+msgstr "Mircette"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Mobic"
-msgstr ""
+msgstr "Mobic"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_ppc:0
 msgid "Mobilise ses expériences sociales et professionnelles"
-msgstr ""
+msgstr "Puts their social/professional experiences to good use"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 msgid "Mobilise ses savoirs expérientiels"
-msgstr ""
+msgstr "Puts their experiential knowledge to good use"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_mob
@@ -3486,28 +3503,28 @@ msgstr "Reduced mobility"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Modicon"
-msgstr ""
+msgstr "Modicon"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Monodox"
-msgstr ""
+msgstr "Monodox"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_montreal
 msgid "Montréal"
-msgstr ""
+msgstr "Montréal"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_monteregie
 msgid "Montérégie"
-msgstr ""
+msgstr "Montérégie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_mort_intra_uterine
 msgid "Mort intra-utérine"
-msgstr ""
+msgstr "Intrauterine Death"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__motivations_implication
@@ -3521,31 +3538,31 @@ msgstr "Reasons for getting involved"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Motrin"
-msgstr ""
+msgstr "Motrin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ms CONTIN"
-msgstr ""
+msgstr "Ms CONTIN"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Myambutol"
-msgstr ""
+msgstr "Myambutol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Mycelex"
-msgstr ""
+msgstr "Mycelex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Mysoline"
-msgstr ""
+msgstr "Mysoline"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3554,7 +3571,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Médecine aiguë"
-msgstr ""
+msgstr "Médecine aiguë"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3563,7 +3580,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Médecine du travail"
-msgstr ""
+msgstr "Médecine du travail"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3572,7 +3589,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Médecine générale"
-msgstr ""
+msgstr "Médecine générale"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3581,7 +3598,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Médecine interne"
-msgstr ""
+msgstr "Médecine interne"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3590,7 +3607,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Médecine nucléaire"
-msgstr ""
+msgstr "Médecine nucléaire"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3599,7 +3616,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Médecine palliative"
-msgstr ""
+msgstr "Médecine palliative"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3608,7 +3625,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Médecine physique"
-msgstr ""
+msgstr "Médecine physique"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3617,7 +3634,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Médecine préventive"
-msgstr ""
+msgstr "Médecine préventive"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__med_1
@@ -3640,7 +3657,7 @@ msgstr "Medication #3"
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_menorragie_comme_diagnostic_principal
 msgid "Ménorragie comme diagnostic principal"
-msgstr ""
+msgstr "Menorrhagia as the Most Responsible Diagnosis (MRDx)"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_partenariats__name
@@ -3652,7 +3669,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Naprosyn"
-msgstr ""
+msgstr "Naprosyn"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__nas_perso
@@ -3664,30 +3681,30 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Navane"
-msgstr ""
+msgstr "Navane"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,exp_decision:0
 msgid "Ne sait pas"
-msgstr ""
+msgstr "Don't know"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Neo-SYNEPHRINE"
-msgstr ""
+msgstr "Neo-SYNEPHRINE"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Neoral"
-msgstr ""
+msgstr "Neoral"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Neosporin"
-msgstr ""
+msgstr "Neosporin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3696,7 +3713,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Neurochirurgie"
-msgstr ""
+msgstr "Neurochirurgie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3705,31 +3722,31 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Neurologie"
-msgstr ""
+msgstr "Neurologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Neurontin"
-msgstr ""
+msgstr "Neurontin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Nimotop"
-msgstr ""
+msgstr "Nimotop"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Niravam"
-msgstr ""
+msgstr "Niravam"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Nitro-DUR"
-msgstr ""
+msgstr "Nitro-DUR"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_fatigabilite
@@ -3741,7 +3758,7 @@ msgstr "Fatigue"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Nizoral SHAMPOO"
-msgstr ""
+msgstr "Nizoral SHAMPOO"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__tel_mobile_perso
@@ -3764,7 +3781,7 @@ msgstr "Telephone no. (work)"
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,groupe_designe:0
 msgid "Noir"
-msgstr ""
+msgstr "Black"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_chapitre_maladie__nom
@@ -3812,65 +3829,65 @@ msgstr "Surname"
 #: selection:ceppp.suite_crm.perspective_patient,formation_pp:0
 #: selection:ceppp.suite_crm.perspective_patient,membre_assoc_comite:0
 msgid "Non"
-msgstr ""
+msgstr "No"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,etat:0
 msgid "Non-actif"
-msgstr ""
+msgstr "Non-active"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Nor-QD"
-msgstr ""
+msgstr "Nor-QD"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_nord_du_quebec
 msgid "Nord-du-Québec"
-msgstr ""
+msgstr "Nord-du-Québec"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Nordette"
-msgstr ""
+msgstr "Nordette"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Norinyl 1+35"
-msgstr ""
+msgstr "Norinyl 1+35"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Norinyl 1+50"
-msgstr ""
+msgstr "Norinyl 1+50"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Norpace"
-msgstr ""
+msgstr "Norpace"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Norpramin"
-msgstr ""
+msgstr "Norpramin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Norvasc"
-msgstr ""
+msgstr "Norvasc"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Nulytely"
-msgstr ""
+msgstr "Nulytely"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__nas_perso_
@@ -3885,7 +3902,7 @@ msgstr "Social Insurance Number"
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Néonatologie"
-msgstr ""
+msgstr "Néonatologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3894,7 +3911,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Néphrologie"
-msgstr ""
+msgstr "Néphrologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3903,18 +3920,18 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Obstétrique"
-msgstr ""
+msgstr "Obstétrique"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_occlusion_a_la_suite_de_pontages_aortocoronariens_(pac)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_occlusion_a_la_suite_de_pontages_aortocoronariens_pac
 msgid "Occlusion à la suite de pontages aortocoronariens (PAC)"
-msgstr ""
+msgstr "Occlusion Following Coronary Artery Bypass Grafts (CABGs)"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ocuflox"
-msgstr ""
+msgstr "Ocuflox"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3923,13 +3940,13 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Odontologie"
-msgstr ""
+msgstr "Odontologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Olux"
-msgstr ""
+msgstr "Olux"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3938,13 +3955,13 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Oncologie"
-msgstr ""
+msgstr "Oncologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Opana"
-msgstr ""
+msgstr "Opana"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -3953,19 +3970,19 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Ophtalmologie"
-msgstr ""
+msgstr "Ophtalmologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Optipranolol"
-msgstr ""
+msgstr "Optipranolol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Orapred"
-msgstr ""
+msgstr "Orapred"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__groupe_designe
@@ -3977,37 +3994,37 @@ msgstr "Ethnicity"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ortho MICRONOR"
-msgstr ""
+msgstr "Ortho MICRONOR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ortho TRI-CYCLEN"
-msgstr ""
+msgstr "Ortho TRI-CYCLEN"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ortho-CEPT"
-msgstr ""
+msgstr "Ortho-CEPT"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ortho-CYCLEN"
-msgstr ""
+msgstr "Ortho-CYCLEN"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ortho-NOVUM 1 / 35"
-msgstr ""
+msgstr "Ortho-NOVUM 1 / 35"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ortho-NOVUM 7 / 7 / 7"
-msgstr ""
+msgstr "Ortho-NOVUM 7 / 7 / 7"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -4016,7 +4033,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Orthopédie"
-msgstr ""
+msgstr "Orthopédie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -4025,7 +4042,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Oto-rhino-laryngologie"
-msgstr ""
+msgstr "Oto-rhino-laryngologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.exp_patient_partenaire,formation_suivie:0
@@ -4053,12 +4070,12 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,formation_pp:0
 #: selection:ceppp.suite_crm.perspective_patient,membre_assoc_comite:0
 msgid "Oui"
-msgstr ""
+msgstr "Yes"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_outaouais
 msgid "Outaouais"
-msgstr ""
+msgstr "Outaouais"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_aud
@@ -4070,43 +4087,43 @@ msgstr "Impaired hearing"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ovcon 35"
-msgstr ""
+msgstr "Ovcon 35"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ovide"
-msgstr ""
+msgstr "Ovide"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Oxandrin"
-msgstr ""
+msgstr "Oxandrin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pacerone"
-msgstr ""
+msgstr "Pacerone"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pamelor"
-msgstr ""
+msgstr "Pamelor"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pamine"
-msgstr ""
+msgstr "Pamine"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pamine FORTE"
-msgstr ""
+msgstr "Pamine FORTE"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__formation_par_qui
@@ -4118,43 +4135,43 @@ msgstr "Par qui"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Parafon FORTE DSC"
-msgstr ""
+msgstr "Parafon FORTE DSC"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Parcopa"
-msgstr ""
+msgstr "Parcopa"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,rel_patient:0
 #: selection:ceppp.suite_crm.perspective_patient,rel_patient:0
 msgid "Parent"
-msgstr ""
+msgstr "Parent"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Parlodel"
-msgstr ""
+msgstr "Parlodel"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Parnate"
-msgstr ""
+msgstr "Parnate"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Paxil"
-msgstr ""
+msgstr "Paxil"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Paxil CR"
-msgstr ""
+msgstr "Paxil CR"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__adresse_perso_country
@@ -4166,43 +4183,43 @@ msgstr "Country"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pediapred"
-msgstr ""
+msgstr "Pediapred"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pepcid"
-msgstr ""
+msgstr "Pepcid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Percocet"
-msgstr ""
+msgstr "Percocet"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Percodan"
-msgstr ""
+msgstr "Percodan"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Peridex"
-msgstr ""
+msgstr "Peridex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Periostat"
-msgstr ""
+msgstr "Periostat"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Persantine"
-msgstr ""
+msgstr "Persantine"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__perspective
@@ -4214,24 +4231,24 @@ msgstr "Perspective"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Phoslo"
-msgstr ""
+msgstr "Phoslo"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_plaies_ouvertes
 msgid "Plaies ouvertes"
-msgstr ""
+msgstr "Open Wounds"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Plaquenil"
-msgstr ""
+msgstr "Plaquenil"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Plexion"
-msgstr ""
+msgstr "Plexion"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -4240,66 +4257,69 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Pneumologie"
-msgstr ""
+msgstr "Pneumologie"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_pneumonie
 msgid "Pneumonie"
-msgstr ""
+msgstr "Pneumonia"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_pneumonie_chez_les_patients_souffrant_de_maladie_pulmonaire_obstructive_chronique_(mpoc)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_pneumonie_chez_les_patients_souffrant_de_maladie_pulmonaire_obstructive_chronique_mpoc
 msgid ""
 "Pneumonie chez les patients souffrant de maladie pulmonaire obstructive "
 "chronique (MPOC)"
 msgstr ""
+"Pneumonia in Patients With Chronic Obstructive Pulmonary Disease (COPD)"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Polytrim"
-msgstr ""
+msgstr "Polytrim"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ponstel"
-msgstr ""
+msgstr "Ponstel"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,education_perso:0
 msgid "Post-secondaire"
-msgstr ""
+msgstr "College"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_poursuite_de_la_grossesse_apres_avortement/reduction_selective_de_foetus_dans_les_grossesses_multiples
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_poursuite_de_la_grossesse_apres_avortement/reduction_selective_de_foetus_dans_les_grossesses_mul
 msgid ""
 "Poursuite de la grossesse après avortement/réduction sélective de foetus "
 "dans les grossesses multiples"
 msgstr ""
+"Continuing Pregnancy After Abortion/Selective Fetal Reduction in Multiple "
+"Gestation"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pravachol"
-msgstr ""
+msgstr "Pravachol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pred FORTE"
-msgstr ""
+msgstr "Pred FORTE"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Prelone"
-msgstr ""
+msgstr "Prelone"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,groupe_designe:0
 msgid "Première nation"
-msgstr ""
+msgstr "First Nations"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__preneur_decisions
@@ -4311,36 +4331,36 @@ msgstr "Person making decisions"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Prevacid"
-msgstr ""
+msgstr "Prevacid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Prevacid SOLUTABS"
-msgstr ""
+msgstr "Prevacid SOLUTABS"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Prilosec"
-msgstr ""
+msgstr "Prilosec"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,education_perso:0
 msgid "Primaire"
-msgstr ""
+msgstr "Primary school"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Prinivil"
-msgstr ""
+msgstr "Prinivil"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Prinzide"
-msgstr ""
+msgstr "Prinzide"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__prob_resp
@@ -4379,24 +4399,24 @@ msgstr "Health concerns"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Procardia XL"
-msgstr ""
+msgstr "Procardia XL"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,emploi_perso:0
 msgid "Proche"
-msgstr ""
+msgstr "Friends"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Proctocort"
-msgstr ""
+msgstr "Proctocort"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Proctocream-HC 2.5%"
-msgstr ""
+msgstr "Proctocream-HC 2.5%"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__professionnels_sante
@@ -4408,25 +4428,25 @@ msgstr "Healthcare professionals"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Proscar"
-msgstr ""
+msgstr "Proscar"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Prosom"
-msgstr ""
+msgstr "Prosom"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Protonix"
-msgstr ""
+msgstr "Protonix"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Provera"
-msgstr ""
+msgstr "Provera"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__adresse_perso_state
@@ -4438,13 +4458,13 @@ msgstr "Province"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Prozac"
-msgstr ""
+msgstr "Prozac"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Prozac WEEKLY"
-msgstr ""
+msgstr "Prozac WEEKLY"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__exp_sante_detail
@@ -4475,19 +4495,19 @@ msgstr "First Name"
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Psychiatrie"
-msgstr ""
+msgstr "Psychiatrie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pulmicort RESPULES"
-msgstr ""
+msgstr "Pulmicort RESPULES"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pyridium"
-msgstr ""
+msgstr "Pyridium"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -4496,12 +4516,12 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Pédiatrie"
-msgstr ""
+msgstr "Pédiatrie"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_peritonite_due_a_une_dialyse_peritoneale_continue_ambulatoire_(dpca)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_peritonite_due_a_une_dialyse_peritoneale_continue_ambulatoire_dpca
 msgid "Péritonite due à une dialyse péritonéale continue ambulatoire (DPCA)"
-msgstr ""
+msgstr "Continuous Ambulatory Peritoneal Dialysis (CAPD) Peritonitis"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__org_ref_recrut
@@ -4512,27 +4532,27 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Questran / QUESTRAN LIGHT"
-msgstr ""
+msgstr "Questran / QUESTRAN LIGHT"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "RUIS McGill"
-msgstr ""
+msgstr "RUIS McGill"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "RUIS UdeL"
-msgstr ""
+msgstr "RUIS UdeL"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "RUIS UdeM"
-msgstr ""
+msgstr "RUIS UdeM"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "RUIS UdeS"
-msgstr ""
+msgstr "RUIS UdeS"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -4541,7 +4561,7 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Radiologie"
-msgstr ""
+msgstr "Radiologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -4550,48 +4570,48 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Radiothérapie"
-msgstr ""
+msgstr "Radiothérapie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Razadyne"
-msgstr ""
+msgstr "Razadyne"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Razadyne ER"
-msgstr ""
+msgstr "Razadyne ER"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Rebetol"
-msgstr ""
+msgstr "Rebetol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,preferences:0
 #: selection:ceppp.suite_crm.perspective_patient,preferences:0
 msgid "Recherche"
-msgstr ""
+msgstr "Research"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 msgid "Redonne un sens à la vie au travers de ses expériences"
-msgstr ""
+msgstr "Finds meaning to life through their experiences"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Reglan"
-msgstr ""
+msgstr "Reglan"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_rejet_ou_echec_de_transplantation_d'organes,_de_greffons_et_de_lambeaux
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_rejet_ou_echec_de_transplantation_dorganes_de_greffons_et_de_lambeaux
 msgid ""
 "Rejet ou échec de transplantation d’organes, de greffons et de lambeaux"
-msgstr ""
+msgstr "Rejection/Failure of Transplanted Organs, Grafts and Flaps"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__rel_patient
@@ -4605,19 +4625,19 @@ msgstr "Relationship to the patient"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Remeron"
-msgstr ""
+msgstr "Remeron"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Remeron SOLTAB"
-msgstr ""
+msgstr "Remeron SOLTAB"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Requip"
-msgstr ""
+msgstr "Requip"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__recruteur
@@ -4629,25 +4649,25 @@ msgstr "Interview lead"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Restoril"
-msgstr ""
+msgstr "Restoril"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Retin-A"
-msgstr ""
+msgstr "Retin-A"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Retrovir"
-msgstr ""
+msgstr "Retrovir"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Revia"
-msgstr ""
+msgstr "Revia"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -4656,49 +4676,49 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Rhumatologie"
-msgstr ""
+msgstr "Rhumatologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Rifadin"
-msgstr ""
+msgstr "Rifadin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Risperdal"
-msgstr ""
+msgstr "Risperdal"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Risperdal M-TAB"
-msgstr ""
+msgstr "Risperdal M-TAB"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ritalin"
-msgstr ""
+msgstr "Ritalin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ritalin-SR"
-msgstr ""
+msgstr "Ritalin-SR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Robaxin"
-msgstr ""
+msgstr "Robaxin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Rocaltrol"
-msgstr ""
+msgstr "Rocaltrol"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__role_pp
@@ -4710,45 +4730,45 @@ msgstr "Role"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Rowasa"
-msgstr ""
+msgstr "Rowasa"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Roxicodone"
-msgstr ""
+msgstr "Roxicodone"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_rupture_prematuree_des_membranes
 msgid "Rupture prématurée des membranes"
-msgstr ""
+msgstr "Premature Rupture of Membranes"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Rythmol"
-msgstr ""
+msgstr "Rythmol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Rythmol SR"
-msgstr ""
+msgstr "Rythmol SR"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_reaction_allergique_en_usage_non_therapeutique
 msgid "Réaction allergique en usage non thérapeutique"
-msgstr ""
+msgstr "Allergic Reaction in Non-Therapeutic Use"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_reactions_indesirables_en_usage_therapeutique_et_empoisonnements
 msgid "Réactions indésirables en usage thérapeutique et empoisonnements"
-msgstr ""
+msgstr "Adverse Reactions in Therapeutic Use Versus Poisonings"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_reduction,_fixation_et_fusion_de_fracture_d'une_articulation
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_reduction_fixation_et_fusion_de_fracture_dune_articulation
 msgid "Réduction, fixation et fusion de fracture d’une articulation"
-msgstr ""
+msgstr "Joint Fracture Reduction, Fixation and Fusion"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__personne_reference_recrut
@@ -4765,24 +4785,26 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "Réseau-1"
-msgstr ""
+msgstr "Réseau-1"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_resection_d'une_lesion_nasale_(polypes)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_resection_dune_lesion_nasale_polypes
 msgid "Résection d’une lésion nasale (polypes)"
-msgstr ""
+msgstr "Resection of Space-Occupying Lesions (Polyps) of Nose"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_retrecissement_du_canal_medullaire
 msgid "Rétrécissement du canal médullaire"
-msgstr ""
+msgstr "Spinal Stenosis"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_revision_des_systemes_de_derivation_du_liquide_cephalorachidien_(lcr)_(ventricule,_tronc_cerebral,_canal_rachidien)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_revision_des_systemes_de_derivation_du_liquide_cephalorachidien_lcr_ventricule_tronc_cerebral_ca
 msgid ""
 "Révision des systèmes de dérivation du liquide céphalorachidien (LCR) "
 "(ventricule, tronc cérébral, canal rachidien)"
 msgstr ""
+"Revision of Cerebrospinal Fluid (CSF) Shunt Systems (Ventricle, Brain Stem, "
+"Spinal Canal)"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_exp_patient_partenaire__role_experience
@@ -4796,90 +4818,90 @@ msgstr "Role"
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,habiletes_pp:0
 msgid "S'exprime clairement"
-msgstr ""
+msgstr "Expresses themself clearly"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_saguenay_lac_saint_jean
 msgid "Saguenay-Lac-Saint-Jean"
-msgstr ""
+msgstr "Saguenay-Lac-Saint-Jean"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_saignement_digestif
 msgid "Saignement digestif"
-msgstr ""
+msgstr "Gastrointestinal Bleeding"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Salagen"
-msgstr ""
+msgstr "Salagen"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Sanctura"
-msgstr ""
+msgstr "Sanctura"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 msgid "Se connaît dans la vie avec la maladie"
-msgstr ""
+msgstr "Has coped with sickness"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_pr:0
 msgid "Se racconte de façon pédagogique"
-msgstr ""
+msgstr "Eager to learn"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Seasonale"
-msgstr ""
+msgstr "Seasonale"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,education_perso:0
 msgid "Secondaire"
-msgstr ""
+msgstr "High school"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Sectral"
-msgstr ""
+msgstr "Sectral"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Selsun"
-msgstr ""
+msgstr "Selsun"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_sepsie_confirmee_et_risque_de_sepsie_chez_le_nouveau_ne
 msgid "Sepsie confirmée et risque de sepsie chez le nouveau-né"
-msgstr ""
+msgstr "Confirmed Sepsis and Risk of Sepsis in the Neonate"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_septicemie/sepsie
 msgid "Septicémie/sepsie"
-msgstr ""
+msgstr "Septicemia/Sepsis"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_septoplastie_pour_une_deviation_de_la_cloison_nasale
 msgid "Septoplastie pour une déviation de la cloison nasale"
-msgstr ""
+msgstr "Septoplasty for Deviated Nasal Septum"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Septra"
-msgstr ""
+msgstr "Septra"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Septra DS"
-msgstr ""
+msgstr "Septra DS"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__formation_oui
@@ -4893,56 +4915,58 @@ msgstr "If yes, provide details"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Silvadene"
-msgstr ""
+msgstr "Silvadene"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Sinemet"
-msgstr ""
+msgstr "Sinemet"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Sinemet CR"
-msgstr ""
+msgstr "Sinemet CR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Skelaxin"
-msgstr ""
+msgstr "Skelaxin"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_soins_maternels_lies_au_foetus_et_a_la_cavite_amniotique_et_problemes_possibles_poses_par_l'accouchement
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_soins_maternels_lies_au_foetus_et_a_la_cavite_amniotique_et_problemes_possibles_poses_par_laccou
 msgid ""
 "Soins maternels liés au foetus et à la cavité amniotique et problèmes "
 "possibles posés par l’accouchement"
 msgstr ""
+"Maternal Care Related to the Fetus, Amniotic Cavity and Possible Delivery "
+"Problems"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,disponibilites:0
 #: selection:ceppp.suite_crm.perspective_patient,disponibilites:0
 msgid "Soir"
-msgstr ""
+msgstr "Evenings"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Soma"
-msgstr ""
+msgstr "Soma"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Sonata"
-msgstr ""
+msgstr "Sonata"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Sporanox"
-msgstr ""
+msgstr "Sporanox"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__domaine_soin_pa_2
@@ -4971,13 +4995,13 @@ msgstr "Healthcare areas of expertise"
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_stades_de_la_maladie_renale_chronique
 msgid "Stades de la maladie rénale chronique"
-msgstr ""
+msgstr "Stages of Chronic Kidney Disease (CKD)"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Starlix"
-msgstr ""
+msgstr "Starlix"
 
 #. module: ceppp_suite_crm
 #: model:ir.actions.act_window,name:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_suite_crm_chapitre_maladie_action_window
@@ -5049,180 +5073,181 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Sular"
-msgstr ""
+msgstr "Sular"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_syndrome_coronarien_aigu_(sca)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_syndrome_coronarien_aigu_sca
 msgid "Syndrome coronarien aigu (SCA)"
-msgstr ""
+msgstr "Acute Coronary Syndrome (ACS)"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_syndrome_de_reponse_inflammatoire_systemique_(sris)_ou_syndrome_d'inflammation_systemique
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_syndrome_de_reponse_inflammatoire_systemique_sris_ou_syndrome_dinflammation_systemique
 msgid ""
 "Syndrome de réponse inflammatoire systémique (SRIS) ou syndrome "
 "d’inflammation systémique"
-msgstr ""
+msgstr "Systemic Inflammatory Response Syndrome (SIRS)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_syndromes_causes_par_des_anomalies_congenitales_et_manifestations_specifiques
 msgid ""
 "Syndromes causés par des anomalies congénitales et manifestations "
 "spécifiques"
-msgstr ""
+msgstr "Congenital Anomaly Syndromes and Specific Manifestations"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Synthroid"
-msgstr ""
+msgstr "Synthroid"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_selection_de_l'attribut_de_situation_lors_d'une_intervention_coronaire_percutanee_(icp)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_selection_de_lattribut_de_situation_lors_dune_intervention_coronaire_percutanee_icp
 msgid ""
 "Sélection de l’attribut de situation lors d’une intervention coronaire "
 "percutanée (ICP)"
 msgstr ""
+"Selection of Status Attribute for Percutaneous Coronary Intervention (PCI)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_selection_des_attributs_pour_les_reparations_de_hernie
 msgid "Sélection des attributs pour les réparations de hernie"
-msgstr ""
+msgstr "Selection of Attributes at Hernia Repair"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_selection_du_sixieme_caractere_pour_la_codification_de_l'obstetrique
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_selection_du_sixieme_caractere_pour_la_codification_de_lobstetrique
 msgid "Sélection du sixième caractère pour la codification de l’obstétrique"
-msgstr ""
+msgstr "Selection of the Sixth Digit in Obstetrical Coding"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_sequence_des_codes_de_diagnostic_en_obstetrique
 msgid "Séquence des codes de diagnostic en obstétrique"
-msgstr ""
+msgstr "Sequencing Obstetrical Diagnosis Codes"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_sequence_des_codes_de_lesions_multiples_en_fonction_du_degre_de_gravite
 msgid ""
 "Séquence des codes de lésions multiples en fonction du degré de gravité"
-msgstr ""
+msgstr "Sequencing Multiple Injuries for Severity"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,preferences:0
 #: selection:ceppp.suite_crm.perspective_patient,preferences:0
 msgid "Tables de travail"
-msgstr ""
+msgstr "Drafting"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tambocor"
-msgstr ""
+msgstr "Tambocor"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tapazole"
-msgstr ""
+msgstr "Tapazole"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tarka"
-msgstr ""
+msgstr "Tarka"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tegretol"
-msgstr ""
+msgstr "Tegretol"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tegretol XR"
-msgstr ""
+msgstr "Tegretol XR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Temovate"
-msgstr ""
+msgstr "Temovate"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tenex"
-msgstr ""
+msgstr "Tenex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tenoretic"
-msgstr ""
+msgstr "Tenoretic"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tenormin"
-msgstr ""
+msgstr "Tenormin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tenuate"
-msgstr ""
+msgstr "Tenuate"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Terazol 3"
-msgstr ""
+msgstr "Terazol 3"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Terazol 7"
-msgstr ""
+msgstr "Terazol 7"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tessalon"
-msgstr ""
+msgstr "Tessalon"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tiazac"
-msgstr ""
+msgstr "Tiazac"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tigan caps"
-msgstr ""
+msgstr "Tigan caps"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Timoptic"
-msgstr ""
+msgstr "Timoptic"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Timoptic OCUDOSE"
-msgstr ""
+msgstr "Timoptic OCUDOSE"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Timoptic-XE"
-msgstr ""
+msgstr "Timoptic-XE"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_ppc:0
 msgid "Tisse et entretien des réseaux"
-msgstr ""
+msgstr "Builds and maintains networks"
 
 #. module: ceppp_suite_crm
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_view_form
@@ -5243,196 +5268,196 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tobradex"
-msgstr ""
+msgstr "Tobradex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tobrex"
-msgstr ""
+msgstr "Tobrex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tofranil"
-msgstr ""
+msgstr "Tofranil"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tofranil PM"
-msgstr ""
+msgstr "Tofranil PM"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tolectin"
-msgstr ""
+msgstr "Tolectin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Topamax"
-msgstr ""
+msgstr "Topamax"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Topicort"
-msgstr ""
+msgstr "Topicort"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Toprol-XL"
-msgstr ""
+msgstr "Toprol-XL"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_traitement_des_fractures
 msgid "Traitement des fractures"
-msgstr ""
+msgstr "Treatment of Fractures"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_traitement_thrombolytique
 msgid "Traitement thrombolytique"
-msgstr ""
+msgstr "Thrombolytic Therapy"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,assistance_mob:0
 msgid "Transport adapté"
-msgstr ""
+msgstr "Transport"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tranxene T-TAB"
-msgstr ""
+msgstr "Tranxene T-TAB"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_traumatisme_intracranien_sai_versus_traumatisme_cranien_sai
 msgid "Traumatisme intracrânien SAI versus traumatisme crânien SAI"
-msgstr ""
+msgstr "Intracranial Injury NOS Versus Head Injury NOS"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_traumatisme_a_la_naissance
 msgid "Traumatisme à la naissance"
-msgstr ""
+msgstr "Birth Trauma"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_travail_avant_terme
 msgid "Travail avant terme"
-msgstr ""
+msgstr "Preterm Labor"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_travail_et_accouchement_compliques_d'une_detresse_foetale
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_travail_et_accouchement_compliques_dune_detresse_foetale
 msgid "Travail et accouchement compliqués d’une détresse foetale"
-msgstr ""
+msgstr "Labor and Delivery Complicated by Fetal Stress"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_travail_prolonge
 msgid "Travail prolongé"
-msgstr ""
+msgstr "Long Labor"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_travail_trop_rapide
 msgid "Travail trop rapide"
-msgstr ""
+msgstr "Precipitate Labor"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tri-NORINYL"
-msgstr ""
+msgstr "Tri-NORINYL"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Triaz"
-msgstr ""
+msgstr "Triaz"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Trileptal"
-msgstr ""
+msgstr "Trileptal"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Trusopt"
-msgstr ""
+msgstr "Trusopt"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_des_tissus_lymphoides,_hematopoietiques_et_tissus_apparentes
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_des_tissus_lymphoides_hematopoietiques_et_tissus_apparentes
 msgid "Tumeurs des tissus lymphoïdes, hématopoïétiques et tissus apparentés"
-msgstr ""
+msgstr "Neoplasms Arising in Lymphoid, Hematopoietic and Related Tissue"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_dont_les_limites_se_chevauchent_(sites_contigus)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_dont_les_limites_se_chevauchent_sites_contigus
 msgid "Tumeurs dont les limites se chevauchent (sites contigus)"
-msgstr ""
+msgstr "Neoplasms With Overlapping Boundaries (Contiguous Sites)"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_malignes_recurrentes
 msgid "Tumeurs malignes récurrentes"
-msgstr ""
+msgstr "Recurrent Malignancies"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_primitives_et_secondaires
 msgid "Tumeurs primitives et secondaires"
-msgstr ""
+msgstr "Primary and Secondary Neoplasms"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_primitives_a_sieges_multiples_independants
 msgid "Tumeurs primitives à sièges multiples indépendants"
-msgstr ""
+msgstr "Multiple Independent Primary Neoplasms"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_s'etendant_aux_tissus_adjacents
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_setendant_aux_tissus_adjacents
 msgid "Tumeurs s’étendant aux tissus adjacents"
-msgstr ""
+msgstr "Neoplasms Extending Into Adjacent Tissue"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tussionex"
-msgstr ""
+msgstr "Tussionex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tylenol WITH CODEINE"
-msgstr ""
+msgstr "Tylenol WITH CODEINE"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Tylox"
-msgstr ""
+msgstr "Tylox"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ultram"
-msgstr ""
+msgstr "Ultram"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ultravate"
-msgstr ""
+msgstr "Ultravate"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Uniretic"
-msgstr ""
+msgstr "Uniretic"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Univasc"
-msgstr ""
+msgstr "Univasc"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
@@ -5441,94 +5466,94 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin:0
 #: selection:ceppp.suite_crm.perspective_patient,domaine_soin_pa:0
 msgid "Urologie"
-msgstr ""
+msgstr "Urologie"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Urso"
-msgstr ""
+msgstr "Urso"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Valium"
-msgstr ""
+msgstr "Valium"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Valtrex"
-msgstr ""
+msgstr "Valtrex"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_varices_oesophagiennes_avec_saignement
 msgid "Varices oesophagiennes avec saignement"
-msgstr ""
+msgstr "Bleeding Esophageal Varices"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vaseretic"
-msgstr ""
+msgstr "Vaseretic"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vasotec"
-msgstr ""
+msgstr "Vasotec"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Venlafaxine ER"
-msgstr ""
+msgstr "Venlafaxine ER"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_ventilation_invasive
 msgid "Ventilation invasive"
-msgstr ""
+msgstr "Invasive Ventilation"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Verelan PM"
-msgstr ""
+msgstr "Verelan PM"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vibramycin"
-msgstr ""
+msgstr "Vibramycin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vicodin"
-msgstr ""
+msgstr "Vicodin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vicodin ES"
-msgstr ""
+msgstr "Vicodin ES"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vicoprofen"
-msgstr ""
+msgstr "Vicoprofen"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Videx EC"
-msgstr ""
+msgstr "Videx EC"
 
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_villa_medica
 msgid "Villa-Medica"
-msgstr ""
+msgstr "Villa-Medica"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__adresse_perso_city
@@ -5540,37 +5565,37 @@ msgstr "City"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Viroptic"
-msgstr ""
+msgstr "Viroptic"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vistaril"
-msgstr ""
+msgstr "Vistaril"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vivactil"
-msgstr ""
+msgstr "Vivactil"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Voltaren OPHTHALMIC"
-msgstr ""
+msgstr "Voltaren OPHTHALMIC"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Voltaren-XR"
-msgstr ""
+msgstr "Voltaren-XR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vospire ER"
-msgstr ""
+msgstr "Vospire ER"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_vue
@@ -5582,25 +5607,25 @@ msgstr "Impaired vision"
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Wellbutrin"
-msgstr ""
+msgstr "Wellbutrin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Wellbutrin SR"
-msgstr ""
+msgstr "Wellbutrin SR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Wellbutrin XL"
-msgstr ""
+msgstr "Wellbutrin XL"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Westcort"
-msgstr ""
+msgstr "Westcort"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__experience_maladie_proche
@@ -5611,139 +5636,139 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Xanax"
-msgstr ""
+msgstr "Xanax"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Xanax XR"
-msgstr ""
+msgstr "Xanax XR"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Xyzal"
-msgstr ""
+msgstr "Xyzal"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Yasmin"
-msgstr ""
+msgstr "Yasmin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Yaz"
-msgstr ""
+msgstr "Yaz"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zanaflex"
-msgstr ""
+msgstr "Zanaflex"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zantac"
-msgstr ""
+msgstr "Zantac"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zarontin"
-msgstr ""
+msgstr "Zarontin"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zaroxolyn"
-msgstr ""
+msgstr "Zaroxolyn"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zegerid"
-msgstr ""
+msgstr "Zegerid"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zerit"
-msgstr ""
+msgstr "Zerit"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zestoretic"
-msgstr ""
+msgstr "Zestoretic"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zestril"
-msgstr ""
+msgstr "Zestril"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ziac"
-msgstr ""
+msgstr "Ziac"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zithromax"
-msgstr ""
+msgstr "Zithromax"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zocor"
-msgstr ""
+msgstr "Zocor"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zofran"
-msgstr ""
+msgstr "Zofran"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zoloft"
-msgstr ""
+msgstr "Zoloft"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zonegran"
-msgstr ""
+msgstr "Zonegran"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zovirax"
-msgstr ""
+msgstr "Zovirax"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zyban"
-msgstr ""
+msgstr "Zyban"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zyloprim"
-msgstr ""
+msgstr "Zyloprim"
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Zyrtec"
-msgstr ""
+msgstr "Zyrtec"
 
 #. module: ceppp_suite_crm
 #: model:ir.model,name:ceppp_suite_crm.model_ceppp_suite_crm_chapitre_maladie
@@ -5815,12 +5840,12 @@ msgstr "test int field"
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 msgid "Élabore un projet de vie et l'adapte au changement"
-msgstr ""
+msgstr "Has plans for their life and can adapt them in the face of change"
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_episode_aigu_au_cours_d'une_insuffisance_renale_chronique
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_episode_aigu_au_cours_dune_insuffisance_renale_chronique
 msgid "Épisode aigu au cours d’une insuffisance rénale chronique"
-msgstr ""
+msgstr "Acute on Chronic Kidney Disease"
 
 #. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__etabl_prem_ligne_pa_
@@ -5859,4 +5884,4 @@ msgstr "Status"
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_etendue_de_la_surface_corporelle_touchee_par_une_brulure
 msgid "Étendue de la surface corporelle touchée par une brûlure"
-msgstr ""
+msgstr "Extent of Body Surface Area Involved in Burn Injury"

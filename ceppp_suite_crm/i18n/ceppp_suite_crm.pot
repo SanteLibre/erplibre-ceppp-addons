@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-23 07:39+0000\n"
-"PO-Revision-Date: 2022-02-23 07:39+0000\n"
+"POT-Creation-Date: 2022-02-23 09:44+0000\n"
+"PO-Revision-Date: 2022-02-23 09:44+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,22 +21,22 @@ msgid "Abitibi-Témiscamingue"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_absence_acquise_du_sein_et_du_poumon_en_raison_d'une_tumeur_maligne_primitive
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_absence_acquise_du_sein_et_du_poumon_en_raison_dune_tumeur_maligne_primitive
 msgid "Absence acquise du sein et du poumon en raison d’une tumeur maligne primitive"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_absence_de_signes_vitaux_(asv)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_absence_de_signes_vitaux_asv
 msgid "Absence de signes vitaux (ASV)"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accident_vasculaire_cerebral_(avc)_perinatal
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accident_vasculaire_cerebral_avc_perinatal
 msgid "Accident vasculaire cérébral (AVC) périnatal"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accidents_vasculaires_cerebraux_(avc)_hemorragiques,_ischemiques_et_non_precises
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_accidents_vasculaires_cerebraux_avc_hemorragiques_ischemiques_et_non_precises
 msgid "Accidents vasculaires cérébraux (AVC) hémorragiques, ischémiques et non précisés"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgid "Adipex-P"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_admissions_a_la_suite_d'un_diagnostic_de_cancer
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_admissions_a_la_suite_dun_diagnostic_de_cancer
 msgid "Admissions à la suite d’un diagnostic de cancer"
 msgstr ""
 
@@ -306,7 +306,7 @@ msgid "Antivert"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_anemie_au_cours_d'une_maladie_chronique
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_anemie_au_cours_dune_maladie_chronique
 msgid "Anémie au cours d’une maladie chronique"
 msgstr ""
 
@@ -405,12 +405,12 @@ msgid "Attribution de codes pour des lésions superficielles multiples ou plaies
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_plusieurs_regions_corporelles
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_plusieurs_regions_c
 msgid "Attribution de codes pour plusieurs types de lésions significatives touchant plusieurs régions corporelles"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_une_seule_region_corporelle
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_une_seule_region_co
 msgid "Attribution de codes pour plusieurs types de lésions significatives touchant une seule région corporelle"
 msgstr ""
 
@@ -635,7 +635,7 @@ msgid "CHU Sainte-Justine - Centre Universitaire mère-enfant"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_chul_et_centre_mere_enfant_soleil_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_chul_et_centre_mere_enfant_soleil_chu_de_quebec_universite_laval
 msgid "CHUL et Centre mère-enfant Soleil (CHU de Québec Université Laval)"
 msgstr ""
 
@@ -645,7 +645,7 @@ msgid "CHUM"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_crsss_de_la_baie_james_(centre_de_sante_de_chibougamau)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_crsss_de_la_baie_james_centre_de_sante_de_chibougamau
 msgid "CRSSS de la Baie-James (Centre de santé de Chibougamau)"
 msgstr ""
 
@@ -791,7 +791,7 @@ msgid "Centre Hospitalier régional du Grand-Portage"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_universitaire_de_sante_mcgill_(cusm)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_universitaire_de_sante_mcgill_cusm
 msgid "Centre Universitaire de santé McGill (CUSM)"
 msgstr ""
 
@@ -822,12 +822,12 @@ msgid "Centre hospitalier de Coaticook"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_de_l_universite_de_montreal_(chum)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_de_l_universite_de_montreal_chum
 msgid "Centre hospitalier de l'Université de Montréal (CHUM)"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_regional_de_lanaudiere_(chrdl)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_centre_hospitalier_regional_de_lanaudiere_chrdl
 msgid "Centre hospitalier régional de Lanaudière (CHRDL)"
 msgstr ""
 
@@ -934,12 +934,12 @@ msgid "Chapitre II - Tumeurs"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_systeme_immunitaire
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_s
 msgid "Chapitre III - Maladies du sang et des organes hematopoietiques et certains troubles du systeme immunitaire"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_iv_maladies_endocriniennes,_nutritionnelles_et_metaboliques
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_iv_maladies_endocriniennes_nutritionnelles_et_metaboliques
 msgid "Chapitre IV - Maladies endocriniennes, nutritionnelles et metaboliques"
 msgstr ""
 
@@ -969,7 +969,7 @@ msgid "Chapitre XII - Maladies de la peau et du tissu cellulaire sous-cutane"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire,_des_muscles_et_du_tissu_conjonctif
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif
 msgid "Chapitre XIII - Maladies du systeme osteo-articulaire, des muscles et du tissu conjonctif"
 msgstr ""
 
@@ -979,12 +979,12 @@ msgid "Chapitre XIV - Maladies de l'appareil genito-urinaire"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques,_empoisonnements_et_certaines_autres_consequences_de_causes_externes
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c
 msgid "Chapitre XIX - Lesions traumatiques, empoisonnements et certaines autres consequences de causes externes"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse,_accouchement_et_puerperalite
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite
 msgid "Chapitre XV - Grossesse, accouchement et puerperalite"
 msgstr ""
 
@@ -994,12 +994,12 @@ msgid "Chapitre XVI - Certaines affections dont lorigine se situe dans la period
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xvii_malformations_congenitales,_deformations_et_anomalies_chromosomiques
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xvii_malformations_congenitales_deformations_et_anomalies_chromosomiques
 msgid "Chapitre XVII - Malformations congenitales, deformations et anomalies chromosomiques"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xviii_symptomes,_signes_et_resultats_anormaux_dexamens_cliniques_et_de_laboratoire,_non_classes_ailleurs
+#: model:ceppp.suite_crm.chapitre_maladie,nom:ceppp_suite_crm.ceppp_suite_crm_chapitre_maladie_chapitre_xviii_symptomes_signes_et_resultats_anormaux_dexamens_cliniques_et_de_laborato
 msgid "Chapitre XVIII - Symptomes, signes et resultats anormaux dexamens cliniques et de laboratoire, non classes ailleurs"
 msgstr ""
 
@@ -1174,7 +1174,7 @@ msgid "Code postal"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_codification_des_lesions_multiples_non_specifiques_visites_au_service_d'urgence
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_codification_des_lesions_multiples_non_specifiques_visites_au_service_durgence
 msgid "Codification des lésions multiples non spécifiques - visites au service d’urgence"
 msgstr ""
 
@@ -1251,17 +1251,17 @@ msgid "Complications consécutives à un avortement et à une grossesse extra-ut
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_de_l'anesthesie_au_cours_du_travail_et_de_l'accouchement
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_de_lanesthesie_au_cours_du_travail_et_de_laccouchement
 msgid "Complications de l’anesthésie au cours du travail et de l’accouchement"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_d'une_maladie_maligne
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_dune_maladie_maligne
 msgid "Complications d’une maladie maligne"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_liees_aux_protheses,_aux_implants_ou_aux_greffes
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_complications_liees_aux_protheses_aux_implants_ou_aux_greffes
 msgid "Complications liées aux prothèses, aux implants ou aux greffes"
 msgstr ""
 
@@ -1760,7 +1760,7 @@ msgid "Dystocie"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_deficits_neurologiques_a_la_suite_d'un_accident_vasculaire_cerebral
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_deficits_neurologiques_a_la_suite_dun_accident_vasculaire_cerebral
 msgid "Déficits neurologiques à la suite d’un accident vasculaire cérébral"
 msgstr ""
 
@@ -1918,7 +1918,7 @@ msgid "Estrostep FE"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_excision_(de_lesion)_de_l'os,_des_tissus_mous_et_de_la_peau
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_excision_de_lesion_de_los_des_tissus_mous_et_de_la_peau
 msgid "Excision (de lésion) de l’os, des tissus mous et de la peau"
 msgstr ""
 
@@ -2328,7 +2328,7 @@ msgid "Hôpital BArrie Memorial"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_brome_missisquoi_perkins_(bmp)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_brome_missisquoi_perkins_bmp
 msgid "Hôpital Brome-Missisquoi-Perkins (BMP)"
 msgstr ""
 
@@ -2463,7 +2463,7 @@ msgid "Hôpital Régional de Saint-Jérôme"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_saint_francois_d_assise_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_saint_francois_d_assise_chu_de_quebec_universite_laval
 msgid "Hôpital Saint-François d'Assise (CHU de Québec-Université Laval)"
 msgstr ""
 
@@ -2653,7 +2653,7 @@ msgid "Hôpital de l'Archipel"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_l_enfant_jesus_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_de_l_enfant_jesus_chu_de_quebec_universite_laval
 msgid "Hôpital de l'Enfant-Jésus (CHU de Québec Université Laval)"
 msgstr ""
 
@@ -2683,7 +2683,7 @@ msgid "Hôpital du Sacré-Coeur de Montréal"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_du_saint_sacrement_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hopital_du_saint_sacrement_chu_de_quebec_universite_laval
 msgid "Hôpital du Saint-Sacrement (CHU de Québec-Université Laval)"
 msgstr ""
 
@@ -2734,7 +2734,7 @@ msgid "Hôpiutal Flaury"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_(chus)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_chus
 msgid "Hôtel-Dieu (CHUS)"
 msgstr ""
 
@@ -2749,7 +2749,7 @@ msgid "Hôtel-Dieu de Lévis"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_de_quebec_(chu_de_quebec_universite_laval)
+#: model:ceppp.suite_crm.hopital,nom:ceppp_suite_crm.ceppp_suite_crm_hopital_hotel_dieu_de_quebec_chu_de_quebec_universite_laval
 msgid "Hôtel-Dieu de Québec (CHU de Québec Université Laval)"
 msgstr ""
 
@@ -2802,7 +2802,7 @@ msgid "Imuran"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_incidents_survenus_au_cours_d'actes_medicaux_et_chirurgicaux
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_incidents_survenus_au_cours_dactes_medicaux_et_chirurgicaux
 msgid "Incidents survenus au cours d’actes médicaux et chirurgicaux"
 msgstr ""
 
@@ -2858,7 +2858,7 @@ msgid "Institut universitaire en santé mentale Douglas"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_interventions_associees_a_l'accouchement
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_interventions_associees_a_laccouchement
 msgid "Interventions associées à l’accouchement"
 msgstr ""
 
@@ -3247,7 +3247,7 @@ msgid "Maladies"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_maladies_dues_au_virus_de_l'immunodeficience_humaine_(vih)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_maladies_dues_au_virus_de_limmunodeficience_humaine_vih
 msgid "Maladies dues au virus de l’immunodéficience humaine (VIH)"
 msgstr ""
 
@@ -3870,7 +3870,7 @@ msgid "Obstétrique"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_occlusion_a_la_suite_de_pontages_aortocoronariens_(pac)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_occlusion_a_la_suite_de_pontages_aortocoronariens_pac
 msgid "Occlusion à la suite de pontages aortocoronariens (PAC)"
 msgstr ""
 
@@ -4212,7 +4212,7 @@ msgid "Pneumonie"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_pneumonie_chez_les_patients_souffrant_de_maladie_pulmonaire_obstructive_chronique_(mpoc)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_pneumonie_chez_les_patients_souffrant_de_maladie_pulmonaire_obstructive_chronique_mpoc
 msgid "Pneumonie chez les patients souffrant de maladie pulmonaire obstructive chronique (MPOC)"
 msgstr ""
 
@@ -4234,7 +4234,7 @@ msgid "Post-secondaire"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_poursuite_de_la_grossesse_apres_avortement/reduction_selective_de_foetus_dans_les_grossesses_multiples
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_poursuite_de_la_grossesse_apres_avortement/reduction_selective_de_foetus_dans_les_grossesses_mul
 msgid "Poursuite de la grossesse après avortement/réduction sélective de foetus dans les grossesses multiples"
 msgstr ""
 
@@ -4459,7 +4459,7 @@ msgid "Pédiatrie"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_peritonite_due_a_une_dialyse_peritoneale_continue_ambulatoire_(dpca)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_peritonite_due_a_une_dialyse_peritoneale_continue_ambulatoire_dpca
 msgid "Péritonite due à une dialyse péritonéale continue ambulatoire (DPCA)"
 msgstr ""
 
@@ -4548,7 +4548,7 @@ msgid "Reglan"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_rejet_ou_echec_de_transplantation_d'organes,_de_greffons_et_de_lambeaux
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_rejet_ou_echec_de_transplantation_dorganes_de_greffons_et_de_lambeaux
 msgid "Rejet ou échec de transplantation d’organes, de greffons et de lambeaux"
 msgstr ""
 
@@ -4705,7 +4705,7 @@ msgid "Réactions indésirables en usage thérapeutique et empoisonnements"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_reduction,_fixation_et_fusion_de_fracture_d'une_articulation
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_reduction_fixation_et_fusion_de_fracture_dune_articulation
 msgid "Réduction, fixation et fusion de fracture d’une articulation"
 msgstr ""
 
@@ -4727,7 +4727,7 @@ msgid "Réseau-1"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_resection_d'une_lesion_nasale_(polypes)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_resection_dune_lesion_nasale_polypes
 msgid "Résection d’une lésion nasale (polypes)"
 msgstr ""
 
@@ -4737,7 +4737,7 @@ msgid "Rétrécissement du canal médullaire"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_revision_des_systemes_de_derivation_du_liquide_cephalorachidien_(lcr)_(ventricule,_tronc_cerebral,_canal_rachidien)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_revision_des_systemes_de_derivation_du_liquide_cephalorachidien_lcr_ventricule_tronc_cerebral_ca
 msgid "Révision des systèmes de dérivation du liquide céphalorachidien (LCR) (ventricule, tronc cérébral, canal rachidien)"
 msgstr ""
 
@@ -4871,7 +4871,7 @@ msgid "Skelaxin"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_soins_maternels_lies_au_foetus_et_a_la_cavite_amniotique_et_problemes_possibles_poses_par_l'accouchement
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_soins_maternels_lies_au_foetus_et_a_la_cavite_amniotique_et_problemes_possibles_poses_par_laccou
 msgid "Soins maternels liés au foetus et à la cavité amniotique et problèmes possibles posés par l’accouchement"
 msgstr ""
 
@@ -5007,12 +5007,12 @@ msgid "Sular"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_syndrome_coronarien_aigu_(sca)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_syndrome_coronarien_aigu_sca
 msgid "Syndrome coronarien aigu (SCA)"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_syndrome_de_reponse_inflammatoire_systemique_(sris)_ou_syndrome_d'inflammation_systemique
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_syndrome_de_reponse_inflammatoire_systemique_sris_ou_syndrome_dinflammation_systemique
 msgid "Syndrome de réponse inflammatoire systémique (SRIS) ou syndrome d’inflammation systémique"
 msgstr ""
 
@@ -5028,7 +5028,7 @@ msgid "Synthroid"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_selection_de_l'attribut_de_situation_lors_d'une_intervention_coronaire_percutanee_(icp)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_selection_de_lattribut_de_situation_lors_dune_intervention_coronaire_percutanee_icp
 msgid "Sélection de l’attribut de situation lors d’une intervention coronaire percutanée (ICP)"
 msgstr ""
 
@@ -5038,7 +5038,7 @@ msgid "Sélection des attributs pour les réparations de hernie"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_selection_du_sixieme_caractere_pour_la_codification_de_l'obstetrique
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_selection_du_sixieme_caractere_pour_la_codification_de_lobstetrique
 msgid "Sélection du sixième caractère pour la codification de l’obstétrique"
 msgstr ""
 
@@ -5272,7 +5272,7 @@ msgid "Travail avant terme"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_travail_et_accouchement_compliques_d'une_detresse_foetale
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_travail_et_accouchement_compliques_dune_detresse_foetale
 msgid "Travail et accouchement compliqués d’une détresse foetale"
 msgstr ""
 
@@ -5311,12 +5311,12 @@ msgid "Trusopt"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_des_tissus_lymphoides,_hematopoietiques_et_tissus_apparentes
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_des_tissus_lymphoides_hematopoietiques_et_tissus_apparentes
 msgid "Tumeurs des tissus lymphoïdes, hématopoïétiques et tissus apparentés"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_dont_les_limites_se_chevauchent_(sites_contigus)
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_dont_les_limites_se_chevauchent_sites_contigus
 msgid "Tumeurs dont les limites se chevauchent (sites contigus)"
 msgstr ""
 
@@ -5336,7 +5336,7 @@ msgid "Tumeurs primitives à sièges multiples indépendants"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_s'etendant_aux_tissus_adjacents
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_tumeurs_setendant_aux_tissus_adjacents
 msgid "Tumeurs s’étendant aux tissus adjacents"
 msgstr ""
 
@@ -5766,7 +5766,7 @@ msgid "Élabore un projet de vie et l'adapte au changement"
 msgstr ""
 
 #. module: ceppp_suite_crm
-#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_episode_aigu_au_cours_d'une_insuffisance_renale_chronique
+#: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_episode_aigu_au_cours_dune_insuffisance_renale_chronique
 msgid "Épisode aigu au cours d’une insuffisance rénale chronique"
 msgstr ""
 

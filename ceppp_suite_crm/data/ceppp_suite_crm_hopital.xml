@@ -45,15 +45,15 @@
             <field name="nom">Centre hospitalier Trois-Pistoles</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_bas_saint_laurent" />
         </record>
-        <record id="ceppp_suite_crm_hopital_chul_et_centre_mere_enfant_soleil_(chu_de_quebec_universite_laval)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_chul_et_centre_mere_enfant_soleil_chu_de_quebec_universite_laval" model="ceppp.suite_crm.hopital">
             <field name="nom">CHUL et Centre m&#232;re-enfant Soleil (CHU de Qu&#233;bec Universit&#233; Laval)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_capitale_nationale" />
         </record>
-        <record id="ceppp_suite_crm_hopital_hotel_dieu_de_quebec_(chu_de_quebec_universite_laval)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_hotel_dieu_de_quebec_chu_de_quebec_universite_laval" model="ceppp.suite_crm.hopital">
             <field name="nom">H&#244;tel-Dieu de Qu&#233;bec (CHU de Qu&#233;bec Universit&#233; Laval)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_capitale_nationale" />
         </record>
-        <record id="ceppp_suite_crm_hopital_hopital_saint_francois_d_assise_(chu_de_quebec_universite_laval)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_hopital_saint_francois_d_assise_chu_de_quebec_universite_laval" model="ceppp.suite_crm.hopital">
             <field name="nom">H&#244;pital Saint-Fran&#231;ois d'Assise (CHU de Qu&#233;bec-Universit&#233; Laval)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_capitale_nationale" />
         </record>
@@ -69,7 +69,7 @@
             <field name="nom">H&#244;pital de La Malbaie</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_capitale_nationale" />
         </record>
-        <record id="ceppp_suite_crm_hopital_hopital_de_l_enfant_jesus_(chu_de_quebec_universite_laval)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_hopital_de_l_enfant_jesus_chu_de_quebec_universite_laval" model="ceppp.suite_crm.hopital">
             <field name="nom">H&#244;pital de l'Enfant-J&#233;sus (CHU de Qu&#233;bec Universit&#233; Laval)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_capitale_nationale" />
         </record>
@@ -85,7 +85,7 @@
             <field name="nom">Jeffrey Hale - Saint Brigid's</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_capitale_nationale" />
         </record>
-        <record id="ceppp_suite_crm_hopital_hopital_du_saint_sacrement_(chu_de_quebec_universite_laval)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_hopital_du_saint_sacrement_chu_de_quebec_universite_laval" model="ceppp.suite_crm.hopital">
             <field name="nom">H&#244;pital du Saint-Sacrement (CHU de Qu&#233;bec-Universit&#233; Laval)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_capitale_nationale" />
         </record>
@@ -129,7 +129,7 @@
             <field name="nom">H&#244;pital de Royer</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_cote_nord" />
         </record>
-        <record id="ceppp_suite_crm_hopital_hotel_dieu_(chus)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_hotel_dieu_chus" model="ceppp.suite_crm.hopital">
             <field name="nom">H&#244;tel-Dieu (CHUS)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_estrie" />
         </record>
@@ -177,7 +177,7 @@
             <field name="nom">H&#244;pital de l'Archipel</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_gaspesie_iles_de_la_madeleine" />
         </record>
-        <record id="ceppp_suite_crm_hopital_centre_hospitalier_regional_de_lanaudiere_(chrdl)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_centre_hospitalier_regional_de_lanaudiere_chrdl" model="ceppp.suite_crm.hopital">
             <field name="nom">Centre hospitalier r&#233;gional de Lanaudi&#232;re (CHRDL)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_lanaudiere" />
         </record>
@@ -257,7 +257,7 @@
             <field name="nom">H&#244;pital Honor&#233;-Mercier</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_monteregie" />
         </record>
-        <record id="ceppp_suite_crm_hopital_hopital_brome_missisquoi_perkins_(bmp)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_hopital_brome_missisquoi_perkins_bmp" model="ceppp.suite_crm.hopital">
             <field name="nom">H&#244;pital Brome-Missisquoi-Perkins (BMP)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_monteregie" />
         </record>
@@ -349,7 +349,7 @@
             <field name="nom">CHU Sainte-Justine - Centre Universitaire m&#232;re-enfant</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_montreal" />
         </record>
-        <record id="ceppp_suite_crm_hopital_centre_universitaire_de_sante_mcgill_(cusm)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_centre_universitaire_de_sante_mcgill_cusm" model="ceppp.suite_crm.hopital">
             <field name="nom">Centre Universitaire de sant&#233; McGill (CUSM)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_montreal" />
         </record>
@@ -369,7 +369,7 @@
             <field name="nom">H&#244;pital Jean-Talon</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_montreal" />
         </record>
-        <record id="ceppp_suite_crm_hopital_centre_hospitalier_de_l_universite_de_montreal_(chum)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_centre_hospitalier_de_l_universite_de_montreal_chum" model="ceppp.suite_crm.hopital">
             <field name="nom">Centre hospitalier de l'Universit&#233; de Montr&#233;al (CHUM)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_montreal" />
         </record>
@@ -381,7 +381,7 @@
             <field name="nom">H&#244;pital Santa Cabrini</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_montreal" />
         </record>
-        <record id="ceppp_suite_crm_hopital_crsss_de_la_baie_james_(centre_de_sante_de_chibougamau)" model="ceppp.suite_crm.hopital">
+        <record id="ceppp_suite_crm_hopital_crsss_de_la_baie_james_centre_de_sante_de_chibougamau" model="ceppp.suite_crm.hopital">
             <field name="nom">CRSSS de la Baie-James (Centre de sant&#233; de Chibougamau)</field>
             <field name="region_admin_id" ref="ceppp_suite_crm_region_admin_nord_du_quebec" />
         </record>

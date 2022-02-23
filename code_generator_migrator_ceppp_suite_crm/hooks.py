@@ -834,7 +834,6 @@ def post_init_hook(cr, e):
                                 if a and b
                             }
                             new_type = "selection"
-                            ignore_en_translation = False
                             if dct_option_fr:
                                 dct_option_fr_value = dct_option_fr.values()
                                 if len(dct_option_fr_value):
@@ -859,8 +858,6 @@ def post_init_hook(cr, e):
                                             "Hôpitaux",
                                         )
                                         new_type = "many2one"
-                                        # No need translation in english for this software with hospital
-                                        ignore_en_translation = True
                                     elif suite_crm_option == "cim10_list":
                                         generate_model_from_2_level_selection(
                                             lst_added_model_name,
@@ -875,33 +872,92 @@ def post_init_hook(cr, e):
                                             "Maladies",
                                         )
                                         new_type = "many2one"
-                                        ignore_en_translation = True
                                     else:
                                         _logger.error(
                                             "Not supported option"
                                             f" {suite_crm_option}"
                                         )
                                         continue
-                                    if not ignore_en_translation:
-                                        has_error_value_is_not_str = False
-                                        for (
-                                            key_option,
-                                            value_option,
-                                        ) in dct_option_en.items():
-                                            if type(value_option) is str:
-                                                dct_new_translate[
-                                                    key_option
-                                                ] = value_option
-                                            else:
+                                    has_error_value_is_not_str = False
+                                    iter_key = -1
+                                    for (
+                                        key_option,
+                                        value_option,
+                                    ) in dct_option_en.items():
+                                        if type(value_option) is str:
+                                            french_key_option = (
+                                                dct_option_fr.get(key_option)
+                                            )
+                                            if not french_key_option:
+                                                _logger.warning(
+                                                    "Missing french key for"
+                                                    f" key option {key_option}"
+                                                )
+                                                continue
+                                            dct_new_translate[
+                                                french_key_option
+                                            ] = value_option
+                                        elif type(value_option) is dict:
+                                            iter_key += 1
+                                            # Translate the key, first level
+                                            list_dct_option_fr = list(
+                                                dct_option_fr
+                                            )
+                                            if (
+                                                len(list_dct_option_fr)
+                                                < iter_key
+                                            ):
                                                 _logger.error(
-                                                    "Not supported type"
-                                                    f" {type(value_option)} for"
-                                                    " dct option en."
+                                                    "Error with size of dct"
+                                                    " option fr"
+                                                    f" '{len(list_dct_option_fr)}'"
                                                 )
-                                                has_error_value_is_not_str = (
-                                                    True
+                                                continue
+                                            french_key = list_dct_option_fr[
+                                                iter_key
+                                            ]
+                                            dct_new_translate[
+                                                french_key
+                                            ] = key_option
+
+                                            # Translate other level
+                                            french_key_option = (
+                                                dct_option_fr.get(french_key)
+                                            )
+                                            if not french_key_option:
+                                                _logger.warning(
+                                                    "Missing french key for"
+                                                    f" key option {key_option}"
                                                 )
-                                                break
+                                                continue
+                                            # TODO the key_option is to translate
+                                            for (
+                                                sub_key_option,
+                                                sub_value_option,
+                                            ) in value_option.items():
+                                                french_sub_key_option = (
+                                                    french_key_option.get(
+                                                        sub_key_option
+                                                    )
+                                                )
+                                                if not french_sub_key_option:
+                                                    _logger.warning(
+                                                        "Missing french sub"
+                                                        " key for key option"
+                                                        f" {french_sub_key_option}"
+                                                    )
+                                                    continue
+                                                dct_new_translate[
+                                                    french_sub_key_option
+                                                ] = sub_value_option
+                                        else:
+                                            _logger.error(
+                                                "Not supported type"
+                                                f" {type(value_option)} for"
+                                                " dct option en."
+                                            )
+                                            has_error_value_is_not_str = True
+                                            break
                                 if has_error_value_is_not_str:
                                     # Don't create the field who will bug the system
                                     continue
