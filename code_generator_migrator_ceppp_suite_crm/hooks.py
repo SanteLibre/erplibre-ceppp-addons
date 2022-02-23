@@ -568,6 +568,8 @@ def generate_model_from_2_level_selection(
     model_name_level_2,
     field_description_level_1,
     field_name_level_1,
+    field_name_one2many_level_2,
+    field_description_one2many_level_2,
 ):
     dct_region_admin_data_id = {}
     if model_name_level_1 not in lst_added_model_name:
@@ -626,6 +628,18 @@ def generate_model_from_2_level_selection(
                         ),
                     }
                 )
+        # Add one2many
+        dct_field_one2many = {
+            field_name_one2many_level_2: {
+                "field_description": field_description_one2many_level_2,
+                "ttype": "one2many",
+                "relation": model_name_level_2,
+                "relation_field": field_name_level_1,
+            }
+        }
+        code_generator_id.add_update_model_one2many(
+            model_name_level_1, dct_field_one2many
+        )
     dct_field_info["relation"] = model_name_level_2
 
 
@@ -839,6 +853,8 @@ def post_init_hook(cr, e):
                                             f"{prefix_model}hopital",
                                             "Région administrative",
                                             "region_admin_id",
+                                            "hopital_ids",
+                                            "Hôpitaux",
                                         )
                                         new_type = "many2one"
                                         # No need translation in english for this software with hospital
@@ -853,6 +869,8 @@ def post_init_hook(cr, e):
                                             f"{prefix_model}maladie",
                                             "Chapitre maladie",
                                             "chapitre_maladie_id",
+                                            "maladie_ids",
+                                            "Maladies",
                                         )
                                         new_type = "many2one"
                                         ignore_en_translation = True

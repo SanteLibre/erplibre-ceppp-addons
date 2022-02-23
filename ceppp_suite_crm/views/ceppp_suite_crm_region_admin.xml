@@ -9,6 +9,9 @@
                     <group>
                         <field name="nom" />
                     </group>
+                    <group>
+                        <field name="hopital_ids" />
+                    </group>
                 </sheet>
             </form>
         </field>
@@ -30,6 +33,7 @@
         <field name="arch" type="xml">
             <kanban class="o_kanban_mobile">
                 <field name="nom" />
+                <field name="hopital_ids" />
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
@@ -38,6 +42,11 @@
                                     <li class="mb4">
                                         <strong>
                                             <field name="nom" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="hopital_ids" />
                                         </strong>
                                     </li>
                                 </ul>
@@ -65,6 +74,7 @@
         <field name="arch" type="xml">
             <search string="Ceppp suite crm region admin">
                 <filter domain="[('nom','!=',False)]" name="nom" string="Nom" />
+                <filter domain="[('hopital_ids','!=',False)]" name="hopital_ids" string="H&#244;pitaux" />
             </search>
         </field>
     </record>
@@ -75,6 +85,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="nom" />
+                <field name="hopital_ids" />
             </tree>
         </field>
     </record>

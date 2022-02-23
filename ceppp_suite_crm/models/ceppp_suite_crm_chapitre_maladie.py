@@ -7,3 +7,9 @@ class CepppSuiteCrmChapitreMaladie(models.Model):
     _rec_name = "nom"
 
     nom = fields.Char()
+
+    maladie_ids = fields.One2many(
+        comodel_name="ceppp.suite_crm.maladie",
+        inverse_name="chapitre_maladie_id",
+        string="Maladies",
+    )
