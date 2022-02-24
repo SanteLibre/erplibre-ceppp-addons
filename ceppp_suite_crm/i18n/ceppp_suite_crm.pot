@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-23 09:44+0000\n"
-"PO-Revision-Date: 2022-02-23 09:44+0000\n"
+"POT-Creation-Date: 2022-02-24 19:22+0000\n"
+"PO-Revision-Date: 2022-02-24 19:22+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -28,6 +28,16 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_absence_de_signes_vitaux_asv
 msgid "Absence de signes vitaux (ASV)"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__consentement_miseajour
+msgid "Acceptez-vous qu'on communique avec vous annuellement pour des fins de mise à jour de vos informations?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__consentement_recherche
+msgid "Acceptez-vous que vos données concernant votre parcours de soins, vos implications en tant que patients partenaires et vos données socio démographiques soient utilisées pour des fins de recherche en lien avec le partenariat ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -420,6 +430,12 @@ msgid "Attribution du diagnostic principal et du problème principal dans le cas
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__duree_experience
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__duree_experience
+msgid "Au total, depuis combien de temps pensez-vous être impliqué dans des associations, comités, ou autre ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Augmentin"
@@ -467,6 +483,48 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_search
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_perspective_patient_view_search
 msgid "Autres préférences"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_fatigabilite
+msgid "Avez-vous besoin d'accompagnement spécifique au niveau fatigabilité ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_mob
+msgid "Avez-vous besoin d'accompagnement spécifique pour la mobilité réduite ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__assistance_audition
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__assistance_vision
+msgid "Avez-vous besoin d'assistance ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__patient_ajout
+msgid "Avez-vous d'autres choses à ajouter ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_aud
+msgid "Avez-vous des problèmes d'audition ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_vue
+msgid "Avez-vous des problèmes de la vision ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__formation_pp
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__formation_pp
+msgid "Avez-vous déjà suivi une formation sur le partenariat patient ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__exp_sante
+msgid "Avez-vous déjà travaillé dans le milieu de santé?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -1078,6 +1136,12 @@ msgid "Chirurgie vasculaire"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__role_pp
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__role_pp
+msgid "Choisissez les profils de partenaires qui correspondent à vos activités en lien avec vos implications actuelles de partenariat"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Ciloxan"
@@ -1211,6 +1275,11 @@ msgid "Comment"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__comment_refere
+msgid "Comment avez-vous été référé ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__comment_refere
 msgid "Comment avez-vous été référé?"
 msgstr ""
@@ -1225,6 +1294,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_commentaires_recruteur__commentaires_recruteur
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_commentaires_recruteur_view_search
 msgid "Commentaires additionnels"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__comm_recruteur
+msgid "Commentaires du recruteur ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -1324,6 +1398,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__consentement_usage_donnees
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_search
 msgid "Consentement sur les données"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__consentement_usage_donnees
+msgid "Consentez-vous à faire partie de la banque de données ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -1464,6 +1543,21 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,association_etablissement_recr:0
 msgid "DCPP"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__etabl_sante_pa
+msgid "Dans quel établissement de santé le pp se fait-il principalement traiter ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__etabl_sante
+msgid "Dans quels établissements de soins et servivces êtes-vous suivis (ou avez vous été suivis) ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__etabl_prem_ligne
+msgid "Dans quels établissements de soins et servivces êtes-vous suivis (ou avez vous été suivis) en première ligne ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -1850,6 +1944,12 @@ msgid "En voiture"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__conflit_interet
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__conflit_interet
+msgid "En vue du projet sur lequel vous êtes appelé à collaborer comme patient partenaire, existe-t-il des situations qui pourraient représenter un conflit d'intérêt réel ou potentiel (ex. membre d'une association militante, votre employeur, intérêts financiers personnels, gains pour moi ou un proche par rapport à un accès à certains soins, engagement idéologique) ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa:0
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa_2:0
 #: selection:ceppp.suite_crm.patients,domaine_soin_pa_3:0
@@ -1898,6 +1998,11 @@ msgstr ""
 #: selection:ceppp.suite_crm.patients,competences_pp:0
 #: selection:ceppp.suite_crm.patients,competences_pr:0
 msgid "Est à l'écoute"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__consentement_dcpp_recrut
+msgid "Est-ce que vous consentez à vous impliquer en tant que patient partenaire ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -2784,6 +2889,11 @@ msgid "Ictère néonatal"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__recruteur
+msgid "Identifier le recruteur"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Imdur"
@@ -2829,6 +2939,11 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.maladie,nom:ceppp_suite_crm.ceppp_suite_crm_maladie_infections
 msgid "Infections"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__date_entrevue
+msgid "Inscrire la date"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -3052,6 +3167,27 @@ msgstr ""
 #. module: ceppp_suite_crm
 #: model:ceppp.suite_crm.region_admin,nom:ceppp_suite_crm.ceppp_suite_crm_region_admin_laval
 msgid "Laval"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__doul_chron
+msgid "Le pp a-t-il des douleurs chroniques ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__prob_resp
+msgid "Le pp a-t-il des proiblèmes de respiration ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__prob_somm
+msgid "Le pp a-t-il des proiblèmes de sommeil ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__med_2
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__med_3
+msgid "Le pp prend-il des médicaments? Si oui, lesquels ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -3831,6 +3967,12 @@ msgid "Norvasc"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__membre_assoc_comite
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__membre_assoc_comite
+msgid "Nous aimerions connaître vos implications. Êtes vous membre d'une association ou d'un comité en lien - ou NON - avec votre expérience avec la maladie ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Nulytely"
@@ -4073,6 +4215,12 @@ msgid "Pamine FORTE"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__formation_qui
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__formation_qui
+msgid "Par quel organisme a-t-elle été donnée? + où, quand, etc,…"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_formation__formation_par_qui
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_formation_view_search
 msgid "Par qui"
@@ -4239,6 +4387,17 @@ msgid "Poursuite de la grossesse après avortement/réduction sélective de foet
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__experience_maladie_pa
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__experience_maladie_pa
+msgid "Pouvez-vous décrire votre expérience comme pair aidant ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__experience_maladie_pp
+msgid "Pouvez-vous expliquer ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Pravachol"
@@ -4265,6 +4424,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__preneur_decisions
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_perspective_patient_view_search
 msgid "Preneur de décisions"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__med_1
+msgid "Prenez-vous des médicaments ? Si oui, lesquels ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -4407,6 +4571,11 @@ msgid "Prozac WEEKLY"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__niveau_autre
+msgid "Précisez d'autres accompagnements dont vous avez besoin"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__exp_sante_detail
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__exp_sante_detail
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_search
@@ -4464,14 +4633,88 @@ msgid "Péritonite due à une dialyse péritonéale continue ambulatoire (DPCA)"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__prob_sant
+msgid "Quel est ou quels sont vos principales problématiques de santé ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__emploi_perso
+msgid "Quel est votre emploi du temps principal ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__education_perso
+msgid "Quel est votre plus haut niveau complété d'éducation"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__org_ref_recrut
+msgid "Quel organisme ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_entrevues__org_ref_recrut
 msgid "Quel organisme?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__formation_oui
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__formation_oui
+msgid "Quel était le nom de cette formation ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__langue_corresp
+msgid "Quelle est votre langue de correspondance préférée"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__perspective
+msgid "Quelle est votre perspective ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__habiletes_pp
+msgid "Quelles habiletés ou aptitudes personnelles peuvent être identifiées ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__langue_parlee
+msgid "Quelles langues parlez-vous couramment parmi les suivantes ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__preferences
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__preferences
+msgid "Quelles sont vos disponibilités pour vous impliquer auprès de notre organisation ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__motivations_implication
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__motivations_implication
+msgid "Quelles sont vos motivations à vous impliquer à titre de patient partenaire au sein de notre organisation ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__disponibilites
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__disponibilites
+msgid "Quelles sont vos préférences de disponibilité ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Questran / QUESTRAN LIGHT"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__preneur_decisions
+msgid "Qui prend les décisions qui concernent vos soins et services ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__personne_reference_recrut
+msgid "Qui vous a référé à notre organisation ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -4847,6 +5090,23 @@ msgid "Si oui, laquelle"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__membre_assoc_comite_detail
+msgid "Si oui, laquelle ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__conflit_interet_detail
+msgid "Si oui, lesquels?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__exp_sante_detail
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__exp_sante
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__exp_sante_detail
+msgid "Si oui, quelle est votre expérience dans le milieu de santé hors de votre expérience avec la maladie ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Silvadene"
@@ -4891,6 +5151,11 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Sonata"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__maladie_rare_details
+msgid "Souffrez-vous d'une maladie rare ? Veuillez la préciser"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -4998,6 +5263,21 @@ msgstr ""
 #: model:ir.actions.act_window,name:ceppp_suite_crm.ceppp_suite_crm_region_admin_suite_crm_region_admin_action_window
 #: model:ir.ui.menu,name:ceppp_suite_crm.suite_crm_region_admin
 msgid "Suite crm region admin"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__competences_pp
+msgid "Suite à l'entrevue, quelles compétences peuvent être identifiées chez le PP ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__competences_ppc
+msgid "Suite à l'entrevue, quelles compétences peuvent être identifiées chez le PProfilCoach ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__competences_pr
+msgid "Suite à l'entrevue, quelles compétences peuvent être identifiées chez le PRessource ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -5444,6 +5724,38 @@ msgid "Verelan PM"
 msgstr ""
 
 #. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__descr_exp
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__descr_exp
+msgid "Veuillez SVP décrire le type d'impicaiton et le rôle que vous y avez joué"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__experience_maladie_proche
+msgid "Veuillez décrire votre implication dans le parcours de soins de votre proche"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__experience_maladie
+msgid "Veuillez décrire votre problématique de santé"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__domaine_soin
+msgid "Veuillez nommer les spécialités pour lesquelles vous avez reçu des soins"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__preferences_autre
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__preferences_autre
+msgid "Veuillez préciser vos autres intérêts si besoin"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__assistance_mob
+msgid "Veuillez sélectionner toute option qui s'applique"
+msgstr ""
+
+#. module: ceppp_suite_crm
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vibramycin"
@@ -5518,6 +5830,11 @@ msgstr ""
 #: selection:ceppp.suite_crm.perspective_patient,med_2:0
 #: selection:ceppp.suite_crm.perspective_patient,med_3:0
 msgid "Vospire ER"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_perspective_patient__exp_decision
+msgid "Vous sentez-vous partenaires de vos soins ?"
 msgstr ""
 
 #. module: ceppp_suite_crm
@@ -5758,6 +6075,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:ceppp_suite_crm.field_ceppp_suite_crm_patients__test_int_field
 #: model_terms:ir.ui.view,arch_db:ceppp_suite_crm.ceppp_suite_crm_patients_view_search
 msgid "test int field"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__formation_date
+msgid "À quel moment cette formation vous a été donnée ?"
+msgstr ""
+
+#. module: ceppp_suite_crm
+#: model:ir.model.fields,help:ceppp_suite_crm.field_ceppp_suite_crm_patients__association_etablissement_recr
+msgid "À quel établissement sera associé le PP ?"
 msgstr ""
 
 #. module: ceppp_suite_crm

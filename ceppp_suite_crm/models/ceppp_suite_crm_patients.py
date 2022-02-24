@@ -11,6 +11,7 @@ class CepppSuiteCrmPatients(models.Model):
     assistance_audition = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Besoin d'assistance",
+        help="Avez-vous besoin d'assistance ?",
     )
 
     assistance_mob = fields.Selection(
@@ -20,11 +21,13 @@ class CepppSuiteCrmPatients(models.Model):
             ("transport_adapte", "Transport adapté"),
         ],
         string="Aides à la mobilité",
+        help="Veuillez sélectionner toute option qui s'applique",
     )
 
     assistance_vision = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Besoin d'assistance",
+        help="Avez-vous besoin d'assistance ?",
     )
 
     association_etablissement_recr = fields.Selection(
@@ -42,6 +45,7 @@ class CepppSuiteCrmPatients(models.Model):
             ("canet", "CANet"),
         ],
         string="Établissement de recrutement",
+        help="À quel établissement sera associé le PP ?",
     )
 
     centre_recrutement = fields.Char(string="Centre de recrutement")
@@ -51,9 +55,15 @@ class CepppSuiteCrmPatients(models.Model):
         required=True,
     )
 
-    comm_recruteur = fields.Text(string="Commentaires recruteur")
+    comm_recruteur = fields.Text(
+        string="Commentaires recruteur",
+        help="Commentaires du recruteur ?",
+    )
 
-    comment_refere = fields.Char(string="Comment")
+    comment_refere = fields.Char(
+        string="Comment",
+        help="Comment avez-vous été référé ?",
+    )
 
     competences_pp = fields.Selection(
         selection=[
@@ -117,6 +127,10 @@ class CepppSuiteCrmPatients(models.Model):
             ),
         ],
         string="Compétences",
+        help=(
+            "Suite à l'entrevue, quelles compétences peuvent être identifiées"
+            " chez le PP ?"
+        ),
     )
 
     competences_ppc = fields.Selection(
@@ -141,6 +155,10 @@ class CepppSuiteCrmPatients(models.Model):
             ),
         ],
         string="Compétences",
+        help=(
+            "Suite à l'entrevue, quelles compétences peuvent être identifiées"
+            " chez le PProfilCoach ?"
+        ),
     )
 
     competences_pr = fields.Selection(
@@ -155,36 +173,69 @@ class CepppSuiteCrmPatients(models.Model):
             ("est_a_l_ecoute", "Est à l'écoute"),
         ],
         string="Compétences",
+        help=(
+            "Suite à l'entrevue, quelles compétences peuvent être identifiées"
+            " chez le PRessource ?"
+        ),
     )
 
     conflit_interet = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Conflit d'intérêt",
+        help=(
+            "En vue du projet sur lequel vous êtes appelé à collaborer comme"
+            " patient partenaire, existe-t-il des situations qui pourraient"
+            " représenter un conflit d'intérêt réel ou potentiel (ex. membre"
+            " d'une association militante, votre employeur, intérêts"
+            " financiers personnels, gains pour moi ou un proche par rapport à"
+            " un accès à certains soins, engagement idéologique) ?"
+        ),
     )
 
-    conflit_interet_detail = fields.Char(string="Lequel")
+    conflit_interet_detail = fields.Char(
+        string="Lequel",
+        help="Si oui, lesquels?",
+    )
 
     consentement_dcpp_recrut = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Consentement sur l'implication",
+        help=(
+            "Est-ce que vous consentez à vous impliquer en tant que patient"
+            " partenaire ?"
+        ),
     )
 
     consentement_miseajour = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Consentement sur la communication",
+        help=(
+            "Acceptez-vous qu'on communique avec vous annuellement pour des"
+            " fins de mise à jour de vos informations?"
+        ),
     )
 
     consentement_recherche = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Consentement sur la recherche",
+        help=(
+            "Acceptez-vous que vos données concernant votre parcours de soins,"
+            " vos implications en tant que patients partenaires et vos données"
+            " socio démographiques soient utilisées pour des fins de recherche"
+            " en lien avec le partenariat ?"
+        ),
     )
 
     consentement_usage_donnees = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Consentement sur les données",
+        help="Consentez-vous à faire partie de la banque de données ?",
     )
 
-    date_entrevue = fields.Date(string="Date de la rencontre téléphonique")
+    date_entrevue = fields.Date(
+        string="Date de la rencontre téléphonique",
+        help="Inscrire la date",
+    )
 
     deplacements = fields.Selection(
         selection=[
@@ -195,7 +246,13 @@ class CepppSuiteCrmPatients(models.Model):
         string="Comment vous déplacez-vous ?",
     )
 
-    descr_exp = fields.Char(string="Description de l'expérience")
+    descr_exp = fields.Char(
+        string="Description de l'expérience",
+        help=(
+            "Veuillez SVP décrire le type d'impicaiton et le rôle que vous y"
+            " avez joué"
+        ),
+    )
 
     disponibilites = fields.Selection(
         selection=[
@@ -206,6 +263,7 @@ class CepppSuiteCrmPatients(models.Model):
             ("jours", "Jours"),
         ],
         string="Disponibilités",
+        help="Quelles sont vos préférences de disponibilité ?",
     )
 
     domaine_soin_pa = fields.Selection(
@@ -370,9 +428,16 @@ class CepppSuiteCrmPatients(models.Model):
     doul_chron = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Douleur chronique",
+        help="Le pp a-t-il des douleurs chroniques ?",
     )
 
-    duree_experience = fields.Char(string="Durée d'expérience (Années / Mois)")
+    duree_experience = fields.Char(
+        string="Durée d'expérience (Années / Mois)",
+        help=(
+            "Au total, depuis combien de temps pensez-vous être impliqué dans"
+            " des associations, comités, ou autre ?"
+        ),
+    )
 
     education_perso = fields.Selection(
         selection=[
@@ -386,6 +451,7 @@ class CepppSuiteCrmPatients(models.Model):
             ("autre", "Autre"),
         ],
         string="Formation professionnelle",
+        help="Quel est votre plus haut niveau complété d'éducation",
     )
 
     education_perso_autre = fields.Char(string="Autre niveau (préciser)")
@@ -401,6 +467,7 @@ class CepppSuiteCrmPatients(models.Model):
             ("autre", "Autre"),
         ],
         string="Emploi du temps",
+        help="Quel est votre emploi du temps principal ?",
     )
 
     etabl_prem_ligne_pa_ = fields.Char(
@@ -410,6 +477,10 @@ class CepppSuiteCrmPatients(models.Model):
     etabl_sante_pa = fields.Many2one(
         comodel_name="ceppp.suite_crm.hopital",
         string="Établissement de santé principal",
+        help=(
+            "Dans quel établissement de santé le pp se fait-il principalement"
+            " traiter ?"
+        ),
     )
 
     etabl_sante_pa_ = fields.Char(string="Établissement de santé principal")
@@ -422,26 +493,55 @@ class CepppSuiteCrmPatients(models.Model):
     exp_sante = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Expérience professionnelle dans le milieu de la santé",
+        help="Avez-vous déjà travaillé dans le milieu de santé?",
     )
 
-    exp_sante_detail = fields.Text(string="Précisions")
+    exp_sante_detail = fields.Text(
+        string="Précisions",
+        help=(
+            "Si oui, quelle est votre expérience dans le milieu de santé hors"
+            " de votre expérience avec la maladie ?"
+        ),
+    )
 
-    experience_maladie_pa = fields.Text(string="Expérience comme pair aidant")
+    experience_maladie_pa = fields.Text(
+        string="Expérience comme pair aidant",
+        help="Pouvez-vous décrire votre expérience comme pair aidant ?",
+    )
 
-    experience_maladie_pp = fields.Text(string="Description de l'expérience")
+    experience_maladie_pp = fields.Text(
+        string="Description de l'expérience",
+        help="Pouvez-vous expliquer ?",
+    )
 
-    experience_maladie_proche = fields.Text(string="Expérience maladie proche")
+    experience_maladie_proche = fields.Text(
+        string="Expérience maladie proche",
+        help=(
+            "Veuillez décrire votre implication dans le parcours de soins de"
+            " votre proche"
+        ),
+    )
 
-    formation_date = fields.Date(string="Date de formation")
+    formation_date = fields.Date(
+        string="Date de formation",
+        help="À quel moment cette formation vous a été donnée ?",
+    )
 
-    formation_oui = fields.Char(string="Si oui, laquelle")
+    formation_oui = fields.Char(
+        string="Si oui, laquelle",
+        help="Quel était le nom de cette formation ?",
+    )
 
     formation_pp = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Formation suivie sur le partenariat patient",
+        help="Avez-vous déjà suivi une formation sur le partenariat patient ?",
     )
 
-    formation_qui = fields.Char(string="Formation par qui")
+    formation_qui = fields.Char(
+        string="Formation par qui",
+        help="Par quel organisme a-t-elle été donnée? + où, quand, etc,…",
+    )
 
     genre = fields.Selection(
         selection=[("homme", "Homme"), ("femme", "Femme"), ("autre", "Autre")],
@@ -478,6 +578,10 @@ class CepppSuiteCrmPatients(models.Model):
             ),
         ],
         string="Habiletés",
+        help=(
+            "Quelles habiletés ou aptitudes personnelles peuvent être"
+            " identifiées ?"
+        ),
     )
 
     langue_corresp = fields.Selection(
@@ -488,6 +592,7 @@ class CepppSuiteCrmPatients(models.Model):
             ("autre", "Autre"),
         ],
         string="Langue de correspondance",
+        help="Quelle est votre langue de correspondance préférée",
     )
 
     langue_parlee = fields.Selection(
@@ -498,16 +603,31 @@ class CepppSuiteCrmPatients(models.Model):
             ("autre", "Autre"),
         ],
         string="Langues parlées",
+        help="Quelles langues parlez-vous couramment parmi les suivantes ?",
     )
 
     membre_assoc_comite = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Membre d'une association ou comité",
+        help=(
+            "Nous aimerions connaître vos implications. Êtes vous membre d'une"
+            " association ou d'un comité en lien - ou NON - avec votre"
+            " expérience avec la maladie ?"
+        ),
     )
 
-    membre_assoc_comite_detail = fields.Char(string="Laquelle")
+    membre_assoc_comite_detail = fields.Char(
+        string="Laquelle",
+        help="Si oui, laquelle ?",
+    )
 
-    motivations_implication = fields.Char(string="Motivations à s'impliquer")
+    motivations_implication = fields.Char(
+        string="Motivations à s'impliquer",
+        help=(
+            "Quelles sont vos motivations à vous impliquer à titre de patient"
+            " partenaire au sein de notre organisation ?"
+        ),
+    )
 
     naissance_perso = fields.Date(
         string="Date de naissance",
@@ -521,30 +641,52 @@ class CepppSuiteCrmPatients(models.Model):
     niveau_aud = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Ouïe",
+        help="Avez-vous des problèmes d'audition ?",
     )
 
-    niveau_autre = fields.Char(string="Autres besoins spécifiques")
+    niveau_autre = fields.Char(
+        string="Autres besoins spécifiques",
+        help="Précisez d'autres accompagnements dont vous avez besoin",
+    )
 
     niveau_fatigabilite = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Niveau de fatigabilité",
+        help=(
+            "Avez-vous besoin d'accompagnement spécifique au niveau"
+            " fatigabilité ?"
+        ),
     )
 
     niveau_mob = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Mobilité",
+        help=(
+            "Avez-vous besoin d'accompagnement spécifique pour la mobilité"
+            " réduite ?"
+        ),
     )
 
     niveau_vue = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Vue",
+        help="Avez-vous des problèmes de la vision ?",
     )
 
-    org_ref_recrut = fields.Char(string="Établissement de recrutement")
+    org_ref_recrut = fields.Char(
+        string="Établissement de recrutement",
+        help="Quel organisme ?",
+    )
 
-    patient_ajout = fields.Text(string="Commentaires patient")
+    patient_ajout = fields.Text(
+        string="Commentaires patient",
+        help="Avez-vous d'autres choses à ajouter ?",
+    )
 
-    personne_reference_recrut = fields.Char(string="Référence")
+    personne_reference_recrut = fields.Char(
+        string="Référence",
+        help="Qui vous a référé à notre organisation ?",
+    )
 
     preferences = fields.Selection(
         selection=[
@@ -557,15 +699,23 @@ class CepppSuiteCrmPatients(models.Model):
             ("interets_autre", "Autre"),
         ],
         string="Préférences",
+        help=(
+            "Quelles sont vos disponibilités pour vous impliquer auprès de"
+            " notre organisation ?"
+        ),
     )
 
-    preferences_autre = fields.Text(string="Autres préférences")
+    preferences_autre = fields.Text(
+        string="Autres préférences",
+        help="Veuillez préciser vos autres intérêts si besoin",
+    )
 
     prenom = fields.Char(string="Prénom")
 
     prob_resp = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Problème respiratoire",
+        help="Le pp a-t-il des proiblèmes de respiration ?",
     )
 
     prob_sant_pa = fields.Many2one(
@@ -586,9 +736,13 @@ class CepppSuiteCrmPatients(models.Model):
     prob_somm = fields.Selection(
         selection=[("oui", "Oui"), ("non", "Non")],
         string="Problèmes de sommeil",
+        help="Le pp a-t-il des proiblèmes de sommeil ?",
     )
 
-    recruteur = fields.Char(string="Responsable de l'entrevue")
+    recruteur = fields.Char(
+        string="Responsable de l'entrevue",
+        help="Identifier le recruteur",
+    )
 
     rel_patient = fields.Selection(
         selection=[
@@ -610,6 +764,10 @@ class CepppSuiteCrmPatients(models.Model):
             ("aviseur", "Aviseur"),
         ],
         string="Role",
+        help=(
+            "Choisissez les profils de partenaires qui correspondent à vos"
+            " activités en lien avec vos implications actuelles de partenariat"
+        ),
     )
 
     tel_dom_perso = fields.Char(string="No. de téléphone (domicile)")

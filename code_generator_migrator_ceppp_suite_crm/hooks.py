@@ -987,6 +987,31 @@ def post_init_hook(cr, e):
                     help_value = dct_php_field_value.get("help")
                     if help_value:
                         dct_field_info["help"] = help_value
+
+                    qdetail_value = dct_php_field_value.get("qdetail")
+                    qdetail_en_value = dct_php_field_value.get("qdetail_en")
+                    if qdetail_value:
+                        if help_value:
+                            _logger.warning(
+                                "Duplicate information with help"
+                                f" '{help_value}' and qdetail"
+                                f" '{qdetail_value}' for field '{field_name}'"
+                                f" and model '{model_model}'."
+                            )
+                        else:
+                            dct_field_info["help"] = qdetail_value
+                        if qdetail_en_value:
+                            dct_new_translate[
+                                qdetail_value
+                            ] = qdetail_en_value
+
+                    elif qdetail_en_value:
+                        _logger.warning(
+                            "qdetail is empty, but qdetail_en is not empty :"
+                            f" '{qdetail_en_value}', for field '{field_name}'"
+                            f" and model '{model_model}'."
+                        )
+
                     required = dct_php_field_value.get("required")
                     if required:
                         dct_field_info["required"] = required
