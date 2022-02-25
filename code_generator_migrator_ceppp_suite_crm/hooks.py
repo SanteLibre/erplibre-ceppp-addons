@@ -683,6 +683,7 @@ def post_init_hook(cr, e):
     debug = True
     # Key is origin, value is eng
     dct_new_translate = {}
+    set_all_operated_option = set()
 
     if debug:
         nb_data = 0
@@ -887,6 +888,9 @@ def post_init_hook(cr, e):
                                         model_name_level_2 = (
                                             f"{prefix_model}hopital"
                                         )
+                                        dct_associate_option_with_model[
+                                            suite_crm_option
+                                        ] = model_name_level_2
                                         generate_model_from_2_level_selection(
                                             lst_added_model_name,
                                             code_generator_id,
@@ -905,6 +909,9 @@ def post_init_hook(cr, e):
                                         model_name_level_2 = (
                                             f"{prefix_model}maladie"
                                         )
+                                        dct_associate_option_with_model[
+                                            suite_crm_option
+                                        ] = model_name_level_2
                                         generate_model_from_2_level_selection(
                                             lst_added_model_name,
                                             code_generator_id,
@@ -923,7 +930,9 @@ def post_init_hook(cr, e):
                                         # model_name_level_1 = (
                                         #     f"{field_name}"
                                         # )
-                                        associate_model = dct_associate_option_with_model.get(suite_crm_option)
+                                        associate_model = dct_associate_option_with_model.get(
+                                            suite_crm_option
+                                        )
                                         if not associate_model:
                                             model_name_level_1 = (
                                                 f"{prefix_model}{field_name}"
@@ -937,9 +946,9 @@ def post_init_hook(cr, e):
                                                 #     "_", " "
                                                 # ).capitalize(),
                                             )
-                                            dct_associate_option_with_model[suite_crm_option] = model_name_level_1
-                                        else:
-                                            associate_model = model_name_level_1
+                                            dct_associate_option_with_model[
+                                                suite_crm_option
+                                            ] = model_name_level_1
                                         dct_field_info[
                                             "relation"
                                         ] = model_name_level_1
@@ -949,6 +958,9 @@ def post_init_hook(cr, e):
                                             f" {suite_crm_option}"
                                         )
                                         continue
+                                    set_all_operated_option.add(
+                                        suite_crm_option
+                                    )
                                     if is_selection:
                                         new_type = "selection"
                                     elif is_multi_option:
@@ -1142,6 +1154,14 @@ def post_init_hook(cr, e):
                 lst_depend_model=lst_depend_model,
             )
             lst_added_model_name.append(model_model)
+
+        # Validate all option is operated
+        for operation_option_name in dct_lang_option_parser_en.keys():
+            if operation_option_name not in set_all_operated_option:
+                _logger.warning(
+                    f"Operation '{operation_option_name}' is not associate"
+                    " with a field form."
+                )
 
         # Generate view
         # Action generate view
