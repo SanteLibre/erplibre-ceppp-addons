@@ -16,10 +16,18 @@
     <!--Child menu-->
 
     <menuitem
+        id="suite_crm_assistance_mob"
+        name="Suite crm assistance mob"
+        action="ceppp_suite_crm_assistance_mob_suite_crm_assistance_mob_action_window"
+        sequence="1"
+        parent="menu"
+    />
+
+    <menuitem
         id="suite_crm_chapitre_maladie"
         name="Suite crm chapitre maladie"
         action="ceppp_suite_crm_chapitre_maladie_suite_crm_chapitre_maladie_action_window"
-        sequence="1"
+        sequence="2"
         parent="menu"
     />
 
@@ -27,7 +35,63 @@
         id="suite_crm_commentaires_recruteur"
         name="Suite crm commentaires recruteur"
         action="ceppp_suite_crm_commentaires_recruteur_suite_crm_commentaires_recruteur_action_window"
-        sequence="2"
+        sequence="3"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_competences_pp"
+        name="Suite crm competences pp"
+        action="ceppp_suite_crm_competences_pp_suite_crm_competences_pp_action_window"
+        sequence="4"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_competences_ppc"
+        name="Suite crm competences ppc"
+        action="ceppp_suite_crm_competences_ppc_suite_crm_competences_ppc_action_window"
+        sequence="5"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_competences_pr"
+        name="Suite crm competences pr"
+        action="ceppp_suite_crm_competences_pr_suite_crm_competences_pr_action_window"
+        sequence="6"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_deplacements"
+        name="Suite crm deplacements"
+        action="ceppp_suite_crm_deplacements_suite_crm_deplacements_action_window"
+        sequence="7"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_disponibilites"
+        name="Suite crm disponibilites"
+        action="ceppp_suite_crm_disponibilites_suite_crm_disponibilites_action_window"
+        sequence="8"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_domaine_soin_pa"
+        name="Suite crm domaine soin pa"
+        action="ceppp_suite_crm_domaine_soin_pa_suite_crm_domaine_soin_pa_action_window"
+        sequence="9"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_emploi_perso"
+        name="Suite crm emploi perso"
+        action="ceppp_suite_crm_emploi_perso_suite_crm_emploi_perso_action_window"
+        sequence="10"
         parent="menu"
     />
 
@@ -35,7 +99,7 @@
         id="suite_crm_entrevues"
         name="Suite crm entrevues"
         action="ceppp_suite_crm_entrevues_suite_crm_entrevues_action_window"
-        sequence="3"
+        sequence="11"
         parent="menu"
     />
 
@@ -43,7 +107,7 @@
         id="suite_crm_exp_patient_partenaire"
         name="Suite crm exp patient partenaire"
         action="ceppp_suite_crm_exp_patient_partenaire_suite_crm_exp_patient_partenaire_action_window"
-        sequence="4"
+        sequence="12"
         parent="menu"
     />
 
@@ -51,7 +115,15 @@
         id="suite_crm_formation"
         name="Suite crm formation"
         action="ceppp_suite_crm_formation_suite_crm_formation_action_window"
-        sequence="5"
+        sequence="13"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_habiletes_pp"
+        name="Suite crm habiletes pp"
+        action="ceppp_suite_crm_habiletes_pp_suite_crm_habiletes_pp_action_window"
+        sequence="14"
         parent="menu"
     />
 
@@ -59,7 +131,15 @@
         id="suite_crm_hopital"
         name="Suite crm hopital"
         action="ceppp_suite_crm_hopital_suite_crm_hopital_action_window"
-        sequence="6"
+        sequence="15"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_langue_parlee"
+        name="Suite crm langue parlee"
+        action="ceppp_suite_crm_langue_parlee_suite_crm_langue_parlee_action_window"
+        sequence="16"
         parent="menu"
     />
 
@@ -67,7 +147,15 @@
         id="suite_crm_maladie"
         name="Suite crm maladie"
         action="ceppp_suite_crm_maladie_suite_crm_maladie_action_window"
-        sequence="7"
+        sequence="17"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_med_2"
+        name="Suite crm med 2"
+        action="ceppp_suite_crm_med_2_suite_crm_med_2_action_window"
+        sequence="18"
         parent="menu"
     />
 
@@ -75,7 +163,7 @@
         id="suite_crm_partenariats"
         name="Suite crm partenariats"
         action="ceppp_suite_crm_partenariats_suite_crm_partenariats_action_window"
-        sequence="8"
+        sequence="19"
         parent="menu"
     />
 
@@ -83,7 +171,7 @@
         id="suite_crm_patients"
         name="Suite crm patients"
         action="ceppp_suite_crm_patients_suite_crm_patients_action_window"
-        sequence="9"
+        sequence="20"
         parent="menu"
     />
 
@@ -91,7 +179,15 @@
         id="suite_crm_perspective_patient"
         name="Suite crm perspective patient"
         action="ceppp_suite_crm_perspective_patient_suite_crm_perspective_patient_action_window"
-        sequence="10"
+        sequence="21"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_preferences"
+        name="Suite crm preferences"
+        action="ceppp_suite_crm_preferences_suite_crm_preferences_action_window"
+        sequence="22"
         parent="menu"
     />
 
@@ -99,7 +195,15 @@
         id="suite_crm_region_admin"
         name="Suite crm region admin"
         action="ceppp_suite_crm_region_admin_suite_crm_region_admin_action_window"
-        sequence="11"
+        sequence="23"
+        parent="menu"
+    />
+
+    <menuitem
+        id="suite_crm_role_pp"
+        name="Suite crm role pp"
+        action="ceppp_suite_crm_role_pp_suite_crm_role_pp_action_window"
+        sequence="24"
         parent="menu"
     />
 </odoo>

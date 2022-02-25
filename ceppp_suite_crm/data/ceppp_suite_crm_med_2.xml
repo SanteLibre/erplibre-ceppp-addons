@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_med_2_accolate" model="ceppp.suite_crm.med_2">
+            <field name="nom">Accolate</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_accuneb" model="ceppp.suite_crm.med_2">
+            <field name="nom">Accuneb</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_accuretic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Accuretic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_aceon" model="ceppp.suite_crm.med_2">
+            <field name="nom">Aceon</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_aclovate" model="ceppp.suite_crm.med_2">
+            <field name="nom">Aclovate</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_actigall" model="ceppp.suite_crm.med_2">
+            <field name="nom">Actigall</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_actiq" model="ceppp.suite_crm.med_2">
+            <field name="nom">Actiq</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_adalat_cc" model="ceppp.suite_crm.med_2">
+            <field name="nom">Adalat CC</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_adderall" model="ceppp.suite_crm.med_2">
+            <field name="nom">Adderall</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_adderall_xr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Adderall XR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_adipex_p" model="ceppp.suite_crm.med_2">
+            <field name="nom">Adipex-P</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_agrylin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Agrylin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_aldactazide" model="ceppp.suite_crm.med_2">
+            <field name="nom">Aldactazide</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_aldactone" model="ceppp.suite_crm.med_2">
+            <field name="nom">Aldactone</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_aldara" model="ceppp.suite_crm.med_2">
+            <field name="nom">Aldara</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_allegra" model="ceppp.suite_crm.med_2">
+            <field name="nom">Allegra</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_alphagan_p" model="ceppp.suite_crm.med_2">
+            <field name="nom">Alphagan P</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_altace" model="ceppp.suite_crm.med_2">
+            <field name="nom">Altace</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_amaryl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Amaryl</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ambien" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ambien</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ambien_cr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ambien CR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_amerge" model="ceppp.suite_crm.med_2">
+            <field name="nom">Amerge</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_anafranil" model="ceppp.suite_crm.med_2">
+            <field name="nom">Anafranil</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_anaprox" model="ceppp.suite_crm.med_2">
+            <field name="nom">Anaprox</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_antivert" model="ceppp.suite_crm.med_2">
+            <field name="nom">Antivert</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_aralen" model="ceppp.suite_crm.med_2">
+            <field name="nom">Aralen</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_arava" model="ceppp.suite_crm.med_2">
+            <field name="nom">Arava</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_aricept" model="ceppp.suite_crm.med_2">
+            <field name="nom">Aricept</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_aricept_odt" model="ceppp.suite_crm.med_2">
+            <field name="nom">Aricept ODT</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_astelin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Astelin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ativan" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ativan</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_atrovent_nasal_spray" model="ceppp.suite_crm.med_2">
+            <field name="nom">Atrovent Nasal Spray</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_augmentin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Augmentin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_augmentin_xr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Augmentin XR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_axid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Axid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_aygestin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Aygestin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_azulfidine" model="ceppp.suite_crm.med_2">
+            <field name="nom">Azulfidine</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_azulfidine_en_tabs" model="ceppp.suite_crm.med_2">
+            <field name="nom">Azulfidine EN-TABS</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_bactroban" model="ceppp.suite_crm.med_2">
+            <field name="nom">Bactroban</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_bentyl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Bentyl</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_benzac_ac" model="ceppp.suite_crm.med_2">
+            <field name="nom">Benzac AC</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_benzamycin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Benzamycin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_betagan" model="ceppp.suite_crm.med_2">
+            <field name="nom">Betagan</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_betapace_af" model="ceppp.suite_crm.med_2">
+            <field name="nom">Betapace AF</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_biaxin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Biaxin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_biaxin_xl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Biaxin XL</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_bleph_10" model="ceppp.suite_crm.med_2">
+            <field name="nom">Bleph-10</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_bontril" model="ceppp.suite_crm.med_2">
+            <field name="nom">Bontril</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_brethine" model="ceppp.suite_crm.med_2">
+            <field name="nom">Brethine</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_brevicon" model="ceppp.suite_crm.med_2">
+            <field name="nom">Brevicon</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cafergot" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cafergot</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_calan" model="ceppp.suite_crm.med_2">
+            <field name="nom">Calan</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_calan_sr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Calan SR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_carafate" model="ceppp.suite_crm.med_2">
+            <field name="nom">Carafate</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cardizem" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cardizem</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cardizem_cd" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cardizem CD</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cardizem_la" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cardizem LA</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cardura" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cardura</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cataflam" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cataflam</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_catapres" model="ceppp.suite_crm.med_2">
+            <field name="nom">Catapres</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ceftin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ceftin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cellcept" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cellcept</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ciloxan" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ciloxan</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cipro" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cipro</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_claritin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Claritin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cleocin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cleocin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cleocin_t" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cleocin T</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cleocin_vaginal_cream" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cleocin Vaginal Cream</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_climara" model="ceppp.suite_crm.med_2">
+            <field name="nom">Climara</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_clinoril" model="ceppp.suite_crm.med_2">
+            <field name="nom">Clinoril</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_clomid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Clomid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_clozaril" model="ceppp.suite_crm.med_2">
+            <field name="nom">Clozaril</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_colazal" model="ceppp.suite_crm.med_2">
+            <field name="nom">Colazal</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_colestid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Colestid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_condylox" model="ceppp.suite_crm.med_2">
+            <field name="nom">Condylox</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_copegus" model="ceppp.suite_crm.med_2">
+            <field name="nom">Copegus</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cordarone" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cordarone</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_coreg" model="ceppp.suite_crm.med_2">
+            <field name="nom">Coreg</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_corgard" model="ceppp.suite_crm.med_2">
+            <field name="nom">Corgard</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cortef" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cortef</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_corzide" model="ceppp.suite_crm.med_2">
+            <field name="nom">Corzide</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cosopt" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cosopt</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_coumadin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Coumadin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cozaar" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cozaar</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cutivate" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cutivate</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cyclogyl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cyclogyl</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cytomel" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cytomel</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cytotec" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cytotec</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_cytovene" model="ceppp.suite_crm.med_2">
+            <field name="nom">Cytovene</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_dantrium" model="ceppp.suite_crm.med_2">
+            <field name="nom">Dantrium</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_daypro" model="ceppp.suite_crm.med_2">
+            <field name="nom">Daypro</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ddavp" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ddavp</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_demadex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Demadex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_demerol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Demerol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_depakene" model="ceppp.suite_crm.med_2">
+            <field name="nom">Depakene</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_depakote" model="ceppp.suite_crm.med_2">
+            <field name="nom">Depakote</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_depakote_er" model="ceppp.suite_crm.med_2">
+            <field name="nom">Depakote ER</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_depakote_sprinkles" model="ceppp.suite_crm.med_2">
+            <field name="nom">Depakote SPRINKLES</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_depo_provera" model="ceppp.suite_crm.med_2">
+            <field name="nom">Depo-PROVERA</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_desogen" model="ceppp.suite_crm.med_2">
+            <field name="nom">Desogen</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_desowen" model="ceppp.suite_crm.med_2">
+            <field name="nom">Desowen</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_dexedrine" model="ceppp.suite_crm.med_2">
+            <field name="nom">Dexedrine</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_dexedrine_spansule" model="ceppp.suite_crm.med_2">
+            <field name="nom">Dexedrine SPANSULE</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_d_h_e_45" model="ceppp.suite_crm.med_2">
+            <field name="nom">D.H.E. 45</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_diabeta" model="ceppp.suite_crm.med_2">
+            <field name="nom">Diabeta</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_diamox_sequels" model="ceppp.suite_crm.med_2">
+            <field name="nom">Diamox SEQUELS</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_differin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Differin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_diflucan" model="ceppp.suite_crm.med_2">
+            <field name="nom">Diflucan</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_dilacor_xr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Dilacor XR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_dilantin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Dilantin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_dilaudid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Dilaudid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_diprolene_af" model="ceppp.suite_crm.med_2">
+            <field name="nom">Diprolene AF</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_diprolene_gel_/_lotion_/_oint" model="ceppp.suite_crm.med_2">
+            <field name="nom">Diprolene gel / lotion / oint</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ditropan_xl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ditropan XL</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_donnatal" model="ceppp.suite_crm.med_2">
+            <field name="nom">Donnatal</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_drisdol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Drisdol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_duoneb" model="ceppp.suite_crm.med_2">
+            <field name="nom">Duoneb</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_duragesic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Duragesic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_dyazide" model="ceppp.suite_crm.med_2">
+            <field name="nom">Dyazide</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ec_naprosyn" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ec-NAPROSYN</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_effexor_xr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Effexor XR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_efudex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Efudex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_eldepryl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Eldepryl</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_eldopaque_forte" model="ceppp.suite_crm.med_2">
+            <field name="nom">Eldopaque FORTE</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_elocon" model="ceppp.suite_crm.med_2">
+            <field name="nom">Elocon</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_emla" model="ceppp.suite_crm.med_2">
+            <field name="nom">Emla</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_esgic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Esgic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_esgic_plus" model="ceppp.suite_crm.med_2">
+            <field name="nom">Esgic-PLUS</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_estrace" model="ceppp.suite_crm.med_2">
+            <field name="nom">Estrace</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_estrostep_fe" model="ceppp.suite_crm.med_2">
+            <field name="nom">Estrostep FE</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_exelon" model="ceppp.suite_crm.med_2">
+            <field name="nom">Exelon</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_famvir" model="ceppp.suite_crm.med_2">
+            <field name="nom">Famvir</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_feldene" model="ceppp.suite_crm.med_2">
+            <field name="nom">Feldene</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_fioricet" model="ceppp.suite_crm.med_2">
+            <field name="nom">Fioricet</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_fiorinal" model="ceppp.suite_crm.med_2">
+            <field name="nom">Fiorinal</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_flagyl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Flagyl</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_flagyl_375" model="ceppp.suite_crm.med_2">
+            <field name="nom">Flagyl 375</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_flagyl_er" model="ceppp.suite_crm.med_2">
+            <field name="nom">Flagyl ER</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_flarex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Flarex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_flexeril" model="ceppp.suite_crm.med_2">
+            <field name="nom">Flexeril</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_flomax" model="ceppp.suite_crm.med_2">
+            <field name="nom">Flomax</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_flonase" model="ceppp.suite_crm.med_2">
+            <field name="nom">Flonase</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_flumadine" model="ceppp.suite_crm.med_2">
+            <field name="nom">Flumadine</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_fml" model="ceppp.suite_crm.med_2">
+            <field name="nom">Fml</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_focalin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Focalin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_foltx" model="ceppp.suite_crm.med_2">
+            <field name="nom">Foltx</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_fosamax" model="ceppp.suite_crm.med_2">
+            <field name="nom">Fosamax</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_glucophage" model="ceppp.suite_crm.med_2">
+            <field name="nom">Glucophage</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_glucophage_xr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Glucophage XR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_glucotrol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Glucotrol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_glucovance" model="ceppp.suite_crm.med_2">
+            <field name="nom">Glucovance</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_glynase" model="ceppp.suite_crm.med_2">
+            <field name="nom">Glynase</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_halcion" model="ceppp.suite_crm.med_2">
+            <field name="nom">Halcion</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_hydrea" model="ceppp.suite_crm.med_2">
+            <field name="nom">Hydrea</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_hyzaar" model="ceppp.suite_crm.med_2">
+            <field name="nom">Hyzaar</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_imdur" model="ceppp.suite_crm.med_2">
+            <field name="nom">Imdur</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_imitrex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Imitrex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_imuran" model="ceppp.suite_crm.med_2">
+            <field name="nom">Imuran</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_inderal_la" model="ceppp.suite_crm.med_2">
+            <field name="nom">Inderal LA</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_inspra" model="ceppp.suite_crm.med_2">
+            <field name="nom">Inspra</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_isoptin_sr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Isoptin SR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_isordil" model="ceppp.suite_crm.med_2">
+            <field name="nom">Isordil</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_keflex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Keflex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_keppra" model="ceppp.suite_crm.med_2">
+            <field name="nom">Keppra</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_kerlone" model="ceppp.suite_crm.med_2">
+            <field name="nom">Kerlone</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_klaron" model="ceppp.suite_crm.med_2">
+            <field name="nom">Klaron</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_klonopin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Klonopin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_k_lor_20" model="ceppp.suite_crm.med_2">
+            <field name="nom">K-LOR 20</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_k_tab" model="ceppp.suite_crm.med_2">
+            <field name="nom">K-TAB</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_kytril" model="ceppp.suite_crm.med_2">
+            <field name="nom">Kytril</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lac_hydrin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lac-HYDRIN</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lamictal" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lamictal</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lamisil" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lamisil</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lanoxin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lanoxin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lasix" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lasix</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_levbid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Levbid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_levsin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Levsin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lithobid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lithobid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lo_/_ovral" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lo / OVRAL</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_locoid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Locoid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_loestrin_1_5_/_30" model="ceppp.suite_crm.med_2">
+            <field name="nom">Loestrin 1.5 / 30</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_loestrin_fe_1_/_20" model="ceppp.suite_crm.med_2">
+            <field name="nom">Loestrin FE 1 / 20</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_loestrin_fe_1_5_/_30" model="ceppp.suite_crm.med_2">
+            <field name="nom">Loestrin FE 1.5 / 30</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lomotil" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lomotil</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lopid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lopid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lopressor" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lopressor</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_loprox" model="ceppp.suite_crm.med_2">
+            <field name="nom">Loprox</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lorcet" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lorcet</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lortab" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lortab</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lotensin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lotensin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lotensin_hct" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lotensin HCT</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lotrel" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lotrel</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_loxitane" model="ceppp.suite_crm.med_2">
+            <field name="nom">Loxitane</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_luride" model="ceppp.suite_crm.med_2">
+            <field name="nom">Luride</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_luride_lozi_tabs" model="ceppp.suite_crm.med_2">
+            <field name="nom">Luride LOZI-TABS</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_lustra" model="ceppp.suite_crm.med_2">
+            <field name="nom">Lustra</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_macrobid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Macrobid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_macrodantin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Macrodantin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_mavik" model="ceppp.suite_crm.med_2">
+            <field name="nom">Mavik</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_maxidone" model="ceppp.suite_crm.med_2">
+            <field name="nom">Maxidone</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_maxitrol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Maxitrol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_maxzide" model="ceppp.suite_crm.med_2">
+            <field name="nom">Maxzide</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_maxzide_25" model="ceppp.suite_crm.med_2">
+            <field name="nom">Maxzide-25</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_medrol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Medrol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_megace" model="ceppp.suite_crm.med_2">
+            <field name="nom">Megace</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_mestinon" model="ceppp.suite_crm.med_2">
+            <field name="nom">Mestinon</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_metadate_er" model="ceppp.suite_crm.med_2">
+            <field name="nom">Metadate ER</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_metaglip" model="ceppp.suite_crm.med_2">
+            <field name="nom">Metaglip</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_metrocream" model="ceppp.suite_crm.med_2">
+            <field name="nom">Metrocream</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_metrolotion" model="ceppp.suite_crm.med_2">
+            <field name="nom">Metrolotion</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_metrogel_vaginal" model="ceppp.suite_crm.med_2">
+            <field name="nom">Metrogel-VAGINAL</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_mevacor" model="ceppp.suite_crm.med_2">
+            <field name="nom">Mevacor</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_miacalcin_nasal_spray" model="ceppp.suite_crm.med_2">
+            <field name="nom">Miacalcin nasal spray</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_midrin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Midrin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_minipress" model="ceppp.suite_crm.med_2">
+            <field name="nom">Minipress</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_minocin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Minocin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_miralax" model="ceppp.suite_crm.med_2">
+            <field name="nom">Miralax</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_mirapex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Mirapex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_mircette" model="ceppp.suite_crm.med_2">
+            <field name="nom">Mircette</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_mobic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Mobic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_modicon" model="ceppp.suite_crm.med_2">
+            <field name="nom">Modicon</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_monodox" model="ceppp.suite_crm.med_2">
+            <field name="nom">Monodox</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_motrin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Motrin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ms_contin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ms CONTIN</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_myambutol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Myambutol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_mycelex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Mycelex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_mysoline" model="ceppp.suite_crm.med_2">
+            <field name="nom">Mysoline</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_naprosyn" model="ceppp.suite_crm.med_2">
+            <field name="nom">Naprosyn</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_navane" model="ceppp.suite_crm.med_2">
+            <field name="nom">Navane</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_neo_synephrine" model="ceppp.suite_crm.med_2">
+            <field name="nom">Neo-SYNEPHRINE</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_neoral" model="ceppp.suite_crm.med_2">
+            <field name="nom">Neoral</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_neosporin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Neosporin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_neurontin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Neurontin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_nimotop" model="ceppp.suite_crm.med_2">
+            <field name="nom">Nimotop</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_niravam" model="ceppp.suite_crm.med_2">
+            <field name="nom">Niravam</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_nitro_dur" model="ceppp.suite_crm.med_2">
+            <field name="nom">Nitro-DUR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_nizoral_shampoo" model="ceppp.suite_crm.med_2">
+            <field name="nom">Nizoral SHAMPOO</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_nordette" model="ceppp.suite_crm.med_2">
+            <field name="nom">Nordette</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_norinyl_1+35" model="ceppp.suite_crm.med_2">
+            <field name="nom">Norinyl 1+35</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_norinyl_1+50" model="ceppp.suite_crm.med_2">
+            <field name="nom">Norinyl 1+50</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_norpace" model="ceppp.suite_crm.med_2">
+            <field name="nom">Norpace</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_norpramin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Norpramin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_nor_qd" model="ceppp.suite_crm.med_2">
+            <field name="nom">Nor-QD</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_norvasc" model="ceppp.suite_crm.med_2">
+            <field name="nom">Norvasc</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_nulytely" model="ceppp.suite_crm.med_2">
+            <field name="nom">Nulytely</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ocuflox" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ocuflox</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_olux" model="ceppp.suite_crm.med_2">
+            <field name="nom">Olux</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_opana" model="ceppp.suite_crm.med_2">
+            <field name="nom">Opana</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_optipranolol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Optipranolol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_orapred" model="ceppp.suite_crm.med_2">
+            <field name="nom">Orapred</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ortho_cept" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ortho-CEPT</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ortho_cyclen" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ortho-CYCLEN</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ortho_micronor" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ortho MICRONOR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ortho_novum_1_/_35" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ortho-NOVUM 1 / 35</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ortho_novum_7_/_7_/_7" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ortho-NOVUM 7 / 7 / 7</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ortho_tri_cyclen" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ortho TRI-CYCLEN</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ovcon_35" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ovcon 35</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ovide" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ovide</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_oxandrin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Oxandrin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pacerone" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pacerone</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pamelor" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pamelor</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pamine" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pamine</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pamine_forte" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pamine FORTE</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_parafon_forte_dsc" model="ceppp.suite_crm.med_2">
+            <field name="nom">Parafon FORTE DSC</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_parcopa" model="ceppp.suite_crm.med_2">
+            <field name="nom">Parcopa</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_parlodel" model="ceppp.suite_crm.med_2">
+            <field name="nom">Parlodel</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_parnate" model="ceppp.suite_crm.med_2">
+            <field name="nom">Parnate</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_paxil" model="ceppp.suite_crm.med_2">
+            <field name="nom">Paxil</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_paxil_cr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Paxil CR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pediapred" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pediapred</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pepcid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pepcid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_percocet" model="ceppp.suite_crm.med_2">
+            <field name="nom">Percocet</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_percodan" model="ceppp.suite_crm.med_2">
+            <field name="nom">Percodan</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_peridex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Peridex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_periostat" model="ceppp.suite_crm.med_2">
+            <field name="nom">Periostat</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_persantine" model="ceppp.suite_crm.med_2">
+            <field name="nom">Persantine</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_phoslo" model="ceppp.suite_crm.med_2">
+            <field name="nom">Phoslo</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_plaquenil" model="ceppp.suite_crm.med_2">
+            <field name="nom">Plaquenil</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_plexion" model="ceppp.suite_crm.med_2">
+            <field name="nom">Plexion</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_polytrim" model="ceppp.suite_crm.med_2">
+            <field name="nom">Polytrim</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ponstel" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ponstel</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pravachol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pravachol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pred_forte" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pred FORTE</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_prelone" model="ceppp.suite_crm.med_2">
+            <field name="nom">Prelone</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_prevacid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Prevacid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_prevacid_solutabs" model="ceppp.suite_crm.med_2">
+            <field name="nom">Prevacid SOLUTABS</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_prilosec" model="ceppp.suite_crm.med_2">
+            <field name="nom">Prilosec</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_prinivil" model="ceppp.suite_crm.med_2">
+            <field name="nom">Prinivil</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_prinzide" model="ceppp.suite_crm.med_2">
+            <field name="nom">Prinzide</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_procardia_xl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Procardia XL</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_proctocort" model="ceppp.suite_crm.med_2">
+            <field name="nom">Proctocort</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_proctocream_hc_2_5%" model="ceppp.suite_crm.med_2">
+            <field name="nom">Proctocream-HC 2.5%</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_proscar" model="ceppp.suite_crm.med_2">
+            <field name="nom">Proscar</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_prosom" model="ceppp.suite_crm.med_2">
+            <field name="nom">Prosom</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_protonix" model="ceppp.suite_crm.med_2">
+            <field name="nom">Protonix</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_provera" model="ceppp.suite_crm.med_2">
+            <field name="nom">Provera</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_prozac" model="ceppp.suite_crm.med_2">
+            <field name="nom">Prozac</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_prozac_weekly" model="ceppp.suite_crm.med_2">
+            <field name="nom">Prozac WEEKLY</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pulmicort_respules" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pulmicort RESPULES</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_pyridium" model="ceppp.suite_crm.med_2">
+            <field name="nom">Pyridium</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_questran_/_questran_light" model="ceppp.suite_crm.med_2">
+            <field name="nom">Questran / QUESTRAN LIGHT</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_razadyne" model="ceppp.suite_crm.med_2">
+            <field name="nom">Razadyne</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_razadyne_er" model="ceppp.suite_crm.med_2">
+            <field name="nom">Razadyne ER</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_rebetol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Rebetol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_reglan" model="ceppp.suite_crm.med_2">
+            <field name="nom">Reglan</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_remeron" model="ceppp.suite_crm.med_2">
+            <field name="nom">Remeron</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_remeron_soltab" model="ceppp.suite_crm.med_2">
+            <field name="nom">Remeron SOLTAB</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_requip" model="ceppp.suite_crm.med_2">
+            <field name="nom">Requip</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_restoril" model="ceppp.suite_crm.med_2">
+            <field name="nom">Restoril</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_retin_a" model="ceppp.suite_crm.med_2">
+            <field name="nom">Retin-A</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_retrovir" model="ceppp.suite_crm.med_2">
+            <field name="nom">Retrovir</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_revia" model="ceppp.suite_crm.med_2">
+            <field name="nom">Revia</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_rifadin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Rifadin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_risperdal" model="ceppp.suite_crm.med_2">
+            <field name="nom">Risperdal</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_risperdal_m_tab" model="ceppp.suite_crm.med_2">
+            <field name="nom">Risperdal M-TAB</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ritalin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ritalin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ritalin_sr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ritalin-SR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_robaxin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Robaxin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_rocaltrol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Rocaltrol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_rowasa" model="ceppp.suite_crm.med_2">
+            <field name="nom">Rowasa</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_roxicodone" model="ceppp.suite_crm.med_2">
+            <field name="nom">Roxicodone</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_rythmol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Rythmol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_rythmol_sr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Rythmol SR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_salagen" model="ceppp.suite_crm.med_2">
+            <field name="nom">Salagen</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_sanctura" model="ceppp.suite_crm.med_2">
+            <field name="nom">Sanctura</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_seasonale" model="ceppp.suite_crm.med_2">
+            <field name="nom">Seasonale</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_sectral" model="ceppp.suite_crm.med_2">
+            <field name="nom">Sectral</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_selsun" model="ceppp.suite_crm.med_2">
+            <field name="nom">Selsun</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_septra" model="ceppp.suite_crm.med_2">
+            <field name="nom">Septra</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_septra_ds" model="ceppp.suite_crm.med_2">
+            <field name="nom">Septra DS</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_silvadene" model="ceppp.suite_crm.med_2">
+            <field name="nom">Silvadene</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_sinemet" model="ceppp.suite_crm.med_2">
+            <field name="nom">Sinemet</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_sinemet_cr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Sinemet CR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_skelaxin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Skelaxin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_soma" model="ceppp.suite_crm.med_2">
+            <field name="nom">Soma</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_sonata" model="ceppp.suite_crm.med_2">
+            <field name="nom">Sonata</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_sporanox" model="ceppp.suite_crm.med_2">
+            <field name="nom">Sporanox</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_starlix" model="ceppp.suite_crm.med_2">
+            <field name="nom">Starlix</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_sular" model="ceppp.suite_crm.med_2">
+            <field name="nom">Sular</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_synthroid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Synthroid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tambocor" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tambocor</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tapazole" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tapazole</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tarka" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tarka</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tegretol" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tegretol</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tegretol_xr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tegretol XR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_temovate" model="ceppp.suite_crm.med_2">
+            <field name="nom">Temovate</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tenex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tenex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tenoretic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tenoretic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tenormin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tenormin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tenuate" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tenuate</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_terazol_3" model="ceppp.suite_crm.med_2">
+            <field name="nom">Terazol 3</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_terazol_7" model="ceppp.suite_crm.med_2">
+            <field name="nom">Terazol 7</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tessalon" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tessalon</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tiazac" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tiazac</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tigan_caps" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tigan caps</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_timoptic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Timoptic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_timoptic_ocudose" model="ceppp.suite_crm.med_2">
+            <field name="nom">Timoptic OCUDOSE</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_timoptic_xe" model="ceppp.suite_crm.med_2">
+            <field name="nom">Timoptic-XE</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tobradex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tobradex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tobrex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tobrex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tofranil" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tofranil</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tofranil_pm" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tofranil PM</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tolectin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tolectin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_topamax" model="ceppp.suite_crm.med_2">
+            <field name="nom">Topamax</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_topicort" model="ceppp.suite_crm.med_2">
+            <field name="nom">Topicort</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_toprol_xl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Toprol-XL</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tranxene_t_tab" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tranxene T-TAB</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_triaz" model="ceppp.suite_crm.med_2">
+            <field name="nom">Triaz</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_trileptal" model="ceppp.suite_crm.med_2">
+            <field name="nom">Trileptal</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tri_norinyl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tri-NORINYL</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_trusopt" model="ceppp.suite_crm.med_2">
+            <field name="nom">Trusopt</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tussionex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tussionex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tylenol_with_codeine" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tylenol WITH CODEINE</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_tylox" model="ceppp.suite_crm.med_2">
+            <field name="nom">Tylox</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ultram" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ultram</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ultravate" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ultravate</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_uniretic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Uniretic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_univasc" model="ceppp.suite_crm.med_2">
+            <field name="nom">Univasc</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_urso" model="ceppp.suite_crm.med_2">
+            <field name="nom">Urso</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_valium" model="ceppp.suite_crm.med_2">
+            <field name="nom">Valium</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_valtrex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Valtrex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_vaseretic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Vaseretic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_vasotec" model="ceppp.suite_crm.med_2">
+            <field name="nom">Vasotec</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_venlafaxine_er" model="ceppp.suite_crm.med_2">
+            <field name="nom">Venlafaxine ER</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_verelan_pm" model="ceppp.suite_crm.med_2">
+            <field name="nom">Verelan PM</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_vibramycin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Vibramycin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_vicodin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Vicodin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_vicodin_es" model="ceppp.suite_crm.med_2">
+            <field name="nom">Vicodin ES</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_vicoprofen" model="ceppp.suite_crm.med_2">
+            <field name="nom">Vicoprofen</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_videx_ec" model="ceppp.suite_crm.med_2">
+            <field name="nom">Videx EC</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_viroptic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Viroptic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_vistaril" model="ceppp.suite_crm.med_2">
+            <field name="nom">Vistaril</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_vivactil" model="ceppp.suite_crm.med_2">
+            <field name="nom">Vivactil</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_voltaren_ophthalmic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Voltaren OPHTHALMIC</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_voltaren_xr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Voltaren-XR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_vospire_er" model="ceppp.suite_crm.med_2">
+            <field name="nom">Vospire ER</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_wellbutrin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Wellbutrin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_wellbutrin_sr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Wellbutrin SR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_wellbutrin_xl" model="ceppp.suite_crm.med_2">
+            <field name="nom">Wellbutrin XL</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_westcort" model="ceppp.suite_crm.med_2">
+            <field name="nom">Westcort</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_xanax" model="ceppp.suite_crm.med_2">
+            <field name="nom">Xanax</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_xanax_xr" model="ceppp.suite_crm.med_2">
+            <field name="nom">Xanax XR</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_xyzal" model="ceppp.suite_crm.med_2">
+            <field name="nom">Xyzal</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_yasmin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Yasmin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_yaz" model="ceppp.suite_crm.med_2">
+            <field name="nom">Yaz</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zanaflex" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zanaflex</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zantac" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zantac</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zarontin" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zarontin</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zaroxolyn" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zaroxolyn</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zegerid" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zegerid</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zerit" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zerit</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zestoretic" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zestoretic</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zestril" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zestril</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_ziac" model="ceppp.suite_crm.med_2">
+            <field name="nom">Ziac</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zithromax" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zithromax</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zocor" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zocor</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zofran" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zofran</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zoloft" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zoloft</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zonegran" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zonegran</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zovirax" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zovirax</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zyban" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zyban</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zyloprim" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zyloprim</field>
+        </record>
+        <record id="ceppp_suite_crm_med_2_zyrtec" model="ceppp.suite_crm.med_2">
+            <field name="nom">Zyrtec</field>
+        </record>
+    </data>
+</odoo>

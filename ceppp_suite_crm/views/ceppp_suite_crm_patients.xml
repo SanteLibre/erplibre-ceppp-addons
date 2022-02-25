@@ -13,7 +13,7 @@
                         <field name="assistance_audition" />
                     </group>
                     <group>
-                        <field name="assistance_mob" />
+                        <field name="assistance_mob" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="assistance_vision" />
@@ -34,13 +34,13 @@
                         <field name="comment_refere" />
                     </group>
                     <group>
-                        <field name="competences_pp" />
+                        <field name="competences_pp" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="competences_ppc" />
+                        <field name="competences_ppc" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="competences_pr" />
+                        <field name="competences_pr" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="conflit_interet" />
@@ -64,22 +64,22 @@
                         <field name="date_entrevue" />
                     </group>
                     <group>
-                        <field name="deplacements" />
+                        <field name="deplacements" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="descr_exp" />
                     </group>
                     <group>
-                        <field name="disponibilites" />
+                        <field name="disponibilites" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="domaine_soin_pa" />
+                        <field name="domaine_soin_pa" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="domaine_soin_pa_2" />
+                        <field name="domaine_soin_pa_2" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="domaine_soin_pa_3" />
+                        <field name="domaine_soin_pa_3" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="doul_chron" />
@@ -97,7 +97,7 @@
                         <field name="email_perso" />
                     </group>
                     <group>
-                        <field name="emploi_perso" />
+                        <field name="emploi_perso" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="etabl_prem_ligne_pa_" />
@@ -145,13 +145,13 @@
                         <field name="groupe_designe" />
                     </group>
                     <group>
-                        <field name="habiletes_pp" />
+                        <field name="habiletes_pp" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="langue_corresp" />
                     </group>
                     <group>
-                        <field name="langue_parlee" />
+                        <field name="langue_parlee" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="membre_assoc_comite" />
@@ -196,7 +196,7 @@
                         <field name="personne_reference_recrut" />
                     </group>
                     <group>
-                        <field name="preferences" />
+                        <field name="preferences" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="preferences_autre" />
@@ -208,7 +208,7 @@
                         <field name="prob_resp" />
                     </group>
                     <group>
-                        <field name="prob_sant_pa" />
+                        <field name="prob_sant_pa" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="prob_sant_pa_2" />
@@ -226,16 +226,16 @@
                         <field name="rel_patient" />
                     </group>
                     <group>
-                        <field name="role_pp" />
+                        <field name="role_pp" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="tel_dom_perso" />
+                        <field name="tel_dom_perso" widget="phone" />
                     </group>
                     <group>
-                        <field name="tel_mobile_perso" />
+                        <field name="tel_mobile_perso" widget="phone" />
                     </group>
                     <group>
-                        <field name="tel_travail_perso" />
+                        <field name="tel_travail_perso" widget="phone" />
                     </group>
                     <group>
                         <field name="test_int_field" />
@@ -252,16 +252,12 @@
             <graph string="Ceppp suite crm patients">
                 <field name="nom" type="row" />
                 <field name="assistance_audition" type="row" />
-                <field name="assistance_mob" type="row" />
                 <field name="assistance_vision" type="row" />
                 <field name="association_etablissement_recr" type="row" />
                 <field name="centre_recrutement" type="row" />
                 <field name="code_ident" type="row" />
                 <field name="comm_recruteur" type="row" />
                 <field name="comment_refere" type="row" />
-                <field name="competences_pp" type="row" />
-                <field name="competences_ppc" type="row" />
-                <field name="competences_pr" type="row" />
                 <field name="conflit_interet" type="row" />
                 <field name="conflit_interet_detail" type="row" />
                 <field name="consentement_dcpp_recrut" type="row" />
@@ -269,18 +265,12 @@
                 <field name="consentement_recherche" type="row" />
                 <field name="consentement_usage_donnees" type="row" />
                 <field name="date_entrevue" type="row" />
-                <field name="deplacements" type="row" />
                 <field name="descr_exp" type="row" />
-                <field name="disponibilites" type="row" />
-                <field name="domaine_soin_pa" type="row" />
-                <field name="domaine_soin_pa_2" type="row" />
-                <field name="domaine_soin_pa_3" type="row" />
                 <field name="doul_chron" type="row" />
                 <field name="duree_experience" type="row" />
                 <field name="education_perso" type="row" />
                 <field name="education_perso_autre" type="row" />
                 <field name="email_perso" type="row" />
-                <field name="emploi_perso" type="row" />
                 <field name="etabl_prem_ligne_pa_" type="row" />
                 <field name="etabl_sante_pa" type="row" />
                 <field name="etabl_sante_pa_" type="row" />
@@ -296,9 +286,7 @@
                 <field name="formation_qui" type="row" />
                 <field name="genre" type="row" />
                 <field name="groupe_designe" type="row" />
-                <field name="habiletes_pp" type="row" />
                 <field name="langue_corresp" type="row" />
-                <field name="langue_parlee" type="row" />
                 <field name="membre_assoc_comite" type="row" />
                 <field name="membre_assoc_comite_detail" type="row" />
                 <field name="motivations_implication" type="row" />
@@ -313,17 +301,14 @@
                 <field name="org_ref_recrut" type="row" />
                 <field name="patient_ajout" type="row" />
                 <field name="personne_reference_recrut" type="row" />
-                <field name="preferences" type="row" />
                 <field name="preferences_autre" type="row" />
                 <field name="prenom" type="row" />
                 <field name="prob_resp" type="row" />
-                <field name="prob_sant_pa" type="row" />
                 <field name="prob_sant_pa_2" type="row" />
                 <field name="prob_sant_pa_3" type="row" />
                 <field name="prob_somm" type="row" />
                 <field name="recruteur" type="row" />
                 <field name="rel_patient" type="row" />
-                <field name="role_pp" type="row" />
                 <field name="tel_dom_perso" type="row" />
                 <field name="tel_mobile_perso" type="row" />
                 <field name="tel_travail_perso" type="row" />
@@ -339,16 +324,16 @@
             <kanban class="o_kanban_mobile">
                 <field name="nom" />
                 <field name="assistance_audition" />
-                <field name="assistance_mob" />
+                <field name="assistance_mob" widget="many2many_tags" />
                 <field name="assistance_vision" />
                 <field name="association_etablissement_recr" />
                 <field name="centre_recrutement" />
                 <field name="code_ident" />
                 <field name="comm_recruteur" />
                 <field name="comment_refere" />
-                <field name="competences_pp" />
-                <field name="competences_ppc" />
-                <field name="competences_pr" />
+                <field name="competences_pp" widget="many2many_tags" />
+                <field name="competences_ppc" widget="many2many_tags" />
+                <field name="competences_pr" widget="many2many_tags" />
                 <field name="conflit_interet" />
                 <field name="conflit_interet_detail" />
                 <field name="consentement_dcpp_recrut" />
@@ -356,18 +341,18 @@
                 <field name="consentement_recherche" />
                 <field name="consentement_usage_donnees" />
                 <field name="date_entrevue" />
-                <field name="deplacements" />
+                <field name="deplacements" widget="many2many_tags" />
                 <field name="descr_exp" />
-                <field name="disponibilites" />
-                <field name="domaine_soin_pa" />
-                <field name="domaine_soin_pa_2" />
-                <field name="domaine_soin_pa_3" />
+                <field name="disponibilites" widget="many2many_tags" />
+                <field name="domaine_soin_pa" widget="many2many_tags" />
+                <field name="domaine_soin_pa_2" widget="many2many_tags" />
+                <field name="domaine_soin_pa_3" widget="many2many_tags" />
                 <field name="doul_chron" />
                 <field name="duree_experience" />
                 <field name="education_perso" />
                 <field name="education_perso_autre" />
                 <field name="email_perso" />
-                <field name="emploi_perso" />
+                <field name="emploi_perso" widget="many2many_tags" />
                 <field name="etabl_prem_ligne_pa_" />
                 <field name="etabl_sante_pa" />
                 <field name="etabl_sante_pa_" />
@@ -383,9 +368,9 @@
                 <field name="formation_qui" />
                 <field name="genre" />
                 <field name="groupe_designe" />
-                <field name="habiletes_pp" />
+                <field name="habiletes_pp" widget="many2many_tags" />
                 <field name="langue_corresp" />
-                <field name="langue_parlee" />
+                <field name="langue_parlee" widget="many2many_tags" />
                 <field name="membre_assoc_comite" />
                 <field name="membre_assoc_comite_detail" />
                 <field name="motivations_implication" />
@@ -400,20 +385,20 @@
                 <field name="org_ref_recrut" />
                 <field name="patient_ajout" />
                 <field name="personne_reference_recrut" />
-                <field name="preferences" />
+                <field name="preferences" widget="many2many_tags" />
                 <field name="preferences_autre" />
                 <field name="prenom" />
                 <field name="prob_resp" />
-                <field name="prob_sant_pa" />
+                <field name="prob_sant_pa" widget="many2many_tags" />
                 <field name="prob_sant_pa_2" />
                 <field name="prob_sant_pa_3" />
                 <field name="prob_somm" />
                 <field name="recruteur" />
                 <field name="rel_patient" />
-                <field name="role_pp" />
-                <field name="tel_dom_perso" />
-                <field name="tel_mobile_perso" />
-                <field name="tel_travail_perso" />
+                <field name="role_pp" widget="many2many_tags" />
+                <field name="tel_dom_perso" widget="phone" />
+                <field name="tel_mobile_perso" widget="phone" />
+                <field name="tel_travail_perso" widget="phone" />
                 <field name="test_int_field" />
                 <templates>
                     <t t-name="kanban-box">
@@ -826,16 +811,12 @@
             <pivot string="Ceppp suite crm patients">
                 <field name="nom" type="row" />
                 <field name="assistance_audition" type="row" />
-                <field name="assistance_mob" type="row" />
                 <field name="assistance_vision" type="row" />
                 <field name="association_etablissement_recr" type="row" />
                 <field name="centre_recrutement" type="row" />
                 <field name="code_ident" type="row" />
                 <field name="comm_recruteur" type="row" />
                 <field name="comment_refere" type="row" />
-                <field name="competences_pp" type="row" />
-                <field name="competences_ppc" type="row" />
-                <field name="competences_pr" type="row" />
                 <field name="conflit_interet" type="row" />
                 <field name="conflit_interet_detail" type="row" />
                 <field name="consentement_dcpp_recrut" type="row" />
@@ -843,18 +824,12 @@
                 <field name="consentement_recherche" type="row" />
                 <field name="consentement_usage_donnees" type="row" />
                 <field name="date_entrevue" type="row" />
-                <field name="deplacements" type="row" />
                 <field name="descr_exp" type="row" />
-                <field name="disponibilites" type="row" />
-                <field name="domaine_soin_pa" type="row" />
-                <field name="domaine_soin_pa_2" type="row" />
-                <field name="domaine_soin_pa_3" type="row" />
                 <field name="doul_chron" type="row" />
                 <field name="duree_experience" type="row" />
                 <field name="education_perso" type="row" />
                 <field name="education_perso_autre" type="row" />
                 <field name="email_perso" type="row" />
-                <field name="emploi_perso" type="row" />
                 <field name="etabl_prem_ligne_pa_" type="row" />
                 <field name="etabl_sante_pa" type="row" />
                 <field name="etabl_sante_pa_" type="row" />
@@ -870,9 +845,7 @@
                 <field name="formation_qui" type="row" />
                 <field name="genre" type="row" />
                 <field name="groupe_designe" type="row" />
-                <field name="habiletes_pp" type="row" />
                 <field name="langue_corresp" type="row" />
-                <field name="langue_parlee" type="row" />
                 <field name="membre_assoc_comite" type="row" />
                 <field name="membre_assoc_comite_detail" type="row" />
                 <field name="motivations_implication" type="row" />
@@ -887,17 +860,14 @@
                 <field name="org_ref_recrut" type="row" />
                 <field name="patient_ajout" type="row" />
                 <field name="personne_reference_recrut" type="row" />
-                <field name="preferences" type="row" />
                 <field name="preferences_autre" type="row" />
                 <field name="prenom" type="row" />
                 <field name="prob_resp" type="row" />
-                <field name="prob_sant_pa" type="row" />
                 <field name="prob_sant_pa_2" type="row" />
                 <field name="prob_sant_pa_3" type="row" />
                 <field name="prob_somm" type="row" />
                 <field name="recruteur" type="row" />
                 <field name="rel_patient" type="row" />
-                <field name="role_pp" type="row" />
                 <field name="tel_dom_perso" type="row" />
                 <field name="tel_mobile_perso" type="row" />
                 <field name="tel_travail_perso" type="row" />
@@ -1180,16 +1150,16 @@
             <tree>
                 <field name="nom" />
                 <field name="assistance_audition" />
-                <field name="assistance_mob" />
+                <field name="assistance_mob" widget="many2many_tags" />
                 <field name="assistance_vision" />
                 <field name="association_etablissement_recr" />
                 <field name="centre_recrutement" />
                 <field name="code_ident" />
                 <field name="comm_recruteur" />
                 <field name="comment_refere" />
-                <field name="competences_pp" />
-                <field name="competences_ppc" />
-                <field name="competences_pr" />
+                <field name="competences_pp" widget="many2many_tags" />
+                <field name="competences_ppc" widget="many2many_tags" />
+                <field name="competences_pr" widget="many2many_tags" />
                 <field name="conflit_interet" />
                 <field name="conflit_interet_detail" />
                 <field name="consentement_dcpp_recrut" />
@@ -1197,18 +1167,18 @@
                 <field name="consentement_recherche" />
                 <field name="consentement_usage_donnees" />
                 <field name="date_entrevue" />
-                <field name="deplacements" />
+                <field name="deplacements" widget="many2many_tags" />
                 <field name="descr_exp" />
-                <field name="disponibilites" />
-                <field name="domaine_soin_pa" />
-                <field name="domaine_soin_pa_2" />
-                <field name="domaine_soin_pa_3" />
+                <field name="disponibilites" widget="many2many_tags" />
+                <field name="domaine_soin_pa" widget="many2many_tags" />
+                <field name="domaine_soin_pa_2" widget="many2many_tags" />
+                <field name="domaine_soin_pa_3" widget="many2many_tags" />
                 <field name="doul_chron" />
                 <field name="duree_experience" />
                 <field name="education_perso" />
                 <field name="education_perso_autre" />
                 <field name="email_perso" />
-                <field name="emploi_perso" />
+                <field name="emploi_perso" widget="many2many_tags" />
                 <field name="etabl_prem_ligne_pa_" />
                 <field name="etabl_sante_pa" />
                 <field name="etabl_sante_pa_" />
@@ -1224,9 +1194,9 @@
                 <field name="formation_qui" />
                 <field name="genre" />
                 <field name="groupe_designe" />
-                <field name="habiletes_pp" />
+                <field name="habiletes_pp" widget="many2many_tags" />
                 <field name="langue_corresp" />
-                <field name="langue_parlee" />
+                <field name="langue_parlee" widget="many2many_tags" />
                 <field name="membre_assoc_comite" />
                 <field name="membre_assoc_comite_detail" />
                 <field name="motivations_implication" />
@@ -1241,20 +1211,20 @@
                 <field name="org_ref_recrut" />
                 <field name="patient_ajout" />
                 <field name="personne_reference_recrut" />
-                <field name="preferences" />
+                <field name="preferences" widget="many2many_tags" />
                 <field name="preferences_autre" />
                 <field name="prenom" />
                 <field name="prob_resp" />
-                <field name="prob_sant_pa" />
+                <field name="prob_sant_pa" widget="many2many_tags" />
                 <field name="prob_sant_pa_2" />
                 <field name="prob_sant_pa_3" />
                 <field name="prob_somm" />
                 <field name="recruteur" />
                 <field name="rel_patient" />
-                <field name="role_pp" />
-                <field name="tel_dom_perso" />
-                <field name="tel_mobile_perso" />
-                <field name="tel_travail_perso" />
+                <field name="role_pp" widget="many2many_tags" />
+                <field name="tel_dom_perso" widget="phone" />
+                <field name="tel_mobile_perso" widget="phone" />
+                <field name="tel_travail_perso" widget="phone" />
                 <field name="test_int_field" />
             </tree>
         </field>

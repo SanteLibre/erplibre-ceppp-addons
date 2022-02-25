@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_assistance_mob_fauteuil_roulant" model="ceppp.suite_crm.assistance_mob">
+            <field name="nom">Fauteuil roulant</field>
+        </record>
+        <record id="ceppp_suite_crm_assistance_mob_canne" model="ceppp.suite_crm.assistance_mob">
+            <field name="nom">Canne</field>
+        </record>
+        <record id="ceppp_suite_crm_assistance_mob_transport_adapte" model="ceppp.suite_crm.assistance_mob">
+            <field name="nom">Transport adapt&#233;</field>
+        </record>
+    </data>
+</odoo>

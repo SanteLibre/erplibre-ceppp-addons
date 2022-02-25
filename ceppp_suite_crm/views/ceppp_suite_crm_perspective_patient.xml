@@ -31,13 +31,13 @@
                         <field name="descr_exp" />
                     </group>
                     <group>
-                        <field name="disponibilites" />
+                        <field name="disponibilites" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="domaine_soin" />
+                        <field name="domaine_soin" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="domaine_soin_pa" />
+                        <field name="domaine_soin_pa" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="duree_experience" />
@@ -91,10 +91,10 @@
                         <field name="med_1" />
                     </group>
                     <group>
-                        <field name="med_2" />
+                        <field name="med_2" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="med_3" />
+                        <field name="med_3" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="membre_assoc_comite" />
@@ -109,7 +109,7 @@
                         <field name="perspective" />
                     </group>
                     <group>
-                        <field name="preferences" />
+                        <field name="preferences" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="preferences_autre" />
@@ -118,10 +118,10 @@
                         <field name="preneur_decisions" />
                     </group>
                     <group>
-                        <field name="prob_sant" />
+                        <field name="prob_sant" widget="many2many_tags" />
                     </group>
                     <group>
-                        <field name="prob_sant_pa" />
+                        <field name="prob_sant_pa" widget="many2many_tags" />
                     </group>
                     <group>
                         <field name="professionnels_sante" />
@@ -130,7 +130,7 @@
                         <field name="rel_patient" />
                     </group>
                     <group>
-                        <field name="role_pp" />
+                        <field name="role_pp" widget="many2many_tags" />
                     </group>
                 </sheet>
             </form>
@@ -150,9 +150,6 @@
                 <field name="conflit_interet" type="row" />
                 <field name="conflit_interet_detail" type="row" />
                 <field name="descr_exp" type="row" />
-                <field name="disponibilites" type="row" />
-                <field name="domaine_soin" type="row" />
-                <field name="domaine_soin_pa" type="row" />
                 <field name="duree_experience" type="row" />
                 <field name="etabl_prem_ligne" type="row" />
                 <field name="etabl_prem_ligne_pa" type="row" />
@@ -170,20 +167,14 @@
                 <field name="formation_qui" type="row" />
                 <field name="maladie_rare_details" type="row" />
                 <field name="med_1" type="row" />
-                <field name="med_2" type="row" />
-                <field name="med_3" type="row" />
                 <field name="membre_assoc_comite" type="row" />
                 <field name="membre_assoc_comite_detail" type="row" />
                 <field name="motivations_implication" type="row" />
                 <field name="perspective" type="row" />
-                <field name="preferences" type="row" />
                 <field name="preferences_autre" type="row" />
                 <field name="preneur_decisions" type="row" />
-                <field name="prob_sant" type="row" />
-                <field name="prob_sant_pa" type="row" />
                 <field name="professionnels_sante" type="row" />
                 <field name="rel_patient" type="row" />
-                <field name="role_pp" type="row" />
             </graph>
         </field>
     </record>
@@ -201,9 +192,9 @@
                 <field name="conflit_interet" />
                 <field name="conflit_interet_detail" />
                 <field name="descr_exp" />
-                <field name="disponibilites" />
-                <field name="domaine_soin" />
-                <field name="domaine_soin_pa" />
+                <field name="disponibilites" widget="many2many_tags" />
+                <field name="domaine_soin" widget="many2many_tags" />
+                <field name="domaine_soin_pa" widget="many2many_tags" />
                 <field name="duree_experience" />
                 <field name="etabl_prem_ligne" />
                 <field name="etabl_prem_ligne_pa" />
@@ -221,20 +212,20 @@
                 <field name="formation_qui" />
                 <field name="maladie_rare_details" />
                 <field name="med_1" />
-                <field name="med_2" />
-                <field name="med_3" />
+                <field name="med_2" widget="many2many_tags" />
+                <field name="med_3" widget="many2many_tags" />
                 <field name="membre_assoc_comite" />
                 <field name="membre_assoc_comite_detail" />
                 <field name="motivations_implication" />
                 <field name="perspective" />
-                <field name="preferences" />
+                <field name="preferences" widget="many2many_tags" />
                 <field name="preferences_autre" />
                 <field name="preneur_decisions" />
-                <field name="prob_sant" />
-                <field name="prob_sant_pa" />
+                <field name="prob_sant" widget="many2many_tags" />
+                <field name="prob_sant_pa" widget="many2many_tags" />
                 <field name="professionnels_sante" />
                 <field name="rel_patient" />
-                <field name="role_pp" />
+                <field name="role_pp" widget="many2many_tags" />
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
@@ -472,9 +463,6 @@
                 <field name="conflit_interet" type="row" />
                 <field name="conflit_interet_detail" type="row" />
                 <field name="descr_exp" type="row" />
-                <field name="disponibilites" type="row" />
-                <field name="domaine_soin" type="row" />
-                <field name="domaine_soin_pa" type="row" />
                 <field name="duree_experience" type="row" />
                 <field name="etabl_prem_ligne" type="row" />
                 <field name="etabl_prem_ligne_pa" type="row" />
@@ -492,20 +480,14 @@
                 <field name="formation_qui" type="row" />
                 <field name="maladie_rare_details" type="row" />
                 <field name="med_1" type="row" />
-                <field name="med_2" type="row" />
-                <field name="med_3" type="row" />
                 <field name="membre_assoc_comite" type="row" />
                 <field name="membre_assoc_comite_detail" type="row" />
                 <field name="motivations_implication" type="row" />
                 <field name="perspective" type="row" />
-                <field name="preferences" type="row" />
                 <field name="preferences_autre" type="row" />
                 <field name="preneur_decisions" type="row" />
-                <field name="prob_sant" type="row" />
-                <field name="prob_sant_pa" type="row" />
                 <field name="professionnels_sante" type="row" />
                 <field name="rel_patient" type="row" />
-                <field name="role_pp" type="row" />
             </pivot>
         </field>
     </record>
@@ -678,9 +660,9 @@
                 <field name="conflit_interet" />
                 <field name="conflit_interet_detail" />
                 <field name="descr_exp" />
-                <field name="disponibilites" />
-                <field name="domaine_soin" />
-                <field name="domaine_soin_pa" />
+                <field name="disponibilites" widget="many2many_tags" />
+                <field name="domaine_soin" widget="many2many_tags" />
+                <field name="domaine_soin_pa" widget="many2many_tags" />
                 <field name="duree_experience" />
                 <field name="etabl_prem_ligne" />
                 <field name="etabl_prem_ligne_pa" />
@@ -698,20 +680,20 @@
                 <field name="formation_qui" />
                 <field name="maladie_rare_details" />
                 <field name="med_1" />
-                <field name="med_2" />
-                <field name="med_3" />
+                <field name="med_2" widget="many2many_tags" />
+                <field name="med_3" widget="many2many_tags" />
                 <field name="membre_assoc_comite" />
                 <field name="membre_assoc_comite_detail" />
                 <field name="motivations_implication" />
                 <field name="perspective" />
-                <field name="preferences" />
+                <field name="preferences" widget="many2many_tags" />
                 <field name="preferences_autre" />
                 <field name="preneur_decisions" />
-                <field name="prob_sant" />
-                <field name="prob_sant_pa" />
+                <field name="prob_sant" widget="many2many_tags" />
+                <field name="prob_sant_pa" widget="many2many_tags" />
                 <field name="professionnels_sante" />
                 <field name="rel_patient" />
-                <field name="role_pp" />
+                <field name="role_pp" widget="many2many_tags" />
             </tree>
         </field>
     </record>

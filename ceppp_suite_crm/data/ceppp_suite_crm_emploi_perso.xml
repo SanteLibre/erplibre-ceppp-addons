@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_emploi_perso_emploi" model="ceppp.suite_crm.emploi_perso">
+            <field name="nom">Emploi</field>
+        </record>
+        <record id="ceppp_suite_crm_emploi_perso_benevolat" model="ceppp.suite_crm.emploi_perso">
+            <field name="nom">B&#233;n&#233;volat</field>
+        </record>
+        <record id="ceppp_suite_crm_emploi_perso_famille" model="ceppp.suite_crm.emploi_perso">
+            <field name="nom">Famille</field>
+        </record>
+        <record id="ceppp_suite_crm_emploi_perso_proche" model="ceppp.suite_crm.emploi_perso">
+            <field name="nom">Proche</field>
+        </record>
+        <record id="ceppp_suite_crm_emploi_perso_autre" model="ceppp.suite_crm.emploi_perso">
+            <field name="nom">Autre</field>
+        </record>
+    </data>
+</odoo>

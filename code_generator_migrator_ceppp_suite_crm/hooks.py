@@ -563,7 +563,6 @@ def generate_model_from_2_level_selection(
     lst_added_model_name,
     code_generator_id,
     dct_option_fr,
-    dct_field_info,
     model_name_level_1,
     model_name_level_2,
     field_description_level_1,
@@ -642,7 +641,37 @@ def generate_model_from_2_level_selection(
         code_generator_id.add_update_model_one2many(
             model_name_level_1, dct_field_one2many
         )
-    dct_field_info["relation"] = model_name_level_2
+
+
+def generate_model_from_1_level_selection(
+    lst_added_model_name,
+    code_generator_id,
+    dct_option_fr,
+    model_name_level_1,
+):
+    dct_region_admin_data_id = {}
+    if model_name_level_1 not in lst_added_model_name:
+        dct_new_field = {
+            "nom": {
+                "ttype": "char",
+                "translate": True,
+            }
+        }
+        dct_new_model = {
+            "rec_name": "nom",
+            "nomenclator": True,
+        }
+        region_admin_model_id = code_generator_id.add_update_model(
+            model_name_level_1,
+            dct_field=dct_new_field,
+            dct_model=dct_new_model,
+        )
+        lst_added_model_name.append(model_name_level_1)
+        # Add data
+        lst_data_region_admin = [{"nom": a} for a in dct_option_fr.values()]
+        for dat_region_admin in lst_data_region_admin:
+            data_id = region_admin_model_id.create(dat_region_admin)
+            dct_region_admin_data_id[data_id.nom] = data_id.id
 
 
 def post_init_hook(cr, e):
@@ -702,6 +731,11 @@ def post_init_hook(cr, e):
                             str_print += (
                                 "\n\t\t\toptions"
                                 f" '{dct_field.get('options')}', "
+                            )
+                        if dct_field.get("isMultiSelect"):
+                            str_print += (
+                                "\n\t\t\tisMultiSelect"
+                                f" '{dct_field.get('isMultiSelect')}', "
                             )
                         print(str_print)
                         print("\n")
@@ -795,7 +829,7 @@ def post_init_hook(cr, e):
         # lst_depend_model = ["mail.thread", "mail.activity.mixin"]
         lst_depend_model = []
         lst_added_model_name = []
-        lst_tool_model_name = []
+        dct_associate_option_with_model = {}
         for php_model, dct_php_value_dct_type in dct_parser.items():
             dct_php_value = dct_php_value_dct_type.get("var")
             dct_php_value_en_label = dct_php_value_dct_type.get("var_en")
@@ -837,47 +871,94 @@ def post_init_hook(cr, e):
                             if dct_option_fr:
                                 dct_option_fr_value = dct_option_fr.values()
                                 if len(dct_option_fr_value):
-                                    if (
+                                    is_multi_option = dct_php_field_value.get(
+                                        "isMultiSelect"
+                                    )
+                                    is_selection = (
                                         type(list(dct_option_fr_value)[0])
                                         is str
-                                    ):
+                                        and not is_multi_option
+                                    )
+                                    if is_selection:
                                         dct_field_info["selection"] = str(
                                             list(dct_option_fr.items())
                                         )
                                     elif suite_crm_option == "etab_sante_list":
+                                        model_name_level_2 = (
+                                            f"{prefix_model}hopital"
+                                        )
                                         generate_model_from_2_level_selection(
                                             lst_added_model_name,
                                             code_generator_id,
                                             dct_option_fr,
-                                            dct_field_info,
                                             f"{prefix_model}region_admin",
-                                            f"{prefix_model}hopital",
+                                            model_name_level_2,
                                             "Région administrative",
                                             "region_admin_id",
                                             "hopital_ids",
                                             "Hôpitaux",
                                         )
-                                        new_type = "many2one"
+                                        dct_field_info[
+                                            "relation"
+                                        ] = model_name_level_2
                                     elif suite_crm_option == "cim10_list":
+                                        model_name_level_2 = (
+                                            f"{prefix_model}maladie"
+                                        )
                                         generate_model_from_2_level_selection(
                                             lst_added_model_name,
                                             code_generator_id,
                                             dct_option_fr,
-                                            dct_field_info,
                                             f"{prefix_model}chapitre_maladie",
-                                            f"{prefix_model}maladie",
+                                            model_name_level_2,
                                             "Chapitre maladie",
                                             "chapitre_maladie_id",
                                             "maladie_ids",
                                             "Maladies",
                                         )
-                                        new_type = "many2one"
+                                        dct_field_info[
+                                            "relation"
+                                        ] = model_name_level_2
+                                    elif is_multi_option:
+                                        # model_name_level_1 = (
+                                        #     f"{field_name}"
+                                        # )
+                                        associate_model = dct_associate_option_with_model.get(suite_crm_option)
+                                        if not associate_model:
+                                            model_name_level_1 = (
+                                                f"{prefix_model}{field_name}"
+                                            )
+                                            generate_model_from_1_level_selection(
+                                                lst_added_model_name,
+                                                code_generator_id,
+                                                dct_option_fr,
+                                                model_name_level_1,
+                                                # field_name.replace(
+                                                #     "_", " "
+                                                # ).capitalize(),
+                                            )
+                                            dct_associate_option_with_model[suite_crm_option] = model_name_level_1
+                                        else:
+                                            associate_model = model_name_level_1
+                                        dct_field_info[
+                                            "relation"
+                                        ] = model_name_level_1
                                     else:
                                         _logger.error(
                                             "Not supported option"
                                             f" {suite_crm_option}"
                                         )
                                         continue
+                                    if is_selection:
+                                        new_type = "selection"
+                                    elif is_multi_option:
+                                        new_type = "many2many"
+                                        dct_field_info[
+                                            "force_widget"
+                                        ] = "many2many_tags"
+                                    else:
+                                        new_type = "many2one"
+
                                     has_error_value_is_not_str = False
                                     iter_key = -1
                                     for (
@@ -930,7 +1011,6 @@ def post_init_hook(cr, e):
                                                     f" key option {key_option}"
                                                 )
                                                 continue
-                                            # TODO the key_option is to translate
                                             for (
                                                 sub_key_option,
                                                 sub_value_option,
@@ -979,8 +1059,7 @@ def post_init_hook(cr, e):
 
                     # Special type
                     if suite_crm_type == "phone":
-                        # TODO force widget "phone"
-                        pass
+                        dct_field_info["force_widget"] = "phone"
 
                     dct_field_info["ttype"] = new_type
 
@@ -1001,9 +1080,7 @@ def post_init_hook(cr, e):
                         else:
                             dct_field_info["help"] = qdetail_value
                         if qdetail_en_value:
-                            dct_new_translate[
-                                qdetail_value
-                            ] = qdetail_en_value
+                            dct_new_translate[qdetail_value] = qdetail_en_value
 
                     elif qdetail_en_value:
                         _logger.warning(

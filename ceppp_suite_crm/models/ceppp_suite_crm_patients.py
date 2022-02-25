@@ -14,12 +14,8 @@ class CepppSuiteCrmPatients(models.Model):
         help="Avez-vous besoin d'assistance ?",
     )
 
-    assistance_mob = fields.Selection(
-        selection=[
-            ("fauteuil_roulant", "Fauteuil roulant"),
-            ("canne", "Canne"),
-            ("transport_adapte", "Transport adapté"),
-        ],
+    assistance_mob = fields.Many2many(
+        comodel_name="ceppp.suite_crm.assistance_mob",
         string="Aides à la mobilité",
         help="Veuillez sélectionner toute option qui s'applique",
     )
@@ -65,67 +61,8 @@ class CepppSuiteCrmPatients(models.Model):
         help="Comment avez-vous été référé ?",
     )
 
-    competences_pp = fields.Selection(
-        selection=[
-            (
-                "se_connait_dans_la_vie_avec_la_maladie",
-                "Se connaît dans la vie avec la maladie",
-            ),
-            (
-                "mobilise_ses_savoirs_experientiels",
-                "Mobilise ses savoirs expérientiels",
-            ),
-            ("developpe_sa_resilience", "Développe sa résilience"),
-            (
-                "redonne_un_sens_a_la_vie_au_travers_de_ses_experiences",
-                "Redonne un sens à la vie au travers de ses expériences",
-            ),
-            (
-                "elabore_un_projet_de_vie_et_l_adapte_au_changement",
-                "Élabore un projet de vie et l'adapte au changement",
-            ),
-            ("fait_preuve_d_altruisme", "Fait preuve d'altruisme"),
-            (
-                "se_raconte_de_facon_pedagogique",
-                "Se racconte de façon pédagogique",
-            ),
-            ("communique", "Communique"),
-            ("est_reflexif_et_transmet", "Est réflexif et transmet"),
-            ("est_a_l_ecoute", "Est à l'écoute"),
-            (
-                "mobilise_ses_experiences_sociales_et_professionnelles",
-                "Mobilise ses expériences sociales et professionnelles",
-            ),
-            ("assume_un_co_leadership", "Assume un co-leadership"),
-            (
-                "accompagne_un_individu_ou_un_groupe",
-                "Accompagne un individu ou un groupe",
-            ),
-            (
-                "analyse_des_situations_relationelles_de_differents_niveaux_de_complexite",
-                "Analyse des situations relationelles de différents niveaux de"
-                " complexité",
-            ),
-            (
-                "tisse_et_entretien_des_reseaux",
-                "Tisse et entretien des réseaux",
-            ),
-            ("s_exprime_clairement", "S'exprime clairement"),
-            (
-                "habiletes_interpersonnelles",
-                "Habiletés interpersonnelles (écoute, empathie)",
-            ),
-            (
-                "desir_d_aider_autrui_et_de_contribuer_a_un_objectif_qui_depasse_sa_propre_situation",
-                "Désir d'aider autrui et de contribuer à un objectif qui"
-                " dépasse sa propre situation",
-            ),
-            (
-                "Manifeste_un_desir_d_implication",
-                "Manifeste un désir d'implication (associations, benevolat,"
-                " temoignages)",
-            ),
-        ],
+    competences_pp = fields.Many2many(
+        comodel_name="ceppp.suite_crm.competences_pp",
         string="Compétences",
         help=(
             "Suite à l'entrevue, quelles compétences peuvent être identifiées"
@@ -133,27 +70,8 @@ class CepppSuiteCrmPatients(models.Model):
         ),
     )
 
-    competences_ppc = fields.Selection(
-        selection=[
-            (
-                "mobilise_ses_experiences_sociales_et_professionnelles",
-                "Mobilise ses expériences sociales et professionnelles",
-            ),
-            ("assume_un_co_leadership", "Assume un co-leadership"),
-            (
-                "accompagne_un_individu_ou_un_groupe",
-                "Accompagne un individu ou un groupe",
-            ),
-            (
-                "analyse_des_situations_relationelles_de_differents_niveaux_de_complexite",
-                "Analyse des situations relationelles de différents niveaux de"
-                " complexité",
-            ),
-            (
-                "tisse_et_entretien_des_reseaux",
-                "Tisse et entretien des réseaux",
-            ),
-        ],
+    competences_ppc = fields.Many2many(
+        comodel_name="ceppp.suite_crm.competences_ppc",
         string="Compétences",
         help=(
             "Suite à l'entrevue, quelles compétences peuvent être identifiées"
@@ -161,17 +79,8 @@ class CepppSuiteCrmPatients(models.Model):
         ),
     )
 
-    competences_pr = fields.Selection(
-        selection=[
-            ("fait_preuve_d_altruisme", "Fait preuve d'altruisme"),
-            (
-                "se_raconte_de_facon_pedagogique",
-                "Se racconte de façon pédagogique",
-            ),
-            ("communique", "Communique"),
-            ("est_reflexif_et_transmet", "Est réflexif et transmet"),
-            ("est_a_l_ecoute", "Est à l'écoute"),
-        ],
+    competences_pr = fields.Many2many(
+        comodel_name="ceppp.suite_crm.competences_pr",
         string="Compétences",
         help=(
             "Suite à l'entrevue, quelles compétences peuvent être identifiées"
@@ -237,12 +146,8 @@ class CepppSuiteCrmPatients(models.Model):
         help="Inscrire la date",
     )
 
-    deplacements = fields.Selection(
-        selection=[
-            ("voiture", "En voiture"),
-            ("transport_adapte", "En transport adapté"),
-            ("autre", "Autrement"),
-        ],
+    deplacements = fields.Many2many(
+        comodel_name="ceppp.suite_crm.deplacements",
         string="Comment vous déplacez-vous ?",
     )
 
@@ -254,174 +159,24 @@ class CepppSuiteCrmPatients(models.Model):
         ),
     )
 
-    disponibilites = fields.Selection(
-        selection=[
-            ("matin", "Matin"),
-            ("apresmidi", "Après-midi"),
-            ("soir", "Soir"),
-            ("fins_de_semaine", "Fins de semaine"),
-            ("jours", "Jours"),
-        ],
+    disponibilites = fields.Many2many(
+        comodel_name="ceppp.suite_crm.disponibilites",
         string="Disponibilités",
         help="Quelles sont vos préférences de disponibilité ?",
     )
 
-    domaine_soin_pa = fields.Selection(
-        selection=[
-            ("allergologie_ou_l_immunologie", "Allergologie ou l'immunologie"),
-            ("anesthesiologie", "Anesthésiologie"),
-            ("andrologie", "Andrologie"),
-            ("cardiologie", "Cardiologie"),
-            ("chirurgie_cardiaque", "Chirurgie cardiaque"),
-            (
-                "chirurgie_esthetique_plastique_et_reconstructive",
-                "Chirurgie esthétique plastique et reconstructive",
-            ),
-            ("chirurgie_generale", "Chirurgie générale"),
-            ("chirurgie_maxillo_faciale", "Chirurgie maxillo-faciale"),
-            ("chirurgie_pediatrique", "Chirurgie pédiatrique"),
-            ("chirurgie_thoracique", "Chirurgie thoracique"),
-            ("chirurgie_vasculaire", "Chirurgie vasculaire"),
-            ("neurochirurgie", "Neurochirurgie"),
-            ("dermatologie", "Dermatologie"),
-            ("endocrinologie", "Endocrinologie"),
-            ("gastro_enterologie", "Gastro-entérologie"),
-            ("geriatrie", "Gériatrie"),
-            ("gynecologie", "Gynécologie"),
-            ("hematologie", "Hématologie"),
-            ("hepatologie", "Hépatologie"),
-            ("infectiologie", "Infectiologie"),
-            ("medecine_aigue", "Médecine aiguë"),
-            ("medecine_du_travail", "Médecine du travail"),
-            ("medecine_generale", "Médecine générale"),
-            ("medecine_interne", "Médecine interne"),
-            ("medecine_nucleaire", "Médecine nucléaire"),
-            ("medecine_palliative", "Médecine palliative"),
-            ("medecine_physique", "Médecine physique"),
-            ("medecine_preventive", "Médecine préventive"),
-            ("neonatologie", "Néonatologie"),
-            ("nephrologie", "Néphrologie"),
-            ("neurologie", "Neurologie"),
-            ("odontologie", "Odontologie"),
-            ("oncologie", "Oncologie"),
-            ("obstetrique", "Obstétrique"),
-            ("ophtalmologie", "Ophtalmologie"),
-            ("orthopedie", "Orthopédie"),
-            ("oto_rhino_laryngologie", "Oto-rhino-laryngologie"),
-            ("pediatrie", "Pédiatrie"),
-            ("pneumologie", "Pneumologie"),
-            ("psychiatrie", "Psychiatrie"),
-            ("radiologie", "Radiologie"),
-            ("radiotherapie", "Radiothérapie"),
-            ("rhumatologie", "Rhumatologie"),
-            ("urologie", "Urologie"),
-        ],
+    domaine_soin_pa = fields.Many2many(
+        comodel_name="ceppp.suite_crm.domaine_soin_pa",
         string="Spécialités de soin",
     )
 
-    domaine_soin_pa_2 = fields.Selection(
-        selection=[
-            ("allergologie_ou_l_immunologie", "Allergologie ou l'immunologie"),
-            ("anesthesiologie", "Anesthésiologie"),
-            ("andrologie", "Andrologie"),
-            ("cardiologie", "Cardiologie"),
-            ("chirurgie_cardiaque", "Chirurgie cardiaque"),
-            (
-                "chirurgie_esthetique_plastique_et_reconstructive",
-                "Chirurgie esthétique plastique et reconstructive",
-            ),
-            ("chirurgie_generale", "Chirurgie générale"),
-            ("chirurgie_maxillo_faciale", "Chirurgie maxillo-faciale"),
-            ("chirurgie_pediatrique", "Chirurgie pédiatrique"),
-            ("chirurgie_thoracique", "Chirurgie thoracique"),
-            ("chirurgie_vasculaire", "Chirurgie vasculaire"),
-            ("neurochirurgie", "Neurochirurgie"),
-            ("dermatologie", "Dermatologie"),
-            ("endocrinologie", "Endocrinologie"),
-            ("gastro_enterologie", "Gastro-entérologie"),
-            ("geriatrie", "Gériatrie"),
-            ("gynecologie", "Gynécologie"),
-            ("hematologie", "Hématologie"),
-            ("hepatologie", "Hépatologie"),
-            ("infectiologie", "Infectiologie"),
-            ("medecine_aigue", "Médecine aiguë"),
-            ("medecine_du_travail", "Médecine du travail"),
-            ("medecine_generale", "Médecine générale"),
-            ("medecine_interne", "Médecine interne"),
-            ("medecine_nucleaire", "Médecine nucléaire"),
-            ("medecine_palliative", "Médecine palliative"),
-            ("medecine_physique", "Médecine physique"),
-            ("medecine_preventive", "Médecine préventive"),
-            ("neonatologie", "Néonatologie"),
-            ("nephrologie", "Néphrologie"),
-            ("neurologie", "Neurologie"),
-            ("odontologie", "Odontologie"),
-            ("oncologie", "Oncologie"),
-            ("obstetrique", "Obstétrique"),
-            ("ophtalmologie", "Ophtalmologie"),
-            ("orthopedie", "Orthopédie"),
-            ("oto_rhino_laryngologie", "Oto-rhino-laryngologie"),
-            ("pediatrie", "Pédiatrie"),
-            ("pneumologie", "Pneumologie"),
-            ("psychiatrie", "Psychiatrie"),
-            ("radiologie", "Radiologie"),
-            ("radiotherapie", "Radiothérapie"),
-            ("rhumatologie", "Rhumatologie"),
-            ("urologie", "Urologie"),
-        ],
+    domaine_soin_pa_2 = fields.Many2many(
+        comodel_name="ceppp.suite_crm.domaine_soin_pa",
         string="Spécialité domaine de soins #2",
     )
 
-    domaine_soin_pa_3 = fields.Selection(
-        selection=[
-            ("allergologie_ou_l_immunologie", "Allergologie ou l'immunologie"),
-            ("anesthesiologie", "Anesthésiologie"),
-            ("andrologie", "Andrologie"),
-            ("cardiologie", "Cardiologie"),
-            ("chirurgie_cardiaque", "Chirurgie cardiaque"),
-            (
-                "chirurgie_esthetique_plastique_et_reconstructive",
-                "Chirurgie esthétique plastique et reconstructive",
-            ),
-            ("chirurgie_generale", "Chirurgie générale"),
-            ("chirurgie_maxillo_faciale", "Chirurgie maxillo-faciale"),
-            ("chirurgie_pediatrique", "Chirurgie pédiatrique"),
-            ("chirurgie_thoracique", "Chirurgie thoracique"),
-            ("chirurgie_vasculaire", "Chirurgie vasculaire"),
-            ("neurochirurgie", "Neurochirurgie"),
-            ("dermatologie", "Dermatologie"),
-            ("endocrinologie", "Endocrinologie"),
-            ("gastro_enterologie", "Gastro-entérologie"),
-            ("geriatrie", "Gériatrie"),
-            ("gynecologie", "Gynécologie"),
-            ("hematologie", "Hématologie"),
-            ("hepatologie", "Hépatologie"),
-            ("infectiologie", "Infectiologie"),
-            ("medecine_aigue", "Médecine aiguë"),
-            ("medecine_du_travail", "Médecine du travail"),
-            ("medecine_generale", "Médecine générale"),
-            ("medecine_interne", "Médecine interne"),
-            ("medecine_nucleaire", "Médecine nucléaire"),
-            ("medecine_palliative", "Médecine palliative"),
-            ("medecine_physique", "Médecine physique"),
-            ("medecine_preventive", "Médecine préventive"),
-            ("neonatologie", "Néonatologie"),
-            ("nephrologie", "Néphrologie"),
-            ("neurologie", "Neurologie"),
-            ("odontologie", "Odontologie"),
-            ("oncologie", "Oncologie"),
-            ("obstetrique", "Obstétrique"),
-            ("ophtalmologie", "Ophtalmologie"),
-            ("orthopedie", "Orthopédie"),
-            ("oto_rhino_laryngologie", "Oto-rhino-laryngologie"),
-            ("pediatrie", "Pédiatrie"),
-            ("pneumologie", "Pneumologie"),
-            ("psychiatrie", "Psychiatrie"),
-            ("radiologie", "Radiologie"),
-            ("radiotherapie", "Radiothérapie"),
-            ("rhumatologie", "Rhumatologie"),
-            ("urologie", "Urologie"),
-        ],
+    domaine_soin_pa_3 = fields.Many2many(
+        comodel_name="ceppp.suite_crm.domaine_soin_pa",
         string="Spécialité domaine de soins #3",
     )
 
@@ -458,14 +213,8 @@ class CepppSuiteCrmPatients(models.Model):
 
     email_perso = fields.Char(string="Adresse courriel")
 
-    emploi_perso = fields.Selection(
-        selection=[
-            ("emploi", "Emploi"),
-            ("benevolat", "Bénévolat"),
-            ("famille", "Famille"),
-            ("proche", "Proche"),
-            ("autre", "Autre"),
-        ],
+    emploi_perso = fields.Many2many(
+        comodel_name="ceppp.suite_crm.emploi_perso",
         string="Emploi du temps",
         help="Quel est votre emploi du temps principal ?",
     )
@@ -559,24 +308,8 @@ class CepppSuiteCrmPatients(models.Model):
         string="Origine ethnique ou culturelle",
     )
 
-    habiletes_pp = fields.Selection(
-        selection=[
-            ("s_exprime_clairement", "S'exprime clairement"),
-            (
-                "habiletes_interpersonnelles",
-                "Habiletés interpersonnelles (écoute, empathie)",
-            ),
-            (
-                "desir_d_aider_autrui_et_de_contribuer_a_un_objectif_qui_depasse_sa_propre_situation",
-                "Désir d'aider autrui et de contribuer à un objectif qui"
-                " dépasse sa propre situation",
-            ),
-            (
-                "Manifeste_un_desir_d_implication",
-                "Manifeste un désir d'implication (associations, benevolat,"
-                " temoignages)",
-            ),
-        ],
+    habiletes_pp = fields.Many2many(
+        comodel_name="ceppp.suite_crm.habiletes_pp",
         string="Habiletés",
         help=(
             "Quelles habiletés ou aptitudes personnelles peuvent être"
@@ -595,13 +328,8 @@ class CepppSuiteCrmPatients(models.Model):
         help="Quelle est votre langue de correspondance préférée",
     )
 
-    langue_parlee = fields.Selection(
-        selection=[
-            ("francais", "Français"),
-            ("anglais", "Anglais"),
-            ("espagnol", "Espagnol"),
-            ("autre", "Autre"),
-        ],
+    langue_parlee = fields.Many2many(
+        comodel_name="ceppp.suite_crm.langue_parlee",
         string="Langues parlées",
         help="Quelles langues parlez-vous couramment parmi les suivantes ?",
     )
@@ -688,16 +416,8 @@ class CepppSuiteCrmPatients(models.Model):
         help="Qui vous a référé à notre organisation ?",
     )
 
-    preferences = fields.Selection(
-        selection=[
-            ("recherche", "Recherche"),
-            ("gouvernance", "Gouvernance"),
-            ("tables_travail", "Tables de travail"),
-            ("comites", "Comités"),
-            ("milieux_soins", "Milieux de soins"),
-            ("enseignement", "Enseignement"),
-            ("interets_autre", "Autre"),
-        ],
+    preferences = fields.Many2many(
+        comodel_name="ceppp.suite_crm.preferences",
         string="Préférences",
         help=(
             "Quelles sont vos disponibilités pour vous impliquer auprès de"
@@ -718,7 +438,7 @@ class CepppSuiteCrmPatients(models.Model):
         help="Le pp a-t-il des proiblèmes de respiration ?",
     )
 
-    prob_sant_pa = fields.Many2one(
+    prob_sant_pa = fields.Many2many(
         comodel_name="ceppp.suite_crm.maladie",
         string="Problématiques de santé",
     )
@@ -755,14 +475,8 @@ class CepppSuiteCrmPatients(models.Model):
         string="Relation avec le patient",
     )
 
-    role_pp = fields.Selection(
-        selection=[
-            ("coach", "Coach"),
-            ("co_chercheur", "Co-chercheur"),
-            ("formateur", "Formateur"),
-            ("accompagnateur", "Accompagnateur"),
-            ("aviseur", "Aviseur"),
-        ],
+    role_pp = fields.Many2many(
+        comodel_name="ceppp.suite_crm.role_pp",
         string="Role",
         help=(
             "Choisissez les profils de partenaires qui correspondent à vos"

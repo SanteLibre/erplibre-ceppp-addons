@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_domaine_soin_pa_allergologie_ou_l_immunologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Allergologie ou l'immunologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_anesthesiologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Anesth&#233;siologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_andrologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Andrologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_cardiologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Cardiologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_chirurgie_cardiaque" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Chirurgie cardiaque</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_chirurgie_esthetique_plastique_et_reconstructive" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Chirurgie esth&#233;tique plastique et reconstructive</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_chirurgie_generale" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Chirurgie g&#233;n&#233;rale</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_chirurgie_maxillo_faciale" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Chirurgie maxillo-faciale</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_chirurgie_pediatrique" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Chirurgie p&#233;diatrique</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_chirurgie_thoracique" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Chirurgie thoracique</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_chirurgie_vasculaire" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Chirurgie vasculaire</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_neurochirurgie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Neurochirurgie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_dermatologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Dermatologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_endocrinologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Endocrinologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_gastro_enterologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Gastro-ent&#233;rologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_geriatrie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">G&#233;riatrie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_gynecologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Gyn&#233;cologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_hematologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">H&#233;matologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_hepatologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">H&#233;patologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_infectiologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Infectiologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_medecine_aigue" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">M&#233;decine aigu&#235;</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_medecine_du_travail" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">M&#233;decine du travail</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_medecine_generale" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">M&#233;decine g&#233;n&#233;rale</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_medecine_interne" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">M&#233;decine interne</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_medecine_nucleaire" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">M&#233;decine nucl&#233;aire</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_medecine_palliative" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">M&#233;decine palliative</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_medecine_physique" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">M&#233;decine physique</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_medecine_preventive" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">M&#233;decine pr&#233;ventive</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_neonatologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">N&#233;onatologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_nephrologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">N&#233;phrologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_neurologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Neurologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_odontologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Odontologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_oncologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Oncologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_obstetrique" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Obst&#233;trique</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_ophtalmologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Ophtalmologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_orthopedie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Orthop&#233;die</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_oto_rhino_laryngologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Oto-rhino-laryngologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_pediatrie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">P&#233;diatrie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_pneumologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Pneumologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_psychiatrie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Psychiatrie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_radiologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Radiologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_radiotherapie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Radioth&#233;rapie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_rhumatologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Rhumatologie</field>
+        </record>
+        <record id="ceppp_suite_crm_domaine_soin_pa_urologie" model="ceppp.suite_crm.domaine_soin_pa">
+            <field name="nom">Urologie</field>
+        </record>
+    </data>
+</odoo>

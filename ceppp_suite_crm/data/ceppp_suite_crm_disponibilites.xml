@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_disponibilites_matin" model="ceppp.suite_crm.disponibilites">
+            <field name="nom">Matin</field>
+        </record>
+        <record id="ceppp_suite_crm_disponibilites_apres_midi" model="ceppp.suite_crm.disponibilites">
+            <field name="nom">Apr&#232;s-midi</field>
+        </record>
+        <record id="ceppp_suite_crm_disponibilites_soir" model="ceppp.suite_crm.disponibilites">
+            <field name="nom">Soir</field>
+        </record>
+        <record id="ceppp_suite_crm_disponibilites_fins_de_semaine" model="ceppp.suite_crm.disponibilites">
+            <field name="nom">Fins de semaine</field>
+        </record>
+        <record id="ceppp_suite_crm_disponibilites_jours" model="ceppp.suite_crm.disponibilites">
+            <field name="nom">Jours</field>
+        </record>
+    </data>
+</odoo>
