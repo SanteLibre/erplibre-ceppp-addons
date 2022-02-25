@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_maladie_infections" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_i_certaines_maladies_infectieuses_et_parasitaires" />
+            <field name="nom">Infections</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_micro_organismes_resistants_aux_medicaments" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_i_certaines_maladies_infectieuses_et_parasitaires" />
+            <field name="nom">Micro-organismes r&#233;sistants aux m&#233;dicaments</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_septicemie/sepsie" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_i_certaines_maladies_infectieuses_et_parasitaires" />
+            <field name="nom">Septic&#233;mie/sepsie</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_maladies_dues_au_virus_de_limmunodeficience_humaine_vih" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_i_certaines_maladies_infectieuses_et_parasitaires" />
+            <field name="nom">Maladies dues au virus de l&#8217;immunod&#233;ficience humaine (VIH)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_tumeurs_primitives_et_secondaires" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Tumeurs primitives et secondaires</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_tumeurs_primitives_a_sieges_multiples_independants" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Tumeurs primitives &#224; si&#232;ges multiples ind&#233;pendants</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_absence_acquise_du_sein_et_du_poumon_en_raison_dune_tumeur_maligne_primitive" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Absence acquise du sein et du poumon en raison d&#8217;une tumeur maligne primitive</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_tumeurs_des_tissus_lymphoides_hematopoietiques_et_tissus_apparentes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Tumeurs des tissus lympho&#239;des, h&#233;matopo&#239;&#233;tiques et tissus apparent&#233;s</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_tumeurs_setendant_aux_tissus_adjacents" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Tumeurs s&#8217;&#233;tendant aux tissus adjacents</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_tumeurs_dont_les_limites_se_chevauchent_sites_contigus" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Tumeurs dont les limites se chevauchent (sites contigus)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_admissions_a_la_suite_dun_diagnostic_de_cancer" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Admissions &#224; la suite d&#8217;un diagnostic de cancer</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_complications_dune_maladie_maligne" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Complications d&#8217;une maladie maligne</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_tumeurs_malignes_recurrentes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Tumeurs malignes r&#233;currentes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_interventions_pertinentes_a_la_codification_des_tumeurs" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Interventions pertinentes &#224; la codification des tumeurs</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_biopsie_des_ganglions_sentinelles" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Biopsie des ganglions sentinelles</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_brachytherapie" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ii_tumeurs" />
+            <field name="nom">Brachyth&#233;rapie</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_anemie_due_a_une_perte_de_sang_aigue" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_s" />
+            <field name="nom">An&#233;mie due &#224; une perte de sang aigu&#235;</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_anemie_au_cours_dune_maladie_chronique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_s" />
+            <field name="nom">An&#233;mie au cours d&#8217;une maladie chronique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_diabete_sucre" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_iv_maladies_endocriniennes_nutritionnelles_et_metaboliques" />
+            <field name="nom">Diab&#232;te sucr&#233;</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_deshydratation" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_iv_maladies_endocriniennes_nutritionnelles_et_metaboliques" />
+            <field name="nom">D&#233;shydratation</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_cranioplastie_et/ou_plastie_de_la_dure_mere_associee_aux_interventions_intracraniennes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_vi_maladies_du_systeme_nerveux" />
+            <field name="nom">Cranioplastie et/ou plastie de la dure-m&#232;re associ&#233;e aux interventions intracr&#226;niennes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_classement_hierarchique_des_resections_de_lesions_intracraniennes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_vi_maladies_du_systeme_nerveux" />
+            <field name="nom">Classement hi&#233;rarchique des r&#233;sections de l&#233;sions intracr&#226;niennes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_revision_des_systemes_de_derivation_du_liquide_cephalorachidien_lcr_ventricule_tronc_cerebral_ca" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_vi_maladies_du_systeme_nerveux" />
+            <field name="nom">R&#233;vision des syst&#232;mes de d&#233;rivation du liquide c&#233;phalorachidien (LCR) (ventricule, tronc c&#233;r&#233;bral, canal rachidien)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_convulsions" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_vi_maladies_du_systeme_nerveux" />
+            <field name="nom">Convulsions</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_deficits_neurologiques_a_la_suite_dun_accident_vasculaire_cerebral" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_vi_maladies_du_systeme_nerveux" />
+            <field name="nom">D&#233;ficits neurologiques &#224; la suite d&#8217;un accident vasculaire c&#233;r&#233;bral</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_diagnostic_du_deces_neurologique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_vi_maladies_du_systeme_nerveux" />
+            <field name="nom">Diagnostic du d&#233;c&#232;s neurologique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_hypertension_et_affections_associees" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Hypertension et affections associ&#233;es</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_syndrome_coronarien_aigu_sca" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Syndrome coronarien aigu (SCA)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_selection_de_lattribut_de_situation_lors_dune_intervention_coronaire_percutanee_icp" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">S&#233;lection de l&#8217;attribut de situation lors d&#8217;une intervention coronaire percutan&#233;e (ICP)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_traitement_thrombolytique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Traitement thrombolytique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_angine_de_poitrine" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Angine de poitrine</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_cardiopathie_ischemique_chronique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Cardiopathie isch&#233;mique chronique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_occlusion_a_la_suite_de_pontages_aortocoronariens_pac" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Occlusion &#224; la suite de pontages aortocoronariens (PAC)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_arret_cardiaque" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Arr&#234;t cardiaque</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_accidents_vasculaires_cerebraux_avc_hemorragiques_ischemiques_et_non_precises" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Accidents vasculaires c&#233;r&#233;braux (AVC) h&#233;morragiques, isch&#233;miques et non pr&#233;cis&#233;s</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_maladie_vasculaire_peripherique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Maladie vasculaire p&#233;riph&#233;rique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_anevrismes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">An&#233;vrismes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_catheters_veineux_centraux" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Cath&#233;ters veineux centraux</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_anticoagulotherapie_:_gestion_et_effets_indesirables" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" />
+            <field name="nom">Anticoaguloth&#233;rapie : gestion et effets ind&#233;sirables</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_pneumonie" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire" />
+            <field name="nom">Pneumonie</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_pneumonie_chez_les_patients_souffrant_de_maladie_pulmonaire_obstructive_chronique_mpoc" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire" />
+            <field name="nom">Pneumonie chez les patients souffrant de maladie pulmonaire obstructive chronique (MPOC)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_asthme" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire" />
+            <field name="nom">Asthme</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_resection_dune_lesion_nasale_polypes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire" />
+            <field name="nom">R&#233;section d&#8217;une l&#233;sion nasale (polypes)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_septoplastie_pour_une_deviation_de_la_cloison_nasale" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire" />
+            <field name="nom">Septoplastie pour une d&#233;viation de la cloison nasale</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_ventilation_invasive" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire" />
+            <field name="nom">Ventilation invasive</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_gastroenterite_et_diarrhee" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xi_maladies_de_l_appareil_digestif" />
+            <field name="nom">Gastroent&#233;rite et diarrh&#233;e</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_varices_oesophagiennes_avec_saignement" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xi_maladies_de_l_appareil_digestif" />
+            <field name="nom">Varices oesophagiennes avec saignement</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_saignement_digestif" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xi_maladies_de_l_appareil_digestif" />
+            <field name="nom">Saignement digestif</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_selection_des_attributs_pour_les_reparations_de_hernie" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xi_maladies_de_l_appareil_digestif" />
+            <field name="nom">S&#233;lection des attributs pour les r&#233;parations de hernie</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_cellulite" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xii_maladies_de_la_peau_et_du_tissu_cellulaire_sous_cutane" />
+            <field name="nom">Cellulite</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_arthrose" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif" />
+            <field name="nom">Arthrose</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_arthrectomie_et_arthroplastie" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif" />
+            <field name="nom">Arthrectomie et arthroplastie</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_fractures" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif" />
+            <field name="nom">Fractures</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_reduction_fixation_et_fusion_de_fracture_dune_articulation" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif" />
+            <field name="nom">R&#233;duction, fixation et fusion de fracture d&#8217;une articulation</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_excision_de_lesion_de_los_des_tissus_mous_et_de_la_peau" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif" />
+            <field name="nom">Excision (de l&#233;sion) de l&#8217;os, des tissus mous et de la peau</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_retrecissement_du_canal_medullaire" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif" />
+            <field name="nom">R&#233;tr&#233;cissement du canal m&#233;dullaire</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_stades_de_la_maladie_renale_chronique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiv_maladies_de_l_appareil_genito_urinaire" />
+            <field name="nom">Stades de la maladie r&#233;nale chronique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_episode_aigu_au_cours_dune_insuffisance_renale_chronique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiv_maladies_de_l_appareil_genito_urinaire" />
+            <field name="nom">&#201;pisode aigu au cours d&#8217;une insuffisance r&#233;nale chronique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_peritonite_due_a_une_dialyse_peritoneale_continue_ambulatoire_dpca" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiv_maladies_de_l_appareil_genito_urinaire" />
+            <field name="nom">P&#233;ritonite due &#224; une dialyse p&#233;riton&#233;ale continue ambulatoire (DPCA)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_menorragie_comme_diagnostic_principal" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xiv_maladies_de_l_appareil_genito_urinaire" />
+            <field name="nom">M&#233;norragie comme diagnostic principal</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_selection_du_sixieme_caractere_pour_la_codification_de_lobstetrique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">S&#233;lection du sixi&#232;me caract&#232;re pour la codification de l&#8217;obst&#233;trique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_sequence_des_codes_de_diagnostic_en_obstetrique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">S&#233;quence des codes de diagnostic en obst&#233;trique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_mort_intra_uterine" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Mort intra-ut&#233;rine</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_grossesse_se_terminant_par_un_avortement" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Grossesse se terminant par un avortement</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_poursuite_de_la_grossesse_apres_avortement/reduction_selective_de_foetus_dans_les_grossesses_mul" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Poursuite de la grossesse apr&#232;s avortement/r&#233;duction s&#233;lective de foetus dans les grossesses multiples</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_complications_consecutives_a_un_avortement_et_a_une_grossesse_extra_uterine_ou_molaire" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Complications cons&#233;cutives &#224; un avortement et &#224; une grossesse extra-ut&#233;rine ou molaire</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_infection_par_les_streptocoques_du_groupe_b/sujet_porteur_au_cours_de_la_grossesse" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Infection par les streptocoques du groupe B/sujet porteur au cours de la grossesse</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_accouchement_normal" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Accouchement normal</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_grossesse_avec_complication_et_grossesse_sans_complication" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Grossesse avec complication et grossesse sans complication</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_accouchement_avec_antecedent_de_cesarienne" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Accouchement avec ant&#233;c&#233;dent de c&#233;sarienne</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_grossesses_multiples" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Grossesses multiples</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_soins_maternels_lies_au_foetus_et_a_la_cavite_amniotique_et_problemes_possibles_poses_par_laccou" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Soins maternels li&#233;s au foetus et &#224; la cavit&#233; amniotique et probl&#232;mes possibles pos&#233;s par l&#8217;accouchement</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_grossesse_prolongee/naissance_apres_terme" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Grossesse prolong&#233;e/naissance apr&#232;s terme</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_rupture_prematuree_des_membranes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Rupture pr&#233;matur&#233;e des membranes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_travail_avant_terme" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Travail avant terme</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_travail_prolonge" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Travail prolong&#233;</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_travail_trop_rapide" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Travail trop rapide</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_dystocie" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Dystocie</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_travail_et_accouchement_compliques_dune_detresse_foetale" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Travail et accouchement compliqu&#233;s d&#8217;une d&#233;tresse foetale</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_hemorragie_du_post_partum" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">H&#233;morragie du post-partum</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_complications_de_lanesthesie_au_cours_du_travail_et_de_laccouchement" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Complications de l&#8217;anesth&#233;sie au cours du travail et de l&#8217;accouchement</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_interventions_associees_a_laccouchement" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Interventions associ&#233;es &#224; l&#8217;accouchement</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_dilatation_et_curetage" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" />
+            <field name="nom">Dilatation et curetage</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_faible_poids_a_la_naissance_et/ou_enfant_ne_avant_terme" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale" />
+            <field name="nom">Faible poids &#224; la naissance et/ou enfant n&#233; avant terme</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_acidemie_foetale" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale" />
+            <field name="nom">Acid&#233;mie foetale</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_ictere_neonatal" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale" />
+            <field name="nom">Ict&#232;re n&#233;onatal</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_sepsie_confirmee_et_risque_de_sepsie_chez_le_nouveau_ne" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale" />
+            <field name="nom">Sepsie confirm&#233;e et risque de sepsie chez le nouveau-n&#233;</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_traumatisme_a_la_naissance" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale" />
+            <field name="nom">Traumatisme &#224; la naissance</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_accident_vasculaire_cerebral_avc_perinatal" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale" />
+            <field name="nom">Accident vasculaire c&#233;r&#233;bral (AVC) p&#233;rinatal</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_syndromes_causes_par_des_anomalies_congenitales_et_manifestations_specifiques" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xvii_malformations_congenitales_deformations_et_anomalies_chromosomiques" />
+            <field name="nom">Syndromes caus&#233;s par des anomalies cong&#233;nitales et manifestations sp&#233;cifiques</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_syndrome_de_reponse_inflammatoire_systemique_sris_ou_syndrome_dinflammation_systemique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xviii_symptomes_signes_et_resultats_anormaux_dexamens_cliniques_et_de_laborato" />
+            <field name="nom">Syndrome de r&#233;ponse inflammatoire syst&#233;mique (SRIS) ou syndrome d&#8217;inflammation syst&#233;mique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_absence_de_signes_vitaux_asv" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xviii_symptomes_signes_et_resultats_anormaux_dexamens_cliniques_et_de_laborato" />
+            <field name="nom">Absence de signes vitaux (ASV)</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_reactions_indesirables_en_usage_therapeutique_et_empoisonnements" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">R&#233;actions ind&#233;sirables en usage th&#233;rapeutique et empoisonnements</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_reaction_allergique_en_usage_non_therapeutique" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">R&#233;action allergique en usage non th&#233;rapeutique</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_lesions_traumatiques_recentes_versus_anciennes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">L&#233;sions traumatiques r&#233;centes versus anciennes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_complications_precoces_de_traumatismes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Complications pr&#233;coces de traumatismes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_traumatisme_intracranien_sai_versus_traumatisme_cranien_sai" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Traumatisme intracr&#226;nien SAI versus traumatisme cr&#226;nien SAI</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_fracture_du_crane_et_lesion_intracranienne" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Fracture du cr&#226;ne et l&#233;sion intracr&#226;nienne</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_plaies_ouvertes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Plaies ouvertes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_fractures_fermees_versus_ouvertes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Fractures - ferm&#233;es versus ouvertes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_traitement_des_fractures" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Traitement des fractures</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_luxations" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Luxations</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_lesions_des_vaisseaux_sanguins" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">L&#233;sions des vaisseaux sanguins</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_lesions_significatives" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">L&#233;sions significatives</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_blessures_par_ecrasement" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Blessures par &#233;crasement</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_lesions_bilaterales" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">L&#233;sions bilat&#233;rales</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_brulures_et_corrosions" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Br&#251;lures et corrosions</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_etendue_de_la_surface_corporelle_touchee_par_une_brulure" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">&#201;tendue de la surface corporelle touch&#233;e par une br&#251;lure</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_attribution_du_diagnostic_principal_et_du_probleme_principal_dans_le_cas_de_brulures_multiples" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Attribution du diagnostic principal et du probl&#232;me principal dans le cas de br&#251;lures multiples</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_brulures_touchant_plusieurs_regions_corporelles" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Br&#251;lures touchant plusieurs r&#233;gions corporelles</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_sequence_des_codes_de_lesions_multiples_en_fonction_du_degre_de_gravite" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">S&#233;quence des codes de l&#233;sions multiples en fonction du degr&#233; de gravit&#233;</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_attribution_de_codes_pour_des_lesions_superficielles_multiples_ou_plaies_ouvertes_multiples" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Attribution de codes pour des l&#233;sions superficielles multiples ou plaies ouvertes multiples</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_une_seule_region_co" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Attribution de codes pour plusieurs types de l&#233;sions significatives touchant une seule r&#233;gion corporelle</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_plusieurs_regions_c" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Attribution de codes pour plusieurs types de l&#233;sions significatives touchant plusieurs r&#233;gions corporelles</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_codification_des_lesions_multiples_non_specifiques_visites_au_service_durgence" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Codification des l&#233;sions multiples non sp&#233;cifiques - visites au service d&#8217;urgence</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_affections_post_intervention" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Affections post-intervention</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_rejet_ou_echec_de_transplantation_dorganes_de_greffons_et_de_lambeaux" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Rejet ou &#233;chec de transplantation d&#8217;organes, de greffons et de lambeaux</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_complications_liees_aux_protheses_aux_implants_ou_aux_greffes" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Complications li&#233;es aux proth&#232;ses, aux implants ou aux greffes</field>
+        </record>
+        <record id="ceppp_suite_crm_maladie_incidents_survenus_au_cours_dactes_medicaux_et_chirurgicaux" model="ceppp.suite_crm.maladie">
+            <field name="chapitre_maladie_id" ref="ceppp_suite_crm_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_c" />
+            <field name="nom">Incidents survenus au cours d&#8217;actes m&#233;dicaux et chirurgicaux</field>
+        </record>
+    </data>
+</odoo>

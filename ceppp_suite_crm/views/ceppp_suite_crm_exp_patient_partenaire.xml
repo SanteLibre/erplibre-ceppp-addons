@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_suite_crm_exp_patient_partenaire_view_form" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_exp_patient_partenaire_form</field>
+        <field name="model">ceppp.suite_crm.exp_patient_partenaire</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+                    <group>
+                        <field name="comite" />
+                    </group>
+                    <group>
+                        <field name="date_formation" />
+                    </group>
+                    <group>
+                        <field name="description_experience" />
+                    </group>
+                    <group>
+                        <field name="duree" />
+                    </group>
+                    <group>
+                        <field name="formation_qui" />
+                    </group>
+                    <group>
+                        <field name="formation_suivie" />
+                    </group>
+                    <group>
+                        <field name="nom_formation_suivie" />
+                    </group>
+                    <group>
+                        <field name="role_experience" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_exp_patient_partenaire_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_exp_patient_partenaire_graph</field>
+        <field name="model">ceppp.suite_crm.exp_patient_partenaire</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp suite crm exp patient partenaire">
+                <field name="name" type="row" />
+                <field name="comite" type="row" />
+                <field name="date_formation" type="row" />
+                <field name="description_experience" type="row" />
+                <field name="duree" type="row" />
+                <field name="formation_qui" type="row" />
+                <field name="formation_suivie" type="row" />
+                <field name="nom_formation_suivie" type="row" />
+                <field name="role_experience" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_exp_patient_partenaire_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_exp_patient_partenaire_kanban</field>
+        <field name="model">ceppp.suite_crm.exp_patient_partenaire</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="name" />
+                <field name="comite" />
+                <field name="date_formation" />
+                <field name="description_experience" />
+                <field name="duree" />
+                <field name="formation_qui" />
+                <field name="formation_suivie" />
+                <field name="nom_formation_suivie" />
+                <field name="role_experience" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="name" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="comite" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="date_formation" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="description_experience" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="duree" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_qui" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_suivie" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nom_formation_suivie" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="role_experience" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_exp_patient_partenaire_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_exp_patient_partenaire_pivot</field>
+        <field name="model">ceppp.suite_crm.exp_patient_partenaire</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp suite crm exp patient partenaire">
+                <field name="name" type="row" />
+                <field name="comite" type="row" />
+                <field name="date_formation" type="row" />
+                <field name="description_experience" type="row" />
+                <field name="duree" type="row" />
+                <field name="formation_qui" type="row" />
+                <field name="formation_suivie" type="row" />
+                <field name="nom_formation_suivie" type="row" />
+                <field name="role_experience" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_exp_patient_partenaire_view_search" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_exp_patient_partenaire_search</field>
+        <field name="model">ceppp.suite_crm.exp_patient_partenaire</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp suite crm exp patient partenaire">
+                <filter domain="[('name','!=',False)]" name="name" string="Nom" />
+                <filter domain="[('comite','!=',False)]" name="comite" string="Comit&#233; / Groupe" />
+                <filter domain="[('date_formation','!=',False)]" name="date_formation" string="Date de formation" />
+                <filter
+                    domain="[('description_experience','!=',False)]"
+                    name="description_experience"
+                    string="Description de l'exp&#233;rience"
+                />
+                <filter domain="[('duree','!=',False)]" name="duree" string="Dur&#233;e" />
+                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation par qui" />
+                <filter
+                    domain="[('formation_suivie','!=',False)]"
+                    name="formation_suivie"
+                    string="Formation suivie sur le partenariat patient"
+                />
+                <filter
+                    domain="[('nom_formation_suivie','!=',False)]"
+                    name="nom_formation_suivie"
+                    string="nom formation suivie"
+                />
+                <filter domain="[('role_experience','!=',False)]" name="role_experience" string="R&#244;le" />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_exp_patient_partenaire_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_exp_patient_partenaire_tree</field>
+        <field name="model">ceppp.suite_crm.exp_patient_partenaire</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="comite" />
+                <field name="date_formation" />
+                <field name="description_experience" />
+                <field name="duree" />
+                <field name="formation_qui" />
+                <field name="formation_suivie" />
+                <field name="nom_formation_suivie" />
+                <field name="role_experience" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_suite_crm_exp_patient_partenaire_suite_crm_exp_patient_partenaire_action_window"
+        name="Suite crm exp patient partenaire"
+        res_model="ceppp.suite_crm.exp_patient_partenaire"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_competences_pp_se_connait_dans_la_vie_avec_la_maladie" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Se conna&#238;t dans la vie avec la maladie</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_mobilise_ses_savoirs_experientiels" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Mobilise ses savoirs exp&#233;rientiels</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_developpe_sa_resilience" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">D&#233;veloppe sa r&#233;silience</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_redonne_un_sens_a_la_vie_au_travers_de_ses_experiences" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Redonne un sens &#224; la vie au travers de ses exp&#233;riences</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_elabore_un_projet_de_vie_et_l_adapte_au_changement" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">&#201;labore un projet de vie et l'adapte au changement</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_fait_preuve_d_altruisme" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Fait preuve d'altruisme</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_se_racconte_de_facon_pedagogique" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Se racconte de fa&#231;on p&#233;dagogique</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_communique" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Communique</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_est_reflexif_et_transmet" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Est r&#233;flexif et transmet</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_est_a_l_ecoute" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Est &#224; l'&#233;coute</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_mobilise_ses_experiences_sociales_et_professionnelles" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Mobilise ses exp&#233;riences sociales et professionnelles</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_assume_un_co_leadership" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Assume un co-leadership</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_accompagne_un_individu_ou_un_groupe" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Accompagne un individu ou un groupe</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_analyse_des_situations_relationelles_de_differents_niveaux_de_complexite" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Analyse des situations relationelles de diff&#233;rents niveaux de complexit&#233;</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_tisse_et_entretien_des_reseaux" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Tisse et entretien des r&#233;seaux</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_s_exprime_clairement" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">S'exprime clairement</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_habiletes_interpersonnelles_ecoute_empathie" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Habilet&#233;s interpersonnelles (&#233;coute, empathie)</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_desir_d_aider_autrui_et_de_contribuer_a_un_objectif_qui_depasse_sa_propre_situation" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">D&#233;sir d'aider autrui et de contribuer &#224; un objectif qui d&#233;passe sa propre situation</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pp_manifeste_un_desir_d_implication_associations_benevolat_temoignages" model="ceppp.suite_crm.competences_pp">
+            <field name="nom">Manifeste un d&#233;sir d'implication (associations, benevolat, temoignages)</field>
+        </record>
+    </data>
+</odoo>

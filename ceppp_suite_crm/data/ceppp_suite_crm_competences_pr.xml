@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_competences_pr_fait_preuve_d_altruisme" model="ceppp.suite_crm.competences_pr">
+            <field name="nom">Fait preuve d'altruisme</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pr_se_racconte_de_facon_pedagogique" model="ceppp.suite_crm.competences_pr">
+            <field name="nom">Se racconte de fa&#231;on p&#233;dagogique</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pr_communique" model="ceppp.suite_crm.competences_pr">
+            <field name="nom">Communique</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pr_est_reflexif_et_transmet" model="ceppp.suite_crm.competences_pr">
+            <field name="nom">Est r&#233;flexif et transmet</field>
+        </record>
+        <record id="ceppp_suite_crm_competences_pr_est_a_l_ecoute" model="ceppp.suite_crm.competences_pr">
+            <field name="nom">Est &#224; l'&#233;coute</field>
+        </record>
+    </data>
+</odoo>

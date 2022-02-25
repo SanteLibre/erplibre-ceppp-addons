@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_role_pp_coach" model="ceppp.suite_crm.role_pp">
+            <field name="nom">Coach</field>
+        </record>
+        <record id="ceppp_suite_crm_role_pp_co_chercheur" model="ceppp.suite_crm.role_pp">
+            <field name="nom">Co-chercheur</field>
+        </record>
+        <record id="ceppp_suite_crm_role_pp_formateur" model="ceppp.suite_crm.role_pp">
+            <field name="nom">Formateur</field>
+        </record>
+        <record id="ceppp_suite_crm_role_pp_accompagnateur" model="ceppp.suite_crm.role_pp">
+            <field name="nom">Accompagnateur</field>
+        </record>
+        <record id="ceppp_suite_crm_role_pp_aviseur" model="ceppp.suite_crm.role_pp">
+            <field name="nom">Aviseur</field>
+        </record>
+    </data>
+</odoo>

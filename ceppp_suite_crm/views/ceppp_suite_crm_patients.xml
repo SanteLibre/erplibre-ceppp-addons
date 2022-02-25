@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_suite_crm_patients_view_form" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_form</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="nom" />
+                    </group>
+                    <group>
+                        <field name="assistance_audition" />
+                    </group>
+                    <group>
+                        <field name="assistance_mob" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="assistance_vision" />
+                    </group>
+                    <group>
+                        <field name="association_etablissement_recr" />
+                    </group>
+                    <group>
+                        <field name="centre_recrutement" />
+                    </group>
+                    <group>
+                        <field name="code_ident" />
+                    </group>
+                    <group>
+                        <field name="comm_recruteur" />
+                    </group>
+                    <group>
+                        <field name="comment_refere" />
+                    </group>
+                    <group>
+                        <field name="competences_pp" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="competences_ppc" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="competences_pr" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="conflit_interet" />
+                    </group>
+                    <group>
+                        <field name="conflit_interet_detail" />
+                    </group>
+                    <group>
+                        <field name="consentement_dcpp_recrut" />
+                    </group>
+                    <group>
+                        <field name="consentement_miseajour" />
+                    </group>
+                    <group>
+                        <field name="consentement_recherche" />
+                    </group>
+                    <group>
+                        <field name="consentement_usage_donnees" />
+                    </group>
+                    <group>
+                        <field name="date_entrevue" />
+                    </group>
+                    <group>
+                        <field name="deplacements" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="descr_exp" />
+                    </group>
+                    <group>
+                        <field name="disponibilites" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="domaine_soin_pa" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="domaine_soin_pa_2" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="domaine_soin_pa_3" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="doul_chron" />
+                    </group>
+                    <group>
+                        <field name="duree_experience" />
+                    </group>
+                    <group>
+                        <field name="education_perso" />
+                    </group>
+                    <group>
+                        <field name="education_perso_autre" />
+                    </group>
+                    <group>
+                        <field name="email_perso" />
+                    </group>
+                    <group>
+                        <field name="emploi_perso" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="etabl_prem_ligne_pa_" />
+                    </group>
+                    <group>
+                        <field name="etabl_sante_pa" />
+                    </group>
+                    <group>
+                        <field name="etabl_sante_pa_" />
+                    </group>
+                    <group>
+                        <field name="etat" />
+                    </group>
+                    <group>
+                        <field name="exp_sante" />
+                    </group>
+                    <group>
+                        <field name="exp_sante_detail" />
+                    </group>
+                    <group>
+                        <field name="experience_maladie_pa" />
+                    </group>
+                    <group>
+                        <field name="experience_maladie_pp" />
+                    </group>
+                    <group>
+                        <field name="experience_maladie_proche" />
+                    </group>
+                    <group>
+                        <field name="formation_date" />
+                    </group>
+                    <group>
+                        <field name="formation_oui" />
+                    </group>
+                    <group>
+                        <field name="formation_pp" />
+                    </group>
+                    <group>
+                        <field name="formation_qui" />
+                    </group>
+                    <group>
+                        <field name="genre" />
+                    </group>
+                    <group>
+                        <field name="groupe_designe" />
+                    </group>
+                    <group>
+                        <field name="habiletes_pp" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="langue_corresp" />
+                    </group>
+                    <group>
+                        <field name="langue_parlee" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="membre_assoc_comite" />
+                    </group>
+                    <group>
+                        <field name="membre_assoc_comite_detail" />
+                    </group>
+                    <group>
+                        <field name="motivations_implication" />
+                    </group>
+                    <group>
+                        <field name="naissance_perso" />
+                    </group>
+                    <group>
+                        <field name="nas_perso" />
+                    </group>
+                    <group>
+                        <field name="nas_perso_" />
+                    </group>
+                    <group>
+                        <field name="niveau_aud" />
+                    </group>
+                    <group>
+                        <field name="niveau_autre" />
+                    </group>
+                    <group>
+                        <field name="niveau_fatigabilite" />
+                    </group>
+                    <group>
+                        <field name="niveau_mob" />
+                    </group>
+                    <group>
+                        <field name="niveau_vue" />
+                    </group>
+                    <group>
+                        <field name="org_ref_recrut" />
+                    </group>
+                    <group>
+                        <field name="patient_ajout" />
+                    </group>
+                    <group>
+                        <field name="personne_reference_recrut" />
+                    </group>
+                    <group>
+                        <field name="preferences" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="preferences_autre" />
+                    </group>
+                    <group>
+                        <field name="prenom" />
+                    </group>
+                    <group>
+                        <field name="prob_resp" />
+                    </group>
+                    <group>
+                        <field name="prob_sant_pa" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="prob_sant_pa_2" />
+                    </group>
+                    <group>
+                        <field name="prob_sant_pa_3" />
+                    </group>
+                    <group>
+                        <field name="prob_somm" />
+                    </group>
+                    <group>
+                        <field name="recruteur" />
+                    </group>
+                    <group>
+                        <field name="rel_patient" />
+                    </group>
+                    <group>
+                        <field name="role_pp" widget="many2many_tags" />
+                    </group>
+                    <group>
+                        <field name="tel_dom_perso" widget="phone" />
+                    </group>
+                    <group>
+                        <field name="tel_mobile_perso" widget="phone" />
+                    </group>
+                    <group>
+                        <field name="tel_travail_perso" widget="phone" />
+                    </group>
+                    <group>
+                        <field name="test_int_field" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_graph</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp suite crm patients">
+                <field name="nom" type="row" />
+                <field name="assistance_audition" type="row" />
+                <field name="assistance_vision" type="row" />
+                <field name="association_etablissement_recr" type="row" />
+                <field name="centre_recrutement" type="row" />
+                <field name="code_ident" type="row" />
+                <field name="comm_recruteur" type="row" />
+                <field name="comment_refere" type="row" />
+                <field name="conflit_interet" type="row" />
+                <field name="conflit_interet_detail" type="row" />
+                <field name="consentement_dcpp_recrut" type="row" />
+                <field name="consentement_miseajour" type="row" />
+                <field name="consentement_recherche" type="row" />
+                <field name="consentement_usage_donnees" type="row" />
+                <field name="date_entrevue" type="row" />
+                <field name="descr_exp" type="row" />
+                <field name="doul_chron" type="row" />
+                <field name="duree_experience" type="row" />
+                <field name="education_perso" type="row" />
+                <field name="education_perso_autre" type="row" />
+                <field name="email_perso" type="row" />
+                <field name="etabl_prem_ligne_pa_" type="row" />
+                <field name="etabl_sante_pa" type="row" />
+                <field name="etabl_sante_pa_" type="row" />
+                <field name="etat" type="row" />
+                <field name="exp_sante" type="row" />
+                <field name="exp_sante_detail" type="row" />
+                <field name="experience_maladie_pa" type="row" />
+                <field name="experience_maladie_pp" type="row" />
+                <field name="experience_maladie_proche" type="row" />
+                <field name="formation_date" type="row" />
+                <field name="formation_oui" type="row" />
+                <field name="formation_pp" type="row" />
+                <field name="formation_qui" type="row" />
+                <field name="genre" type="row" />
+                <field name="groupe_designe" type="row" />
+                <field name="langue_corresp" type="row" />
+                <field name="membre_assoc_comite" type="row" />
+                <field name="membre_assoc_comite_detail" type="row" />
+                <field name="motivations_implication" type="row" />
+                <field name="naissance_perso" type="row" />
+                <field name="nas_perso" type="measure" />
+                <field name="nas_perso_" type="row" />
+                <field name="niveau_aud" type="row" />
+                <field name="niveau_autre" type="row" />
+                <field name="niveau_fatigabilite" type="row" />
+                <field name="niveau_mob" type="row" />
+                <field name="niveau_vue" type="row" />
+                <field name="org_ref_recrut" type="row" />
+                <field name="patient_ajout" type="row" />
+                <field name="personne_reference_recrut" type="row" />
+                <field name="preferences_autre" type="row" />
+                <field name="prenom" type="row" />
+                <field name="prob_resp" type="row" />
+                <field name="prob_sant_pa_2" type="row" />
+                <field name="prob_sant_pa_3" type="row" />
+                <field name="prob_somm" type="row" />
+                <field name="recruteur" type="row" />
+                <field name="rel_patient" type="row" />
+                <field name="tel_dom_perso" type="row" />
+                <field name="tel_mobile_perso" type="row" />
+                <field name="tel_travail_perso" type="row" />
+                <field name="test_int_field" type="measure" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_kanban</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="nom" />
+                <field name="assistance_audition" />
+                <field name="assistance_mob" widget="many2many_tags" />
+                <field name="assistance_vision" />
+                <field name="association_etablissement_recr" />
+                <field name="centre_recrutement" />
+                <field name="code_ident" />
+                <field name="comm_recruteur" />
+                <field name="comment_refere" />
+                <field name="competences_pp" widget="many2many_tags" />
+                <field name="competences_ppc" widget="many2many_tags" />
+                <field name="competences_pr" widget="many2many_tags" />
+                <field name="conflit_interet" />
+                <field name="conflit_interet_detail" />
+                <field name="consentement_dcpp_recrut" />
+                <field name="consentement_miseajour" />
+                <field name="consentement_recherche" />
+                <field name="consentement_usage_donnees" />
+                <field name="date_entrevue" />
+                <field name="deplacements" widget="many2many_tags" />
+                <field name="descr_exp" />
+                <field name="disponibilites" widget="many2many_tags" />
+                <field name="domaine_soin_pa" widget="many2many_tags" />
+                <field name="domaine_soin_pa_2" widget="many2many_tags" />
+                <field name="domaine_soin_pa_3" widget="many2many_tags" />
+                <field name="doul_chron" />
+                <field name="duree_experience" />
+                <field name="education_perso" />
+                <field name="education_perso_autre" />
+                <field name="email_perso" />
+                <field name="emploi_perso" widget="many2many_tags" />
+                <field name="etabl_prem_ligne_pa_" />
+                <field name="etabl_sante_pa" />
+                <field name="etabl_sante_pa_" />
+                <field name="etat" />
+                <field name="exp_sante" />
+                <field name="exp_sante_detail" />
+                <field name="experience_maladie_pa" />
+                <field name="experience_maladie_pp" />
+                <field name="experience_maladie_proche" />
+                <field name="formation_date" />
+                <field name="formation_oui" />
+                <field name="formation_pp" />
+                <field name="formation_qui" />
+                <field name="genre" />
+                <field name="groupe_designe" />
+                <field name="habiletes_pp" widget="many2many_tags" />
+                <field name="langue_corresp" />
+                <field name="langue_parlee" widget="many2many_tags" />
+                <field name="membre_assoc_comite" />
+                <field name="membre_assoc_comite_detail" />
+                <field name="motivations_implication" />
+                <field name="naissance_perso" />
+                <field name="nas_perso" />
+                <field name="nas_perso_" />
+                <field name="niveau_aud" />
+                <field name="niveau_autre" />
+                <field name="niveau_fatigabilite" />
+                <field name="niveau_mob" />
+                <field name="niveau_vue" />
+                <field name="org_ref_recrut" />
+                <field name="patient_ajout" />
+                <field name="personne_reference_recrut" />
+                <field name="preferences" widget="many2many_tags" />
+                <field name="preferences_autre" />
+                <field name="prenom" />
+                <field name="prob_resp" />
+                <field name="prob_sant_pa" widget="many2many_tags" />
+                <field name="prob_sant_pa_2" />
+                <field name="prob_sant_pa_3" />
+                <field name="prob_somm" />
+                <field name="recruteur" />
+                <field name="rel_patient" />
+                <field name="role_pp" widget="many2many_tags" />
+                <field name="tel_dom_perso" widget="phone" />
+                <field name="tel_mobile_perso" widget="phone" />
+                <field name="tel_travail_perso" widget="phone" />
+                <field name="test_int_field" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nom" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="assistance_audition" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="assistance_mob" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="assistance_vision" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="association_etablissement_recr" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="centre_recrutement" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="code_ident" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="comm_recruteur" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="comment_refere" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="competences_pp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="competences_ppc" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="competences_pr" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="conflit_interet" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="conflit_interet_detail" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="consentement_dcpp_recrut" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="consentement_miseajour" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="consentement_recherche" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="consentement_usage_donnees" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="date_entrevue" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="deplacements" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="descr_exp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="disponibilites" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="domaine_soin_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="domaine_soin_pa_2" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="domaine_soin_pa_3" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="doul_chron" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="duree_experience" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="education_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="education_perso_autre" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="email_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="emploi_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etabl_prem_ligne_pa_" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etabl_sante_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etabl_sante_pa_" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="etat" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="exp_sante" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="exp_sante_detail" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="experience_maladie_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="experience_maladie_pp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="experience_maladie_proche" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_date" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_oui" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_pp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="formation_qui" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="genre" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="groupe_designe" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="habiletes_pp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="langue_corresp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="langue_parlee" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="membre_assoc_comite" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="membre_assoc_comite_detail" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="motivations_implication" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="naissance_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nas_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nas_perso_" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="niveau_aud" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="niveau_autre" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="niveau_fatigabilite" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="niveau_mob" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="niveau_vue" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="org_ref_recrut" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="patient_ajout" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="personne_reference_recrut" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="preferences" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="preferences_autre" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prenom" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prob_resp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prob_sant_pa" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prob_sant_pa_2" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prob_sant_pa_3" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="prob_somm" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="recruteur" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="rel_patient" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="role_pp" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="tel_dom_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="tel_mobile_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="tel_travail_perso" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="test_int_field" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_pivot</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp suite crm patients">
+                <field name="nom" type="row" />
+                <field name="assistance_audition" type="row" />
+                <field name="assistance_vision" type="row" />
+                <field name="association_etablissement_recr" type="row" />
+                <field name="centre_recrutement" type="row" />
+                <field name="code_ident" type="row" />
+                <field name="comm_recruteur" type="row" />
+                <field name="comment_refere" type="row" />
+                <field name="conflit_interet" type="row" />
+                <field name="conflit_interet_detail" type="row" />
+                <field name="consentement_dcpp_recrut" type="row" />
+                <field name="consentement_miseajour" type="row" />
+                <field name="consentement_recherche" type="row" />
+                <field name="consentement_usage_donnees" type="row" />
+                <field name="date_entrevue" type="row" />
+                <field name="descr_exp" type="row" />
+                <field name="doul_chron" type="row" />
+                <field name="duree_experience" type="row" />
+                <field name="education_perso" type="row" />
+                <field name="education_perso_autre" type="row" />
+                <field name="email_perso" type="row" />
+                <field name="etabl_prem_ligne_pa_" type="row" />
+                <field name="etabl_sante_pa" type="row" />
+                <field name="etabl_sante_pa_" type="row" />
+                <field name="etat" type="row" />
+                <field name="exp_sante" type="row" />
+                <field name="exp_sante_detail" type="row" />
+                <field name="experience_maladie_pa" type="row" />
+                <field name="experience_maladie_pp" type="row" />
+                <field name="experience_maladie_proche" type="row" />
+                <field name="formation_date" type="row" />
+                <field name="formation_oui" type="row" />
+                <field name="formation_pp" type="row" />
+                <field name="formation_qui" type="row" />
+                <field name="genre" type="row" />
+                <field name="groupe_designe" type="row" />
+                <field name="langue_corresp" type="row" />
+                <field name="membre_assoc_comite" type="row" />
+                <field name="membre_assoc_comite_detail" type="row" />
+                <field name="motivations_implication" type="row" />
+                <field name="naissance_perso" type="row" />
+                <field name="nas_perso" type="measure" />
+                <field name="nas_perso_" type="row" />
+                <field name="niveau_aud" type="row" />
+                <field name="niveau_autre" type="row" />
+                <field name="niveau_fatigabilite" type="row" />
+                <field name="niveau_mob" type="row" />
+                <field name="niveau_vue" type="row" />
+                <field name="org_ref_recrut" type="row" />
+                <field name="patient_ajout" type="row" />
+                <field name="personne_reference_recrut" type="row" />
+                <field name="preferences_autre" type="row" />
+                <field name="prenom" type="row" />
+                <field name="prob_resp" type="row" />
+                <field name="prob_sant_pa_2" type="row" />
+                <field name="prob_sant_pa_3" type="row" />
+                <field name="prob_somm" type="row" />
+                <field name="recruteur" type="row" />
+                <field name="rel_patient" type="row" />
+                <field name="tel_dom_perso" type="row" />
+                <field name="tel_mobile_perso" type="row" />
+                <field name="tel_travail_perso" type="row" />
+                <field name="test_int_field" type="measure" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_search" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_search</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp suite crm patients">
+                <filter domain="[('nom','!=',False)]" name="nom" string="Nom de famille" />
+                <filter
+                    domain="[('assistance_audition','!=',False)]"
+                    name="assistance_audition"
+                    string="Besoin d'assistance"
+                />
+                <filter
+                    domain="[('assistance_mob','!=',False)]"
+                    name="assistance_mob"
+                    string="Aides &#224; la mobilit&#233;"
+                />
+                <filter
+                    domain="[('assistance_vision','!=',False)]"
+                    name="assistance_vision"
+                    string="Besoin d'assistance"
+                />
+                <filter
+                    domain="[('association_etablissement_recr','!=',False)]"
+                    name="association_etablissement_recr"
+                    string="&#201;tablissement de recrutement"
+                />
+                <filter
+                    domain="[('centre_recrutement','!=',False)]"
+                    name="centre_recrutement"
+                    string="Centre de recrutement"
+                />
+                <filter domain="[('code_ident','!=',False)]" name="code_ident" string="Code" />
+                <filter
+                    domain="[('comm_recruteur','!=',False)]"
+                    name="comm_recruteur"
+                    string="Commentaires recruteur"
+                />
+                <filter domain="[('comment_refere','!=',False)]" name="comment_refere" string="Comment" />
+                <filter domain="[('competences_pp','!=',False)]" name="competences_pp" string="Comp&#233;tences" />
+                <filter domain="[('competences_ppc','!=',False)]" name="competences_ppc" string="Comp&#233;tences" />
+                <filter domain="[('competences_pr','!=',False)]" name="competences_pr" string="Comp&#233;tences" />
+                <filter
+                    domain="[('conflit_interet','!=',False)]"
+                    name="conflit_interet"
+                    string="Conflit d'int&#233;r&#234;t"
+                />
+                <filter
+                    domain="[('conflit_interet_detail','!=',False)]"
+                    name="conflit_interet_detail"
+                    string="Lequel"
+                />
+                <filter
+                    domain="[('consentement_dcpp_recrut','!=',False)]"
+                    name="consentement_dcpp_recrut"
+                    string="Consentement sur l'implication"
+                />
+                <filter
+                    domain="[('consentement_miseajour','!=',False)]"
+                    name="consentement_miseajour"
+                    string="Consentement sur la communication"
+                />
+                <filter
+                    domain="[('consentement_recherche','!=',False)]"
+                    name="consentement_recherche"
+                    string="Consentement sur la recherche"
+                />
+                <filter
+                    domain="[('consentement_usage_donnees','!=',False)]"
+                    name="consentement_usage_donnees"
+                    string="Consentement sur les donn&#233;es"
+                />
+                <filter
+                    domain="[('date_entrevue','!=',False)]"
+                    name="date_entrevue"
+                    string="Date de la rencontre t&#233;l&#233;phonique"
+                />
+                <filter
+                    domain="[('deplacements','!=',False)]"
+                    name="deplacements"
+                    string="Comment vous d&#233;placez-vous ?"
+                />
+                <filter
+                    domain="[('descr_exp','!=',False)]"
+                    name="descr_exp"
+                    string="Description de l'exp&#233;rience"
+                />
+                <filter domain="[('disponibilites','!=',False)]" name="disponibilites" string="Disponibilit&#233;s" />
+                <filter
+                    domain="[('domaine_soin_pa','!=',False)]"
+                    name="domaine_soin_pa"
+                    string="Sp&#233;cialit&#233;s de soin"
+                />
+                <filter
+                    domain="[('domaine_soin_pa_2','!=',False)]"
+                    name="domaine_soin_pa_2"
+                    string="Sp&#233;cialit&#233; domaine de soins #2"
+                />
+                <filter
+                    domain="[('domaine_soin_pa_3','!=',False)]"
+                    name="domaine_soin_pa_3"
+                    string="Sp&#233;cialit&#233; domaine de soins #3"
+                />
+                <filter domain="[('doul_chron','!=',False)]" name="doul_chron" string="Douleur chronique" />
+                <filter
+                    domain="[('duree_experience','!=',False)]"
+                    name="duree_experience"
+                    string="Dur&#233;e d'exp&#233;rience (Ann&#233;es / Mois)"
+                />
+                <filter
+                    domain="[('education_perso','!=',False)]"
+                    name="education_perso"
+                    string="Formation professionnelle"
+                />
+                <filter
+                    domain="[('education_perso_autre','!=',False)]"
+                    name="education_perso_autre"
+                    string="Autre niveau (pr&#233;ciser)"
+                />
+                <filter domain="[('email_perso','!=',False)]" name="email_perso" string="Adresse courriel" />
+                <filter domain="[('emploi_perso','!=',False)]" name="emploi_perso" string="Emploi du temps" />
+                <filter
+                    domain="[('etabl_prem_ligne_pa_','!=',False)]"
+                    name="etabl_prem_ligne_pa_"
+                    string="&#201;tablissement de premi&#232;re ligne"
+                />
+                <filter
+                    domain="[('etabl_sante_pa','!=',False)]"
+                    name="etabl_sante_pa"
+                    string="&#201;tablissement de sant&#233; principal"
+                />
+                <filter
+                    domain="[('etabl_sante_pa_','!=',False)]"
+                    name="etabl_sante_pa_"
+                    string="&#201;tablissement de sant&#233; principal"
+                />
+                <filter domain="[('etat','!=',False)]" name="etat" string="&#201;tat" />
+                <filter
+                    domain="[('exp_sante','!=',False)]"
+                    name="exp_sante"
+                    string="Exp&#233;rience professionnelle dans le milieu de la sant&#233;"
+                />
+                <filter domain="[('exp_sante_detail','!=',False)]" name="exp_sante_detail" string="Pr&#233;cisions" />
+                <filter
+                    domain="[('experience_maladie_pa','!=',False)]"
+                    name="experience_maladie_pa"
+                    string="Exp&#233;rience comme pair aidant"
+                />
+                <filter
+                    domain="[('experience_maladie_pp','!=',False)]"
+                    name="experience_maladie_pp"
+                    string="Description de l'exp&#233;rience"
+                />
+                <filter
+                    domain="[('experience_maladie_proche','!=',False)]"
+                    name="experience_maladie_proche"
+                    string="Exp&#233;rience maladie proche"
+                />
+                <filter domain="[('formation_date','!=',False)]" name="formation_date" string="Date de formation" />
+                <filter domain="[('formation_oui','!=',False)]" name="formation_oui" string="Si oui, laquelle" />
+                <filter
+                    domain="[('formation_pp','!=',False)]"
+                    name="formation_pp"
+                    string="Formation suivie sur le partenariat patient"
+                />
+                <filter domain="[('formation_qui','!=',False)]" name="formation_qui" string="Formation par qui" />
+                <filter domain="[('genre','!=',False)]" name="genre" string="Genre" />
+                <filter
+                    domain="[('groupe_designe','!=',False)]"
+                    name="groupe_designe"
+                    string="Origine ethnique ou culturelle"
+                />
+                <filter domain="[('habiletes_pp','!=',False)]" name="habiletes_pp" string="Habilet&#233;s" />
+                <filter
+                    domain="[('langue_corresp','!=',False)]"
+                    name="langue_corresp"
+                    string="Langue de correspondance"
+                />
+                <filter domain="[('langue_parlee','!=',False)]" name="langue_parlee" string="Langues parl&#233;es" />
+                <filter
+                    domain="[('membre_assoc_comite','!=',False)]"
+                    name="membre_assoc_comite"
+                    string="Membre d'une association ou comit&#233;"
+                />
+                <filter
+                    domain="[('membre_assoc_comite_detail','!=',False)]"
+                    name="membre_assoc_comite_detail"
+                    string="Laquelle"
+                />
+                <filter
+                    domain="[('motivations_implication','!=',False)]"
+                    name="motivations_implication"
+                    string="Motivations &#224; s'impliquer"
+                />
+                <filter domain="[('naissance_perso','!=',False)]" name="naissance_perso" string="Date de naissance" />
+                <filter domain="[('nas_perso','!=',False)]" name="nas_perso" string="Nas Perso" />
+                <filter
+                    domain="[('nas_perso_','!=',False)]"
+                    name="nas_perso_"
+                    string="Num&#233;ro d'assurance social"
+                />
+                <filter domain="[('niveau_aud','!=',False)]" name="niveau_aud" string="Ou&#239;e" />
+                <filter
+                    domain="[('niveau_autre','!=',False)]"
+                    name="niveau_autre"
+                    string="Autres besoins sp&#233;cifiques"
+                />
+                <filter
+                    domain="[('niveau_fatigabilite','!=',False)]"
+                    name="niveau_fatigabilite"
+                    string="Niveau de fatigabilit&#233;"
+                />
+                <filter domain="[('niveau_mob','!=',False)]" name="niveau_mob" string="Mobilit&#233;" />
+                <filter domain="[('niveau_vue','!=',False)]" name="niveau_vue" string="Vue" />
+                <filter
+                    domain="[('org_ref_recrut','!=',False)]"
+                    name="org_ref_recrut"
+                    string="&#201;tablissement de recrutement"
+                />
+                <filter domain="[('patient_ajout','!=',False)]" name="patient_ajout" string="Commentaires patient" />
+                <filter
+                    domain="[('personne_reference_recrut','!=',False)]"
+                    name="personne_reference_recrut"
+                    string="R&#233;f&#233;rence"
+                />
+                <filter domain="[('preferences','!=',False)]" name="preferences" string="Pr&#233;f&#233;rences" />
+                <filter
+                    domain="[('preferences_autre','!=',False)]"
+                    name="preferences_autre"
+                    string="Autres pr&#233;f&#233;rences"
+                />
+                <filter domain="[('prenom','!=',False)]" name="prenom" string="Pr&#233;nom" />
+                <filter domain="[('prob_resp','!=',False)]" name="prob_resp" string="Probl&#232;me respiratoire" />
+                <filter
+                    domain="[('prob_sant_pa','!=',False)]"
+                    name="prob_sant_pa"
+                    string="Probl&#233;matiques de sant&#233;"
+                />
+                <filter
+                    domain="[('prob_sant_pa_2','!=',False)]"
+                    name="prob_sant_pa_2"
+                    string="Probl&#233;matique de sant&#233; #2"
+                />
+                <filter
+                    domain="[('prob_sant_pa_3','!=',False)]"
+                    name="prob_sant_pa_3"
+                    string="Probl&#233;matique de sant&#233; #3"
+                />
+                <filter domain="[('prob_somm','!=',False)]" name="prob_somm" string="Probl&#232;mes de sommeil" />
+                <filter domain="[('recruteur','!=',False)]" name="recruteur" string="Responsable de l'entrevue" />
+                <filter domain="[('rel_patient','!=',False)]" name="rel_patient" string="Relation avec le patient" />
+                <filter domain="[('role_pp','!=',False)]" name="role_pp" string="Role" />
+                <filter
+                    domain="[('tel_dom_perso','!=',False)]"
+                    name="tel_dom_perso"
+                    string="No. de t&#233;l&#233;phone (domicile)"
+                />
+                <filter domain="[('tel_mobile_perso','!=',False)]" name="tel_mobile_perso" string="No. de cellulaire" />
+                <filter
+                    domain="[('tel_travail_perso','!=',False)]"
+                    name="tel_travail_perso"
+                    string="No. de t&#233;l&#233;phone (travail)"
+                />
+                <filter domain="[('test_int_field','!=',False)]" name="test_int_field" string="test int field" />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_patients_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_patients_tree</field>
+        <field name="model">ceppp.suite_crm.patients</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nom" />
+                <field name="assistance_audition" />
+                <field name="assistance_mob" widget="many2many_tags" />
+                <field name="assistance_vision" />
+                <field name="association_etablissement_recr" />
+                <field name="centre_recrutement" />
+                <field name="code_ident" />
+                <field name="comm_recruteur" />
+                <field name="comment_refere" />
+                <field name="competences_pp" widget="many2many_tags" />
+                <field name="competences_ppc" widget="many2many_tags" />
+                <field name="competences_pr" widget="many2many_tags" />
+                <field name="conflit_interet" />
+                <field name="conflit_interet_detail" />
+                <field name="consentement_dcpp_recrut" />
+                <field name="consentement_miseajour" />
+                <field name="consentement_recherche" />
+                <field name="consentement_usage_donnees" />
+                <field name="date_entrevue" />
+                <field name="deplacements" widget="many2many_tags" />
+                <field name="descr_exp" />
+                <field name="disponibilites" widget="many2many_tags" />
+                <field name="domaine_soin_pa" widget="many2many_tags" />
+                <field name="domaine_soin_pa_2" widget="many2many_tags" />
+                <field name="domaine_soin_pa_3" widget="many2many_tags" />
+                <field name="doul_chron" />
+                <field name="duree_experience" />
+                <field name="education_perso" />
+                <field name="education_perso_autre" />
+                <field name="email_perso" />
+                <field name="emploi_perso" widget="many2many_tags" />
+                <field name="etabl_prem_ligne_pa_" />
+                <field name="etabl_sante_pa" />
+                <field name="etabl_sante_pa_" />
+                <field name="etat" />
+                <field name="exp_sante" />
+                <field name="exp_sante_detail" />
+                <field name="experience_maladie_pa" />
+                <field name="experience_maladie_pp" />
+                <field name="experience_maladie_proche" />
+                <field name="formation_date" />
+                <field name="formation_oui" />
+                <field name="formation_pp" />
+                <field name="formation_qui" />
+                <field name="genre" />
+                <field name="groupe_designe" />
+                <field name="habiletes_pp" widget="many2many_tags" />
+                <field name="langue_corresp" />
+                <field name="langue_parlee" widget="many2many_tags" />
+                <field name="membre_assoc_comite" />
+                <field name="membre_assoc_comite_detail" />
+                <field name="motivations_implication" />
+                <field name="naissance_perso" />
+                <field name="nas_perso" />
+                <field name="nas_perso_" />
+                <field name="niveau_aud" />
+                <field name="niveau_autre" />
+                <field name="niveau_fatigabilite" />
+                <field name="niveau_mob" />
+                <field name="niveau_vue" />
+                <field name="org_ref_recrut" />
+                <field name="patient_ajout" />
+                <field name="personne_reference_recrut" />
+                <field name="preferences" widget="many2many_tags" />
+                <field name="preferences_autre" />
+                <field name="prenom" />
+                <field name="prob_resp" />
+                <field name="prob_sant_pa" widget="many2many_tags" />
+                <field name="prob_sant_pa_2" />
+                <field name="prob_sant_pa_3" />
+                <field name="prob_somm" />
+                <field name="recruteur" />
+                <field name="rel_patient" />
+                <field name="role_pp" widget="many2many_tags" />
+                <field name="tel_dom_perso" widget="phone" />
+                <field name="tel_mobile_perso" widget="phone" />
+                <field name="tel_travail_perso" widget="phone" />
+                <field name="test_int_field" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_suite_crm_patients_suite_crm_patients_action_window"
+        name="Suite crm patients"
+        res_model="ceppp.suite_crm.patients"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

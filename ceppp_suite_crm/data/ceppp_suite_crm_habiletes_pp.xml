@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_habiletes_pp_s_exprime_clairement" model="ceppp.suite_crm.habiletes_pp">
+            <field name="nom">S'exprime clairement</field>
+        </record>
+        <record id="ceppp_suite_crm_habiletes_pp_habiletes_interpersonnelles_ecoute_empathie" model="ceppp.suite_crm.habiletes_pp">
+            <field name="nom">Habilet&#233;s interpersonnelles (&#233;coute, empathie)</field>
+        </record>
+        <record id="ceppp_suite_crm_habiletes_pp_desir_d_aider_autrui_et_de_contribuer_a_un_objectif_qui_depasse_sa_propre_situation" model="ceppp.suite_crm.habiletes_pp">
+            <field name="nom">D&#233;sir d'aider autrui et de contribuer &#224; un objectif qui d&#233;passe sa propre situation</field>
+        </record>
+        <record id="ceppp_suite_crm_habiletes_pp_manifeste_un_desir_d_implication_associations_benevolat_temoignages" model="ceppp.suite_crm.habiletes_pp">
+            <field name="nom">Manifeste un d&#233;sir d'implication (associations, benevolat, temoignages)</field>
+        </record>
+    </data>
+</odoo>

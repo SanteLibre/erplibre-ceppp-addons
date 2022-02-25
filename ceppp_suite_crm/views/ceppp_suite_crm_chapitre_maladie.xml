@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_suite_crm_chapitre_maladie_view_form" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_chapitre_maladie_form</field>
+        <field name="model">ceppp.suite_crm.chapitre_maladie</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="nom" />
+                    </group>
+                    <group>
+                        <field name="maladie_ids" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_chapitre_maladie_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_chapitre_maladie_graph</field>
+        <field name="model">ceppp.suite_crm.chapitre_maladie</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp suite crm chapitre maladie">
+                <field name="nom" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_chapitre_maladie_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_chapitre_maladie_kanban</field>
+        <field name="model">ceppp.suite_crm.chapitre_maladie</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="nom" />
+                <field name="maladie_ids" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nom" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="maladie_ids" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_chapitre_maladie_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_chapitre_maladie_pivot</field>
+        <field name="model">ceppp.suite_crm.chapitre_maladie</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp suite crm chapitre maladie">
+                <field name="nom" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_chapitre_maladie_view_search" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_chapitre_maladie_search</field>
+        <field name="model">ceppp.suite_crm.chapitre_maladie</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp suite crm chapitre maladie">
+                <filter domain="[('nom','!=',False)]" name="nom" string="Nom" />
+                <filter domain="[('maladie_ids','!=',False)]" name="maladie_ids" string="Maladies" />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_chapitre_maladie_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_chapitre_maladie_tree</field>
+        <field name="model">ceppp.suite_crm.chapitre_maladie</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nom" />
+                <field name="maladie_ids" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_suite_crm_chapitre_maladie_suite_crm_chapitre_maladie_action_window"
+        name="Suite crm chapitre maladie"
+        res_model="ceppp.suite_crm.chapitre_maladie"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

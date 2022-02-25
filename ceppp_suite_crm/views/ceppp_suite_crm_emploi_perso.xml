@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_suite_crm_emploi_perso_view_form" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_emploi_perso_form</field>
+        <field name="model">ceppp.suite_crm.emploi_perso</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="nom" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_emploi_perso_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_emploi_perso_graph</field>
+        <field name="model">ceppp.suite_crm.emploi_perso</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp suite crm emploi perso">
+                <field name="nom" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_emploi_perso_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_emploi_perso_kanban</field>
+        <field name="model">ceppp.suite_crm.emploi_perso</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="nom" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nom" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_emploi_perso_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_emploi_perso_pivot</field>
+        <field name="model">ceppp.suite_crm.emploi_perso</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp suite crm emploi perso">
+                <field name="nom" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_emploi_perso_view_search" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_emploi_perso_search</field>
+        <field name="model">ceppp.suite_crm.emploi_perso</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp suite crm emploi perso">
+                <filter domain="[('nom','!=',False)]" name="nom" string="Nom" />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_suite_crm_emploi_perso_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_suite_crm_emploi_perso_tree</field>
+        <field name="model">ceppp.suite_crm.emploi_perso</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nom" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_suite_crm_emploi_perso_suite_crm_emploi_perso_action_window"
+        name="Suite crm emploi perso"
+        res_model="ceppp.suite_crm.emploi_perso"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

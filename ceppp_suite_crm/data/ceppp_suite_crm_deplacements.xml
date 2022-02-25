@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_suite_crm_deplacements_en_voiture" model="ceppp.suite_crm.deplacements">
+            <field name="nom">En voiture</field>
+        </record>
+        <record id="ceppp_suite_crm_deplacements_en_transport_adapte" model="ceppp.suite_crm.deplacements">
+            <field name="nom">En transport adapt&#233;</field>
+        </record>
+        <record id="ceppp_suite_crm_deplacements_autrement" model="ceppp.suite_crm.deplacements">
+            <field name="nom">Autrement</field>
+        </record>
+    </data>
+</odoo>
