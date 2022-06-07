@@ -6,6 +6,7 @@
     "license": "AGPL-3",
     "website": "https://santelibre.ca",
     "application": True,
+    "depends": ["contacts"],
     "data": [
         "security/ir.model.access.csv",
         "security/security.xml",

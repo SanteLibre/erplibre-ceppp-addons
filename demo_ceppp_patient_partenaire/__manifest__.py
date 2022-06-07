@@ -5,7 +5,7 @@
     "license": "AGPL-3",
     "website": "https://santelibre.ca",
     "depends": ["ceppp_patient_partenaire"],
-    "data": ["data/ceppp_patient.xml", "data/user_demo.xml"],
+    "data": ["data/user_demo.xml", "data/ceppp_patient.xml"],
     "post_init_hook": "post_init_hook",
     "installable": True,
 }
