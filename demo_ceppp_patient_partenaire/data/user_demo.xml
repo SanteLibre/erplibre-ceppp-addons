@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
+    <record id="partner_demo_company_santelibre" model="res.partner">
+        <field name="name">SantéLibre</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="supplier" eval="True"/>
+        <field name="is_company" eval="True"/>
+        <!--        <field name="street">4545, Avenue Pierre-De Coubertin</field>-->
+        <!--        <field name="city">Montréal</field>-->
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <!--        <field name="zip">H1V 3N7</field>-->
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <!--        <field name="email">monique_beauvoir@exemple.ca</field>-->
+        <!--        <field name="phone">(514) 555-5555</field>-->
+        <field name="image" type="base64" file="demo_ceppp_patient_partenaire/static/img/logo_santelibre.png"/>
+    </record>
+
     <record id="partner_demo_affiliation_bpp" model="res.partner">
         <field name="name">BPP</field>
         <field name="company_id" ref="base.main_company"/>
@@ -63,6 +80,36 @@
         <field name="groups_id"
                eval="[(6,0,[ref('base.group_portal'), ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_patient')])]"/>
         <field name="image" type="base64" file="base/static/img/res_partner_address_32.jpg"/>
+    </record>
+
+    <record id="partner_demo_admin_genevieve_david" model="res.partner">
+        <field name="name">Geneviève David</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="parent_id" ref="base.main_company"/>
+        <!--        <field name="company_name">YourCompany</field>-->
+<!--        <field name="street">4545, Avenue Pierre-De Coubertin</field>-->
+        <field name="city">Montréal</field>
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+<!--        <field name="zip">H1V 3N7</field>-->
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <field name="email">genevieve.david@ceppp.ca</field>
+<!--        <field name="phone">(514) 555-5555</field>-->
+    </record>
+
+    <record id="user_demo_admin_genevieve_david" model="res.users">
+        <field name="partner_id" ref="partner_demo_admin_genevieve_david"/>
+        <field name="login">genevieve.david@ceppp.ca</field>
+        <field name="password">admin</field>
+        <field name="signature" type="xml">
+            <span>--<br/>Geneviève David
+            </span>
+        </field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id"
+               eval="[(6,0,[ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager')])]"/>
+        <field name="image" type="base64" file="demo_ceppp_patient_partenaire/static/img/genevieve_david.jpg"/>
     </record>
 
     <record id="partner_demo_steve_lebeau" model="res.partner">

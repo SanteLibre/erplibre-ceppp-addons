@@ -35,4 +35,20 @@ def post_init_hook(cr, e):
                 partner_img_attachment.local_url[1:], "rb"
             ) as desc_file:
                 partner.image = base64.b64encode(desc_file.read())
-            print("fi")
+
+        partners = env["res.partner"].search([("name", "=", "Administrator")])
+        for partner in partners:
+            partner.website = "https://ceppp.ca"
+            partner.name = "Mathieu Benoit"
+            partner.email = "mathieu.benoit@santelibre.ca"
+            partner.country_id = env.ref("base.ca")
+            partner.state_id = env["res.country.state"].search(
+                [("code", "ilike", "QC")], limit=1
+            )
+            partner.parent_id = env.ref(
+                "demo_ceppp_patient_partenaire.partner_demo_company_santelibre"
+            )
+            with tools.file_open(
+                "demo_ceppp_patient_partenaire/static/img/mathben.png", "rb"
+            ) as desc_file:
+                partner.image = base64.b64encode(desc_file.read())
