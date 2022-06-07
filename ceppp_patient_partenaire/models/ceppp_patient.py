@@ -25,6 +25,28 @@ class CepppPatient(models.Model):
         ),
     )
 
+    sexe = fields.Selection(
+        selection=[
+            ("homme", "Homme"),
+            ("femme", "Femme"),
+            ("intersexe", "Intersexe"),
+            ("no", "Préfère ne pas répondre"),
+        ],
+        help=(
+            "Le sexe fait référence à un ensemble de caractéristiques"
+            " biologiques chez les humains et les animaux. Ces"
+            " caractéristiques physiques ou physiologiques concernent"
+            " principalement les chromosomes, l’expression des gènes, les"
+            " niveaux d’hormones et leur fonction, ainsi que l’anatomie de"
+            " l’appareil reproducteur. Le sexe comporte habituellement deux"
+            " catégories (mâle, femelle); cependant, les caractéristiques"
+            " biologiques liées au sexe et l’expression de ces"
+            " caractéristiques peuvent varier."
+        ),
+        default="no",
+        required=True,
+    )
+
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:

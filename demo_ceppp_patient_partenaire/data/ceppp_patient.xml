@@ -3,12 +3,15 @@
     <data noupdate="1">
         <record id="ceppp_patient_patient_1" model="ceppp.patient">
             <field name="partner_id" ref="partner_demo_monique_beauvoir"/>
+            <field name="sexe">femme</field>
         </record>
         <record id="ceppp_patient_patient_2" model="ceppp.patient">
             <field name="partner_id" ref="partner_demo_steve_lebeau"/>
+            <field name="sexe">homme</field>
         </record>
         <record id="ceppp_patient_patient_3" model="ceppp.patient">
             <field name="partner_id" ref="partner_demo_martin_petit"/>
+            <field name="sexe">homme</field>
         </record>
     </data>
 </odoo>

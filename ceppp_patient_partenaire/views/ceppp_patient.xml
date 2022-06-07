@@ -11,6 +11,7 @@
                         <field name="name"/>
                         <field name="uuid" readonly="1" attrs="{'invisible':[('uuid','=',False)]}"/>
                         <field name="partner_id"/>
+                        <field name="sexe"/>
                     </group>
                 </sheet>
             </form>
