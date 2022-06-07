@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="partner_demo_monique_beauvoir" model="res.partner">
+        <field name="name">Monique Beauvoir</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="patient" eval="True"/>
+        <!--        <field name="company_name">YourCompany</field>-->
+        <field name="street">4545, Avenue Pierre-De Coubertin</field>
+        <field name="city">Montréal</field>
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <field name="zip">H1V 3N7</field>
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <field name="email">monique_beauvoir@exemple.ca</field>
+        <field name="phone">(514) 555-5555</field>
+    </record>
+
+    <record id="user_demo_monique_beauvoir" model="res.users">
+        <field name="partner_id" ref="partner_demo_monique_beauvoir"/>
+        <field name="login">monique_beauvoir@exemple.ca</field>
+        <field name="password">demo</field>
+        <field name="signature" type="xml">
+            <span>--<br/>Monique Beauvoir
+            </span>
+        </field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id"
+               eval="[(6,0,[ref('base.group_portal'), ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_patient')])]"/>
+        <field name="image" type="base64" file="base/static/img/res_partner_address_32.jpg"/>
+    </record>
+
+    <record id="partner_demo_steve_lebeau" model="res.partner">
+        <field name="name">Steve Lebeau</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="patient" eval="True"/>
+        <!--        <field name="company_name">YourCompany</field>-->
+        <field name="street">1710, Rue Beaudry, Sainte-Marie, Ville-Marie</field>
+        <field name="city">Montréal</field>
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <field name="zip">H2L 3H4</field>
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <field name="email">steve_lebeau@exemple.ca</field>
+        <field name="phone">(514) 444-4444</field>
+    </record>
+
+    <record id="user_demo_steve_lebeau" model="res.users">
+        <field name="partner_id" ref="partner_demo_steve_lebeau"/>
+        <field name="login">steve_lebeau@exemple.ca</field>
+        <field name="password">demo</field>
+        <field name="signature" type="xml">
+            <span>--<br/>Steve Lebeau
+            </span>
+        </field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id"
+               eval="[(6,0,[ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_patient')])]"/>
+        <field name="image" type="base64" file="base/static/img/res_partner_address_24.jpg"/>
+    </record>
+
+</odoo>
+
+
