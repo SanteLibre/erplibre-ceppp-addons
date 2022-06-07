@@ -13,3 +13,7 @@ class Partner(models.Model):
         string="Est un recruteur",
         help="Check this box if this contact is a recruteur.",
     )
+    affiliation = fields.Boolean(
+        string="Est une affiliation",
+        help="Check this box if this contact is an affiliation.",
+    )

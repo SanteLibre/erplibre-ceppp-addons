@@ -17,6 +17,7 @@ def post_init_hook(cr, e):
         for partner in partners:
             partner.website = "https://ceppp.ca"
             partner.name = "CEPPP"
+            partner.affiliation = True
             partner.email = "info@ceppp.ca"
             partner.street = "850, rue St-Denis"
             partner.street2 = "porte S03.900"

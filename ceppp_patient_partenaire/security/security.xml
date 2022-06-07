@@ -15,7 +15,8 @@
     </record>
     <record id="group_ceppp_patient_partenaire_recruteur" model="res.groups">
         <field name="name">Recruteur</field>
-        <field name="implied_ids" eval="[(4, ref('group_ceppp_patient_partenaire_user'))]"/>
+        <field name="implied_ids"
+               eval="[(4, ref('group_ceppp_patient_partenaire_user')), (4, ref('base.group_user'))]"/>
         <field name="category_id" ref="module_ceppp_patient_partenaire_category"/>
     </record>
     <record id="group_ceppp_patient_partenaire_manager" model="res.groups">

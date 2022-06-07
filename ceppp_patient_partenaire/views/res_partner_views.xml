@@ -11,6 +11,7 @@
                     <separator/>
                     <filter string="Patients" name="patient" domain="[('patient','=',True)]"/>
                     <filter string="Recruteurs" name="recruteur" domain="[('recruteur','=',True)]"/>
+                    <filter string="Affiliations" name="affiliation" domain="[('affiliation','=',True)]"/>
                 </xpath>
             </field>
         </record>

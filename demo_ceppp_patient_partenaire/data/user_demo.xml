@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
+    <record id="partner_demo_affiliation_bpp" model="res.partner">
+        <field name="name">BPP</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="affiliation" eval="True"/>
+        <field name="is_company" eval="True"/>
+        <!--        <field name="street">4545, Avenue Pierre-De Coubertin</field>-->
+        <!--        <field name="city">Montréal</field>-->
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <!--        <field name="zip">H1V 3N7</field>-->
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <!--        <field name="email">monique_beauvoir@exemple.ca</field>-->
+        <!--        <field name="phone">(514) 555-5555</field>-->
+    </record>
+
+    <record id="partner_demo_affiliation_ruis_ulaval" model="res.partner">
+        <field name="name">RUIS ULAVAL</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="affiliation" eval="True"/>
+        <field name="is_company" eval="True"/>
+        <!--        <field name="street">4545, Avenue Pierre-De Coubertin</field>-->
+        <!--        <field name="city">Montréal</field>-->
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <!--        <field name="zip">H1V 3N7</field>-->
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <field name="image" type="base64" file="demo_ceppp_patient_partenaire/static/img/Université_Laval_logo.svg"/>
+        <!--        <field name="email">monique_beauvoir@exemple.ca</field>-->
+        <!--        <field name="phone">(514) 555-5555</field>-->
+    </record>
+
     <record id="partner_demo_monique_beauvoir" model="res.partner">
         <field name="name">Monique Beauvoir</field>
         <field name="company_id" ref="base.main_company"/>
         <field name="customer" eval="False"/>
         <field name="patient" eval="True"/>
+        <field name="parent_id" ref="base.main_company"/>
         <!--        <field name="company_name">YourCompany</field>-->
         <field name="street">4545, Avenue Pierre-De Coubertin</field>
         <field name="city">Montréal</field>
@@ -36,6 +70,7 @@
         <field name="company_id" ref="base.main_company"/>
         <field name="customer" eval="False"/>
         <field name="patient" eval="True"/>
+        <field name="parent_id" ref="partner_demo_affiliation_ruis_ulaval"/>
         <!--        <field name="company_name">YourCompany</field>-->
         <field name="street">1710, Rue Beaudry, Sainte-Marie, Ville-Marie</field>
         <field name="city">Montréal</field>
@@ -59,6 +94,161 @@
         <field name="groups_id"
                eval="[(6,0,[ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_patient')])]"/>
         <field name="image" type="base64" file="base/static/img/res_partner_address_24.jpg"/>
+    </record>
+
+    <record id="partner_demo_martin_petit" model="res.partner">
+        <field name="name">Martin Petit</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="patient" eval="True"/>
+        <field name="parent_id" ref="base.main_company"/>
+        <!--        <field name="company_name">YourCompany</field>-->
+        <field name="street">3200, Chemin de la Côte-Sainte-Catherine, Parc-Kent, Côte-des-Neiges–Notre-Dame-de-Grâce</field>
+        <field name="city">Montréal</field>
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <field name="zip">H3T 1C1</field>
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <field name="email">martin_petit@exemple.ca</field>
+        <field name="phone">(514) 777-7777</field>
+    </record>
+
+    <record id="user_demo_martin_petit" model="res.users">
+        <field name="partner_id" ref="partner_demo_martin_petit"/>
+        <field name="login">martin_petit@exemple.ca</field>
+        <field name="password">demo</field>
+        <field name="signature" type="xml">
+            <span>--<br/>Martin Petit
+            </span>
+        </field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id"
+               eval="[(6,0,[ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_patient')])]"/>
+        <field name="image" type="base64" file="base/static/img/res_partner_address_27.jpg"/>
+    </record>
+
+    <record id="partner_demo_julie_dufour" model="res.partner">
+        <field name="name">Julie Dufour</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="recruteur" eval="True"/>
+        <field name="parent_id" ref="partner_demo_affiliation_ruis_ulaval"/>
+        <!--        <field name="company_name">YourCompany</field>-->
+        <field name="street">3819, Avenue Calixa-Lavallée, Parc-Lafontaine, Plateau Mont-Royal</field>
+        <field name="city">Montréal</field>
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <field name="zip">H2J 2K2</field>
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <field name="email">julie_dufour@exemple.ca</field>
+        <field name="phone">(514) 666-6666</field>
+    </record>
+
+    <record id="user_demo_julie_dufour" model="res.users">
+        <field name="partner_id" ref="partner_demo_julie_dufour"/>
+        <field name="login">julie_dufour@exemple.ca</field>
+        <field name="password">demo</field>
+        <field name="signature" type="xml">
+            <span>--<br/>Julie Dufour
+            </span>
+        </field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id"
+               eval="[(6,0,[ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_recruteur')])]"/>
+        <field name="image" type="base64" file="base/static/img/res_partner_address_31.jpg"/>
+    </record>
+
+    <record id="partner_demo_jacques_lamotte" model="res.partner">
+        <field name="name">Jacques Lamotte</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="recruteur" eval="True"/>
+        <field name="parent_id" ref="base.main_company"/>
+        <!--        <field name="company_name">YourCompany</field>-->
+        <field name="street">8e Avenue, Vieux-Lachine, Arrondissement de Lachine</field>
+        <field name="city">Montréal</field>
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <field name="zip">H8S 1H2</field>
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <field name="email">jacques_lamotte@exemple.ca</field>
+        <field name="phone">(514) 111-1111</field>
+    </record>
+
+    <record id="user_demo_jacques_lamotte" model="res.users">
+        <field name="partner_id" ref="partner_demo_jacques_lamotte"/>
+        <field name="login">jacques_lamotte@exemple.ca</field>
+        <field name="password">demo</field>
+        <field name="signature" type="xml">
+            <span>--<br/>Jacques Lamotte
+            </span>
+        </field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id"
+               eval="[(6,0,[ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_recruteur')])]"/>
+        <field name="image" type="base64" file="base/static/img/res_partner_address_34.jpg"/>
+    </record>
+
+    <record id="partner_demo_stephanie_latendresse" model="res.partner">
+        <field name="name">Stéphanie Latendresse</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="recruteur" eval="True"/>
+        <field name="parent_id" ref="base.main_company"/>
+        <!--        <field name="company_name">YourCompany</field>-->
+        <field name="street">4770, Rue la Fontaine, Mercier–Hochelaga-Maisonneuve</field>
+        <field name="city">Montréal</field>
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <field name="zip">H1V 1R3</field>
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <field name="email">stephanie_latendresse@exemple.ca</field>
+        <field name="phone">(514) 222-2222</field>
+    </record>
+
+    <record id="user_demo_stephanie_latendresse" model="res.users">
+        <field name="partner_id" ref="partner_demo_stephanie_latendresse"/>
+        <field name="login">stephanie_latendresse@exemple.ca</field>
+        <field name="password">demo</field>
+        <field name="signature" type="xml">
+            <span>--<br/>Stéphanie Latendresse
+            </span>
+        </field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id"
+               eval="[(6,0,[ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_recruteur')])]"/>
+        <field name="image" type="base64" file="base/static/img/res_partner_address_17.jpg"/>
+    </record>
+
+    <record id="partner_demo_guillaume_lamarche" model="res.partner">
+        <field name="name">Guillaume Lamarche</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="customer" eval="False"/>
+        <field name="recruteur" eval="True"/>
+        <field name="parent_id" ref="partner_demo_affiliation_bpp"/>
+        <!--        <field name="company_name">YourCompany</field>-->
+        <field name="street">3008, Boulevard Saint-Martin Ouest, Chomedey</field>
+        <field name="city">Laval</field>
+        <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
+        <field name="zip">H7T 2Y8</field>
+        <field name="country_id" ref="base.ca"/>
+        <field name="tz">America/Montreal</field>
+        <field name="email">guillaume_lamarche@exemple.ca</field>
+        <field name="phone">(514) 333-3333</field>
+    </record>
+
+    <record id="user_demo_guillaume_lamarche" model="res.users">
+        <field name="partner_id" ref="partner_demo_guillaume_lamarche"/>
+        <field name="login">guillaume_lamarche@exemple.ca</field>
+        <field name="password">demo</field>
+        <field name="signature" type="xml">
+            <span>--<br/>Guillaume Lamarche
+            </span>
+        </field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="groups_id"
+               eval="[(6,0,[ref('ceppp_patient_partenaire.group_ceppp_patient_partenaire_recruteur')])]"/>
+        <field name="image" type="base64" file="base/static/img/res_partner_address_11.jpg"/>
     </record>
 
 </odoo>
