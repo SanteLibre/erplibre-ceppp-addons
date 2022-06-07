@@ -57,14 +57,19 @@ def post_init_hook(cr, e):
         # Add dependencies
         lst_depend_module = []
         code_generator_id.add_module_dependency(lst_depend_module)
+
+        # Add/Update Ceppp Patient
+        model_model = "ceppp.patient"
+        code_generator_id.add_update_model(model_model)
+
         # Generate view
         # Action generate view
         wizard_view = env["code.generator.generate.views.wizard"].create(
             {
                 "code_generator_id": code_generator_id.id,
                 "enable_generate_all": False,
-                "disable_generate_menu": True,
-                "disable_generate_access": True,
+                "disable_generate_menu": False,
+                "disable_generate_access": False,
             }
         )
 

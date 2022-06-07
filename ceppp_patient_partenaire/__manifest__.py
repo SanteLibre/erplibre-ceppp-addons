@@ -6,7 +6,10 @@
     "license": "AGPL-3",
     "website": "https://santelibre.ca",
     "application": True,
-    "depends": [
+    "data": [
+        "security/ir.model.access.csv",
+        "views/ceppp_patient.xml",
+        "views/menu.xml",
     ],
     "installable": True,
 }

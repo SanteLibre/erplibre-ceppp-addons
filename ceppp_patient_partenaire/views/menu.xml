@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+  <!--Root menu-->
+
+  <menuitem
+        id="ceppp_patient_partenaire"
+        name="Ceppp Patient Partenaire"
+        sequence="20"
+        web_icon="ceppp_patient_partenaire,static/description/icon.png"
+    />
+
+  <!--Sub menu-->
+
+  <menuitem id="menu" name="Menu" sequence="1" parent="ceppp_patient_partenaire" />
+
+  <!--Child menu-->
+
+  <menuitem id="patient" name="Patient" action="ceppp_patient_patient_action_window" sequence="1" parent="menu" />
+
+</odoo>
