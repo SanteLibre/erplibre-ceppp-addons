@@ -2,16 +2,22 @@
 <odoo>
     <data noupdate="1">
         <record id="ceppp_patient_patient_1" model="ceppp.patient">
-            <field name="partner_id" ref="partner_demo_monique_beauvoir"/>
+            <field name="patient_partner_id" ref="partner_demo_monique_beauvoir"/>
             <field name="sexe">femme</field>
+            <field name="recruteur_partner_id" ref="partner_demo_stephanie_latendresse"/>
+            <field name="date_naissance">1980-08-07</field>
         </record>
         <record id="ceppp_patient_patient_2" model="ceppp.patient">
-            <field name="partner_id" ref="partner_demo_steve_lebeau"/>
+            <field name="patient_partner_id" ref="partner_demo_steve_lebeau"/>
             <field name="sexe">homme</field>
+            <field name="recruteur_partner_id" ref="partner_demo_julie_dufour"/>
+            <field name="date_naissance">1981-09-12</field>
         </record>
         <record id="ceppp_patient_patient_3" model="ceppp.patient">
-            <field name="partner_id" ref="partner_demo_martin_petit"/>
+            <field name="patient_partner_id" ref="partner_demo_martin_petit"/>
             <field name="sexe">homme</field>
+            <field name="recruteur_partner_id" ref="partner_demo_jacques_lamotte"/>
+            <field name="date_naissance">1980-08-06</field>
         </record>
     </data>
 </odoo>

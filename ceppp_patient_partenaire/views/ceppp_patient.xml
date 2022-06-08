@@ -7,12 +7,57 @@
         <field name="arch" type="xml">
             <form string="Titre">
                 <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" icon="fa-archive" name="toggle_active" type="object">
+                            <field name="active" widget="boolean_button"/>
+                        </button>
+                    </div>
+                    <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 90]}'/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" default_focus="1"/>
+                        </h1>
+                    </div>
                     <group>
-                        <field name="name"/>
                         <field name="uuid" readonly="1" attrs="{'invisible':[('uuid','=',False)]}"/>
-                        <field name="partner_id"/>
-                        <field name="sexe"/>
+                        <field name="patient_partner_id"/>
+                        <field name="recruteur_partner_id"/>
+                        <field name="centre_recruteur"/>
                     </group>
+                    <notebook>
+                        <page name='infos' string="Infos">
+                            <group>
+                                <field name="date_naissance"/>
+                                <field name="sexe"/>
+                                <field name="genre"/>
+                                <field name="genre_autre" attrs="{'invisible':[('genre','!=','autre')]}"/>
+                                <field name="occupation"/>
+                                <field name="occupation_autre" attrs="{'invisible':[('occupation','!=','autre')]}"/>
+                                <field name="formation_professionnelle"/>
+                                <field name="heritage_culturel"/>
+                                <field name="langue_parle_ecrit"/>
+                                <field name="langue_parle_ecrit_autre"
+                                       attrs="{'invisible':[('langue_parle_ecrit','!=','autre')]}"/>
+                                <field name="mode_communication_privilegie"/>
+                                <field name="patient_actif"/>
+                                <field name="competence_patient"/>
+                            </group>
+                        </page>
+                        <page name='consentements' string="Consentements">
+                            <group>
+                            </group>
+                        </page>
+                        <page name='competences' string="Compétences">
+                            <group>
+                                <field name="competence_patient"/>
+                            </group>
+                        </page>
+                        <page name='commentaires' string="Commentaires">
+                            <group>
+                                <field name="commentaires"/>
+                            </group>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
