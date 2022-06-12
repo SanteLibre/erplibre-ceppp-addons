@@ -926,6 +926,7 @@ def post_init_hook(cr, e):
                                             "chapitre_maladie_id",
                                             "maladie_ids",
                                             "Maladies",
+                                            env,
                                         )
                                         dct_field_info[
                                             "relation"
