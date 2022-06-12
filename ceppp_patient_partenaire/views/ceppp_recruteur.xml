@@ -20,7 +20,7 @@
                         </h1>
                     </div>
                     <group>
-                        <field name="uuid" readonly="1" attrs="{'invisible':[('uuid','=',False)]}"/>
+                        <!--<field name="uuid" readonly="1" attrs="{'invisible':[('uuid','=',False)]}"/>-->
                         <field name="patient_partner_id"/>
                         <field name="recruteur_partner_id"/>
                         <field name="recruteur_user_id"/>
@@ -35,19 +35,19 @@
                                     <field name="genre"/>
                                     <field name="genre_autre" attrs="{'invisible':[('genre','!=','autre')]}"/>
                                     <field name="heritage_culturel"/>
-                                    <field name="langue_parle_ecrit"/>
+                                    <field name="langue_parle_ecrit" widget="many2many_tags"/>
                                     <field name="langue_parle_ecrit_autre"
                                            attrs="{'invisible':[('langue_parle_ecrit','!=','autre')]}"/>
 
                                 </group>
                                 <group name="preference" string="Préférence">
-                                    <field name="mode_communication_privilegie"/>
+                                    <field name="mode_communication_privilegie" widget="many2many_tags"/>
                                     <field name="patient_actif"/>
                                 </group>
                             </group>
                             <group>
                                 <group name="Occupation" string="Autre">
-                                    <field name="occupation"/>
+                                    <field name="occupation" widget="many2many_tags"/>
                                     <field name="occupation_autre" attrs="{'invisible':[('occupation','!=','autre')]}"/>
                                 </group>
                             </group>
@@ -58,7 +58,7 @@
                         </page>
                         <page name='competences' string="Compétences">
                             <group>
-                                <field name="competence_patient"/>
+                                <field name="competence_patient" widget="many2many_tags"/>
                             </group>
                         </page>
                         <page name='commentaires' string="Commentaires">

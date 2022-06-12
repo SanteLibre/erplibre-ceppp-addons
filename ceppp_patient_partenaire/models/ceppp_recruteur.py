@@ -130,16 +130,8 @@ class CepppRecruteur(models.Model):
         help="Peut être défini lorsque le genre est au choix 'autre'.",
     )
 
-    occupation = fields.Selection(
-        selection=[
-            ("travailleur", "Travailleur.se"),
-            ("retraite", "Retraité.e"),
-            ("benevole", "Bénévole"),
-            ("etudiant", "Étudiant.e"),
-            ("proche_aidant", "Proche aidant.e"),
-            ("parent_maison", "Parent à la maison"),
-            ("autre", "Autre"),
-        ],
+    occupation = fields.Many2many(
+        comodel_name="ceppp.occupation",
         help="Occupation principale du temps",
     )
 
@@ -195,12 +187,9 @@ class CepppRecruteur(models.Model):
         ),
     )
 
-    mode_communication_privilegie = fields.Selection(
+    mode_communication_privilegie = fields.Many2many(
         string="Mode de communication privilégié",
-        selection=[
-            ("telephone", "Téléphone"),
-            ("courriel", "Courriel"),
-        ],
+        comodel_name="ceppp.mode_communication_privilegie",
     )
 
     patient_actif = fields.Selection(
@@ -216,19 +205,9 @@ class CepppRecruteur(models.Model):
         ),
     )
 
-    competence_patient = fields.Selection(
+    competence_patient = fields.Many2many(
         string="Compétences au partenariat",
-        selection=[
-            ("1", "Se connaître dans la vie avec la maladie"),
-            ("2", "Redonner un sens à sa vie au travers de ses expériences"),
-            ("3", "Mobiliser ses savoirs expérientiels"),
-            ("4", "Développer sa résilience"),
-            ("5", "Faire preuve d’altruisme"),
-            ("6", "Être réflexif et transmettre"),
-            ("7", "Être à l'écoute"),
-            ("8", "Se raconter de façon pédagogique"),
-            ("9", "communiquer"),
-        ],
+        comodel_name="ceppp.competence",
         help="Compétences du patient.",
     )
 
