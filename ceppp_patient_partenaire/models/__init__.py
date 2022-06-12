@@ -10,5 +10,6 @@ from . import (
     ceppp_mode_communication_privilegie,
     ceppp_occupation,
     ceppp_patient,
+    ceppp_recruteur,
     res_partner,
 )

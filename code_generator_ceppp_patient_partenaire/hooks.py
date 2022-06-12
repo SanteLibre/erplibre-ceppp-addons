@@ -61,6 +61,8 @@ def post_init_hook(cr, e):
         # Add/Update Ceppp Patient
         model_model = "ceppp.patient"
         code_generator_id.add_update_model(model_model)
+        model_model = "ceppp.recruteur"
+        code_generator_id.add_update_model(model_model)
         model_model = "ceppp.competence"
         code_generator_id.add_update_model(model_model)
         model_model = "ceppp.mode_communication_privilegie"

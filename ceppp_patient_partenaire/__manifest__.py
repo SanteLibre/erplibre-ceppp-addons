@@ -20,6 +20,7 @@
         "views/ceppp_occupation.xml",
         "security/security.xml",
         "views/ceppp_patient.xml",
+        "views/ceppp_recruteur.xml",
         "views/res_partner_views.xml",
         "views/menu.xml",
         "data/ir_attachment.xml",

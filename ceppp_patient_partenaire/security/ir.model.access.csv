@@ -8,3 +8,4 @@ ceppp_maladie_soi_meme_access_user_types_/_internal_user,ceppp_maladie_soi_meme 
 ceppp_mode_communication_privilegie_access_user_types_/_internal_user,ceppp_mode_communication_privilegie Access User types / Internal User,model_ceppp_mode_communication_privilegie,base.group_user,1,1,1,1
 ceppp_occupation_access_user_types_/_internal_user,ceppp_occupation Access User types / Internal User,model_ceppp_occupation,base.group_user,1,1,1,1
 ceppp_patient_access_user_types_/_internal_user,ceppp_patient Access User types / Internal User,model_ceppp_patient,base.group_user,1,1,1,1
+ceppp_recruteur_access_user_types_/_internal_user,ceppp_recruteur Access User types / Internal User,model_ceppp_recruteur,base.group_user,1,1,1,1

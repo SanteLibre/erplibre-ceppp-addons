@@ -13,7 +13,7 @@
     <!--Sub menu-->
 
     <menuitem id="patient" name="Patient" sequence="1" action="ceppp_patient_patient_action_window" parent="ceppp_patient_partenaire"/>
-    <!--    <menuitem id="recruteur" name="Recruteur" sequence="2" parent="ceppp_patient_partenaire"/>-->
+    <menuitem id="recruteur" name="Recruteur" sequence="2" parent="ceppp_patient_partenaire"/>
     <menuitem id="configuration" name="Configuration" sequence="3" parent="ceppp_patient_partenaire"/>
 
     <!--Child menu-->
