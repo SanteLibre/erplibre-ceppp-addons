@@ -5,4 +5,9 @@ class CepppRecruteur(models.Model):
     _name = "ceppp.recruteur"
     _description = "ceppp_recruteur"
 
-    name = fields.Char()
+    name = fields.Char(related="patient_id.name")
+
+    patient_id = fields.Many2one(
+        "ceppp.patient",
+        string="Patient",
+    )

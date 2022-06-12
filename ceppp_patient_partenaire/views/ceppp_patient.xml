@@ -22,6 +22,7 @@
                         <field name="uuid" readonly="1" attrs="{'invisible':[('uuid','=',False)]}"/>
                         <field name="patient_partner_id"/>
                         <field name="recruteur_partner_id"/>
+                        <field name="recruteur_user_id"/>
                         <field name="centre_recruteur"/>
                     </group>
                     <notebook>
@@ -114,6 +115,8 @@
         <field name="arch" type="xml">
             <search string="Ceppp patient">
                 <filter domain="[('uuid','!=',False)]" name="uuid" string="Code"/>
+                <separator/>
+                <filter string="Mes patients" name="mes_patients" domain="[('recruteur_user_id','in',[uid])]" help="Mes patients de mon affiliation"/>
             </search>
         </field>
     </record>
@@ -129,8 +132,16 @@
     </record>
 
     <act_window
-            id="ceppp_patient_patient_action_window"
-            name="Patient"
+            id="ceppp_patient_my_patient_action_window"
+            name="Mes patients"
+            res_model="ceppp.patient"
+            context="{'search_default_mes_patients': 1}"
+            view_mode="kanban,tree,pivot,graph,form"
+    />
+
+    <act_window
+            id="ceppp_patient_les_patient_affiliation_action_window"
+            name="Les patients de mon centre de recrutement"
             res_model="ceppp.patient"
             view_mode="kanban,tree,pivot,graph,form"
     />

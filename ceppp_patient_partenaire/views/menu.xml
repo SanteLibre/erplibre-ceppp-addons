@@ -12,11 +12,19 @@
 
     <!--Sub menu-->
 
-    <menuitem id="menu_patient" name="Patient" sequence="1" action="ceppp_patient_patient_action_window" parent="menu_ceppp_patient_partenaire"/>
-    <menuitem id="menu_recruteur" name="Recruteur" sequence="2" action="ceppp_recruteur_recruteur_action_window" parent="menu_ceppp_patient_partenaire"/>
-    <menuitem id="menu_configuration" name="Configuration" sequence="3" parent="menu_ceppp_patient_partenaire"/>
+    <menuitem id="menu_patient" name="Patient" sequence="1" parent="menu_ceppp_patient_partenaire"/>
+    <menuitem id="menu_configuration" name="Configuration" sequence="2" parent="menu_ceppp_patient_partenaire" groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"/>
 
     <!--Child menu-->
+
+    <menuitem id="menu_patient_my_patient" name="Mes patients" sequence="1"
+              action="ceppp_patient_my_patient_action_window" parent="menu_patient"/>
+
+    <menuitem id="menu_patient_les_patient_affiliation" name="Les patients de mon centre de recrutement" sequence="2"
+              action="ceppp_patient_les_patient_affiliation_action_window" parent="menu_patient"/>
+
+    <menuitem id="menu_patient_all_patient" name="Tous les patients" sequence="3"
+              action="ceppp_recruteur_recruteur_action_window" parent="menu_patient"/>
 
     <menuitem
             id="menu_competence"
@@ -42,7 +50,8 @@
             parent="menu_configuration"
     />
 
-    <menuitem id="menu_langue" name="Langue" action="ceppp_langue_langue_action_window" sequence="4" parent="menu_configuration"/>
+    <menuitem id="menu_langue" name="Langue" action="ceppp_langue_langue_action_window" sequence="4"
+              parent="menu_configuration"/>
 
     <menuitem id="menu_maladie_label" name="Maladie" parent="menu_configuration" sequence="5"/>
 

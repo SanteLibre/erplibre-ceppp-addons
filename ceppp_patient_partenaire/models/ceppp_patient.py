@@ -19,38 +19,29 @@ class CepppPatient(models.Model):
 
     name = fields.Char(
         related="patient_partner_id.name",
-        groups=(
-            "ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
-        ),
     )
 
     image = fields.Binary(
         related="patient_partner_id.image",
         readonly=True,
-        groups=(
-            "ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
-        ),
     )
     image_medium = fields.Binary(
         related="patient_partner_id.image_medium",
         readonly=True,
-        groups=(
-            "ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
-        ),
     )
     image_small = fields.Binary(
         related="patient_partner_id.image_small",
         readonly=True,
-        groups=(
-            "ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
-        ),
     )
 
-    recruteur_partner_id = fields.Many2one("res.partner", string="Recruteur")
+    recruteur_partner_id = fields.Many2one(related="recruteur_user_id.partner_id", string="Recruteur")
+
+    recruteur_user_id = fields.Many2one("res.users", string="Recruteur user")
 
     centre_recruteur = fields.Char(
-        related="patient_partner_id.parent_id.name",
+        related="patient_partner_id.commercial_company_name",
         string="Centre de recrutement",
+        help="Affiliation",
     )
 
     courriel = fields.Char(
@@ -86,9 +77,6 @@ class CepppPatient(models.Model):
     patient_partner_id = fields.Many2one(
         "res.partner",
         string="Patient",
-        groups=(
-            "ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
-        ),
     )
 
     sexe = fields.Selection(
