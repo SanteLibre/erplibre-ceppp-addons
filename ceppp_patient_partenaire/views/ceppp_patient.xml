@@ -7,55 +7,26 @@
         <field name="arch" type="xml">
             <form string="Titre">
                 <sheet>
-                    <div class="oe_button_box" name="button_box">
-                        <button class="oe_stat_button" icon="fa-archive" name="toggle_active" type="object">
-                            <field name="active" widget="boolean_button"/>
-                        </button>
-                    </div>
-                    <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 90]}'/>
-                    <div class="oe_title">
-                        <h1>
-                            <field name="name" default_focus="1"/>
-                        </h1>
-                    </div>
                     <group>
-                        <field name="uuid" readonly="1" attrs="{'invisible':[('uuid','=',False)]}"/>
-                        <field name="patient_partner_id"/>
+                        <field name="uuid"/>
                         <field name="recruteur_partner_id"/>
-                        <field name="recruteur_user_id"/>
                         <field name="centre_recruteur"/>
                     </group>
                     <notebook>
-                        <page name='infos' string="Infos">
-                            <group>
-                                <field name="date_naissance"/>
-                                <field name="sexe"/>
-                                <field name="genre"/>
-                                <field name="genre_autre" attrs="{'invisible':[('genre','!=','autre')]}"/>
-                                <field name="occupation"/>
-                                <field name="occupation_autre" attrs="{'invisible':[('occupation','!=','autre')]}"/>
-                                <field name="formation_professionnelle"/>
-                                <field name="heritage_culturel"/>
-                                <field name="langue_parle_ecrit"/>
-                                <field name="langue_parle_ecrit_autre"
-                                       attrs="{'invisible':[('langue_parle_ecrit','!=','autre')]}"/>
-                                <field name="mode_communication_privilegie"/>
-                                <field name="patient_actif"/>
-                                <field name="competence_patient"/>
-                            </group>
-                        </page>
-                        <page name='consentements' string="Consentements">
+                        <page name='disponibilite' string="Disponibilité">
                             <group>
                             </group>
                         </page>
-                        <page name='competences' string="Compétences">
+                        <page name='savoir_experientiel' string="Savoirs expérientiels">
                             <group>
-                                <field name="competence_patient"/>
                             </group>
                         </page>
-                        <page name='commentaires' string="Commentaires">
+                        <page name='formation' string="Formations">
                             <group>
-                                <field name="commentaires"/>
+                            </group>
+                        </page>
+                        <page name='implication' string="Implications">
+                            <group>
                             </group>
                         </page>
                     </notebook>
@@ -115,8 +86,6 @@
         <field name="arch" type="xml">
             <search string="Ceppp patient">
                 <filter domain="[('uuid','!=',False)]" name="uuid" string="Code"/>
-                <separator/>
-                <filter string="Mes patients" name="mes_patients" domain="[('recruteur_user_id','in',[uid])]" help="Mes patients de mon affiliation"/>
             </search>
         </field>
     </record>
@@ -132,18 +101,10 @@
     </record>
 
     <act_window
-            id="ceppp_patient_my_patient_action_window"
-            name="Mes patients"
-            res_model="ceppp.patient"
-            context="{'search_default_mes_patients': 1}"
-            view_mode="kanban,tree,pivot,graph,form"
-    />
-
-    <act_window
-            id="ceppp_patient_les_patient_affiliation_action_window"
-            name="Les patients de mon centre de recrutement"
-            res_model="ceppp.patient"
-            view_mode="kanban,tree,pivot,graph,form"
+        id="ceppp_patient_patient_action_window"
+        name="Tous les patients"
+        res_model="ceppp.patient"
+        view_mode="kanban,tree,pivot,graph,form"
     />
 
 </odoo>

@@ -24,7 +24,7 @@
               action="ceppp_patient_les_patient_affiliation_action_window" parent="menu_patient"/>
 
     <menuitem id="menu_patient_all_patient" name="Tous les patients" sequence="3"
-              action="ceppp_recruteur_recruteur_action_window" parent="menu_patient"/>
+              action="ceppp_patient_patient_action_window" parent="menu_patient"/>
 
     <menuitem
             id="menu_competence"
