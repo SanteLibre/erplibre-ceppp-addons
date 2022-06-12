@@ -43,6 +43,28 @@ class CepppRecruteur(models.Model):
 
     recruteur_user_id = fields.Many2one("res.users", string="Recruteur user")
 
+    consentement_notification = fields.Boolean(
+        string="Consentement aux notifications/communications"
+    )
+
+    consentement_recrutement = fields.Boolean(
+        string="Consentement au recrutement",
+        help=(
+            "Consentement dans le cadre d'activités de partenariat. "
+            "Si vous voulez vous retirer en tant que patient partenaire, "
+            "veuillez envoyer un courriel à cette adresse "
+            "<mail - formulaire prérempli?>"
+        ),
+    )
+
+    consentement_recherche = fields.Boolean(
+        string="Consentement à la recherche",
+        help=(
+            "Consentement dans le cadre d'activités de recherche sur le "
+            "partenariat."
+        ),
+    )
+
     centre_recruteur = fields.Char(
         related="patient_partner_id.commercial_company_name",
         string="Centre de recrutement",

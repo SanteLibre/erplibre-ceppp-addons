@@ -54,6 +54,9 @@
                         </page>
                         <page name='consentements' string="Consentements">
                             <group>
+                                <field name="consentement_notification" string="Notification"/>
+                                <field name="consentement_recrutement" string="Recrutement"/>
+                                <field name="consentement_recherche" string="Recherche"/>
                             </group>
                         </page>
                         <page name='competences' string="Compétences">
