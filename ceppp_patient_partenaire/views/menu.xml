@@ -4,7 +4,7 @@
     <!--Root menu-->
 
     <menuitem
-            id="ceppp_patient_partenaire"
+            id="menu_ceppp_patient_partenaire"
             name="Ceppp Patient Partenaire"
             sequence="20"
             web_icon="ceppp_patient_partenaire,static/description/icon.png"
@@ -12,68 +12,70 @@
 
     <!--Sub menu-->
 
-    <menuitem id="patient" name="Patient" sequence="1" action="ceppp_patient_patient_action_window" parent="ceppp_patient_partenaire"/>
-    <menuitem id="recruteur" name="Recruteur" sequence="2" parent="ceppp_patient_partenaire"/>
-    <menuitem id="configuration" name="Configuration" sequence="3" parent="ceppp_patient_partenaire"/>
+    <menuitem id="menu_patient" name="Patient" sequence="1" action="ceppp_patient_patient_action_window" parent="menu_ceppp_patient_partenaire"/>
+    <menuitem id="menu_recruteur" name="Recruteur" sequence="2" action="ceppp_recruteur_recruteur_action_window" parent="menu_ceppp_patient_partenaire"/>
+    <menuitem id="menu_configuration" name="Configuration" sequence="3" parent="menu_ceppp_patient_partenaire"/>
 
     <!--Child menu-->
 
     <menuitem
-            id="competence"
+            id="menu_competence"
             name="Competence"
             action="ceppp_competence_competence_action_window"
             sequence="1"
-            parent="configuration"
+            parent="menu_configuration"
     />
 
     <menuitem
-            id="formation"
+            id="menu_formation"
             name="Formation"
             action="ceppp_formation_formation_action_window"
             sequence="2"
-            parent="configuration"
+            parent="menu_configuration"
     />
 
     <menuitem
-            id="implication"
+            id="menu_implication"
             name="Implication"
             action="ceppp_implication_implication_action_window"
             sequence="3"
-            parent="configuration"
+            parent="menu_configuration"
     />
 
-    <menuitem id="langue" name="Langue" action="ceppp_langue_langue_action_window" sequence="4" parent="configuration"/>
+    <menuitem id="menu_langue" name="Langue" action="ceppp_langue_langue_action_window" sequence="4" parent="menu_configuration"/>
+
+    <menuitem id="menu_maladie_label" name="Maladie" parent="menu_configuration" sequence="5"/>
 
     <menuitem
-            id="maladie_proche_aidant"
-            name="Maladie proche aidant"
-            action="ceppp_maladie_proche_aidant_maladie_proche_aidant_action_window"
-            sequence="5"
-            parent="menu"
-    />
-
-    <menuitem
-            id="maladie_soi_meme"
-            name="Maladie soi meme"
-            action="ceppp_maladie_soi_meme_maladie_soi_meme_action_window"
-            sequence="6"
-            parent="menu"
+            id="menu_chapitre_maladie"
+            name="Chapitre maladie"
+            action="ceppp_chapitre_maladie_chapitre_maladie_action_window"
+            sequence="1"
+            parent="menu_maladie_label"
     />
 
     <menuitem
-            id="mode_communication_privilegie"
+            id="menu_maladie"
+            name="Maladie"
+            action="ceppp_maladie_maladie_action_window"
+            sequence="2"
+            parent="menu_maladie_label"
+    />
+
+    <menuitem
+            id="menu_mode_communication_privilegie"
             name="Mode communication privilegie"
             action="ceppp_mode_communication_privilegie_mode_communication_privilegie_action_window"
             sequence="7"
-            parent="configuration"
+            parent="menu_configuration"
     />
 
     <menuitem
-            id="occupation"
+            id="menu_occupation"
             name="Occupation"
             action="ceppp_occupation_occupation_action_window"
             sequence="8"
-            parent="configuration"
+            parent="menu_configuration"
     />
 
     <record model="ir.ui.menu" id="contacts.menu_contacts">
