@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="ceppp_langue_view_form" model="ir.ui.view">
+        <field name="name">ceppp_langue_form</field>
+        <field name="model">ceppp.langue</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_langue_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_langue_graph</field>
+        <field name="model">ceppp.langue</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp langue">
+                <field name="name" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_langue_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_langue_kanban</field>
+        <field name="model">ceppp.langue</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="name" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="name" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_langue_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_langue_pivot</field>
+        <field name="model">ceppp.langue</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp langue">
+                <field name="name" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_langue_view_search" model="ir.ui.view">
+        <field name="name">ceppp_langue_search</field>
+        <field name="model">ceppp.langue</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp langue">
+                <filter domain="[('name','!=',False)]" name="name" string="Name" />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_langue_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_langue_tree</field>
+        <field name="model">ceppp.langue</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_langue_langue_action_window"
+        name="Langue"
+        res_model="ceppp.langue"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+
+</odoo>

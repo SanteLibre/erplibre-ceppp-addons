@@ -61,6 +61,22 @@ def post_init_hook(cr, e):
         # Add/Update Ceppp Patient
         model_model = "ceppp.patient"
         code_generator_id.add_update_model(model_model)
+        model_model = "ceppp.competence"
+        code_generator_id.add_update_model(model_model)
+        model_model = "ceppp.mode_communication_privilegie"
+        code_generator_id.add_update_model(model_model)
+        model_model = "ceppp.langue"
+        code_generator_id.add_update_model(model_model)
+        model_model = "ceppp.occupation"
+        code_generator_id.add_update_model(model_model)
+        model_model = "ceppp.maladie_soi_meme"
+        code_generator_id.add_update_model(model_model)
+        model_model = "ceppp.maladie_proche_aidant"
+        code_generator_id.add_update_model(model_model)
+        model_model = "ceppp.formation"
+        code_generator_id.add_update_model(model_model)
+        model_model = "ceppp.implication"
+        code_generator_id.add_update_model(model_model)
 
         # Generate view
         # Action generate view
