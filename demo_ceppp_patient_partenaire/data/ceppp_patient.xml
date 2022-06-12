@@ -6,18 +6,21 @@
             <field name="sexe">femme</field>
             <field name="recruteur_partner_id" ref="partner_demo_stephanie_latendresse"/>
             <field name="date_naissance">1980-08-07</field>
+            <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_autre')),(4, ref('ceppp_patient_partenaire.ceppp_langue_anglais'))]"/>
         </record>
         <record id="ceppp_patient_patient_2" model="ceppp.patient">
             <field name="patient_partner_id" ref="partner_demo_steve_lebeau"/>
             <field name="sexe">homme</field>
             <field name="recruteur_partner_id" ref="partner_demo_julie_dufour"/>
             <field name="date_naissance">1981-09-12</field>
+            <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_francais')),(4, ref('ceppp_patient_partenaire.ceppp_langue_anglais'))]"/>
         </record>
         <record id="ceppp_patient_patient_3" model="ceppp.patient">
             <field name="patient_partner_id" ref="partner_demo_martin_petit"/>
             <field name="sexe">homme</field>
             <field name="recruteur_partner_id" ref="partner_demo_jacques_lamotte"/>
             <field name="date_naissance">1980-08-06</field>
+            <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_francais')),(4, ref('ceppp_patient_partenaire.ceppp_langue_espagnol'))]"/>
         </record>
     </data>
 </odoo>

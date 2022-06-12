@@ -13,6 +13,7 @@
         "views/ceppp_formation.xml",
         "views/ceppp_implication.xml",
         "views/ceppp_langue.xml",
+        "data/ceppp_langue.xml",
         "views/ceppp_maladie_proche_aidant.xml",
         "views/ceppp_maladie_soi_meme.xml",
         "views/ceppp_mode_communication_privilegie.xml",

@@ -189,14 +189,9 @@ class CepppPatient(models.Model):
         ),
     )
 
-    langue_parle_ecrit = fields.Selection(
+    langue_parle_ecrit = fields.Many2many(
+        comodel_name="ceppp.langue",
         string="Langues parlées/écrites",
-        selection=[
-            ("francais", "Français"),
-            ("anglais", "Anglais"),
-            ("espagnol", "Espagnol"),
-            ("autre", "Autre"),
-        ],
     )
 
     langue_parle_ecrit_autre = fields.Char(

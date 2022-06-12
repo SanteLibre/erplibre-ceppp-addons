@@ -12,7 +12,9 @@
 
     <!--Sub menu-->
 
-    <menuitem id="menu" name="Menu" sequence="1" parent="ceppp_patient_partenaire"/>
+    <menuitem id="patient" name="Patient" sequence="1" action="ceppp_patient_patient_action_window" parent="ceppp_patient_partenaire"/>
+    <!--    <menuitem id="recruteur" name="Recruteur" sequence="2" parent="ceppp_patient_partenaire"/>-->
+    <menuitem id="configuration" name="Configuration" sequence="3" parent="ceppp_patient_partenaire"/>
 
     <!--Child menu-->
 
@@ -21,7 +23,7 @@
             name="Competence"
             action="ceppp_competence_competence_action_window"
             sequence="1"
-            parent="menu"
+            parent="configuration"
     />
 
     <menuitem
@@ -29,7 +31,7 @@
             name="Formation"
             action="ceppp_formation_formation_action_window"
             sequence="2"
-            parent="menu"
+            parent="configuration"
     />
 
     <menuitem
@@ -37,10 +39,10 @@
             name="Implication"
             action="ceppp_implication_implication_action_window"
             sequence="3"
-            parent="menu"
+            parent="configuration"
     />
 
-    <menuitem id="langue" name="Langue" action="ceppp_langue_langue_action_window" sequence="4" parent="menu"/>
+    <menuitem id="langue" name="Langue" action="ceppp_langue_langue_action_window" sequence="4" parent="configuration"/>
 
     <menuitem
             id="maladie_proche_aidant"
@@ -63,7 +65,7 @@
             name="Mode communication privilegie"
             action="ceppp_mode_communication_privilegie_mode_communication_privilegie_action_window"
             sequence="7"
-            parent="menu"
+            parent="configuration"
     />
 
     <menuitem
@@ -71,9 +73,8 @@
             name="Occupation"
             action="ceppp_occupation_occupation_action_window"
             sequence="8"
-            parent="menu"
+            parent="configuration"
     />
-    <menuitem id="patient" name="Patient" action="ceppp_patient_patient_action_window" sequence="1" parent="menu"/>
 
     <record model="ir.ui.menu" id="contacts.menu_contacts">
         <!-- Replace all group in contacts.menu_contacts -->

@@ -8,7 +8,7 @@
             <form string="Titre">
                 <sheet>
                     <group>
-                        <field name="name" />
+                        <field name="nom" />
                     </group>
                 </sheet>
             </form>
@@ -20,7 +20,7 @@
         <field name="model">ceppp.langue</field>
         <field name="arch" type="xml">
             <graph string="Ceppp langue">
-                <field name="name" type="row" />
+                <field name="nom" type="row" />
             </graph>
         </field>
     </record>
@@ -30,7 +30,7 @@
         <field name="model">ceppp.langue</field>
         <field name="arch" type="xml">
             <kanban class="o_kanban_mobile">
-                <field name="name" />
+                <field name="nom" />
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
@@ -38,7 +38,7 @@
                                 <ul>
                                     <li class="mb4">
                                         <strong>
-                                            <field name="name" />
+                                            <field name="nom" />
                                         </strong>
                                     </li>
                                 </ul>
@@ -55,7 +55,7 @@
         <field name="model">ceppp.langue</field>
         <field name="arch" type="xml">
             <pivot string="Ceppp langue">
-                <field name="name" type="row" />
+                <field name="nom" type="row" />
             </pivot>
         </field>
     </record>
@@ -65,7 +65,6 @@
         <field name="model">ceppp.langue</field>
         <field name="arch" type="xml">
             <search string="Ceppp langue">
-                <filter domain="[('name','!=',False)]" name="name" string="Name" />
             </search>
         </field>
     </record>
@@ -75,7 +74,7 @@
         <field name="model">ceppp.langue</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name" />
+                <field name="nom" />
             </tree>
         </field>
     </record>
