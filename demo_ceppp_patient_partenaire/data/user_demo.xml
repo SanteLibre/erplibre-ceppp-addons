@@ -22,7 +22,7 @@
         <field name="name">BPP</field>
         <field name="company_id" ref="base.main_company"/>
         <field name="customer" eval="False"/>
-        <field name="affiliation" eval="True"/>
+        <field name="ceppp_entity">affiliation</field>
         <field name="is_company" eval="True"/>
         <!--        <field name="street">4545, Avenue Pierre-De Coubertin</field>-->
         <!--        <field name="city">Montréal</field>-->
@@ -38,7 +38,7 @@
         <field name="name">RUIS ULAVAL</field>
         <field name="company_id" ref="base.main_company"/>
         <field name="customer" eval="False"/>
-        <field name="affiliation" eval="True"/>
+        <field name="ceppp_entity">affiliation</field>
         <field name="is_company" eval="True"/>
         <!--        <field name="street">4545, Avenue Pierre-De Coubertin</field>-->
         <!--        <field name="city">Montréal</field>-->
@@ -54,10 +54,8 @@
     <record id="partner_demo_monique_beauvoir" model="res.partner">
         <field name="name">Monique Beauvoir</field>
         <field name="company_id" ref="base.main_company"/>
-        <field name="customer" eval="False"/>
-        <field name="patient" eval="True"/>
         <field name="parent_id" ref="base.main_company"/>
-        <!--        <field name="company_name">YourCompany</field>-->
+        <field name="ceppp_entity">patient</field>
         <field name="street">4545, Avenue Pierre-De Coubertin</field>
         <field name="city">Montréal</field>
         <field name="state_id" model="res.country.state" search="[('code','ilike','QC')]"/>
@@ -87,6 +85,7 @@
         <field name="company_id" ref="base.main_company"/>
         <field name="customer" eval="False"/>
         <field name="parent_id" ref="base.main_company"/>
+        <field name="ceppp_entity">administrateur</field>
         <!--        <field name="company_name">YourCompany</field>-->
 <!--        <field name="street">4545, Avenue Pierre-De Coubertin</field>-->
         <field name="city">Montréal</field>
@@ -115,9 +114,8 @@
     <record id="partner_demo_steve_lebeau" model="res.partner">
         <field name="name">Steve Lebeau</field>
         <field name="company_id" ref="base.main_company"/>
-        <field name="customer" eval="False"/>
-        <field name="patient" eval="True"/>
         <field name="parent_id" ref="partner_demo_affiliation_ruis_ulaval"/>
+        <field name="ceppp_entity">patient</field>
         <!--        <field name="company_name">YourCompany</field>-->
         <field name="street">1710, Rue Beaudry, Sainte-Marie, Ville-Marie</field>
         <field name="city">Montréal</field>
@@ -146,9 +144,8 @@
     <record id="partner_demo_martin_petit" model="res.partner">
         <field name="name">Martin Petit</field>
         <field name="company_id" ref="base.main_company"/>
-        <field name="customer" eval="False"/>
-        <field name="patient" eval="True"/>
         <field name="parent_id" ref="base.main_company"/>
+        <field name="ceppp_entity">patient</field>
         <!--        <field name="company_name">YourCompany</field>-->
         <field name="street">3200, Chemin de la Côte-Sainte-Catherine, Parc-Kent, Côte-des-Neiges–Notre-Dame-de-Grâce</field>
         <field name="city">Montréal</field>
@@ -177,9 +174,8 @@
     <record id="partner_demo_julie_dufour" model="res.partner">
         <field name="name">Julie Dufour</field>
         <field name="company_id" ref="base.main_company"/>
-        <field name="customer" eval="False"/>
-        <field name="recruteur" eval="True"/>
         <field name="parent_id" ref="partner_demo_affiliation_ruis_ulaval"/>
+        <field name="ceppp_entity">recruteur</field>
         <!--        <field name="company_name">YourCompany</field>-->
         <field name="street">3819, Avenue Calixa-Lavallée, Parc-Lafontaine, Plateau Mont-Royal</field>
         <field name="city">Montréal</field>
@@ -208,9 +204,8 @@
     <record id="partner_demo_jacques_lamotte" model="res.partner">
         <field name="name">Jacques Lamotte</field>
         <field name="company_id" ref="base.main_company"/>
-        <field name="customer" eval="False"/>
-        <field name="recruteur" eval="True"/>
         <field name="parent_id" ref="base.main_company"/>
+        <field name="ceppp_entity">recruteur</field>
         <!--        <field name="company_name">YourCompany</field>-->
         <field name="street">8e Avenue, Vieux-Lachine, Arrondissement de Lachine</field>
         <field name="city">Montréal</field>
@@ -239,9 +234,8 @@
     <record id="partner_demo_stephanie_latendresse" model="res.partner">
         <field name="name">Stéphanie Latendresse</field>
         <field name="company_id" ref="base.main_company"/>
-        <field name="customer" eval="False"/>
-        <field name="recruteur" eval="True"/>
         <field name="parent_id" ref="base.main_company"/>
+        <field name="ceppp_entity">recruteur</field>
         <!--        <field name="company_name">YourCompany</field>-->
         <field name="street">4770, Rue la Fontaine, Mercier–Hochelaga-Maisonneuve</field>
         <field name="city">Montréal</field>
@@ -270,9 +264,8 @@
     <record id="partner_demo_guillaume_lamarche" model="res.partner">
         <field name="name">Guillaume Lamarche</field>
         <field name="company_id" ref="base.main_company"/>
-        <field name="customer" eval="False"/>
-        <field name="recruteur" eval="True"/>
         <field name="parent_id" ref="partner_demo_affiliation_bpp"/>
+        <field name="ceppp_entity">recruteur</field>
         <!--        <field name="company_name">YourCompany</field>-->
         <field name="street">3008, Boulevard Saint-Martin Ouest, Chomedey</field>
         <field name="city">Laval</field>

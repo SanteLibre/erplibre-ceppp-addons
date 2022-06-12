@@ -30,4 +30,5 @@
         "data/ir_attachment.xml",
     ],
     "installable": True,
+    "post_init_hook": "post_init_hook",
 }
