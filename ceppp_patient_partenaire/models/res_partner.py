@@ -1,9 +1,8 @@
 from odoo import SUPERUSER_ID, _, api, fields, models, tools
 
 
-class Partner(models.Model):
+class ResPartner(models.Model):
     _inherit = "res.partner"
-    _name = "res.partner"
 
     ceppp_entity = fields.Selection(
         selection=[

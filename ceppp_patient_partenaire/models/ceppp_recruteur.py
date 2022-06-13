@@ -5,11 +5,12 @@ from odoo import _, api, fields, models
 
 class CepppRecruteur(models.Model):
     _name = "ceppp.recruteur"
+    _inherit = ["mail.activity.mixin", "mail.thread"]
     _description = "ceppp_recruteur"
-    _inherit = [
-        "mail.thread",
-        "mail.activity.mixin",
-    ]
+
+    name = fields.Char(
+        related="patient_partner_id.name",
+    )
 
     active = fields.Boolean(
         string="Actif",
@@ -18,10 +19,6 @@ class CepppRecruteur(models.Model):
             "Lorsque non actif, ce patient n'est plus en fonction, mais"
             " demeure accessible."
         ),
-    )
-
-    name = fields.Char(
-        related="patient_partner_id.name",
     )
 
     image = fields.Binary(
@@ -38,10 +35,14 @@ class CepppRecruteur(models.Model):
     )
 
     recruteur_partner_id = fields.Many2one(
-        related="recruteur_user_id.partner_id", string="Recruteur"
+        related="recruteur_user_id.partner_id",
+        string="Recruteur",
     )
 
-    recruteur_user_id = fields.Many2one("res.users", string="Recruteur user")
+    recruteur_user_id = fields.Many2one(
+        comodel_name="res.users",
+        string="Recruteur user",
+    )
 
     consentement_notification = fields.Boolean(
         string="Consentement aux notifications/communications"
@@ -50,18 +51,18 @@ class CepppRecruteur(models.Model):
     consentement_recrutement = fields.Boolean(
         string="Consentement au recrutement",
         help=(
-            "Consentement dans le cadre d'activités de partenariat. "
-            "Si vous voulez vous retirer en tant que patient partenaire, "
-            "veuillez envoyer un courriel à cette adresse "
-            "<mail - formulaire prérempli?>"
+            "Consentement dans le cadre d'activités de partenariat. Si vous"
+            " voulez vous retirer en tant que patient partenaire, veuillez"
+            " envoyer un courriel à cette adresse <mail - formulaire"
+            " prérempli?>"
         ),
     )
 
     consentement_recherche = fields.Boolean(
         string="Consentement à la recherche",
         help=(
-            "Consentement dans le cadre d'activités de recherche sur le "
-            "partenariat."
+            "Consentement dans le cadre d'activités de recherche sur le"
+            " partenariat."
         ),
     )
 
@@ -91,7 +92,10 @@ class CepppRecruteur(models.Model):
         related="patient_partner_id.mobile",
     )
 
-    uuid = fields.Char(string="Code", help="Identifiant unique anonymisé.")
+    uuid = fields.Char(
+        string="Code",
+        help="Identifiant unique anonymisé.",
+    )
 
     date_naissance = fields.Date(
         string="Date de naissance",
@@ -102,7 +106,7 @@ class CepppRecruteur(models.Model):
     )
 
     patient_partner_id = fields.Many2one(
-        "res.partner",
+        comodel_name="res.partner",
         string="Patient",
     )
 
@@ -168,12 +172,12 @@ class CepppRecruteur(models.Model):
     )
 
     heritage_culturel = fields.Selection(
-        string="Héritage culturel",
         selection=[
             ("oui", "Oui"),
             ("non", "Non"),
             ("ne_pas_repondre", "Préfère ne pas répondre"),
         ],
+        string="Héritage culturel",
         help=(
             "Est-ce que vous vous identifiez comme membre d'une minorité"
             " visible, au sens de la Loi sur l'équité en matière d'emploi."
@@ -210,8 +214,8 @@ class CepppRecruteur(models.Model):
     )
 
     mode_communication_privilegie = fields.Many2many(
-        string="Mode de communication privilégié",
         comodel_name="ceppp.mode_communication_privilegie",
+        string="Mode de communication privilégié",
     )
 
     patient_actif = fields.Selection(
@@ -228,14 +232,12 @@ class CepppRecruteur(models.Model):
     )
 
     competence_patient = fields.Many2many(
-        string="Compétences au partenariat",
         comodel_name="ceppp.competence",
+        string="Compétences au partenariat",
         help="Compétences du patient.",
     )
 
-    commentaires = fields.Text(
-        string="Commnentaires",
-    )
+    commentaires = fields.Text(string="Commnentaires")
 
     @api.model_create_multi
     def create(self, vals_list):
