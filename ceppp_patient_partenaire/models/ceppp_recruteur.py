@@ -35,13 +35,15 @@ class CepppRecruteur(models.Model):
     )
 
     recruteur_partner_id = fields.Many2one(
-        related="recruteur_user_id.partner_id",
+        comodel_name="res.partner",
         string="Recruteur",
     )
 
     recruteur_user_id = fields.Many2one(
         comodel_name="res.users",
         string="Recruteur user",
+        store=True,
+        compute="_compute_recruteur_user_id",
     )
 
     consentement_notification = fields.Boolean(
@@ -67,7 +69,7 @@ class CepppRecruteur(models.Model):
     )
 
     centre_recruteur = fields.Char(
-        related="patient_partner_id.commercial_company_name",
+        related="patient_partner_id.parent_id.name",
         string="Centre de recrutement",
         help="Affiliation",
     )
@@ -239,9 +241,35 @@ class CepppRecruteur(models.Model):
 
     commentaires = fields.Text(string="Commnentaires")
 
+    user_is_admin = fields.Boolean(
+        store=False,
+        compute="_compute_user_is_admin",
+    )
+
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
             if "uuid" not in vals.keys():
                 vals["uuid"] = str(uuid4())
         return super(CepppRecruteur, self).create(vals_list)
+
+    @api.depends("recruteur_partner_id")
+    def _compute_recruteur_user_id(self):
+        for record in self:
+            if (
+                record.recruteur_partner_id
+                and record.recruteur_partner_id.user_ids
+            ):
+                record.recruteur_user_id = (
+                    record.recruteur_partner_id.user_ids[0].id
+                )
+            else:
+                record.recruteur_user_id = False
+
+    @api.depends("patient_partner_id")
+    def _compute_user_is_admin(self):
+        for record in self:
+            record.user_is_admin = (
+                self.env["res.users"].browse(self._uid).partner_id.ceppp_entity
+                == "administrateur"
+            )

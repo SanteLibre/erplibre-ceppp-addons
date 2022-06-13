@@ -24,9 +24,16 @@
                     </div>
                     <group>
                         <!--<field name="uuid" readonly="1" attrs="{'invisible':[('uuid','=',False)]}"/>-->
-                        <field name="patient_partner_id" />
-                        <field name="recruteur_partner_id" />
-                        <field name="recruteur_user_id" />
+                        <field name="user_is_admin" invisible="1" />
+                        <field
+                            name="patient_partner_id"
+                            domain="[('ceppp_entity','=','patient')]"
+                            attrs="{'readonly':[('user_is_admin','=',False)]}"
+                        />
+                        <field
+                            name="recruteur_partner_id"
+                            domain="[('ceppp_entity','in',['recruteur','administrateur'])]"
+                        />
                         <field name="centre_recruteur" />
                     </group>
                     <notebook>
