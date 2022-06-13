@@ -307,12 +307,12 @@ def post_init_hook(cr, e):
                 "ttype": "char",
             },
             "name": {
-                "code_generator_sequence": 3,
+                "code_generator_sequence": 4,
                 "field_description": "Name",
                 "ttype": "char",
             },
             "recruteur_id": {
-                "code_generator_sequence": 4,
+                "code_generator_sequence": 5,
                 "field_description": "Link recruteur",
                 "relation": "ceppp.recruteur",
                 "ttype": "many2one",
@@ -321,13 +321,12 @@ def post_init_hook(cr, e):
                 "code_generator_form_simple_view_sequence": 11,
                 "code_generator_sequence": 6,
                 "field_description": "Recruteur",
-                "help": "Partner-related data of the user",
                 "relation": "res.partner",
                 "ttype": "many2one",
             },
             "uuid": {
                 "code_generator_form_simple_view_sequence": 10,
-                "code_generator_sequence": 5,
+                "code_generator_sequence": 3,
                 "code_generator_tree_view_sequence": 10,
                 "field_description": "Code",
                 "help": "Identifiant unique anonymisé.",
@@ -365,7 +364,7 @@ from odoo import _, api, fields, models""",
         dct_field = {
             "active": {
                 "code_generator_form_simple_view_sequence": 10,
-                "code_generator_sequence": 3,
+                "code_generator_sequence": 4,
                 "default": True,
                 "field_description": "Actif",
                 "force_widget": "boolean_button",
@@ -581,7 +580,7 @@ from odoo import _, api, fields, models""",
             },
             "name": {
                 "code_generator_form_simple_view_sequence": 12,
-                "code_generator_sequence": 4,
+                "code_generator_sequence": 3,
                 "code_generator_tree_view_sequence": 10,
                 "field_description": "Name",
                 "ttype": "char",
@@ -617,25 +616,25 @@ from odoo import _, api, fields, models""",
                 "ttype": "selection",
             },
             "patient_partner_id": {
-                "code_generator_form_simple_view_sequence": 13,
+                "code_generator_form_simple_view_sequence": 14,
                 "code_generator_sequence": 20,
                 "field_description": "Patient",
                 "relation": "res.partner",
                 "ttype": "many2one",
             },
             "recruteur_partner_id": {
-                "code_generator_form_simple_view_sequence": 14,
+                "code_generator_form_simple_view_sequence": 15,
                 "code_generator_sequence": 8,
                 "field_description": "Recruteur",
-                "help": "Partner-related data of the user",
                 "relation": "res.partner",
                 "ttype": "many2one",
             },
             "recruteur_user_id": {
-                "code_generator_form_simple_view_sequence": 15,
+                "code_generator_compute": "_compute_recruteur_user_id",
                 "code_generator_sequence": 9,
                 "field_description": "Recruteur user",
                 "relation": "res.users",
+                "store": True,
                 "ttype": "many2one",
             },
             "sexe": {
@@ -664,6 +663,13 @@ from odoo import _, api, fields, models""",
                 "code_generator_sequence": 16,
                 "field_description": "Téléphone",
                 "ttype": "char",
+            },
+            "user_is_admin": {
+                "code_generator_compute": "_compute_user_is_admin",
+                "code_generator_form_simple_view_sequence": 13,
+                "code_generator_sequence": 34,
+                "field_description": "User Is Admin",
+                "ttype": "boolean",
             },
             "uuid": {
                 "code_generator_sequence": 18,
@@ -707,6 +713,36 @@ return super(CepppRecruteur, self).create(vals_list)""",
                     "m2o_module": code_generator_id.id,
                     "m2o_model": model_ceppp_recruteur.id,
                 },
+                {
+                    "code": """for record in self:
+    if (
+        record.recruteur_partner_id
+        and record.recruteur_partner_id.user_ids
+    ):
+        record.recruteur_user_id = (
+            record.recruteur_partner_id.user_ids[0].id
+        )
+    else:
+        record.recruteur_user_id = False""",
+                    "name": "_compute_recruteur_user_id",
+                    "decorator": '@api.depends("recruteur_partner_id")',
+                    "param": "self",
+                    "sequence": 1,
+                    "m2o_module": code_generator_id.id,
+                    "m2o_model": model_ceppp_recruteur.id,
+                },
+                {
+                    "code": """for record in self:
+    record.user_is_admin = (
+        self.env["res.users"].browse(self._uid).partner_id.ceppp_entity
+        == "administrateur")""",
+                    "name": "_compute_user_is_admin",
+                    "decorator": '@api.depends("patient_partner_id")',
+                    "param": "self",
+                    "sequence": 2,
+                    "m2o_module": code_generator_id.id,
+                    "m2o_model": model_ceppp_recruteur.id,
+                },
             ]
             env["code.generator.model.code"].create(lst_value)
 
@@ -716,7 +752,7 @@ return super(CepppRecruteur, self).create(vals_list)""",
         lst_depend_model = ["res.partner"]
         dct_field = {
             "ceppp_entity": {
-                "code_generator_sequence": 2,
+                "code_generator_sequence": 1,
                 "field_description": "Affiliation",
                 "help": "Unique entity name to represent the contact.",
                 "is_show_whitelist_model_inherit": True,

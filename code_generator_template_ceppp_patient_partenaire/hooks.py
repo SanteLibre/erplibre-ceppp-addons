@@ -36,7 +36,7 @@ def post_init_hook(cr, e):
             " ceppp.implication; ceppp.langue; ceppp.maladie;"
             " ceppp.maladie_proche_aidant; ceppp.maladie_soi_meme;"
             " ceppp.mode_communication_privilegie; ceppp.occupation;"
-            " ceppp.patient; ceppp.recruteur; res.partner"
+            " ceppp.patient; ceppp.recruteur"
         )
         value["template_inherit_model_name"] = "res.partner"
         value[
