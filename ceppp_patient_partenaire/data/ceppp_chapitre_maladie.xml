@@ -1,74 +1,63 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data noupdate="1">
-        <record id="ceppp_chapitre_maladie_chapitre_i_certaines_maladies_infectieuses_et_parasitaires"
-                model="ceppp.chapitre_maladie">
+        <record id="ceppp_chapitre_maladie_chapitre_i_certaines_maladies_infectieuses_et_parasitaires" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre I - Certaines maladies infectieuses et parasitaires</field>
         </record>
         <record id="ceppp_chapitre_maladie_chapitre_ii_tumeurs" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre II - Tumeurs</field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_systeme_imm"
-                model="ceppp.chapitre_maladie">
-            <field name="nom">Chapitre III - Maladies du sang et des organes hematopoietiques et certains troubles du
+        <record id="ceppp_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_systeme_imm" model="ceppp.chapitre_maladie">
+            <field name="nom">
+                Chapitre III - Maladies du sang et des organes hematopoietiques et certains troubles du
                 systeme immunitaire
             </field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_iv_maladies_endocriniennes_nutritionnelles_et_metaboliques"
-                model="ceppp.chapitre_maladie">
+        <record id="ceppp_chapitre_maladie_chapitre_iv_maladies_endocriniennes_nutritionnelles_et_metaboliques" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre IV - Maladies endocriniennes, nutritionnelles et metaboliques</field>
         </record>
         <record id="ceppp_chapitre_maladie_chapitre_vi_maladies_du_systeme_nerveux" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre VI - Maladies du syst&#232;me nerveux</field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire"
-                model="ceppp.chapitre_maladie">
+        <record id="ceppp_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre IX - Maladies de l'appareil circulatoire</field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire"
-                model="ceppp.chapitre_maladie">
+        <record id="ceppp_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre X - Maladies de l'appareil respiratoire</field>
         </record>
         <record id="ceppp_chapitre_maladie_chapitre_xi_maladies_de_l_appareil_digestif" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre XI - Maladies de l'appareil digestif</field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_xii_maladies_de_la_peau_et_du_tissu_cellulaire_sous_cutane"
-                model="ceppp.chapitre_maladie">
+        <record id="ceppp_chapitre_maladie_chapitre_xii_maladies_de_la_peau_et_du_tissu_cellulaire_sous_cutane" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre XII - Maladies de la peau et du tissu cellulaire sous-cutane</field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif"
-                model="ceppp.chapitre_maladie">
-            <field name="nom">Chapitre XIII - Maladies du systeme osteo-articulaire, des muscles et du tissu
+        <record id="ceppp_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif" model="ceppp.chapitre_maladie">
+            <field name="nom">
+                Chapitre XIII - Maladies du systeme osteo-articulaire, des muscles et du tissu
                 conjonctif
             </field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_xiv_maladies_de_l_appareil_genito_urinaire"
-                model="ceppp.chapitre_maladie">
+        <record id="ceppp_chapitre_maladie_chapitre_xiv_maladies_de_l_appareil_genito_urinaire" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre XIV - Maladies de l'appareil genito-urinaire</field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite"
-                model="ceppp.chapitre_maladie">
+        <record id="ceppp_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite" model="ceppp.chapitre_maladie">
             <field name="nom">Chapitre XV - Grossesse, accouchement et puerperalite</field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale"
-                model="ceppp.chapitre_maladie">
-            <field name="nom">Chapitre XVI - Certaines affections dont lorigine se situe dans la periode perinatale
-            </field>
+        <record id="ceppp_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale" model="ceppp.chapitre_maladie">
+            <field name="nom">Chapitre XVI - Certaines affections dont lorigine se situe dans la periode perinatale</field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_xvii_malformations_congenitales_deformations_et_anomalies_chromosomiques"
-                model="ceppp.chapitre_maladie">
-            <field name="nom">Chapitre XVII - Malformations congenitales, deformations et anomalies chromosomiques
-            </field>
+        <record id="ceppp_chapitre_maladie_chapitre_xvii_malformations_congenitales_deformations_et_anomalies_chromosomiques" model="ceppp.chapitre_maladie">
+            <field name="nom">Chapitre XVII - Malformations congenitales, deformations et anomalies chromosomiques</field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_xviii_symptomes_signes_et_resultats_anormaux_dexamens_cliniques_et_de_laboratoire_non_cl"
-                model="ceppp.chapitre_maladie">
-            <field name="nom">Chapitre XVIII - Symptomes, signes et resultats anormaux dexamens cliniques et de
+        <record id="ceppp_chapitre_maladie_chapitre_xviii_symptomes_signes_et_resultats_anormaux_dexamens_cliniques_et_de_laboratoire_non_cl" model="ceppp.chapitre_maladie">
+            <field name="nom">
+                Chapitre XVIII - Symptomes, signes et resultats anormaux dexamens cliniques et de
                 laboratoire, non classes ailleurs
             </field>
         </record>
-        <record id="ceppp_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_causes_exte"
-                model="ceppp.chapitre_maladie">
-            <field name="nom">Chapitre XIX - Lesions traumatiques, empoisonnements et certaines autres consequences de
+        <record id="ceppp_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_causes_exte" model="ceppp.chapitre_maladie">
+            <field name="nom">
+                Chapitre XIX - Lesions traumatiques, empoisonnements et certaines autres consequences de
                 causes externes
             </field>
         </record>

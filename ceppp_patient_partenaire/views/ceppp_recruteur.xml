@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <record id="ceppp_recruteur_view_form" model="ir.ui.view">
         <field name="name">ceppp_recruteur_form</field>
         <field name="model">ceppp.recruteur</field>
@@ -9,87 +8,92 @@
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <button class="oe_stat_button" icon="fa-archive" name="toggle_active" type="object">
-                            <field name="active" widget="boolean_button"/>
+                            <field name="active" widget="boolean_button" />
                         </button>
                     </div>
-                    <field name="image" widget='image' class="oe_avatar"
-                           options='{"preview_image": "image_medium", "size": [90, 90]}'/>
+                    <field
+                        name="image"
+                        widget='image'
+                        class="oe_avatar"
+                        options='{"preview_image": "image_medium", "size": [90, 90]}'
+                    />
                     <div class="oe_title">
                         <h1>
-                            <field name="name" default_focus="1"/>
+                            <field name="name" default_focus="1" />
                         </h1>
                     </div>
                     <group>
                         <!--<field name="uuid" readonly="1" attrs="{'invisible':[('uuid','=',False)]}"/>-->
-                        <field name="patient_partner_id"/>
-                        <field name="recruteur_partner_id"/>
-                        <field name="recruteur_user_id"/>
-                        <field name="centre_recruteur"/>
+                        <field name="patient_partner_id" />
+                        <field name="recruteur_partner_id" />
+                        <field name="recruteur_user_id" />
+                        <field name="centre_recruteur" />
                     </group>
                     <notebook>
                         <page name='infos' string="Infos">
                             <group>
                                 <group name="description" string="Description">
-                                    <field name="date_naissance"/>
-                                    <field name="sexe"/>
-                                    <field name="genre"/>
-                                    <field name="genre_autre" attrs="{'invisible':[('genre','!=','autre')]}"/>
-                                    <field name="heritage_culturel"/>
-                                    <field name="langue_parle_ecrit" widget="many2many_tags"/>
-                                    <field name="langue_parle_ecrit_autre"
-                                           attrs="{'invisible':[('langue_parle_ecrit','!=','autre')]}"/>
-
+                                    <field name="date_naissance" />
+                                    <field name="sexe" />
+                                    <field name="genre" />
+                                    <field name="genre_autre" attrs="{'invisible':[('genre','!=','autre')]}" />
+                                    <field name="heritage_culturel" />
+                                    <field name="langue_parle_ecrit" widget="many2many_tags" />
+                                    <field
+                                        name="langue_parle_ecrit_autre"
+                                        attrs="{'invisible':[('langue_parle_ecrit','!=','autre')]}"
+                                    />
                                 </group>
                                 <group name="preference" string="Préférence">
-                                    <field name="mode_communication_privilegie" widget="many2many_tags"/>
-                                    <field name="patient_actif"/>
+                                    <field name="mode_communication_privilegie" widget="many2many_tags" />
+                                    <field name="patient_actif" />
                                 </group>
                             </group>
                             <group>
                                 <group name="Occupation" string="Autre">
-                                    <field name="occupation" widget="many2many_tags"/>
-                                    <field name="occupation_autre" attrs="{'invisible':[('occupation','!=','autre')]}"/>
+                                    <field name="occupation" widget="many2many_tags" />
+                                    <field
+                                        name="occupation_autre"
+                                        attrs="{'invisible':[('occupation','!=','autre')]}"
+                                    />
                                 </group>
                             </group>
                         </page>
                         <page name='consentements' string="Consentements">
                             <group>
-                                <field name="consentement_notification" string="Notification"/>
-                                <field name="consentement_recrutement" string="Recrutement"/>
-                                <field name="consentement_recherche" string="Recherche"/>
+                                <field name="consentement_notification" string="Notification" />
+                                <field name="consentement_recrutement" string="Recrutement" />
+                                <field name="consentement_recherche" string="Recherche" />
                             </group>
                         </page>
                         <page name='competences' string="Compétences">
                             <group>
-                                <field name="competence_patient" widget="many2many_tags"/>
+                                <field name="competence_patient" widget="many2many_tags" />
                             </group>
                         </page>
                         <page name='commentaires' string="Commentaires">
-                            <field name="commentaires"/>
+                            <field name="commentaires" />
                         </page>
                         <page name='disponibilite' string="Disponibilité">
-                            <group>
-                            </group>
+                            <group />
                         </page>
                         <page name='savoir_experientiel' string="Savoirs expérientiels">
-                            <group>
-                            </group>
+                            <group />
                         </page>
                         <page name='formation' string="Formations">
                             <group>
-                                <field name="formation_professionnelle"/>
+                                <field name="formation_professionnelle" />
                             </group>
                         </page>
                         <page name='implication' string="Implications">
-                            <group>
-                            </group>
+                            <group />
                         </page>
                     </notebook>
                 </sheet>
                 <div class="oe_chatter">
-                    <field name="message_follower_ids" widget="mail_followers"/>
-                    <field name="activity_ids" widget="mail_activity"/>
-                    <field name="message_ids" widget="mail_thread"/>
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity" />
+                    <field name="message_ids" widget="mail_thread" />
                 </div>
             </form>
         </field>
@@ -100,7 +104,7 @@
         <field name="model">ceppp.recruteur</field>
         <field name="arch" type="xml">
             <graph string="Ceppp recruteur">
-                <field name="name" type="row"/>
+                <field name="name" type="row" />
             </graph>
         </field>
     </record>
@@ -110,7 +114,7 @@
         <field name="model">ceppp.recruteur</field>
         <field name="arch" type="xml">
             <kanban class="o_kanban_mobile">
-                <field name="name"/>
+                <field name="name" />
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
@@ -118,7 +122,7 @@
                                 <ul>
                                     <li class="mb4">
                                         <strong>
-                                            <field name="name"/>
+                                            <field name="name" />
                                         </strong>
                                     </li>
                                 </ul>
@@ -135,7 +139,7 @@
         <field name="model">ceppp.recruteur</field>
         <field name="arch" type="xml">
             <pivot string="Ceppp recruteur">
-                <field name="name" type="row"/>
+                <field name="name" type="row" />
             </pivot>
         </field>
     </record>
@@ -145,10 +149,14 @@
         <field name="model">ceppp.recruteur</field>
         <field name="arch" type="xml">
             <search string="Ceppp recruteur">
-                <filter domain="[('name','!=',False)]" name="name" string="Name"/>
-                <separator/>
-                <filter string="Mes patients" name="mes_patients" domain="[('recruteur_user_id','in',[uid])]"
-                        help="Mes patients de mon affiliation"/>
+                <filter domain="[('name','!=',False)]" name="name" string="Name" />
+                <separator />
+                <filter
+                    string="Mes patients"
+                    name="mes_patients"
+                    domain="[('recruteur_user_id','in',[uid])]"
+                    help="Mes patients de mon affiliation"
+                />
             </search>
         </field>
     </record>
@@ -158,24 +166,23 @@
         <field name="model">ceppp.recruteur</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name"/>
+                <field name="name" />
             </tree>
         </field>
     </record>
 
     <act_window
-            id="ceppp_patient_my_patient_action_window"
-            name="Mes patients"
-            res_model="ceppp.recruteur"
-            context="{'search_default_mes_patients': 1}"
-            view_mode="kanban,tree,pivot,graph,form"
+        id="ceppp_patient_my_patient_action_window"
+        name="Mes patients"
+        res_model="ceppp.recruteur"
+        context="{'search_default_mes_patients': 1}"
+        view_mode="kanban,tree,pivot,graph,form"
     />
 
     <act_window
-            id="ceppp_patient_les_patient_affiliation_action_window"
-            name="Les patients de mon centre de recrutement"
-            res_model="ceppp.recruteur"
-            view_mode="kanban,tree,pivot,graph,form"
+        id="ceppp_patient_les_patient_affiliation_action_window"
+        name="Les patients de mon centre de recrutement"
+        res_model="ceppp.recruteur"
+        view_mode="kanban,tree,pivot,graph,form"
     />
-
 </odoo>

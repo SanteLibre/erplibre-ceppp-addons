@@ -728,9 +728,7 @@ return super(CepppRecruteur, self).create(vals_list)""",
                 "ttype": "selection",
             },
         }
-        dct_model = {
-            "blacklist_all_ir_ui_view": True
-        }
+        dct_model = {"blacklist_all_ir_ui_view": True}
         model_res_partner = code_generator_id.add_update_model(
             model_model,
             model_name,

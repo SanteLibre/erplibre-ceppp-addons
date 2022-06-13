@@ -1,90 +1,115 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <!--Root menu-->
 
     <menuitem
-            id="menu_ceppp_patient_partenaire"
-            name="Ceppp Patient Partenaire"
-            sequence="20"
-            web_icon="ceppp_patient_partenaire,static/description/icon.png"
+        id="menu_ceppp_patient_partenaire"
+        name="Ceppp Patient Partenaire"
+        sequence="20"
+        web_icon="ceppp_patient_partenaire,static/description/icon.png"
     />
 
     <!--Sub menu-->
 
-    <menuitem id="menu_patient" name="Patient" sequence="1" parent="menu_ceppp_patient_partenaire"/>
-    <menuitem id="menu_configuration" name="Configuration" sequence="2" parent="menu_ceppp_patient_partenaire" groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"/>
+    <menuitem id="menu_patient" name="Patient" sequence="1" parent="menu_ceppp_patient_partenaire" />
+    <menuitem
+        id="menu_configuration"
+        name="Configuration"
+        sequence="2"
+        parent="menu_ceppp_patient_partenaire"
+        groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+    />
 
     <!--Child menu-->
 
-    <menuitem id="menu_patient_my_patient" name="Mes patients" sequence="1"
-              action="ceppp_patient_my_patient_action_window" parent="menu_patient"/>
-
-    <menuitem id="menu_patient_les_patient_affiliation" name="Les patients de mon centre de recrutement" sequence="2"
-              action="ceppp_patient_les_patient_affiliation_action_window" parent="menu_patient"/>
-
-    <menuitem id="menu_patient_all_patient" name="Tous les patients" sequence="3"
-              action="ceppp_patient_patient_action_window" parent="menu_patient"/>
-
     <menuitem
-            id="menu_competence"
-            name="Competence"
-            action="ceppp_competence_competence_action_window"
-            sequence="1"
-            parent="menu_configuration"
+        id="menu_patient_my_patient"
+        name="Mes patients"
+        sequence="1"
+        action="ceppp_patient_my_patient_action_window"
+        parent="menu_patient"
     />
 
     <menuitem
-            id="menu_formation"
-            name="Formation"
-            action="ceppp_formation_formation_action_window"
-            sequence="2"
-            parent="menu_configuration"
+        id="menu_patient_les_patient_affiliation"
+        name="Les patients de mon centre de recrutement"
+        sequence="2"
+        action="ceppp_patient_les_patient_affiliation_action_window"
+        parent="menu_patient"
     />
 
     <menuitem
-            id="menu_implication"
-            name="Implication"
-            action="ceppp_implication_implication_action_window"
-            sequence="3"
-            parent="menu_configuration"
-    />
-
-    <menuitem id="menu_langue" name="Langue" action="ceppp_langue_langue_action_window" sequence="4"
-              parent="menu_configuration"/>
-
-    <menuitem id="menu_maladie_label" name="Maladie" parent="menu_configuration" sequence="5"/>
-
-    <menuitem
-            id="menu_chapitre_maladie"
-            name="Chapitre maladie"
-            action="ceppp_chapitre_maladie_chapitre_maladie_action_window"
-            sequence="1"
-            parent="menu_maladie_label"
+        id="menu_patient_all_patient"
+        name="Tous les patients"
+        sequence="3"
+        action="ceppp_patient_patient_action_window"
+        parent="menu_patient"
     />
 
     <menuitem
-            id="menu_maladie"
-            name="Maladie"
-            action="ceppp_maladie_maladie_action_window"
-            sequence="2"
-            parent="menu_maladie_label"
+        id="menu_competence"
+        name="Competence"
+        action="ceppp_competence_competence_action_window"
+        sequence="1"
+        parent="menu_configuration"
     />
 
     <menuitem
-            id="menu_mode_communication_privilegie"
-            name="Mode communication privilegie"
-            action="ceppp_mode_communication_privilegie_mode_communication_privilegie_action_window"
-            sequence="7"
-            parent="menu_configuration"
+        id="menu_formation"
+        name="Formation"
+        action="ceppp_formation_formation_action_window"
+        sequence="2"
+        parent="menu_configuration"
     />
 
     <menuitem
-            id="menu_occupation"
-            name="Occupation"
-            action="ceppp_occupation_occupation_action_window"
-            sequence="8"
-            parent="menu_configuration"
+        id="menu_implication"
+        name="Implication"
+        action="ceppp_implication_implication_action_window"
+        sequence="3"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_langue"
+        name="Langue"
+        action="ceppp_langue_langue_action_window"
+        sequence="4"
+        parent="menu_configuration"
+    />
+
+    <menuitem id="menu_maladie_label" name="Maladie" parent="menu_configuration" sequence="5" />
+
+    <menuitem
+        id="menu_chapitre_maladie"
+        name="Chapitre maladie"
+        action="ceppp_chapitre_maladie_chapitre_maladie_action_window"
+        sequence="1"
+        parent="menu_maladie_label"
+    />
+
+    <menuitem
+        id="menu_maladie"
+        name="Maladie"
+        action="ceppp_maladie_maladie_action_window"
+        sequence="2"
+        parent="menu_maladie_label"
+    />
+
+    <menuitem
+        id="menu_mode_communication_privilegie"
+        name="Mode communication privilegie"
+        action="ceppp_mode_communication_privilegie_mode_communication_privilegie_action_window"
+        sequence="7"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_occupation"
+        name="Occupation"
+        action="ceppp_occupation_occupation_action_window"
+        sequence="8"
+        parent="menu_configuration"
     />
 
     <!--    <record model="ir.ui.menu" id="contacts.menu_contacts">-->
@@ -92,5 +117,4 @@
     <!--        <field name="groups_id"-->
     <!--               eval="[(6,0,[ref('base.group_partner_manager'), ref('group_ceppp_patient_partenaire_manager')])]"/>-->
     <!--    </record>-->
-
 </odoo>

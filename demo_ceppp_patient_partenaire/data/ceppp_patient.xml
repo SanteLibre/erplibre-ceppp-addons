@@ -2,34 +2,34 @@
 <odoo>
     <data noupdate="1">
         <record id="ceppp_patient_recruteur_1" model="ceppp.recruteur">
-            <field name="patient_partner_id" ref="partner_demo_monique_beauvoir"/>
+            <field name="patient_partner_id" ref="partner_demo_monique_beauvoir" />
             <field name="sexe">femme</field>
-            <field name="recruteur_user_id" ref="user_demo_stephanie_latendresse"/>
+            <field name="recruteur_user_id" ref="user_demo_stephanie_latendresse" />
             <field name="date_naissance">1980-08-07</field>
-            <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_autre')),(4, ref('ceppp_patient_partenaire.ceppp_langue_anglais'))]"/>
+            <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_autre')),(4, ref('ceppp_patient_partenaire.ceppp_langue_anglais'))]" />
         </record>
         <record id="ceppp_patient_recruteur_2" model="ceppp.recruteur">
-            <field name="patient_partner_id" ref="partner_demo_steve_lebeau"/>
+            <field name="patient_partner_id" ref="partner_demo_steve_lebeau" />
             <field name="sexe">homme</field>
-            <field name="recruteur_user_id" ref="user_demo_julie_dufour"/>
+            <field name="recruteur_user_id" ref="user_demo_julie_dufour" />
             <field name="date_naissance">1981-09-12</field>
-            <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_francais')),(4, ref('ceppp_patient_partenaire.ceppp_langue_anglais'))]"/>
+            <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_francais')),(4, ref('ceppp_patient_partenaire.ceppp_langue_anglais'))]" />
         </record>
         <record id="ceppp_patient_recruteur_3" model="ceppp.recruteur">
-            <field name="patient_partner_id" ref="partner_demo_martin_petit"/>
+            <field name="patient_partner_id" ref="partner_demo_martin_petit" />
             <field name="sexe">homme</field>
-            <field name="recruteur_user_id" ref="user_demo_jacques_lamotte"/>
+            <field name="recruteur_user_id" ref="user_demo_jacques_lamotte" />
             <field name="date_naissance">1980-08-06</field>
-            <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_francais')),(4, ref('ceppp_patient_partenaire.ceppp_langue_espagnol'))]"/>
+            <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_francais')),(4, ref('ceppp_patient_partenaire.ceppp_langue_espagnol'))]" />
         </record>
         <record id="ceppp_patient_patient_1" model="ceppp.patient">
-            <field name="recruteur_id" ref="ceppp_patient_recruteur_1"/>
+            <field name="recruteur_id" ref="ceppp_patient_recruteur_1" />
         </record>
         <record id="ceppp_patient_patient_2" model="ceppp.patient">
-            <field name="recruteur_id" ref="ceppp_patient_recruteur_2"/>
+            <field name="recruteur_id" ref="ceppp_patient_recruteur_2" />
         </record>
         <record id="ceppp_patient_patient_3" model="ceppp.patient">
-            <field name="recruteur_id" ref="ceppp_patient_recruteur_3"/>
+            <field name="recruteur_id" ref="ceppp_patient_recruteur_3" />
         </record>
     </data>
 </odoo>

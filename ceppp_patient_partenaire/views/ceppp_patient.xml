@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-
     <record id="ceppp_patient_view_form" model="ir.ui.view">
         <field name="name">ceppp_patient_form</field>
         <field name="model">ceppp.patient</field>
@@ -8,26 +7,22 @@
             <form string="Titre">
                 <sheet>
                     <group>
-                        <field name="uuid"/>
-                        <field name="recruteur_partner_id"/>
-                        <field name="centre_recruteur"/>
+                        <field name="uuid" />
+                        <field name="recruteur_partner_id" />
+                        <field name="centre_recruteur" />
                     </group>
                     <notebook>
                         <page name='disponibilite' string="Disponibilité">
-                            <group>
-                            </group>
+                            <group />
                         </page>
                         <page name='savoir_experientiel' string="Savoirs expérientiels">
-                            <group>
-                            </group>
+                            <group />
                         </page>
                         <page name='formation' string="Formations">
-                            <group>
-                            </group>
+                            <group />
                         </page>
                         <page name='implication' string="Implications">
-                            <group>
-                            </group>
+                            <group />
                         </page>
                     </notebook>
                 </sheet>
@@ -40,7 +35,7 @@
         <field name="model">ceppp.patient</field>
         <field name="arch" type="xml">
             <graph string="Ceppp patient">
-                <field name="uuid" type="row"/>
+                <field name="uuid" type="row" />
             </graph>
         </field>
     </record>
@@ -50,7 +45,7 @@
         <field name="model">ceppp.patient</field>
         <field name="arch" type="xml">
             <kanban class="o_kanban_mobile">
-                <field name="uuid"/>
+                <field name="uuid" />
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
@@ -58,7 +53,7 @@
                                 <ul>
                                     <li class="mb4">
                                         <strong>
-                                            <field name="uuid"/>
+                                            <field name="uuid" />
                                         </strong>
                                     </li>
                                 </ul>
@@ -75,7 +70,7 @@
         <field name="model">ceppp.patient</field>
         <field name="arch" type="xml">
             <pivot string="Ceppp patient">
-                <field name="uuid" type="row"/>
+                <field name="uuid" type="row" />
             </pivot>
         </field>
     </record>
@@ -85,7 +80,7 @@
         <field name="model">ceppp.patient</field>
         <field name="arch" type="xml">
             <search string="Ceppp patient">
-                <filter domain="[('uuid','!=',False)]" name="uuid" string="Code"/>
+                <filter domain="[('uuid','!=',False)]" name="uuid" string="Code" />
             </search>
         </field>
     </record>
@@ -95,7 +90,7 @@
         <field name="model">ceppp.patient</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="uuid"/>
+                <field name="uuid" />
             </tree>
         </field>
     </record>
@@ -106,5 +101,4 @@
         res_model="ceppp.patient"
         view_mode="kanban,tree,pivot,graph,form"
     />
-
 </odoo>
