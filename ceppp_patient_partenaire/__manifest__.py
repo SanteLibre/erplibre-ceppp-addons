@@ -11,7 +11,7 @@
         "mail",
     ],
     "data": [
-        "security/security.xml",
+        "security/ceppp_patient_partenaire.xml",
         "security/ir.model.access.csv",
         "views/ceppp_chapitre_maladie.xml",
         "data/ceppp_chapitre_maladie.xml",
@@ -31,7 +31,7 @@
         "data/ceppp_occupation.xml",
         "views/ceppp_patient.xml",
         "views/ceppp_recruteur.xml",
-        "views/res_partner_views.xml",
+        "views/res_partner.xml",
         "views/menu.xml",
         "data/ir_attachment.xml",
     ],
