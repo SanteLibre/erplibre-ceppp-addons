@@ -10,11 +10,13 @@ class CepppRecruteur(models.Model):
 
     name = fields.Char(
         related="patient_partner_id.name",
+        track_visibility="onchange",
     )
 
     active = fields.Boolean(
         string="Actif",
         default=True,
+        track_visibility="onchange",
         help=(
             "Lorsque non actif, ce patient n'est plus en fonction, mais"
             " demeure accessible."
@@ -23,6 +25,7 @@ class CepppRecruteur(models.Model):
 
     disponibilite = fields.Many2many(
         comodel_name="ceppp.disponibilite",
+        track_visibility="onchange",
         string="Disponible",
         help="Jour de la semaine de disponible",
     )
@@ -30,6 +33,7 @@ class CepppRecruteur(models.Model):
     disponibilite_not = fields.Many2many(
         comodel_name="ceppp.disponibilite",
         string="Non disponible",
+        track_visibility="onchange",
         relation="ceppp_recruteur_disponibilite_not_rel",
         help="Jour de la semaine de non-disponible",
     )
@@ -49,6 +53,7 @@ class CepppRecruteur(models.Model):
 
     recruteur_partner_id = fields.Many2one(
         comodel_name="res.partner",
+        track_visibility="onchange",
         string="Recruteur",
     )
 
@@ -60,11 +65,13 @@ class CepppRecruteur(models.Model):
     )
 
     consentement_notification = fields.Boolean(
-        string="Consentement aux notifications/communications"
+        string="Consentement aux notifications/communications",
+        track_visibility="onchange",
     )
 
     consentement_recrutement = fields.Boolean(
         string="Consentement au recrutement",
+        track_visibility="onchange",
         help=(
             "Consentement dans le cadre d'activités de partenariat. Si vous"
             " voulez vous retirer en tant que patient partenaire, veuillez"
@@ -75,6 +82,7 @@ class CepppRecruteur(models.Model):
 
     consentement_recherche = fields.Boolean(
         string="Consentement à la recherche",
+        track_visibility="onchange",
         help=(
             "Consentement dans le cadre d'activités de recherche sur le"
             " partenariat."
@@ -83,37 +91,44 @@ class CepppRecruteur(models.Model):
 
     centre_recruteur = fields.Char(
         related="patient_partner_id.parent_id.name",
+        track_visibility="onchange",
         string="Centre de recrutement",
         help="Affiliation",
     )
 
     courriel = fields.Char(
         string="Adresse courriel",
+        track_visibility="onchange",
         related="patient_partner_id.email",
     )
 
     adresse_postale = fields.Char(
         string="Adresse postale",
+        track_visibility="onchange",
         related="patient_partner_id.zip",
     )
 
     telephone = fields.Char(
         string="Téléphone",
+        track_visibility="onchange",
         related="patient_partner_id.phone",
     )
 
     mobile = fields.Char(
         string="Téléphone mobile",
+        track_visibility="onchange",
         related="patient_partner_id.mobile",
     )
 
     uuid = fields.Char(
         string="Code",
+        track_visibility="onchange",
         help="Identifiant unique anonymisé.",
     )
 
     date_naissance = fields.Date(
         string="Date de naissance",
+        track_visibility="onchange",
         help=(
             "Permet de connaître le groupe d'âge pour des implications"
             " spécifiques."
@@ -122,6 +137,7 @@ class CepppRecruteur(models.Model):
 
     patient_partner_id = fields.Many2one(
         comodel_name="res.partner",
+        track_visibility="onchange",
         string="Patient",
     )
 
@@ -132,6 +148,7 @@ class CepppRecruteur(models.Model):
             ("intersexe", "Intersexe"),
             ("null", "Préfère ne pas répondre"),
         ],
+        track_visibility="onchange",
         help=(
             "Le sexe fait référence à un ensemble de caractéristiques"
             " biologiques chez les humains et les animaux. Ces"
@@ -152,6 +169,7 @@ class CepppRecruteur(models.Model):
             ("bispirituelle", "Bispirituel.le"),
             ("autre", "Autre"),
         ],
+        track_visibility="onchange",
         help=(
             "Le genre fait référence aux rôles, aux comportements, aux"
             " expressions et aux identités des filles, des femmes, des"
@@ -168,21 +186,25 @@ class CepppRecruteur(models.Model):
 
     genre_autre = fields.Char(
         string="Autre genre",
+        track_visibility="onchange",
         help="Peut être défini lorsque le genre est au choix 'autre'.",
     )
 
     occupation = fields.Many2many(
         comodel_name="ceppp.occupation",
+        track_visibility="onchange",
         help="Occupation principale du temps",
     )
 
     occupation_autre = fields.Char(
         string="Autre occupation",
+        track_visibility="onchange",
         help="Peut être défini lorsque l'occupation est au choix 'autre'.",
     )
 
     formation_professionnelle = fields.Char(
         string="Formation professionnelle",
+        track_visibility="onchange",
         help="Plus haut diplôme obtenu et domaine",
     )
 
@@ -192,6 +214,7 @@ class CepppRecruteur(models.Model):
             ("non", "Non"),
             ("ne_pas_repondre", "Préfère ne pas répondre"),
         ],
+        track_visibility="onchange",
         string="Héritage culturel",
         help=(
             "Est-ce que vous vous identifiez comme membre d'une minorité"
@@ -217,11 +240,13 @@ class CepppRecruteur(models.Model):
 
     langue_parle_ecrit = fields.Many2many(
         comodel_name="ceppp.langue",
+        track_visibility="onchange",
         string="Langues parlées/écrites",
     )
 
     langue_parle_ecrit_autre = fields.Char(
         string="Autre langues parlées/écrites",
+        track_visibility="onchange",
         help=(
             "Peut être défini lorsque la langue parlées/écrites est au choix"
             " 'autre'."
@@ -230,17 +255,20 @@ class CepppRecruteur(models.Model):
 
     mode_communication_privilegie = fields.Many2many(
         comodel_name="ceppp.mode_communication_privilegie",
+        track_visibility="onchange",
         string="Mode de communication privilégié",
     )
 
     maladie_soi_meme = fields.Many2many(
         comodel_name="ceppp.maladie",
+        track_visibility="onchange",
         string="Problématiques de santé (soi-même)",
     )
 
     maladie_proche_aidant = fields.One2many(
         inverse_name="recruteur_id",
         comodel_name="ceppp.maladie_proche_aidant",
+        track_visibility="onchange",
         string=(
             "Problématiques de santé de la personne accompagnée (vous en tant"
             " que proche-aidant)"
@@ -252,6 +280,7 @@ class CepppRecruteur(models.Model):
             ("actif", "Actif"),
             ("passif", "Passif"),
         ],
+        track_visibility="onchange",
         help=(
             "Actif: patient partenaire est disponible à participer dans des"
             " projets. Passif: patient partenaire n'est pas disponible à"
@@ -262,15 +291,41 @@ class CepppRecruteur(models.Model):
     competence_patient = fields.Many2many(
         comodel_name="ceppp.competence",
         string="Compétences au partenariat",
+        track_visibility="onchange",
         help="Compétences du patient.",
     )
 
-    commentaires = fields.Text(string="Commnentaires")
+    commentaires = fields.Text(
+        string="Commnentaires",
+        track_visibility="onchange",
+    )
 
     user_is_admin = fields.Boolean(
         store=False,
         compute="_compute_user_is_admin",
     )
+
+    occupation_is_autre = fields.Boolean(
+        compute="_compute_occupation_is_autre"
+    )
+
+    langue_is_autre = fields.Boolean(compute="_compute_langue_is_autre")
+
+    @api.depends("occupation")
+    def _compute_occupation_is_autre(self):
+        for record in self:
+            record.occupation_is_autre = (
+                self.env.ref("ceppp_patient_partenaire.ceppp_occupation_7").id
+                in self.occupation.ids
+            )
+
+    @api.depends("langue_parle_ecrit")
+    def _compute_langue_is_autre(self):
+        for record in self:
+            record.langue_is_autre = (
+                self.env.ref("ceppp_patient_partenaire.ceppp_langue_autre").id
+                in self.langue_parle_ecrit.ids
+            )
 
     @api.model_create_multi
     def create(self, vals_list):
