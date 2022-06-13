@@ -31,13 +31,19 @@ def post_init_hook(cr, e):
 
         # TODO HUMAN: enable your functionality to generate
         value["enable_template_code_generator_demo"] = False
-        value["template_model_name"] = "ceppp.patient"
-        value["template_inherit_model_name"] = ""
+        value["template_model_name"] = (
+            "ceppp.chapitre_maladie; ceppp.competence; ceppp.formation;"
+            " ceppp.implication; ceppp.langue; ceppp.maladie;"
+            " ceppp.maladie_proche_aidant; ceppp.maladie_soi_meme;"
+            " ceppp.mode_communication_privilegie; ceppp.occupation;"
+            " ceppp.patient; ceppp.recruteur; res.partner"
+        )
+        value["template_inherit_model_name"] = "res.partner"
         value[
             "template_module_path_generated_extension"
         ] = path_module_generate
         value["enable_template_wizard_view"] = True
-        value["force_generic_template_wizard_view"] = False
+        value["force_generic_template_wizard_view"] = True
         value["disable_generate_access"] = False
         value["enable_template_website_snippet_view"] = False
         value["enable_sync_template"] = True
