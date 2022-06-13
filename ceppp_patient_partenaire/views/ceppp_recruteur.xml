@@ -83,12 +83,29 @@
                         </page>
                         <page name='disponibilite' string="Disponibilité">
                             <group>
-                                <field name="disponibilite" widget="many2many_tags" options="{'no_create': True, 'no_create_edit': True}" domain="[('id','not in',disponibilite_not)]"/>
-                                <field name="disponibilite_not" widget="many2many_tags" options="{'no_create': True, 'no_create_edit': True}" domain="[('id','not in',disponibilite)]" />
+                                <field
+                                    name="disponibilite"
+                                    widget="many2many_tags"
+                                    options="{'no_create': True, 'no_create_edit': True}"
+                                    domain="[('id','not in',disponibilite_not)]"
+                                />
+                                <field
+                                    name="disponibilite_not"
+                                    widget="many2many_tags"
+                                    options="{'no_create': True, 'no_create_edit': True}"
+                                    domain="[('id','not in',disponibilite)]"
+                                />
                             </group>
                         </page>
                         <page name='savoir_experientiel' string="Savoirs expérientiels">
-                            <group />
+                            <group>
+                                <field
+                                    name="maladie_soi_meme"
+                                    widget="many2many_tags"
+                                    options="{'no_create': True, 'no_create_edit': True}"
+                                />
+                                <field name="maladie_proche_aidant" />
+                            </group>
                         </page>
                         <page name='formation' string="Formations">
                             <group>

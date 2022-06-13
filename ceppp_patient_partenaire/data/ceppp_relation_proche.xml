@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_relation_proche_1" model="ceppp.relation_proche">
+            <field name="name">Père</field>
+        </record>
+        <record id="ceppp_relation_proche_2" model="ceppp.relation_proche">
+            <field name="name">Mère</field>
+        </record>
+        <record id="ceppp_relation_proche_3" model="ceppp.relation_proche">
+            <field name="name">Frère</field>
+        </record>
+        <record id="ceppp_relation_proche_4" model="ceppp.relation_proche">
+            <field name="name">Soeur</field>
+        </record>
+        <record id="ceppp_relation_proche_5" model="ceppp.relation_proche">
+            <field name="name">Conjoint.e</field>
+        </record>
+        <record id="ceppp_relation_proche_6" model="ceppp.relation_proche">
+            <field name="name">Enfant</field>
+        </record>
+        <record id="ceppp_relation_proche_7" model="ceppp.relation_proche">
+            <field name="name">Ami</field>
+        </record>
+        <record id="ceppp_relation_proche_8" model="ceppp.relation_proche">
+            <field name="name">Parent</field>
+        </record>
+        <record id="ceppp_relation_proche_9" model="ceppp.relation_proche">
+            <field name="name">Autre</field>
+        </record>
+    </data>
+</odoo>

@@ -30,7 +30,7 @@ class CepppRecruteur(models.Model):
     disponibilite_not = fields.Many2many(
         comodel_name="ceppp.disponibilite",
         string="Non disponible",
-        relation='ceppp_recruteur_disponibilite_not_rel',
+        relation="ceppp_recruteur_disponibilite_not_rel",
         help="Jour de la semaine de non-disponible",
     )
 
@@ -233,6 +233,19 @@ class CepppRecruteur(models.Model):
         string="Mode de communication privilégié",
     )
 
+    maladie_soi_meme = fields.Many2many(
+        comodel_name="ceppp.maladie",
+        string="Problématiques de santé (soi-même)",
+    )
+
+    maladie_proche_aidant = fields.One2many(
+        inverse_name="recruteur_id",
+        comodel_name="ceppp.maladie_proche_aidant",
+        string=(
+            "Problématiques de santé de la personne accompagnée (vous en tant"
+            " que proche-aidant)"
+        ),
+    )
     patient_actif = fields.Selection(
         string="Patient actif-passif",
         selection=[

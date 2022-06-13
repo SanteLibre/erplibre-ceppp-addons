@@ -42,3 +42,11 @@ class CepppPatient(models.Model):
     centre_recruteur = fields.Char(
         related="recruteur_id.centre_recruteur",
     )
+
+    maladie_soi_meme = fields.Many2many(
+        related="recruteur_id.maladie_soi_meme",
+    )
+
+    maladie_proche_aidant = fields.One2many(
+        related="recruteur_id.maladie_proche_aidant",
+    )

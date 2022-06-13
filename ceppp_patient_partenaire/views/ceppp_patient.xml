@@ -22,7 +22,10 @@
                             </group>
                         </page>
                         <page name='savoir_experientiel' string="Savoirs expérientiels">
-                            <group />
+                            <group>
+                                <field name="maladie_soi_meme" widget="many2many_tags" />
+                                <field name="maladie_proche_aidant" />
+                            </group>
                         </page>
                         <page name='formation' string="Formations">
                             <group />

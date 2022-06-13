@@ -9,10 +9,10 @@ from . import (
     ceppp_langue,
     ceppp_maladie,
     ceppp_maladie_proche_aidant,
-    ceppp_maladie_soi_meme,
     ceppp_mode_communication_privilegie,
     ceppp_occupation,
     ceppp_patient,
     ceppp_recruteur,
+    ceppp_relation_proche,
     res_partner,
 )

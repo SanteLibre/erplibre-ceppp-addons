@@ -7,7 +7,18 @@
             <form string="Titre">
                 <sheet>
                     <group>
-                        <field name="name" />
+                        <field
+                            name="maladie"
+                            widget="many2many_tags"
+                            options="{'no_create': True, 'no_create_edit': True}"
+                        />
+                        <field
+                            name="relation"
+                            widget="many2many_tags"
+                            options="{'no_create': True, 'no_create_edit': True}"
+                        />
+                        <field name="relation_is_autre" invisible="1" />
+                        <field name="relation_autre" attrs="{'invisible':[('relation_is_autre','=',False)]}" />
                     </group>
                 </sheet>
             </form>
@@ -20,6 +31,7 @@
         <field name="arch" type="xml">
             <graph string="Ceppp maladie proche aidant">
                 <field name="name" type="row" />
+                <field name="relation_autre" type="row" />
             </graph>
         </field>
     </record>
@@ -30,6 +42,9 @@
         <field name="arch" type="xml">
             <kanban class="o_kanban_mobile">
                 <field name="name" />
+                <field name="maladie" />
+                <field name="relation" />
+                <field name="relation_autre" />
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
@@ -55,6 +70,7 @@
         <field name="arch" type="xml">
             <pivot string="Ceppp maladie proche aidant">
                 <field name="name" type="row" />
+                <field name="relation_autre" type="row" />
             </pivot>
         </field>
     </record>
@@ -65,6 +81,13 @@
         <field name="arch" type="xml">
             <search string="Ceppp maladie proche aidant">
                 <filter domain="[('name','!=',False)]" name="name" string="Name" />
+                <filter domain="[('maladie','!=',False)]" name="maladie" string="Maladies" />
+                <filter
+                    domain="[('relation','!=',False)]"
+                    name="relation"
+                    string="Relation avec la personne aid&#233;e"
+                />
+                <filter domain="[('relation_autre','!=',False)]" name="relation_autre" string="Autre relation" />
             </search>
         </field>
     </record>
@@ -74,7 +97,9 @@
         <field name="model">ceppp.maladie_proche_aidant</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="name" />
+                <field name="maladie" widget="many2many_tags" />
+                <field name="relation" widget="many2many_tags" />
+                <field name="relation_autre" />
             </tree>
         </field>
     </record>

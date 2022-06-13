@@ -121,6 +121,14 @@
         parent="menu_configuration"
     />
 
+    <menuitem
+        id="menu_relation_proche"
+        name="Relation proche"
+        action="ceppp_relation_proche_relation_proche_action_window"
+        sequence="9"
+        parent="menu_configuration"
+    />
+
     <!--    <record model="ir.ui.menu" id="contacts.menu_contacts">-->
     <!--        &lt;!&ndash; Replace all group in contacts.menu_contacts &ndash;&gt;-->
     <!--        <field name="groups_id"-->
