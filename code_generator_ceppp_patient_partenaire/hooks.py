@@ -799,6 +799,10 @@ return super(CepppRecruteur, self).create(vals_list)""",
             }
             env["code.generator.model.code.import"].create(value)
 
+        # Add/Update Ceppp Disponibilite
+        model_model = "ceppp.disponibilite"
+        code_generator_id.add_update_model(model_model)
+
         # Generate view
         # Action generate view
         wizard_view = env["code.generator.generate.views.wizard"].create(

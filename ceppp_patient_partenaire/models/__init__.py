@@ -3,6 +3,7 @@
 from . import (
     ceppp_chapitre_maladie,
     ceppp_competence,
+    ceppp_disponibilite,
     ceppp_formation,
     ceppp_implication,
     ceppp_langue,

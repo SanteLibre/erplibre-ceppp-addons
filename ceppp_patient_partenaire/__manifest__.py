@@ -16,6 +16,8 @@
         "views/ceppp_chapitre_maladie.xml",
         "data/ceppp_chapitre_maladie.xml",
         "views/ceppp_competence.xml",
+        "views/ceppp_disponibilite.xml",
+        "data/ceppp_disponibilite.xml",
         "data/ceppp_competence.xml",
         "views/ceppp_formation.xml",
         "views/ceppp_implication.xml",

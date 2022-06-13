@@ -10,6 +10,24 @@ class CepppPatient(models.Model):
 
     uuid = fields.Char(related="recruteur_id.uuid")
 
+    consentement_notification = fields.Boolean(
+        related="recruteur_id.consentement_notification"
+    )
+
+    consentement_recrutement = fields.Boolean(
+        related="recruteur_id.consentement_recrutement"
+    )
+
+    consentement_recherche = fields.Boolean(
+        related="recruteur_id.consentement_recherche"
+    )
+
+    disponibilite = fields.Many2many(related="recruteur_id.disponibilite")
+
+    disponibilite_not = fields.Many2many(
+        related="recruteur_id.disponibilite_not"
+    )
+
     name = fields.Char(related="recruteur_id.name")
 
     recruteur_id = fields.Many2one(

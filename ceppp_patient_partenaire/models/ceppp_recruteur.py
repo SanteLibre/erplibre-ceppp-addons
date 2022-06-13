@@ -21,6 +21,19 @@ class CepppRecruteur(models.Model):
         ),
     )
 
+    disponibilite = fields.Many2many(
+        comodel_name="ceppp.disponibilite",
+        string="Disponible",
+        help="Jour de la semaine de disponible",
+    )
+
+    disponibilite_not = fields.Many2many(
+        comodel_name="ceppp.disponibilite",
+        string="Non disponible",
+        relation='ceppp_recruteur_disponibilite_not_rel',
+        help="Jour de la semaine de non-disponible",
+    )
+
     image = fields.Binary(
         related="patient_partner_id.image",
         readonly=True,

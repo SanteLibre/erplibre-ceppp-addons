@@ -32,8 +32,8 @@ def post_init_hook(cr, e):
         # TODO HUMAN: enable your functionality to generate
         value["enable_template_code_generator_demo"] = False
         value["template_model_name"] = (
-            "ceppp.chapitre_maladie; ceppp.competence; ceppp.formation;"
-            " ceppp.implication; ceppp.langue; ceppp.maladie;"
+            "ceppp.disponibilite; ceppp.chapitre_maladie; ceppp.competence;"
+            " ceppp.formation; ceppp.implication; ceppp.langue; ceppp.maladie;"
             " ceppp.maladie_proche_aidant; ceppp.maladie_soi_meme;"
             " ceppp.mode_communication_privilegie; ceppp.occupation;"
             " ceppp.patient; ceppp.recruteur"

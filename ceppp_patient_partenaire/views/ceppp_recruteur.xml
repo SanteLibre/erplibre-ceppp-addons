@@ -82,7 +82,10 @@
                             <field name="commentaires" />
                         </page>
                         <page name='disponibilite' string="Disponibilité">
-                            <group />
+                            <group>
+                                <field name="disponibilite" widget="many2many_tags" options="{'no_create': True, 'no_create_edit': True}" domain="[('id','not in',disponibilite_not)]"/>
+                                <field name="disponibilite_not" widget="many2many_tags" options="{'no_create': True, 'no_create_edit': True}" domain="[('id','not in',disponibilite)]" />
+                            </group>
                         </page>
                         <page name='savoir_experientiel' string="Savoirs expérientiels">
                             <group />

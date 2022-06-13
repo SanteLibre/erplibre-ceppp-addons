@@ -55,10 +55,19 @@
     />
 
     <menuitem
+        id="menu_disponibilite"
+        name="Disponibilite"
+        string="Disponibilité"
+        action="ceppp_disponibilite_disponibilite_action_window"
+        sequence="2"
+        parent="menu_configuration"
+    />
+
+    <menuitem
         id="menu_formation"
         name="Formation"
         action="ceppp_formation_formation_action_window"
-        sequence="2"
+        sequence="3"
         parent="menu_configuration"
     />
 
@@ -66,7 +75,7 @@
         id="menu_implication"
         name="Implication"
         action="ceppp_implication_implication_action_window"
-        sequence="3"
+        sequence="4"
         parent="menu_configuration"
     />
 
@@ -74,11 +83,11 @@
         id="menu_langue"
         name="Langue"
         action="ceppp_langue_langue_action_window"
-        sequence="4"
+        sequence="5"
         parent="menu_configuration"
     />
 
-    <menuitem id="menu_maladie_label" name="Maladie" parent="menu_configuration" sequence="5" />
+    <menuitem id="menu_maladie_label" name="Maladie" parent="menu_configuration" sequence="6" />
 
     <menuitem
         id="menu_chapitre_maladie"

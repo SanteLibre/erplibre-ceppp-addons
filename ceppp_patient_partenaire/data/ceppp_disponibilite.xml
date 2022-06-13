@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_disponibilite_1" model="ceppp.disponibilite">
+            <field name="name">Lundi AM</field>
+        </record>
+        <record id="ceppp_disponibilite_2" model="ceppp.disponibilite">
+            <field name="name">Lundi PM</field>
+        </record>
+        <record id="ceppp_disponibilite_3" model="ceppp.disponibilite">
+            <field name="name">Lundi soir</field>
+        </record>
+        <record id="ceppp_disponibilite_4" model="ceppp.disponibilite">
+            <field name="name">Mardi AM</field>
+        </record>
+        <record id="ceppp_disponibilite_5" model="ceppp.disponibilite">
+            <field name="name">Mardi PM</field>
+        </record>
+        <record id="ceppp_disponibilite_6" model="ceppp.disponibilite">
+            <field name="name">Mardi soir</field>
+        </record>
+        <record id="ceppp_disponibilite_7" model="ceppp.disponibilite">
+            <field name="name">Mercredi AM</field>
+        </record>
+        <record id="ceppp_disponibilite_8" model="ceppp.disponibilite">
+            <field name="name">Mercredi PM</field>
+        </record>
+        <record id="ceppp_disponibilite_9" model="ceppp.disponibilite">
+            <field name="name">Mercredi soir</field>
+        </record>
+        <record id="ceppp_disponibilite_10" model="ceppp.disponibilite">
+            <field name="name">Jeudi AM</field>
+        </record>
+        <record id="ceppp_disponibilite_11" model="ceppp.disponibilite">
+            <field name="name">Jeudi PM</field>
+        </record>
+        <record id="ceppp_disponibilite_12" model="ceppp.disponibilite">
+            <field name="name">Jeudi soir</field>
+        </record>
+        <record id="ceppp_disponibilite_13" model="ceppp.disponibilite">
+            <field name="name">Vendredi AM</field>
+        </record>
+        <record id="ceppp_disponibilite_14" model="ceppp.disponibilite">
+            <field name="name">Vendredi PM</field>
+        </record>
+        <record id="ceppp_disponibilite_15" model="ceppp.disponibilite">
+            <field name="name">Vendredi soir</field>
+        </record>
+        <record id="ceppp_disponibilite_16" model="ceppp.disponibilite">
+            <field name="name">Samedi AM</field>
+        </record>
+        <record id="ceppp_disponibilite_17" model="ceppp.disponibilite">
+            <field name="name">Samedi PM</field>
+        </record>
+        <record id="ceppp_disponibilite_18" model="ceppp.disponibilite">
+            <field name="name">Samedi soir</field>
+        </record>
+        <record id="ceppp_disponibilite_19" model="ceppp.disponibilite">
+            <field name="name">Dimanche AM</field>
+        </record>
+        <record id="ceppp_disponibilite_20" model="ceppp.disponibilite">
+            <field name="name">Dimanche PM</field>
+        </record>
+        <record id="ceppp_disponibilite_21" model="ceppp.disponibilite">
+            <field name="name">Dimanche soir</field>
+        </record>
+    </data>
+</odoo>
