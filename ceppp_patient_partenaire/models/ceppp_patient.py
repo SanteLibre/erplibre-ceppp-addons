@@ -54,3 +54,7 @@ class CepppPatient(models.Model):
     formation = fields.One2many(
         related="recruteur_id.formation",
     )
+
+    implication = fields.One2many(
+        related="recruteur_id.implication",
+    )

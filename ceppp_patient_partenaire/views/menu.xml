@@ -121,6 +121,22 @@
         parent="menu_configuration"
     />
 
+    <menuitem
+        id="menu_implication_domaine"
+        name="Implication domaine"
+        action="ceppp_implication_domaine_implication_domaine_action_window"
+        sequence="10"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_implication_role"
+        name="Implication role"
+        action="ceppp_implication_role_implication_role_action_window"
+        sequence="10"
+        parent="menu_configuration"
+    />
+
     <!--    <record model="ir.ui.menu" id="contacts.menu_contacts">-->
     <!--        &lt;!&ndash; Replace all group in contacts.menu_contacts &ndash;&gt;-->
     <!--        <field name="groups_id"-->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_implication_role_1" model="ceppp.implication_role">
+            <field name="name">Patient chercheur</field>
+        </record>
+        <record id="ceppp_implication_role_2" model="ceppp.implication_role">
+            <field name="name">Patient formateur</field>
+        </record>
+        <record id="ceppp_implication_role_3" model="ceppp.implication_role">
+            <field name="name">Patient leader</field>
+        </record>
+        <record id="ceppp_implication_role_4" model="ceppp.implication_role">
+            <field name="name">Patient partenaire de soins</field>
+        </record>
+        <record id="ceppp_implication_role_5" model="ceppp.implication_role">
+            <field name="name">Autre</field>
+        </record>
+    </data>
+</odoo>

@@ -34,7 +34,8 @@ def post_init_hook(cr, e):
         value["template_model_name"] = (
             "ceppp.chapitre_maladie; ceppp.competence; ceppp.disponibilite;"
             " ceppp.formation; ceppp.formation_titre; ceppp.implication;"
-            " ceppp.langue; ceppp.maladie; ceppp.maladie_proche_aidant;"
+            " ceppp.implication_domaine; ceppp.implication_role; ceppp.langue;"
+            " ceppp.maladie; ceppp.maladie_proche_aidant;"
             " ceppp.mode_communication_privilegie; ceppp.occupation;"
             " ceppp.patient; ceppp.recruteur; ceppp.relation_proche"
         )

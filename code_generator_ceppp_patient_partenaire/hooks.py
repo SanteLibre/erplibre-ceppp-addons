@@ -135,6 +135,7 @@ def post_init_hook(cr, e):
             "date": {
                 "code_generator_form_simple_view_sequence": 14,
                 "code_generator_sequence": 7,
+                "code_generator_tree_view_sequence": 10,
                 "field_description": "Date",
                 "force_widget": "date",
                 "help": (
@@ -149,13 +150,13 @@ def post_init_hook(cr, e):
             "name": {
                 "code_generator_compute": "_compute_name",
                 "code_generator_sequence": 2,
-                "code_generator_tree_view_sequence": 10,
                 "field_description": "Name",
                 "ttype": "char",
             },
             "organisation": {
                 "code_generator_form_simple_view_sequence": 13,
                 "code_generator_sequence": 5,
+                "code_generator_tree_view_sequence": 13,
                 "field_description": "Organisation",
                 "help": "Quelles organisations a donné cette formation?",
                 "ttype": "char",
@@ -169,6 +170,7 @@ def post_init_hook(cr, e):
             "titre_formation": {
                 "code_generator_form_simple_view_sequence": 10,
                 "code_generator_sequence": 3,
+                "code_generator_tree_view_sequence": 11,
                 "field_description": "Titre de la formation",
                 "force_widget": "many2many_tags",
                 "relation": "ceppp.formation_titre",
@@ -177,6 +179,7 @@ def post_init_hook(cr, e):
             "titre_formation_autre": {
                 "code_generator_form_simple_view_sequence": 12,
                 "code_generator_sequence": 4,
+                "code_generator_tree_view_sequence": 12,
                 "field_description": "Autres formations",
                 "ttype": "char",
             },
@@ -222,7 +225,10 @@ def post_init_hook(cr, e):
     lst_formation = [
         a.name for a in record.titre_formation if a.id != id_autre
     ]
-    if record.titre_formation_is_autre and record.titre_formation_autre:
+    if (
+        record.titre_formation_is_autre
+        and record.titre_formation_autre
+    ):
         lst_formation += [record.titre_formation_autre]
     record.name = ";".join(lst_formation)""",
                     "name": "_compute_name",
@@ -267,6 +273,148 @@ def post_init_hook(cr, e):
             "description": "ceppp_implication",
         }
         dct_field = {
+            "description": {
+                "code_generator_sequence": 5,
+                "field_description": "Description",
+                "help": (
+                    "Description générale projet + tâches patients partenaires"
+                ),
+                "ttype": "text",
+            },
+            "domaine": {
+                "code_generator_sequence": 8,
+                "field_description": "Domaine",
+                "help": "Domaine d'implication",
+                "relation": "ceppp.implication_domaine",
+                "ttype": "many2many",
+            },
+            "domaine_autre": {
+                "code_generator_sequence": 9,
+                "field_description": "Autres domaines",
+                "ttype": "char",
+            },
+            "domaine_is_autre": {
+                "code_generator_compute": "_compute_domaine_is_autre",
+                "code_generator_sequence": 15,
+                "field_description": "Domaine Is Autre",
+                "ttype": "boolean",
+            },
+            "echeance_debut": {
+                "code_generator_sequence": 10,
+                "field_description": "Échéance début",
+                "help": "Période de début du projet",
+                "ttype": "date",
+            },
+            "echeance_fin": {
+                "code_generator_sequence": 11,
+                "field_description": "Échéance fin",
+                "help": "Période de fin du projet",
+                "ttype": "date",
+            },
+            "name": {
+                "code_generator_compute": "_compute_name",
+                "code_generator_form_simple_view_sequence": 10,
+                "code_generator_sequence": 2,
+                "code_generator_tree_view_sequence": 10,
+                "field_description": "Name",
+                "ttype": "char",
+            },
+            "nom_equipe": {
+                "code_generator_sequence": 4,
+                "field_description": "Nom de l'équipe",
+                "ttype": "char",
+            },
+            "recruteur_id": {
+                "code_generator_sequence": 12,
+                "field_description": "Recruteur",
+                "relation": "ceppp.recruteur",
+                "ttype": "many2one",
+            },
+            "role": {
+                "code_generator_sequence": 6,
+                "field_description": "Rôle",
+                "help": "Rôle au sein de ce projet/cette équipe.",
+                "relation": "ceppp.implication_role",
+                "ttype": "many2many",
+            },
+            "role_autre": {
+                "code_generator_sequence": 7,
+                "field_description": "Autres rôles",
+                "ttype": "char",
+            },
+            "role_is_autre": {
+                "code_generator_compute": "_compute_role_is_autre",
+                "code_generator_sequence": 13,
+                "field_description": "Role Is Autre",
+                "ttype": "boolean",
+            },
+            "titre": {
+                "code_generator_sequence": 3,
+                "field_description": "Titre du projet",
+                "ttype": "char",
+            },
+        }
+        model_ceppp_implication = code_generator_id.add_update_model(
+            model_model,
+            model_name,
+            dct_field=dct_field,
+            dct_model=dct_model,
+        )
+
+        # Generate code
+        if True:
+            # Generate code model
+            lst_value = [
+                {
+                    "code": """for record in self:
+    record.role_is_autre = (
+        self.env.ref(
+            "ceppp_patient_partenaire.ceppp_implication_role_5"
+        ).id
+        in record.role.ids
+    )""",
+                    "name": "_compute_role_is_autre",
+                    "decorator": '@api.depends("role")',
+                    "param": "self",
+                    "sequence": 0,
+                    "m2o_module": code_generator_id.id,
+                    "m2o_model": model_ceppp_implication.id,
+                },
+                {
+                    "code": """for record in self:
+    record.domaine_is_autre = (
+        self.env.ref(
+            "ceppp_patient_partenaire.ceppp_implication_domaine_8"
+        ).id
+        in record.domaine.ids
+    )""",
+                    "name": "_compute_domaine_is_autre",
+                    "decorator": '@api.depends("domaine")',
+                    "param": "self",
+                    "sequence": 1,
+                    "m2o_module": code_generator_id.id,
+                    "m2o_model": model_ceppp_implication.id,
+                },
+                {
+                    "code": """for record in self:
+    record.name = record.titre""",
+                    "name": "_compute_name",
+                    "decorator": '@api.depends("titre")',
+                    "param": "self",
+                    "sequence": 2,
+                    "m2o_module": code_generator_id.id,
+                    "m2o_model": model_ceppp_implication.id,
+                },
+            ]
+            env["code.generator.model.code"].create(lst_value)
+
+        # Add/Update Ceppp Implication Domaine
+        model_model = "ceppp.implication_domaine"
+        model_name = "ceppp_implication_domaine"
+        dct_model = {
+            "description": "ceppp_implication_domaine",
+        }
+        dct_field = {
             "name": {
                 "code_generator_form_simple_view_sequence": 10,
                 "code_generator_sequence": 2,
@@ -275,7 +423,29 @@ def post_init_hook(cr, e):
                 "ttype": "char",
             },
         }
-        model_ceppp_implication = code_generator_id.add_update_model(
+        model_ceppp_implication_domaine = code_generator_id.add_update_model(
+            model_model,
+            model_name,
+            dct_field=dct_field,
+            dct_model=dct_model,
+        )
+
+        # Add/Update Ceppp Implication Role
+        model_model = "ceppp.implication_role"
+        model_name = "ceppp_implication_role"
+        dct_model = {
+            "description": "ceppp_implication_role",
+        }
+        dct_field = {
+            "name": {
+                "code_generator_form_simple_view_sequence": 10,
+                "code_generator_sequence": 2,
+                "code_generator_tree_view_sequence": 10,
+                "field_description": "Name",
+                "ttype": "char",
+            },
+        }
+        model_ceppp_implication_role = code_generator_id.add_update_model(
             model_model,
             model_name,
             dct_field=dct_field,
@@ -646,14 +816,14 @@ from odoo import _, api, fields, models""",
             },
             "commentaires": {
                 "code_generator_form_simple_view_sequence": 34,
-                "code_generator_sequence": 38,
+                "code_generator_sequence": 39,
                 "field_description": "Commnentaires",
                 "track_visibility": "onchange",
                 "ttype": "text",
             },
             "competence_patient": {
                 "code_generator_form_simple_view_sequence": 33,
-                "code_generator_sequence": 37,
+                "code_generator_sequence": 38,
                 "field_description": "Compétences au partenariat",
                 "help": "Compétences du patient.",
                 "relation": "ceppp.competence",
@@ -839,7 +1009,7 @@ from odoo import _, api, fields, models""",
             "langue_is_autre": {
                 "code_generator_compute": "_compute_langue_is_autre",
                 "code_generator_form_simple_view_sequence": 15,
-                "code_generator_sequence": 41,
+                "code_generator_sequence": 42,
                 "field_description": "Langue Is Autre",
                 "ttype": "boolean",
             },
@@ -915,13 +1085,13 @@ from odoo import _, api, fields, models""",
             "occupation_is_autre": {
                 "code_generator_compute": "_compute_occupation_is_autre",
                 "code_generator_form_simple_view_sequence": 14,
-                "code_generator_sequence": 40,
+                "code_generator_sequence": 41,
                 "field_description": "Occupation Is Autre",
                 "ttype": "boolean",
             },
             "patient_actif": {
                 "code_generator_form_simple_view_sequence": 27,
-                "code_generator_sequence": 36,
+                "code_generator_sequence": 37,
                 "field_description": "Patient actif-passif",
                 "help": (
                     "Actif: patient partenaire est disponible à participer"
@@ -988,7 +1158,7 @@ from odoo import _, api, fields, models""",
             "user_is_admin": {
                 "code_generator_compute": "_compute_user_is_admin",
                 "code_generator_form_simple_view_sequence": 13,
-                "code_generator_sequence": 39,
+                "code_generator_sequence": 40,
                 "field_description": "User Is Admin",
                 "ttype": "boolean",
             },
@@ -1158,7 +1328,6 @@ return super(CepppRecruteur, self).create(vals_list)""",
         }
         code_generator_id.add_update_model_one2many(model_model, dct_field)
 
-
         model_model = "ceppp.recruteur"
         dct_field = {
             "formation": {
@@ -1168,6 +1337,14 @@ return super(CepppRecruteur, self).create(vals_list)""",
                 "code_generator_sequence": 35,
                 "code_generator_form_simple_view_sequence": 40,
                 "relation": "ceppp.formation",
+                "relation_field": "recruteur_id",
+            },
+            "implication": {
+                "field_description": "Implication",
+                "ttype": "one2many",
+                "track_visibility": "onchange",
+                "code_generator_sequence": 36,
+                "relation": "ceppp.implication",
                 "relation_field": "recruteur_id",
             },
             "maladie_proche_aidant": {

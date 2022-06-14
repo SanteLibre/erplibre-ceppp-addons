@@ -128,7 +128,9 @@
                             </group>
                         </page>
                         <page name='implication' string="Implications">
-                            <group />
+                            <group>
+                                <field name="implication" />
+                            </group>
                         </page>
                     </notebook>
                 </sheet>

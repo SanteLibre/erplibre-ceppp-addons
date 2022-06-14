@@ -281,6 +281,12 @@ class CepppRecruteur(models.Model):
         track_visibility="onchange",
     )
 
+    implication = fields.One2many(
+        comodel_name="ceppp.implication",
+        inverse_name="recruteur_id",
+        track_visibility="onchange",
+    )
+
     patient_actif = fields.Selection(
         selection=[("actif", "Actif"), ("passif", "Passif")],
         string="Patient actif-passif",

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_implication_domaine_1" model="ceppp.implication_domaine">
+            <field name="name">Soins</field>
+        </record>
+        <record id="ceppp_implication_domaine_2" model="ceppp.implication_domaine">
+            <field name="name">Recherche</field>
+        </record>
+        <record id="ceppp_implication_domaine_3" model="ceppp.implication_domaine">
+            <field name="name">Formation</field>
+        </record>
+        <record id="ceppp_implication_domaine_4" model="ceppp.implication_domaine">
+            <field name="name">Gouvernance</field>
+        </record>
+        <record id="ceppp_implication_domaine_5" model="ceppp.implication_domaine">
+            <field name="name">Communautaire</field>
+        </record>
+        <record id="ceppp_implication_domaine_6" model="ceppp.implication_domaine">
+            <field name="name">Politique</field>
+        </record>
+        <record id="ceppp_implication_domaine_7" model="ceppp.implication_domaine">
+            <field name="name">Santé numérique</field>
+        </record>
+        <record id="ceppp_implication_domaine_8" model="ceppp.implication_domaine">
+            <field name="name">Autre</field>
+        </record>
+    </data>
+</odoo>

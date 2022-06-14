@@ -7,6 +7,8 @@ from . import (
     ceppp_formation,
     ceppp_formation_titre,
     ceppp_implication,
+    ceppp_implication_domaine,
+    ceppp_implication_role,
     ceppp_langue,
     ceppp_maladie,
     ceppp_maladie_proche_aidant,
