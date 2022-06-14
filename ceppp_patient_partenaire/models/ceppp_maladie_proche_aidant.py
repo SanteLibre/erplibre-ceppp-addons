@@ -32,7 +32,7 @@ class CepppMaladieProcheAidant(models.Model):
                 self.env.ref(
                     "ceppp_patient_partenaire.ceppp_relation_proche_9"
                 ).id
-                in self.relation.ids
+                in record.relation.ids
             )
 
     @api.depends("maladie", "relation", "relation_autre")

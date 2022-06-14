@@ -5,6 +5,7 @@ from . import (
     ceppp_competence,
     ceppp_disponibilite,
     ceppp_formation,
+    ceppp_formation_titre,
     ceppp_implication,
     ceppp_langue,
     ceppp_maladie,

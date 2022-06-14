@@ -50,3 +50,7 @@ class CepppPatient(models.Model):
     maladie_proche_aidant = fields.One2many(
         related="recruteur_id.maladie_proche_aidant",
     )
+
+    formation = fields.One2many(
+        related="recruteur_id.formation",
+    )

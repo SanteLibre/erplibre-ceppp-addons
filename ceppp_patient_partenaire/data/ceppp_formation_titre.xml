@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_formation_titre_1" model="ceppp.formation_titre">
+            <field name="name">Module 101 Fondements du partenariat</field>
+        </record>
+        <record id="ceppp_formation_titre_2" model="ceppp.formation_titre">
+            <field name="name">Module 201 Les premières étapes du partenariat avec les patients</field>
+        </record>
+        <record id="ceppp_formation_titre_3" model="ceppp.formation_titre">
+            <field name="name">Module 301 Atelier réflexif</field>
+        </record>
+        <record id="ceppp_formation_titre_4" model="ceppp.formation_titre">
+            <field name="name">Module Recrutement</field>
+        </record>
+        <record id="ceppp_formation_titre_5" model="ceppp.formation_titre">
+            <field name="name">Module Évaluation</field>
+        </record>
+        <record id="ceppp_formation_titre_6" model="ceppp.formation_titre">
+            <field name="name">Autre</field>
+        </record>
+    </data>
+</odoo>

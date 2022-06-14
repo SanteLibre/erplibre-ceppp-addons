@@ -28,7 +28,9 @@
                             </group>
                         </page>
                         <page name='formation' string="Formations">
-                            <group />
+                            <group>
+                                <field name="formation" />
+                            </group>
                         </page>
                         <page name='implication' string="Implications">
                             <group />

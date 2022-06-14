@@ -64,22 +64,6 @@
     />
 
     <menuitem
-        id="menu_formation"
-        name="Formation"
-        action="ceppp_formation_formation_action_window"
-        sequence="3"
-        parent="menu_configuration"
-    />
-
-    <menuitem
-        id="menu_implication"
-        name="Implication"
-        action="ceppp_implication_implication_action_window"
-        sequence="4"
-        parent="menu_configuration"
-    />
-
-    <menuitem
         id="menu_langue"
         name="Langue"
         action="ceppp_langue_langue_action_window"
@@ -126,6 +110,14 @@
         name="Relation proche"
         action="ceppp_relation_proche_relation_proche_action_window"
         sequence="9"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_formation_titre"
+        name="Formation"
+        action="ceppp_formation_titre_formation_titre_action_window"
+        sequence="10"
         parent="menu_configuration"
     />
 
