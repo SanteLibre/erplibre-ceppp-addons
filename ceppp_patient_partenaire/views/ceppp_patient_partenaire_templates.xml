@@ -3984,57 +3984,57 @@
         inherit_id="portal.portal_my_home"
     >
         <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
-            <t t-if="res_partner_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Res Partners</t>
-                <t t-set="url" t-value="'/my/res_partners'" />
-                <t t-set="count" t-value="res_partner_count" />
-            </t>
-            <a t-if="not res_partner_count" role="button" class="btn btn-primary btn-block mb8" href="/new/res_partner">
-                <i class="fa fa-plus-circle" />
-                Res Partner
-            </a>
-            <t t-if="ceppp_chapitre_maladie_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Chapitre_Maladies</t>
-                <t t-set="url" t-value="'/my/ceppp_chapitre_maladies'" />
-                <t t-set="count" t-value="ceppp_chapitre_maladie_count" />
-            </t>
-            <a
-                t-if="not ceppp_chapitre_maladie_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_chapitre_maladie"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Chapitre_Maladie
-            </a>
-            <t t-if="ceppp_competence_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Competences</t>
-                <t t-set="url" t-value="'/my/ceppp_competences'" />
-                <t t-set="count" t-value="ceppp_competence_count" />
-            </t>
-            <a
-                t-if="not ceppp_competence_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_competence"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Competence
-            </a>
-            <t t-if="ceppp_disponibilite_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Disponibilites</t>
-                <t t-set="url" t-value="'/my/ceppp_disponibilites'" />
-                <t t-set="count" t-value="ceppp_disponibilite_count" />
-            </t>
-            <a
-                t-if="not ceppp_disponibilite_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_disponibilite"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Disponibilite
-            </a>
+<!--            <t t-if="res_partner_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Res Partners</t>-->
+<!--                <t t-set="url" t-value="'/my/res_partners'" />-->
+<!--                <t t-set="count" t-value="res_partner_count" />-->
+<!--            </t>-->
+<!--            <a t-if="not res_partner_count" role="button" class="btn btn-primary btn-block mb8" href="/new/res_partner">-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Res Partner-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_chapitre_maladie_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Chapitre_Maladies</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_chapitre_maladies'" />-->
+<!--                <t t-set="count" t-value="ceppp_chapitre_maladie_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_chapitre_maladie_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_chapitre_maladie"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Chapitre_Maladie-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_competence_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Competences</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_competences'" />-->
+<!--                <t t-set="count" t-value="ceppp_competence_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_competence_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_competence"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Competence-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_disponibilite_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Disponibilites</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_disponibilites'" />-->
+<!--                <t t-set="count" t-value="ceppp_disponibilite_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_disponibilite_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_disponibilite"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Disponibilite-->
+<!--            </a>-->
             <t t-if="ceppp_formation_count" t-call="portal.portal_docs_entry">
                 <t t-set="title">Ceppp Formations</t>
                 <t t-set="url" t-value="'/my/ceppp_formations'" />
@@ -4049,174 +4049,174 @@
                 <i class="fa fa-plus-circle" />
                 Ceppp Formation
             </a>
-            <t t-if="ceppp_formation_titre_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Formation_Titres</t>
-                <t t-set="url" t-value="'/my/ceppp_formation_titres'" />
-                <t t-set="count" t-value="ceppp_formation_titre_count" />
-            </t>
-            <a
-                t-if="not ceppp_formation_titre_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_formation_titre"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Formation_Titre
-            </a>
-            <t t-if="ceppp_implication_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Implications</t>
-                <t t-set="url" t-value="'/my/ceppp_implications'" />
-                <t t-set="count" t-value="ceppp_implication_count" />
-            </t>
-            <a
-                t-if="not ceppp_implication_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_implication"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Implication
-            </a>
-            <t t-if="ceppp_implication_domaine_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Implication_Domaines</t>
-                <t t-set="url" t-value="'/my/ceppp_implication_domaines'" />
-                <t t-set="count" t-value="ceppp_implication_domaine_count" />
-            </t>
-            <a
-                t-if="not ceppp_implication_domaine_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_implication_domaine"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Implication_Domaine
-            </a>
-            <t t-if="ceppp_implication_role_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Implication_Roles</t>
-                <t t-set="url" t-value="'/my/ceppp_implication_roles'" />
-                <t t-set="count" t-value="ceppp_implication_role_count" />
-            </t>
-            <a
-                t-if="not ceppp_implication_role_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_implication_role"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Implication_Role
-            </a>
-            <t t-if="ceppp_langue_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Langues</t>
-                <t t-set="url" t-value="'/my/ceppp_langues'" />
-                <t t-set="count" t-value="ceppp_langue_count" />
-            </t>
-            <a
-                t-if="not ceppp_langue_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_langue"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Langue
-            </a>
-            <t t-if="ceppp_maladie_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Maladies</t>
-                <t t-set="url" t-value="'/my/ceppp_maladies'" />
-                <t t-set="count" t-value="ceppp_maladie_count" />
-            </t>
-            <a
-                t-if="not ceppp_maladie_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_maladie"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Maladie
-            </a>
-            <t t-if="ceppp_maladie_proche_aidant_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Maladie_Proche_Aidants</t>
-                <t t-set="url" t-value="'/my/ceppp_maladie_proche_aidants'" />
-                <t t-set="count" t-value="ceppp_maladie_proche_aidant_count" />
-            </t>
-            <a
-                t-if="not ceppp_maladie_proche_aidant_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_maladie_proche_aidant"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Maladie_Proche_Aidant
-            </a>
-            <t t-if="ceppp_mode_communication_privilegie_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Mode_Communication_Privilegies</t>
-                <t t-set="url" t-value="'/my/ceppp_mode_communication_privilegies'" />
-                <t t-set="count" t-value="ceppp_mode_communication_privilegie_count" />
-            </t>
-            <a
-                t-if="not ceppp_mode_communication_privilegie_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_mode_communication_privilegie"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Mode_Communication_Privilegie
-            </a>
-            <t t-if="ceppp_occupation_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Occupations</t>
-                <t t-set="url" t-value="'/my/ceppp_occupations'" />
-                <t t-set="count" t-value="ceppp_occupation_count" />
-            </t>
-            <a
-                t-if="not ceppp_occupation_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_occupation"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Occupation
-            </a>
-            <t t-if="ceppp_patient_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Patients</t>
-                <t t-set="url" t-value="'/my/ceppp_patients'" />
-                <t t-set="count" t-value="ceppp_patient_count" />
-            </t>
-            <a
-                t-if="not ceppp_patient_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_patient"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Patient
-            </a>
-            <t t-if="ceppp_recruteur_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Recruteurs</t>
-                <t t-set="url" t-value="'/my/ceppp_recruteurs'" />
-                <t t-set="count" t-value="ceppp_recruteur_count" />
-            </t>
-            <a
-                t-if="not ceppp_recruteur_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_recruteur"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Recruteur
-            </a>
-            <t t-if="ceppp_relation_proche_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Relation_Proches</t>
-                <t t-set="url" t-value="'/my/ceppp_relation_proches'" />
-                <t t-set="count" t-value="ceppp_relation_proche_count" />
-            </t>
-            <a
-                t-if="not ceppp_relation_proche_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_relation_proche"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Relation_Proche
-            </a>
+<!--            <t t-if="ceppp_formation_titre_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Formation_Titres</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_formation_titres'" />-->
+<!--                <t t-set="count" t-value="ceppp_formation_titre_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_formation_titre_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_formation_titre"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Formation_Titre-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_implication_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Implications</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_implications'" />-->
+<!--                <t t-set="count" t-value="ceppp_implication_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_implication_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_implication"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Implication-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_implication_domaine_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Implication_Domaines</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_implication_domaines'" />-->
+<!--                <t t-set="count" t-value="ceppp_implication_domaine_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_implication_domaine_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_implication_domaine"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Implication_Domaine-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_implication_role_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Implication_Roles</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_implication_roles'" />-->
+<!--                <t t-set="count" t-value="ceppp_implication_role_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_implication_role_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_implication_role"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Implication_Role-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_langue_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Langues</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_langues'" />-->
+<!--                <t t-set="count" t-value="ceppp_langue_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_langue_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_langue"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Langue-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_maladie_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Maladies</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_maladies'" />-->
+<!--                <t t-set="count" t-value="ceppp_maladie_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_maladie_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_maladie"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Maladie-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_maladie_proche_aidant_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Maladie_Proche_Aidants</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_maladie_proche_aidants'" />-->
+<!--                <t t-set="count" t-value="ceppp_maladie_proche_aidant_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_maladie_proche_aidant_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_maladie_proche_aidant"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Maladie_Proche_Aidant-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_mode_communication_privilegie_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Mode_Communication_Privilegies</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_mode_communication_privilegies'" />-->
+<!--                <t t-set="count" t-value="ceppp_mode_communication_privilegie_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_mode_communication_privilegie_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_mode_communication_privilegie"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Mode_Communication_Privilegie-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_occupation_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Occupations</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_occupations'" />-->
+<!--                <t t-set="count" t-value="ceppp_occupation_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_occupation_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_occupation"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Occupation-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_patient_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Patients</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_patients'" />-->
+<!--                <t t-set="count" t-value="ceppp_patient_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_patient_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_patient"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Patient-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_recruteur_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Recruteurs</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_recruteurs'" />-->
+<!--                <t t-set="count" t-value="ceppp_recruteur_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_recruteur_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_recruteur"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Recruteur-->
+<!--            </a>-->
+<!--            <t t-if="ceppp_relation_proche_count" t-call="portal.portal_docs_entry">-->
+<!--                <t t-set="title">Ceppp Relation_Proches</t>-->
+<!--                <t t-set="url" t-value="'/my/ceppp_relation_proches'" />-->
+<!--                <t t-set="count" t-value="ceppp_relation_proche_count" />-->
+<!--            </t>-->
+<!--            <a-->
+<!--                t-if="not ceppp_relation_proche_count"-->
+<!--                role="button"-->
+<!--                class="btn btn-primary btn-block mb8"-->
+<!--                href="/new/ceppp_relation_proche"-->
+<!--            >-->
+<!--                <i class="fa fa-plus-circle" />-->
+<!--                Ceppp Relation_Proche-->
+<!--            </a>-->
         </xpath>
     </template>
 
@@ -4226,66 +4226,66 @@
         inherit_id="portal.portal_breadcrumbs"
     >
         <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
-            <li
-                t-if="page_name in ('res_partner', 'create_res_partner') or res_partner"
-                t-attf-class="breadcrumb-item #{'active ' if not res_partner else ''}"
-            >
-                <a
-                    t-if="res_partner or page_name == 'create_res_partner'"
-                    t-attf-href="/my/res_partners?{{ keep_query() }}"
-                >
-                    Res Partners
-                </a>
-                <t t-else="">Res Partners</t>
-            </li>
-            <li t-if="res_partner" class="breadcrumb-item active">
-                <t t-esc="res_partner.name" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_chapitre_maladie', 'create_ceppp_chapitre_maladie') or ceppp_chapitre_maladie"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_chapitre_maladie else ''}"
-            >
-                <a
-                    t-if="ceppp_chapitre_maladie or page_name == 'create_ceppp_chapitre_maladie'"
-                    t-attf-href="/my/ceppp_chapitre_maladies?{{ keep_query() }}"
-                >
-                    Ceppp Chapitre_Maladies
-                </a>
-                <t t-else="">Ceppp Chapitre_Maladies</t>
-            </li>
-            <li t-if="ceppp_chapitre_maladie" class="breadcrumb-item active">
-                <t t-esc="ceppp_chapitre_maladie.nom" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_competence', 'create_ceppp_competence') or ceppp_competence"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_competence else ''}"
-            >
-                <a
-                    t-if="ceppp_competence or page_name == 'create_ceppp_competence'"
-                    t-attf-href="/my/ceppp_competences?{{ keep_query() }}"
-                >
-                    Ceppp Competences
-                </a>
-                <t t-else="">Ceppp Competences</t>
-            </li>
-            <li t-if="ceppp_competence" class="breadcrumb-item active">
-                <t t-esc="ceppp_competence.name" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_disponibilite', 'create_ceppp_disponibilite') or ceppp_disponibilite"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_disponibilite else ''}"
-            >
-                <a
-                    t-if="ceppp_disponibilite or page_name == 'create_ceppp_disponibilite'"
-                    t-attf-href="/my/ceppp_disponibilites?{{ keep_query() }}"
-                >
-                    Ceppp Disponibilites
-                </a>
-                <t t-else="">Ceppp Disponibilites</t>
-            </li>
-            <li t-if="ceppp_disponibilite" class="breadcrumb-item active">
-                <t t-esc="ceppp_disponibilite.name" />
-            </li>
+<!--            <li-->
+<!--                t-if="page_name in ('res_partner', 'create_res_partner') or res_partner"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not res_partner else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="res_partner or page_name == 'create_res_partner'"-->
+<!--                    t-attf-href="/my/res_partners?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Res Partners-->
+<!--                </a>-->
+<!--                <t t-else="">Res Partners</t>-->
+<!--            </li>-->
+<!--            <li t-if="res_partner" class="breadcrumb-item active">-->
+<!--                <t t-esc="res_partner.name" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_chapitre_maladie', 'create_ceppp_chapitre_maladie') or ceppp_chapitre_maladie"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_chapitre_maladie else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_chapitre_maladie or page_name == 'create_ceppp_chapitre_maladie'"-->
+<!--                    t-attf-href="/my/ceppp_chapitre_maladies?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Chapitre_Maladies-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Chapitre_Maladies</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_chapitre_maladie" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_chapitre_maladie.nom" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_competence', 'create_ceppp_competence') or ceppp_competence"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_competence else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_competence or page_name == 'create_ceppp_competence'"-->
+<!--                    t-attf-href="/my/ceppp_competences?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Competences-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Competences</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_competence" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_competence.name" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_disponibilite', 'create_ceppp_disponibilite') or ceppp_disponibilite"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_disponibilite else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_disponibilite or page_name == 'create_ceppp_disponibilite'"-->
+<!--                    t-attf-href="/my/ceppp_disponibilites?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Disponibilites-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Disponibilites</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_disponibilite" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_disponibilite.name" />-->
+<!--            </li>-->
             <li
                 t-if="page_name in ('ceppp_formation', 'create_ceppp_formation') or ceppp_formation"
                 t-attf-class="breadcrumb-item #{'active ' if not ceppp_formation else ''}"
@@ -4316,171 +4316,171 @@
             <li t-if="ceppp_formation_titre" class="breadcrumb-item active">
                 <t t-esc="ceppp_formation_titre.name" />
             </li>
-            <li
-                t-if="page_name in ('ceppp_implication', 'create_ceppp_implication') or ceppp_implication"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_implication else ''}"
-            >
-                <a
-                    t-if="ceppp_implication or page_name == 'create_ceppp_implication'"
-                    t-attf-href="/my/ceppp_implications?{{ keep_query() }}"
-                >
-                    Ceppp Implications
-                </a>
-                <t t-else="">Ceppp Implications</t>
-            </li>
-            <li t-if="ceppp_implication" class="breadcrumb-item active">
-                <t t-esc="ceppp_implication.name" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_implication_domaine', 'create_ceppp_implication_domaine') or ceppp_implication_domaine"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_implication_domaine else ''}"
-            >
-                <a
-                    t-if="ceppp_implication_domaine or page_name == 'create_ceppp_implication_domaine'"
-                    t-attf-href="/my/ceppp_implication_domaines?{{ keep_query() }}"
-                >
-                    Ceppp Implication_Domaines
-                </a>
-                <t t-else="">Ceppp Implication_Domaines</t>
-            </li>
-            <li t-if="ceppp_implication_domaine" class="breadcrumb-item active">
-                <t t-esc="ceppp_implication_domaine.name" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_implication_role', 'create_ceppp_implication_role') or ceppp_implication_role"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_implication_role else ''}"
-            >
-                <a
-                    t-if="ceppp_implication_role or page_name == 'create_ceppp_implication_role'"
-                    t-attf-href="/my/ceppp_implication_roles?{{ keep_query() }}"
-                >
-                    Ceppp Implication_Roles
-                </a>
-                <t t-else="">Ceppp Implication_Roles</t>
-            </li>
-            <li t-if="ceppp_implication_role" class="breadcrumb-item active">
-                <t t-esc="ceppp_implication_role.name" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_langue', 'create_ceppp_langue') or ceppp_langue"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_langue else ''}"
-            >
-                <a
-                    t-if="ceppp_langue or page_name == 'create_ceppp_langue'"
-                    t-attf-href="/my/ceppp_langues?{{ keep_query() }}"
-                >
-                    Ceppp Langues
-                </a>
-                <t t-else="">Ceppp Langues</t>
-            </li>
-            <li t-if="ceppp_langue" class="breadcrumb-item active">
-                <t t-esc="ceppp_langue.nom" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_maladie', 'create_ceppp_maladie') or ceppp_maladie"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_maladie else ''}"
-            >
-                <a
-                    t-if="ceppp_maladie or page_name == 'create_ceppp_maladie'"
-                    t-attf-href="/my/ceppp_maladies?{{ keep_query() }}"
-                >
-                    Ceppp Maladies
-                </a>
-                <t t-else="">Ceppp Maladies</t>
-            </li>
-            <li t-if="ceppp_maladie" class="breadcrumb-item active">
-                <t t-esc="ceppp_maladie.nom" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_maladie_proche_aidant', 'create_ceppp_maladie_proche_aidant') or ceppp_maladie_proche_aidant"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_maladie_proche_aidant else ''}"
-            >
-                <a
-                    t-if="ceppp_maladie_proche_aidant or page_name == 'create_ceppp_maladie_proche_aidant'"
-                    t-attf-href="/my/ceppp_maladie_proche_aidants?{{ keep_query() }}"
-                >
-                    Ceppp Maladie_Proche_Aidants
-                </a>
-                <t t-else="">Ceppp Maladie_Proche_Aidants</t>
-            </li>
-            <li t-if="ceppp_maladie_proche_aidant" class="breadcrumb-item active">
-                <t t-esc="ceppp_maladie_proche_aidant.name" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_mode_communication_privilegie', 'create_ceppp_mode_communication_privilegie') or ceppp_mode_communication_privilegie"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_mode_communication_privilegie else ''}"
-            >
-                <a
-                    t-if="ceppp_mode_communication_privilegie or page_name == 'create_ceppp_mode_communication_privilegie'"
-                    t-attf-href="/my/ceppp_mode_communication_privilegies?{{ keep_query() }}"
-                >
-                    Ceppp Mode_Communication_Privilegies
-                </a>
-                <t t-else="">Ceppp Mode_Communication_Privilegies</t>
-            </li>
-            <li t-if="ceppp_mode_communication_privilegie" class="breadcrumb-item active">
-                <t t-esc="ceppp_mode_communication_privilegie.name" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_occupation', 'create_ceppp_occupation') or ceppp_occupation"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_occupation else ''}"
-            >
-                <a
-                    t-if="ceppp_occupation or page_name == 'create_ceppp_occupation'"
-                    t-attf-href="/my/ceppp_occupations?{{ keep_query() }}"
-                >
-                    Ceppp Occupations
-                </a>
-                <t t-else="">Ceppp Occupations</t>
-            </li>
-            <li t-if="ceppp_occupation" class="breadcrumb-item active">
-                <t t-esc="ceppp_occupation.name" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_patient', 'create_ceppp_patient') or ceppp_patient"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_patient else ''}"
-            >
-                <a
-                    t-if="ceppp_patient or page_name == 'create_ceppp_patient'"
-                    t-attf-href="/my/ceppp_patients?{{ keep_query() }}"
-                >
-                    Ceppp Patients
-                </a>
-                <t t-else="">Ceppp Patients</t>
-            </li>
-            <li t-if="ceppp_patient" class="breadcrumb-item active">
-                <t t-esc="ceppp_patient.uuid" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_recruteur', 'create_ceppp_recruteur') or ceppp_recruteur"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_recruteur else ''}"
-            >
-                <a
-                    t-if="ceppp_recruteur or page_name == 'create_ceppp_recruteur'"
-                    t-attf-href="/my/ceppp_recruteurs?{{ keep_query() }}"
-                >
-                    Ceppp Recruteurs
-                </a>
-                <t t-else="">Ceppp Recruteurs</t>
-            </li>
-            <li t-if="ceppp_recruteur" class="breadcrumb-item active">
-                <t t-esc="ceppp_recruteur.name" />
-            </li>
-            <li
-                t-if="page_name in ('ceppp_relation_proche', 'create_ceppp_relation_proche') or ceppp_relation_proche"
-                t-attf-class="breadcrumb-item #{'active ' if not ceppp_relation_proche else ''}"
-            >
-                <a
-                    t-if="ceppp_relation_proche or page_name == 'create_ceppp_relation_proche'"
-                    t-attf-href="/my/ceppp_relation_proches?{{ keep_query() }}"
-                >
-                    Ceppp Relation_Proches
-                </a>
-                <t t-else="">Ceppp Relation_Proches</t>
-            </li>
-            <li t-if="ceppp_relation_proche" class="breadcrumb-item active">
-                <t t-esc="ceppp_relation_proche.name" />
-            </li>
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_implication', 'create_ceppp_implication') or ceppp_implication"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_implication else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_implication or page_name == 'create_ceppp_implication'"-->
+<!--                    t-attf-href="/my/ceppp_implications?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Implications-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Implications</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_implication" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_implication.name" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_implication_domaine', 'create_ceppp_implication_domaine') or ceppp_implication_domaine"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_implication_domaine else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_implication_domaine or page_name == 'create_ceppp_implication_domaine'"-->
+<!--                    t-attf-href="/my/ceppp_implication_domaines?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Implication_Domaines-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Implication_Domaines</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_implication_domaine" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_implication_domaine.name" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_implication_role', 'create_ceppp_implication_role') or ceppp_implication_role"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_implication_role else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_implication_role or page_name == 'create_ceppp_implication_role'"-->
+<!--                    t-attf-href="/my/ceppp_implication_roles?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Implication_Roles-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Implication_Roles</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_implication_role" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_implication_role.name" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_langue', 'create_ceppp_langue') or ceppp_langue"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_langue else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_langue or page_name == 'create_ceppp_langue'"-->
+<!--                    t-attf-href="/my/ceppp_langues?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Langues-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Langues</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_langue" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_langue.nom" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_maladie', 'create_ceppp_maladie') or ceppp_maladie"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_maladie else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_maladie or page_name == 'create_ceppp_maladie'"-->
+<!--                    t-attf-href="/my/ceppp_maladies?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Maladies-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Maladies</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_maladie" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_maladie.nom" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_maladie_proche_aidant', 'create_ceppp_maladie_proche_aidant') or ceppp_maladie_proche_aidant"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_maladie_proche_aidant else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_maladie_proche_aidant or page_name == 'create_ceppp_maladie_proche_aidant'"-->
+<!--                    t-attf-href="/my/ceppp_maladie_proche_aidants?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Maladie_Proche_Aidants-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Maladie_Proche_Aidants</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_maladie_proche_aidant" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_maladie_proche_aidant.name" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_mode_communication_privilegie', 'create_ceppp_mode_communication_privilegie') or ceppp_mode_communication_privilegie"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_mode_communication_privilegie else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_mode_communication_privilegie or page_name == 'create_ceppp_mode_communication_privilegie'"-->
+<!--                    t-attf-href="/my/ceppp_mode_communication_privilegies?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Mode_Communication_Privilegies-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Mode_Communication_Privilegies</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_mode_communication_privilegie" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_mode_communication_privilegie.name" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_occupation', 'create_ceppp_occupation') or ceppp_occupation"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_occupation else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_occupation or page_name == 'create_ceppp_occupation'"-->
+<!--                    t-attf-href="/my/ceppp_occupations?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Occupations-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Occupations</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_occupation" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_occupation.name" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_patient', 'create_ceppp_patient') or ceppp_patient"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_patient else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_patient or page_name == 'create_ceppp_patient'"-->
+<!--                    t-attf-href="/my/ceppp_patients?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Patients-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Patients</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_patient" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_patient.uuid" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_recruteur', 'create_ceppp_recruteur') or ceppp_recruteur"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_recruteur else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_recruteur or page_name == 'create_ceppp_recruteur'"-->
+<!--                    t-attf-href="/my/ceppp_recruteurs?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Recruteurs-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Recruteurs</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_recruteur" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_recruteur.name" />-->
+<!--            </li>-->
+<!--            <li-->
+<!--                t-if="page_name in ('ceppp_relation_proche', 'create_ceppp_relation_proche') or ceppp_relation_proche"-->
+<!--                t-attf-class="breadcrumb-item #{'active ' if not ceppp_relation_proche else ''}"-->
+<!--            >-->
+<!--                <a-->
+<!--                    t-if="ceppp_relation_proche or page_name == 'create_ceppp_relation_proche'"-->
+<!--                    t-attf-href="/my/ceppp_relation_proches?{{ keep_query() }}"-->
+<!--                >-->
+<!--                    Ceppp Relation_Proches-->
+<!--                </a>-->
+<!--                <t t-else="">Ceppp Relation_Proches</t>-->
+<!--            </li>-->
+<!--            <li t-if="ceppp_relation_proche" class="breadcrumb-item active">-->
+<!--                <t t-esc="ceppp_relation_proche.name" />-->
+<!--            </li>-->
         </xpath>
     </template>
 </odoo>
