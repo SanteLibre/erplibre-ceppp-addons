@@ -8,7 +8,7 @@ from odoo import SUPERUSER_ID, _, api, tools
 _logger = logging.getLogger(__name__)
 
 
-def post_init_hook(cr, e):
+def pre_init_hook(cr):
     with api.Environment.manage():
         env = api.Environment(cr, SUPERUSER_ID, {})
 
@@ -28,6 +28,25 @@ def post_init_hook(cr, e):
                 [("code", "ilike", "QC")], limit=1
             )
             partner.phone = "514 890-8000 poste 15488"
+
+        partners = env["res.partner"].search([("name", "=", "Administrator")])
+        for partner in partners:
+            partner.website = "https://santelibre.ca"
+            partner.name = "Mathieu Benoit"
+            partner.email = "mathieu.benoit@santelibre.ca"
+            partner.country_id = env.ref("base.ca")
+            partner.state_id = env["res.country.state"].search(
+                [("code", "ilike", "QC")], limit=1
+            )
+
+
+def post_init_hook(cr, e):
+    with api.Environment.manage():
+        env = api.Environment(cr, SUPERUSER_ID, {})
+
+        # Update all partner
+        partners = env["res.partner"].search([("name", "=", "CEPPP")])
+        for partner in partners:
             partner_img_attachment = env.ref(
                 "ceppp_patient_partenaire.ir_attachment_logo_ceppp_svg"
             )
@@ -36,15 +55,8 @@ def post_init_hook(cr, e):
             ) as desc_file:
                 partner.image = base64.b64encode(desc_file.read())
 
-        partners = env["res.partner"].search([("name", "=", "Administrator")])
+        partners = env["res.partner"].search([("name", "=", "Mathieu Benoit")])
         for partner in partners:
-            partner.website = "https://ceppp.ca"
-            partner.name = "Mathieu Benoit"
-            partner.email = "mathieu.benoit@santelibre.ca"
-            partner.country_id = env.ref("base.ca")
-            partner.state_id = env["res.country.state"].search(
-                [("code", "ilike", "QC")], limit=1
-            )
             partner.parent_id = env.ref(
                 "demo_ceppp_patient_partenaire.partner_demo_company_santelibre"
             )

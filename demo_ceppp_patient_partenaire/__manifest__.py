@@ -6,6 +6,7 @@
     "website": "https://santelibre.ca",
     "depends": ["ceppp_patient_partenaire"],
     "data": ["data/user_demo.xml", "data/ceppp_patient.xml"],
+    "pre_init_hook": "pre_init_hook",
     "post_init_hook": "post_init_hook",
     "installable": True,
 }
