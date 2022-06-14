@@ -45,6 +45,8 @@ def post_init_hook(cr, e):
         ] = path_module_generate
         value["enable_template_wizard_view"] = True
         value["force_generic_template_wizard_view"] = True
+        value["enable_cg_generate_portal"] = True
+        value["enable_cg_portal_enable_create"] = True
         value["disable_generate_access"] = False
         value["enable_template_website_snippet_view"] = False
         value["enable_sync_template"] = True

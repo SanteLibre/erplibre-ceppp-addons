@@ -9,11 +9,13 @@
     "depends": [
         "contacts",
         "mail",
+        "portal",
     ],
     "data": [
         "security/ceppp_patient_partenaire.xml",
         "security/ir.model.access.csv",
         "views/res_partner.xml",
+        "views/ceppp_patient_partenaire_templates.xml",
         "views/ceppp_chapitre_maladie.xml",
         "data/ceppp_chapitre_maladie.xml",
         "views/ceppp_competence.xml",

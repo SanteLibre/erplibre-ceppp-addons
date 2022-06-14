@@ -8,6 +8,7 @@
     "depends": [
         "code_generator",
         "code_generator_hook",
+        "code_generator_portal",
         "contacts",
         "mail",
     ],

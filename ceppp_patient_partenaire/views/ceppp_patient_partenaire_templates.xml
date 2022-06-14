@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="portal_create_ceppp_formation" name="Create Ceppp Formation">
+        <t t-call="portal.portal_layout">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Send a new ceppp formation</h1>
+                    </div>
+                </div>
+            </div>
+            <form
+                action="/submitted/ceppp_formation"
+                method="POST"
+                class="form-horizontal mt32"
+                enctype="multipart/form-data"
+            >
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="name">Name</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input type="text" class="form-control" name="name" t-attf-value="#{name}" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="date">Date</label>
+                    <div class="col-md-7 col-sm-8">
+                        <div class="input-group date" data-target-input="nearest" t-att-id="date_datepicker">
+                            <input
+                                type="text"
+                                class="form-control datetimepicker-input"
+                                t-att-data-target="date_datepicker"
+                                t-att-name="prefix"
+                                t-att-value="default_date"
+                            />
+                            <div
+                                class="input-group-append"
+                                t-att-data-target="date_datepicker"
+                                data-toggle="datetimepicker"
+                            >
+                                <div class="input-group-text">
+                                    <i class="fa fa-calendar" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="organisation">Organisation</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="organisation"
+                            t-att-value="default_organisation"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="recruteur_id">Recruteur_id</label>
+                    <div class="col-md-7 col-sm-8">
+                        <select class="form-control" id="recruteur_id" name="recruteur_id">
+                            <t t-foreach="recruteur_id" t-as="rec">
+                                <option t-attf-value="#{rec.id}" t-att-selected="default_recruteur_id == rec.id">
+                                    <t t-esc="rec.name" />
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation">Titre_formation</label>
+                    <div class="col-md-7 col-sm-8">
+                        <t t-foreach="titre_formation" t-as="tit">
+                            <input
+                                type="checkbox"
+                                name="titre_formation"
+                                t-att-id="'titre_formation_' + tit.name + '_' + str(tit_index)"
+                                t-att-value="tit.id"
+                                t-att-checked="tit.id in default_titre_formation"
+                            />
+                            <label
+                                t-att-for="'titre_formation_' + tit.name + '_' + str(tit_index)"
+                                t-att-string="tit.name"
+                            >
+                                <t t-esc="tit.name" />
+                            </label>
+                        </t>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation_autre">
+                        Titre_formation_autre
+                    </label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="titre_formation_autre"
+                            t-att-value="default_titre_formation_autre"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation_is_autre">
+                        Titre_formation_is_autre
+                    </label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="checkbox"
+                            name="titre_formation_is_autre"
+                            t-att-id="titre_formation_is_autre"
+                            t-att-value="True"
+                            t-att-checked="default_titre_formation_is_autre"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+                        <button class="btn btn-primary btn-lg">Submit Ceppp Formation</button>
+                    </div>
+                </div>
+            </form>
+        </t>
+    </template>
+
+    <template id="portal_create_ceppp_implication" name="Create Ceppp Implication">
+        <t t-call="portal.portal_layout">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Send a new ceppp implication</h1>
+                    </div>
+                </div>
+            </div>
+            <form
+                action="/submitted/ceppp_implication"
+                method="POST"
+                class="form-horizontal mt32"
+                enctype="multipart/form-data"
+            >
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="name">Name</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input type="text" class="form-control" name="name" t-attf-value="#{name}" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="description">Description</label>
+                    <div class="col-md-7 col-sm-8">
+        <!-- prettier-ignore-start --><textarea class="form-control" name="description" style="min-height: 120px"><t t-esc="default_description"/></textarea><!-- prettier-ignore-end -->
+        </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="domaine">Domaine</label>
+                    <div class="col-md-7 col-sm-8">
+                        <t t-foreach="domaine" t-as="dom">
+                            <input
+                                type="checkbox"
+                                name="domaine"
+                                t-att-id="'domaine_' + dom.name + '_' + str(dom_index)"
+                                t-att-value="dom.id"
+                                t-att-checked="dom.id in default_domaine"
+                            />
+                            <label t-att-for="'domaine_' + dom.name + '_' + str(dom_index)" t-att-string="dom.name">
+                                <t t-esc="dom.name" />
+                            </label>
+                        </t>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="domaine_autre">Domaine_autre</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="domaine_autre"
+                            t-att-value="default_domaine_autre"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="domaine_is_autre">Domaine_is_autre</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="checkbox"
+                            name="domaine_is_autre"
+                            t-att-id="domaine_is_autre"
+                            t-att-value="True"
+                            t-att-checked="default_domaine_is_autre"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="echeance_debut">Echeance_debut</label>
+                    <div class="col-md-7 col-sm-8">
+                        <div class="input-group date" data-target-input="nearest" t-att-id="echeance_debut_datepicker">
+                            <input
+                                type="text"
+                                class="form-control datetimepicker-input"
+                                t-att-data-target="echeance_debut_datepicker"
+                                t-att-name="prefix"
+                                t-att-value="default_echeance_debut"
+                            />
+                            <div
+                                class="input-group-append"
+                                t-att-data-target="echeance_debut_datepicker"
+                                data-toggle="datetimepicker"
+                            >
+                                <div class="input-group-text">
+                                    <i class="fa fa-calendar" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="echeance_fin">Echeance_fin</label>
+                    <div class="col-md-7 col-sm-8">
+                        <div class="input-group date" data-target-input="nearest" t-att-id="echeance_fin_datepicker">
+                            <input
+                                type="text"
+                                class="form-control datetimepicker-input"
+                                t-att-data-target="echeance_fin_datepicker"
+                                t-att-name="prefix"
+                                t-att-value="default_echeance_fin"
+                            />
+                            <div
+                                class="input-group-append"
+                                t-att-data-target="echeance_fin_datepicker"
+                                data-toggle="datetimepicker"
+                            >
+                                <div class="input-group-text">
+                                    <i class="fa fa-calendar" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="nom_equipe">Nom_equipe</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input type="text" class="form-control" name="nom_equipe" t-att-value="default_nom_equipe" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="recruteur_id">Recruteur_id</label>
+                    <div class="col-md-7 col-sm-8">
+                        <select class="form-control" id="recruteur_id" name="recruteur_id">
+                            <t t-foreach="recruteur_id" t-as="rec">
+                                <option t-attf-value="#{rec.id}" t-att-selected="default_recruteur_id == rec.id">
+                                    <t t-esc="rec.name" />
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="role">Role</label>
+                    <div class="col-md-7 col-sm-8">
+                        <t t-foreach="role" t-as="rol">
+                            <input
+                                type="checkbox"
+                                name="role"
+                                t-att-id="'role_' + rol.name + '_' + str(rol_index)"
+                                t-att-value="rol.id"
+                                t-att-checked="rol.id in default_role"
+                            />
+                            <label t-att-for="'role_' + rol.name + '_' + str(rol_index)" t-att-string="rol.name">
+                                <t t-esc="rol.name" />
+                            </label>
+                        </t>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="role_autre">Role_autre</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input type="text" class="form-control" name="role_autre" t-att-value="default_role_autre" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="role_is_autre">Role_is_autre</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="checkbox"
+                            name="role_is_autre"
+                            t-att-id="role_is_autre"
+                            t-att-value="True"
+                            t-att-checked="default_role_is_autre"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="titre">Titre</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input type="text" class="form-control" name="titre" t-att-value="default_titre" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+                        <button class="btn btn-primary btn-lg">Submit Ceppp Implication</button>
+                    </div>
+                </div>
+            </form>
+        </t>
+    </template>
+
+    <template id="portal_create_ceppp_maladie" name="Create Ceppp Maladie">
+        <t t-call="portal.portal_layout">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Send a new ceppp maladie</h1>
+                    </div>
+                </div>
+            </div>
+            <form
+                action="/submitted/ceppp_maladie"
+                method="POST"
+                class="form-horizontal mt32"
+                enctype="multipart/form-data"
+            >
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="chapitre_maladie_id">Chapitre_maladie_id</label>
+                    <div class="col-md-7 col-sm-8">
+                        <select class="form-control" id="chapitre_maladie_id" name="chapitre_maladie_id">
+                            <t t-foreach="chapitre_maladie_id" t-as="cha">
+                                <option t-attf-value="#{cha.id}" t-att-selected="default_chapitre_maladie_id == cha.id">
+                                    <t t-esc="cha.nom" />
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="nom">Nom</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input type="text" class="form-control" name="nom" t-att-value="default_nom" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+                        <button class="btn btn-primary btn-lg">Submit Ceppp Maladie</button>
+                    </div>
+                </div>
+            </form>
+        </t>
+    </template>
+
+    <template id="portal_create_ceppp_maladie_proche_aidant" name="Create Ceppp Maladie_Proche_Aidant">
+        <t t-call="portal.portal_layout">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Send a new ceppp maladie proche aidant</h1>
+                    </div>
+                </div>
+            </div>
+            <form
+                action="/submitted/ceppp_maladie_proche_aidant"
+                method="POST"
+                class="form-horizontal mt32"
+                enctype="multipart/form-data"
+            >
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="name">Name</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input type="text" class="form-control" name="name" t-attf-value="#{name}" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="maladie">Maladie</label>
+                    <div class="col-md-7 col-sm-8">
+                        <t t-foreach="maladie" t-as="mal">
+                            <input
+                                type="checkbox"
+                                name="maladie"
+                                t-att-id="'maladie_' + mal.nom + '_' + str(mal_index)"
+                                t-att-value="mal.id"
+                                t-att-checked="mal.id in default_maladie"
+                            />
+                            <label t-att-for="'maladie_' + mal.nom + '_' + str(mal_index)" t-att-string="mal.nom">
+                                <t t-esc="mal.nom" />
+                            </label>
+                        </t>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="recruteur_id">Recruteur_id</label>
+                    <div class="col-md-7 col-sm-8">
+                        <select class="form-control" id="recruteur_id" name="recruteur_id">
+                            <t t-foreach="recruteur_id" t-as="rec">
+                                <option t-attf-value="#{rec.id}" t-att-selected="default_recruteur_id == rec.id">
+                                    <t t-esc="rec.name" />
+                                </option>
+                            </t>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="relation">Relation</label>
+                    <div class="col-md-7 col-sm-8">
+                        <t t-foreach="relation" t-as="rel">
+                            <input
+                                type="checkbox"
+                                name="relation"
+                                t-att-id="'relation_' + rel.name + '_' + str(rel_index)"
+                                t-att-value="rel.id"
+                                t-att-checked="rel.id in default_relation"
+                            />
+                            <label t-att-for="'relation_' + rel.name + '_' + str(rel_index)" t-att-string="rel.name">
+                                <t t-esc="rel.name" />
+                            </label>
+                        </t>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="relation_autre">Relation_autre</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="relation_autre"
+                            t-att-value="default_relation_autre"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="relation_is_autre">Relation_is_autre</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="checkbox"
+                            name="relation_is_autre"
+                            t-att-id="relation_is_autre"
+                            t-att-value="True"
+                            t-att-checked="default_relation_is_autre"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+                        <button class="btn btn-primary btn-lg">Submit Ceppp Maladie_Proche_Aidant</button>
+                    </div>
+                </div>
+            </form>
+        </t>
+    </template>
+
+    <template id="ceppp_patient_partenaire.portal_my_ceppp_formation" name="My Ceppp Formation">
+        <t t-call="portal.portal_layout">
+            <t t-set="o_portal_fullwidth_alert">
+                <t t-call="portal.portal_back_in_edit_mode">
+                    <t
+                        t-set="backend_url"
+                        t-value="'/web#return_label=Website&amp;model=ceppp.formation&amp;id=%s&amp;view_type=form' % (ceppp_formation.id)"
+                    />
+                </t>
+            </t>
+            <t t-call="portal.portal_record_layout">
+                <t t-set="card_header">
+                    <h5 class="mb-0">
+                        <small class="text-muted">Ceppp Formation -</small>
+                        <span t-field="ceppp_formation.name" />
+                    </h5>
+                </t>
+                <t t-set="card_body">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Organisation:</b>
+                            <span t-field="ceppp_formation.organisation" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Recruteur:</b>
+                            <a
+                                t-attf-href="/my/ceppp_recruteur/#{ceppp_formation.recruteur_id.id}"
+                                t-field="ceppp_formation.recruteur_id.name"
+                            />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Titre de la formation:</b>
+                            <t t-foreach="ceppp_formation.titre_formation" t-as="tit">
+                                <a t-attf-href="/my/ceppp_formation_titre/#{tit.id}" t-field="tit.name" />
+                                <t t-if="not tit_last">,</t>
+                            </t>
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Autres formations:</b>
+                            <span t-field="ceppp_formation.titre_formation_autre" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Titre Formation Is Autre:</b>
+                            <span t-field="ceppp_formation.titre_formation_is_autre" />
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="ceppp_patient_partenaire.portal_my_ceppp_implication" name="My Ceppp Implication">
+        <t t-call="portal.portal_layout">
+            <t t-set="o_portal_fullwidth_alert">
+                <t t-call="portal.portal_back_in_edit_mode">
+                    <t
+                        t-set="backend_url"
+                        t-value="'/web#return_label=Website&amp;model=ceppp.implication&amp;id=%s&amp;view_type=form' % (ceppp_implication.id)"
+                    />
+                </t>
+            </t>
+            <t t-call="portal.portal_record_layout">
+                <t t-set="card_header">
+                    <h5 class="mb-0">
+                        <small class="text-muted">Ceppp Implication -</small>
+                        <span t-field="ceppp_implication.name" />
+                    </h5>
+                </t>
+                <t t-set="card_body">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Description:</b>
+                            <span t-field="ceppp_implication.description" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Domaine:</b>
+                            <t t-foreach="ceppp_implication.domaine" t-as="dom">
+                                <a t-attf-href="/my/ceppp_implication_domaine/#{dom.id}" t-field="dom.name" />
+                                <t t-if="not dom_last">,</t>
+                            </t>
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Autres domaines:</b>
+                            <span t-field="ceppp_implication.domaine_autre" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Domaine Is Autre:</b>
+                            <span t-field="ceppp_implication.domaine_is_autre" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>&#201;ch&#233;ance d&#233;but:</b>
+                            <span t-field="ceppp_implication.echeance_debut" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>&#201;ch&#233;ance fin:</b>
+                            <span t-field="ceppp_implication.echeance_fin" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Nom de l'&#233;quipe:</b>
+                            <span t-field="ceppp_implication.nom_equipe" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Recruteur:</b>
+                            <a
+                                t-attf-href="/my/ceppp_recruteur/#{ceppp_implication.recruteur_id.id}"
+                                t-field="ceppp_implication.recruteur_id.name"
+                            />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>R&#244;le:</b>
+                            <t t-foreach="ceppp_implication.role" t-as="rol">
+                                <a t-attf-href="/my/ceppp_implication_role/#{rol.id}" t-field="rol.name" />
+                                <t t-if="not rol_last">,</t>
+                            </t>
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Autres r&#244;les:</b>
+                            <span t-field="ceppp_implication.role_autre" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Role Is Autre:</b>
+                            <span t-field="ceppp_implication.role_is_autre" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Titre du projet:</b>
+                            <span t-field="ceppp_implication.titre" />
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="ceppp_patient_partenaire.portal_my_ceppp_maladie" name="My Ceppp Maladie">
+        <t t-call="portal.portal_layout">
+            <t t-set="o_portal_fullwidth_alert">
+                <t t-call="portal.portal_back_in_edit_mode">
+                    <t
+                        t-set="backend_url"
+                        t-value="'/web#return_label=Website&amp;model=ceppp.maladie&amp;id=%s&amp;view_type=form' % (ceppp_maladie.id)"
+                    />
+                </t>
+            </t>
+            <t t-call="portal.portal_record_layout">
+                <t t-set="card_header">
+                    <h5 class="mb-0">
+                        <small class="text-muted">Ceppp Maladie -</small>
+                        <span t-field="ceppp_maladie.nom" />
+                    </h5>
+                </t>
+                <t t-set="card_body">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Chapitre maladie:</b>
+                            <a
+                                t-attf-href="/my/ceppp_chapitre_maladie/#{ceppp_maladie.chapitre_maladie_id.id}"
+                                t-field="ceppp_maladie.chapitre_maladie_id.nom"
+                            />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Nom:</b>
+                            <span t-field="ceppp_maladie.nom" />
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="ceppp_patient_partenaire.portal_my_ceppp_maladie_proche_aidant" name="My Ceppp Maladie_Proche_Aidant">
+        <t t-call="portal.portal_layout">
+            <t t-set="o_portal_fullwidth_alert">
+                <t t-call="portal.portal_back_in_edit_mode">
+                    <t
+                        t-set="backend_url"
+                        t-value="'/web#return_label=Website&amp;model=ceppp.maladie_proche_aidant&amp;id=%s&amp;view_type=form' % (ceppp_maladie_proche_aidant.id)"
+                    />
+                </t>
+            </t>
+            <t t-call="portal.portal_record_layout">
+                <t t-set="card_header">
+                    <h5 class="mb-0">
+                        <small class="text-muted">Ceppp Maladie_Proche_Aidant -</small>
+                        <span t-field="ceppp_maladie_proche_aidant.name" />
+                    </h5>
+                </t>
+                <t t-set="card_body">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Maladies:</b>
+                            <t t-foreach="ceppp_maladie_proche_aidant.maladie" t-as="mal">
+                                <a t-attf-href="/my/ceppp_maladie/#{mal.id}" t-field="mal.nom" />
+                                <t t-if="not mal_last">,</t>
+                            </t>
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Recruteur:</b>
+                            <a
+                                t-attf-href="/my/ceppp_recruteur/#{ceppp_maladie_proche_aidant.recruteur_id.id}"
+                                t-field="ceppp_maladie_proche_aidant.recruteur_id.name"
+                            />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Relation avec la personne aid&#233;e:</b>
+                            <t t-foreach="ceppp_maladie_proche_aidant.relation" t-as="rel">
+                                <a t-attf-href="/my/ceppp_relation_proche/#{rel.id}" t-field="rel.name" />
+                                <t t-if="not rel_last">,</t>
+                            </t>
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Autre relation:</b>
+                            <span t-field="ceppp_maladie_proche_aidant.relation_autre" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Relation Is Autre:</b>
+                            <span t-field="ceppp_maladie_proche_aidant.relation_is_autre" />
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="ceppp_patient_partenaire.portal_my_ceppp_formations" name="My Ceppp Formations">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True" />
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Ceppp Formations</t>
+            </t>
+            <form method="POST" t-attf-action="/new/ceppp_formation">
+                <button
+                    name="create_new_ceppp_formation"
+                    type="action"
+                    class="btn btn-primary"
+                    style="float: right; margin-right: 5px;"
+                >
+                    New Ceppp Formation
+                </button>
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+            </form>
+            <t t-if="not ceppp_formations">
+                <div class="alert alert-warning mt8" role="alert">There are no ceppp_formations.</div>
+            </t>
+            <t t-if="ceppp_formations" t-call="portal.portal_table">
+                <tbody>
+                    <tr t-foreach="ceppp_formations" t-as="ceppp_formation">
+                        <td>
+                            <a t-attf-href="/my/ceppp_formation/#{ceppp_formation.id}?{{ keep_query() }}">
+                                <span t-field="ceppp_formation.name" />
+                            </a>
+                        </td>
+                        <td class="text-right" />
+                    </tr>
+                </tbody>
+            </t>
+        </t>
+    </template>
+
+    <template id="ceppp_patient_partenaire.portal_my_ceppp_implications" name="My Ceppp Implications">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True" />
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Ceppp Implications</t>
+            </t>
+            <form method="POST" t-attf-action="/new/ceppp_implication">
+                <button
+                    name="create_new_ceppp_implication"
+                    type="action"
+                    class="btn btn-primary"
+                    style="float: right; margin-right: 5px;"
+                >
+                    New Ceppp Implication
+                </button>
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+            </form>
+            <t t-if="not ceppp_implications">
+                <div class="alert alert-warning mt8" role="alert">There are no ceppp_implications.</div>
+            </t>
+            <t t-if="ceppp_implications" t-call="portal.portal_table">
+                <tbody>
+                    <tr t-foreach="ceppp_implications" t-as="ceppp_implication">
+                        <td>
+                            <a t-attf-href="/my/ceppp_implication/#{ceppp_implication.id}?{{ keep_query() }}">
+                                <span t-field="ceppp_implication.name" />
+                            </a>
+                        </td>
+                        <td class="text-right" />
+                    </tr>
+                </tbody>
+            </t>
+        </t>
+    </template>
+
+    <template
+        id="ceppp_patient_partenaire.portal_my_ceppp_maladie_proche_aidants"
+        name="My Ceppp Maladie_Proche_Aidants"
+    >
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True" />
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Ceppp Maladie_Proche_Aidants</t>
+            </t>
+            <form method="POST" t-attf-action="/new/ceppp_maladie_proche_aidant">
+                <button
+                    name="create_new_ceppp_maladie_proche_aidant"
+                    type="action"
+                    class="btn btn-primary"
+                    style="float: right; margin-right: 5px;"
+                >
+                    New Ceppp Maladie_Proche_Aidant
+                </button>
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+            </form>
+            <t t-if="not ceppp_maladie_proche_aidants">
+                <div class="alert alert-warning mt8" role="alert">There are no ceppp_maladie_proche_aidants.</div>
+            </t>
+            <t t-if="ceppp_maladie_proche_aidants" t-call="portal.portal_table">
+                <tbody>
+                    <tr t-foreach="ceppp_maladie_proche_aidants" t-as="ceppp_maladie_proche_aidant">
+                        <td>
+                            <a
+                                t-attf-href="/my/ceppp_maladie_proche_aidant/#{ceppp_maladie_proche_aidant.id}?{{ keep_query() }}"
+                            >
+                                <span t-field="ceppp_maladie_proche_aidant.name" />
+                            </a>
+                        </td>
+                        <td class="text-right" />
+                    </tr>
+                </tbody>
+            </t>
+        </t>
+    </template>
+
+    <template id="ceppp_patient_partenaire.portal_my_ceppp_maladies" name="My Ceppp Maladies">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True" />
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Ceppp Maladies</t>
+            </t>
+            <form method="POST" t-attf-action="/new/ceppp_maladie">
+                <button
+                    name="create_new_ceppp_maladie"
+                    type="action"
+                    class="btn btn-primary"
+                    style="float: right; margin-right: 5px;"
+                >
+                    New Ceppp Maladie
+                </button>
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+            </form>
+            <t t-if="not ceppp_maladies">
+                <div class="alert alert-warning mt8" role="alert">There are no ceppp_maladies.</div>
+            </t>
+            <t t-if="ceppp_maladies" t-call="portal.portal_table">
+                <tbody>
+                    <tr t-foreach="ceppp_maladies" t-as="ceppp_maladie">
+                        <td>
+                            <a t-attf-href="/my/ceppp_maladie/#{ceppp_maladie.id}?{{ keep_query() }}">
+                                <span t-field="ceppp_maladie.nom" />
+                            </a>
+                        </td>
+                        <td class="text-right" />
+                    </tr>
+                </tbody>
+            </t>
+        </t>
+    </template>
+
+    <template
+        id="ceppp_patient_partenaire.portal_my_home"
+        name="Portal My Home: Ceppp_Patient_Partenaire entries"
+        inherit_id="portal.portal_my_home"
+    >
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
+            <t t-if="ceppp_formation_count" t-call="portal.portal_docs_entry">
+                <t t-set="title">Ceppp Formations</t>
+                <t t-set="url" t-value="'/my/ceppp_formations'" />
+                <t t-set="count" t-value="ceppp_formation_count" />
+            </t>
+            <a
+                t-if="not ceppp_formation_count"
+                role="button"
+                class="btn btn-primary btn-block mb8"
+                href="/new/ceppp_formation"
+            >
+                <i class="fa fa-plus-circle" />
+                Ceppp Formation
+            </a>
+            <t t-if="ceppp_implication_count" t-call="portal.portal_docs_entry">
+                <t t-set="title">Ceppp Implications</t>
+                <t t-set="url" t-value="'/my/ceppp_implications'" />
+                <t t-set="count" t-value="ceppp_implication_count" />
+            </t>
+            <a
+                t-if="not ceppp_implication_count"
+                role="button"
+                class="btn btn-primary btn-block mb8"
+                href="/new/ceppp_implication"
+            >
+                <i class="fa fa-plus-circle" />
+                Ceppp Implication
+            </a>
+            <t t-if="ceppp_maladie_count" t-call="portal.portal_docs_entry">
+                <t t-set="title">Ceppp Maladies</t>
+                <t t-set="url" t-value="'/my/ceppp_maladies'" />
+                <t t-set="count" t-value="ceppp_maladie_count" />
+            </t>
+            <a
+                t-if="not ceppp_maladie_count"
+                role="button"
+                class="btn btn-primary btn-block mb8"
+                href="/new/ceppp_maladie"
+            >
+                <i class="fa fa-plus-circle" />
+                Ceppp Maladie
+            </a>
+            <t t-if="ceppp_maladie_proche_aidant_count" t-call="portal.portal_docs_entry">
+                <t t-set="title">Ceppp Maladie_Proche_Aidants</t>
+                <t t-set="url" t-value="'/my/ceppp_maladie_proche_aidants'" />
+                <t t-set="count" t-value="ceppp_maladie_proche_aidant_count" />
+            </t>
+            <a
+                t-if="not ceppp_maladie_proche_aidant_count"
+                role="button"
+                class="btn btn-primary btn-block mb8"
+                href="/new/ceppp_maladie_proche_aidant"
+            >
+                <i class="fa fa-plus-circle" />
+                Ceppp Maladie_Proche_Aidant
+            </a>
+        </xpath>
+    </template>
+
+    <template
+        id="ceppp_patient_partenaire.portal_layout"
+        name="Portal layout: Ceppp_Patient_Partenaire menu entry"
+        inherit_id="portal.portal_breadcrumbs"
+    >
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li
+                t-if="page_name in ('ceppp_formation', 'create_ceppp_formation') or ceppp_formation"
+                t-attf-class="breadcrumb-item #{'active ' if not ceppp_formation else ''}"
+            >
+                <a
+                    t-if="ceppp_formation or page_name == 'create_ceppp_formation'"
+                    t-attf-href="/my/ceppp_formations?{{ keep_query() }}"
+                >
+                    Ceppp Formations
+                </a>
+                <t t-else="">Ceppp Formations</t>
+            </li>
+            <li t-if="ceppp_formation" class="breadcrumb-item active">
+                <t t-esc="ceppp_formation.name" />
+            </li>
+            <li
+                t-if="page_name in ('ceppp_implication', 'create_ceppp_implication') or ceppp_implication"
+                t-attf-class="breadcrumb-item #{'active ' if not ceppp_implication else ''}"
+            >
+                <a
+                    t-if="ceppp_implication or page_name == 'create_ceppp_implication'"
+                    t-attf-href="/my/ceppp_implications?{{ keep_query() }}"
+                >
+                    Ceppp Implications
+                </a>
+                <t t-else="">Ceppp Implications</t>
+            </li>
+            <li t-if="ceppp_implication" class="breadcrumb-item active">
+                <t t-esc="ceppp_implication.name" />
+            </li>
+            <li
+                t-if="page_name in ('ceppp_maladie', 'create_ceppp_maladie') or ceppp_maladie"
+                t-attf-class="breadcrumb-item #{'active ' if not ceppp_maladie else ''}"
+            >
+                <a
+                    t-if="ceppp_maladie or page_name == 'create_ceppp_maladie'"
+                    t-attf-href="/my/ceppp_maladies?{{ keep_query() }}"
+                >
+                    Ceppp Maladies
+                </a>
+                <t t-else="">Ceppp Maladies</t>
+            </li>
+            <li t-if="ceppp_maladie" class="breadcrumb-item active">
+                <t t-esc="ceppp_maladie.nom" />
+            </li>
+            <li
+                t-if="page_name in ('ceppp_maladie_proche_aidant', 'create_ceppp_maladie_proche_aidant') or ceppp_maladie_proche_aidant"
+                t-attf-class="breadcrumb-item #{'active ' if not ceppp_maladie_proche_aidant else ''}"
+            >
+                <a
+                    t-if="ceppp_maladie_proche_aidant or page_name == 'create_ceppp_maladie_proche_aidant'"
+                    t-attf-href="/my/ceppp_maladie_proche_aidants?{{ keep_query() }}"
+                >
+                    Ceppp Maladie_Proche_Aidants
+                </a>
+                <t t-else="">Ceppp Maladie_Proche_Aidants</t>
+            </li>
+            <li t-if="ceppp_maladie_proche_aidant" class="breadcrumb-item active">
+                <t t-esc="ceppp_maladie_proche_aidant.name" />
+            </li>
+        </xpath>
+    </template>
+</odoo>
