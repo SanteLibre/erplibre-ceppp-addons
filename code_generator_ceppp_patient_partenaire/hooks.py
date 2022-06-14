@@ -1400,6 +1400,8 @@ return super(CepppRecruteur, self).create(vals_list)""",
             {
                 "code_generator_id": code_generator_id.id,
                 "enable_generate_all": False,
+                "enable_generate_portal": True,
+                "portal_enable_create": True,
             }
         )
 
