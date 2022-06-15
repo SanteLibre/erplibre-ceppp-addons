@@ -1394,6 +1394,24 @@ return super(CepppRecruteur, self).create(vals_list)""",
             }
             env["code.generator.model.code.import"].create(value)
 
+        # Update code generator portal information
+        code_generator_id.write(
+            {
+                "selected_model_portal_ids": [
+                    (
+                        6,
+                        0,
+                        [
+                            model_ceppp_maladie.id,
+                            model_ceppp_maladie_proche_aidant.id,
+                            model_ceppp_formation.id,
+                            model_ceppp_implication.id,
+                        ],
+                    )
+                ]
+            }
+        )
+
         # Generate view
         # Action generate view
         wizard_view = env["code.generator.generate.views.wizard"].create(
