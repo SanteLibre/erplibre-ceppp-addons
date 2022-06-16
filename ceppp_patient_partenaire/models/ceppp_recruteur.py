@@ -130,6 +130,12 @@ class CepppRecruteur(models.Model):
         help="Identifiant unique anonymisé.",
     )
 
+    uuid_short = fields.Char(
+        compute="_compute_uuid_short",
+        store=True,
+        help="Identifiant unique anonymisé, 8 premiers caractères.",
+    )
+
     date_naissance = fields.Date(
         string="Date de naissance",
         track_visibility="onchange",
@@ -291,6 +297,12 @@ class CepppRecruteur(models.Model):
         track_visibility="onchange",
     )
 
+    fiche_anonyme = fields.One2many(
+        comodel_name="ceppp.patient",
+        inverse_name="recruteur_id",
+        track_visibility="onchange",
+    )
+
     patient_actif = fields.Selection(
         selection=[("actif", "Actif"), ("passif", "Passif")],
         string="Patient actif-passif",
@@ -368,3 +380,19 @@ class CepppRecruteur(models.Model):
                 self.env["res.users"].browse(self._uid).partner_id.ceppp_entity
                 == "administrateur"
             )
+
+    @api.depends("uuid")
+    def _compute_uuid_short(self):
+        for record in self:
+            if record.uuid:
+                record.uuid_short = record.uuid[:8]
+
+    def open_fiche_anonyme(self):
+        return {
+            "name": _("Fiches anonyme"),
+            "res_model": "ceppp.patient",
+            "view_type": "form",
+            "view_mode": "form",
+            "type": "ir.actions.act_window",
+            "res_id": self.fiche_anonyme.id,
+        }

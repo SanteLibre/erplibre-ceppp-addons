@@ -10,6 +10,15 @@
                         <button class="oe_stat_button" icon="fa-archive" name="toggle_active" type="object">
                             <field name="active" widget="boolean_button" />
                         </button>
+                        <button
+                            class="oe_stat_button"
+                            icon="fa-lock"
+                            name="open_fiche_anonyme"
+                            type="object"
+                            attrs="{'invisible':[('fiche_anonyme','=',False)]}"
+                        >
+                            <field name="uuid_short" />
+                        </button>
                     </div>
                     <field
                         name="image"
@@ -24,6 +33,7 @@
                     </div>
                     <group>
                         <!--<field name="uuid" readonly="1" attrs="{'invisible':[('uuid','=',False)]}"/>-->
+                        <field name="fiche_anonyme" invisible="1" />
                         <field name="user_is_admin" invisible="1" />
                         <field name="occupation_is_autre" invisible="1" />
                         <field name="langue_is_autre" invisible="1" />
