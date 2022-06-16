@@ -93,6 +93,7 @@ class CepppRecruteur(models.Model):
         related="patient_partner_id.parent_id.name",
         string="Centre de recrutement",
         track_visibility="onchange",
+        store=True,
         help="Affiliation",
     )
 
