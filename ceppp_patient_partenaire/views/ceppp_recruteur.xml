@@ -29,7 +29,7 @@
                         <field name="langue_is_autre" invisible="1" />
                         <field
                             name="patient_partner_id"
-                            domain="[('ceppp_entity','=','patient')]"
+                            domain="[('ceppp_entity','!=',False),('ceppp_entity','!=','affiliation')]"
                             attrs="{'readonly':[('user_is_admin','=',False)]}"
                         />
                         <field
