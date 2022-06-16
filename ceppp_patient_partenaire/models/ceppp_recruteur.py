@@ -67,6 +67,7 @@ class CepppRecruteur(models.Model):
     consentement_notification = fields.Boolean(
         string="Consentement aux notifications/communications",
         track_visibility="onchange",
+        default=True,
     )
 
     consentement_recrutement = fields.Boolean(
@@ -78,6 +79,7 @@ class CepppRecruteur(models.Model):
             " envoyer un courriel à cette adresse <mail - formulaire"
             " prérempli?>"
         ),
+        default=True,
     )
 
     consentement_recherche = fields.Boolean(
@@ -87,6 +89,7 @@ class CepppRecruteur(models.Model):
             "Consentement dans le cadre d'activités de recherche sur le"
             " partenariat."
         ),
+        default=True,
     )
 
     centre_recruteur = fields.Char(
