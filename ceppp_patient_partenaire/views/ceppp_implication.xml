@@ -115,10 +115,12 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="titre" />
-                <field name="role" />
-                <field name="role_autre" />
-                <field name="domaine" />
-                <field name="domaine_autre" />
+                <field name="role" widget="many2many_tags" />
+                <field name="role_is_autre" invisible="1" />
+                <field name="role_autre" attrs="{'invisible':[('role_is_autre','=',False)]}" />
+                <field name="domaine" widget="many2many_tags" />
+                <field name="domaine_is_autre" invisible="1" />
+                <field name="domaine_autre" attrs="{'invisible':[('domaine_is_autre','=',False)]}" />
                 <field name="description" />
                 <field name="nom_equipe" />
                 <field name="echeance_debut" />

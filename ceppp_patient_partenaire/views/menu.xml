@@ -50,7 +50,7 @@
 
     <menuitem
         id="menu_patient_all_patient"
-        name="Tous les patients"
+        name="Tous les patients anonymes"
         sequence="3"
         action="ceppp_patient_patient_action_window"
         parent="menu_patient"
