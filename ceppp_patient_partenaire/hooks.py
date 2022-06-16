@@ -16,8 +16,11 @@ def post_init_hook(cr, e):
         )
         env.ref("base.res_partner_rule_private_employee").active = False
 
-        _logger.info(
-            "Force CEPPP app to be first in menu"
+        _logger.info("Force CEPPP app to be first in menu")
+        menus = env["ir.ui.menu"].search(
+            [
+                ("parent_id", "=", False),
+                ("name", "=", "Ceppp Patient Partenaire"),
+            ]
         )
-        menus = env["ir.ui.menu"].search([('parent_id', '=', False), ('name', '=', 'Ceppp Patient Partenaire')])
-        menus.write({'sequence': -10})
+        menus.write({"sequence": -10})
