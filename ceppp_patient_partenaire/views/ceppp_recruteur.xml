@@ -217,6 +217,12 @@
                     domain="[('recruteur_user_id','in',[uid])]"
                     help="Mes patients de mon affiliation"
                 />
+                <filter
+                    string="Affiliation Société"
+                    name="affiliation_société"
+                    groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+                    context="{'group_by': 'centre_recruteur'}"
+                />
             </search>
         </field>
     </record>
@@ -242,6 +248,13 @@
     <act_window
         id="ceppp_patient_les_patient_affiliation_action_window"
         name="Les patients de mon centre de recrutement"
+        res_model="ceppp.recruteur"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+
+    <act_window
+        id="ceppp_patient_les_patient_tous_centres_affiliation_action_window"
+        name="Les patients de tous les centres de recrutement"
         res_model="ceppp.recruteur"
         view_mode="kanban,tree,pivot,graph,form"
     />

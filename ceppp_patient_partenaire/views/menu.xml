@@ -33,8 +33,18 @@
     <menuitem
         id="menu_patient_les_patient_affiliation"
         name="Les patients de mon centre de recrutement"
+        groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_recruteur"
         sequence="2"
         action="ceppp_patient_les_patient_affiliation_action_window"
+        parent="menu_patient"
+    />
+
+    <menuitem
+        id="menu_patient_les_patient_affiliation"
+        name="Les patients de tous les centres de recrutement"
+        groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+        sequence="2"
+        action="ceppp_patient_les_patient_tous_centres_affiliation_action_window"
         parent="menu_patient"
     />
 
