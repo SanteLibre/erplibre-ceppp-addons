@@ -99,7 +99,8 @@
             <tree>
                 <field name="maladie" widget="many2many_tags" />
                 <field name="relation" widget="many2many_tags" />
-                <field name="relation_autre" />
+                <field name="relation_is_autre" invisible="1" />
+                <field name="relation_autre" attrs="{'invisible':[('relation_is_autre','=',False)]}" />
             </tree>
         </field>
     </record>

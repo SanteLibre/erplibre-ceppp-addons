@@ -110,7 +110,7 @@
 
     <act_window
         id="ceppp_patient_patient_action_window"
-        name="Tous les patients"
+        name="Tous les patients anonymes"
         res_model="ceppp.patient"
         view_mode="kanban,tree,pivot,graph,form"
     />
