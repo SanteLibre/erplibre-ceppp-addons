@@ -101,27 +101,35 @@ class CepppRecruteur(models.Model):
     )
 
     courriel = fields.Char(
-        string="Adresse courriel",
+        string="Courriel",
         track_visibility="onchange",
         related="patient_partner_id.email",
+        store=True,
+        readonly=False,
     )
 
     adresse_postale = fields.Char(
         string="Adresse postale",
         track_visibility="onchange",
         related="patient_partner_id.zip",
+        store=True,
+        readonly=False,
     )
 
     telephone = fields.Char(
         string="Téléphone",
         track_visibility="onchange",
         related="patient_partner_id.phone",
+        store=True,
+        readonly=False,
     )
 
     mobile = fields.Char(
-        string="Téléphone mobile",
+        string="Cellulaire",
         track_visibility="onchange",
         related="patient_partner_id.mobile",
+        store=True,
+        readonly=False,
     )
 
     uuid = fields.Char(
@@ -143,6 +151,46 @@ class CepppRecruteur(models.Model):
             "Permet de connaître le groupe d'âge pour des implications"
             " spécifiques."
         ),
+    )
+
+    street = fields.Char(
+        string="Adresse",
+        track_visibility="onchange",
+        related="patient_partner_id.street",
+        store=True,
+        readonly=False,
+    )
+
+    street2 = fields.Char(
+        string="Adresse 2",
+        track_visibility="onchange",
+        related="patient_partner_id.street2",
+        store=True,
+        readonly=False,
+    )
+
+    city = fields.Char(
+        string="ville",
+        track_visibility="onchange",
+        related="patient_partner_id.city",
+        store=True,
+        readonly=False,
+    )
+
+    state_id = fields.Many2one(
+        string="Province",
+        track_visibility="onchange",
+        related="patient_partner_id.state_id",
+        store=True,
+        readonly=False,
+    )
+
+    country_id = fields.Many2one(
+        string="Pays",
+        track_visibility="onchange",
+        related="patient_partner_id.country_id",
+        store=True,
+        readonly=False,
     )
 
     patient_partner_id = fields.Many2one(
