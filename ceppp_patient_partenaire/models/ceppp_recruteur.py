@@ -11,6 +11,8 @@ class CepppRecruteur(models.Model):
     name = fields.Char(
         related="patient_partner_id.name",
         track_visibility="onchange",
+        store=True,
+        readonly=False,
     )
 
     active = fields.Boolean(
