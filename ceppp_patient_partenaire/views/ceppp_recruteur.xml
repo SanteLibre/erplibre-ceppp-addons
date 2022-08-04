@@ -248,6 +248,7 @@
         <field name="model">ceppp.recruteur</field>
         <field name="arch" type="xml">
             <search string="Ceppp recruteur">
+                <field name="search_maladie" />
                 <filter domain="[('name','!=',False)]" name="name" string="Name" />
                 <separator />
                 <filter

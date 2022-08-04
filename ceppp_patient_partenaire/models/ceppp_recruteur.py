@@ -330,6 +330,13 @@ class CepppRecruteur(models.Model):
         track_visibility="onchange",
     )
 
+    search_maladie = fields.Char(
+        string="Maladies",
+        compute="_sync_search_maladie",
+        store=True,
+        help="Champs qui sert à la recherche parmis toutes les maladies.",
+    )
+
     maladie_proche_aidant = fields.One2many(
         comodel_name="ceppp.maladie_proche_aidant",
         inverse_name="recruteur_id",
@@ -427,6 +434,30 @@ class CepppRecruteur(models.Model):
                 )
             else:
                 record.recruteur_user_id = False
+
+    @api.depends(
+        "maladie_soi_meme", "maladie_soi_meme_autre", "maladie_proche_aidant"
+    )
+    def _sync_search_maladie(self):
+        for record in self:
+            value = self.maladie_soi_meme_autre
+            str_maladies = " ".join(
+                [a.nom for a in self.maladie_soi_meme]
+            ).strip()
+            if str_maladies:
+                value += " " + str_maladies
+            str_maladies = " ".join(
+                [a.autre_maladie for a in self.maladie_proche_aidant]
+            )
+            if str_maladies:
+                value += " " + str_maladies
+            str_maladies = " ".join(
+                [b.nom for a in self.maladie_proche_aidant for b in a.maladie]
+            )
+            if str_maladies:
+                value += " " + str_maladies
+            if value:
+                record.search_maladie = value.strip()
 
     @api.depends("patient_partner_id")
     def _compute_user_is_admin(self):
