@@ -15,6 +15,12 @@ class ResPartner(models.Model):
         help="Unique entity name to represent the contact.",
     )
 
+    patient_partner_ids = fields.One2many(
+        comodel_name="ceppp.recruteur",
+        string="Patient",
+        inverse_name="patient_partner_id",
+    )
+
     email = fields.Char(track_visibility="onchange")
 
     zip = fields.Char(track_visibility="onchange")
@@ -49,13 +55,13 @@ class ResPartner(models.Model):
                 "ceppp_entity" in vals.keys()
                 and vals["ceppp_entity"] == "patient"
             ):
-                # Force type address for custom personnal
+                # Force type address for custom personal
                 vals["type"] = "private"
         return super(ResPartner, self).create(vals_list)
 
     def write(self, vals):
         if "ceppp_entity" in vals.keys() and vals["ceppp_entity"] == "patient":
-            # Force type address for custom personnal
+            # Force type address for custom personal
             vals["type"] = "private"
         return super(ResPartner, self).write(vals)
 
@@ -69,3 +75,14 @@ class ResPartner(models.Model):
     )
     def _compute_display_name(self):
         super(ResPartner, self)._compute_display_name()
+
+    def open_fiche_recruteur(self):
+        if self.patient_partner_ids:
+            return {
+                "name": _("Fiche recruteur"),
+                "res_model": "ceppp.recruteur",
+                "view_type": "form",
+                "view_mode": "form",
+                "type": "ir.actions.act_window",
+                "res_id": self.patient_partner_ids.ids[0],
+            }

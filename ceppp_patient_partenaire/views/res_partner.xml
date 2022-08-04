@@ -40,6 +40,18 @@
                 <xpath expr="//field[@name='type']" position="before">
                     <field name="ceppp_entity" />
                 </xpath>
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <field name="patient_partner_ids" invisible="1" />
+                    <button
+                        class="oe_stat_button"
+                        icon="fa-vcard-o"
+                        name="open_fiche_recruteur"
+                        type="object"
+                        attrs="{'invisible':[('patient_partner_ids','=',False)]}"
+                    >
+                        Fiche recruteur
+                    </button>
+                </xpath>
             </field>
         </record>
     </data>

@@ -58,3 +58,26 @@ class CepppPatient(models.Model):
     implication = fields.One2many(
         related="recruteur_id.implication",
     )
+
+    user_is_manager = fields.Boolean(
+        store=False,
+        compute="_compute_user_is_manager",
+    )
+
+    @api.depends("recruteur_id")
+    def _compute_user_is_manager(self):
+        for record in self:
+            record.user_is_manager = (
+                self.env["res.users"].browse(self._uid).partner_id.ceppp_entity
+                == "administrateur"
+            ) or self.recruteur_partner_id == self.env.user.partner_id
+
+    def open_fiche_recruteur(self):
+        return {
+            "name": _("Fiche recruteur"),
+            "res_model": "ceppp.recruteur",
+            "view_type": "form",
+            "view_mode": "form",
+            "type": "ir.actions.act_window",
+            "res_id": self.recruteur_id.id,
+        }

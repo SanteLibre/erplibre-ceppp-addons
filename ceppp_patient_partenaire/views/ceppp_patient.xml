@@ -6,6 +6,18 @@
         <field name="arch" type="xml">
             <form string="Titre">
                 <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <field name="user_is_manager" invisible="1" />
+                        <button
+                            class="oe_stat_button"
+                            icon="fa-vcard-o"
+                            name="open_fiche_recruteur"
+                            type="object"
+                            attrs="{'invisible':[('user_is_manager','=',False)]}"
+                        >
+                            Fiche recruteur
+                        </button>
+                    </div>
                     <group>
                         <field name="uuid" />
                         <field name="recruteur_partner_id" />

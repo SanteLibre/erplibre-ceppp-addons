@@ -446,3 +446,13 @@ class CepppRecruteur(models.Model):
             "type": "ir.actions.act_window",
             "res_id": self.fiche_anonyme.id,
         }
+
+    def open_carnet_adresse_patient(self):
+        return {
+            "name": _("Carnet adresse"),
+            "res_model": "res.partner",
+            "view_type": "form",
+            "view_mode": "form",
+            "type": "ir.actions.act_window",
+            "res_id": self.patient_partner_id.id,
+        }
