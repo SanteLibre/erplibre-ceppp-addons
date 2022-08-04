@@ -325,6 +325,11 @@ class CepppRecruteur(models.Model):
         track_visibility="onchange",
     )
 
+    maladie_soi_meme_autre = fields.Text(
+        string="Autres problématiques de santé (soi-même)",
+        track_visibility="onchange",
+    )
+
     maladie_proche_aidant = fields.One2many(
         comodel_name="ceppp.maladie_proche_aidant",
         inverse_name="recruteur_id",

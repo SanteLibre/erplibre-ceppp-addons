@@ -12,6 +12,10 @@ class CepppMaladieProcheAidant(models.Model):
         string="Maladies",
     )
 
+    autre_maladie = fields.Text(
+        string="Autre maladie",
+    )
+
     relation = fields.Many2many(
         comodel_name="ceppp.relation_proche",
         string="Relation avec la personne aidée",
