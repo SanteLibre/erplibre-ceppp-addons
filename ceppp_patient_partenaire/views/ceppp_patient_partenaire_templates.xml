@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">Send a new ceppp formation</h1>
+                        <h1 class="text-center">Nouvelle formation</h1>
                     </div>
                 </div>
             </div>
@@ -16,14 +16,62 @@
                 enctype="multipart/form-data"
             >
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                <!--                <div class="form-group">-->
+                <!--                    <label class="col-md-3 col-sm-4 control-label" for="name">Name</label>-->
+                <!--                    <div class="col-md-7 col-sm-8">-->
+                <!--                        <input-->
+                <!--                            type="text"-->
+                <!--                            class="form-control o_website_form_input"-->
+                <!--                            name="name"-->
+                <!--                            t-attf-value="#{name}"-->
+                <!--                        />-->
+                <!--                    </div>-->
+                <!--                </div>-->
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="name">Name</label>
+                    <!--                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation">Titre de la formation</label>-->
+                    <div class="col-md-7 col-sm-8">
+                        <fieldset>
+                            <legend>Veuillez sélectionner une formation :</legend>
+                            <t t-foreach="titre_formation" t-as="tit">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input"
+                                        name="titre_formation"
+                                        t-att-id="'titre_formation_' + tit.name + '_' + str(tit_index)"
+                                        t-att-value="tit.id"
+                                        t-att-checked="tit.id in default_titre_formation"
+                                    />
+                                    <label
+                                        t-att-for="'titre_formation_' + tit.name + '_' + str(tit_index)"
+                                        t-att-string="tit.name"
+                                    >
+                                        <t t-esc="tit.name" />
+                                    </label>
+                                </div>
+                            </t>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="form-group" id="div_autre_formation">
+                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation_autre">Autres formations</label>
                     <div class="col-md-7 col-sm-8">
                         <input
                             type="text"
                             class="form-control o_website_form_input"
-                            name="name"
-                            t-attf-value="#{name}"
+                            name="titre_formation_autre"
+                            t-att-value="default_titre_formation_autre"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="organisation">Organisation</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control o_website_form_input"
+                            name="organisation"
+                            t-att-value="default_organisation"
                         />
                     </div>
                 </div>
@@ -50,18 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="organisation">Organisation</label>
-                    <div class="col-md-7 col-sm-8">
-                        <input
-                            type="text"
-                            class="form-control o_website_form_input"
-                            name="organisation"
-                            t-att-value="default_organisation"
-                        />
-                    </div>
-                </div>
-                <div class="form-group">
+                <div class="form-group" style="display:none">
                     <label class="col-md-3 col-sm-4 control-label" for="recruteur_id">Recruteur_id</label>
                     <div class="col-md-7 col-sm-8">
                         <select class="form-control o_website_form_input" id="recruteur_id" name="recruteur_id">
@@ -73,58 +110,24 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation">Titre_formation</label>
-                    <div class="col-md-7 col-sm-8">
-                        <t t-foreach="titre_formation" t-as="tit">
-                            <input
-                                type="checkbox"
-                                class="form-control o_website_form_input"
-                                name="titre_formation"
-                                t-att-id="'titre_formation_' + tit.name + '_' + str(tit_index)"
-                                t-att-value="tit.id"
-                                t-att-checked="tit.id in default_titre_formation"
-                            />
-                            <label
-                                t-att-for="'titre_formation_' + tit.name + '_' + str(tit_index)"
-                                t-att-string="tit.name"
-                            >
-                                <t t-esc="tit.name" />
-                            </label>
-                        </t>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation_autre">
-                        Titre_formation_autre
-                    </label>
-                    <div class="col-md-7 col-sm-8">
-                        <input
-                            type="text"
-                            class="form-control o_website_form_input"
-                            name="titre_formation_autre"
-                            t-att-value="default_titre_formation_autre"
-                        />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation_is_autre">
-                        Titre_formation_is_autre
-                    </label>
-                    <div class="col-md-7 col-sm-8">
-                        <input
-                            type="checkbox"
-                            class="form-control o_website_form_input"
-                            name="titre_formation_is_autre"
-                            id="titre_formation_is_autre"
-                            t-att-value="True"
-                            t-att-checked="default_titre_formation_is_autre"
-                        />
-                    </div>
-                </div>
+                <!--                <div class="form-group">-->
+                <!--                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation_is_autre">-->
+                <!--                        Titre_formation_is_autre-->
+                <!--                    </label>-->
+                <!--                    <div class="col-md-7 col-sm-8">-->
+                <!--                        <input-->
+                <!--                            type="checkbox"-->
+                <!--                            class="form-control o_website_form_input"-->
+                <!--                            name="titre_formation_is_autre"-->
+                <!--                            id="titre_formation_is_autre"-->
+                <!--                            t-att-value="True"-->
+                <!--                            t-att-checked="default_titre_formation_is_autre"-->
+                <!--                        />-->
+                <!--                    </div>-->
+                <!--                </div>-->
                 <div class="form-group">
                     <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
-                        <button class="btn btn-primary btn-lg">Submit Ceppp Formation</button>
+                        <button class="btn btn-primary btn-lg">Ajouter une formation</button>
                     </div>
                 </div>
             </form>
@@ -136,7 +139,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">Send a new ceppp implication</h1>
+                        <h1 class="text-center">Nouvelle implication</h1>
                     </div>
                 </div>
             </div>
@@ -145,45 +148,99 @@
                 method="POST"
                 class="form-horizontal mt32"
                 enctype="multipart/form-data"
+                ng-app="CepppApp"
+                ng-controller="ImplicationController"
             >
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                <!--                <div class="form-group">-->
+                <!--                    <label class="col-md-3 col-sm-4 control-label" for="name">Name</label>-->
+                <!--                    <div class="col-md-7 col-sm-8">-->
+                <!--                        <input-->
+                <!--                            type="text"-->
+                <!--                            class="form-control o_website_form_input"-->
+                <!--                            name="name"-->
+                <!--                            t-attf-value="#{name}"-->
+                <!--                        />-->
+                <!--                    </div>-->
+                <!--                </div>-->
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="name">Name</label>
+                    <!--                    <label class="col-md-3 col-sm-4 control-label" for="role">Rôle</label>-->
+                    <div class="col-md-7 col-sm-8">
+                        <fieldset>
+                            <legend>Veuillez sélectionner vos rôles :</legend>
+                            <t t-foreach="role" t-as="rol">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input"
+                                        name="role"
+                                        t-att-id="'role_' + rol.name + '_' + str(rol_index)"
+                                        t-att-value="rol.id"
+                                        t-att-checked="rol.id in default_role"
+                                    />
+                                    <label
+                                        t-att-for="'role_' + rol.name + '_' + str(rol_index)"
+                                        t-att-string="rol.name"
+                                    >
+                                        <t t-esc="rol.name" />
+                                    </label>
+                                </div>
+                            </t>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="form-group" id="div_autre_role">
+                    <label class="col-md-3 col-sm-4 control-label" for="role_autre">Autre rôle</label>
                     <div class="col-md-7 col-sm-8">
                         <input
                             type="text"
                             class="form-control o_website_form_input"
-                            name="name"
-                            t-attf-value="#{name}"
+                            name="role_autre"
+                            t-att-value="default_role_autre"
                         />
                     </div>
                 </div>
+                <!--                <div class="form-group">-->
+                <!--                    <label class="col-md-3 col-sm-4 control-label" for="role_is_autre">Role_is_autre</label>-->
+                <!--                    <div class="col-md-7 col-sm-8">-->
+                <!--                        <input-->
+                <!--                            type="checkbox"-->
+                <!--                            class="form-control o_website_form_input"-->
+                <!--                            name="role_is_autre"-->
+                <!--                            id="role_is_autre"-->
+                <!--                            t-att-value="True"-->
+                <!--                            t-att-checked="default_role_is_autre"-->
+                <!--                        />-->
+                <!--                    </div>-->
+                <!--                </div>-->
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="description">Description</label>
+                    <!--                    <label class="col-md-3 col-sm-4 control-label" for="domaine">Domaine</label>-->
                     <div class="col-md-7 col-sm-8">
-        <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input" name="description" style="min-height: 120px"><t t-esc="default_description"/></textarea><!-- prettier-ignore-end -->
-        </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="domaine">Domaine</label>
-                    <div class="col-md-7 col-sm-8">
-                        <t t-foreach="domaine" t-as="dom">
-                            <input
-                                type="checkbox"
-                                class="form-control o_website_form_input"
-                                name="domaine"
-                                t-att-id="'domaine_' + dom.name + '_' + str(dom_index)"
-                                t-att-value="dom.id"
-                                t-att-checked="dom.id in default_domaine"
-                            />
-                            <label t-att-for="'domaine_' + dom.name + '_' + str(dom_index)" t-att-string="dom.name">
-                                <t t-esc="dom.name" />
-                            </label>
-                        </t>
+                        <fieldset>
+                            <legend>Veuillez sélectionner les domaines :</legend>
+                            <t t-foreach="domaine" t-as="dom">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input"
+                                        name="domaine"
+                                        t-att-id="'domaine_' + dom.name + '_' + str(dom_index)"
+                                        t-att-value="dom.id"
+                                        t-att-checked="dom.id in default_domaine"
+                                    />
+                                    <label
+                                        t-att-for="'domaine_' + dom.name + '_' + str(dom_index)"
+                                        t-att-string="dom.name"
+                                    >
+                                        <t t-esc="dom.name" />
+                                    </label>
+                                </div>
+                            </t>
+                        </fieldset>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="domaine_autre">Domaine_autre</label>
+                <div class="form-group" id="div_autre_domaine">
+                    <label class="col-md-3 col-sm-4 control-label" for="domaine_autre">Autre domaine</label>
                     <div class="col-md-7 col-sm-8">
                         <input
                             type="text"
@@ -194,20 +251,49 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="domaine_is_autre">Domaine_is_autre</label>
+                    <label class="col-md-3 col-sm-4 control-label" for="titre">Titre du projet</label>
                     <div class="col-md-7 col-sm-8">
                         <input
-                            type="checkbox"
+                            type="text"
                             class="form-control o_website_form_input"
-                            name="domaine_is_autre"
-                            id="domaine_is_autre"
-                            t-att-value="True"
-                            t-att-checked="default_domaine_is_autre"
+                            name="titre"
+                            t-att-value="default_titre"
+                            required="required"
                         />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="echeance_debut">Echeance_debut</label>
+                    <label class="col-md-3 col-sm-4 control-label" for="nom_equipe">Nom de l'équipe</label>
+                    <div class="col-md-7 col-sm-8">
+                        <input
+                            type="text"
+                            class="form-control o_website_form_input"
+                            name="nom_equipe"
+                            t-att-value="default_nom_equipe"
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="description">Description</label>
+                    <div class="col-md-7 col-sm-8">
+        <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input" name="description" style="min-height: 120px"><t t-esc="default_description"/></textarea><!-- prettier-ignore-end -->
+        </div>
+                </div>
+                <!--                <div class="form-group">-->
+                <!--                    <label class="col-md-3 col-sm-4 control-label" for="domaine_is_autre">Domaine_is_autre</label>-->
+                <!--                    <div class="col-md-7 col-sm-8">-->
+                <!--                        <input-->
+                <!--                            type="checkbox"-->
+                <!--                            class="form-control o_website_form_input"-->
+                <!--                            name="domaine_is_autre"-->
+                <!--                            id="domaine_is_autre"-->
+                <!--                            t-att-value="True"-->
+                <!--                            t-att-checked="default_domaine_is_autre"-->
+                <!--                        />-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="echeance_debut">Échéance début</label>
                     <div class="col-md-7 col-sm-8">
                         <div class="input-group date" data-target-input="nearest" t-attf-id="echeance_debut_datepicker">
                             <input
@@ -230,7 +316,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="echeance_fin">Echeance_fin</label>
+                    <label class="col-md-3 col-sm-4 control-label" for="echeance_fin">Échéance fin</label>
                     <div class="col-md-7 col-sm-8">
                         <div class="input-group date" data-target-input="nearest" t-attf-id="echeance_fin_datepicker">
                             <input
@@ -252,18 +338,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="nom_equipe">Nom_equipe</label>
-                    <div class="col-md-7 col-sm-8">
-                        <input
-                            type="text"
-                            class="form-control o_website_form_input"
-                            name="nom_equipe"
-                            t-att-value="default_nom_equipe"
-                        />
-                    </div>
-                </div>
-                <div class="form-group">
+                <div class="form-group" style="display:none">
                     <label class="col-md-3 col-sm-4 control-label" for="recruteur_id">Recruteur_id</label>
                     <div class="col-md-7 col-sm-8">
                         <select class="form-control o_website_form_input" id="recruteur_id" name="recruteur_id">
@@ -276,61 +351,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="role">Role</label>
-                    <div class="col-md-7 col-sm-8">
-                        <t t-foreach="role" t-as="rol">
-                            <input
-                                type="checkbox"
-                                class="form-control o_website_form_input"
-                                name="role"
-                                t-att-id="'role_' + rol.name + '_' + str(rol_index)"
-                                t-att-value="rol.id"
-                                t-att-checked="rol.id in default_role"
-                            />
-                            <label t-att-for="'role_' + rol.name + '_' + str(rol_index)" t-att-string="rol.name">
-                                <t t-esc="rol.name" />
-                            </label>
-                        </t>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="role_autre">Role_autre</label>
-                    <div class="col-md-7 col-sm-8">
-                        <input
-                            type="text"
-                            class="form-control o_website_form_input"
-                            name="role_autre"
-                            t-att-value="default_role_autre"
-                        />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="role_is_autre">Role_is_autre</label>
-                    <div class="col-md-7 col-sm-8">
-                        <input
-                            type="checkbox"
-                            class="form-control o_website_form_input"
-                            name="role_is_autre"
-                            id="role_is_autre"
-                            t-att-value="True"
-                            t-att-checked="default_role_is_autre"
-                        />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="titre">Titre</label>
-                    <div class="col-md-7 col-sm-8">
-                        <input
-                            type="text"
-                            class="form-control o_website_form_input"
-                            name="titre"
-                            t-att-value="default_titre"
-                        />
-                    </div>
-                </div>
-                <div class="form-group">
                     <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
-                        <button class="btn btn-primary btn-lg">Submit Ceppp Implication</button>
+                        <button class="btn btn-primary btn-lg">Ajouter une implication</button>
                     </div>
                 </div>
             </form>
@@ -342,7 +364,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">Send a new ceppp maladie</h1>
+                        <h1 class="text-center">Ajouter une maladie</h1>
                     </div>
                 </div>
             </div>
@@ -394,7 +416,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">Send a new ceppp maladie proche aidant</h1>
+                        <h1 class="text-center">Ajouter une maladie pour un proche aidant</h1>
                     </div>
                 </div>
             </div>
@@ -405,36 +427,50 @@
                 enctype="multipart/form-data"
             >
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                <!--                <div class="form-group">-->
+                <!--                    <label class="col-md-3 col-sm-4 control-label" for="name">Name</label>-->
+                <!--                    <div class="col-md-7 col-sm-8">-->
+                <!--                        <input-->
+                <!--                            type="text"-->
+                <!--                            class="form-control o_website_form_input"-->
+                <!--                            name="name"-->
+                <!--                            t-attf-value="#{name}"-->
+                <!--                        />-->
+                <!--                    </div>-->
+                <!--                </div>-->
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="name">Name</label>
+                    <!--                    <label class="col-md-3 col-sm-4 control-label" for="maladie">Maladie</label>-->
                     <div class="col-md-7 col-sm-8">
-                        <input
-                            type="text"
-                            class="form-control o_website_form_input"
-                            name="name"
-                            t-attf-value="#{name}"
-                        />
+                        <fieldset>
+                            <legend>Veuillez sélectionner les maladies :</legend>
+                            <t t-foreach="maladie" t-as="mal">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input"
+                                        name="maladie"
+                                        t-att-id="'maladie_' + mal.nom + '_' + str(mal_index)"
+                                        t-att-value="mal.id"
+                                        t-att-checked="mal.id in default_maladie"
+                                    />
+                                    <label
+                                        t-att-for="'maladie_' + mal.nom + '_' + str(mal_index)"
+                                        t-att-string="mal.nom"
+                                    >
+                                        <t t-esc="mal.nom" />
+                                    </label>
+                                </div>
+                            </t>
+                        </fieldset>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="maladie">Maladie</label>
+                    <label class="col-md-3 col-sm-4 control-label" for="autre_maladie">Autres maladies</label>
                     <div class="col-md-7 col-sm-8">
-                        <t t-foreach="maladie" t-as="mal">
-                            <input
-                                type="checkbox"
-                                class="form-control o_website_form_input"
-                                name="maladie"
-                                t-att-id="'maladie_' + mal.nom + '_' + str(mal_index)"
-                                t-att-value="mal.id"
-                                t-att-checked="mal.id in default_maladie"
-                            />
-                            <label t-att-for="'maladie_' + mal.nom + '_' + str(mal_index)" t-att-string="mal.nom">
-                                <t t-esc="mal.nom" />
-                            </label>
-                        </t>
-                    </div>
+        <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input" name="autre_maladie" style="min-height: 120px"><t t-esc="default_autre_maladie"/></textarea><!-- prettier-ignore-end -->
+        </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="display:none">
                     <label class="col-md-3 col-sm-4 control-label" for="recruteur_id">Recruteur_id</label>
                     <div class="col-md-7 col-sm-8">
                         <select class="form-control o_website_form_input" id="recruteur_id" name="recruteur_id">
@@ -447,25 +483,33 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="relation">Relation</label>
+                    <!--                    <label class="col-md-3 col-sm-4 control-label" for="relation">Relation</label>-->
                     <div class="col-md-7 col-sm-8">
-                        <t t-foreach="relation" t-as="rel">
-                            <input
-                                type="checkbox"
-                                class="form-control o_website_form_input"
-                                name="relation"
-                                t-att-id="'relation_' + rel.name + '_' + str(rel_index)"
-                                t-att-value="rel.id"
-                                t-att-checked="rel.id in default_relation"
-                            />
-                            <label t-att-for="'relation_' + rel.name + '_' + str(rel_index)" t-att-string="rel.name">
-                                <t t-esc="rel.name" />
-                            </label>
-                        </t>
+                        <fieldset>
+                            <legend>Veuillez sélectionner vos relations :</legend>
+                            <t t-foreach="relation" t-as="rel">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input"
+                                        name="relation"
+                                        t-att-id="'relation_' + rel.name + '_' + str(rel_index)"
+                                        t-att-value="rel.id"
+                                        t-att-checked="rel.id in default_relation"
+                                    />
+                                    <label
+                                        t-att-for="'relation_' + rel.name + '_' + str(rel_index)"
+                                        t-att-string="rel.name"
+                                    >
+                                        <t t-esc="rel.name" />
+                                    </label>
+                                </div>
+                            </t>
+                        </fieldset>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="relation_autre">Relation_autre</label>
+                <div class="form-group" id="div_autre_relation">
+                    <label class="col-md-3 col-sm-4 control-label" for="relation_autre">Autre relation</label>
                     <div class="col-md-7 col-sm-8">
                         <input
                             type="text"
@@ -475,22 +519,22 @@
                         />
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="relation_is_autre">Relation_is_autre</label>
-                    <div class="col-md-7 col-sm-8">
-                        <input
-                            type="checkbox"
-                            class="form-control o_website_form_input"
-                            name="relation_is_autre"
-                            id="relation_is_autre"
-                            t-att-value="True"
-                            t-att-checked="default_relation_is_autre"
-                        />
-                    </div>
-                </div>
+                <!--                <div class="form-group">-->
+                <!--                    <label class="col-md-3 col-sm-4 control-label" for="relation_is_autre">Relation_is_autre</label>-->
+                <!--                    <div class="col-md-7 col-sm-8">-->
+                <!--                        <input-->
+                <!--                            type="checkbox"-->
+                <!--                            class="form-control o_website_form_input"-->
+                <!--                            name="relation_is_autre"-->
+                <!--                            id="relation_is_autre"-->
+                <!--                            t-att-value="True"-->
+                <!--                            t-att-checked="default_relation_is_autre"-->
+                <!--                        />-->
+                <!--                    </div>-->
+                <!--                </div>-->
                 <div class="form-group">
                     <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
-                        <button class="btn btn-primary btn-lg">Submit Ceppp Maladie_Proche_Aidant</button>
+                        <button class="btn btn-primary btn-lg">Ajouter une maladie pour un proche aidant</button>
                     </div>
                 </div>
             </form>
@@ -499,7 +543,7 @@
 
     <template id="ceppp_patient_partenaire.portal_my_ceppp_formation" name="My Ceppp Formation">
         <t t-call="portal.portal_layout">
-            <t t-set="o_portal_fullwidth_alert">
+            <t t-set="o_portal_fullwidth_alert" groups="base.group_partner_manager">
                 <t t-call="portal.portal_back_in_edit_mode">
                     <t
                         t-set="backend_url"
@@ -520,13 +564,13 @@
                             <b>Organisation:</b>
                             <span t-field="ceppp_formation.organisation" />
                         </div>
-                        <div class="col-12 col-md-6 mb-2 mb-md-0">
-                            <b>Recruteur:</b>
-                            <a
-                                t-attf-href="/my/ceppp_recruteur/#{ceppp_formation.recruteur_id.id}"
-                                t-field="ceppp_formation.recruteur_id.name"
-                            />
-                        </div>
+                        <!--                        <div class="col-12 col-md-6 mb-2 mb-md-0" style="display:none">-->
+                        <!--                            <b>Recruteur:</b>-->
+                        <!--                            <a-->
+                        <!--                                t-attf-href="/my/ceppp_recruteur/#{ceppp_formation.recruteur_id.id}"-->
+                        <!--                                t-field="ceppp_formation.recruteur_id.name"-->
+                        <!--                            />-->
+                        <!--                        </div>-->
                         <div class="col-12 col-md-6 mb-2 mb-md-0">
                             <b>Titre de la formation:</b>
                             <t t-foreach="ceppp_formation.titre_formation" t-as="tit">
@@ -535,13 +579,17 @@
                             </t>
                         </div>
                         <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <b>Date:</b>
+                            <span t-field="ceppp_formation.date" />
+                        </div>
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
                             <b>Autres formations:</b>
                             <span t-field="ceppp_formation.titre_formation_autre" />
                         </div>
-                        <div class="col-12 col-md-6 mb-2 mb-md-0">
-                            <b>Titre Formation Is Autre:</b>
-                            <span t-field="ceppp_formation.titre_formation_is_autre" />
-                        </div>
+                        <!--                        <div class="col-12 col-md-6 mb-2 mb-md-0">-->
+                        <!--                            <b>Titre Formation Is Autre:</b>-->
+                        <!--                            <span t-field="ceppp_formation.titre_formation_is_autre" />-->
+                        <!--                        </div>-->
                     </div>
                 </t>
             </t>
@@ -550,7 +598,7 @@
 
     <template id="ceppp_patient_partenaire.portal_my_ceppp_implication" name="My Ceppp Implication">
         <t t-call="portal.portal_layout">
-            <t t-set="o_portal_fullwidth_alert">
+            <t t-set="o_portal_fullwidth_alert" groups="base.group_partner_manager">
                 <t t-call="portal.portal_back_in_edit_mode">
                     <t
                         t-set="backend_url"
@@ -561,7 +609,7 @@
             <t t-call="portal.portal_record_layout">
                 <t t-set="card_header">
                     <h5 class="mb-0">
-                        <small class="text-muted">Ceppp Implication -</small>
+                        <small class="text-muted">Implication -</small>
                         <span t-field="ceppp_implication.name" />
                     </h5>
                 </t>
@@ -582,10 +630,10 @@
                             <b>Autres domaines:</b>
                             <span t-field="ceppp_implication.domaine_autre" />
                         </div>
-                        <div class="col-12 col-md-6 mb-2 mb-md-0">
-                            <b>Domaine Is Autre:</b>
-                            <span t-field="ceppp_implication.domaine_is_autre" />
-                        </div>
+                        <!--                        <div class="col-12 col-md-6 mb-2 mb-md-0">-->
+                        <!--                            <b>Domaine Is Autre:</b>-->
+                        <!--                            <span t-field="ceppp_implication.domaine_is_autre" />-->
+                        <!--                        </div>-->
                         <div class="col-12 col-md-6 mb-2 mb-md-0">
                             <b>&#201;ch&#233;ance d&#233;but:</b>
                             <span t-field="ceppp_implication.echeance_debut" />
@@ -598,13 +646,13 @@
                             <b>Nom de l'&#233;quipe:</b>
                             <span t-field="ceppp_implication.nom_equipe" />
                         </div>
-                        <div class="col-12 col-md-6 mb-2 mb-md-0">
-                            <b>Recruteur:</b>
-                            <a
-                                t-attf-href="/my/ceppp_recruteur/#{ceppp_implication.recruteur_id.id}"
-                                t-field="ceppp_implication.recruteur_id.name"
-                            />
-                        </div>
+                        <!--                        <div class="col-12 col-md-6 mb-2 mb-md-0" style="display:none">-->
+                        <!--                            <b>Recruteur:</b>-->
+                        <!--                            <a-->
+                        <!--                                t-attf-href="/my/ceppp_recruteur/#{ceppp_implication.recruteur_id.id}"-->
+                        <!--                                t-field="ceppp_implication.recruteur_id.name"-->
+                        <!--                            />-->
+                        <!--                        </div>-->
                         <div class="col-12 col-md-6 mb-2 mb-md-0">
                             <b>R&#244;le:</b>
                             <t t-foreach="ceppp_implication.role" t-as="rol">
@@ -616,10 +664,10 @@
                             <b>Autres r&#244;les:</b>
                             <span t-field="ceppp_implication.role_autre" />
                         </div>
-                        <div class="col-12 col-md-6 mb-2 mb-md-0">
-                            <b>Role Is Autre:</b>
-                            <span t-field="ceppp_implication.role_is_autre" />
-                        </div>
+                        <!--                        <div class="col-12 col-md-6 mb-2 mb-md-0">-->
+                        <!--                            <b>Role Is Autre:</b>-->
+                        <!--                            <span t-field="ceppp_implication.role_is_autre" />-->
+                        <!--                        </div>-->
                         <div class="col-12 col-md-6 mb-2 mb-md-0">
                             <b>Titre du projet:</b>
                             <span t-field="ceppp_implication.titre" />
@@ -632,7 +680,7 @@
 
     <template id="ceppp_patient_partenaire.portal_my_ceppp_maladie" name="My Ceppp Maladie">
         <t t-call="portal.portal_layout">
-            <t t-set="o_portal_fullwidth_alert">
+            <t t-set="o_portal_fullwidth_alert" groups="base.group_partner_manager">
                 <t t-call="portal.portal_back_in_edit_mode">
                     <t
                         t-set="backend_url"
@@ -668,7 +716,7 @@
 
     <template id="ceppp_patient_partenaire.portal_my_ceppp_maladie_proche_aidant" name="My Ceppp Maladie_Proche_Aidant">
         <t t-call="portal.portal_layout">
-            <t t-set="o_portal_fullwidth_alert">
+            <t t-set="o_portal_fullwidth_alert" groups="base.group_partner_manager">
                 <t t-call="portal.portal_back_in_edit_mode">
                     <t
                         t-set="backend_url"
@@ -679,7 +727,7 @@
             <t t-call="portal.portal_record_layout">
                 <t t-set="card_header">
                     <h5 class="mb-0">
-                        <small class="text-muted">Ceppp Maladie_Proche_Aidant -</small>
+                        <small class="text-muted">Maladie proche aidant -</small>
                         <span t-field="ceppp_maladie_proche_aidant.name" />
                     </h5>
                 </t>
@@ -692,13 +740,13 @@
                                 <t t-if="not mal_last">,</t>
                             </t>
                         </div>
-                        <div class="col-12 col-md-6 mb-2 mb-md-0">
-                            <b>Recruteur:</b>
-                            <a
-                                t-attf-href="/my/ceppp_recruteur/#{ceppp_maladie_proche_aidant.recruteur_id.id}"
-                                t-field="ceppp_maladie_proche_aidant.recruteur_id.name"
-                            />
-                        </div>
+                        <!--                        <div class="col-12 col-md-6 mb-2 mb-md-0" style="display:none">-->
+                        <!--                            <b>Recruteur:</b>-->
+                        <!--                            <a-->
+                        <!--                                t-attf-href="/my/ceppp_recruteur/#{ceppp_maladie_proche_aidant.recruteur_id.id}"-->
+                        <!--                                t-field="ceppp_maladie_proche_aidant.recruteur_id.name"-->
+                        <!--                            />-->
+                        <!--                        </div>-->
                         <div class="col-12 col-md-6 mb-2 mb-md-0">
                             <b>Relation avec la personne aid&#233;e:</b>
                             <t t-foreach="ceppp_maladie_proche_aidant.relation" t-as="rel">
@@ -711,9 +759,13 @@
                             <span t-field="ceppp_maladie_proche_aidant.relation_autre" />
                         </div>
                         <div class="col-12 col-md-6 mb-2 mb-md-0">
-                            <b>Relation Is Autre:</b>
-                            <span t-field="ceppp_maladie_proche_aidant.relation_is_autre" />
+                            <b>Autre maladie:</b>
+                            <span t-field="ceppp_maladie_proche_aidant.autre_maladie" />
                         </div>
+                        <!--                        <div class="col-12 col-md-6 mb-2 mb-md-0">-->
+                        <!--                            <b>Relation Is Autre:</b>-->
+                        <!--                            <span t-field="ceppp_maladie_proche_aidant.relation_is_autre" />-->
+                        <!--                        </div>-->
                     </div>
                 </t>
             </t>
@@ -737,7 +789,7 @@
         <t t-call="portal.portal_layout">
             <t t-set="breadcrumbs_searchbar" t-value="True" />
             <t t-call="portal.portal_searchbar">
-                <t t-set="title">Ceppp Formations</t>
+                <t t-set="title">Formations</t>
             </t>
             <form method="POST" t-attf-action="/new/ceppp_formation">
                 <button
@@ -746,19 +798,20 @@
                     class="btn btn-primary"
                     style="float: right; margin-right: 5px;"
                 >
-                    New Ceppp Formation
+                    Ajouter une formation
                 </button>
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
             </form>
             <t t-if="not ceppp_formations">
-                <div class="alert alert-warning mt8" role="alert">There are no ceppp_formations.</div>
+                <div class="alert alert-warning mt8" role="alert">Aucune formation.</div>
             </t>
             <t t-if="ceppp_formations" t-call="portal.portal_table">
                 <tbody>
                     <tr t-foreach="ceppp_formations" t-as="ceppp_formation">
                         <td>
                             <a t-attf-href="/my/ceppp_formation/#{ceppp_formation.id}?{{ keep_query() }}">
-                                <span t-field="ceppp_formation.name" />
+                                <span t-field="ceppp_formation.name" t-if="ceppp_formation.name" />
+                                <span t-else="">VIDE</span>
                             </a>
                         </td>
                         <td class="text-right" />
@@ -772,7 +825,7 @@
         <t t-call="portal.portal_layout">
             <t t-set="breadcrumbs_searchbar" t-value="True" />
             <t t-call="portal.portal_searchbar">
-                <t t-set="title">Ceppp Implications</t>
+                <t t-set="title">Vos implications</t>
             </t>
             <form method="POST" t-attf-action="/new/ceppp_implication">
                 <button
@@ -781,19 +834,20 @@
                     class="btn btn-primary"
                     style="float: right; margin-right: 5px;"
                 >
-                    New Ceppp Implication
+                    Nouvelle implication
                 </button>
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
             </form>
             <t t-if="not ceppp_implications">
-                <div class="alert alert-warning mt8" role="alert">There are no ceppp_implications.</div>
+                <div class="alert alert-warning mt8" role="alert">Il n'y a aucune implication.</div>
             </t>
             <t t-if="ceppp_implications" t-call="portal.portal_table">
                 <tbody>
                     <tr t-foreach="ceppp_implications" t-as="ceppp_implication">
                         <td>
                             <a t-attf-href="/my/ceppp_implication/#{ceppp_implication.id}?{{ keep_query() }}">
-                                <span t-field="ceppp_implication.name" />
+                                <span t-field="ceppp_implication.name" t-if="ceppp_implication.name" />
+                                <span t-else="">VIDE</span>
                             </a>
                         </td>
                         <td class="text-right" />
@@ -810,7 +864,7 @@
         <t t-call="portal.portal_layout">
             <t t-set="breadcrumbs_searchbar" t-value="True" />
             <t t-call="portal.portal_searchbar">
-                <t t-set="title">Ceppp Maladie_Proche_Aidants</t>
+                <t t-set="title">Maladie proche aidant</t>
             </t>
             <form method="POST" t-attf-action="/new/ceppp_maladie_proche_aidant">
                 <button
@@ -819,12 +873,12 @@
                     class="btn btn-primary"
                     style="float: right; margin-right: 5px;"
                 >
-                    New Ceppp Maladie_Proche_Aidant
+                    Ajouter une maladie pour un proche aidant
                 </button>
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
             </form>
             <t t-if="not ceppp_maladie_proche_aidants">
-                <div class="alert alert-warning mt8" role="alert">There are no ceppp_maladie_proche_aidants.</div>
+                <div class="alert alert-warning mt8" role="alert">Aucune maladie pour proche aidant.</div>
             </t>
             <t t-if="ceppp_maladie_proche_aidants" t-call="portal.portal_table">
                 <tbody>
@@ -833,7 +887,11 @@
                             <a
                                 t-attf-href="/my/ceppp_maladie_proche_aidant/#{ceppp_maladie_proche_aidant.id}?{{ keep_query() }}"
                             >
-                                <span t-field="ceppp_maladie_proche_aidant.name" />
+                                <span
+                                    t-field="ceppp_maladie_proche_aidant.name"
+                                    t-if="ceppp_maladie_proche_aidant.name"
+                                />
+                                <span t-else="">VIDE</span>
                             </a>
                         </td>
                         <td class="text-right" />
@@ -843,40 +901,40 @@
         </t>
     </template>
 
-    <template id="ceppp_patient_partenaire.portal_my_ceppp_maladies" name="My Ceppp Maladies">
-        <t t-call="portal.portal_layout">
-            <t t-set="breadcrumbs_searchbar" t-value="True" />
-            <t t-call="portal.portal_searchbar">
-                <t t-set="title">Ceppp Maladies</t>
-            </t>
-            <form method="POST" t-attf-action="/new/ceppp_maladie">
-                <button
-                    name="create_new_ceppp_maladie"
-                    type="action"
-                    class="btn btn-primary"
-                    style="float: right; margin-right: 5px;"
-                >
-                    New Ceppp Maladie
-                </button>
-                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
-            </form>
-            <t t-if="not ceppp_maladies">
-                <div class="alert alert-warning mt8" role="alert">There are no ceppp_maladies.</div>
-            </t>
-            <t t-if="ceppp_maladies" t-call="portal.portal_table">
-                <tbody>
-                    <tr t-foreach="ceppp_maladies" t-as="ceppp_maladie">
-                        <td>
-                            <a t-attf-href="/my/ceppp_maladie/#{ceppp_maladie.id}?{{ keep_query() }}">
-                                <span t-field="ceppp_maladie.nom" />
-                            </a>
-                        </td>
-                        <td class="text-right" />
-                    </tr>
-                </tbody>
-            </t>
-        </t>
-    </template>
+    <!--    <template id="ceppp_patient_partenaire.portal_my_ceppp_maladies" name="My Ceppp Maladies">-->
+    <!--        <t t-call="portal.portal_layout">-->
+    <!--            <t t-set="breadcrumbs_searchbar" t-value="True" />-->
+    <!--            <t t-call="portal.portal_searchbar">-->
+    <!--                <t t-set="title">Ceppp Maladies</t>-->
+    <!--            </t>-->
+    <!--            <form method="POST" t-attf-action="/new/ceppp_maladie">-->
+    <!--                <button-->
+    <!--                    name="create_new_ceppp_maladie"-->
+    <!--                    type="action"-->
+    <!--                    class="btn btn-primary"-->
+    <!--                    style="float: right; margin-right: 5px;"-->
+    <!--                >-->
+    <!--                    New Ceppp Maladie-->
+    <!--                </button>-->
+    <!--                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />-->
+    <!--            </form>-->
+    <!--            <t t-if="not ceppp_maladies">-->
+    <!--                <div class="alert alert-warning mt8" role="alert">There are no ceppp_maladies.</div>-->
+    <!--            </t>-->
+    <!--            <t t-if="ceppp_maladies" t-call="portal.portal_table">-->
+    <!--                <tbody>-->
+    <!--                    <tr t-foreach="ceppp_maladies" t-as="ceppp_maladie">-->
+    <!--                        <td>-->
+    <!--                            <a t-attf-href="/my/ceppp_maladie/#{ceppp_maladie.id}?{{ keep_query() }}">-->
+    <!--                                <span t-field="ceppp_maladie.nom" />-->
+    <!--                            </a>-->
+    <!--                        </td>-->
+    <!--                        <td class="text-right" />-->
+    <!--                    </tr>-->
+    <!--                </tbody>-->
+    <!--            </t>-->
+    <!--        </t>-->
+    <!--    </template>-->
 
     <template
         id="ceppp_patient_partenaire.portal_my_home"
@@ -885,7 +943,7 @@
     >
         <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
             <t t-if="ceppp_formation_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Formations</t>
+                <t t-set="title">Formations</t>
                 <t t-set="url" t-value="'/my/ceppp_formations'" />
                 <t t-set="count" t-value="ceppp_formation_count" />
             </t>
@@ -896,10 +954,10 @@
                 href="/new/ceppp_formation"
             >
                 <i class="fa fa-plus-circle" />
-                Ceppp Formation
+                Vos formations
             </a>
             <t t-if="ceppp_implication_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Implications</t>
+                <t t-set="title">Implications</t>
                 <t t-set="url" t-value="'/my/ceppp_implications'" />
                 <t t-set="count" t-value="ceppp_implication_count" />
             </t>
@@ -910,24 +968,24 @@
                 href="/new/ceppp_implication"
             >
                 <i class="fa fa-plus-circle" />
-                Ceppp Implication
+                Vos implications
             </a>
-            <t t-if="ceppp_maladie_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Maladies</t>
-                <t t-set="url" t-value="'/my/ceppp_maladies'" />
-                <t t-set="count" t-value="ceppp_maladie_count" />
-            </t>
-            <a
-                t-if="not ceppp_maladie_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_maladie"
-            >
-                <i class="fa fa-plus-circle" />
-                Ceppp Maladie
-            </a>
+            <!--            <t t-if="ceppp_maladie_count" t-call="portal.portal_docs_entry">-->
+            <!--                <t t-set="title">Ceppp Maladies</t>-->
+            <!--                <t t-set="url" t-value="'/my/ceppp_maladies'" />-->
+            <!--                <t t-set="count" t-value="ceppp_maladie_count" />-->
+            <!--            </t>-->
+            <!--            <a-->
+            <!--                t-if="not ceppp_maladie_count"-->
+            <!--                role="button"-->
+            <!--                class="btn btn-primary btn-block mb8"-->
+            <!--                href="/new/ceppp_maladie"-->
+            <!--            >-->
+            <!--                <i class="fa fa-plus-circle" />-->
+            <!--                Ceppp Maladie-->
+            <!--            </a>-->
             <t t-if="ceppp_maladie_proche_aidant_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Ceppp Maladie_Proche_Aidants</t>
+                <t t-set="title">Maladie des proches aidants</t>
                 <t t-set="url" t-value="'/my/ceppp_maladie_proche_aidants'" />
                 <t t-set="count" t-value="ceppp_maladie_proche_aidant_count" />
             </t>
@@ -938,7 +996,7 @@
                 href="/new/ceppp_maladie_proche_aidant"
             >
                 <i class="fa fa-plus-circle" />
-                Ceppp Maladie_Proche_Aidant
+                Maladie des proches aidants
             </a>
         </xpath>
     </template>
@@ -957,9 +1015,9 @@
                     t-if="ceppp_formation or page_name == 'create_ceppp_formation'"
                     t-attf-href="/my/ceppp_formations?{{ keep_query() }}"
                 >
-                    Ceppp Formations
+                    Formations
                 </a>
-                <t t-else="">Ceppp Formations</t>
+                <t t-else="">Formations</t>
             </li>
             <li t-if="ceppp_formation" class="breadcrumb-item active">
                 <t t-esc="ceppp_formation.name" />
@@ -972,9 +1030,9 @@
                     t-if="ceppp_implication or page_name == 'create_ceppp_implication'"
                     t-attf-href="/my/ceppp_implications?{{ keep_query() }}"
                 >
-                    Ceppp Implications
+                    Implications
                 </a>
-                <t t-else="">Ceppp Implications</t>
+                <t t-else="">Implications</t>
             </li>
             <li t-if="ceppp_implication" class="breadcrumb-item active">
                 <t t-esc="ceppp_implication.name" />
@@ -1002,9 +1060,9 @@
                     t-if="ceppp_maladie_proche_aidant or page_name == 'create_ceppp_maladie_proche_aidant'"
                     t-attf-href="/my/ceppp_maladie_proche_aidants?{{ keep_query() }}"
                 >
-                    Ceppp Maladie_Proche_Aidants
+                    Maladie proche aidant
                 </a>
-                <t t-else="">Ceppp Maladie_Proche_Aidants</t>
+                <t t-else="">Maladie proche aidant</t>
             </li>
             <li t-if="ceppp_maladie_proche_aidant" class="breadcrumb-item active">
                 <t t-esc="ceppp_maladie_proche_aidant.name" />

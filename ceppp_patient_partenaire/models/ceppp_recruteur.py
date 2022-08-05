@@ -447,12 +447,21 @@ class CepppRecruteur(models.Model):
             if str_maladies:
                 value += " " + str_maladies
             str_maladies = " ".join(
-                [a.autre_maladie for a in self.maladie_proche_aidant]
+                [
+                    a.autre_maladie
+                    for a in self.maladie_proche_aidant
+                    if a and a.autre_maladie
+                ]
             )
             if str_maladies:
                 value += " " + str_maladies
             str_maladies = " ".join(
-                [b.nom for a in self.maladie_proche_aidant for b in a.maladie]
+                [
+                    b.nom
+                    for a in self.maladie_proche_aidant
+                    for b in a.maladie
+                    if a and a.maladie
+                ]
             )
             if str_maladies:
                 value += " " + str_maladies

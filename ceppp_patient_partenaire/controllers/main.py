@@ -77,8 +77,8 @@ class CepppPatientPartenaireController(http.Controller):
     def submit_ceppp_formation(self, **kw):
         vals = {}
 
-        if kw.get("name"):
-            vals["name"] = kw.get("name")
+        # if kw.get("name"):
+        #     vals["name"] = kw.get("name")
 
         if kw.get("date"):
             vals["date"] = kw.get("date")
@@ -229,8 +229,8 @@ class CepppPatientPartenaireController(http.Controller):
     def submit_ceppp_implication(self, **kw):
         vals = {}
 
-        if kw.get("name"):
-            vals["name"] = kw.get("name")
+        # if kw.get("name"):
+        #     vals["name"] = kw.get("name")
 
         if kw.get("description"):
             vals["description"] = kw.get("description")
@@ -401,6 +401,7 @@ class CepppPatientPartenaireController(http.Controller):
                 "default_recruteur_id": default_recruteur_id,
                 "default_relation": default_relation,
                 "default_relation_autre": default_relation_autre,
+                "default_autre_maladie": "",
                 "default_relation_is_autre": default_relation_is_autre,
             },
         )
@@ -415,8 +416,11 @@ class CepppPatientPartenaireController(http.Controller):
     def submit_ceppp_maladie_proche_aidant(self, **kw):
         vals = {}
 
-        if kw.get("name"):
-            vals["name"] = kw.get("name")
+        # if kw.get("name"):
+        #     vals["name"] = kw.get("name")
+
+        if kw.get("autre_maladie"):
+            vals["autre_maladie"] = kw.get("autre_maladie")
 
         if kw.get("maladie"):
             lst_value_maladie = [
