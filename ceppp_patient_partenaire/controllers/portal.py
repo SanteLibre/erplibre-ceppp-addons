@@ -15,18 +15,48 @@ class CepppPatientPartenaireController(CustomerPortal):
         values = super(
             CepppPatientPartenaireController, self
         )._prepare_portal_layout_values()
-        values["ceppp_formation_count"] = request.env[
-            "ceppp.formation"
-        ].search_count([])
-        values["ceppp_implication_count"] = request.env[
-            "ceppp.implication"
-        ].search_count([])
-        values["ceppp_maladie_count"] = request.env[
-            "ceppp.maladie"
-        ].search_count([])
-        values["ceppp_maladie_proche_aidant_count"] = request.env[
-            "ceppp.maladie_proche_aidant"
-        ].search_count([])
+        if request.env.user.partner_id.patient_partner_ids:
+            values["ceppp_formation_count"] = request.env[
+                "ceppp.formation"
+            ].search_count(
+                [
+                    (
+                        "recruteur_id",
+                        "in",
+                        [request.env.user.partner_id.patient_partner_ids.id],
+                    )
+                ]
+            )
+            values["ceppp_implication_count"] = request.env[
+                "ceppp.implication"
+            ].search_count(
+                [
+                    (
+                        "recruteur_id",
+                        "in",
+                        [request.env.user.partner_id.patient_partner_ids.id],
+                    )
+                ]
+            )
+            values["ceppp_maladie_count"] = request.env[
+                "ceppp.maladie"
+            ].search_count([])
+            values["ceppp_maladie_proche_aidant_count"] = request.env[
+                "ceppp.maladie_proche_aidant"
+            ].search_count(
+                [
+                    (
+                        "recruteur_id",
+                        "in",
+                        [request.env.user.partner_id.patient_partner_ids.id],
+                    )
+                ]
+            )
+        else:
+            values["ceppp_formation_count"] = 0
+            values["ceppp_implication_count"] = 0
+            values["ceppp_maladie_count"] = 0
+            values["ceppp_maladie_proche_aidant_count"] = 0
         return values
 
     # ------------------------------------------------------------
@@ -100,6 +130,13 @@ class CepppPatientPartenaireController(CustomerPortal):
                 ("create_date", ">", date_begin),
                 ("create_date", "<=", date_end),
             ]
+        domain += [
+            (
+                "recruteur_id",
+                "in",
+                [request.env.user.partner_id.patient_partner_ids.id],
+            )
+        ]
         # ceppp_formations count
         ceppp_formation_count = CepppFormation.search_count(domain)
         # pager
@@ -247,6 +284,14 @@ class CepppPatientPartenaireController(CustomerPortal):
                 ("create_date", ">", date_begin),
                 ("create_date", "<=", date_end),
             ]
+        # Restrict access data
+        domain += [
+            (
+                "recruteur_id",
+                "in",
+                [request.env.user.partner_id.patient_partner_ids.id],
+            )
+        ]
         # ceppp_implications count
         ceppp_implication_count = CepppImplication.search_count(domain)
         # pager
@@ -394,6 +439,13 @@ class CepppPatientPartenaireController(CustomerPortal):
                 ("create_date", ">", date_begin),
                 ("create_date", "<=", date_end),
             ]
+        domain += [
+            (
+                "recruteur_id",
+                "in",
+                [request.env.user.partner_id.patient_partner_ids.id],
+            )
+        ]
         # ceppp_maladies count
         ceppp_maladie_count = CepppMaladie.search_count(domain)
         # pager
@@ -548,6 +600,13 @@ class CepppPatientPartenaireController(CustomerPortal):
         ceppp_maladie_proche_aidant_count = (
             CepppMaladieProcheAidant.search_count(domain)
         )
+        domain += [
+            (
+                "recruteur_id",
+                "in",
+                [request.env.user.partner_id.patient_partner_ids.id],
+            )
+        ]
         # pager
         pager = portal_pager(
             url="/my/ceppp_maladie_proche_aidants",

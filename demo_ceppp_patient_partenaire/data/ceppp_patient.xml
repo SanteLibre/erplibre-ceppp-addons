@@ -17,12 +17,31 @@
             <field name="maladie" eval="[(4, ref('ceppp_patient_partenaire.ceppp_maladie_convulsions')),(4, ref('ceppp_patient_partenaire.ceppp_maladie_septoplastie_pour_une_deviation_de_la_cloison_nasale'))]" />
             <field name="relation" eval="[(4, ref('ceppp_patient_partenaire.ceppp_relation_proche_5')),(4, ref('ceppp_patient_partenaire.ceppp_relation_proche_9'))]" />
         </record>
+        <record id="ceppp_formation_1_recruteur_1" model="ceppp.formation">
+            <field name="recruteur_id" ref="ceppp_patient_recruteur_1" />
+            <field name="titre_formation" eval="[(4, ref('ceppp_patient_partenaire.ceppp_formation_titre_1'))]" />
+            <field name="organisation">Formation CHUM</field>
+            <field name="date">2021-09-12</field>
+        </record>
+        <record id="ceppp_formation_2_recruteur_1" model="ceppp.formation">
+            <field name="recruteur_id" ref="ceppp_patient_recruteur_1" />
+            <field name="titre_formation" eval="[(4, ref('ceppp_patient_partenaire.ceppp_formation_titre_3')),(4, ref('ceppp_patient_partenaire.ceppp_formation_titre_6'))]" />
+            <field name="organisation">Formation CHUM</field>
+            <field name="titre_formation_autre">Cuisine avec ses partenaires</field>
+            <field name="date">2021-10-12</field>
+        </record>
         <record id="ceppp_patient_recruteur_2" model="ceppp.recruteur">
             <field name="patient_partner_id" ref="partner_demo_steve_lebeau" />
             <field name="sexe">homme</field>
             <field name="recruteur_partner_id" ref="partner_demo_julie_dufour" />
             <field name="date_naissance">1981-09-12</field>
             <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_francais')),(4, ref('ceppp_patient_partenaire.ceppp_langue_anglais'))]" />
+        </record>
+        <record id="ceppp_formation_1_recruteur_2" model="ceppp.formation">
+            <field name="recruteur_id" ref="ceppp_patient_recruteur_2" />
+            <field name="titre_formation" eval="[(4, ref('ceppp_patient_partenaire.ceppp_formation_titre_2'))]" />
+            <field name="organisation">Formation CHUM</field>
+            <field name="date">2021-07-12</field>
         </record>
         <record id="ceppp_patient_recruteur_3" model="ceppp.recruteur">
             <field name="patient_partner_id" ref="partner_demo_martin_petit" />
