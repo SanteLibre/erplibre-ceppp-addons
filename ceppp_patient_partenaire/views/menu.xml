@@ -57,6 +57,24 @@
     />
 
     <menuitem
+        id="menu_create_patient"
+        name="Créer un patient"
+        sequence="4"
+        action="action_ceppp_create_patient"
+        groups="group_ceppp_patient_partenaire_recruteur"
+        parent="menu_patient"
+    />
+
+    <menuitem
+        id="menu_create_partenaire"
+        name="Créer un membre"
+        sequence="4"
+        action="action_ceppp_create_member"
+        groups="group_ceppp_patient_partenaire_manager"
+        parent="menu_patient"
+    />
+
+    <menuitem
         id="menu_competence"
         name="Competence"
         action="ceppp_competence_competence_action_window"

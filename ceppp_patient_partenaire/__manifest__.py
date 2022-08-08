@@ -43,6 +43,7 @@
         "views/ceppp_recruteur.xml",
         "views/ceppp_relation_proche.xml",
         "data/ceppp_relation_proche.xml",
+        "wizards/create_member_views.xml",
         "views/menu.xml",
         "data/ir_attachment.xml",
     ],
