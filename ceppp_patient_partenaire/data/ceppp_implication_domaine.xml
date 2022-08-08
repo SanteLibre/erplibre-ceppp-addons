@@ -7,6 +7,9 @@
         <record id="ceppp_implication_domaine_2" model="ceppp.implication_domaine">
             <field name="name">Recherche</field>
         </record>
+        <record id="ceppp_implication_domaine_7" model="ceppp.implication_domaine">
+            <field name="name">Santé numérique</field>
+        </record>
         <record id="ceppp_implication_domaine_3" model="ceppp.implication_domaine">
             <field name="name">Formation</field>
         </record>
@@ -18,9 +21,6 @@
         </record>
         <record id="ceppp_implication_domaine_6" model="ceppp.implication_domaine">
             <field name="name">Politique</field>
-        </record>
-        <record id="ceppp_implication_domaine_7" model="ceppp.implication_domaine">
-            <field name="name">Santé numérique</field>
         </record>
         <record id="ceppp_implication_domaine_8" model="ceppp.implication_domaine">
             <field name="name">Autre</field>
