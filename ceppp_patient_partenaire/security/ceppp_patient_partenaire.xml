@@ -42,6 +42,10 @@
             <field ref="model_ceppp_formation" name="model_id" />
             <field name="domain_force">[('recruteur_id','in',[user.partner_id.patient_partner_ids.id])]</field>
             <field name="groups" eval="[(4, ref('base.group_portal'))]" />
+            <field name="perm_read" eval="True" />
+            <field name="perm_create" eval="True" />
+            <field name="perm_unlink" eval="True" />
+            <field name="perm_write" eval="True" />
         </record>
 
         <record id="ceppp_implication_personal_rule" model="ir.rule">
@@ -49,6 +53,10 @@
             <field ref="model_ceppp_implication" name="model_id" />
             <field name="domain_force">[('recruteur_id','in',[user.partner_id.patient_partner_ids.id])]</field>
             <field name="groups" eval="[(4, ref('base.group_portal'))]" />
+            <field name="perm_read" eval="True" />
+            <field name="perm_create" eval="True" />
+            <field name="perm_unlink" eval="True" />
+            <field name="perm_write" eval="True" />
         </record>
 
         <record id="ceppp_implication_personal_rule" model="ir.rule">
@@ -56,17 +64,32 @@
             <field ref="model_ceppp_maladie_proche_aidant" name="model_id" />
             <field name="domain_force">[('recruteur_id','in',[user.partner_id.patient_partner_ids.id])]</field>
             <field name="groups" eval="[(4, ref('base.group_portal'))]" />
+            <field name="perm_read" eval="True" />
+            <field name="perm_create" eval="True" />
+            <field name="perm_unlink" eval="True" />
+            <field name="perm_write" eval="True" />
         </record>
 
         <record id="partner_limit_recruteur_record_rule" model="ir.rule">
-            <field name="name">See only partner from is affiliation for recruteur</field>
+            <field name="name">See only partner from is affiliation for recruteur with bot/main company</field>
             <field name="model_id" ref="base.model_res_partner" />
-            <field name="domain_force">[('id', 'child_of', user.commercial_partner_id.id)]</field>
+            <field name="domain_force">[('id', 'child_of', user.commercial_partner_id.id),('id','in', (1,2))]</field>
             <field name="groups" eval="[(4, ref('group_ceppp_patient_partenaire_recruteur'))]" />
             <field name="perm_read" eval="True" />
             <field name="perm_create" eval="False" />
             <field name="perm_unlink" eval="False" />
             <field name="perm_write" eval="True" />
+        </record>
+
+        <record id="partner_limit_recruteur_record_rule" model="ir.rule">
+            <field name="name">Can see bot and main company</field>
+            <field name="model_id" ref="base.model_res_partner" />
+            <field name="domain_force">[('id','in', (1,2))]</field>
+            <field name="groups" eval="[(4, ref('base.group_portal'))]" />
+            <field name="perm_read" eval="True" />
+            <field name="perm_create" eval="False" />
+            <field name="perm_unlink" eval="False" />
+            <field name="perm_write" eval="False" />
         </record>
 
         <record id="patient_limit_recruteur_record_rule" model="ir.rule">

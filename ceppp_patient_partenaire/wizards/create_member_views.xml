@@ -10,11 +10,21 @@
                         name="type_membre"
                         groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
                     />
-                    <field name="recruteur_partner_id" options="{'no_create':True}" attrs="{'invisible':[('type_membre','in',['recruteur', 'administrateur'])]}"/>
+                    <field
+                        name="recruteur_partner_id"
+                        options="{'no_create':True}"
+                        attrs="{'invisible':[('type_membre','in',['recruteur', 'administrateur'])]}"
+                    />
+                    <field
+                        name="centre_recrutement_id"
+                        options="{'no_create':True}"
+                        attrs="{'invisible':[('type_membre','in',['patient'])]}"
+                    />
                 </group>
                 <group>
                     <field name="name" />
                     <field name="email" />
+                    <field name="langue" />
                 </group>
                 <div>
                     <p>

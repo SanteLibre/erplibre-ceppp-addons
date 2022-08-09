@@ -27,10 +27,9 @@ class CepppPatientPartenaireController(http.Controller):
             [("active", "=", True)]
         )
         default_recruteur_id = (
-            http.request.env["ceppp.formation"]
-            .default_get(["recruteur_id"])
-            .get("recruteur_id")
+            http.request.env.user.partner_id.patient_partner_ids.id
         )
+
         titre_formation = http.request.env["ceppp.formation_titre"].search([])
         lst_default_titre_formation = (
             http.request.env["ceppp.formation"]
@@ -167,9 +166,7 @@ class CepppPatientPartenaireController(http.Controller):
             [("active", "=", True)]
         )
         default_recruteur_id = (
-            http.request.env["ceppp.implication"]
-            .default_get(["recruteur_id"])
-            .get("recruteur_id")
+            http.request.env.user.partner_id.patient_partner_ids.id
         )
         role = http.request.env["ceppp.implication_role"].search([])
         lst_default_role = (
@@ -365,9 +362,7 @@ class CepppPatientPartenaireController(http.Controller):
             [("active", "=", True)]
         )
         default_recruteur_id = (
-            http.request.env["ceppp.maladie_proche_aidant"]
-            .default_get(["recruteur_id"])
-            .get("recruteur_id")
+            http.request.env.user.partner_id.patient_partner_ids.id
         )
         relation = http.request.env["ceppp.relation_proche"].search([])
         lst_default_relation = (

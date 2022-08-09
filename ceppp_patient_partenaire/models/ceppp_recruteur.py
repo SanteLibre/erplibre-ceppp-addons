@@ -440,7 +440,9 @@ class CepppRecruteur(models.Model):
     )
     def _sync_search_maladie(self):
         for record in self:
-            value = self.maladie_soi_meme_autre
+            value = ""
+            if self.maladie_soi_meme_autre:
+                value += self.maladie_soi_meme_autre
             str_maladies = " ".join(
                 [a.nom for a in self.maladie_soi_meme]
             ).strip()

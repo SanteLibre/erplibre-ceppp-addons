@@ -14,7 +14,7 @@ def post_init_hook(cr, e):
         _logger.info(
             "Deactivating legacy access rules related to private addresses."
         )
-        env.ref("base.res_partner_rule_private_employee").active = False
+        # env.ref("base.res_partner_rule_private_employee").active = False
 
         _logger.info("Force CEPPP app to be first in menu")
         menus = env["ir.ui.menu"].search(
