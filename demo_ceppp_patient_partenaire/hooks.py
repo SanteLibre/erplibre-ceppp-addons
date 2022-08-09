@@ -44,13 +44,10 @@ def pre_init_hook(cr):
         users = env["res.users"].browse(2)
         users.groups_id = [
             (
-                6,
-                0,
-                [
-                    env.ref(
-                        "ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
-                    ).id
-                ],
+                4,
+                env.ref(
+                    "ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+                ).id,
             )
         ]
 
