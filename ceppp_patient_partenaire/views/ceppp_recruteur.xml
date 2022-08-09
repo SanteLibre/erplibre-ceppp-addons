@@ -87,9 +87,9 @@
                             </group>
                             <group>
                                 <group name="coordonnee" string="Coordonnée">
-                                    <field name="telephone" />
+                                    <field name="phone" />
                                     <field name="mobile" />
-                                    <field name="courriel" />
+                                    <field name="email" />
                                     <label for="street" string="Adresse" />
                                     <div class="o_address_format">
                                         <field name="street" placeholder="Street..." class="o_address_street" />
@@ -100,9 +100,9 @@
                                             class="o_address_state"
                                             placeholder="State"
                                             options="{&quot;no_open&quot;: True}"
-                                            context="{'country_id': country_id, 'zip': adresse_postale}"
+                                            context="{'country_id': country_id, 'zip': zip}"
                                         />
-                                        <field name="adresse_postale" placeholder="ZIP" class="o_address_zip" />
+                                        <field name="zip" placeholder="ZIP" class="o_address_zip" />
                                         <field
                                             name="country_id"
                                             placeholder="Country"

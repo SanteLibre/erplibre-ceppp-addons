@@ -820,7 +820,7 @@ from odoo import _, api, fields, models""",
                 "track_visibility": "onchange",
                 "ttype": "boolean",
             },
-            "adresse_postale": {
+            "zip": {
                 "code_generator_sequence": 17,
                 "field_description": "Adresse postale",
                 "track_visibility": "onchange",
@@ -1169,7 +1169,7 @@ from odoo import _, api, fields, models""",
                 "track_visibility": "onchange",
                 "ttype": "selection",
             },
-            "telephone": {
+            "phone": {
                 "code_generator_sequence": 18,
                 "field_description": "Téléphone",
                 "track_visibility": "onchange",

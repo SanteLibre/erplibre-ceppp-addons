@@ -59,6 +59,7 @@ class ResPartner(models.Model):
                 vals["type"] = "private"
         return super(ResPartner, self).create(vals_list)
 
+    @api.multi
     def write(self, vals):
         if "ceppp_entity" in vals.keys() and vals["ceppp_entity"] == "patient":
             # Force type address for custom personal

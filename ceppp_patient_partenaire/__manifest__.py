@@ -46,6 +46,7 @@
         "wizards/create_member_views.xml",
         "views/menu.xml",
         "data/ir_attachment.xml",
+        "views/portal_templates.xml",
     ],
     "installable": True,
     "post_init_hook": "post_init_hook",

@@ -102,7 +102,7 @@ class CepppRecruteur(models.Model):
         help="Affiliation",
     )
 
-    courriel = fields.Char(
+    email = fields.Char(
         string="Courriel",
         track_visibility="onchange",
         related="patient_partner_id.email",
@@ -110,7 +110,7 @@ class CepppRecruteur(models.Model):
         readonly=False,
     )
 
-    adresse_postale = fields.Char(
+    zip = fields.Char(
         string="Adresse postale",
         track_visibility="onchange",
         related="patient_partner_id.zip",
@@ -118,7 +118,7 @@ class CepppRecruteur(models.Model):
         readonly=False,
     )
 
-    telephone = fields.Char(
+    phone = fields.Char(
         string="Téléphone",
         track_visibility="onchange",
         related="patient_partner_id.phone",
@@ -429,6 +429,31 @@ class CepppRecruteur(models.Model):
                 .create({"recruteur_id": obj_id.id})
             )
         return obj_ids
+
+    @api.multi
+    def write(self, vals):
+        copy_vals = {}
+
+        lst_key_transfert = [
+            "phone",
+            "mobile",
+            "email",
+            "street",
+            "street2",
+            "city",
+            "state_id",
+            "zip",
+            "country_id",
+        ]
+
+        for key in lst_key_transfert:
+            if key in vals.keys():
+                copy_vals[key] = vals[key]
+                del vals[key]
+
+        if copy_vals:
+            self.patient_partner_id.sudo().write(copy_vals)
+        return super(CepppRecruteur, self).write(vals)
 
     @api.depends("recruteur_partner_id")
     def _compute_recruteur_user_id(self):
