@@ -890,62 +890,64 @@
         inherit_id="portal.portal_my_home"
     >
         <xpath expr="//div[hasclass('o_portal_docs')]" position="inside">
-            <t t-if="ceppp_formation_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Formations</t>
-                <t t-set="url" t-value="'/my/ceppp_formations'" />
-                <t t-set="count" t-value="ceppp_formation_count" />
+            <t t-if="is_patient">
+                <t t-if="ceppp_formation_count" t-call="portal.portal_docs_entry">
+                    <t t-set="title">Formations</t>
+                    <t t-set="url" t-value="'/my/ceppp_formations'" />
+                    <t t-set="count" t-value="ceppp_formation_count" />
+                </t>
+                <a
+                    t-if="not ceppp_formation_count"
+                    role="button"
+                    class="btn btn-primary btn-block mb8"
+                    href="/new/ceppp_formation"
+                >
+                    <i class="fa fa-plus-circle" />
+                    Vos formations
+                </a>
+                <t t-if="ceppp_implication_count" t-call="portal.portal_docs_entry">
+                    <t t-set="title">Implications</t>
+                    <t t-set="url" t-value="'/my/ceppp_implications'" />
+                    <t t-set="count" t-value="ceppp_implication_count" />
+                </t>
+                <a
+                    t-if="not ceppp_implication_count"
+                    role="button"
+                    class="btn btn-primary btn-block mb8"
+                    href="/new/ceppp_implication"
+                >
+                    <i class="fa fa-plus-circle" />
+                    Vos implications
+                </a>
+                <!--            <t t-if="ceppp_maladie_count" t-call="portal.portal_docs_entry">-->
+                <!--                <t t-set="title">Ceppp Maladies</t>-->
+                <!--                <t t-set="url" t-value="'/my/ceppp_maladies'" />-->
+                <!--                <t t-set="count" t-value="ceppp_maladie_count" />-->
+                <!--            </t>-->
+                <!--            <a-->
+                <!--                t-if="not ceppp_maladie_count"-->
+                <!--                role="button"-->
+                <!--                class="btn btn-primary btn-block mb8"-->
+                <!--                href="/new/ceppp_maladie"-->
+                <!--            >-->
+                <!--                <i class="fa fa-plus-circle" />-->
+                <!--                Ceppp Maladie-->
+                <!--            </a>-->
+                <t t-if="ceppp_maladie_proche_aidant_count" t-call="portal.portal_docs_entry">
+                    <t t-set="title">Maladie des proches aidants</t>
+                    <t t-set="url" t-value="'/my/ceppp_maladie_proche_aidants'" />
+                    <t t-set="count" t-value="ceppp_maladie_proche_aidant_count" />
+                </t>
+                <a
+                    t-if="not ceppp_maladie_proche_aidant_count"
+                    role="button"
+                    class="btn btn-primary btn-block mb8"
+                    href="/new/ceppp_maladie_proche_aidant"
+                >
+                    <i class="fa fa-plus-circle" />
+                    Maladie des proches aidants
+                </a>
             </t>
-            <a
-                t-if="not ceppp_formation_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_formation"
-            >
-                <i class="fa fa-plus-circle" />
-                Vos formations
-            </a>
-            <t t-if="ceppp_implication_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Implications</t>
-                <t t-set="url" t-value="'/my/ceppp_implications'" />
-                <t t-set="count" t-value="ceppp_implication_count" />
-            </t>
-            <a
-                t-if="not ceppp_implication_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_implication"
-            >
-                <i class="fa fa-plus-circle" />
-                Vos implications
-            </a>
-            <!--            <t t-if="ceppp_maladie_count" t-call="portal.portal_docs_entry">-->
-            <!--                <t t-set="title">Ceppp Maladies</t>-->
-            <!--                <t t-set="url" t-value="'/my/ceppp_maladies'" />-->
-            <!--                <t t-set="count" t-value="ceppp_maladie_count" />-->
-            <!--            </t>-->
-            <!--            <a-->
-            <!--                t-if="not ceppp_maladie_count"-->
-            <!--                role="button"-->
-            <!--                class="btn btn-primary btn-block mb8"-->
-            <!--                href="/new/ceppp_maladie"-->
-            <!--            >-->
-            <!--                <i class="fa fa-plus-circle" />-->
-            <!--                Ceppp Maladie-->
-            <!--            </a>-->
-            <t t-if="ceppp_maladie_proche_aidant_count" t-call="portal.portal_docs_entry">
-                <t t-set="title">Maladie des proches aidants</t>
-                <t t-set="url" t-value="'/my/ceppp_maladie_proche_aidants'" />
-                <t t-set="count" t-value="ceppp_maladie_proche_aidant_count" />
-            </t>
-            <a
-                t-if="not ceppp_maladie_proche_aidant_count"
-                role="button"
-                class="btn btn-primary btn-block mb8"
-                href="/new/ceppp_maladie_proche_aidant"
-            >
-                <i class="fa fa-plus-circle" />
-                Maladie des proches aidants
-            </a>
         </xpath>
     </template>
 

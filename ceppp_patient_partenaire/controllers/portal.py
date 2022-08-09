@@ -57,6 +57,9 @@ class CepppPatientPartenaireController(CustomerPortal):
             values["ceppp_implication_count"] = 0
             values["ceppp_maladie_count"] = 0
             values["ceppp_maladie_proche_aidant_count"] = 0
+        values["is_patient"] = (
+            request.env.user.partner_id.ceppp_entity == "patient"
+        )
         return values
 
     # ------------------------------------------------------------
