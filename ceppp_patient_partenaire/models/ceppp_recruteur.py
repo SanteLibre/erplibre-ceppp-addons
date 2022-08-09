@@ -1,3 +1,4 @@
+from datetime import date
 from uuid import uuid4
 
 from odoo import _, api, fields, models
@@ -153,6 +154,12 @@ class CepppRecruteur(models.Model):
             "Permet de connaître le groupe d'âge pour des implications"
             " spécifiques."
         ),
+    )
+
+    age = fields.Integer(
+        string="Âge",
+        compute="_compute_age",
+        store=True,
     )
 
     street = fields.Char(
@@ -467,6 +474,22 @@ class CepppRecruteur(models.Model):
                 )
             else:
                 record.recruteur_user_id = False
+
+    @staticmethod
+    def _calculate_age(born):
+        today = date.today()
+        return (
+            today.year
+            - born.year
+            - ((today.month, today.day) < (born.month, born.day))
+        )
+
+    @api.depends("date_naissance")
+    def _compute_age(self):
+        # TODO need to recompute when change date, add cron
+        for record in self:
+            if record.date_naissance:
+                record.age = self._calculate_age(record.date_naissance)
 
     @api.depends(
         "maladie_soi_meme", "maladie_soi_meme_autre", "maladie_proche_aidant"

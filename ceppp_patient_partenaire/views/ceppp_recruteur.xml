@@ -62,6 +62,7 @@
                             <group>
                                 <group name="description" string="Description">
                                     <field name="date_naissance" />
+                                    <field name="age" />
                                     <field name="sexe" />
                                     <field name="genre" />
                                     <field name="genre_autre" attrs="{'invisible':[('genre','!=','autre')]}" />
@@ -194,6 +195,7 @@
         <field name="arch" type="xml">
             <graph string="Ceppp recruteur">
                 <field name="name" type="row" />
+                <!--                <field name="date_naissance" type="row" interval="month"/>-->
             </graph>
         </field>
     </record>
@@ -255,7 +257,20 @@
         <field name="arch" type="xml">
             <search string="Ceppp recruteur">
                 <field name="search_maladie" />
-                <filter domain="[('name','!=',False)]" name="name" string="Name" />
+                <field name="sexe" />
+                <field name="genre" />
+                <field name="date_naissance" />
+                <field name="age" />
+                <filter
+                    domain="[('maladie_proche_aidant','!=',False)]"
+                    name="avec_proche_aidant"
+                    string="Avec proche aidant"
+                />
+                <filter
+                    domain="[('maladie_proche_aidant','=',False)]"
+                    name="sans_proche_aidant"
+                    string="Sans proche aidant"
+                />
                 <separator />
                 <filter
                     string="Mes patients"
@@ -269,6 +284,8 @@
                     groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
                     context="{'group_by': 'centre_recruteur'}"
                 />
+                <filter string="Âge" name="age" context="{'group_by': 'age'}" />
+                <filter string="Ville" name="ville" context="{'group_by': 'city'}" />
             </search>
         </field>
     </record>
@@ -288,20 +305,20 @@
         name="Mes patients"
         res_model="ceppp.recruteur"
         context="{'search_default_mes_patients': 1}"
-        view_mode="kanban,tree,form"
+        view_mode="kanban,tree,form,graph"
     />
 
     <act_window
         id="ceppp_patient_les_patient_affiliation_action_window"
         name="Les patients de mon centre de recrutement"
         res_model="ceppp.recruteur"
-        view_mode="kanban,tree,form"
+        view_mode="kanban,tree,form,graph"
     />
 
     <act_window
         id="ceppp_patient_les_patient_tous_centres_affiliation_action_window"
         name="Les patients de tous les centres de recrutement"
         res_model="ceppp.recruteur"
-        view_mode="kanban,tree,form"
+        view_mode="kanban,tree,form,graph"
     />
 </odoo>

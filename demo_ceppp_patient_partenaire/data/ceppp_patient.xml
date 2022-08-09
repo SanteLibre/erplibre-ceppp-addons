@@ -35,6 +35,7 @@
             <field name="sexe">homme</field>
             <field name="recruteur_partner_id" ref="partner_demo_julie_dufour" />
             <field name="date_naissance">1981-09-12</field>
+            <field name="city">Laval</field>
             <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_francais')),(4, ref('ceppp_patient_partenaire.ceppp_langue_anglais'))]" />
         </record>
         <record id="ceppp_formation_1_recruteur_2" model="ceppp.formation">
