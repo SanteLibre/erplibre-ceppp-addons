@@ -38,6 +38,21 @@ def pre_init_hook(cr):
             partner.state_id = env["res.country.state"].search(
                 [("code", "ilike", "QC")], limit=1
             )
+            partner.ceppp_entity = "administrateur"
+
+        # # Take super admin user
+        users = env["res.users"].browse(2)
+        users.groups_id = [
+            (
+                6,
+                0,
+                [
+                    env.ref(
+                        "ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+                    ).id
+                ],
+            )
+        ]
 
 
 def post_init_hook(cr, e):

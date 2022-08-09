@@ -28,6 +28,7 @@ class CreateMember(models.TransientModel):
         required=True,
     )
 
+    # TODO take language from system and not hardcoded, check lang from res.partner
     langue = fields.Selection(
         selection=[("fr_CA", "Français"), ("en_CA", "Anglais")],
         default="fr_CA",
@@ -65,7 +66,12 @@ class CreateMember(models.TransientModel):
             ] = self.recruteur_partner_id.parent_id.id
             # Can set is address
             res_partner_data["type"] = "private"
-            res_partner_data["country_id"] = self.env.ref("base.ca")
+            res_partner_data["country_id"] = self.env.ref("base.ca").id
+            res_partner_data["state_id"] = (
+                self.env["res.country.state"]
+                .search([("code", "ilike", "QC")], limit=1)
+                .id
+            )
         elif self.type_membre in ("recruteur", "administrateur"):
             res_partner_data["parent_id"] = self.centre_recrutement_id.id
 
@@ -123,11 +129,12 @@ class CreateMember(models.TransientModel):
             ceppp_recruteur = (
                 self.env["ceppp.recruteur"].sudo().create(ceppp_recruteur_data)
             )
-            ceppp_patient = (
-                self.env["ceppp.patient"]
-                .sudo()
-                .create({"recruteur_id": ceppp_recruteur.id})
-            )
+            # No need to create ceppp_patient, it's done in create of ceppp.recrutement
+            # ceppp_patient = (
+            #     self.env["ceppp.patient"]
+            #     .sudo()
+            #     .create({"recruteur_id": ceppp_recruteur.id})
+            # )
             # TODO send email to invite to portal if patient
             # self._send_email_portal(partner_id, user_id)
 

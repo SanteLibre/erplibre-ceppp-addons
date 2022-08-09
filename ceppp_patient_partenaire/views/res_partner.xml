@@ -47,7 +47,7 @@
                         icon="fa-vcard-o"
                         name="open_fiche_recruteur"
                         type="object"
-                        attrs="{'invisible':[('patient_partner_ids','=',False)]}"
+                        attrs="{'invisible':[('patient_partner_ids','=',[])]}"
                     >
                         Fiche recruteur
                     </button>

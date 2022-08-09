@@ -420,7 +420,15 @@ class CepppRecruteur(models.Model):
         for vals in vals_list:
             if "uuid" not in vals.keys():
                 vals["uuid"] = str(uuid4())
-        return super(CepppRecruteur, self).create(vals_list)
+        obj_ids = super(CepppRecruteur, self).create(vals_list)
+        for obj_id in obj_ids:
+            # Force association anonymous ceppp.patient
+            ceppp_patient = (
+                self.env["ceppp.patient"]
+                .sudo()
+                .create({"recruteur_id": obj_id.id})
+            )
+        return obj_ids
 
     @api.depends("recruteur_partner_id")
     def _compute_recruteur_user_id(self):
