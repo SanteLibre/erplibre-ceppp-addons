@@ -255,16 +255,16 @@
                 <field name="genre" />
                 <field name="date_naissance" />
                 <field name="age" />
-                <filter
-                    domain="[('maladie_personne_affectee','!=',False)]"
-                    name="avec_proche_aidant"
-                    string="Avec proche aidant"
-                />
-                <filter
-                    domain="[('maladie_personne_affectee','=',False)]"
-                    name="sans_proche_aidant"
-                    string="Sans proche aidant"
-                />
+                <!--                <filter-->
+                <!--                    domain="[('maladie_personne_affectee','!=',False)]"-->
+                <!--                    name="avec_proche_aidant"-->
+                <!--                    string="Avec proche aidant"-->
+                <!--                />-->
+                <!--                <filter-->
+                <!--                    domain="[('maladie_personne_affectee','=',False)]"-->
+                <!--                    name="sans_proche_aidant"-->
+                <!--                    string="Sans proche aidant"-->
+                <!--                />-->
                 <separator />
                 <filter
                     string="Mes patients"

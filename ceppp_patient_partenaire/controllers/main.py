@@ -410,15 +410,15 @@ class CepppPatientPartenaireController(http.Controller):
     def submit_ceppp_maladie_personne_affectee(self, **kw):
         vals = {}
 
-        # if kw.get("name"):
-        #     vals["name"] = kw.get("name")
+        if kw.get("detail_maladie"):
+            vals["detail_maladie"] = kw.get("detail_maladie")
 
-        if kw.get("maladie"):
-            lst_value_maladie = [
-                (4, int(a))
-                for a in request.httprequest.form.getlist("maladie")
-            ]
-            vals["maladie"] = lst_value_maladie
+        # if kw.get("maladie"):
+        #     lst_value_maladie = [
+        #         (4, int(a))
+        #         for a in request.httprequest.form.getlist("maladie")
+        #     ]
+        #     vals["maladie"] = lst_value_maladie
 
         if kw.get("recruteur_id") and kw.get("recruteur_id").isdigit():
             vals["recruteur_id"] = int(kw.get("recruteur_id"))
