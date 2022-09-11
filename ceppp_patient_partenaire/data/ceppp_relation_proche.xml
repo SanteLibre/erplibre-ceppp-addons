@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data noupdate="1">
+        <record id="ceppp_relation_proche_0" model="ceppp.relation_proche">
+            <field name="name">Moi</field>
+        </record>
         <record id="ceppp_relation_proche_1" model="ceppp.relation_proche">
             <field name="name">Père</field>
         </record>

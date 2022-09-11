@@ -29,6 +29,38 @@ class CepppMaladiePersonneAffectee(models.Model):
 
     relation_is_autre = fields.Boolean(compute="_compute_relation_is_autre")
 
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if "relation" not in vals.keys():
+                # Add me when empty
+                vals["relation"] = [
+                    (
+                        4,
+                        self.env.ref(
+                            "ceppp_patient_partenaire.ceppp_relation_proche_0"
+                        ).id,
+                    )
+                ]
+        return super(CepppMaladiePersonneAffectee, self).create(vals_list)
+
+    @api.multi
+    def write(self, vals):
+        relation_value = vals.get("relation")
+        if relation_value and relation_value == [[6, False, []]]:
+            vals["relation"] = [
+                (
+                    6,
+                    False,
+                    [
+                        self.env.ref(
+                            "ceppp_patient_partenaire.ceppp_relation_proche_0"
+                        ).id
+                    ],
+                )
+            ]
+        return super(CepppMaladiePersonneAffectee, self).write(vals)
+
     @api.depends("relation")
     def _compute_relation_is_autre(self):
         for record in self:
