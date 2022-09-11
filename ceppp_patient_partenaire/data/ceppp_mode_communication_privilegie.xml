@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_mode_communication_privilegie_1" model="ceppp.mode_communication_privilegie">
+            <field name="name">Téléphone</field>
+        </record>
+        <record id="ceppp_mode_communication_privilegie_2" model="ceppp.mode_communication_privilegie">
+            <field name="name">Courriel</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_maladie_view_form" model="ir.ui.view">
+        <field name="name">ceppp_maladie_form</field>
+        <field name="model">ceppp.maladie</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field name="nom" />
+                    </group>
+                    <group>
+                        <field name="chapitre_maladie_id" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_maladie_graph</field>
+        <field name="model">ceppp.maladie</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp maladie">
+                <field name="nom" type="row" />
+                <field name="chapitre_maladie_id" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_maladie_kanban</field>
+        <field name="model">ceppp.maladie</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="nom" />
+                <field name="chapitre_maladie_id" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="nom" />
+                                        </strong>
+                                    </li>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="chapitre_maladie_id" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_maladie_pivot</field>
+        <field name="model">ceppp.maladie</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp maladie">
+                <field name="nom" type="row" />
+                <field name="chapitre_maladie_id" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_view_search" model="ir.ui.view">
+        <field name="name">ceppp_maladie_search</field>
+        <field name="model">ceppp.maladie</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp maladie">
+                <filter domain="[('nom','!=',False)]" name="nom" string="Nom" />
+                <filter
+                    domain="[('chapitre_maladie_id','!=',False)]"
+                    name="chapitre_maladie_id"
+                    string="Chapitre maladie"
+                />
+                <filter
+                    name="chapitre_maladie_id_group"
+                    string="Chapitre maladie Group"
+                    context="{'group_by': 'chapitre_maladie_id'}"
+                />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_maladie_tree</field>
+        <field name="model">ceppp.maladie</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nom" />
+                <field name="chapitre_maladie_id" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_maladie_maladie_action_window"
+        name="Maladie"
+        res_model="ceppp.maladie"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

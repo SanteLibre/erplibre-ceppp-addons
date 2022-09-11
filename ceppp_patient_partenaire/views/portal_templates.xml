@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template
+        id="portal_my_details_affiliation"
+        name="My affiliation portail my details"
+        inherit_id="portal.portal_my_details"
+    >
+        <xpath expr="//label[@for='company_name']" position="replace">
+            <label class="col-form-label label-optional" for="company_name">Centre de recrutement</label>
+        </xpath>
+    </template>
+</odoo>

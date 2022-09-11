@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ir_attachment_logo_ceppp_svg" model="ir.attachment">
+            <field name="datas_fname">logo-ceppp.svg</field>
+            <field name="name">logo-ceppp.svg</field>
+            <field name="public">True</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="type">url</field>
+            <field name="url">/ceppp_patient_partenaire/static/src/img/logo-ceppp.svg</field>
+        </record>
+    </data>
+</odoo>

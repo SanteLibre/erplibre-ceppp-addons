@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="view_create_member_wizard" model="ir.ui.view">
+        <field name="name">Créer un membre</field>
+        <field name="model">ceppp.create_member</field>
+        <field name="arch" type="xml">
+            <form string="Créer un membre">
+                <group>
+                    <field
+                        name="type_membre"
+                        groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+                    />
+                    <field
+                        name="recruteur_partner_id"
+                        options="{'no_create':True}"
+                        attrs="{'invisible':[('type_membre','in',['recruteur', 'administrateur'])]}"
+                    />
+                    <field
+                        name="centre_recrutement_id"
+                        options="{'no_create':True}"
+                        attrs="{'invisible':[('type_membre','in',['patient'])]}"
+                    />
+                </group>
+                <group>
+                    <field name="name" />
+                    <field name="email" />
+                    <field name="langue" />
+                </group>
+                <div>
+                    <p>
+                        La création d'un membre va lui envoyer une invitation par courriel pour se joindre à la
+                        plateforme.
+                    </p>
+                </div>
+                <footer>
+                    <button name="create_member" string="Créer" type="object" class="oe_highlight" />
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window
+        name="Créer un membre"
+        res_model="ceppp.create_member"
+        src_model="ceppp.create_member"
+        view_mode="form"
+        target="new"
+        key2="client_action_multi"
+        id="action_ceppp_create_member"
+    />
+    <act_window
+        name="Créer un patient"
+        res_model="ceppp.create_member"
+        src_model="ceppp.create_member"
+        view_mode="form"
+        target="new"
+        key2="client_action_multi"
+        id="action_ceppp_create_patient"
+    />
+</odoo>

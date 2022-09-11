@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="view_ceppp_res_partner_filter" model="ir.ui.view">
+            <field name="name">res.partner.patient</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter" />
+            <field name="arch" type="xml">
+                <xpath expr="//filter[@name='type_company']" position="after">
+                    <separator />
+                    <filter string="Patients" name="patient" domain="[('ceppp_entity','=','patient')]" />
+                    <filter string="Recruteurs" name="recruteur" domain="[('ceppp_entity','=','recruteur')]" />
+                    <filter
+                        string="Administrateur"
+                        name="administrateur"
+                        domain="[('ceppp_entity','=','administrateur')]"
+                    />
+                    <filter
+                        string="Centre de recrutement"
+                        name="affiliation"
+                        domain="[('ceppp_entity','=','affiliation')]"
+                    />
+                    <filter
+                        string="Affiliation Groupe"
+                        name="affiliation_group"
+                        context="{'group_by': 'ceppp_entity'}"
+                    />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_ceppp_partner_form" model="ir.ui.view">
+            <field name="name">res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='sales_purchases']" position="attributes">
+                    <attribute name="attrs">{'invisible': 1}</attribute>
+                </xpath>
+                <xpath expr="//field[@name='type']" position="before">
+                    <field name="ceppp_entity" />
+                </xpath>
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <field name="patient_partner_ids" invisible="1" />
+                    <button
+                        class="oe_stat_button"
+                        icon="fa-vcard-o"
+                        name="open_fiche_recruteur"
+                        type="object"
+                        attrs="{'invisible':[('patient_partner_ids','=',[])]}"
+                    >
+                        Fiche recruteur
+                    </button>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -569,6 +569,7 @@ def generate_model_from_2_level_selection(
     field_name_level_1,
     field_name_one2many_level_2,
     field_description_one2many_level_2,
+    env,
 ):
     dct_region_admin_data_id = {}
     if model_name_level_1 not in lst_added_model_name:
@@ -591,7 +592,8 @@ def generate_model_from_2_level_selection(
         # Add data
         lst_data_region_admin = [{"nom": a} for a in dct_option_fr.keys()]
         for dat_region_admin in lst_data_region_admin:
-            data_id = region_admin_model_id.create(dat_region_admin)
+
+            data_id = env[region_admin_model_id.model].create(dat_region_admin)
             dct_region_admin_data_id[data_id.nom] = data_id.id
     if model_name_level_2 not in lst_added_model_name:
         dct_new_field = {
@@ -621,7 +623,7 @@ def generate_model_from_2_level_selection(
             dct_hopital,
         ) in dct_option_fr.items():
             for hopital_name in dct_hopital.values():
-                hopital_model_id.create(
+                env[hopital_model_id.model].create(
                     {
                         "nom": hopital_name,
                         field_name_level_1: dct_region_admin_data_id.get(
@@ -648,6 +650,7 @@ def generate_model_from_1_level_selection(
     code_generator_id,
     dct_option_fr,
     model_name_level_1,
+    env,
 ):
     dct_region_admin_data_id = {}
     if model_name_level_1 not in lst_added_model_name:
@@ -670,7 +673,7 @@ def generate_model_from_1_level_selection(
         # Add data
         lst_data_region_admin = [{"nom": a} for a in dct_option_fr.values()]
         for dat_region_admin in lst_data_region_admin:
-            data_id = region_admin_model_id.create(dat_region_admin)
+            data_id = env[region_admin_model_id.model].create(dat_region_admin)
             dct_region_admin_data_id[data_id.nom] = data_id.id
 
 
@@ -901,6 +904,7 @@ def post_init_hook(cr, e):
                                             "region_admin_id",
                                             "hopital_ids",
                                             "Hôpitaux",
+                                            env,
                                         )
                                         dct_field_info[
                                             "relation"
@@ -922,14 +926,12 @@ def post_init_hook(cr, e):
                                             "chapitre_maladie_id",
                                             "maladie_ids",
                                             "Maladies",
+                                            env,
                                         )
                                         dct_field_info[
                                             "relation"
                                         ] = model_name_level_2
                                     elif is_multi_option:
-                                        # model_name_level_1 = (
-                                        #     f"{field_name}"
-                                        # )
                                         associate_model = dct_associate_option_with_model.get(
                                             suite_crm_option
                                         )
@@ -942,9 +944,7 @@ def post_init_hook(cr, e):
                                                 code_generator_id,
                                                 dct_option_fr,
                                                 model_name_level_1,
-                                                # field_name.replace(
-                                                #     "_", " "
-                                                # ).capitalize(),
+                                                env,
                                             )
                                             dct_associate_option_with_model[
                                                 suite_crm_option

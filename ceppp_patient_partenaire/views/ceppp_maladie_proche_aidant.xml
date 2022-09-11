@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_maladie_proche_aidant_view_form" model="ir.ui.view">
+        <field name="name">ceppp_maladie_proche_aidant_form</field>
+        <field name="model">ceppp.maladie_proche_aidant</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field
+                            name="maladie"
+                            widget="many2many_tags"
+                            options="{'no_create': True, 'no_create_edit': True}"
+                        />
+                        <field name="autre_maladie" />
+                        <field
+                            name="relation"
+                            widget="many2many_tags"
+                            options="{'no_create': True, 'no_create_edit': True}"
+                        />
+                        <field name="relation_is_autre" invisible="1" />
+                        <field name="relation_autre" attrs="{'invisible':[('relation_is_autre','=',False)]}" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_proche_aidant_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_maladie_proche_aidant_graph</field>
+        <field name="model">ceppp.maladie_proche_aidant</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp maladie proche aidant">
+                <field name="name" type="row" />
+                <field name="relation_autre" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_proche_aidant_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_maladie_proche_aidant_kanban</field>
+        <field name="model">ceppp.maladie_proche_aidant</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="name" />
+                <field name="maladie" />
+                <field name="autre_maladie" />
+                <field name="relation" />
+                <field name="relation_autre" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="name" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_proche_aidant_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_maladie_proche_aidant_pivot</field>
+        <field name="model">ceppp.maladie_proche_aidant</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp maladie proche aidant">
+                <field name="name" type="row" />
+                <field name="relation_autre" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_proche_aidant_view_search" model="ir.ui.view">
+        <field name="name">ceppp_maladie_proche_aidant_search</field>
+        <field name="model">ceppp.maladie_proche_aidant</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp maladie proche aidant">
+                <filter domain="[('name','!=',False)]" name="name" string="Name" />
+                <filter domain="[('maladie','!=',False)]" name="maladie" string="Maladies" />
+                <filter domain="[('autre_maladie','!=',False)]" name="autre_maladie" string="Autre maladie" />
+                <filter
+                    domain="[('relation','!=',False)]"
+                    name="relation"
+                    string="Relation avec la personne aid&#233;e"
+                />
+                <filter domain="[('relation_autre','!=',False)]" name="relation_autre" string="Autre relation" />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_maladie_proche_aidant_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_maladie_proche_aidant_tree</field>
+        <field name="model">ceppp.maladie_proche_aidant</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="maladie" widget="many2many_tags" />
+                <field name="autre_maladie" />
+                <field name="relation" widget="many2many_tags" />
+                <field name="relation_is_autre" invisible="1" />
+                <field name="relation_autre" attrs="{'invisible':[('relation_is_autre','=',False)]}" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_maladie_proche_aidant_maladie_proche_aidant_action_window"
+        name="Maladie proche aidant"
+        res_model="ceppp.maladie_proche_aidant"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

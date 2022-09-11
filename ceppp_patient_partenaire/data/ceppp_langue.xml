@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_langue_francais" model="ceppp.langue">
+            <field name="nom">Fran&#231;ais</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="ceppp_langue_anglais" model="ceppp.langue">
+            <field name="nom">Anglais</field>
+            <field name="sequence">2</field>
+        </record>
+        <record id="ceppp_langue_espagnol" model="ceppp.langue">
+            <field name="nom">Espagnol</field>
+            <field name="sequence">3</field>
+        </record>
+        <record id="ceppp_langue_autre" model="ceppp.langue">
+            <field name="nom">Autre</field>
+            <field name="sequence">4</field>
+        </record>
+    </data>
+</odoo>

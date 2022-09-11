@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_implication_view_form" model="ir.ui.view">
+        <field name="name">ceppp_implication_form</field>
+        <field name="model">ceppp.implication</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <group>
+                        <field
+                            name="role"
+                            widget="many2many_tags"
+                            options="{'no_create': True, 'no_create_edit': True}"
+                        />
+                        <field name="role_is_autre" invisible="1" />
+                        <field name="role_autre" attrs="{'invisible':[('role_is_autre','=',False)]}" />
+                        <field
+                            name="domaine"
+                            widget="many2many_tags"
+                            options="{'no_create': True, 'no_create_edit': True}"
+                        />
+                        <field name="domaine_is_autre" invisible="1" />
+                        <field name="domaine_autre" attrs="{'invisible':[('domaine_is_autre','=',False)]}" />
+                        <field name="titre" />
+                        <field name="nom_equipe" />
+                        <field name="description" />
+                    </group>
+                    <group>
+                        <group>
+                            <field name="echeance_debut" />
+                        </group>
+                        <group>
+                            <field name="echeance_fin" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_implication_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_implication_graph</field>
+        <field name="model">ceppp.implication</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp implication">
+                <field name="name" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_implication_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_implication_kanban</field>
+        <field name="model">ceppp.implication</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="name" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="name" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_implication_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_implication_pivot</field>
+        <field name="model">ceppp.implication</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp implication">
+                <field name="name" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_implication_view_search" model="ir.ui.view">
+        <field name="name">ceppp_implication_search</field>
+        <field name="model">ceppp.implication</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp implication">
+                <filter domain="[('name','!=',False)]" name="name" string="Name" />
+                <filter domain="[('description','!=',False)]" name="description" string="Description" />
+                <filter domain="[('domaine','!=',False)]" name="domaine" string="Domaine" />
+                <filter domain="[('domaine_autre','!=',False)]" name="domaine_autre" string="Autres domaines" />
+                <filter domain="[('domaine_is_autre','=',True)]" name="domaine_is_autre" string="Domaine Is Autre" />
+                <filter
+                    domain="[('echeance_debut','!=',False)]"
+                    name="echeance_debut"
+                    string="&#201;ch&#233;ance d&#233;but"
+                />
+                <filter domain="[('echeance_fin','!=',False)]" name="echeance_fin" string="&#201;ch&#233;ance fin" />
+                <filter domain="[('nom_equipe','!=',False)]" name="nom_equipe" string="Nom de l'&#233;quipe" />
+                <filter domain="[('recruteur_id','!=',False)]" name="recruteur_id" string="Recruteur" />
+                <filter domain="[('role','!=',False)]" name="role" string="R&#244;le" />
+                <filter domain="[('role_autre','!=',False)]" name="role_autre" string="Autres r&#244;les" />
+                <filter domain="[('role_is_autre','=',True)]" name="role_is_autre" string="Role Is Autre" />
+                <filter domain="[('titre','!=',False)]" name="titre" string="Titre du projet" />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_implication_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_implication_tree</field>
+        <field name="model">ceppp.implication</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="titre" />
+                <field name="role" widget="many2many_tags" />
+                <field name="role_is_autre" invisible="1" />
+                <field name="role_autre" attrs="{'invisible':[('role_is_autre','=',False)]}" />
+                <field name="domaine" widget="many2many_tags" />
+                <field name="domaine_is_autre" invisible="1" />
+                <field name="domaine_autre" attrs="{'invisible':[('domaine_is_autre','=',False)]}" />
+                <field name="description" />
+                <field name="nom_equipe" />
+                <field name="echeance_debut" />
+                <field name="echeance_fin" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_implication_implication_action_window"
+        name="Implication"
+        res_model="ceppp.implication"
+        view_mode="kanban,tree,pivot,graph,form"
+    />
+</odoo>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!--Root menu-->
+
+    <menuitem
+        id="menu_ceppp_patient_partenaire"
+        name="Ceppp Patient Partenaire"
+        sequence="20"
+        web_icon="ceppp_patient_partenaire,static/description/icon.png"
+    />
+
+    <!--Sub menu-->
+
+    <menuitem id="menu_patient" name="Patient" sequence="1" parent="menu_ceppp_patient_partenaire" />
+    <menuitem
+        id="menu_configuration"
+        name="Configuration"
+        sequence="2"
+        parent="menu_ceppp_patient_partenaire"
+        groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+    />
+
+    <!--Child menu-->
+
+    <menuitem
+        id="menu_patient_my_patient"
+        name="Mes patients"
+        sequence="1"
+        action="ceppp_patient_my_patient_action_window"
+        parent="menu_patient"
+    />
+
+    <menuitem
+        id="menu_patient_les_patient_affiliation"
+        name="Les patients de mon centre de recrutement"
+        groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_recruteur"
+        sequence="2"
+        action="ceppp_patient_les_patient_affiliation_action_window"
+        parent="menu_patient"
+    />
+
+    <menuitem
+        id="menu_patient_les_patient_affiliation"
+        name="Les patients de tous les centres de recrutement"
+        groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+        sequence="2"
+        action="ceppp_patient_les_patient_tous_centres_affiliation_action_window"
+        parent="menu_patient"
+    />
+
+    <menuitem
+        id="menu_patient_all_patient"
+        name="Tous les patients anonymes"
+        sequence="3"
+        action="ceppp_patient_patient_action_window"
+        parent="menu_patient"
+    />
+
+    <menuitem
+        id="menu_create_patient"
+        name="Créer un patient"
+        sequence="4"
+        action="action_ceppp_create_patient"
+        groups="group_ceppp_patient_partenaire_recruteur"
+        parent="menu_patient"
+    />
+
+    <menuitem
+        id="menu_create_partenaire"
+        name="Créer un membre"
+        sequence="4"
+        action="action_ceppp_create_member"
+        groups="group_ceppp_patient_partenaire_manager"
+        parent="menu_patient"
+    />
+
+    <menuitem
+        id="menu_competence"
+        name="Competence"
+        action="ceppp_competence_competence_action_window"
+        sequence="1"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_disponibilite"
+        name="Disponibilite"
+        string="Disponibilité"
+        action="ceppp_disponibilite_disponibilite_action_window"
+        sequence="2"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_langue"
+        name="Langue"
+        action="ceppp_langue_langue_action_window"
+        sequence="5"
+        parent="menu_configuration"
+    />
+
+    <menuitem id="menu_maladie_label" name="Maladie" parent="menu_configuration" sequence="6" />
+
+    <menuitem
+        id="menu_chapitre_maladie"
+        name="Chapitre maladie"
+        action="ceppp_chapitre_maladie_chapitre_maladie_action_window"
+        sequence="1"
+        parent="menu_maladie_label"
+    />
+
+    <menuitem
+        id="menu_maladie"
+        name="Maladie"
+        action="ceppp_maladie_maladie_action_window"
+        sequence="2"
+        parent="menu_maladie_label"
+    />
+
+    <menuitem
+        id="menu_mode_communication_privilegie"
+        name="Mode communication privilegie"
+        action="ceppp_mode_communication_privilegie_mode_communication_privilegie_action_window"
+        sequence="7"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_occupation"
+        name="Occupation"
+        action="ceppp_occupation_occupation_action_window"
+        sequence="8"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_relation_proche"
+        name="Relation proche"
+        action="ceppp_relation_proche_relation_proche_action_window"
+        sequence="9"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_formation_titre"
+        name="Formation"
+        action="ceppp_formation_titre_formation_titre_action_window"
+        sequence="10"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_implication_domaine"
+        name="Implication domaine"
+        action="ceppp_implication_domaine_implication_domaine_action_window"
+        sequence="10"
+        parent="menu_configuration"
+    />
+
+    <menuitem
+        id="menu_implication_role"
+        name="Implication role"
+        action="ceppp_implication_role_implication_role_action_window"
+        sequence="10"
+        parent="menu_configuration"
+    />
+
+    <!--    <record model="ir.ui.menu" id="contacts.menu_contacts">-->
+    <!--        &lt;!&ndash; Replace all group in contacts.menu_contacts &ndash;&gt;-->
+    <!--        <field name="groups_id"-->
+    <!--               eval="[(6,0,[ref('base.group_partner_manager'), ref('group_ceppp_patient_partenaire_manager')])]"/>-->
+    <!--    </record>-->
+</odoo>

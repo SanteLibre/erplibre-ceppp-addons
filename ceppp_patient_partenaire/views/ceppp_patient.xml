@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="ceppp_patient_view_form" model="ir.ui.view">
+        <field name="name">ceppp_patient_form</field>
+        <field name="model">ceppp.patient</field>
+        <field name="arch" type="xml">
+            <form string="Titre">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <field name="user_is_manager" invisible="1" />
+                        <button
+                            class="oe_stat_button"
+                            icon="fa-vcard-o"
+                            name="open_fiche_recruteur"
+                            type="object"
+                            attrs="{'invisible':[('user_is_manager','=',False)]}"
+                        >
+                            Fiche recruteur
+                        </button>
+                    </div>
+                    <group>
+                        <field name="uuid" />
+                        <field name="recruteur_partner_id" />
+                        <field name="centre_recruteur" />
+                    </group>
+                    <notebook>
+                        <page name='disponibilite' string="Disponibilité">
+                            <group>
+                                <field name="disponibilite" widget="many2many_tags" />
+                                <field name="disponibilite_not" widget="many2many_tags" />
+                                <field name="consentement_notification" string="Notification" />
+                                <field name="consentement_recrutement" string="Recrutement" />
+                                <field name="consentement_recherche" string="Recherche" />
+                            </group>
+                        </page>
+                        <page name='savoir_experientiel' string="Savoirs expérientiels">
+                            <group>
+                                <field name="maladie_soi_meme" widget="many2many_tags" />
+                                <field name="maladie_proche_aidant" />
+                            </group>
+                        </page>
+                        <page name='formation' string="Formations">
+                            <group>
+                                <field name="formation" />
+                            </group>
+                        </page>
+                        <page name='implication' string="Implications">
+                            <group>
+                                <field name="implication" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ceppp_patient_view_graph" model="ir.ui.view">
+        <field name="name">ceppp_patient_graph</field>
+        <field name="model">ceppp.patient</field>
+        <field name="arch" type="xml">
+            <graph string="Ceppp patient">
+                <field name="uuid" type="row" />
+            </graph>
+        </field>
+    </record>
+
+    <record id="ceppp_patient_view_kanban" model="ir.ui.view">
+        <field name="name">ceppp_patient_kanban</field>
+        <field name="model">ceppp.patient</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <field name="uuid" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li class="mb4">
+                                        <strong>
+                                            <field name="uuid" />
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="ceppp_patient_view_pivot" model="ir.ui.view">
+        <field name="name">ceppp_patient_pivot</field>
+        <field name="model">ceppp.patient</field>
+        <field name="arch" type="xml">
+            <pivot string="Ceppp patient">
+                <field name="uuid" type="row" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="ceppp_patient_view_search" model="ir.ui.view">
+        <field name="name">ceppp_patient_search</field>
+        <field name="model">ceppp.patient</field>
+        <field name="arch" type="xml">
+            <search string="Ceppp patient">
+                <field name="search_maladie" />
+                <filter domain="[('uuid','!=',False)]" name="uuid" string="Code" />
+            </search>
+        </field>
+    </record>
+
+    <record id="ceppp_patient_view_tree" model="ir.ui.view">
+        <field name="name">ceppp_patient_tree</field>
+        <field name="model">ceppp.patient</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="uuid" />
+            </tree>
+        </field>
+    </record>
+
+    <act_window
+        id="ceppp_patient_patient_action_window"
+        name="Tous les patients anonymes"
+        res_model="ceppp.patient"
+        view_mode="kanban,tree,form"
+    />
+</odoo>

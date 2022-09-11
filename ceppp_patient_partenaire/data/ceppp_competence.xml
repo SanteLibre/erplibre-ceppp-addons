@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="ceppp_competence_1" model="ceppp.competence">
+            <field name="name">Se connaître dans la vie avec la maladie</field>
+        </record>
+        <record id="ceppp_competence_2" model="ceppp.competence">
+            <field name="name">Redonner un sens à sa vie au travers de ses expériences</field>
+        </record>
+        <record id="ceppp_competence_3" model="ceppp.competence">
+            <field name="name">Mobiliser ses savoirs expérientiels</field>
+        </record>
+        <record id="ceppp_competence_4" model="ceppp.competence">
+            <field name="name">Développer sa résilience</field>
+        </record>
+        <record id="ceppp_competence_5" model="ceppp.competence">
+            <field name="name">Faire preuve d’altruisme</field>
+        </record>
+        <record id="ceppp_competence_6" model="ceppp.competence">
+            <field name="name">Être réflexif et transmettre</field>
+        </record>
+        <record id="ceppp_competence_7" model="ceppp.competence">
+            <field name="name">Être à l'écoute</field>
+        </record>
+        <record id="ceppp_competence_8" model="ceppp.competence">
+            <field name="name">Se raconter de façon pédagogique</field>
+        </record>
+        <record id="ceppp_competence_9" model="ceppp.competence">
+            <field name="name">Communiquer</field>
+        </record>
+    </data>
+</odoo>
