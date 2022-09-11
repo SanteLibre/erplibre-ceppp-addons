@@ -35,7 +35,7 @@
                             <t t-foreach="titre_formation" t-as="tit">
                                 <div>
                                     <input
-                                        type="checkbox"
+                                        type="radio"
                                         class="o_website_form_input"
                                         name="titre_formation"
                                         t-att-id="'titre_formation_' + tit.name + '_' + str(tit_index)"
@@ -537,7 +537,7 @@
                         <div class="col-12">
                             <b>Titre de la formation:</b>
                             <t t-foreach="ceppp_formation.titre_formation" t-as="tit">
-                                <a t-attf-href="/my/ceppp_formation_titre/#{tit.id}" t-field="tit.name" />
+                                <a t-field="tit.name" />
                                 <t t-if="not tit_last">,</t>
                             </t>
                         </div>
@@ -601,7 +601,7 @@
                         <div class="col-12">
                             <b>Domaine:</b>
                             <t t-foreach="ceppp_implication.domaine" t-as="dom">
-                                <a t-attf-href="/my/ceppp_implication_domaine/#{dom.id}" t-field="dom.name" />
+                                <a t-field="dom.name" />
                                 <t t-if="not dom_last">,</t>
                             </t>
                         </div>
@@ -612,7 +612,7 @@
                         <div class="col-12">
                             <b>R&#244;le:</b>
                             <t t-foreach="ceppp_implication.role" t-as="rol">
-                                <a t-attf-href="/my/ceppp_implication_role/#{rol.id}" t-field="rol.name" />
+                                <a t-field="rol.name" />
                                 <t t-if="not rol_last">,</t>
                             </t>
                         </div>
