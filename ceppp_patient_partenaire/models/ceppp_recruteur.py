@@ -28,14 +28,14 @@ class CepppRecruteur(models.Model):
 
     disponibilite = fields.Many2many(
         comodel_name="ceppp.disponibilite",
-        string="Disponible",
+        string="Moments de disponibilité (préférence)",
         track_visibility="onchange",
         help="Jour de la semaine de disponible",
     )
 
     disponibilite_not = fields.Many2many(
         comodel_name="ceppp.disponibilite",
-        string="Non disponible",
+        string="Moments d'indisponibilité",
         track_visibility="onchange",
         relation="ceppp_recruteur_disponibilite_not_rel",
         help="Jour de la semaine de non-disponible",
@@ -355,12 +355,14 @@ class CepppRecruteur(models.Model):
     )
 
     formation = fields.One2many(
+        string="Formation au partenariat",
         comodel_name="ceppp.formation",
         inverse_name="recruteur_id",
         track_visibility="onchange",
     )
 
     implication = fields.One2many(
+        string="Implications de partenariat",
         comodel_name="ceppp.implication",
         inverse_name="recruteur_id",
         track_visibility="onchange",
