@@ -15,3 +15,12 @@ def post_init_hook(cr, e):
             "Deactivating legacy access rules related to private addresses."
         )
         env.ref("base.res_partner_rule_private_employee").active = False
+
+        _logger.info("Force CEPPP app to be first in menu")
+        menus = env["ir.ui.menu"].search(
+            [
+                ("parent_id", "=", False),
+                ("name", "=", "Ceppp Patient Partenaire"),
+            ]
+        )
+        menus.write({"sequence": -10})
