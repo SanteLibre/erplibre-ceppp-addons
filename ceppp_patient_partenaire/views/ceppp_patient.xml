@@ -35,8 +35,7 @@
                         </page>
                         <page name='savoir_experientiel' string="Savoirs expérientiels">
                             <group>
-                                <field name="maladie_soi_meme" widget="many2many_tags" />
-                                <field name="maladie_proche_aidant" />
+                                <field name="maladie_personne_affectee" />
                             </group>
                         </page>
                         <page name='formation' string="Formations">

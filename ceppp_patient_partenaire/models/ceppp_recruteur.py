@@ -320,20 +320,16 @@ class CepppRecruteur(models.Model):
         ),
     )
 
+    maladie_personne_affectee = fields.One2many(
+        comodel_name="ceppp.maladie_personne_affectee",
+        inverse_name="recruteur_id",
+        string="Problématiques de santé",
+        track_visibility="onchange",
+    )
+
     mode_communication_privilegie = fields.Many2many(
         comodel_name="ceppp.mode_communication_privilegie",
         string="Mode de communication privilégié",
-        track_visibility="onchange",
-    )
-
-    maladie_soi_meme = fields.Many2many(
-        comodel_name="ceppp.maladie",
-        string="Problématiques de santé (soi-même)",
-        track_visibility="onchange",
-    )
-
-    maladie_soi_meme_autre = fields.Text(
-        string="Autres problématiques de santé (soi-même)",
         track_visibility="onchange",
     )
 
@@ -342,16 +338,6 @@ class CepppRecruteur(models.Model):
         compute="_sync_search_maladie",
         store=True,
         help="Champs qui sert à la recherche parmis toutes les maladies.",
-    )
-
-    maladie_proche_aidant = fields.One2many(
-        comodel_name="ceppp.maladie_proche_aidant",
-        inverse_name="recruteur_id",
-        string=(
-            "Problématiques de santé de la personne accompagnée (vous en tant"
-            " que proche-aidant)"
-        ),
-        track_visibility="onchange",
     )
 
     formation = fields.One2many(
@@ -493,24 +479,15 @@ class CepppRecruteur(models.Model):
             if record.date_naissance:
                 record.age = self._calculate_age(record.date_naissance)
 
-    @api.depends(
-        "maladie_soi_meme", "maladie_soi_meme_autre", "maladie_proche_aidant"
-    )
+    @api.depends("maladie_personne_affectee")
     def _sync_search_maladie(self):
         for record in self:
             value = ""
-            if self.maladie_soi_meme_autre:
-                value += self.maladie_soi_meme_autre
-            str_maladies = " ".join(
-                [a.nom for a in self.maladie_soi_meme]
-            ).strip()
-            if str_maladies:
-                value += " " + str_maladies
             str_maladies = " ".join(
                 [
-                    a.autre_maladie
-                    for a in self.maladie_proche_aidant
-                    if a and a.autre_maladie
+                    a.detail_maladie
+                    for a in self.maladie_personne_affectee
+                    if a and a.detail_maladie
                 ]
             )
             if str_maladies:
@@ -518,7 +495,7 @@ class CepppRecruteur(models.Model):
             str_maladies = " ".join(
                 [
                     b.nom
-                    for a in self.maladie_proche_aidant
+                    for a in self.maladie_personne_affectee
                     for b in a.maladie
                     if a and a.maladie
                 ]

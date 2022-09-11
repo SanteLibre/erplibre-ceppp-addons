@@ -11,7 +11,7 @@ from . import (
     ceppp_implication_role,
     ceppp_langue,
     ceppp_maladie,
-    ceppp_maladie_proche_aidant,
+    ceppp_maladie_personne_affectee,
     ceppp_mode_communication_privilegie,
     ceppp_occupation,
     ceppp_patient,

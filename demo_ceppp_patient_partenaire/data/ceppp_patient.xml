@@ -4,15 +4,18 @@
         <record id="ceppp_patient_recruteur_1" model="ceppp.recruteur">
             <field name="patient_partner_id" ref="partner_demo_monique_beauvoir" />
             <field name="sexe">femme</field>
-            <field name="maladie_soi_meme_autre">picottement du singe</field>
-            <field name="maladie_soi_meme" eval="[(4, ref('ceppp_patient_partenaire.ceppp_maladie_anemie_due_a_une_perte_de_sang_aigue')),(4, ref('ceppp_patient_partenaire.ceppp_maladie_anemie_au_cours_dune_maladie_chronique'))]" />
             <field name="recruteur_partner_id" ref="partner_demo_stephanie_latendresse" />
             <field name="date_naissance">1980-08-07</field>
             <field name="langue_parle_ecrit" eval="[(4, ref('ceppp_patient_partenaire.ceppp_langue_autre')),(4, ref('ceppp_patient_partenaire.ceppp_langue_anglais'))]" />
         </record>
-        <record id="ceppp_maladie_proche_aidant_recruteur_1" model="ceppp.maladie_proche_aidant">
+        <record id="ceppp_maladie_personne_affectee_recruteur_soi" model="ceppp.maladie_personne_affectee">
             <field name="recruteur_id" ref="ceppp_patient_recruteur_1" />
-            <field name="autre_maladie">Gros mal de tête</field>
+            <field name="detail_maladie">picottement du singe</field>
+            <field name="maladie" eval="[(4, ref('ceppp_patient_partenaire.ceppp_maladie_anemie_due_a_une_perte_de_sang_aigue')),(4, ref('ceppp_patient_partenaire.ceppp_maladie_anemie_au_cours_dune_maladie_chronique'))]" />
+        </record>
+        <record id="ceppp_maladie_personne_affectee_recruteur_1" model="ceppp.maladie_personne_affectee">
+            <field name="recruteur_id" ref="ceppp_patient_recruteur_1" />
+            <field name="detail_maladie">Gros mal de tête</field>
             <field name="relation_autre">Grand cousin</field>
             <field name="maladie" eval="[(4, ref('ceppp_patient_partenaire.ceppp_maladie_convulsions')),(4, ref('ceppp_patient_partenaire.ceppp_maladie_septoplastie_pour_une_deviation_de_la_cloison_nasale'))]" />
             <field name="relation" eval="[(4, ref('ceppp_patient_partenaire.ceppp_relation_proche_5')),(4, ref('ceppp_patient_partenaire.ceppp_relation_proche_9'))]" />

@@ -41,8 +41,8 @@ class CepppPatientPartenaireController(CustomerPortal):
             values["ceppp_maladie_count"] = request.env[
                 "ceppp.maladie"
             ].search_count([])
-            values["ceppp_maladie_proche_aidant_count"] = request.env[
-                "ceppp.maladie_proche_aidant"
+            values["ceppp_maladie_personne_affectee_count"] = request.env[
+                "ceppp.maladie_personne_affectee"
             ].search_count(
                 [
                     (
@@ -56,7 +56,7 @@ class CepppPatientPartenaireController(CustomerPortal):
             values["ceppp_formation_count"] = 0
             values["ceppp_implication_count"] = 0
             values["ceppp_maladie_count"] = 0
-            values["ceppp_maladie_proche_aidant_count"] = 0
+            values["ceppp_maladie_personne_affectee_count"] = 0
         values["is_patient"] = (
             request.env.user.partner_id.ceppp_entity == "patient"
         )
@@ -524,35 +524,35 @@ class CepppPatientPartenaireController(CustomerPortal):
         )
 
     # ------------------------------------------------------------
-    # My Ceppp Maladie_Proche_Aidant
+    # My Ceppp Maladie_Personne_Affectee
     # ------------------------------------------------------------
-    def _ceppp_maladie_proche_aidant_get_page_view_values(
-        self, ceppp_maladie_proche_aidant, access_token, **kwargs
+    def _ceppp_maladie_personne_affectee_get_page_view_values(
+        self, ceppp_maladie_personne_affectee, access_token, **kwargs
     ):
         values = {
-            "page_name": "ceppp_maladie_proche_aidant",
-            "ceppp_maladie_proche_aidant": ceppp_maladie_proche_aidant,
+            "page_name": "ceppp_maladie_personne_affectee",
+            "ceppp_maladie_personne_affectee": ceppp_maladie_personne_affectee,
             "user": request.env.user,
         }
         return self._get_page_view_values(
-            ceppp_maladie_proche_aidant,
+            ceppp_maladie_personne_affectee,
             access_token,
             values,
-            "my_ceppp_maladie_proche_aidants_history",
+            "my_ceppp_maladie_personne_affectees_history",
             False,
             **kwargs,
         )
 
     @http.route(
         [
-            "/my/ceppp_maladie_proche_aidants",
-            "/my/ceppp_maladie_proche_aidants/page/<int:page>",
+            "/my/ceppp_maladie_personne_affectees",
+            "/my/ceppp_maladie_personne_affectees/page/<int:page>",
         ],
         type="http",
         auth="user",
         website=True,
     )
-    def portal_my_ceppp_maladie_proche_aidants(
+    def portal_my_ceppp_maladie_personne_affectees(
         self,
         page=1,
         date_begin=None,
@@ -564,7 +564,9 @@ class CepppPatientPartenaireController(CustomerPortal):
         **kw,
     ):
         values = self._prepare_portal_layout_values()
-        CepppMaladieProcheAidant = request.env["ceppp.maladie_proche_aidant"]
+        CepppMaladiePersonneAffectee = request.env[
+            "ceppp.maladie_personne_affectee"
+        ]
         domain = []
 
         searchbar_sortings = {
@@ -592,16 +594,16 @@ class CepppPatientPartenaireController(CustomerPortal):
             domain += search_domain
         # archive groups - Default Group By 'create_date'
         archive_groups = self._get_archive_groups(
-            "ceppp.maladie_proche_aidant", domain
+            "ceppp.maladie_personne_affectee", domain
         )
         if date_begin and date_end:
             domain += [
                 ("create_date", ">", date_begin),
                 ("create_date", "<=", date_end),
             ]
-        # ceppp_maladie_proche_aidants count
-        ceppp_maladie_proche_aidant_count = (
-            CepppMaladieProcheAidant.search_count(domain)
+        # ceppp_maladie_personne_affectees count
+        ceppp_maladie_personne_affectee_count = (
+            CepppMaladiePersonneAffectee.search_count(domain)
         )
         domain += [
             (
@@ -612,7 +614,7 @@ class CepppPatientPartenaireController(CustomerPortal):
         ]
         # pager
         pager = portal_pager(
-            url="/my/ceppp_maladie_proche_aidants",
+            url="/my/ceppp_maladie_personne_affectees",
             url_args={
                 "date_begin": date_begin,
                 "date_end": date_end,
@@ -621,30 +623,30 @@ class CepppPatientPartenaireController(CustomerPortal):
                 "search_in": search_in,
                 "search": search,
             },
-            total=ceppp_maladie_proche_aidant_count,
+            total=ceppp_maladie_personne_affectee_count,
             page=page,
             step=self._items_per_page,
         )
 
         # content according to pager and archive selected
-        ceppp_maladie_proche_aidants = CepppMaladieProcheAidant.search(
+        ceppp_maladie_personne_affectees = CepppMaladiePersonneAffectee.search(
             domain,
             order=order,
             limit=self._items_per_page,
             offset=pager["offset"],
         )
         request.session[
-            "my_ceppp_maladie_proche_aidants_history"
-        ] = ceppp_maladie_proche_aidants.ids[:100]
+            "my_ceppp_maladie_personne_affectees_history"
+        ] = ceppp_maladie_personne_affectees.ids[:100]
 
         values.update(
             {
                 "date": date_begin,
                 "date_end": date_end,
-                "ceppp_maladie_proche_aidants": ceppp_maladie_proche_aidants,
-                "page_name": "ceppp_maladie_proche_aidant",
+                "ceppp_maladie_personne_affectees": ceppp_maladie_personne_affectees,
+                "page_name": "ceppp_maladie_personne_affectee",
                 "archive_groups": archive_groups,
-                "default_url": "/my/ceppp_maladie_proche_aidants",
+                "default_url": "/my/ceppp_maladie_personne_affectees",
                 "pager": pager,
                 "searchbar_sortings": searchbar_sortings,
                 "searchbar_groupby": searchbar_groupby,
@@ -658,34 +660,34 @@ class CepppPatientPartenaireController(CustomerPortal):
             }
         )
         return request.render(
-            "ceppp_patient_partenaire.portal_my_ceppp_maladie_proche_aidants",
+            "ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectees",
             values,
         )
 
     @http.route(
         [
-            "/my/ceppp_maladie_proche_aidant/<int:ceppp_maladie_proche_aidant_id>"
+            "/my/ceppp_maladie_personne_affectee/<int:ceppp_maladie_personne_affectee_id>"
         ],
         type="http",
         auth="public",
         website=True,
     )
-    def portal_my_ceppp_maladie_proche_aidant(
-        self, ceppp_maladie_proche_aidant_id=None, access_token=None, **kw
+    def portal_my_ceppp_maladie_personne_affectee(
+        self, ceppp_maladie_personne_affectee_id=None, access_token=None, **kw
     ):
         try:
-            ceppp_maladie_proche_aidant_sudo = self._document_check_access(
-                "ceppp.maladie_proche_aidant",
-                ceppp_maladie_proche_aidant_id,
+            ceppp_maladie_personne_affectee_sudo = self._document_check_access(
+                "ceppp.maladie_personne_affectee",
+                ceppp_maladie_personne_affectee_id,
                 access_token,
             )
         except (AccessError, MissingError):
             return request.redirect("/my")
 
-        values = self._ceppp_maladie_proche_aidant_get_page_view_values(
-            ceppp_maladie_proche_aidant_sudo, access_token, **kw
+        values = self._ceppp_maladie_personne_affectee_get_page_view_values(
+            ceppp_maladie_personne_affectee_sudo, access_token, **kw
         )
         return request.render(
-            "ceppp_patient_partenaire.portal_my_ceppp_maladie_proche_aidant",
+            "ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectee",
             values,
         )

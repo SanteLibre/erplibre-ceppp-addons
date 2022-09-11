@@ -34,7 +34,7 @@
         "data/ceppp_langue.xml",
         "views/ceppp_maladie.xml",
         "data/ceppp_maladie.xml",
-        "views/ceppp_maladie_proche_aidant.xml",
+        "views/ceppp_maladie_personne_affectee.xml",
         "views/ceppp_mode_communication_privilegie.xml",
         "data/ceppp_mode_communication_privilegie.xml",
         "views/ceppp_occupation.xml",
