@@ -1,3 +1,19 @@
+# Installation environnement de production
+
+À la racine du projet ERPLibre, exécuter : `santelibre_install_ceppp_patient_partenaire`
+
+Dans l'instance:
+
+1. Activer les deux langues et forcer le remplacement des termes existants, dans
+   configuration/configuration/traductions/langues : en_CA et es_ES
+2. Créer une base de données dans les documents pour la publication des consentements, dans
+   Documents/Configurations/Storages
+    1. Créer un répertoire, mettre les fichiers désirés à publier à l'intérieur, et choisir ses permissions en créant un
+       groupe portail et administrateur.
+    2. Aller dans le module de Smile-document pour publier les articles à rendre disponible pour le portail.
+    3. BUG, cette technique ne fonctionne pas. Il faut se connecter en super user, ajouter un document attaché dans un
+       répertoire et aller dans Smile-document l'activer.
+
 # erplibre-ceppp-addons
 
 Centre d'Excellence sur le partenariat avec les patients et le public Canada, addons de ERPLibre
