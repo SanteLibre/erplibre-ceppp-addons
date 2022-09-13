@@ -201,6 +201,7 @@
             <kanban class="o_kanban_mobile">
                 <field name="name" />
                 <field name="id" />
+                <field name="create_date" />
                 <field name="write_date" />
                 <templates>
                     <t t-name="kanban-box">
@@ -216,6 +217,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-6">
+                                    <i class="fa fa-clock-o" role="img" aria-label="Date" title="Date" />
+                                    <t t-esc="record.create_date.value" />
+                                    <br />
                                     <i class="fa fa-clock-o" role="img" aria-label="Date" title="Date" />
                                     <t t-esc="record.write_date.value" />
                                 </div>
@@ -250,6 +254,7 @@
         <field name="model">ceppp.recruteur</field>
         <field name="arch" type="xml">
             <search string="Ceppp recruteur">
+                <field name="name" />
                 <field name="search_maladie" />
                 <field name="sexe" />
                 <field name="genre" />

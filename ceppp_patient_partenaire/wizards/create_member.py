@@ -30,7 +30,11 @@ class CreateMember(models.TransientModel):
 
     # TODO take language from system and not hardcoded, check lang from res.partner
     langue = fields.Selection(
-        selection=[("fr_CA", "Français"), ("en_CA", "Anglais")],
+        selection=[
+            ("fr_CA", "Français"),
+            ("en_CA", "Anglais"),
+            ("es_ES", "Espagnol"),
+        ],
         default="fr_CA",
         required=True,
     )
@@ -147,6 +151,7 @@ class CreateMember(models.TransientModel):
             result = action.read()[0]
             result["views"] = [(form.id, "form")]
             result["res_id"] = ceppp_recruteur.id
+            result["obj_id"] = ceppp_recruteur
             return result
         else:
             action = self.env.ref("contacts.action_contacts")
@@ -156,6 +161,7 @@ class CreateMember(models.TransientModel):
             result = action.read()[0]
             result["views"] = [(form.id, "form")]
             result["res_id"] = partner_id.id
+            result["obj_id"] = partner_id
             return result
 
     def _send_email_portal(self, partner_id, user_id):

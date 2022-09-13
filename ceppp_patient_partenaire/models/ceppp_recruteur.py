@@ -340,6 +340,13 @@ class CepppRecruteur(models.Model):
         help="Champs qui sert à la recherche parmis toutes les maladies.",
     )
 
+    search_maladie = fields.Char(
+        string="Maladies",
+        compute="_sync_search_maladie",
+        store=True,
+        help="Champs qui sert à la recherche parmis toutes les maladies.",
+    )
+
     formation = fields.One2many(
         string="Formation au partenariat",
         comodel_name="ceppp.formation",
