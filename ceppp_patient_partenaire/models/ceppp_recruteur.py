@@ -10,6 +10,7 @@ class CepppRecruteur(models.Model):
     _description = "ceppp_recruteur"
 
     name = fields.Char(
+        string="Nom",
         related="patient_partner_id.name",
         track_visibility="onchange",
         store=True,
@@ -335,16 +336,16 @@ class CepppRecruteur(models.Model):
 
     search_maladie = fields.Char(
         string="Maladies",
-        compute="_sync_search_maladie",
+        compute="_compute_search_maladie",
         store=True,
         help="Champs qui sert à la recherche parmis toutes les maladies.",
     )
 
-    search_maladie = fields.Char(
-        string="Maladies",
-        compute="_sync_search_maladie",
+    search_implication = fields.Char(
+        string="Implication",
+        compute="compute_search_implication",
         store=True,
-        help="Champs qui sert à la recherche parmis toutes les maladies.",
+        help="Champs qui sert à la recherche parmis toutes les implications.",
     )
 
     formation = fields.One2many(
@@ -386,7 +387,7 @@ class CepppRecruteur(models.Model):
     )
 
     commentaires = fields.Text(
-        string="Commnentaires",
+        string="Commentaires",
         track_visibility="onchange",
     )
 
@@ -487,7 +488,7 @@ class CepppRecruteur(models.Model):
                 record.age = self._calculate_age(record.date_naissance)
 
     @api.depends("maladie_personne_affectee")
-    def _sync_search_maladie(self):
+    def _compute_search_maladie(self):
         for record in self:
             value = ""
             str_maladies = " ".join(
@@ -511,6 +512,19 @@ class CepppRecruteur(models.Model):
                 value += " " + str_maladies
             if value:
                 record.search_maladie = value.strip()
+
+    @api.depends("implication")
+    def compute_search_implication(self):
+        for record in self:
+            value = " ".join(
+                [
+                    f"{a.name} {a.description}".strip()
+                    for a in self.implication
+                    if a and (a.name or a.description)
+                ]
+            )
+            if value:
+                record.search_implication = value.strip()
 
     @api.depends("patient_partner_id")
     def _compute_user_is_admin(self):

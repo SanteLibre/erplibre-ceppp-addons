@@ -256,9 +256,11 @@
             <search string="Ceppp recruteur">
                 <field name="name" />
                 <field name="search_maladie" />
+                <field name="search_implication" />
                 <field name="sexe" />
                 <field name="genre" />
                 <field name="date_naissance" />
+                <field name="commentaires" />
                 <field name="age" />
                 <!--                <filter-->
                 <!--                    domain="[('maladie_personne_affectee','!=',False)]"-->

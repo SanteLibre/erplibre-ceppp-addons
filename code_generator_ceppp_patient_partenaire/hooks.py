@@ -832,7 +832,7 @@ from odoo import _, api, fields, models""",
             "commentaires": {
                 "code_generator_form_simple_view_sequence": 34,
                 "code_generator_sequence": 39,
-                "field_description": "Commnentaires",
+                "field_description": "Commentaires",
                 "track_visibility": "onchange",
                 "ttype": "text",
             },

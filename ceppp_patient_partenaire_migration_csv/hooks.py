@@ -375,7 +375,7 @@ def add_csv_patient(env, partner_id_genevieve):
             "Consentement sur l&#039;implication"
         )
         if consentement_implication and consentement_implication == "non":
-            ceppp_recruteur.notification = False
+            ceppp_recruteur.consentement_notification = False
 
         # Genre
         genre = patient.get("Genre")
