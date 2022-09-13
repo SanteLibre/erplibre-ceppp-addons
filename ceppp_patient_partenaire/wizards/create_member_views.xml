@@ -26,12 +26,12 @@
                     <field name="email" />
                     <field name="langue" />
                 </group>
-                <div>
-                    <p>
-                        La création d'un membre va lui envoyer une invitation par courriel pour se joindre à la
-                        plateforme.
-                    </p>
-                </div>
+                <!--                <div>-->
+                <!--                    <p>-->
+                <!--                        La création d'un membre va lui envoyer une invitation par courriel pour se joindre à la-->
+                <!--                        plateforme.-->
+                <!--                    </p>-->
+                <!--                </div>-->
                 <footer>
                     <button name="create_member" string="Créer" type="object" class="oe_highlight" />
                     <button string="Cancel" class="oe_link" special="cancel" />
