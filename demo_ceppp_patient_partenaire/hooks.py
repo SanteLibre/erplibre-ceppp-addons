@@ -73,6 +73,7 @@ def post_init_hook(cr, e):
                 "demo_ceppp_patient_partenaire.partner_demo_company_santelibre"
             )
             with tools.file_open(
-                "demo_ceppp_patient_partenaire/static/img/mathben.png", "rb"
+                "demo_ceppp_patient_partenaire/static/img/Mathieu_Benoit.jpg",
+                "rb",
             ) as desc_file:
                 partner.image = base64.b64encode(desc_file.read())

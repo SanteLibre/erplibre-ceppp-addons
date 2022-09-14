@@ -8,6 +8,7 @@
                 <sheet>
                     <group>
                         <field name="nom" />
+                        <field name="sequence" />
                     </group>
                     <group>
                         <field name="maladie_ids" />
@@ -84,6 +85,11 @@
         <field name="model">ceppp.chapitre_maladie</field>
         <field name="arch" type="xml">
             <tree>
+                <field
+                    name="sequence"
+                    widget="handle"
+                    groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+                />
                 <field name="nom" />
                 <field name="maladie_ids" />
             </tree>

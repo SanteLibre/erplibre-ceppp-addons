@@ -40,6 +40,10 @@
                 <xpath expr="//field[@name='type']" position="before">
                     <field name="ceppp_entity" />
                 </xpath>
+                <xpath expr="//field[@name='function']" position="replace" />
+                <xpath expr="//field[@name='website']" position="replace" />
+                <xpath expr="//field[@name='title']" position="replace" />
+                <xpath expr="//field[@name='category_id']" position="replace" />
                 <xpath expr="//div[@name='button_box']" position="inside">
                     <field name="patient_partner_ids" invisible="1" />
                     <button

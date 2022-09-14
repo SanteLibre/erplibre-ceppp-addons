@@ -11,7 +11,7 @@ class ResPartner(models.Model):
             ("affiliation", "Centre de recrutement"),
             ("administrateur", "Administrateur"),
         ],
-        string="Affiliation",
+        string="Rôle",
         help="Unique entity name to represent the contact.",
     )
 
@@ -41,11 +41,7 @@ class ResPartner(models.Model):
 
     def _get_contact_name(self, partner, name):
         if partner.ceppp_entity:
-            return "%s, %s, %s" % (
-                partner.commercial_company_name or partner.parent_id.name,
-                partner.ceppp_entity.title(),
-                name,
-            )
+            return name
         return super(ResPartner, self)._get_contact_name(partner, name)
 
     @api.model_create_multi

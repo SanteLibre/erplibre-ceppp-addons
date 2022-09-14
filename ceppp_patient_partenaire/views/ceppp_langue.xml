@@ -73,7 +73,11 @@
         <field name="model">ceppp.langue</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="sequence" widget="handle" />
+                <field
+                    name="sequence"
+                    widget="handle"
+                    groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
+                />
                 <field name="nom" />
             </tree>
         </field>

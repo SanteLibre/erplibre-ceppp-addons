@@ -341,16 +341,16 @@ class CepppPatientPartenaireController(http.Controller):
         )
 
     @http.route(
-        "/new/ceppp_maladie_proche_aidant",
+        "/new/ceppp_maladie_personne_affectee",
         type="http",
         auth="user",
         website=True,
     )
-    def create_new_ceppp_maladie_proche_aidant(self, **kw):
+    def create_new_ceppp_maladie_personne_affectee(self, **kw):
         name = http.request.env.user.name
         maladie = http.request.env["ceppp.maladie"].search([])
         lst_default_maladie = (
-            http.request.env["ceppp.maladie_proche_aidant"]
+            http.request.env["ceppp.maladie_personne_affectee"]
             .default_get(["maladie"])
             .get("maladie")
         )
@@ -366,7 +366,7 @@ class CepppPatientPartenaireController(http.Controller):
         )
         relation = http.request.env["ceppp.relation_proche"].search([])
         lst_default_relation = (
-            http.request.env["ceppp.maladie_proche_aidant"]
+            http.request.env["ceppp.maladie_personne_affectee"]
             .default_get(["relation"])
             .get("relation")
         )
@@ -375,54 +375,50 @@ class CepppPatientPartenaireController(http.Controller):
         else:
             default_relation = []
         default_relation_autre = (
-            http.request.env["ceppp.maladie_proche_aidant"]
+            http.request.env["ceppp.maladie_personne_affectee"]
             .default_get(["relation_autre"])
             .get("relation_autre")
         )
         default_relation_is_autre = (
-            http.request.env["ceppp.maladie_proche_aidant"]
+            http.request.env["ceppp.maladie_personne_affectee"]
             .default_get(["relation_is_autre"])
             .get("relation_is_autre")
         )
         return http.request.render(
-            "ceppp_patient_partenaire.portal_create_ceppp_maladie_proche_aidant",
+            "ceppp_patient_partenaire.portal_create_ceppp_maladie_personne_affectee",
             {
                 "name": name,
                 "maladie": maladie,
                 "recruteur_id": recruteur_id,
                 "relation": relation,
-                "page_name": "create_ceppp_maladie_proche_aidant",
+                "page_name": "create_ceppp_maladie_personne_affectee",
                 "default_maladie": default_maladie,
                 "default_recruteur_id": default_recruteur_id,
                 "default_relation": default_relation,
                 "default_relation_autre": default_relation_autre,
-                "default_autre_maladie": "",
                 "default_relation_is_autre": default_relation_is_autre,
             },
         )
 
     @http.route(
-        "/submitted/ceppp_maladie_proche_aidant",
+        "/submitted/ceppp_maladie_personne_affectee",
         type="http",
         auth="user",
         website=True,
         csrf=True,
     )
-    def submit_ceppp_maladie_proche_aidant(self, **kw):
+    def submit_ceppp_maladie_personne_affectee(self, **kw):
         vals = {}
 
-        # if kw.get("name"):
-        #     vals["name"] = kw.get("name")
+        if kw.get("detail_maladie"):
+            vals["detail_maladie"] = kw.get("detail_maladie")
 
-        if kw.get("autre_maladie"):
-            vals["autre_maladie"] = kw.get("autre_maladie")
-
-        if kw.get("maladie"):
-            lst_value_maladie = [
-                (4, int(a))
-                for a in request.httprequest.form.getlist("maladie")
-            ]
-            vals["maladie"] = lst_value_maladie
+        # if kw.get("maladie"):
+        #     lst_value_maladie = [
+        #         (4, int(a))
+        #         for a in request.httprequest.form.getlist("maladie")
+        #     ]
+        #     vals["maladie"] = lst_value_maladie
 
         if kw.get("recruteur_id") and kw.get("recruteur_id").isdigit():
             vals["recruteur_id"] = int(kw.get("recruteur_id"))
@@ -438,7 +434,7 @@ class CepppPatientPartenaireController(http.Controller):
             vals["relation_autre"] = kw.get("relation_autre")
 
         default_relation_is_autre = (
-            http.request.env["ceppp.maladie_proche_aidant"]
+            http.request.env["ceppp.maladie_personne_affectee"]
             .default_get(["relation_is_autre"])
             .get("relation_is_autre")
         )
@@ -447,9 +443,9 @@ class CepppPatientPartenaireController(http.Controller):
         elif default_relation_is_autre:
             vals["relation_is_autre"] = False
 
-        new_ceppp_maladie_proche_aidant = (
-            request.env["ceppp.maladie_proche_aidant"].sudo().create(vals)
+        new_ceppp_maladie_personne_affectee = (
+            request.env["ceppp.maladie_personne_affectee"].sudo().create(vals)
         )
         return werkzeug.utils.redirect(
-            f"/my/ceppp_maladie_proche_aidant/{new_ceppp_maladie_proche_aidant.id}"
+            f"/my/ceppp_maladie_personne_affectee/{new_ceppp_maladie_personne_affectee.id}"
         )

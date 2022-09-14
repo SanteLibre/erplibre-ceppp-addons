@@ -527,10 +527,10 @@ def post_init_hook(cr, e):
         )
 
         # Add/Update Ceppp Maladie Proche Aidant
-        model_model = "ceppp.maladie_proche_aidant"
-        model_name = "ceppp_maladie_proche_aidant"
+        model_model = "ceppp.maladie_personne_affectee"
+        model_name = "ceppp_maladie_personne_affectee"
         dct_model = {
-            "description": "ceppp_maladie_proche_aidant",
+            "description": "ceppp_maladie_personne_affectee",
         }
         dct_field = {
             "maladie": {
@@ -578,11 +578,13 @@ def post_init_hook(cr, e):
                 "ttype": "boolean",
             },
         }
-        model_ceppp_maladie_proche_aidant = code_generator_id.add_update_model(
-            model_model,
-            model_name,
-            dct_field=dct_field,
-            dct_model=dct_model,
+        model_ceppp_maladie_personne_affectee = (
+            code_generator_id.add_update_model(
+                model_model,
+                model_name,
+                dct_field=dct_field,
+                dct_model=dct_model,
+            )
         )
 
         # Generate code
@@ -602,7 +604,7 @@ def post_init_hook(cr, e):
                     "param": "self",
                     "sequence": 0,
                     "m2o_module": code_generator_id.id,
-                    "m2o_model": model_ceppp_maladie_proche_aidant.id,
+                    "m2o_model": model_ceppp_maladie_personne_affectee.id,
                 },
                 {
                     "code": '''for record in self:
@@ -629,7 +631,7 @@ def post_init_hook(cr, e):
                     "param": "self",
                     "sequence": 1,
                     "m2o_module": code_generator_id.id,
-                    "m2o_model": model_ceppp_maladie_proche_aidant.id,
+                    "m2o_model": model_ceppp_maladie_personne_affectee.id,
                 },
             ]
             env["code.generator.model.code"].create(lst_value)
@@ -743,13 +745,6 @@ def post_init_hook(cr, e):
                 "relation": "ceppp.disponibilite",
                 "ttype": "many2many",
             },
-            "maladie_soi_meme": {
-                "code_generator_form_simple_view_sequence": 18,
-                "code_generator_sequence": 13,
-                "field_description": "Problématiques de santé (soi-même)",
-                "relation": "ceppp.maladie",
-                "ttype": "many2many",
-            },
             "name": {
                 "code_generator_sequence": 9,
                 "field_description": "Name",
@@ -837,7 +832,7 @@ from odoo import _, api, fields, models""",
             "commentaires": {
                 "code_generator_form_simple_view_sequence": 34,
                 "code_generator_sequence": 39,
-                "field_description": "Commnentaires",
+                "field_description": "Commentaires",
                 "track_visibility": "onchange",
                 "ttype": "text",
             },
@@ -911,7 +906,6 @@ from odoo import _, api, fields, models""",
             },
             "disponibilite_not": {
                 "code_generator_form_simple_view_sequence": 36,
-                "code_generator_sequence": 6,
                 "field_description": "Non disponible",
                 "help": "Jour de la semaine de non-disponible",
                 "relation": "ceppp.disponibilite",
@@ -1051,14 +1045,6 @@ from odoo import _, api, fields, models""",
                 ),
                 "track_visibility": "onchange",
                 "ttype": "char",
-            },
-            "maladie_soi_meme": {
-                "code_generator_form_simple_view_sequence": 37,
-                "code_generator_sequence": 33,
-                "field_description": "Problématiques de santé (soi-même)",
-                "relation": "ceppp.maladie",
-                "track_visibility": "onchange",
-                "ttype": "many2many",
             },
             "mobile": {
                 "code_generator_sequence": 19,
@@ -1368,7 +1354,7 @@ return super(CepppRecruteur, self).create(vals_list)""",
                 "relation": "ceppp.implication",
                 "relation_field": "recruteur_id",
             },
-            "maladie_proche_aidant": {
+            "maladie_personne_affectee": {
                 "field_description": (
                     "Problématiques de santé de la personne accompagnée (vous"
                     " en tant que proche-aidant)"
@@ -1377,7 +1363,7 @@ return super(CepppRecruteur, self).create(vals_list)""",
                 "track_visibility": "onchange",
                 "code_generator_sequence": 34,
                 "code_generator_form_simple_view_sequence": 38,
-                "relation": "ceppp.maladie_proche_aidant",
+                "relation": "ceppp.maladie_personne_affectee",
                 "relation_field": "recruteur_id",
             },
         }
@@ -1403,7 +1389,7 @@ return super(CepppRecruteur, self).create(vals_list)""",
                         0,
                         [
                             model_ceppp_maladie.id,
-                            model_ceppp_maladie_proche_aidant.id,
+                            model_ceppp_maladie_personne_affectee.id,
                             model_ceppp_formation.id,
                             model_ceppp_implication.id,
                         ],

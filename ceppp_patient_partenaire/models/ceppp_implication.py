@@ -5,7 +5,7 @@ class CepppImplication(models.Model):
     _name = "ceppp.implication"
     _description = "ceppp_implication"
 
-    name = fields.Char(compute="_compute_name")
+    name = fields.Char(string="Nom", compute="_compute_name")
 
     titre = fields.Char(string="Titre du projet")
 

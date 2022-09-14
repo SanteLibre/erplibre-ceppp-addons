@@ -9,4 +9,18 @@
             <label class="col-form-label label-optional" for="company_name">Centre de recrutement</label>
         </xpath>
     </template>
+
+    <template id="portal_layout_mon_consentement" name="Mon consentement" inherit_id="portal.portal_layout">
+        <xpath expr="//div[hasclass('o_portal_my_details')]" position="after">
+            <br />
+            <div>
+                <h4>Votre consentement</h4>
+                <hr class="mt-1 mb-0" />
+                <a role="button" href="/Attachments" class="btn btn-sm btn-link">
+                    <i class="fa fa-eye" />
+                    Voir les documents
+                </a>
+            </div>
+        </xpath>
+    </template>
 </odoo>

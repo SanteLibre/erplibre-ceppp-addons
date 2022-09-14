@@ -35,7 +35,7 @@ def post_init_hook(cr, e):
             "ceppp.chapitre_maladie; ceppp.competence; ceppp.disponibilite;"
             " ceppp.formation; ceppp.formation_titre; ceppp.implication;"
             " ceppp.implication_domaine; ceppp.implication_role; ceppp.langue;"
-            " ceppp.maladie; ceppp.maladie_proche_aidant;"
+            " ceppp.maladie; ceppp.maladie_personne_affectee;"
             " ceppp.mode_communication_privilegie; ceppp.occupation;"
             " ceppp.patient; ceppp.recruteur; ceppp.relation_proche"
         )
