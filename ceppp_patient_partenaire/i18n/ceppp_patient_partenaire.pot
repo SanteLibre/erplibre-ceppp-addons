@@ -1,0 +1,2666 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* ceppp_patient_partenaire
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-14 04:32+0000\n"
+"PO-Revision-Date: 2022-09-14 04:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_systeme_imm
+msgid "\n"
+"                Chapitre III - Maladies du sang et des organes hematopoietiques et certains troubles du\n"
+"                systeme immunitaire\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_xiii_maladies_du_systeme_osteo_articulaire_des_muscles_et_du_tissu_conjonctif
+msgid "\n"
+"                Chapitre XIII - Maladies du systeme osteo-articulaire, des muscles et du tissu\n"
+"                conjonctif\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_xix_lesions_traumatiques_empoisonnements_et_certaines_autres_consequences_de_causes_exte
+msgid "\n"
+"                Chapitre XIX - Lesions traumatiques, empoisonnements et certaines autres consequences de\n"
+"                causes externes\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_xviii_symptomes_signes_et_resultats_anormaux_dexamens_cliniques_et_de_laboratoire_non_cl
+msgid "\n"
+"                Chapitre XVIII - Symptomes, signes et resultats anormaux dexamens cliniques et de\n"
+"                laboratoire, non classes ailleurs\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectee
+msgid "<b>Autre relation:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<b>Autres domaines:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_formation
+msgid "<b>Autres formations:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<b>Autres rôles:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie
+msgid "<b>Chapitre maladie:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_formation
+msgid "<b>Date:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<b>Description:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<b>Domaine:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectee
+msgid "<b>Détails des maladies:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectee
+msgid "<b>Maladies:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<b>Nom de l'équipe:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie
+msgid "<b>Nom:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_formation
+msgid "<b>Organisation:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectee
+msgid "<b>Relation avec la personne aidée:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<b>Rôle:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_formation
+msgid "<b>Titre de la formation:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<b>Titre du projet:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<b>Échéance début:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<b>Échéance fin:</b>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_kanban
+msgid "<br/>\n"
+"                                    <i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Date\" title=\"Date\"/>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_kanban
+msgid "<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Date\" title=\"Date\"/>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_layout_mon_consentement
+msgid "<i class=\"fa fa-eye\"/>\n"
+"                    Voir les documents"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_home
+msgid "<i class=\"fa fa-plus-circle\"/>\n"
+"                    Vos formations"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_home
+msgid "<i class=\"fa fa-plus-circle\"/>\n"
+"                    Vos implications"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_home
+msgid "<i class=\"fa fa-plus-circle\"/>\n"
+"                    Vos maladies"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_formation
+msgid "<small class=\"text-muted\">Ceppp Formation -</small>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie
+msgid "<small class=\"text-muted\">Ceppp Maladie -</small>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implication
+msgid "<small class=\"text-muted\">Implication -</small>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectee
+msgid "<small class=\"text-muted\">Maladie personne affectée -</small>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_absence_acquise_du_sein_et_du_poumon_en_raison_dune_tumeur_maligne_primitive
+msgid "Absence acquise du sein et du poumon en raison d’une tumeur maligne primitive\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_absence_de_signes_vitaux_asv
+msgid "Absence de signes vitaux (ASV)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_accident_vasculaire_cerebral_avc_perinatal
+msgid "Accident vasculaire cérébral (AVC) périnatal"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_accidents_vasculaires_cerebraux_avc_hemorragiques_ischemiques_et_non_precises
+msgid "Accidents vasculaires cérébraux (AVC) hémorragiques, ischémiques et\n"
+"                non précisés\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_accouchement_avec_antecedent_de_cesarienne
+msgid "Accouchement avec antécédent de césarienne"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_accouchement_normal
+msgid "Accouchement normal"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_acidemie_foetale
+msgid "Acidémie foetale"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,patient_actif:0
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__active
+msgid "Actif"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__patient_actif
+msgid "Actif: patient partenaire est disponible à participer dans des projets. Passif: patient partenaire n'est pas disponible à participer dans des projets."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.create_member,type_membre:0
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.view_ceppp_res_partner_filter
+#: selection:res.partner,ceppp_entity:0
+msgid "Administrateur"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_admissions_a_la_suite_dun_diagnostic_de_cancer
+msgid "Admissions à la suite d’un diagnostic de cancer"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__street
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Adresse"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__street2
+msgid "Adresse 2"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__zip
+msgid "Adresse postale"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_affections_post_intervention
+msgid "Affections post-intervention"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_patient__centre_recruteur
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__centre_recruteur
+msgid "Affiliation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.view_ceppp_res_partner_filter
+msgid "Affiliation Groupe"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_search
+msgid "Affiliation Société"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_formation
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_formations
+msgid "Ajouter une formation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Ajouter une implication"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie_personne_affectee
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectees
+msgid "Ajouter une maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:111
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:265
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:420
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:577
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:111
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:265
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:420
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:577
+#, python-format
+msgid "All"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_angine_de_poitrine
+msgid "Angine de poitrine"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.create_member,langue:0
+msgid "Anglais"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_anticoagulotherapie_:_gestion_et_effets_indesirables
+msgid "Anticoagulothérapie : gestion et effets indésirables"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_anemie_au_cours_dune_maladie_chronique
+msgid "Anémie au cours d’une maladie chronique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_anemie_due_a_une_perte_de_sang_aigue
+msgid "Anémie due à une perte de sang aiguë"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_anevrismes
+msgid "Anévrismes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_arret_cardiaque
+msgid "Arrêt cardiaque"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_arthrectomie_et_arthroplastie
+msgid "Arthrectomie et arthroplastie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_arthrose
+msgid "Arthrose"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_asthme
+msgid "Asthme"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_attribution_de_codes_pour_des_lesions_superficielles_multiples_ou_plaies_ouvertes_multiples
+msgid "Attribution de codes pour des lésions superficielles multiples ou plaies ouvertes\n"
+"                multiples\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_plusieurs_regions_corporelles
+msgid "Attribution de codes pour plusieurs types de lésions significatives touchant\n"
+"                plusieurs régions corporelles\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_attribution_de_codes_pour_plusieurs_types_de_lesions_significatives_touchant_une_seule_region_corporelle
+msgid "Attribution de codes pour plusieurs types de lésions significatives touchant une\n"
+"                seule région corporelle\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_attribution_du_diagnostic_principal_et_du_probleme_principal_dans_le_cas_de_brulures_multiples
+msgid "Attribution du diagnostic principal et du problème principal dans le cas de brûlures\n"
+"                multiples\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_formations
+msgid "Aucune formation."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectees
+msgid "Aucune maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,genre:0
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Autre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Autre domaine"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__genre_autre
+msgid "Autre genre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__langue_parle_ecrit_autre
+msgid "Autre langues parlées/écrites"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__occupation_autre
+msgid "Autre occupation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__relation_autre
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie_personne_affectee
+msgid "Autre relation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Autre rôle"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__domaine_autre
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+msgid "Autres domaines"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__titre_formation_autre
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_formation
+msgid "Autres formations"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__role_autre
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+msgid "Autres rôles"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_biopsie_des_ganglions_sentinelles
+msgid "Biopsie des ganglions sentinelles"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,genre:0
+msgid "Bispirituel.le"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_blessures_par_ecrasement
+msgid "Blessures par écrasement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_brachytherapie
+msgid "Brachythérapie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_brulures_et_corrosions
+msgid "Brûlures et corrosions"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_brulures_touchant_plusieurs_regions_corporelles
+msgid "Brûlures touchant plusieurs régions corporelles"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.module.category,name:ceppp_patient_partenaire.module_ceppp_patient_partenaire_category
+msgid "CEPPP patient_partenaire"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.view_create_member_wizard
+msgid "Cancel"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_cardiopathie_ischemique_chronique
+msgid "Cardiopathie ischémique chronique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/models/ceppp_recruteur.py:555
+#: code:addons/ceppp_patient_partenaire/models/ceppp_recruteur.py:555
+#, python-format
+msgid "Carnet adresse"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_catheters_veineux_centraux
+msgid "Cathéters veineux centraux"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__mobile
+msgid "Cellulaire"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_cellulite
+msgid "Cellulite"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__centre_recruteur
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__centre_recruteur
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_details_affiliation
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.view_ceppp_res_partner_filter
+#: selection:res.partner,ceppp_entity:0
+msgid "Centre de recrutement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__centre_recrutement_id
+msgid "Centre recrutement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_view_search
+msgid "Ceppp Maladie des personnes affectées"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_layout
+msgid "Ceppp Maladies"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_ceppp_patient_partenaire
+msgid "Ceppp Patient Partenaire"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_chapitre_maladie_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_chapitre_maladie_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_chapitre_maladie_view_search
+msgid "Ceppp chapitre maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_competence_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_competence_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_competence_view_search
+msgid "Ceppp competence"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_disponibilite_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_disponibilite_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_disponibilite_view_search
+msgid "Ceppp disponibilite"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_view_search
+msgid "Ceppp formation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_titre_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_titre_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_titre_view_search
+msgid "Ceppp formation titre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+msgid "Ceppp implication"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_domaine_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_domaine_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_domaine_view_search
+msgid "Ceppp implication domaine"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_role_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_role_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_role_view_search
+msgid "Ceppp implication role"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_langue_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_langue_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_langue_view_search
+msgid "Ceppp langue"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_view_search
+msgid "Ceppp maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_mode_communication_privilegie_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_mode_communication_privilegie_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_mode_communication_privilegie_view_search
+msgid "Ceppp mode communication privilegie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_occupation_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_occupation_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_occupation_view_search
+msgid "Ceppp occupation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_search
+msgid "Ceppp patient"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_search
+msgid "Ceppp recruteur"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_relation_proche_view_graph
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_relation_proche_view_pivot
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_relation_proche_view_search
+msgid "Ceppp relation proche"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__search_implication
+msgid "Champs qui sert à la recherche parmis toutes les implications."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_patient__search_maladie
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__search_maladie
+msgid "Champs qui sert à la recherche parmis toutes les maladies."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_i_certaines_maladies_infectieuses_et_parasitaires
+msgid "Chapitre I - Certaines maladies infectieuses et parasitaires"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_ii_tumeurs
+msgid "Chapitre II - Tumeurs"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_iv_maladies_endocriniennes_nutritionnelles_et_metaboliques
+msgid "Chapitre IV - Maladies endocriniennes, nutritionnelles et metaboliques"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_ix_maladies_de_l_appareil_circulatoire
+msgid "Chapitre IX - Maladies de l'appareil circulatoire"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_vi_maladies_du_systeme_nerveux
+msgid "Chapitre VI - Maladies du système nerveux"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_x_maladies_de_l_appareil_respiratoire
+msgid "Chapitre X - Maladies de l'appareil respiratoire"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_xi_maladies_de_l_appareil_digestif
+msgid "Chapitre XI - Maladies de l'appareil digestif"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_xii_maladies_de_la_peau_et_du_tissu_cellulaire_sous_cutane
+msgid "Chapitre XII - Maladies de la peau et du tissu cellulaire sous-cutane"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_xiv_maladies_de_l_appareil_genito_urinaire
+msgid "Chapitre XIV - Maladies de l'appareil genito-urinaire"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_xv_grossesse_accouchement_et_puerperalite
+msgid "Chapitre XV - Grossesse, accouchement et puerperalite"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_xvi_certaines_affections_dont_lorigine_se_situe_dans_la_periode_perinatale
+msgid "Chapitre XVI - Certaines affections dont lorigine se situe dans la periode perinatale"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_xvii_malformations_congenitales_deformations_et_anomalies_chromosomiques
+msgid "Chapitre XVII - Malformations congenitales, deformations et anomalies chromosomiques"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_maladie_action_window
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie__chapitre_maladie_id
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_chapitre_maladie
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_view_search
+msgid "Chapitre maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_view_search
+msgid "Chapitre maladie Group"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie
+msgid "Chapitre_maladie_id"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__city
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__city
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "City"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_classement_hierarchique_des_resections_de_lesions_intracraniennes
+msgid "Classement hiérarchique des résections de lésions intracrâniennes\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__uuid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__uuid
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_search
+msgid "Code"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_codification_des_lesions_multiples_non_specifiques_visites_au_service_durgence
+msgid "Codification des lésions multiples non spécifiques - visites au service d’urgence"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__commentaires
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Commentaires"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_competence_competence_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_competence
+msgid "Competence"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_complications_consecutives_a_un_avortement_et_a_une_grossesse_extra_uterine_ou_molaire
+msgid "Complications consécutives à un avortement et à une grossesse extra-utérine\n"
+"                ou molaire\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_complications_de_lanesthesie_au_cours_du_travail_et_de_laccouchement
+msgid "Complications de l’anesthésie au cours du travail et de l’accouchement\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_complications_dune_maladie_maligne
+msgid "Complications d’une maladie maligne"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_complications_liees_aux_protheses_aux_implants_ou_aux_greffes
+msgid "Complications liées aux prothèses, aux implants ou aux greffes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_complications_precoces_de_traumatismes
+msgid "Complications précoces de traumatismes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Compétences"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__competence_patient
+msgid "Compétences au partenariat"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__competence_patient
+msgid "Compétences du patient."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__consentement_recrutement
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__consentement_recrutement
+msgid "Consentement au recrutement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__consentement_notification
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__consentement_notification
+msgid "Consentement aux notifications/communications"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_patient__consentement_recrutement
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__consentement_recrutement
+msgid "Consentement dans le cadre d'activités de partenariat. Si vous voulez vous retirer en tant que patient partenaire, veuillez envoyer un courriel à cette adresse <mail - formulaire prérempli?>"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_patient__consentement_recherche
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__consentement_recherche
+msgid "Consentement dans le cadre d'activités de recherche sur le partenariat."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__consentement_recherche
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__consentement_recherche
+msgid "Consentement à la recherche"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Consentements"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_res_partner
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Contact"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_convulsions
+msgid "Convulsions"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Coordonnée"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__country_id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__country_id
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Country"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__email
+msgid "Courriel"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_cranioplastie_et/ou_plastie_de_la_dure_mere_associee_aux_interventions_intracraniennes
+msgid "Cranioplastie et/ou plastie de la dure-mère associée aux interventions intracrâniennes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_create_member
+msgid "Create a member"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_competence__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_disponibilite__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation_titre__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_domaine__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_role__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_langue__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_occupation__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__create_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_relation_proche__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_competence__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_disponibilite__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation_titre__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_domaine__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_role__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_langue__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_occupation__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__create_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_relation_proche__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.view_create_member_wizard
+msgid "Créer"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.action_ceppp_create_member
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_create_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.view_create_member_wizard
+msgid "Créer un membre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.action_ceppp_create_patient
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_create_patient
+msgid "Créer un patient"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__date
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_formation
+msgid "Date"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__date_naissance
+msgid "Date de naissance"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__description
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Description"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_implication__description
+msgid "Description générale projet + tâches patients partenaires"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_diabete_sucre
+msgid "Diabète sucré"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_diagnostic_du_deces_neurologique
+msgid "Diagnostic du décès neurologique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_dilatation_et_curetage
+msgid "Dilatation et curetage"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_competence__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_disponibilite__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation_titre__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_domaine__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_role__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_langue__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_occupation__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__display_name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_relation_proche__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_disponibilite_disponibilite_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_disponibilite
+msgid "Disponibilite"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Disponibilité"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__domaine
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+msgid "Domaine"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__domaine_is_autre
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+msgid "Domaine Is Autre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_implication__domaine
+msgid "Domaine d'implication"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_dystocie
+msgid "Dystocie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_deficits_neurologiques_a_la_suite_dun_accident_vasculaire_cerebral
+msgid "Déficits neurologiques à la suite d’un accident vasculaire cérébral"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_deshydratation
+msgid "Déshydratation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_view_search
+msgid "Détails des maladies"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__detail_maladie
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie_personne_affectee
+msgid "Détails sur la maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__email
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__email
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__email
+msgid "Email"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.create_member,langue:0
+msgid "Espagnol"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__heritage_culturel
+msgid "Est-ce que vous vous identifiez comme membre d'une minorité visible, au sens de la Loi sur l'équité en matière d'emploi. Selon cette loi, les personnes, autres que les Premiers Peuples, qui ne sont pas caucasiens ou qui n'ont pas la peau blanche font partie des minorités visibles. À cela s'ajoute également l'héritage culturel associées aux minorités visibles comme les pratiques, représentations, expressions, connaissances et savoir-faire - ainsi que les instruments, objets, artefacts et espaces culturels qui leur sont associés - que les communautés, les groupes et, le cas échéant, les individus reconnaissent comme faisant partie de leur patrimoine culturel. Ce patrimoine culturel immatériel, transmis de génération en génération, est recréé en permanence par les communautés et groupes en fonction de leur milieu, de leur interaction avec la nature et de leur histoire, et leur procure un sentiment d’identité et de continuité, contribuant ainsi à promouvoir le respect de la diversité culturelle et la créativité humaine (Référence: https://ich.unesco.org/fr/convention#art2)."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_excision_de_lesion_de_los_des_tissus_mous_et_de_la_peau
+msgid "Excision (de lésion) de l’os, des tissus mous et de la peau"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_faible_poids_a_la_naissance_et/ou_enfant_ne_avant_terme
+msgid "Faible poids à la naissance et/ou enfant né avant terme"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,genre:0
+#: selection:ceppp.recruteur,sexe:0
+msgid "Femme"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__fiche_anonyme
+msgid "Fiche Anonyme"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/models/ceppp_patient.py:75
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/models/res_partner.py:79
+#: code:addons/ceppp_patient_partenaire/models/ceppp_patient.py:75
+#: code:addons/ceppp_patient_partenaire/models/res_partner.py:79
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.view_ceppp_partner_form
+#, python-format
+msgid "Fiche recruteur"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/models/ceppp_recruteur.py:545
+#: code:addons/ceppp_patient_partenaire/models/ceppp_recruteur.py:545
+#, python-format
+msgid "Fiches anonyme"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_formation_formation_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_formation_titre
+msgid "Formation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__formation
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__formation
+msgid "Formation au partenariat"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__formation_professionnelle
+msgid "Formation professionnelle"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_formation_titre_formation_titre_action_window
+msgid "Formation titre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_layout
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_formations
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_home
+msgid "Formations"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_fracture_du_crane_et_lesion_intracranienne
+msgid "Fracture du crâne et lésion intracrânienne"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_fractures
+msgid "Fractures"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_fractures_fermees_versus_ouvertes
+msgid "Fractures - fermées versus ouvertes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.create_member,langue:0
+msgid "Français"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_gastroenterite_et_diarrhee
+msgid "Gastroentérite et diarrhée"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__genre
+msgid "Genre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_grossesse_avec_complication_et_grossesse_sans_complication
+msgid "Grossesse avec complication et grossesse sans complication"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_grossesse_prolongee/naissance_apres_terme
+msgid "Grossesse prolongée/naissance après terme"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_grossesse_se_terminant_par_un_avortement
+msgid "Grossesse se terminant par un avortement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_grossesses_multiples
+msgid "Grossesses multiples"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,genre:0
+#: selection:ceppp.recruteur,sexe:0
+msgid "Homme"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_hypertension_et_affections_associees
+msgid "Hypertension et affections associées"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_hemorragie_du_post_partum
+msgid "Hémorragie du post-partum"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__heritage_culturel
+msgid "Héritage culturel"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_competence__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_disponibilite__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation_titre__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_domaine__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_role__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_langue__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_occupation__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_relation_proche__id
+msgid "ID"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_ictere_neonatal
+msgid "Ictère néonatal"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__uuid_short
+msgid "Identifiant unique anonymisé, 8 premiers caractères."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_patient__uuid
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__uuid
+msgid "Identifiant unique anonymisé."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__message_unread
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implications
+msgid "Il n'y a aucune implication."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__image
+msgid "Image"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_implication_implication_action_window
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__search_implication
+msgid "Implication"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_implication_domaine_implication_domaine_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_implication_domaine
+msgid "Implication domaine"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_implication_role_implication_role_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_implication_role
+msgid "Implication role"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_layout
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_home
+msgid "Implications"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__implication
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__implication
+msgid "Implications de partenariat"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_incidents_survenus_au_cours_dactes_medicaux_et_chirurgicaux
+msgid "Incidents survenus au cours d’actes médicaux et chirurgicaux"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_infection_par_les_streptocoques_du_groupe_b/sujet_porteur_au_cours_de_la_grossesse
+msgid "Infection par les streptocoques du groupe B/sujet porteur au cours de la grossesse"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_infections
+msgid "Infections"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Infos"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,sexe:0
+msgid "Intersexe"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_interventions_associees_a_laccouchement
+msgid "Interventions associées à l’accouchement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_interventions_pertinentes_a_la_codification_des_tumeurs
+msgid "Interventions pertinentes à la codification des tumeurs"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_patient__disponibilite
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__disponibilite
+msgid "Jour de la semaine de disponible"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_patient__disponibilite_not
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__disponibilite_not
+msgid "Jour de la semaine de non-disponible"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_langue_langue_action_window
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__langue
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_langue
+msgid "Langue"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__langue_is_autre
+msgid "Langue Is Autre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__langue_parle_ecrit
+msgid "Langues parlées/écrites"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_competence____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_disponibilite____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation_titre____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_domaine____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_role____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_langue____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_occupation____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur____last_update
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_relation_proche____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_competence__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_disponibilite__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation_titre__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_domaine__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_role__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_langue__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_occupation__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__write_uid
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_relation_proche__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_competence__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_disponibilite__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation_titre__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_domaine__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_role__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_langue__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_occupation__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__write_date
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_relation_proche__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__genre
+msgid "Le genre fait référence aux rôles, aux comportements, aux expressions et aux identités des filles, des femmes, des garçons, des hommes et des personnes de diverses identités de genre. Le genre influence la perception que les individus ont d'eux-mêmes ou d'autrui, leur manière d'agir ou d'interagir, ainsi que la répartition du pouvoir et des ressources dans la société. Bien que le genre soit habituellement conceptualisé en termes binaires (fille/femme et garçon/homme), les individus et les groupes comprennent, expérimentent et expriment leur genre de diverses façons."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__sexe
+msgid "Le sexe fait référence à un ensemble de caractéristiques biologiques chez les humains et les animaux. Ces caractéristiques physiques ou physiologiques concernent principalement les chromosomes, l’expression des gènes, les niveaux d’hormones et leur fonction, ainsi que l’anatomie de l’appareil reproducteur. Le sexe comporte habituellement deux catégories (mâle, femelle); cependant, les caractéristiques biologiques liées au sexe et l’expression de ces caractéristiques peuvent varier."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_patient_les_patient_affiliation_action_window
+msgid "Les patients de mon centre de recrutement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_patient_les_patient_tous_centres_affiliation_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_patient_les_patient_affiliation
+msgid "Les patients de tous les centres de recrutement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__recruteur_id
+msgid "Link recruteur"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__active
+msgid "Lorsque non actif, ce patient n'est plus en fonction, mais demeure accessible."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_luxations
+msgid "Luxations"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_lesions_bilaterales
+msgid "Lésions bilatérales"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_lesions_des_vaisseaux_sanguins
+msgid "Lésions des vaisseaux sanguins"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_lesions_significatives
+msgid "Lésions significatives"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_lesions_traumatiques_recentes_versus_anciennes
+msgid "Lésions traumatiques récentes versus anciennes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_maladie_maladie_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_maladie
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_maladie_label
+msgid "Maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_maladie_personne_affectee_action_window
+msgid "Maladie des personnes affectées"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_layout
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectees
+msgid "Maladie personne affectée"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_maladie_vasculaire_peripherique
+msgid "Maladie vasculaire périphérique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__maladie_ids
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__maladie
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__search_maladie
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__search_maladie
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_chapitre_maladie_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_home
+msgid "Maladies"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_maladies_dues_au_virus_de_limmunodeficience_humaine_vih
+msgid "Maladies dues au virus de l’immunodéficience humaine (VIH)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.module.category,description:ceppp_patient_partenaire.module_ceppp_patient_partenaire_category
+msgid "Manage Rights for CEPPP."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:res.groups,name:ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager
+msgid "Manager"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__image_medium
+msgid "Medium-sized image"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__image_medium
+msgid "Medium-sized image of this contact. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_patient_my_patient_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_patient_my_patient
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_search
+msgid "Mes patients"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_search
+msgid "Mes patients de mon affiliation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_micro_organismes_resistants_aux_medicaments
+msgid "Micro-organismes résistants aux médicaments"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__mobile
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__mobile
+msgid "Mobile"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_mode_communication_privilegie_mode_communication_privilegie_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_mode_communication_privilegie
+msgid "Mode communication privilegie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__mode_communication_privilegie
+msgid "Mode de communication privilégié"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__disponibilite_not
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__disponibilite_not
+msgid "Moments d'indisponibilité"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__disponibilite
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__disponibilite
+msgid "Moments de disponibilité (préférence)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_mort_intra_uterine
+msgid "Mort intra-utérine"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_menorragie_comme_diagnostic_principal
+msgid "Ménorragie comme diagnostic principal"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:108
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:262
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:417
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:574
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:108
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:262
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:417
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:574
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_competence__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_disponibilite__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation_titre__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_domaine__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_role__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_occupation__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_relation_proche__name
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_competence_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_disponibilite_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_titre_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_domaine_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_role_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_mode_communication_privilegie_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_occupation_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_relation_proche_view_search
+#, python-format
+msgid "Name"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:107
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:261
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:416
+#: code:addons/addons/SanteLibre_erplibre-ceppp-addons/ceppp_patient_partenaire/controllers/portal.py:573
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:107
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:261
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:416
+#: code:addons/ceppp_patient_partenaire/controllers/portal.py:573
+#, python-format
+msgid "Newest"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__nom
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_langue__nom
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie__nom
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__name
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__name
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_chapitre_maladie_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie
+msgid "Nom"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__nom_equipe
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Nom de l'équipe"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,heritage_culturel:0
+msgid "Non"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Notification"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_formation
+msgid "Nouvelle formation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implications
+msgid "Nouvelle implication"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_has_error_counter
+msgid "Number of error"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_occlusion_a_la_suite_de_pontages_aortocoronariens_pac
+msgid "Occlusion à la suite de pontages aortocoronariens (PAC)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_occupation_occupation_action_window
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__occupation
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_occupation
+msgid "Occupation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__occupation_is_autre
+msgid "Occupation Is Autre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__occupation
+msgid "Occupation principale du temps"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__sequence
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_competence__sequence
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_disponibilite__sequence
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_formation_titre__sequence
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_implication_domaine__sequence
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_implication_role__sequence
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_langue__sequence
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_maladie__sequence
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie__sequence
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_occupation__sequence
+msgid "Order the list"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__organisation
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_formation
+msgid "Organisation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,heritage_culturel:0
+msgid "Oui"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,activity_state:0
+msgid "Overdue"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,patient_actif:0
+msgid "Passif"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.create_member,type_membre:0
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__patient_partner_id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__patient_partner_ids
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__patient_partner_ids
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_patient
+#: model:res.groups,name:ceppp_patient_partenaire.group_ceppp_patient_partenaire_patient
+#: selection:res.partner,ceppp_entity:0
+msgid "Patient"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__patient_actif
+msgid "Patient actif-passif"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.view_ceppp_res_partner_filter
+msgid "Patients"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__country_id
+msgid "Pays"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__date_naissance
+msgid "Permet de connaître le groupe d'âge pour des implications spécifiques."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__relation
+msgid "Personne affectée par cette maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__occupation_autre
+msgid "Peut être défini lorsque l'occupation est au choix 'autre'."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__langue_parle_ecrit_autre
+msgid "Peut être défini lorsque la langue parlées/écrites est au choix 'autre'."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__genre_autre
+msgid "Peut être défini lorsque le genre est au choix 'autre'."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__phone
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__phone
+msgid "Phone"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_plaies_ouvertes
+msgid "Plaies ouvertes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,activity_state:0
+msgid "Planned"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__formation_professionnelle
+msgid "Plus haut diplôme obtenu et domaine"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_pneumonie
+msgid "Pneumonie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_pneumonie_chez_les_patients_souffrant_de_maladie_pulmonaire_obstructive_chronique_mpoc
+msgid "Pneumonie chez les patients souffrant de maladie pulmonaire obstructive chronique (MPOC)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_poursuite_de_la_grossesse_apres_avortement/reduction_selective_de_foetus_dans_les_grossesses_multiples
+msgid "Poursuite de la grossesse après avortement/réduction sélective de foetus\n"
+"                dans les grossesses multiples\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__maladie_personne_affectee
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__maladie_personne_affectee
+msgid "Problématiques de santé"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__state_id
+msgid "Province"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,heritage_culturel:0
+#: selection:ceppp.recruteur,sexe:0
+msgid "Préfère ne pas répondre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Préférence"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_implication__echeance_debut
+msgid "Période de début du projet"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_implication__echeance_fin
+msgid "Période de fin du projet"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_peritonite_due_a_une_dialyse_peritoneale_continue_ambulatoire_dpca
+msgid "Péritonite due à une dialyse péritonéale continue ambulatoire (DPCA)\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_formation__date
+msgid "Quelle est la date de cette formation? Si vous ne vous en souvenez pas, veuillez indiquer la première journée du mois (ex. 1 mai 2022) ou la première journée de l'année si vous ne vous rappellez plus du mois (ex. 1 janvier 2022)."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_formation__organisation
+msgid "Quelles organisations a donné cette formation?"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Recherche"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Recrutement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.create_member,type_membre:0
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__recruteur_partner_id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__recruteur_id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__recruteur_id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__recruteur_id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__recruteur_partner_id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__recruteur_partner_id
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+#: model:res.groups,name:ceppp_patient_partenaire.group_ceppp_patient_partenaire_recruteur
+#: selection:res.partner,ceppp_entity:0
+msgid "Recruteur"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__recruteur_user_id
+msgid "Recruteur user"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_formation
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie_personne_affectee
+msgid "Recruteur_id"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.view_ceppp_res_partner_filter
+msgid "Recruteurs"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_rejet_ou_echec_de_transplantation_dorganes_de_greffons_et_de_lambeaux
+msgid "Rejet ou échec de transplantation d’organes, de greffons et de lambeaux"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie_personne_affectee__relation_is_autre
+msgid "Relation Is Autre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_view_search
+msgid "Relation avec la personne aidée"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_relation_proche_relation_proche_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_relation_proche
+msgid "Relation proche"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__role_is_autre
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+msgid "Role Is Autre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_rupture_prematuree_des_membranes
+msgid "Rupture prématurée des membranes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_reaction_allergique_en_usage_non_therapeutique
+msgid "Réaction allergique en usage non thérapeutique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_reactions_indesirables_en_usage_therapeutique_et_empoisonnements
+msgid "Réactions indésirables en usage thérapeutique et empoisonnements"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_reduction_fixation_et_fusion_de_fracture_dune_articulation
+msgid "Réduction, fixation et fusion de fracture d’une articulation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_resection_dune_lesion_nasale_polypes
+msgid "Résection d’une lésion nasale (polypes)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_retrecissement_du_canal_medullaire
+msgid "Rétrécissement du canal médullaire"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_revision_des_systemes_de_derivation_du_liquide_cephalorachidien_lcr_ventricule_tronc_cerebral_canal_rachid
+msgid "Révision des systèmes de dérivation du liquide céphalorachidien (LCR)\n"
+"                (ventricule, tronc cérébral, canal rachidien)\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__role
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__ceppp_entity
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__ceppp_entity
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+msgid "Rôle"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_implication__role
+msgid "Rôle au sein de ce projet/cette équipe."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_saignement_digestif
+msgid "Saignement digestif"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie_personne_affectee
+msgid "Sauvegarder"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Savoirs expérientiels"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_sepsie_confirmee_et_risque_de_sepsie_chez_le_nouveau_ne
+msgid "Sepsie confirmée et risque de sepsie chez le nouveau-né"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_septicemie/sepsie
+msgid "Septicémie/sepsie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_septoplastie_pour_une_deviation_de_la_cloison_nasale
+msgid "Septoplastie pour une déviation de la cloison nasale"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_chapitre_maladie__sequence
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_competence__sequence
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_disponibilite__sequence
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation_titre__sequence
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_domaine__sequence
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication_role__sequence
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_langue__sequence
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_maladie__sequence
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_mode_communication_privilegie__sequence
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_occupation__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__sexe
+msgid "Sexe"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__image_small
+msgid "Small-sized image"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__image_small
+msgid "Small-sized image of this contact. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_soins_maternels_lies_au_foetus_et_a_la_cavite_amniotique_et_problemes_possibles_poses_par_laccouchement
+msgid "Soins maternels liés au foetus et à la cavité amniotique et problèmes\n"
+"                possibles posés par l’accouchement\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_stades_de_la_maladie_renale_chronique
+msgid "Stades de la maladie rénale chronique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__state_id
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__state_id
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "State"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__street
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__street
+msgid "Street"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Street 2..."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "Street..."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__street2
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__street2
+msgid "Street2"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie
+msgid "Submit Ceppp Maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_syndrome_coronarien_aigu_sca
+msgid "Syndrome coronarien aigu (SCA)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_syndrome_de_reponse_inflammatoire_systemique_sris_ou_syndrome_dinflammation_systemique
+msgid "Syndrome de réponse inflammatoire systémique (SRIS) ou syndrome d’inflammation\n"
+"                systémique\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_syndromes_causes_par_des_anomalies_congenitales_et_manifestations_specifiques
+msgid "Syndromes causés par des anomalies congénitales et manifestations spécifiques"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_selection_de_lattribut_de_situation_lors_dune_intervention_coronaire_percutanee_icp
+msgid "Sélection de l’attribut de situation lors d’une intervention coronaire\n"
+"                percutanée (ICP)\n"
+"            "
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_selection_des_attributs_pour_les_reparations_de_hernie
+msgid "Sélection des attributs pour les réparations de hernie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_selection_du_sixieme_caractere_pour_la_codification_de_lobstetrique
+msgid "Sélection du sixième caractère pour la codification de l’obstétrique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_maladie_personne_affectee
+msgid "Sélectionnez la personne affectée par cette maladie :"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_sequence_des_codes_de_diagnostic_en_obstetrique
+msgid "Séquence des codes de diagnostic en obstétrique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_sequence_des_codes_de_lesions_multiples_en_fonction_du_degre_de_gravite
+msgid "Séquence des codes de lésions multiples en fonction du degré de gravité"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__image
+msgid "This field holds the image used as avatar for this contact, limited to 1024x1024px"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_chapitre_maladie_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_competence_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_disponibilite_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_titre_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_formation_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_domaine_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_role_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_langue_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_personne_affectee_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_maladie_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_mode_communication_privilegie_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_occupation_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_patient_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_relation_proche_view_form
+msgid "Titre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__titre_formation_is_autre
+msgid "Titre Formation Is Autre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_formation__titre_formation
+msgid "Titre de la formation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__titre
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Titre du projet"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: selection:ceppp.recruteur,activity_state:0
+msgid "Today"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.actions.act_window,name:ceppp_patient_partenaire.ceppp_patient_patient_action_window
+#: model:ir.ui.menu,name:ceppp_patient_partenaire.menu_patient_all_patient
+msgid "Tous les patients anonymes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_traitement_des_fractures
+msgid "Traitement des fractures"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_traitement_thrombolytique
+msgid "Traitement thrombolytique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_traumatisme_intracranien_sai_versus_traumatisme_cranien_sai
+msgid "Traumatisme intracrânien SAI versus traumatisme crânien SAI"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_traumatisme_a_la_naissance
+msgid "Traumatisme à la naissance"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_travail_avant_terme
+msgid "Travail avant terme"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_travail_et_accouchement_compliques_dune_detresse_foetale
+msgid "Travail et accouchement compliqués d’une détresse foetale"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_travail_prolonge
+msgid "Travail prolongé"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_travail_trop_rapide
+msgid "Travail trop rapide"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_tumeurs_des_tissus_lymphoides_hematopoietiques_et_tissus_apparentes
+msgid "Tumeurs des tissus lymphoïdes, hématopoïétiques et tissus apparentés"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_tumeurs_dont_les_limites_se_chevauchent_sites_contigus
+msgid "Tumeurs dont les limites se chevauchent (sites contigus)"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_tumeurs_malignes_recurrentes
+msgid "Tumeurs malignes récurrentes"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_tumeurs_primitives_et_secondaires
+msgid "Tumeurs primitives et secondaires"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_tumeurs_primitives_a_sieges_multiples_independants
+msgid "Tumeurs primitives à sièges multiples indépendants"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_tumeurs_setendant_aux_tissus_adjacents
+msgid "Tumeurs s’étendant aux tissus adjacents"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_create_member__type_membre
+msgid "Type de membre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__phone
+msgid "Téléphone"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_res_partner__ceppp_entity
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_res_users__ceppp_entity
+msgid "Unique entity name to represent the contact."
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__user_is_admin
+msgid "User Is Admin"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_patient__user_is_manager
+msgid "User Is Manager"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:res.groups,name:ceppp_patient_partenaire.group_ceppp_patient_partenaire_user_own
+msgid "User: Personal data"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__uuid_short
+msgid "Uuid Short"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_formations
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implications
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectees
+msgid "VIDE"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_varices_oesophagiennes_avec_saignement
+msgid "Varices oesophagiennes avec saignement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_ventilation_invasive
+msgid "Ventilation invasive"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Veuillez sélectionner les domaines :"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_formation
+msgid "Veuillez sélectionner une formation :"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Veuillez sélectionner vos rôles :"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_search
+msgid "Ville"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_my_ceppp_implications
+msgid "Vos implications"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_layout_mon_consentement
+msgid "Votre consentement"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,help:ceppp_patient_partenaire.field_ceppp_recruteur__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_form
+msgid "ZIP"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_partner__zip
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_res_users__zip
+msgid "Zip"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_chapitre_maladie
+msgid "ceppp_chapitre_maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_competence
+msgid "ceppp_competence"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_disponibilite
+msgid "ceppp_disponibilite"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_formation
+msgid "ceppp_formation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_formation_titre
+msgid "ceppp_formation_titre"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_implication
+msgid "ceppp_implication"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_implication_domaine
+msgid "ceppp_implication_domaine"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_implication_role
+msgid "ceppp_implication_role"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_langue
+msgid "ceppp_langue"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_maladie
+msgid "ceppp_maladie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_maladie_personne_affectee
+msgid "ceppp_maladie_personne_affectee"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_mode_communication_privilegie
+msgid "ceppp_mode_communication_privilegie"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_occupation
+msgid "ceppp_occupation"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_patient
+msgid "ceppp_patient"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_recruteur
+msgid "ceppp_recruteur"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model,name:ceppp_patient_partenaire.model_ceppp_relation_proche
+msgid "ceppp_relation_proche"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__city
+msgid "ville"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__age
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_recruteur_view_search
+msgid "Âge"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__echeance_debut
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Échéance début"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_implication__echeance_fin
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.ceppp_implication_view_search
+#: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_create_ceppp_implication
+msgid "Échéance fin"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_episode_aigu_au_cours_dune_insuffisance_renale_chronique
+msgid "Épisode aigu au cours d’une insuffisance rénale chronique"
+msgstr ""
+
+#. module: ceppp_patient_partenaire
+#: model:ceppp.maladie,nom:ceppp_patient_partenaire.ceppp_maladie_etendue_de_la_surface_corporelle_touchee_par_une_brulure
+msgid "Étendue de la surface corporelle touchée par une brûlure"
+msgstr ""
+
