@@ -15,6 +15,13 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. module: base
+#: model:ir.model.fields,field_description:base.field_res_partner__mobile
+#: model:ir.model.fields,field_description:base.field_res_users__mobile
+#: model_terms:ir.ui.view,arch_db:base.contact
+msgid "Mobile"
+msgstr ""
+
 #. module: ceppp_patient_partenaire
 #: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_systeme_imm
 msgid "\n"

@@ -7,6 +7,7 @@
     "website": "https://santelibre.ca",
     "application": True,
     "depends": [
+        "base",
         "contacts",
         "mail",
         "portal",
