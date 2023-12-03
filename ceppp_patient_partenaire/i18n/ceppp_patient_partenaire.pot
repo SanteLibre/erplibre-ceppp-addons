@@ -2532,7 +2532,25 @@ msgstr ""
 
 #. module: ceppp_patient_partenaire
 #: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_layout_mon_consentement
-msgid "Votre consentement"
+msgid "Vos documents"
+msgstr ""
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Confirm\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:portal.portal_layout
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Your Details"
+msgstr ""
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_home
+msgid "Your Documents"
 msgstr ""
 
 #. module: ceppp_patient_partenaire

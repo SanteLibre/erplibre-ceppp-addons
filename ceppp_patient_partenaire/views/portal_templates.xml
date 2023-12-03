@@ -14,13 +14,28 @@
         <xpath expr="//div[hasclass('o_portal_my_details')]" position="after">
             <br />
             <div>
-                <h4>Votre consentement</h4>
+                <h4>Vos documents</h4>
                 <hr class="mt-1 mb-0" />
                 <a role="button" href="/Attachments" class="btn btn-sm btn-link">
                     <i class="fa fa-eye" />
                     Voir les documents
                 </a>
             </div>
+        </xpath>
+    </template>
+
+    <template id="portal_my_details_all_bold" name="All details bold" inherit_id="portal.portal_my_details">
+        <xpath expr="//label[hasclass('label-optional')]" position="attributes">
+            <attribute name="class">col-form-label</attribute>
+        </xpath>
+        <xpath expr="//label[hasclass('label-optional')]" position="attributes">
+            <attribute name="class">col-form-label</attribute>
+        </xpath>
+        <xpath expr="//label[hasclass('label-optional')]" position="attributes">
+            <attribute name="class">col-form-label</attribute>
+        </xpath>
+        <xpath expr="//label[hasclass('label-optional')]" position="attributes">
+            <attribute name="class">col-form-label</attribute>
         </xpath>
     </template>
 </odoo>

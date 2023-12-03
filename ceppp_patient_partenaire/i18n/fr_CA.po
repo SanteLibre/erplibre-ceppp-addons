@@ -15,11 +15,21 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. module: base
-#: model:ir.model.fields,field_description:base.field_res_partner__mobile
-#: model:ir.model.fields,field_description:base.field_res_users__mobile
-#: model:ir.module.category,name:base.module_category_mobile
-#: model:ir.module.module,shortdesc:base.module_web_mobile
-#: model_terms:ir.ui.view,arch_db:base.contact
-msgid "Mobile"
-msgstr "Cellulaire"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Confirm\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "Sauvegarder"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:portal.portal_layout
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Your Details"
+msgstr "Vos informations"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_home
+msgid "Your Documents"
+msgstr "Votre profil"
