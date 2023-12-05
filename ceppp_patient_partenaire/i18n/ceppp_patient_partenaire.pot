@@ -2553,12 +2553,22 @@ msgstr ""
 msgid "Your Documents"
 msgstr ""
 
+#. module: base
+#: model:res.country.state,name:base_state_ca_qc
+msgid "Quebec"
+msgstr ""
+
 #. module: portal
 #. openerp-web
 #: code:addons/portal/static/src/xml/portal_signature.xml:6
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
 #, python-format
 msgid "Your Name"
+msgstr ""
+
+#. module: l10n_ca
+#: model:account.fiscal.position.template,name:l10n_ca.fiscal_position_template_qc_en
+msgid "Quebec (QC)"
 msgstr ""
 
 #. module: ceppp_patient_partenaire

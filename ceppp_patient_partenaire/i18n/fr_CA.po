@@ -41,3 +41,8 @@ msgstr "Votre profil"
 #, python-format
 msgid "Your Name"
 msgstr "Votre nom"
+
+#. module: base
+#: model:res.country.state,name:base_state_ca_qc
+msgid "Quebec"
+msgstr "Québec"
