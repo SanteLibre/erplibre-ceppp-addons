@@ -23,7 +23,7 @@
             <field name="name">Enfant</field>
         </record>
         <record id="ceppp_relation_proche_7" model="ceppp.relation_proche">
-            <field name="name">Ami</field>
+            <field name="name">Ami.e</field>
         </record>
         <record id="ceppp_relation_proche_8" model="ceppp.relation_proche">
             <field name="name">Parent</field>

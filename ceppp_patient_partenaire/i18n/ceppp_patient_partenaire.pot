@@ -2553,6 +2553,14 @@ msgstr ""
 msgid "Your Documents"
 msgstr ""
 
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_signature.xml:6
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+#, python-format
+msgid "Your Name"
+msgstr ""
+
 #. module: ceppp_patient_partenaire
 #: model:ir.model.fields,field_description:ceppp_patient_partenaire.field_ceppp_recruteur__website_message_ids
 msgid "Website Messages"

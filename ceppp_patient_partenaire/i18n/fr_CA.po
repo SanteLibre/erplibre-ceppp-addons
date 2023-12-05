@@ -33,3 +33,11 @@ msgstr "Vos informations"
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_home
 msgid "Your Documents"
 msgstr "Votre profil"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_signature.xml:6
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+#, python-format
+msgid "Your Name"
+msgstr "Votre nom"
