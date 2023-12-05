@@ -327,7 +327,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">Ajouter une maladie</h1>
+                        <h1 class="text-center">Ajouter une expérience</h1>
                     </div>
                 </div>
             </div>
@@ -379,7 +379,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">Ajouter une maladie</h1>
+                        <h1 class="text-center">Ajouter une expérience</h1>
                     </div>
                 </div>
             </div>
@@ -449,7 +449,7 @@
                     <!--                    <label class="col-md-3 col-sm-4 control-label" for="relation">Relation</label>-->
                     <div class="col-md-7 col-sm-8">
                         <fieldset>
-                            <legend>Sélectionnez la personne affectée par cette maladie :</legend>
+                            <legend>Sélectionnez la personne de cette expérience :</legend>
                             <t t-foreach="relation" t-as="rel">
                                 <div>
                                     <input
@@ -678,7 +678,7 @@
             <t t-call="portal.portal_record_layout">
                 <t t-set="card_header">
                     <h5 class="mb-0">
-                        <small class="text-muted">Maladie personne affectée -</small>
+                        <small class="text-muted">Mon expérience avec la maladie -</small>
                         <span t-field="ceppp_maladie_personne_affectee.name" />
                     </h5>
                 </t>
@@ -816,7 +816,7 @@
         <t t-call="portal.portal_layout">
             <t t-set="breadcrumbs_searchbar" t-value="True" />
             <t t-call="portal.portal_searchbar">
-                <t t-set="title">Maladie personne affectée</t>
+                <t t-set="title">Mon expérience avec la maladie</t>
             </t>
             <form method="POST" t-attf-action="/new/ceppp_maladie_personne_affectee">
                 <button
@@ -825,12 +825,12 @@
                     class="btn btn-primary"
                     style="float: right; margin-right: 5px;"
                 >
-                    Ajouter une maladie
+                    Ajouter une expérience
                 </button>
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
             </form>
             <t t-if="not ceppp_maladie_personne_affectees">
-                <div class="alert alert-warning mt8" role="alert">Aucune maladie</div>
+                <div class="alert alert-warning mt8" role="alert">Aucune expérience</div>
             </t>
             <t t-if="ceppp_maladie_personne_affectees" t-call="portal.portal_table">
                 <tbody>
@@ -938,7 +938,7 @@
                 <!--                Ceppp Maladie-->
                 <!--            </a>-->
                 <t t-if="ceppp_maladie_personne_affectee_count" t-call="portal.portal_docs_entry">
-                    <t t-set="title">Maladies</t>
+                    <t t-set="title">Mon expérience avec la maladie</t>
                     <t t-set="url" t-value="'/my/ceppp_maladie_personne_affectees'" />
                     <t t-set="count" t-value="ceppp_maladie_personne_affectee_count" />
                 </t>
@@ -1014,9 +1014,9 @@
                     t-if="ceppp_maladie_personne_affectee or page_name == 'create_ceppp_maladie_personne_affectee'"
                     t-attf-href="/my/ceppp_maladie_personne_affectees?{{ keep_query() }}"
                 >
-                    Maladie personne affectée
+                    Mon expérience avec la maladie
                 </a>
-                <t t-else="">Maladie personne affectée</t>
+                <t t-else="">Mon expérience avec la maladie</t>
             </li>
             <li t-if="ceppp_maladie_personne_affectee" class="breadcrumb-item active">
                 <t t-esc="ceppp_maladie_personne_affectee.name" />

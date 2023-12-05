@@ -27,12 +27,12 @@ msgstr "Sauvegarder"
 #: model_terms:ir.ui.view,arch_db:portal.portal_layout
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_details
 msgid "Your Details"
-msgstr "Vos informations"
+msgstr "Mes informations"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_my_home
 msgid "Your Documents"
-msgstr "Votre profil"
+msgstr "Mon profil"
 
 #. module: portal
 #. openerp-web

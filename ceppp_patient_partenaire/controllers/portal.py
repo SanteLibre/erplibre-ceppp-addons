@@ -15,7 +15,8 @@ class CepppPatientPartenaireController(CustomerPortal):
         values = super(
             CepppPatientPartenaireController, self
         )._prepare_portal_layout_values()
-        if request.env.user.partner_id.patient_partner_ids:
+        pp_id = request.env.user.partner_id.patient_partner_ids
+        if pp_id:
             values["ceppp_formation_count"] = request.env[
                 "ceppp.formation"
             ].search_count(
@@ -23,7 +24,7 @@ class CepppPatientPartenaireController(CustomerPortal):
                     (
                         "recruteur_id",
                         "in",
-                        [request.env.user.partner_id.patient_partner_ids.id],
+                        [pp_id.id],
                     )
                 ]
             )
@@ -34,7 +35,7 @@ class CepppPatientPartenaireController(CustomerPortal):
                     (
                         "recruteur_id",
                         "in",
-                        [request.env.user.partner_id.patient_partner_ids.id],
+                        [pp_id.id],
                     )
                 ]
             )
@@ -48,10 +49,14 @@ class CepppPatientPartenaireController(CustomerPortal):
                     (
                         "recruteur_id",
                         "in",
-                        [request.env.user.partner_id.patient_partner_ids.id],
+                        [pp_id.id],
                     )
                 ]
             )
+
+            values["consentement_notification"] = pp_id.consentement_notification
+            values["consentement_recrutement"] = pp_id.consentement_recrutement
+            values["consentement_recherche"] = pp_id.consentement_recherche
         else:
             values["ceppp_formation_count"] = 0
             values["ceppp_implication_count"] = 0
