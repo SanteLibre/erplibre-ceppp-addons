@@ -54,7 +54,9 @@ class CepppPatientPartenaireController(CustomerPortal):
                 ]
             )
 
-            values["consentement_notification"] = pp_id.consentement_notification
+            values[
+                "consentement_notification"
+            ] = pp_id.consentement_notification
             values["consentement_recrutement"] = pp_id.consentement_recrutement
             values["consentement_recherche"] = pp_id.consentement_recherche
         else:

@@ -31,7 +31,7 @@
                     <!--                    <label class="col-md-3 col-sm-4 control-label" for="titre_formation">Titre de la formation</label>-->
                     <div class="col-md-7 col-sm-8">
                         <fieldset>
-                            <legend>Veuillez sélectionner une formation :</legend>
+                            <b>Veuillez sélectionner une formation</b>
                             <t t-foreach="titre_formation" t-as="tit">
                                 <div>
                                     <input
@@ -231,7 +231,7 @@
                     <!--                    <label class="col-md-3 col-sm-4 control-label" for="domaine">Domaine</label>-->
                     <div class="col-md-7 col-sm-8">
                         <fieldset>
-                            <legend>Veuillez sélectionner les domaines :</legend>
+                            <b>Veuillez sélectionner les domaines</b>
                             <t t-foreach="domaine" t-as="dom">
                                 <div>
                                     <input
@@ -268,7 +268,7 @@
                     <!--                    <label class="col-md-3 col-sm-4 control-label" for="role">Rôle</label>-->
                     <div class="col-md-7 col-sm-8">
                         <fieldset>
-                            <legend>Veuillez sélectionner vos rôles :</legend>
+                            <b>Veuillez sélectionner vos rôles</b>
                             <t t-foreach="role" t-as="rol">
                                 <div>
                                     <input
@@ -405,7 +405,7 @@
                 <!--                    &lt;!&ndash;                    <label class="col-md-3 col-sm-4 control-label" for="maladie">Maladie</label>&ndash;&gt;-->
                 <!--                    <div class="col-md-7 col-sm-8">-->
                 <!--                        <fieldset>-->
-                <!--                            <legend>Veuillez sélectionner les maladies :</legend>-->
+                <!--                            <b>Veuillez sélectionner les maladies</b>-->
                 <!--                            <t t-foreach="maladie" t-as="mal">-->
                 <!--                                <div>-->
                 <!--                                    <input-->
@@ -428,7 +428,9 @@
                 <!--                    </div>-->
                 <!--                </div>-->
                 <div class="form-group">
-                    <label class="col-md-3 col-sm-4 control-label" for="detail_maladie">Détails sur la maladie</label>
+                    <label class="col-md-3 col-sm-4 control-label" for="detail_maladie">
+                        Énumérez vos maladies et détaillez votre expérience
+                    </label>
                     <div class="col-md-7 col-sm-8">
         <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input" name="detail_maladie" style="min-height: 120px"><t t-esc="default_detail_maladie"/></textarea><!-- prettier-ignore-end -->
         </div>
@@ -449,7 +451,7 @@
                     <!--                    <label class="col-md-3 col-sm-4 control-label" for="relation">Relation</label>-->
                     <div class="col-md-7 col-sm-8">
                         <fieldset>
-                            <legend>Sélectionnez la personne de cette expérience :</legend>
+                            <b>Sélectionnez la personne affectée par la maladie :</b>
                             <t t-foreach="relation" t-as="rel">
                                 <div>
                                     <input
@@ -524,7 +526,7 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-12">
-                            <b>Organisation:</b>
+                            <b>Organisation :</b>
                             <span t-field="ceppp_formation.organisation" />
                         </div>
                         <!--                        <div class="col-12" style="display:none">-->
@@ -535,18 +537,19 @@
                         <!--                            />-->
                         <!--                        </div>-->
                         <div class="col-12">
-                            <b>Titre de la formation:</b>
+                            <b>Titre de la formation :</b>
                             <t t-foreach="ceppp_formation.titre_formation" t-as="tit">
-                                <a t-field="tit.name" />
-                                <t t-if="not tit_last">,</t>
+                                <!-- prettier-ignore-start -->
+                                <a t-field="tit.name" /><t t-if="not tit_last">, </t>
+                                <!-- prettier-ignore-end -->
                             </t>
                         </div>
                         <div class="col-12">
-                            <b>Date:</b>
+                            <b>Date :</b>
                             <span t-field="ceppp_formation.date" />
                         </div>
                         <div class="col-12">
-                            <b>Autres formations:</b>
+                            <b>Autres formations :</b>
                             <span t-field="ceppp_formation.titre_formation_autre" />
                         </div>
                         <!--                        <div class="col-12">-->
@@ -579,45 +582,47 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-12">
-                            <b>Titre du projet:</b>
+                            <b>Titre du projet :</b>
                             <span t-field="ceppp_implication.titre" />
                         </div>
                         <div class="col-12">
-                            <b>Nom de l'équipe:</b>
+                            <b>Nom de l'équipe :</b>
                             <span t-field="ceppp_implication.nom_equipe" />
                         </div>
                         <div class="col-12">
-                            <b>Description:</b>
+                            <b>Description :</b>
                             <span t-field="ceppp_implication.description" />
                         </div>
                         <div class="col-12">
-                            <b>&#201;ch&#233;ance d&#233;but:</b>
+                            <b>&#201;ch&#233;ance d&#233;but :</b>
                             <span t-field="ceppp_implication.echeance_debut" />
                         </div>
                         <div class="col-12">
-                            <b>&#201;ch&#233;ance fin:</b>
+                            <b>&#201;ch&#233;ance fin :</b>
                             <span t-field="ceppp_implication.echeance_fin" />
                         </div>
                         <div class="col-12">
-                            <b>Domaine:</b>
+                            <b>Domaine :</b>
                             <t t-foreach="ceppp_implication.domaine" t-as="dom">
-                                <a t-field="dom.name" />
-                                <t t-if="not dom_last">,</t>
+                                <!-- prettier-ignore-start -->
+                                <a t-field="dom.name" /><t t-if="not dom_last">, </t>
+                                <!-- prettier-ignore-end -->
                             </t>
                         </div>
                         <div class="col-12" t-if="ceppp_implication.domaine_is_autre">
-                            <b>Autres domaines:</b>
+                            <b>Autres domaines :</b>
                             <span t-field="ceppp_implication.domaine_autre" />
                         </div>
                         <div class="col-12">
-                            <b>R&#244;le:</b>
+                            <b>R&#244;le :</b>
                             <t t-foreach="ceppp_implication.role" t-as="rol">
-                                <a t-field="rol.name" />
-                                <t t-if="not rol_last">,</t>
+                                <!-- prettier-ignore-start -->
+                                <a t-field="rol.name" /><t t-if="not rol_last">, </t>
+                                <!-- prettier-ignore-end -->
                             </t>
                         </div>
                         <div class="col-12" t-if="ceppp_implication.role_is_autre">
-                            <b>Autres r&#244;les:</b>
+                            <b>Autres r&#244;les :</b>
                             <span t-field="ceppp_implication.role_autre" />
                         </div>
                     </div>
@@ -646,14 +651,14 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-12">
-                            <b>Chapitre maladie:</b>
+                            <b>Chapitre maladie :</b>
                             <a
                                 t-attf-href="/my/ceppp_chapitre_maladie/#{ceppp_maladie.chapitre_maladie_id.id}"
                                 t-field="ceppp_maladie.chapitre_maladie_id.nom"
                             />
                         </div>
                         <div class="col-12">
-                            <b>Nom:</b>
+                            <b>Nom :</b>
                             <span t-field="ceppp_maladie.nom" />
                         </div>
                     </div>
@@ -685,10 +690,11 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-12">
-                            <b>Maladies:</b>
+                            <b>Maladies :</b>
                             <t t-foreach="ceppp_maladie_personne_affectee.maladie" t-as="mal">
-                                <a t-attf-href="/my/ceppp_maladie/#{mal.id}" t-field="mal.nom" />
-                                <t t-if="not mal_last">,</t>
+                                <!-- prettier-ignore-start -->
+                                <a t-attf-href="/my/ceppp_maladie/#{mal.id}" t-field="mal.nom" /><t t-if="not mal_last">, </t>
+                                <!-- prettier-ignore-end -->
                             </t>
                         </div>
                         <!--                        <div class="col-12" style="display:none">-->
@@ -699,19 +705,20 @@
                         <!--                            />-->
                         <!--                        </div>-->
                         <div class="col-12">
-                            <b>Relation avec la personne aid&#233;e:</b>
+                            <b>Relation avec la personne aid&#233;e :</b>
                             <t t-foreach="ceppp_maladie_personne_affectee.relation" t-as="rel">
                                 <!--                                <a t-attf-href="/my/ceppp_relation_proche/#{rel.id}" t-field="rel.name" />-->
-                                <a t-field="rel.name" />
-                                <t t-if="not rel_last">,</t>
+                                <!-- prettier-ignore-start -->
+                                <a t-field="rel.name" /><t t-if="not rel_last">, </t>
+                                <!-- prettier-ignore-end -->
                             </t>
                         </div>
                         <div class="col-12">
-                            <b>Autre relation:</b>
+                            <b>Autre relation :</b>
                             <span t-field="ceppp_maladie_personne_affectee.relation_autre" />
                         </div>
                         <div class="col-12">
-                            <b>Détails des maladies:</b>
+                            <b>Liste de vos maladies et votre expérience :</b>
                             <span t-field="ceppp_maladie_personne_affectee.detail_maladie" />
                         </div>
                         <!--                        <div class="col-12">-->

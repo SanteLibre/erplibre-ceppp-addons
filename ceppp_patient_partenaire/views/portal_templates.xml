@@ -18,16 +18,20 @@
                 <hr class="mt-1 mb-0" />
                 <a role="button" href="/Attachments" class="btn btn-sm btn-link" style="text-align:left;">
                     <i class="fa fa-eye" />
-                    Voir mes consentements<br />
+                    Voir mes consentements
+                    <br />
                     <i class="fa fa-check" t-if="consentement_notification" />
                     <i class="fa fa-thumbs-o-down" t-if="not consentement_notification" />
-                    Notification<br />
+                    Notification
+                    <br />
                     <i class="fa fa-check" t-if="consentement_recrutement" />
                     <i class="fa fa-thumbs-o-down" t-if="not consentement_recrutement" />
-                    Recrutement<br />
+                    Recrutement
+                    <br />
                     <i class="fa fa-check" t-if="consentement_recherche" />
                     <i class="fa fa-thumbs-o-down" t-if="not consentement_recherche" />
-                    Recherche<br />
+                    Recherche
+                    <br />
                 </a>
             </div>
         </xpath>

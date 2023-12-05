@@ -24,4 +24,4 @@ def post_init_hook(cr, e):
             ]
         )
         menus.write({"sequence": -10})
-        env["base.update.translations"].create({'lang': 'fr_CA'}).act_update()
+        env["base.update.translations"].create({"lang": "fr_CA"}).act_update()

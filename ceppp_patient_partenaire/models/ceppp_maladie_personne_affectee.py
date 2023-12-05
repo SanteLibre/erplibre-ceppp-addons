@@ -47,7 +47,7 @@ class CepppMaladiePersonneAffectee(models.Model):
     @api.multi
     def write(self, vals):
         relation_value = vals.get("relation")
-        if relation_value and relation_value == [[6, False, []]]:
+        if relation_value and relation_value == [(6, False, [])]:
             vals["relation"] = [
                 (
                     6,
@@ -71,22 +71,37 @@ class CepppMaladiePersonneAffectee(models.Model):
                 in record.relation.ids
             )
 
-    @api.depends("maladie", "relation", "relation_autre")
+    @api.depends(
+        "maladie",
+        "relation",
+        "relation_autre",
+        "detail_maladie",
+        "relation_is_autre",
+    )
     def _compute_name(self):
         for record in self:
             autre_value = self.env.ref(
                 "ceppp_patient_partenaire.ceppp_relation_proche_9"
             ).name
-            maladie = ";".join([a.nom for a in record.maladie])
+            maladie = ", ".join([a.nom.strip() for a in record.maladie])
             lst_relation = [
-                a.name for a in record.relation if not autre_value == a.name
+                a.name.strip()
+                for a in record.relation
+                if not autre_value == a.name
             ]
             if record.relation_autre:
                 lst_relation += [record.relation_autre]
-            relation = ";".join(lst_relation)
+            relation = ", ".join(lst_relation)
 
             if not maladie:
-                maladie = "Aucune maladie"
+                if record.detail_maladie:
+                    maladie = record.detail_maladie[:50]
+                else:
+                    maladie = "Aucune maladie"
             if not relation:
-                relation = "Aucune relation"
+                if record.relation_autre or record.relation_is_autre:
+                    relation = "Autre relation"
+                else:
+                    relation = "Aucune relation"
+
             record.name = f"{maladie} - {relation}"
