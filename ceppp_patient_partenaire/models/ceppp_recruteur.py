@@ -559,3 +559,12 @@ class CepppRecruteur(models.Model):
             "type": "ir.actions.act_window",
             "res_id": self.patient_partner_id.id,
         }
+
+    @api.multi
+    def update_recruteur_consentement_portal(self, values):
+        consentement_values = {
+            "consentement_notification": values["consentement_notification"],
+            "consentement_recrutement": values["consentement_recrutement"],
+            "consentement_recherche": values["consentement_recherche"],
+        }
+        self.sudo().write(consentement_values)

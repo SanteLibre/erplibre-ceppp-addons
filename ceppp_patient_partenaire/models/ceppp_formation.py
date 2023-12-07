@@ -62,3 +62,14 @@ class CepppFormation(models.Model):
             ):
                 lst_formation += [record.titre_formation_autre]
             record.name = ";".join(lst_formation)
+
+    @api.multi
+    def update_formation_portal(self, values):
+        titre_formation = [(6, 0, [int(a) for a in values["titre_formation"]])]
+        maladie_values = {
+            "organisation": values["organisation"],
+            "date": values["date"] or False,
+            "titre_formation": titre_formation,
+            "titre_formation_autre": values["titre_formation_autre"],
+        }
+        self.write(maladie_values)

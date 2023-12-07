@@ -7,9 +7,11 @@
     "website": "https://santelibre.ca",
     "application": True,
     "depends": [
+        "base",
         "contacts",
         "mail",
         "portal",
+        "l10n_ca",
     ],
     "data": [
         "security/ceppp_patient_partenaire.xml",

@@ -15,7 +15,8 @@ class CepppPatientPartenaireController(CustomerPortal):
         values = super(
             CepppPatientPartenaireController, self
         )._prepare_portal_layout_values()
-        if request.env.user.partner_id.patient_partner_ids:
+        pp_id = request.env.user.partner_id.patient_partner_ids
+        if pp_id:
             values["ceppp_formation_count"] = request.env[
                 "ceppp.formation"
             ].search_count(
@@ -23,7 +24,7 @@ class CepppPatientPartenaireController(CustomerPortal):
                     (
                         "recruteur_id",
                         "in",
-                        [request.env.user.partner_id.patient_partner_ids.id],
+                        [pp_id.id],
                     )
                 ]
             )
@@ -34,7 +35,7 @@ class CepppPatientPartenaireController(CustomerPortal):
                     (
                         "recruteur_id",
                         "in",
-                        [request.env.user.partner_id.patient_partner_ids.id],
+                        [pp_id.id],
                     )
                 ]
             )
@@ -48,15 +49,23 @@ class CepppPatientPartenaireController(CustomerPortal):
                     (
                         "recruteur_id",
                         "in",
-                        [request.env.user.partner_id.patient_partner_ids.id],
+                        [pp_id.id],
                     )
                 ]
             )
+
+            values[
+                "consentement_notification"
+            ] = pp_id.consentement_notification
+            values["consentement_recrutement"] = pp_id.consentement_recrutement
+            values["consentement_recherche"] = pp_id.consentement_recherche
+            values["ceppp_recruteur"] = pp_id
         else:
             values["ceppp_formation_count"] = 0
             values["ceppp_implication_count"] = 0
             values["ceppp_maladie_count"] = 0
             values["ceppp_maladie_personne_affectee_count"] = 0
+            values["ceppp_recruteur"] = None
         values["is_patient"] = (
             request.env.user.partner_id.ceppp_entity == "patient"
         )
@@ -68,10 +77,12 @@ class CepppPatientPartenaireController(CustomerPortal):
     def _ceppp_formation_get_page_view_values(
         self, ceppp_formation, access_token, **kwargs
     ):
+        formation_titre = http.request.env["ceppp.formation_titre"].search([])
         values = {
             "page_name": "ceppp_formation",
             "ceppp_formation": ceppp_formation,
             "user": request.env.user,
+            "ceppp_formation_titre": formation_titre,
         }
         return self._get_page_view_values(
             ceppp_formation,
@@ -222,10 +233,14 @@ class CepppPatientPartenaireController(CustomerPortal):
     def _ceppp_implication_get_page_view_values(
         self, ceppp_implication, access_token, **kwargs
     ):
+        domaine = http.request.env["ceppp.implication_domaine"].search([])
+        role = http.request.env["ceppp.implication_role"].search([])
         values = {
             "page_name": "ceppp_implication",
             "ceppp_implication": ceppp_implication,
             "user": request.env.user,
+            "ceppp_implication_domaine": domaine,
+            "ceppp_implication_role": role,
         }
         return self._get_page_view_values(
             ceppp_implication,
@@ -529,10 +544,12 @@ class CepppPatientPartenaireController(CustomerPortal):
     def _ceppp_maladie_personne_affectee_get_page_view_values(
         self, ceppp_maladie_personne_affectee, access_token, **kwargs
     ):
+        relation = http.request.env["ceppp.relation_proche"].search([])
         values = {
             "page_name": "ceppp_maladie_personne_affectee",
             "ceppp_maladie_personne_affectee": ceppp_maladie_personne_affectee,
             "user": request.env.user,
+            "ceppp_maladie_personne_affectee_relation": relation,
         }
         return self._get_page_view_values(
             ceppp_maladie_personne_affectee,

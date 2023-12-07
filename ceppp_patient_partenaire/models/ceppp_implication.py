@@ -73,3 +73,20 @@ class CepppImplication(models.Model):
     def _compute_name(self):
         for record in self:
             record.name = record.titre
+
+    @api.multi
+    def update_implication_portal(self, values):
+        domaine = [(6, 0, [int(a) for a in values["domaine"]])]
+        role = [(6, 0, [int(a) for a in values["role"]])]
+        implication_values = {
+            "titre": values["titre"],
+            "nom_equipe": values["nom_equipe"],
+            "description": values["description"],
+            "echeance_debut": values["echeance_debut"] or False,
+            "echeance_fin": values["echeance_fin"] or False,
+            "domaine": domaine,
+            "domaine_autre": values["domaine_autre"],
+            "role": role,
+            "role_autre": values["role_autre"],
+        }
+        self.write(implication_values)

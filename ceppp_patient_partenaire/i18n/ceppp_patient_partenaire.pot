@@ -15,6 +15,13 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. module: base
+#: model:ir.model.fields,field_description:base.field_res_partner__mobile
+#: model:ir.model.fields,field_description:base.field_res_users__mobile
+#: model_terms:ir.ui.view,arch_db:base.contact
+msgid "Mobile"
+msgstr ""
+
 #. module: ceppp_patient_partenaire
 #: model:ceppp.chapitre_maladie,nom:ceppp_patient_partenaire.ceppp_chapitre_maladie_chapitre_iii_maladies_du_sang_et_des_organes_hematopoietiques_et_certains_troubles_du_systeme_imm
 msgid "\n"
@@ -2525,7 +2532,43 @@ msgstr ""
 
 #. module: ceppp_patient_partenaire
 #: model_terms:ir.ui.view,arch_db:ceppp_patient_partenaire.portal_layout_mon_consentement
-msgid "Votre consentement"
+msgid "Vos documents"
+msgstr ""
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Confirm\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:portal.portal_layout
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Your Details"
+msgstr ""
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_home
+msgid "Your Documents"
+msgstr ""
+
+#. module: base
+#: model:res.country.state,name:base_state_ca_qc
+msgid "Quebec"
+msgstr ""
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_signature.xml:6
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+#, python-format
+msgid "Your Name"
+msgstr ""
+
+#. module: l10n_ca
+#: model:account.fiscal.position.template,name:l10n_ca.fiscal_position_template_qc_en
+msgid "Quebec (QC)"
 msgstr ""
 
 #. module: ceppp_patient_partenaire

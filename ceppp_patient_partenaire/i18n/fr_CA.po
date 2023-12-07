@@ -15,15 +15,34 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#. module: base
-#: model:ir.model.fields,field_description:base.field_res_partner__mobile
-#: model:ir.model.fields,field_description:base.field_res_users__mobile
-#: model_terms:ir.ui.view,arch_db:base.contact
-msgid "Mobile"
-msgstr "Cellulaire"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Confirm\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+msgstr "Sauvegarder"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:portal.portal_layout
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+msgid "Your Details"
+msgstr "Mes informations"
+
+#. module: portal
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_home
+msgid "Your Documents"
+msgstr "Mon profil"
+
+#. module: portal
+#. openerp-web
+#: code:addons/portal/static/src/xml/portal_signature.xml:6
+#: model_terms:ir.ui.view,arch_db:portal.portal_my_details
+#, python-format
+msgid "Your Name"
+msgstr "Votre nom"
 
 #. module: base
-#: model_terms:ir.ui.view,arch_db:base.view_partner_form
-msgid "Mobile:"
-msgstr "Cellulaire:"
-
+#: model:res.country.state,name:base_state_ca_qc
+msgid "Quebec"
+msgstr "Québec"
