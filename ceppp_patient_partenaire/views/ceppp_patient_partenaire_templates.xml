@@ -1020,7 +1020,7 @@
                                     class="btn btn-sm btn-primary"
                                     style="margin-bottom: 10px;"
                                 >
-                                    Modifier de mon expérience
+                                    Modifier mon expérience
                                 </button>
                                 <div class="modal fade modal_modifier_maladie" role="form" aria-hidden="true">
                                     <div class="modal-dialog">
