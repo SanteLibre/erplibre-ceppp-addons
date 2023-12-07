@@ -178,8 +178,8 @@
                 <div class="form-group">
                     <label class="col-md-3 col-sm-4 control-label" for="description">Description</label>
                     <div class="col-md-7 col-sm-8">
-        <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input" name="description" style="min-height: 120px"><t t-esc="default_description"/></textarea><!-- prettier-ignore-end -->
-        </div>
+                    <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input" name="description" style="min-height: 120px"><t t-esc="default_description"/></textarea><!-- prettier-ignore-end -->
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-3 col-sm-4 control-label" for="echeance_debut">Échéance début</label>
@@ -434,8 +434,8 @@
                         Énumérez vos maladies et détaillez votre expérience
                     </label>
                     <div class="col-md-7 col-sm-8">
-        <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input" name="detail_maladie" style="min-height: 120px"><t t-esc="default_detail_maladie"/></textarea><!-- prettier-ignore-end -->
-        </div>
+                    <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input" name="detail_maladie" style="min-height: 120px"><t t-esc="default_detail_maladie"/></textarea><!-- prettier-ignore-end -->
+                    </div>
                 </div>
                 <div class="form-group" style="display:none">
                     <label class="col-md-3 col-sm-4 control-label" for="recruteur_id">Recruteur_id</label>
@@ -888,6 +888,101 @@
                 </t>
                 <t t-set="card_body">
                     <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <button
+                                    type="button"
+                                    name='modifier_maladie'
+                                    data-toggle="modal"
+                                    data-target=".modal_modifier_maladie"
+                                    class="btn btn-sm btn-primary"
+                                    style="margin-bottom: 10px;"
+                                >
+                                    Modifier de mon expérience
+                                </button>
+                                <div class="modal fade modal_modifier_maladie" role="form" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <form
+                                            method="POST"
+                                            class="js_accept_json modal-content js_website_submit_form modifier_maladie_form"
+                                        >
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                            <input
+                                                type="hidden"
+                                                name="ceppp_maladie_id"
+                                                class="ceppp_maladie_id"
+                                                t-att-value="ceppp_maladie_personne_affectee.id"
+                                            />
+                                            <div class="modal-header">
+                                                <button
+                                                    type="button"
+                                                    class="close"
+                                                    data-dismiss="modal"
+                                                    aria-hidden="true"
+                                                >&amp;times;</button>
+                                                <h4 class="modal-title">Modifier votre expérience</h4>
+                                            </div>
+                                            <div class="modal-body" id="sign-dialog">
+                                                <div class="form-group">
+                                                    <label class="control-label hdd4" for="detail_maladie">
+                                                        Liste de vos maladies et votre expérience :
+                                                    </label>
+                                                    <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input detail_maladie" name="detail_maladie" style="min-height: 120px"><t t-esc="ceppp_maladie_personne_affectee.detail_maladie"/></textarea><!-- prettier-ignore-end -->
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <fieldset>
+                                                        <label for="relation">Les relations :</label>
+                                                        <t
+                                                            t-foreach="ceppp_maladie_personne_affectee_relation"
+                                                            t-as="dom"
+                                                        >
+                                                            <div>
+                                                                <input
+                                                                    type="checkbox"
+                                                                    class="o_website_form_input relation"
+                                                                    name="relation"
+                                                                    t-att-id="'relation_' + dom.name + '_' + str(dom_index)"
+                                                                    t-att-value="dom.id"
+                                                                    t-att-checked="dom.id in ceppp_maladie_personne_affectee.relation.ids"
+                                                                />
+                                                                <label
+                                                                    t-att-for="'relation_' + dom.name + '_' + str(dom_index)"
+                                                                    t-att-string="dom.name"
+                                                                >
+                                                                    <t t-esc="dom.name" />
+                                                                </label>
+                                                            </div>
+                                                        </t>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="form-group" id="div_autre_relation">
+                                                    <label for="relation_autre">Autre relation :</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control o_website_form_input relation_autre"
+                                                        name="relation_autre"
+                                                        t-att-value="ceppp_maladie_personne_affectee.relation_autre"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button t-attf-class="btn btn-primary modifier_maladie_confirm">
+                                                    Confirmer
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-default modifier_maladie_annuler"
+                                                    data-dismiss="modal"
+                                                >
+                                                    Annuler
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-12">
                             <b>Maladies :</b>
                             <t t-foreach="ceppp_maladie_personne_affectee.maladie" t-as="mal">

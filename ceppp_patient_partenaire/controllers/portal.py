@@ -540,10 +540,12 @@ class CepppPatientPartenaireController(CustomerPortal):
     def _ceppp_maladie_personne_affectee_get_page_view_values(
         self, ceppp_maladie_personne_affectee, access_token, **kwargs
     ):
+        relation = http.request.env["ceppp.relation_proche"].search([])
         values = {
             "page_name": "ceppp_maladie_personne_affectee",
             "ceppp_maladie_personne_affectee": ceppp_maladie_personne_affectee,
             "user": request.env.user,
+            "ceppp_maladie_personne_affectee_relation": relation,
         }
         return self._get_page_view_values(
             ceppp_maladie_personne_affectee,

@@ -118,6 +118,34 @@ odoo.define(
             return false;
         });
 
+        $('.modifier_maladie_confirm').on('click', function () {
+            var $btn = $(this);
+            $btn.prop('disabled', true);
+
+            var selectedRelationIds = [];
+            $('.modifier_maladie_form .relation:checked').each(function () {
+                // Ajout de l'ID de la checkbox au tableau
+                selectedRelationIds.push(parseInt($(this).val()));
+            });
+
+            rpc.query({
+                model: 'ceppp.maladie_personne_affectee',
+                method: 'update_maladie_portal',
+                args: [[parseInt($('.modifier_maladie_form .ceppp_maladie_id').val())], {
+                    detail_maladie: $('.modifier_maladie_form .detail_maladie').val(),
+                    relation: selectedRelationIds,
+                    relation_autre: $('.modifier_maladie_form .relation_autre').val(),
+                }],
+            })
+                .fail(function () {
+                    $btn.prop('disabled', false);
+                })
+                .done(function () {
+                    window.location.reload();
+                });
+            return false;
+        });
+
     function load_locale() {
         let url = "/web/webclient/locale/" + context.get().lang || "en_US";
         return ajax.loadJS(url);
@@ -154,7 +182,8 @@ odoo.define(
                     keyBinds: null,
                 };
                 if ($(date_field).find(".o_website_form_date").length > 0) {
-                    options.format = time.getLangDateFormat();
+//                    options.format = time.getLangDateFormat();
+                    options.format = "YYYY-MM-DD";
                 } else if (
                     $(date_field).find(".o_website_form_clock").length > 0
                 ) {

@@ -105,3 +105,14 @@ class CepppMaladiePersonneAffectee(models.Model):
                     relation = "Aucune relation"
 
             record.name = f"{maladie} - {relation}"
+
+    @api.multi
+    def update_maladie_portal(self, values):
+        relation = [(6, 0, [int(a) for a in values["relation"]])]
+        # maladie = [(6, 0, [int(a) for a in values["maladie"]])]
+        maladie_values = {
+            "detail_maladie": values["detail_maladie"],
+            "relation": relation,
+            "relation_autre": values["relation_autre"],
+        }
+        self.write(maladie_values)
