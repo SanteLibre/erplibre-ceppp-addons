@@ -12,28 +12,106 @@
 
     <template id="portal_layout_mon_consentement" name="Mon consentement" inherit_id="portal.portal_layout">
         <xpath expr="//div[hasclass('o_portal_my_details')]" position="after">
-            <t t-if="is_patient">
+            <t t-if="is_patient and ceppp_recruteur">
                 <br />
                 <div>
                     <h4>Mon consentement</h4>
                     <hr class="mt-1 mb-0" />
-                    <a role="button" href="/Attachments" class="btn btn-sm btn-link" style="text-align:left;">
-                        <i class="fa fa-eye" />
-                        Voir mes consentements
-                        <br />
-                        <i class="fa fa-check" t-if="consentement_notification" />
-                        <i class="fa fa-thumbs-o-down" t-if="not consentement_notification" />
-                        Notification
-                        <br />
-                        <i class="fa fa-check" t-if="consentement_recrutement" />
-                        <i class="fa fa-thumbs-o-down" t-if="not consentement_recrutement" />
-                        Recrutement
-                        <br />
-                        <i class="fa fa-check" t-if="consentement_recherche" />
-                        <i class="fa fa-thumbs-o-down" t-if="not consentement_recherche" />
-                        Recherche
-                        <br />
-                    </a>
+                    <button
+                        type="button"
+                        name='modifier_consentement'
+                        data-toggle="modal"
+                        data-target=".modal_modifier_consentement"
+                        class="btn btn-sm btn-primary"
+                        style="margin-bottom: 10px;"
+                    >
+                        Modifier mes consentements
+                    </button>
+                    <br />
+                    <i class="fa fa-check" t-if="consentement_notification" />
+                    <i class="fa fa-times" t-if="not consentement_notification" />
+                    Notification
+                    <br />
+                    <i class="fa fa-check" t-if="consentement_recrutement" />
+                    <i class="fa fa-times" t-if="not consentement_recrutement" />
+                    Recrutement
+                    <br />
+                    <i class="fa fa-check" t-if="consentement_recherche" />
+                    <i class="fa fa-times" t-if="not consentement_recherche" />
+                    Recherche
+                </div>
+                <div>
+                    <div class="modal fade modal_modifier_consentement" role="form" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <form
+                                method="POST"
+                                class="js_accept_json modal-content js_website_submit_form modifier_consentement_form"
+                            >
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                <input
+                                    type="hidden"
+                                    name="ceppp_recruteur_id"
+                                    class="ceppp_recruteur_id"
+                                    t-att-value="ceppp_recruteur.id"
+                                />
+                                <div class="modal-header">
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-hidden="true"
+                                    >&amp;times;</button>
+                                    <h4 class="modal-title">Modifier son consentement</h4>
+                                </div>
+                                <div class="modal-body" id="sign-dialog">
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input notification"
+                                        id="check_consentement_notification"
+                                        t-att-checked="consentement_notification"
+                                    />
+                                    <b>Notifications</b>
+                                    . J'aimerais être informé des activités de
+                                    partenariat (ex. colloques, projets, formations, etc.)
+                                    <br />
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input recrutement"
+                                        id="check_consentement_recrutement"
+                                        t-att-checked="consentement_recrutement"
+                                    />
+                                    <b>Recrutement</b>
+                                    . J'aimerais être contacté pour être
+                                    <u>patient partenaire ou proche aidant partenaire</u>
+                                    dans un projet ou un comité.
+                                    <br />
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input recherche"
+                                        id="check_consentement_recherche"
+                                        t-att-checked="consentement_recherche"
+                                    />
+                                    <b>Recherche</b>
+                                    . J'aimerais que mes données anonymisées soient utilisées
+                                    <u>pour la recherche sur les pratiques</u>
+                                    de partenariat avec les patients, les proches et le public.
+                                    <br />
+                                </div>
+                                <div class="modal-footer">
+                                    <button t-attf-class="btn btn-primary modifier_consentement_confirm">
+                                        Confirmer
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-default modifier_consentement_annuler"
+                                        data-dismiss="modal"
+                                    >
+                                        Annuler
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </t>
         </xpath>

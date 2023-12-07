@@ -146,6 +146,28 @@ odoo.define(
             return false;
         });
 
+        $('.modifier_consentement_confirm').on('click', function () {
+            var $btn = $(this);
+            $btn.prop('disabled', true);
+
+            rpc.query({
+                model: 'ceppp.recruteur',
+                method: 'update_recruteur_consentement_portal',
+                args: [[parseInt($('.modifier_consentement_form .ceppp_recruteur_id').val())], {
+                    consentement_notification: $('.modifier_consentement_form #check_consentement_notification').is(":checked"),
+                    consentement_recrutement: $('.modifier_consentement_form #check_consentement_recrutement').is(":checked"),
+                    consentement_recherche: $('.modifier_consentement_form #check_consentement_recherche').is(":checked"),
+                }],
+            })
+                .fail(function () {
+                    $btn.prop('disabled', false);
+                })
+                .done(function () {
+                    window.location.reload();
+                });
+            return false;
+        });
+
         $('.modifier_maladie_confirm').on('click', function () {
             var $btn = $(this);
             $btn.prop('disabled', true);

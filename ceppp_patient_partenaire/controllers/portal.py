@@ -59,11 +59,13 @@ class CepppPatientPartenaireController(CustomerPortal):
             ] = pp_id.consentement_notification
             values["consentement_recrutement"] = pp_id.consentement_recrutement
             values["consentement_recherche"] = pp_id.consentement_recherche
+            values["ceppp_recruteur"] = pp_id
         else:
             values["ceppp_formation_count"] = 0
             values["ceppp_implication_count"] = 0
             values["ceppp_maladie_count"] = 0
             values["ceppp_maladie_personne_affectee_count"] = 0
+            values["ceppp_recruteur"] = None
         values["is_patient"] = (
             request.env.user.partner_id.ceppp_entity == "patient"
         )
