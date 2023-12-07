@@ -527,6 +527,128 @@
                 </t>
                 <t t-set="card_body">
                     <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <button
+                                    type="button"
+                                    name='modifier_formation'
+                                    data-toggle="modal"
+                                    data-target=".modal_modifier_formation"
+                                    class="btn btn-sm btn-primary"
+                                    style="margin-bottom: 10px;"
+                                >
+                                    Modifier la formation
+                                </button>
+                                <div class="modal fade modal_modifier_formation" role="form" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <form
+                                            method="POST"
+                                            class="js_accept_json modal-content js_website_submit_form modifier_formation_form"
+                                        >
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                            <input
+                                                type="hidden"
+                                                name="ceppp_formation_id"
+                                                class="ceppp_formation_id"
+                                                t-att-value="ceppp_formation.id"
+                                            />
+                                            <div class="modal-header">
+                                                <button
+                                                    type="button"
+                                                    class="close"
+                                                    data-dismiss="modal"
+                                                    aria-hidden="true"
+                                                >&amp;times;</button>
+                                                <h4 class="modal-title">Modifier la formation</h4>
+                                            </div>
+                                            <div class="modal-body" id="sign-dialog">
+                                                <div class="form-group">
+                                                    <label class="control-label hdd4" for="organisation">
+                                                        Organisation :
+                                                    </label>
+                                                    <input
+                                                        type='text'
+                                                        name="organisation"
+                                                        t-att-value="ceppp_formation.organisation"
+                                                        class="form-control organisation"
+                                                    />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="date_formation">Date :</label>
+                                                    <div
+                                                        class='input-group date'
+                                                        data-target-input="nearest"
+                                                        t-attf-id="date_formation_datepicker"
+                                                    >
+                                                        <input
+                                                            type="text"
+                                                            name="date_formation"
+                                                            t-att-value="ceppp_formation.date"
+                                                            class="form-control datetimepicker-input o_website_form_input o_website_form_date date_formation"
+                                                            t-attf-data-target="#date_formation_datepicker"
+                                                            placeholder="YYYY-MM-DD"
+                                                        />
+                                                        <div
+                                                            class="input-group-append"
+                                                            t-attf-data-target="#date_formation_datepicker"
+                                                            data-toggle="datetimepicker"
+                                                        >
+                                                            <div class="input-group-text">
+                                                                <i class="fa fa-calendar" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <fieldset>
+                                                        <label for="titre_formation">La formation :</label>
+                                                        <t t-foreach="ceppp_formation_titre" t-as="dom">
+                                                            <div>
+                                                                <input
+                                                                    type="radio"
+                                                                    class="o_website_form_input titre_formation"
+                                                                    name="titre_formation"
+                                                                    t-att-id="'titre_formation_' + dom.name + '_' + str(dom_index)"
+                                                                    t-att-value="dom.id"
+                                                                    t-att-checked="dom.id in ceppp_formation.titre_formation.ids"
+                                                                />
+                                                                <label
+                                                                    t-att-for="'titre_formation_' + dom.name + '_' + str(dom_index)"
+                                                                    t-att-string="dom.name"
+                                                                >
+                                                                    <t t-esc="dom.name" />
+                                                                </label>
+                                                            </div>
+                                                        </t>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="form-group" id="div_autre_titre_formation">
+                                                    <label for="titre_formation_autre">Autre formation :</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control o_website_form_input titre_formation_autre"
+                                                        name="titre_formation_autre"
+                                                        t-att-value="ceppp_formation.titre_formation_autre"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button t-attf-class="btn btn-primary modifier_formation_confirm">
+                                                    Confirmer
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-default modifier_formation_annuler"
+                                                    data-dismiss="modal"
+                                                >
+                                                    Annuler
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-12">
                             <b>Organisation :</b>
                             <span t-field="ceppp_formation.organisation" />

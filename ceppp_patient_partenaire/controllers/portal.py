@@ -75,10 +75,12 @@ class CepppPatientPartenaireController(CustomerPortal):
     def _ceppp_formation_get_page_view_values(
         self, ceppp_formation, access_token, **kwargs
     ):
+        formation_titre = http.request.env["ceppp.formation_titre"].search([])
         values = {
             "page_name": "ceppp_formation",
             "ceppp_formation": ceppp_formation,
             "user": request.env.user,
+            "ceppp_formation_titre": formation_titre,
         }
         return self._get_page_view_values(
             ceppp_formation,

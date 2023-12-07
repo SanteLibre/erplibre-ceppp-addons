@@ -118,6 +118,34 @@ odoo.define(
             return false;
         });
 
+        $('.modifier_formation_confirm').on('click', function () {
+            var $btn = $(this);
+            $btn.prop('disabled', true);
+
+            var selectedTitreFormationIds = [];
+            $('.modifier_formation_form .titre_formation:checked').each(function () {
+                selectedTitreFormationIds.push(parseInt($(this).val()));
+            });
+
+            rpc.query({
+                model: 'ceppp.formation',
+                method: 'update_formation_portal',
+                args: [[parseInt($('.modifier_formation_form .ceppp_formation_id').val())], {
+                    organisation: $('.modifier_formation_form .organisation').val(),
+                    date: $('.modifier_formation_form .date_formation').val(),
+                    titre_formation: selectedTitreFormationIds,
+                    titre_formation_autre: $('.modifier_formation_form .titre_formation_autre').val(),
+                }],
+            })
+                .fail(function () {
+                    $btn.prop('disabled', false);
+                })
+                .done(function () {
+                    window.location.reload();
+                });
+            return false;
+        });
+
         $('.modifier_maladie_confirm').on('click', function () {
             var $btn = $(this);
             $btn.prop('disabled', true);
