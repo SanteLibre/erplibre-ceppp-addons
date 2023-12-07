@@ -191,6 +191,7 @@
                                 t-att-value="default_echeance_debut"
                                 t-attf-data-target="#echeance_debut_datepicker"
                                 type="text"
+                                placeholder="YYYY-MM-DD"
                             />
                             <div
                                 class="input-group-append"
@@ -214,6 +215,7 @@
                                 t-att-value="default_echeance_fin"
                                 t-attf-data-target="#echeance_fin_datepicker"
                                 type="text"
+                                placeholder="YYYY-MM-DD"
                             />
                             <div
                                 class="input-group-append"
@@ -581,6 +583,203 @@
                 </t>
                 <t t-set="card_body">
                     <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <button
+                                    type="button"
+                                    name='modifier_implication'
+                                    data-toggle="modal"
+                                    data-target=".modal_modifier_implication"
+                                    class="btn btn-sm btn-primary"
+                                    style="margin-bottom: 10px;"
+                                >
+                                    Modifier l'implication
+                                </button>
+                                <div class="modal fade modal_modifier_implication" role="form" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <form
+                                            method="POST"
+                                            class="js_accept_json modal-content js_website_submit_form modifier_implication_form"
+                                        >
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                            <input
+                                                type="hidden"
+                                                name="ceppp_implication_id"
+                                                class="ceppp_implication_id"
+                                                t-att-value="ceppp_implication.id"
+                                            />
+                                            <div class="modal-header">
+                                                <button
+                                                    type="button"
+                                                    class="close"
+                                                    data-dismiss="modal"
+                                                    aria-hidden="true"
+                                                >&amp;times;</button>
+                                                <h4 class="modal-title">Modifier l'implication</h4>
+                                            </div>
+                                            <div class="modal-body" id="sign-dialog">
+                                                <div class="form-group">
+                                                    <label class="control-label hdd4" for="titre">
+                                                        Titre du projet :
+                                                    </label>
+                                                    <input
+                                                        type='text'
+                                                        name="titre"
+                                                        t-att-value="ceppp_implication.titre"
+                                                        class="form-control titre"
+                                                    />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label hdd4" for="nom_equipe">
+                                                        Nom de l'équipe :
+                                                    </label>
+                                                    <input
+                                                        type='text'
+                                                        name="nom_equipe"
+                                                        t-att-value="ceppp_implication.nom_equipe"
+                                                        class="form-control nom_equipe"
+                                                    />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label hdd4" for="description">
+                                                        Description :
+                                                    </label>
+                                                    <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input description" name="description" style="min-height: 120px"><t t-esc="ceppp_implication.description"/></textarea><!-- prettier-ignore-end -->
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="echeance_debut">Échéance début :</label>
+                                                    <div
+                                                        class='input-group date'
+                                                        data-target-input="nearest"
+                                                        t-attf-id="echeance_debut_datepicker"
+                                                    >
+                                                        <input
+                                                            type="text"
+                                                            name="echeance_debut"
+                                                            t-att-value="ceppp_implication.echeance_debut"
+                                                            class="form-control datetimepicker-input o_website_form_input o_website_form_date echeance_debut"
+                                                            t-attf-data-target="#echeance_debut_datepicker"
+                                                            placeholder="YYYY-MM-DD"
+                                                        />
+                                                        <div
+                                                            class="input-group-append"
+                                                            t-attf-data-target="#echeance_debut_datepicker"
+                                                            data-toggle="datetimepicker"
+                                                        >
+                                                            <div class="input-group-text">
+                                                                <i class="fa fa-calendar" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="echeance_fin">Échéance fin :</label>
+                                                    <div
+                                                        class='input-group date'
+                                                        data-target-input="nearest"
+                                                        t-attf-id="echeance_fin_datepicker"
+                                                    >
+                                                        <input
+                                                            type="text"
+                                                            name="echeance_fin"
+                                                            t-att-value="ceppp_implication.echeance_fin"
+                                                            class="form-control datetimepicker-input o_website_form_input o_website_form_date echeance_fin"
+                                                            t-attf-data-target="#echeance_fin_datepicker"
+                                                            placeholder="YYYY-MM-DD"
+                                                        />
+                                                        <div
+                                                            class="input-group-append"
+                                                            t-attf-data-target="#echeance_fin_datepicker"
+                                                            data-toggle="datetimepicker"
+                                                        >
+                                                            <div class="input-group-text">
+                                                                <i class="fa fa-calendar" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <fieldset>
+                                                        <label for="domaine">Les domaines :</label>
+                                                        <t t-foreach="ceppp_implication_domaine" t-as="dom">
+                                                            <div>
+                                                                <input
+                                                                    type="checkbox"
+                                                                    class="o_website_form_input domaine"
+                                                                    name="domaine"
+                                                                    t-att-id="'domaine_' + dom.name + '_' + str(dom_index)"
+                                                                    t-att-value="dom.id"
+                                                                    t-att-checked="dom.id in ceppp_implication.domaine.ids"
+                                                                />
+                                                                <label
+                                                                    t-att-for="'domaine_' + dom.name + '_' + str(dom_index)"
+                                                                    t-att-string="dom.name"
+                                                                >
+                                                                    <t t-esc="dom.name" />
+                                                                </label>
+                                                            </div>
+                                                        </t>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="form-group" id="div_autre_domaine">
+                                                    <label for="domaine_autre">Autre domaine :</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control o_website_form_input domaine_autre"
+                                                        name="domaine_autre"
+                                                        t-att-value="ceppp_implication.domaine_autre"
+                                                    />
+                                                </div>
+                                                <div class="form-group">
+                                                    <fieldset>
+                                                        <label for="role">Les rôles :</label>
+                                                        <t t-foreach="ceppp_implication_role" t-as="dom">
+                                                            <div>
+                                                                <input
+                                                                    type="checkbox"
+                                                                    class="o_website_form_input role"
+                                                                    name="role"
+                                                                    t-att-id="'role_' + dom.name + '_' + str(dom_index)"
+                                                                    t-att-value="dom.id"
+                                                                    t-att-checked="dom.id in ceppp_implication.role.ids"
+                                                                />
+                                                                <label
+                                                                    t-att-for="'role_' + dom.name + '_' + str(dom_index)"
+                                                                    t-att-string="dom.name"
+                                                                >
+                                                                    <t t-esc="dom.name" />
+                                                                </label>
+                                                            </div>
+                                                        </t>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="form-group" id="div_autre_role">
+                                                    <label for="role_autre">Autre rôle :</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control o_website_form_input role_autre"
+                                                        name="role_autre"
+                                                        t-att-value="ceppp_implication.role_autre"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button t-attf-class="btn btn-primary modifier_implication_confirm">
+                                                    Confirmer
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-default modifier_implication_annuler"
+                                                    data-dismiss="modal"
+                                                >
+                                                    Annuler
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-12">
                             <b>Titre du projet :</b>
                             <span t-field="ceppp_implication.titre" />

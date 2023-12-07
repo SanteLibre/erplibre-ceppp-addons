@@ -229,10 +229,14 @@ class CepppPatientPartenaireController(CustomerPortal):
     def _ceppp_implication_get_page_view_values(
         self, ceppp_implication, access_token, **kwargs
     ):
+        domaine = http.request.env["ceppp.implication_domaine"].search([])
+        role = http.request.env["ceppp.implication_role"].search([])
         values = {
             "page_name": "ceppp_implication",
             "ceppp_implication": ceppp_implication,
             "user": request.env.user,
+            "ceppp_implication_domaine": domaine,
+            "ceppp_implication_role": role,
         }
         return self._get_page_view_values(
             ceppp_implication,
