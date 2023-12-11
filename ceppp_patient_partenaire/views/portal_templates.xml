@@ -15,19 +15,31 @@
             <t t-if="is_patient and ceppp_recruteur">
                 <br />
                 <div>
-                    <h4>Mon consentement</h4>
+                    <h4>
+                        Mes consentements
+                        <a
+                            role="button"
+                            href="#"
+                            data-toggle="modal"
+                            data-target=".modal_modifier_consentement"
+                            class="btn btn-sm btn-link"
+                        >
+                            <i class="fa fa-pencil" />
+                            Modifier
+                        </a>
+                    </h4>
                     <hr class="mt-1 mb-0" />
-                    <button
-                        type="button"
-                        name='modifier_consentement'
-                        data-toggle="modal"
-                        data-target=".modal_modifier_consentement"
-                        class="btn btn-sm btn-primary"
-                        style="margin-bottom: 10px;"
-                    >
-                        Modifier mes consentements
-                    </button>
-                    <br />
+                    <!--                    <button-->
+                    <!--                        type="button"-->
+                    <!--                        name='modifier_consentement'-->
+                    <!--                        data-toggle="modal"-->
+                    <!--                        data-target=".modal_modifier_consentement"-->
+                    <!--                        class="btn btn-sm btn-primary"-->
+                    <!--                        style="margin-bottom: 10px;"-->
+                    <!--                    >-->
+                    <!--                        Modifier mes consentements-->
+                    <!--                    </button>-->
+                    <!--                    <br />-->
                     <i class="fa fa-check" t-if="consentement_notification" />
                     <i class="fa fa-times" t-if="not consentement_notification" />
                     Notification
@@ -71,7 +83,7 @@
                                         t-att-checked="consentement_notification"
                                     />
                                     <b>Notifications</b>
-                                    . J'aimerais être informé des activités de
+                                    J'aimerais être informé des activités de
                                     partenariat (ex. colloques, projets, formations, etc.)
                                     <br />
                                     <input
@@ -81,7 +93,7 @@
                                         t-att-checked="consentement_recrutement"
                                     />
                                     <b>Recrutement</b>
-                                    . J'aimerais être contacté pour être
+                                    J'aimerais être contacté pour être
                                     <u>patient partenaire ou proche aidant partenaire</u>
                                     dans un projet ou un comité.
                                     <br />
@@ -92,7 +104,7 @@
                                         t-att-checked="consentement_recherche"
                                     />
                                     <b>Recherche</b>
-                                    . J'aimerais que mes données anonymisées soient utilisées
+                                    J'aimerais que mes données anonymisées soient utilisées
                                     <u>pour la recherche sur les pratiques</u>
                                     de partenariat avec les patients, les proches et le public.
                                     <br />
