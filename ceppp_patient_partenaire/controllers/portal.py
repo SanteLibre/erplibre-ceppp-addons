@@ -11,6 +11,18 @@ from odoo.tools import groupby as groupbyelem
 
 
 class CepppPatientPartenaireController(CustomerPortal):
+    def __init__(self):
+        # super().__init__()
+        self.ORIGIN_OPTIONAL_BILLING_FIELDS = self.OPTIONAL_BILLING_FIELDS[:]
+        self.RECRUTEUR_FIELDS = [
+            "langue_parle_ecrit",
+            "langue_parle_ecrit_autre",
+            "occupation",
+            "occupation_autre",
+        ]
+        self.RECRUTEUR_FIELDS_M2M = ["langue_parle_ecrit", "occupation"]
+        self.OPTIONAL_BILLING_FIELDS.extend(self.RECRUTEUR_FIELDS)
+
     def _prepare_portal_layout_values(self):
         values = super(
             CepppPatientPartenaireController, self
@@ -708,3 +720,89 @@ class CepppPatientPartenaireController(CustomerPortal):
             "ceppp_patient_partenaire.portal_my_ceppp_maladie_personne_affectee",
             values,
         )
+
+    @http.route(["/my/account"], type="http", auth="user", website=True)
+    def account(self, redirect=None, **post):
+        # Overwrite portal/controllers/portal.py
+        values = self._prepare_portal_layout_values()
+        partner = request.env.user.partner_id
+        values.update(
+            {
+                "error": {},
+                "error_message": [],
+            }
+        )
+
+        if post and request.httprequest.method == "POST":
+            error, error_message = self.details_form_validate(post)
+            values.update({"error": error, "error_message": error_message})
+            values.update(post)
+            if not error:
+                values = {
+                    key: post[key] for key in self.MANDATORY_BILLING_FIELDS
+                }
+                # Change OPTIONAL_BILLING_FIELDS to ORIGIN_OPTIONAL_BILLING_FIELDS
+                values.update(
+                    {
+                        key: post[key]
+                        for key in self.ORIGIN_OPTIONAL_BILLING_FIELDS
+                        if key in post
+                    }
+                )
+                values.update({"zip": values.pop("zipcode", "")})
+                partner.sudo().write(values)
+                # ADD below
+                recruteur_id = partner.patient_partner_ids
+                if recruteur_id:
+                    values_recruteur = {}
+                    for key in self.RECRUTEUR_FIELDS:
+                        if key not in post:
+                            continue
+                        if key in self.RECRUTEUR_FIELDS_M2M:
+                            v = [
+                                (
+                                    6,
+                                    0,
+                                    [
+                                        int(a)
+                                        for a in request.httprequest.form.getlist(
+                                            key
+                                        )
+                                    ],
+                                )
+                            ]
+                        else:
+                            v = post[key]
+                        values_recruteur[key] = v
+                    recruteur_id.sudo().write(values_recruteur)
+                # End ADD
+                if redirect:
+                    return request.redirect(redirect)
+                return request.redirect("/my/home")
+
+        countries = request.env["res.country"].sudo().search([])
+        states = request.env["res.country.state"].sudo().search([])
+
+        all_langue_parle_ecrit = request.env["ceppp.langue"].search([])
+        all_occupation = request.env["ceppp.occupation"].search([])
+        recruteur_id = request.env.user.partner_id.patient_partner_ids
+
+        values.update(
+            {
+                "partner": partner,
+                "countries": countries,
+                "states": states,
+                "has_check_vat": hasattr(
+                    request.env["res.partner"], "check_vat"
+                ),
+                "redirect": redirect,
+                "page_name": "my_details",
+                "ceppp_recruteur": recruteur_id,
+                "all_langue_parle_ecrit": all_langue_parle_ecrit,
+                "all_occupation": all_occupation,
+            }
+        )
+
+        response = request.render("portal.portal_my_details", values)
+        response.headers["X-Frame-Options"] = "DENY"
+        return response

@@ -11,8 +11,6 @@ odoo.define(
         let context = require("web_editor.context");
 
         // Support autre rôle
-        $('#div_autre_role').hide();
-
         function check_role_autre () {
             let n = $("input[id^='role_Autre_']:checked").length;
             if (n > 0) {
@@ -22,14 +20,48 @@ odoo.define(
             }
         }
 
+        check_role_autre();
+
         $("input[id^='role_Autre_']").on("click", function (event) {
             // event.preventDefault();
             check_role_autre();
         });
 
-        // Support autre domaine
-        $('#div_autre_domaine').hide();
+        // Support autre langue
+        function check_langue_autre () {
+            let n = $("input[id^='langue_parle_ecrit_Autre_']:checked").length;
+            if (n > 0) {
+                $('#div_autre_langue').show();
+            } else {
+                $('#div_autre_langue').hide();
+            }
+        }
 
+        check_langue_autre();
+
+        $("input[id^='langue_parle_ecrit_Autre_']").on("click", function (event) {
+            // event.preventDefault();
+            check_langue_autre();
+        });
+
+        // Support autre occupation
+        function check_occupation_autre () {
+            let n = $("input[id^='occupation_Autre_']:checked").length;
+            if (n > 0) {
+                $('#div_autre_occupation').show();
+            } else {
+                $('#div_autre_occupation').hide();
+            }
+        }
+
+        check_occupation_autre();
+
+        $("input[id^='occupation_Autre_']").on("click", function (event) {
+            // event.preventDefault();
+            check_occupation_autre();
+        });
+
+        // Support autre domaine
         function check_domaine_autre () {
             let n = $("input[id^='domaine_Autre_']:checked").length;
             if (n > 0) {
@@ -39,14 +71,14 @@ odoo.define(
             }
         }
 
+        check_domaine_autre();
+
         $("input[id^='domaine_Autre_']").on("click", function (event) {
             // event.preventDefault();
             check_domaine_autre();
         });
 
         // Support autre relation
-        $('#div_autre_relation').hide();
-
         function check_relation_autre () {
             let n = $("input[id^='relation_Autre_']:checked").length;
             if (n > 0) {
@@ -56,14 +88,14 @@ odoo.define(
             }
         }
 
+        check_relation_autre();
+
         $("input[id^='relation_Autre_']").on("click", function (event) {
             // event.preventDefault();
             check_relation_autre();
         });
 
         // Support autre formation
-        $('#div_autre_formation').hide();
-
         function check_formation_autre () {
             let n = $("input[id^='titre_formation_Autre_']:checked").length;
             if (n > 0) {
@@ -72,6 +104,8 @@ odoo.define(
                 $('#div_autre_formation').hide();
             }
         }
+
+        check_formation_autre();
 
         $("input[id^='titre_formation_Autre_']").on("click", function (event) {
             // event.preventDefault();
@@ -204,6 +238,8 @@ odoo.define(
     $('body').on('shown.bs.modal', function (e) {
         datetimepicker_load();
         check_role_autre();
+        check_langue_autre();
+        check_occupation_autre();
         check_domaine_autre();
         check_relation_autre();
         check_formation_autre();

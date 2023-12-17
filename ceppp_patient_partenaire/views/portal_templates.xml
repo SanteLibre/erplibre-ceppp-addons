@@ -142,5 +142,78 @@
         <xpath expr="//label[hasclass('label-optional')]" position="attributes">
             <attribute name="class">col-form-label</attribute>
         </xpath>
+        <xpath expr="//button[@type='submit']/.." position="before">
+            <div class="clearfix" t-if="ceppp_recruteur">
+                <hr />
+                <h4>Information socio-démographiques/pratiques</h4>
+                <div class="row">
+                    <div class="form-group col-xl-6">
+                        <fieldset>
+                            <label class="col-form-label" for="langue_parle_ecrit">Langues parlées et écrites</label>
+                            <t t-foreach="all_langue_parle_ecrit" t-as="dom">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input langue_parle_ecrit"
+                                        name="langue_parle_ecrit"
+                                        t-att-id="'langue_parle_ecrit_' + dom.nom + '_' + str(dom_index)"
+                                        t-att-value="dom.id"
+                                        t-att-checked="dom.id in ceppp_recruteur.langue_parle_ecrit.ids"
+                                    />
+                                    <label
+                                        t-att-for="'langue_parle_ecrit_' + dom.nom + '_' + str(dom_index)"
+                                        t-att-string="dom.nom"
+                                    >
+                                        <t t-esc="dom.nom" />
+                                    </label>
+                                </div>
+                            </t>
+                        </fieldset>
+                        <div id="div_autre_langue">
+                            <label class="col-form-label" for="langue_parle_ecrit_autre">Autre langue</label>
+                            <input
+                                type="text"
+                                class="o_website_form_input langue_parle_ecrit_autre"
+                                name="langue_parle_ecrit_autre"
+                                t-att-value="ceppp_recruteur.langue_parle_ecrit_autre"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <fieldset>
+                            <label class="col-form-label" for="occupation">Occupations</label>
+                            <t t-foreach="all_occupation" t-as="dom">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input occupation"
+                                        name="occupation"
+                                        t-att-id="'occupation_' + dom.name + '_' + str(dom_index)"
+                                        t-att-value="dom.id"
+                                        t-att-checked="dom.id in ceppp_recruteur.occupation.ids"
+                                    />
+                                    <label
+                                        t-att-for="'occupation_' + dom.name + '_' + str(dom_index)"
+                                        t-att-string="dom.name"
+                                    >
+                                        <t t-esc="dom.name" />
+                                    </label>
+                                </div>
+                            </t>
+                        </fieldset>
+                        <div id="div_autre_occupation">
+                            <label class="col-form-label" for="occupation_autre">Autre occupation</label>
+                            <input
+                                type="text"
+                                class="o_website_form_input occupation_autre"
+                                name="occupation_autre"
+                                t-att-value="ceppp_recruteur.occupation_autre"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </xpath>
     </template>
 </odoo>
