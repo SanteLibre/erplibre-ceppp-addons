@@ -66,11 +66,6 @@ class CepppPatientPartenaireController(CustomerPortal):
                 ]
             )
 
-            values[
-                "consentement_notification"
-            ] = pp_id.consentement_notification
-            values["consentement_recrutement"] = pp_id.consentement_recrutement
-            values["consentement_recherche"] = pp_id.consentement_recherche
             values["ceppp_recruteur"] = pp_id
         else:
             values["ceppp_formation_count"] = 0
@@ -81,6 +76,12 @@ class CepppPatientPartenaireController(CustomerPortal):
         values["is_patient"] = (
             request.env.user.partner_id.ceppp_entity == "patient"
         )
+        values["all_disponibilite"] = request.env[
+            "ceppp.disponibilite"
+        ].search([])
+        values["all_mode_communication_privilegie"] = request.env[
+            "ceppp.mode_communication_privilegie"
+        ].search([])
         return values
 
     # ------------------------------------------------------------

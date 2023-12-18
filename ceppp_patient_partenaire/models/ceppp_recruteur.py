@@ -568,3 +568,14 @@ class CepppRecruteur(models.Model):
             "consentement_recherche": values["consentement_recherche"],
         }
         self.sudo().write(consentement_values)
+
+    @api.multi
+    def update_recruteur_preference_portal(self, values):
+        preference_values = {
+            "mode_communication_privilegie": [
+                (6, 0, values["mode_communication_privilegie"])
+            ],
+            "disponibilite": [(6, 0, values["disponibilite"])],
+            "disponibilite_not": [(6, 0, values["disponibilite_not"])],
+        }
+        self.sudo().write(preference_values)

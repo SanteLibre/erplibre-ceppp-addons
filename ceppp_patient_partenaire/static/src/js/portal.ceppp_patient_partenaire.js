@@ -202,6 +202,46 @@ odoo.define(
             return false;
         });
 
+        $('.modifier_preference_confirm').on('click', function () {
+            var $btn = $(this);
+            $btn.prop('disabled', true);
+
+            var selectedModeCommPriviIds = [];
+            $('.modifier_preference_form .mode_communication_privilegie:checked').each(function () {
+                // Ajout de l'ID de la checkbox au tableau
+                selectedModeCommPriviIds.push(parseInt($(this).val()));
+            });
+
+            var selectedDispoIds = [];
+            $('.modifier_preference_form .disponibilite:checked').each(function () {
+                // Ajout de l'ID de la checkbox au tableau
+                selectedDispoIds.push(parseInt($(this).val()));
+            });
+
+            var selectedNotDispoIds = [];
+            $('.modifier_preference_form .disponibilite_not:checked').each(function () {
+                // Ajout de l'ID de la checkbox au tableau
+                selectedNotDispoIds.push(parseInt($(this).val()));
+            });
+
+            rpc.query({
+                model: 'ceppp.recruteur',
+                method: 'update_recruteur_preference_portal',
+                args: [[parseInt($('.modifier_preference_form .ceppp_recruteur_id').val())], {
+                    mode_communication_privilegie: selectedModeCommPriviIds,
+                    disponibilite: selectedDispoIds,
+                    disponibilite_not: selectedNotDispoIds,
+                }],
+            })
+                .fail(function () {
+                    $btn.prop('disabled', false);
+                })
+                .done(function () {
+                    window.location.reload();
+                });
+            return false;
+        });
+
         $('.modifier_maladie_confirm').on('click', function () {
             var $btn = $(this);
             $btn.prop('disabled', true);

@@ -40,16 +40,16 @@
                     <!--                        Modifier mes consentements-->
                     <!--                    </button>-->
                     <!--                    <br />-->
-                    <i class="fa fa-check" t-if="consentement_notification" />
-                    <i class="fa fa-times" t-if="not consentement_notification" />
+                    <i class="fa fa-check" t-if="ceppp_recruteur.consentement_notification" />
+                    <i class="fa fa-times" t-if="not ceppp_recruteur.consentement_notification" />
                     Notification
                     <br />
-                    <i class="fa fa-check" t-if="consentement_recrutement" />
-                    <i class="fa fa-times" t-if="not consentement_recrutement" />
+                    <i class="fa fa-check" t-if="ceppp_recruteur.consentement_recrutement" />
+                    <i class="fa fa-times" t-if="not ceppp_recruteur.consentement_recrutement" />
                     Recrutement
                     <br />
-                    <i class="fa fa-check" t-if="consentement_recherche" />
-                    <i class="fa fa-times" t-if="not consentement_recherche" />
+                    <i class="fa fa-check" t-if="ceppp_recruteur.consentement_recherche" />
+                    <i class="fa fa-times" t-if="not ceppp_recruteur.consentement_recherche" />
                     Recherche
                 </div>
                 <div>
@@ -80,7 +80,7 @@
                                         type="checkbox"
                                         class="o_website_form_input notification"
                                         id="check_consentement_notification"
-                                        t-att-checked="consentement_notification"
+                                        t-att-checked="ceppp_recruteur.consentement_notification"
                                     />
                                     <b>Notifications</b>
                                     J'aimerais être informé des activités de
@@ -90,7 +90,7 @@
                                         type="checkbox"
                                         class="o_website_form_input recrutement"
                                         id="check_consentement_recrutement"
-                                        t-att-checked="consentement_recrutement"
+                                        t-att-checked="ceppp_recruteur.consentement_recrutement"
                                     />
                                     <b>Recrutement</b>
                                     J'aimerais être contacté pour être
@@ -101,7 +101,7 @@
                                         type="checkbox"
                                         class="o_website_form_input recherche"
                                         id="check_consentement_recherche"
-                                        t-att-checked="consentement_recherche"
+                                        t-att-checked="ceppp_recruteur.consentement_recherche"
                                     />
                                     <b>Recherche</b>
                                     J'aimerais que mes données anonymisées soient utilisées
@@ -116,6 +116,139 @@
                                     <button
                                         type="button"
                                         class="btn btn-default modifier_consentement_annuler"
+                                        data-dismiss="modal"
+                                    >
+                                        Annuler
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <h4>
+                        Mes préférences
+                        <a
+                            role="button"
+                            href="#"
+                            data-toggle="modal"
+                            data-target=".modal_modifier_preference"
+                            class="btn btn-sm btn-link"
+                        >
+                            <!--                            <span class="badge badge-secondary badge-pill">!</span>-->
+                            <!--                            <i class="fa fa-exclamation-triangle btn-secondary" />-->
+                            <i class="fa fa-pencil" />
+                            Modifier
+                        </a>
+                    </h4>
+                    <hr class="mt-1 mb-0" />
+                </div>
+                <div>
+                    <div class="modal fade modal_modifier_preference" role="form" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <form
+                                method="POST"
+                                class="js_accept_json modal-content js_website_submit_form modifier_preference_form"
+                            >
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                <input
+                                    type="hidden"
+                                    name="ceppp_recruteur_id"
+                                    class="ceppp_recruteur_id"
+                                    t-att-value="ceppp_recruteur.id"
+                                />
+                                <div class="modal-header">
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-hidden="true"
+                                    >&amp;times;</button>
+                                    <h4 class="modal-title">Modifier ses préférences</h4>
+                                </div>
+                                <div class="modal-body" id="sign-dialog">
+                                    <div class="form-group col-xl-6">
+                                        <fieldset>
+                                            <label class="col-form-label" for="mode_communication_privilegie">
+                                                Mode de communication privilégié
+                                            </label>
+                                            <t t-foreach="all_mode_communication_privilegie" t-as="dom">
+                                                <div>
+                                                    <input
+                                                        type="checkbox"
+                                                        class="o_website_form_input mode_communication_privilegie"
+                                                        name="mode_communication_privilegie"
+                                                        t-att-id="'mode_communication_privilegie_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-value="dom.id"
+                                                        t-att-checked="dom.id in ceppp_recruteur.mode_communication_privilegie.ids"
+                                                    />
+                                                    <label
+                                                        t-att-for="'mode_communication_privilegie_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-string="dom.name"
+                                                    >
+                                                        <t t-esc="dom.name" />
+                                                    </label>
+                                                </div>
+                                            </t>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-group col-xl-6">
+                                        <fieldset>
+                                            <label class="col-form-label" for="disponibilite">Disponibilités</label>
+                                            <t t-foreach="all_disponibilite" t-as="dom">
+                                                <div>
+                                                    <input
+                                                        type="checkbox"
+                                                        class="o_website_form_input disponibilite"
+                                                        name="disponibilite"
+                                                        t-att-id="'disponibilite_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-value="dom.id"
+                                                        t-att-checked="dom.id in ceppp_recruteur.disponibilite.ids"
+                                                    />
+                                                    <label
+                                                        t-att-for="'disponibilite_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-string="dom.name"
+                                                    >
+                                                        <t t-esc="dom.name" />
+                                                    </label>
+                                                </div>
+                                            </t>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-group col-xl-6">
+                                        <fieldset>
+                                            <label class="col-form-label" for="disponibilite_not">
+                                                Indisponibilités
+                                            </label>
+                                            <t t-foreach="all_disponibilite" t-as="dom">
+                                                <div>
+                                                    <input
+                                                        type="checkbox"
+                                                        class="o_website_form_input disponibilite_not"
+                                                        name="disponibilite_not"
+                                                        t-att-id="'disponibilite_not_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-value="dom.id"
+                                                        t-att-checked="dom.id in ceppp_recruteur.disponibilite_not.ids"
+                                                    />
+                                                    <label
+                                                        t-att-for="'disponibilite_not_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-string="dom.name"
+                                                    >
+                                                        <t t-esc="dom.name" />
+                                                    </label>
+                                                </div>
+                                            </t>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button t-attf-class="btn btn-primary modifier_preference_confirm">
+                                        Confirmer
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-default modifier_preference_annuler"
                                         data-dismiss="modal"
                                     >
                                         Annuler
