@@ -79,6 +79,10 @@ class CepppPatientPartenaireController(CustomerPortal):
         values["all_disponibilite"] = request.env[
             "ceppp.disponibilite"
         ].search([])
+        values["all_maladie"] = request.env["ceppp.maladie"].search([])
+        values["all_chapitre_maladie"] = request.env[
+            "ceppp.chapitre_maladie"
+        ].search([])
         values["all_mode_communication_privilegie"] = request.env[
             "ceppp.mode_communication_privilegie"
         ].search([])
@@ -558,9 +562,15 @@ class CepppPatientPartenaireController(CustomerPortal):
         self, ceppp_maladie_personne_affectee, access_token, **kwargs
     ):
         relation = http.request.env["ceppp.relation_proche"].search([])
+        maladie_autocomplete = "; ".join(
+            [a.nom for a in ceppp_maladie_personne_affectee.maladie]
+        )
+        if maladie_autocomplete:
+            maladie_autocomplete += "; "
         values = {
             "page_name": "ceppp_maladie_personne_affectee",
             "ceppp_maladie_personne_affectee": ceppp_maladie_personne_affectee,
+            "maladie_autocomplete": maladie_autocomplete,
             "user": request.env.user,
             "ceppp_maladie_personne_affectee_relation": relation,
         }

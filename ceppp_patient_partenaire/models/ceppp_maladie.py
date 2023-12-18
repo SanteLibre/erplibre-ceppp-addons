@@ -15,3 +15,7 @@ class CepppMaladie(models.Model):
     )
 
     sequence = fields.Integer(default=1, help="Order the list")
+
+    @api.multi
+    def get_maladies_by_chapter_json(self, arg1):
+        return ""

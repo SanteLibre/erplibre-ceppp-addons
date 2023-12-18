@@ -76,6 +76,7 @@
         <field name="model">ceppp.maladie</field>
         <field name="arch" type="xml">
             <search string="Ceppp maladie">
+                <field name="nom" string="Nom" />
                 <filter domain="[('nom','!=',False)]" name="nom" string="Nom" />
                 <filter
                     domain="[('chapitre_maladie_id','!=',False)]"

@@ -10,6 +10,90 @@ odoo.define(
         let base = require("web_editor.base");
         let context = require("web_editor.context");
 
+        // Autocomplete
+        const element = document.getElementById("maladie");
+        if (element) {
+            const autoCompleteJS = new autoComplete({
+                selector: "#maladie",
+                data: {
+                    cache: true,
+                    src: async (query) => {
+                      try {
+                        // Fetch Data from external Source
+                        const source = await rpc.query({
+                            route: "/ceppp_maladie_list_autocomplete",
+                            params: {
+                                query: query,
+                            },
+                        });
+                        // Data should be an array of `Objects` or `Strings`
+                        const data = await source;
+                        console.debug(data);
+                        return data;
+                      } catch (error) {
+                        console.error(error);
+                        return error;
+                      }
+                    },
+                },
+                query: (query) => {
+                    // Split query into array
+                    const querySplit = query.split(";");
+                    // Get last query value index
+                    const lastQuery = querySplit.length - 1;
+                    // Trim new query
+                    const newQuery = querySplit[lastQuery].trim();
+
+                    return newQuery;
+                },
+                events: {
+                    input: {
+                        selection(event) {
+                            const feedback = event.detail;
+                            const input = autoCompleteJS.input;
+                            // Trim selected Value
+                            const selection = feedback.selection.value.trim();
+                            // Split query into array and trim each value
+                            const query = input.value.split(";").map(item => item.trim());
+                            // Remove last query
+                            query.pop();
+                            // Add selected value
+                            query.push(selection);
+                            // Replace Input value with the new query
+                            input.value = query.join("; ") + "; ";
+                        },
+                        focus() {
+                            const inputValue = autoCompleteJS.input.value;
+                            if (inputValue.length) autoCompleteJS.start();
+                        },
+                        open() {
+                            // Dynamic position
+                            const position =
+                                autoCompleteJS.input.getBoundingClientRect().bottom + autoCompleteJS.list.getBoundingClientRect().height >
+                                (window.innerHeight || document.documentElement.clientHeight);
+
+                            if (position) {
+                                autoCompleteJS.list.style.bottom = autoCompleteJS.input.offsetHeight + 8 + "px";
+                            } else {
+                                autoCompleteJS.list.style.bottom = -autoCompleteJS.list.offsetHeight - 8 + "px";
+                            }
+                        },
+                    }
+                },
+                resultItem: {
+                    tag: "li",
+                    class: "autoComplete_result",
+                    element: (item, data) => {
+                        item.setAttribute("data-parent", "food-item");
+                    },
+                    highlight: "autoComplete_highlight",
+                    selected: "autoComplete_selected"
+                },
+//                searchEngine: "loose",
+//                searchEngine: "strict",
+            });
+        }
+
         // Support autre rôle
         function check_role_autre () {
             let n = $("input[id^='role_Autre_']:checked").length;
@@ -256,6 +340,7 @@ odoo.define(
                 model: 'ceppp.maladie_personne_affectee',
                 method: 'update_maladie_portal',
                 args: [[parseInt($('.modifier_maladie_form .ceppp_maladie_id').val())], {
+                    maladie: $('.modifier_maladie_form .maladie').val(),
                     detail_maladie: $('.modifier_maladie_form .detail_maladie').val(),
                     relation: selectedRelationIds,
                     relation_autre: $('.modifier_maladie_form .relation_autre').val(),
