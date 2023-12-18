@@ -109,10 +109,21 @@ class CepppMaladiePersonneAffectee(models.Model):
     @api.multi
     def update_maladie_portal(self, values):
         relation = [(6, 0, [int(a) for a in values["relation"]])]
-        # maladie = [(6, 0, [int(a) for a in values["maladie"]])]
         maladie_values = {
             "detail_maladie": values["detail_maladie"],
             "relation": relation,
             "relation_autre": values["relation_autre"],
         }
+        txt_maladie = values.get("maladie")
+        if txt_maladie:
+            lst_search = [
+                ("nom", "=", a.strip())
+                for a in txt_maladie.strip().strip(";").split(";")
+            ]
+            if lst_search:
+                lst_maladie_search = ["|"] * (len(lst_search) - 1) + lst_search
+                maladies_ids = self.env["ceppp.maladie"].search(
+                    lst_maladie_search
+                )
+                maladie_values["maladie"] = [(6, 0, maladies_ids.ids)]
         self.write(maladie_values)
