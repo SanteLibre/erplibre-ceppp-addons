@@ -42,6 +42,18 @@ class CepppRecruteur(models.Model):
         help="Jour de la semaine de non-disponible",
     )
 
+    consentement_file = fields.Many2one(
+        string="Fichier de consentement",
+        comodel_name="ir.attachment",
+        domain=(
+            "[('res_model', '=', 'ceppp.recruteur'), ('res_id', '=', id)]"
+        ),
+        help="Upload a Consentement file. Supported PDF."
+    )
+    # consentement_file = fields.Binary(
+    #     string='Fichier de consentement',
+    #     help="Upload a Consentement file. Supported PDF.")
+
     image = fields.Binary(
         related="patient_partner_id.image",
         readonly=True,
