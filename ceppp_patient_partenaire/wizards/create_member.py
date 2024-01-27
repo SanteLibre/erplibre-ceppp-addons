@@ -86,7 +86,7 @@ class CreateMember(models.TransientModel):
         res_users_data = {
             "partner_id": partner_id.id,
             "login": self.email,
-            "password": "demo",
+            # "password": "demo",
             "signature": f"""<span>
                 --
                 <br />
