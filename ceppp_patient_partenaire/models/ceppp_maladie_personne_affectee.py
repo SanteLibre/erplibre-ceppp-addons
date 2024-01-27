@@ -12,6 +12,8 @@ class CepppMaladiePersonneAffectee(models.Model):
         string="Maladies",
     )
 
+    autre_maladie = fields.Char(string="Autres maladies", help="Les maladies qui ne sont pas reconnues dans la liste.")
+
     detail_maladie = fields.Text(
         string="Détails sur la maladie",
     )
@@ -114,11 +116,12 @@ class CepppMaladiePersonneAffectee(models.Model):
             "relation": relation,
             "relation_autre": values["relation_autre"],
         }
-        txt_maladie = values.get("maladie")
-        if txt_maladie:
+        if "maladie" in values.keys():
+            txt_maladie = values.get("maladie")
+            lst_txt_maladie = txt_maladie.strip().strip(";").split(";")
             lst_search = [
                 ("nom", "=", a.strip())
-                for a in txt_maladie.strip().strip(";").split(";")
+                for a in lst_txt_maladie
             ]
             if lst_search:
                 lst_maladie_search = ["|"] * (len(lst_search) - 1) + lst_search
@@ -126,4 +129,11 @@ class CepppMaladiePersonneAffectee(models.Model):
                     lst_maladie_search
                 )
                 maladie_values["maladie"] = [(6, 0, maladies_ids.ids)]
+                # Compute not found fields
+                lst_not_found = [a.strip() for a in lst_txt_maladie if a not in [b.nom for b in maladies_ids]]
+                maladie_values["autre_maladie"] = "; ".join(lst_not_found)
+            else:
+                # Erase it
+                maladie_values["maladie"] = [(5,)]
+                maladie_values["autre_maladie"] = ""
         self.write(maladie_values)

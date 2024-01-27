@@ -567,6 +567,8 @@ class CepppPatientPartenaireController(CustomerPortal):
         )
         if maladie_autocomplete:
             maladie_autocomplete += "; "
+        if ceppp_maladie_personne_affectee.autre_maladie:
+            maladie_autocomplete += ceppp_maladie_personne_affectee.autre_maladie
         values = {
             "page_name": "ceppp_maladie_personne_affectee",
             "ceppp_maladie_personne_affectee": ceppp_maladie_personne_affectee,

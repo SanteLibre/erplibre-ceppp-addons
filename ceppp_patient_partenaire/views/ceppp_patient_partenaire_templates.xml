@@ -1089,7 +1089,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label hdd4" for="detail_maladie">
-                                                        Liste de vos maladies et votre expérience :
+                                                        Votre expérience :
                                                     </label>
                                                     <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input detail_maladie" name="detail_maladie" style="min-height: 120px"><t t-esc="ceppp_maladie_personne_affectee.detail_maladie"/></textarea><!-- prettier-ignore-end -->
                                                 </div>
@@ -1151,9 +1151,13 @@
                             <b>Maladies :</b>
                             <t t-foreach="ceppp_maladie_personne_affectee.maladie" t-as="mal">
                                 <!-- prettier-ignore-start -->
-                                <a t-attf-href="/my/ceppp_maladie/#{mal.id}" t-field="mal.nom" /><t t-if="not mal_last">, </t>
+                                <a t-attf-href="/my/ceppp_maladie/#{mal.id}" t-field="mal.nom" /><t t-if="not mal_last">; </t>
                                 <!-- prettier-ignore-end -->
                             </t>
+                            <t t-if="ceppp_maladie_personne_affectee.maladie and ceppp_maladie_personne_affectee.autre_maladie">
+                                ;
+                            </t>
+                            <span t-field="ceppp_maladie_personne_affectee.autre_maladie" />
                         </div>
                         <!--                        <div class="col-12" style="display:none">-->
                         <!--                            <b>Recruteur:</b>-->
