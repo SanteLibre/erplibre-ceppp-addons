@@ -370,6 +370,18 @@ odoo.define(
         check_formation_autre();
     });
 
+    $('.modal_modifier_consentement').on('hide.bs.modal', function (e) {
+        // Force reload information, the code will be more simple
+        // bug occur, the data is not restored
+        location.reload(true);
+    });
+
+    $('.modal_modifier_preference').on('hide.bs.modal', function (e) {
+        // Force reload information, the code will be more simple
+        // bug occur, the data is not restored
+        location.reload(true);
+    });
+
     function datetimepicker_load() {
             _.each($(".input-group.date"), function (date_field) {
                 let minDate =

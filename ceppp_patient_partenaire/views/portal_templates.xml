@@ -52,13 +52,13 @@
                     <i class="fa fa-times" t-if="not ceppp_recruteur.consentement_recherche" />
                     Recherche
                 </div>
-                <div>
-                    <div class="modal fade modal_modifier_consentement" role="form" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <form
-                                method="POST"
-                                class="js_accept_json modal-content js_website_submit_form modifier_consentement_form"
-                            >
+                <div class="modal fade modal_modifier_consentement" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <form
+                            method="POST"
+                            class="js_accept_json modal-content js_website_submit_form modifier_consentement_form"
+                        >
+                            <div class="modal-content">
                                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                                 <input
                                     type="hidden"
@@ -66,16 +66,19 @@
                                     class="ceppp_recruteur_id"
                                     t-att-value="ceppp_recruteur.id"
                                 />
-                                <div class="modal-header">
-                                    <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-hidden="true"
-                                    >&amp;times;</button>
+                                <input
+                                    type="hidden"
+                                    name="ceppp_recruteur_copy"
+                                    class="ceppp_recruteur_copy"
+                                    t-att-value="ceppp_recruteur_copy"
+                                />
+                                <header class="modal-header">
                                     <h4 class="modal-title">Modifier son consentement</h4>
-                                </div>
-                                <div class="modal-body" id="sign-dialog">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-label="Close">&amp;times;</span>
+                                    </button>
+                                </header>
+                                <main class="modal-body" id="sign-dialog">
                                     <input
                                         type="checkbox"
                                         class="o_website_form_input notification"
@@ -108,7 +111,7 @@
                                     <u>pour la recherche sur les pratiques</u>
                                     de partenariat avec les patients, les proches et le public.
                                     <br />
-                                </div>
+                                </main>
                                 <div class="modal-footer">
                                     <button t-attf-class="btn btn-primary modifier_consentement_confirm">
                                         Confirmer
@@ -121,8 +124,8 @@
                                         Annuler
                                     </button>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <br />
@@ -144,13 +147,13 @@
                     </h4>
                     <hr class="mt-1 mb-0" />
                 </div>
-                <div>
-                    <div class="modal fade modal_modifier_preference" role="form" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <form
-                                method="POST"
-                                class="js_accept_json modal-content js_website_submit_form modifier_preference_form"
-                            >
+                <div class="modal fade modal_modifier_preference" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <form
+                            method="POST"
+                            class="js_accept_json modal-content js_website_submit_form modifier_preference_form"
+                        >
+                            <div class="modal-content">
                                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                                 <input
                                     type="hidden"
@@ -158,16 +161,13 @@
                                     class="ceppp_recruteur_id"
                                     t-att-value="ceppp_recruteur.id"
                                 />
-                                <div class="modal-header">
-                                    <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-hidden="true"
-                                    >&amp;times;</button>
+                                <header class="modal-header">
                                     <h4 class="modal-title">Modifier ses préférences</h4>
-                                </div>
-                                <div class="modal-body" id="sign-dialog">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-label="Close">&amp;times;</span>
+                                    </button>
+                                </header>
+                                <main class="modal-body" id="sign-dialog">
                                     <div class="form-group col-xl-6">
                                         <fieldset>
                                             <label class="col-form-label" for="mode_communication_privilegie">
@@ -241,21 +241,21 @@
                                             </t>
                                         </fieldset>
                                     </div>
-                                </div>
+                                </main>
                                 <div class="modal-footer">
                                     <button t-attf-class="btn btn-primary modifier_preference_confirm">
                                         Confirmer
                                     </button>
                                     <button
                                         type="button"
-                                        class="btn btn-default modifier_preference_annuler"
+                                        class="close"
                                         data-dismiss="modal"
                                     >
                                         Annuler
                                     </button>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </t>
