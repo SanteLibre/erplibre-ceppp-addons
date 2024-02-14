@@ -66,26 +66,26 @@ odoo.define(
                             const inputValue = autoCompleteJS.input.value;
                             if (inputValue.length) autoCompleteJS.start();
                         },
-                        open() {
-                            // Dynamic position
-                            const position =
-                                autoCompleteJS.input.getBoundingClientRect().bottom + autoCompleteJS.list.getBoundingClientRect().height >
-                                (window.innerHeight || document.documentElement.clientHeight);
-
-                            if (position) {
-                                autoCompleteJS.list.style.bottom = autoCompleteJS.input.offsetHeight + 8 + "px";
-                            } else {
-                                autoCompleteJS.list.style.bottom = -autoCompleteJS.list.offsetHeight - 8 + "px";
-                            }
-                        },
+//                        open() {
+//                            // Dynamic position
+//                            const position =
+//                                autoCompleteJS.input.getBoundingClientRect().bottom + autoCompleteJS.list.getBoundingClientRect().height >
+//                                (window.innerHeight || document.documentElement.clientHeight);
+//
+//                            if (position) {
+//                                autoCompleteJS.list.style.bottom = autoCompleteJS.input.offsetHeight + 8 + "px";
+//                            } else {
+//                                autoCompleteJS.list.style.bottom = -autoCompleteJS.list.offsetHeight - 8 + "px";
+//                            }
+//                        },
                     }
                 },
                 resultItem: {
                     tag: "li",
                     class: "autoComplete_result",
-                    element: (item, data) => {
-                        item.setAttribute("data-parent", "food-item");
-                    },
+//                    element: (item, data) => {
+//                        item.setAttribute("data-parent", "food-item");
+//                    },
                     highlight: "autoComplete_highlight",
                     selected: "autoComplete_selected"
                 },
