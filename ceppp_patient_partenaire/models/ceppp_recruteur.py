@@ -48,6 +48,7 @@ class CepppRecruteur(models.Model):
         domain=(
             "[('res_model', '=', 'ceppp.recruteur'), ('res_id', '=', id)]"
         ),
+        track_visibility="onchange",
         help="Upload a Consentement file. Supported PDF."
     )
     # consentement_file = fields.Binary(
