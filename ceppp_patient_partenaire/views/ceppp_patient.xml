@@ -28,9 +28,6 @@
                             <group>
                                 <field name="disponibilite" widget="many2many_tags" />
                                 <field name="disponibilite_not" widget="many2many_tags" />
-                                <field name="consentement_notification" string="Notification" />
-                                <field name="consentement_recrutement" string="Recrutement" />
-                                <field name="consentement_recherche" string="Recherche" />
                             </group>
                         </page>
                         <page name='savoir_experientiel' string="Savoirs expérientiels">
