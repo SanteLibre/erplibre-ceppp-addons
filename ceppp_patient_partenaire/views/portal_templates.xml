@@ -51,6 +51,7 @@
                     <i class="fa fa-check" t-if="ceppp_recruteur.consentement_recherche" />
                     <i class="fa fa-times" t-if="not ceppp_recruteur.consentement_recherche" />
                     Recherche
+                    <div t-if="ceppp_recruteur.consentement_file"><a t-att-href="ceppp_recruteur.consentement_file.website_url">Formulaire d'information et de consentement</a></div>
                 </div>
                 <div class="modal fade modal_modifier_consentement" role="dialog" aria-hidden="true">
                     <div class="modal-dialog">
