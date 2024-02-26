@@ -139,7 +139,11 @@
                                 <field name="consentement_notification" string="Notification" />
                                 <field name="consentement_recrutement" string="Recrutement" />
                                 <field name="consentement_recherche" string="Recherche" />
-                                <field name="consentement_file" string="Fichier consentement" options="{'no_create': True}" />
+                                <field
+                                    name="consentement_file"
+                                    string="Fichier consentement"
+                                    options="{'no_create': True}"
+                                />
                             </group>
                         </page>
                         <page name='competences' string="Compétences">

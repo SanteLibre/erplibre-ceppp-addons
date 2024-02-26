@@ -1,6 +1,5 @@
 from odoo import SUPERUSER_ID, _, api, fields, models, tools
-from odoo.addons.bus.models.bus_presence import AWAY_TIMER
-from odoo.addons.bus.models.bus_presence import DISCONNECTION_TIMER
+from odoo.addons.bus.models.bus_presence import AWAY_TIMER, DISCONNECTION_TIMER
 
 
 class ResPartner(models.Model):
@@ -88,23 +87,31 @@ class ResPartner(models.Model):
 
     @api.model
     def im_search(self, name, limit=20):
-        """ Search partner with a name and return its id, name and im_status.
-            Note : the user must be logged
-            :param name : the partner name to search
-            :param limit : the limit of result to return
+        """Search partner with a name and return its id, name and im_status.
+        Note : the user must be logged
+        :param name : the partner name to search
+        :param limit : the limit of result to return
         """
         # This method is supposed to be used only in the context of channel creation or
         # extension via an invite. As both of these actions require the 'create' access
         # right, we check this specific ACL.
-        if self.env['mail.channel'].check_access_rights('create', raise_exception=False):
-            name = '%' + name + '%'
+        if self.env["mail.channel"].check_access_rights(
+            "create", raise_exception=False
+        ):
+            name = "%" + name + "%"
             excluded_partner_ids = [self.env.user.partner_id.id]
             # ADDED for CEPPP
             if self.env.user.partner_id.ceppp_entity == "patient":
                 return {}
             if self.env.user.partner_id.ceppp_entity == "recruteur":
-                res_partner_limit_ids = self.env['res.partner'].search(
-                    [('ceppp_entity', 'not in', ['recruteur', 'administrateur'])]
+                res_partner_limit_ids = self.env["res.partner"].search(
+                    [
+                        (
+                            "ceppp_entity",
+                            "not in",
+                            ["recruteur", "administrateur"],
+                        )
+                    ]
                 )
                 # res_partner_limit_ids = self.env['res.partner'].search(
                 #     ['|', ('ceppp_entity', 'not in', ['recruteur', 'administrateur']),
@@ -112,7 +119,8 @@ class ResPartner(models.Model):
                 # )
                 excluded_partner_ids += res_partner_limit_ids.ids
             # END ADDED for CEPPP
-            self.env.cr.execute("""
+            self.env.cr.execute(
+                """
                 SELECT
                     U.id as user_id,
                     P.id as id,
@@ -129,7 +137,15 @@ class ResPartner(models.Model):
                     AND P.id NOT IN %s
                     AND U.active = 't'
                 LIMIT %s
-            """, ("%s seconds" % DISCONNECTION_TIMER, "%s seconds" % AWAY_TIMER, name, tuple(excluded_partner_ids), limit))
+            """,
+                (
+                    "%s seconds" % DISCONNECTION_TIMER,
+                    "%s seconds" % AWAY_TIMER,
+                    name,
+                    tuple(excluded_partner_ids),
+                    limit,
+                ),
+            )
             return self.env.cr.dictfetchall()
         else:
             return {}

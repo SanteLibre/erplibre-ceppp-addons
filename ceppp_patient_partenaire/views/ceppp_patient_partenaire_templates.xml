@@ -1154,7 +1154,9 @@
                                 <a t-attf-href="/my/ceppp_maladie/#{mal.id}" t-field="mal.nom" /><t t-if="not mal_last">; </t>
                                 <!-- prettier-ignore-end -->
                             </t>
-                            <t t-if="ceppp_maladie_personne_affectee.maladie and ceppp_maladie_personne_affectee.autre_maladie">
+                            <t
+                                t-if="ceppp_maladie_personne_affectee.maladie and ceppp_maladie_personne_affectee.autre_maladie"
+                            >
                                 ;
                             </t>
                             <span t-field="ceppp_maladie_personne_affectee.autre_maladie" />
