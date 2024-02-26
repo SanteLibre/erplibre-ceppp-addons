@@ -51,9 +51,6 @@ class CepppRecruteur(models.Model):
         track_visibility="onchange",
         help="Upload a Consentement file. Supported PDF."
     )
-    # consentement_file = fields.Binary(
-    #     string='Fichier de consentement',
-    #     help="Upload a Consentement file. Supported PDF.")
 
     image = fields.Binary(
         related="patient_partner_id.image",
@@ -470,6 +467,18 @@ class CepppRecruteur(models.Model):
         if copy_vals:
             self.patient_partner_id.sudo().write(copy_vals)
         return super(CepppRecruteur, self).write(vals)
+
+    @api.multi
+    @api.returns("mail.message", lambda value: value.id)
+    def message_post(self, **kwargs):
+        status = super(
+            CepppRecruteur, self.with_context(mail_create_nosubscribe=True)
+        ).message_post(**kwargs)
+        if status.attachment_ids:
+            for rec in self:
+                if not rec.consentement_file:
+                    rec.consentement_file = status.attachment_ids[0].id
+        return status
 
     @api.depends("recruteur_partner_id")
     def _compute_recruteur_user_id(self):
