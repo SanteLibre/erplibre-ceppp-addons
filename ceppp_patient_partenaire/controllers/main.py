@@ -416,10 +416,7 @@ class CepppPatientPartenaireController(http.Controller):
         if "maladie" in kw.keys():
             txt_maladie = kw.get("maladie")
             lst_txt_maladie = txt_maladie.strip().strip(";").split(";")
-            lst_search = [
-                ("nom", "=", a.strip())
-                for a in lst_txt_maladie
-            ]
+            lst_search = [("nom", "=", a.strip()) for a in lst_txt_maladie]
             if lst_search:
                 lst_maladie_search = ["|"] * (len(lst_search) - 1) + lst_search
                 maladies_ids = http.request.env["ceppp.maladie"].search(
@@ -427,7 +424,11 @@ class CepppPatientPartenaireController(http.Controller):
                 )
                 vals["maladie"] = [(6, 0, maladies_ids.ids)]
                 # Compute not found fields
-                lst_not_found = [a.strip() for a in lst_txt_maladie if a.strip() not in [b.nom.strip() for b in maladies_ids]]
+                lst_not_found = [
+                    a.strip()
+                    for a in lst_txt_maladie
+                    if a.strip() not in [b.nom.strip() for b in maladies_ids]
+                ]
                 vals["autre_maladie"] = "; ".join(lst_not_found)
             else:
                 # Erase it

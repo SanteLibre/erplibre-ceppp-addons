@@ -45,11 +45,9 @@ class CepppRecruteur(models.Model):
     consentement_file = fields.Many2one(
         string="Fichier de consentement",
         comodel_name="ir.attachment",
-        domain=(
-            "[('res_model', '=', 'ceppp.recruteur'), ('res_id', '=', id)]"
-        ),
+        domain="[('res_model', '=', 'ceppp.recruteur'), ('res_id', '=', id)]",
         track_visibility="onchange",
-        help="Upload a Consentement file. Supported PDF."
+        help="Upload a Consentement file. Supported PDF.",
     )
 
     image = fields.Binary(
