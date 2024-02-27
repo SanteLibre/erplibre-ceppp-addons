@@ -74,6 +74,35 @@ class ResPartner(models.Model):
     def _compute_display_name(self):
         super(ResPartner, self)._compute_display_name()
 
+    @api.model
+    def open_partner_discuss(self, partners_to):
+        # channel_id = self.env["mail.channel"].channel_get([self.id])
+        dct_channel_id = self.env["mail.channel"].channel_get(partners_to)
+        active_id = dct_channel_id.get("id")
+        channel_id = self.env["mail.channel"].browse(active_id)
+        menu_id = self.env.ref("mail.menu_root_discuss")
+        action_id = self.env.ref("mail.action_discuss")
+        diff_time = fields.datetime.now() - channel_id.create_date
+        is_new = diff_time.seconds < 10
+        value = {
+            "channel_id": active_id,
+            "menu_id": menu_id.id,
+            "action_id": action_id.id,
+            "is_new": is_new,
+        }
+        if is_new:
+            mcp_id = self.env["mail.channel.partner"].search(
+                [
+                    ("channel_id", "=", active_id),
+                    ("partner_id", "=", self.env.user.partner_id.id),
+                ],
+                limit=1,
+            )
+            # Force to show it
+            if mcp_id:
+                mcp_id.is_pinned = True
+        return value
+
     def open_fiche_recruteur(self):
         if self.patient_partner_ids:
             return {
