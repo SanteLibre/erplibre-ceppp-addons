@@ -15,38 +15,55 @@
             <t t-if="is_patient and ceppp_recruteur">
                 <br />
                 <div>
-                    <h4>Mon consentement</h4>
+                    <h4>
+                        Mes consentements
+                        <a
+                            role="button"
+                            href="#"
+                            data-toggle="modal"
+                            data-target=".modal_modifier_consentement"
+                            class="btn btn-sm btn-link"
+                        >
+                            <i class="fa fa-pencil" />
+                            Modifier
+                        </a>
+                    </h4>
                     <hr class="mt-1 mb-0" />
-                    <button
-                        type="button"
-                        name='modifier_consentement'
-                        data-toggle="modal"
-                        data-target=".modal_modifier_consentement"
-                        class="btn btn-sm btn-primary"
-                        style="margin-bottom: 10px;"
-                    >
-                        Modifier mes consentements
-                    </button>
-                    <br />
-                    <i class="fa fa-check" t-if="consentement_notification" />
-                    <i class="fa fa-times" t-if="not consentement_notification" />
+                    <!--                    <button-->
+                    <!--                        type="button"-->
+                    <!--                        name='modifier_consentement'-->
+                    <!--                        data-toggle="modal"-->
+                    <!--                        data-target=".modal_modifier_consentement"-->
+                    <!--                        class="btn btn-sm btn-primary"-->
+                    <!--                        style="margin-bottom: 10px;"-->
+                    <!--                    >-->
+                    <!--                        Modifier mes consentements-->
+                    <!--                    </button>-->
+                    <!--                    <br />-->
+                    <i class="fa fa-check" t-if="ceppp_recruteur.consentement_notification" />
+                    <i class="fa fa-times" t-if="not ceppp_recruteur.consentement_notification" />
                     Notification
                     <br />
-                    <i class="fa fa-check" t-if="consentement_recrutement" />
-                    <i class="fa fa-times" t-if="not consentement_recrutement" />
+                    <i class="fa fa-check" t-if="ceppp_recruteur.consentement_recrutement" />
+                    <i class="fa fa-times" t-if="not ceppp_recruteur.consentement_recrutement" />
                     Recrutement
                     <br />
-                    <i class="fa fa-check" t-if="consentement_recherche" />
-                    <i class="fa fa-times" t-if="not consentement_recherche" />
+                    <i class="fa fa-check" t-if="ceppp_recruteur.consentement_recherche" />
+                    <i class="fa fa-times" t-if="not ceppp_recruteur.consentement_recherche" />
                     Recherche
+                    <div t-if="ceppp_recruteur.consentement_file">
+                        <a t-att-href="ceppp_recruteur.consentement_file.website_url">
+                            Formulaire d'information et de consentement
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <div class="modal fade modal_modifier_consentement" role="form" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <form
-                                method="POST"
-                                class="js_accept_json modal-content js_website_submit_form modifier_consentement_form"
-                            >
+                <div class="modal fade modal_modifier_consentement" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <form
+                            method="POST"
+                            class="js_accept_json modal-content js_website_submit_form modifier_consentement_form"
+                        >
+                            <div class="modal-content">
                                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                                 <input
                                     type="hidden"
@@ -54,34 +71,37 @@
                                     class="ceppp_recruteur_id"
                                     t-att-value="ceppp_recruteur.id"
                                 />
-                                <div class="modal-header">
-                                    <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-hidden="true"
-                                    >&amp;times;</button>
+                                <input
+                                    type="hidden"
+                                    name="ceppp_recruteur_copy"
+                                    class="ceppp_recruteur_copy"
+                                    t-att-value="ceppp_recruteur_copy"
+                                />
+                                <header class="modal-header">
                                     <h4 class="modal-title">Modifier son consentement</h4>
-                                </div>
-                                <div class="modal-body" id="sign-dialog">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-label="Close">&amp;times;</span>
+                                    </button>
+                                </header>
+                                <main class="modal-body" id="sign-dialog">
                                     <input
                                         type="checkbox"
                                         class="o_website_form_input notification"
                                         id="check_consentement_notification"
-                                        t-att-checked="consentement_notification"
+                                        t-att-checked="ceppp_recruteur.consentement_notification"
                                     />
                                     <b>Notifications</b>
-                                    . J'aimerais être informé des activités de
+                                    J'aimerais être informé des activités de
                                     partenariat (ex. colloques, projets, formations, etc.)
                                     <br />
                                     <input
                                         type="checkbox"
                                         class="o_website_form_input recrutement"
                                         id="check_consentement_recrutement"
-                                        t-att-checked="consentement_recrutement"
+                                        t-att-checked="ceppp_recruteur.consentement_recrutement"
                                     />
                                     <b>Recrutement</b>
-                                    . J'aimerais être contacté pour être
+                                    J'aimerais être contacté pour être
                                     <u>patient partenaire ou proche aidant partenaire</u>
                                     dans un projet ou un comité.
                                     <br />
@@ -89,14 +109,14 @@
                                         type="checkbox"
                                         class="o_website_form_input recherche"
                                         id="check_consentement_recherche"
-                                        t-att-checked="consentement_recherche"
+                                        t-att-checked="ceppp_recruteur.consentement_recherche"
                                     />
                                     <b>Recherche</b>
-                                    . J'aimerais que mes données anonymisées soient utilisées
+                                    J'aimerais que mes données anonymisées soient utilisées
                                     <u>pour la recherche sur les pratiques</u>
                                     de partenariat avec les patients, les proches et le public.
                                     <br />
-                                </div>
+                                </main>
                                 <div class="modal-footer">
                                     <button t-attf-class="btn btn-primary modifier_consentement_confirm">
                                         Confirmer
@@ -109,8 +129,132 @@
                                         Annuler
                                     </button>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <h4>
+                        Mes préférences
+                        <a
+                            role="button"
+                            href="#"
+                            data-toggle="modal"
+                            data-target=".modal_modifier_preference"
+                            class="btn btn-sm btn-link"
+                        >
+                            <!--                            <span class="badge badge-secondary badge-pill">!</span>-->
+                            <!--                            <i class="fa fa-exclamation-triangle btn-secondary" />-->
+                            <i class="fa fa-pencil" />
+                            Modifier
+                        </a>
+                    </h4>
+                    <hr class="mt-1 mb-0" />
+                </div>
+                <div class="modal fade modal_modifier_preference" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <form
+                            method="POST"
+                            class="js_accept_json modal-content js_website_submit_form modifier_preference_form"
+                        >
+                            <div class="modal-content">
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                <input
+                                    type="hidden"
+                                    name="ceppp_recruteur_id"
+                                    class="ceppp_recruteur_id"
+                                    t-att-value="ceppp_recruteur.id"
+                                />
+                                <header class="modal-header">
+                                    <h4 class="modal-title">Modifier ses préférences</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-label="Close">&amp;times;</span>
+                                    </button>
+                                </header>
+                                <main class="modal-body" id="sign-dialog">
+                                    <div class="form-group col-xl-6">
+                                        <fieldset>
+                                            <label class="col-form-label" for="mode_communication_privilegie">
+                                                Mode de communication privilégié
+                                            </label>
+                                            <t t-foreach="all_mode_communication_privilegie" t-as="dom">
+                                                <div>
+                                                    <input
+                                                        type="checkbox"
+                                                        class="o_website_form_input mode_communication_privilegie"
+                                                        name="mode_communication_privilegie"
+                                                        t-att-id="'mode_communication_privilegie_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-value="dom.id"
+                                                        t-att-checked="dom.id in ceppp_recruteur.mode_communication_privilegie.ids"
+                                                    />
+                                                    <label
+                                                        t-att-for="'mode_communication_privilegie_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-string="dom.name"
+                                                    >
+                                                        <t t-esc="dom.name" />
+                                                    </label>
+                                                </div>
+                                            </t>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-group col-xl-6">
+                                        <fieldset>
+                                            <label class="col-form-label" for="disponibilite">Disponibilités</label>
+                                            <t t-foreach="all_disponibilite" t-as="dom">
+                                                <div>
+                                                    <input
+                                                        type="checkbox"
+                                                        class="o_website_form_input disponibilite"
+                                                        name="disponibilite"
+                                                        t-att-id="'disponibilite_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-value="dom.id"
+                                                        t-att-checked="dom.id in ceppp_recruteur.disponibilite.ids"
+                                                    />
+                                                    <label
+                                                        t-att-for="'disponibilite_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-string="dom.name"
+                                                    >
+                                                        <t t-esc="dom.name" />
+                                                    </label>
+                                                </div>
+                                            </t>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-group col-xl-6">
+                                        <fieldset>
+                                            <label class="col-form-label" for="disponibilite_not">
+                                                Indisponibilités
+                                            </label>
+                                            <t t-foreach="all_disponibilite" t-as="dom">
+                                                <div>
+                                                    <input
+                                                        type="checkbox"
+                                                        class="o_website_form_input disponibilite_not"
+                                                        name="disponibilite_not"
+                                                        t-att-id="'disponibilite_not_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-value="dom.id"
+                                                        t-att-checked="dom.id in ceppp_recruteur.disponibilite_not.ids"
+                                                    />
+                                                    <label
+                                                        t-att-for="'disponibilite_not_' + dom.name + '_' + str(dom_index)"
+                                                        t-att-string="dom.name"
+                                                    >
+                                                        <t t-esc="dom.name" />
+                                                    </label>
+                                                </div>
+                                            </t>
+                                        </fieldset>
+                                    </div>
+                                </main>
+                                <div class="modal-footer">
+                                    <button t-attf-class="btn btn-primary modifier_preference_confirm">
+                                        Confirmer
+                                    </button>
+                                    <button type="button" class="close" data-dismiss="modal">Annuler</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </t>
@@ -129,6 +273,79 @@
         </xpath>
         <xpath expr="//label[hasclass('label-optional')]" position="attributes">
             <attribute name="class">col-form-label</attribute>
+        </xpath>
+        <xpath expr="//button[@type='submit']/.." position="before">
+            <div class="clearfix" t-if="ceppp_recruteur">
+                <hr />
+                <h4>Information socio-démographiques/pratiques</h4>
+                <div class="row">
+                    <div class="form-group col-xl-6">
+                        <fieldset>
+                            <label class="col-form-label" for="langue_parle_ecrit">Langues parlées et écrites</label>
+                            <t t-foreach="all_langue_parle_ecrit" t-as="dom">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input langue_parle_ecrit"
+                                        name="langue_parle_ecrit"
+                                        t-att-id="'langue_parle_ecrit_' + dom.nom + '_' + str(dom_index)"
+                                        t-att-value="dom.id"
+                                        t-att-checked="dom.id in ceppp_recruteur.langue_parle_ecrit.ids"
+                                    />
+                                    <label
+                                        t-att-for="'langue_parle_ecrit_' + dom.nom + '_' + str(dom_index)"
+                                        t-att-string="dom.nom"
+                                    >
+                                        <t t-esc="dom.nom" />
+                                    </label>
+                                </div>
+                            </t>
+                        </fieldset>
+                        <div id="div_autre_langue">
+                            <label class="col-form-label" for="langue_parle_ecrit_autre">Autre langue</label>
+                            <input
+                                type="text"
+                                class="o_website_form_input langue_parle_ecrit_autre"
+                                name="langue_parle_ecrit_autre"
+                                t-att-value="ceppp_recruteur.langue_parle_ecrit_autre"
+                            />
+                        </div>
+                    </div>
+                    <div class="form-group col-xl-6">
+                        <fieldset>
+                            <label class="col-form-label" for="occupation">Occupations</label>
+                            <t t-foreach="all_occupation" t-as="dom">
+                                <div>
+                                    <input
+                                        type="checkbox"
+                                        class="o_website_form_input occupation"
+                                        name="occupation"
+                                        t-att-id="'occupation_' + dom.name + '_' + str(dom_index)"
+                                        t-att-value="dom.id"
+                                        t-att-checked="dom.id in ceppp_recruteur.occupation.ids"
+                                    />
+                                    <label
+                                        t-att-for="'occupation_' + dom.name + '_' + str(dom_index)"
+                                        t-att-string="dom.name"
+                                    >
+                                        <t t-esc="dom.name" />
+                                    </label>
+                                </div>
+                            </t>
+                        </fieldset>
+                        <div id="div_autre_occupation">
+                            <label class="col-form-label" for="occupation_autre">Autre occupation</label>
+                            <input
+                                type="text"
+                                class="o_website_form_input occupation_autre"
+                                name="occupation_autre"
+                                t-att-value="ceppp_recruteur.occupation_autre"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
         </xpath>
     </template>
 </odoo>

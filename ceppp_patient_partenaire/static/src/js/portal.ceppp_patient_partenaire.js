@@ -10,9 +10,91 @@ odoo.define(
         let base = require("web_editor.base");
         let context = require("web_editor.context");
 
-        // Support autre rôle
-        $('#div_autre_role').hide();
+        // Autocomplete
+        const element = document.getElementById("maladie");
+        if (element) {
+            const autoCompleteJS = new autoComplete({
+                selector: "#maladie",
+                data: {
+                    cache: true,
+                    src: async (query) => {
+                      try {
+                        // Fetch Data from external Source
+                        const source = await rpc.query({
+                            route: "/ceppp_maladie_list_autocomplete",
+                            params: {
+                                query: query,
+                            },
+                        });
+                        // Data should be an array of `Objects` or `Strings`
+                        const data = await source;
+                        console.debug(data);
+                        return data;
+                      } catch (error) {
+                        console.error(error);
+                        return error;
+                      }
+                    },
+                },
+                query: (query) => {
+                    // Split query into array
+                    const querySplit = query.split(";");
+                    // Get last query value index
+                    const lastQuery = querySplit.length - 1;
+                    // Trim new query
+                    const newQuery = querySplit[lastQuery].trim();
 
+                    return newQuery;
+                },
+                events: {
+                    input: {
+                        selection(event) {
+                            const feedback = event.detail;
+                            const input = autoCompleteJS.input;
+                            // Trim selected Value
+                            const selection = feedback.selection.value.trim();
+                            // Split query into array and trim each value
+                            const query = input.value.split(";").map(item => item.trim());
+                            // Remove last query
+                            query.pop();
+                            // Add selected value
+                            query.push(selection);
+                            // Replace Input value with the new query
+                            input.value = query.join("; ") + "; ";
+                        },
+                        focus() {
+                            const inputValue = autoCompleteJS.input.value;
+                            if (inputValue.length) autoCompleteJS.start();
+                        },
+//                        open() {
+//                            // Dynamic position
+//                            const position =
+//                                autoCompleteJS.input.getBoundingClientRect().bottom + autoCompleteJS.list.getBoundingClientRect().height >
+//                                (window.innerHeight || document.documentElement.clientHeight);
+//
+//                            if (position) {
+//                                autoCompleteJS.list.style.bottom = autoCompleteJS.input.offsetHeight + 8 + "px";
+//                            } else {
+//                                autoCompleteJS.list.style.bottom = -autoCompleteJS.list.offsetHeight - 8 + "px";
+//                            }
+//                        },
+                    }
+                },
+                resultItem: {
+                    tag: "li",
+                    class: "autoComplete_result",
+//                    element: (item, data) => {
+//                        item.setAttribute("data-parent", "food-item");
+//                    },
+                    highlight: "autoComplete_highlight",
+                    selected: "autoComplete_selected"
+                },
+//                searchEngine: "loose",
+//                searchEngine: "strict",
+            });
+        }
+
+        // Support autre rôle
         function check_role_autre () {
             let n = $("input[id^='role_Autre_']:checked").length;
             if (n > 0) {
@@ -22,14 +104,48 @@ odoo.define(
             }
         }
 
+        check_role_autre();
+
         $("input[id^='role_Autre_']").on("click", function (event) {
             // event.preventDefault();
             check_role_autre();
         });
 
-        // Support autre domaine
-        $('#div_autre_domaine').hide();
+        // Support autre langue
+        function check_langue_autre () {
+            let n = $("input[id^='langue_parle_ecrit_Autre_']:checked").length;
+            if (n > 0) {
+                $('#div_autre_langue').show();
+            } else {
+                $('#div_autre_langue').hide();
+            }
+        }
 
+        check_langue_autre();
+
+        $("input[id^='langue_parle_ecrit_Autre_']").on("click", function (event) {
+            // event.preventDefault();
+            check_langue_autre();
+        });
+
+        // Support autre occupation
+        function check_occupation_autre () {
+            let n = $("input[id^='occupation_Autre_']:checked").length;
+            if (n > 0) {
+                $('#div_autre_occupation').show();
+            } else {
+                $('#div_autre_occupation').hide();
+            }
+        }
+
+        check_occupation_autre();
+
+        $("input[id^='occupation_Autre_']").on("click", function (event) {
+            // event.preventDefault();
+            check_occupation_autre();
+        });
+
+        // Support autre domaine
         function check_domaine_autre () {
             let n = $("input[id^='domaine_Autre_']:checked").length;
             if (n > 0) {
@@ -39,14 +155,14 @@ odoo.define(
             }
         }
 
+        check_domaine_autre();
+
         $("input[id^='domaine_Autre_']").on("click", function (event) {
             // event.preventDefault();
             check_domaine_autre();
         });
 
         // Support autre relation
-        $('#div_autre_relation').hide();
-
         function check_relation_autre () {
             let n = $("input[id^='relation_Autre_']:checked").length;
             if (n > 0) {
@@ -56,14 +172,14 @@ odoo.define(
             }
         }
 
+        check_relation_autre();
+
         $("input[id^='relation_Autre_']").on("click", function (event) {
             // event.preventDefault();
             check_relation_autre();
         });
 
         // Support autre formation
-        $('#div_autre_formation').hide();
-
         function check_formation_autre () {
             let n = $("input[id^='titre_formation_Autre_']:checked").length;
             if (n > 0) {
@@ -72,6 +188,8 @@ odoo.define(
                 $('#div_autre_formation').hide();
             }
         }
+
+        check_formation_autre();
 
         $("input[id^='titre_formation_Autre_']").on("click", function (event) {
             // event.preventDefault();
@@ -168,6 +286,46 @@ odoo.define(
             return false;
         });
 
+        $('.modifier_preference_confirm').on('click', function () {
+            var $btn = $(this);
+            $btn.prop('disabled', true);
+
+            var selectedModeCommPriviIds = [];
+            $('.modifier_preference_form .mode_communication_privilegie:checked').each(function () {
+                // Ajout de l'ID de la checkbox au tableau
+                selectedModeCommPriviIds.push(parseInt($(this).val()));
+            });
+
+            var selectedDispoIds = [];
+            $('.modifier_preference_form .disponibilite:checked').each(function () {
+                // Ajout de l'ID de la checkbox au tableau
+                selectedDispoIds.push(parseInt($(this).val()));
+            });
+
+            var selectedNotDispoIds = [];
+            $('.modifier_preference_form .disponibilite_not:checked').each(function () {
+                // Ajout de l'ID de la checkbox au tableau
+                selectedNotDispoIds.push(parseInt($(this).val()));
+            });
+
+            rpc.query({
+                model: 'ceppp.recruteur',
+                method: 'update_recruteur_preference_portal',
+                args: [[parseInt($('.modifier_preference_form .ceppp_recruteur_id').val())], {
+                    mode_communication_privilegie: selectedModeCommPriviIds,
+                    disponibilite: selectedDispoIds,
+                    disponibilite_not: selectedNotDispoIds,
+                }],
+            })
+                .fail(function () {
+                    $btn.prop('disabled', false);
+                })
+                .done(function () {
+                    window.location.reload();
+                });
+            return false;
+        });
+
         $('.modifier_maladie_confirm').on('click', function () {
             var $btn = $(this);
             $btn.prop('disabled', true);
@@ -182,6 +340,7 @@ odoo.define(
                 model: 'ceppp.maladie_personne_affectee',
                 method: 'update_maladie_portal',
                 args: [[parseInt($('.modifier_maladie_form .ceppp_maladie_id').val())], {
+                    maladie: $('.modifier_maladie_form .maladie').val(),
                     detail_maladie: $('.modifier_maladie_form .detail_maladie').val(),
                     relation: selectedRelationIds,
                     relation_autre: $('.modifier_maladie_form .relation_autre').val(),
@@ -204,9 +363,23 @@ odoo.define(
     $('body').on('shown.bs.modal', function (e) {
         datetimepicker_load();
         check_role_autre();
+        check_langue_autre();
+        check_occupation_autre();
         check_domaine_autre();
         check_relation_autre();
         check_formation_autre();
+    });
+
+    $('.modal_modifier_consentement').on('hide.bs.modal', function (e) {
+        // Force reload information, the code will be more simple
+        // bug occur, the data is not restored
+        location.reload(true);
+    });
+
+    $('.modal_modifier_preference').on('hide.bs.modal', function (e) {
+        // Force reload information, the code will be more simple
+        // bug occur, the data is not restored
+        location.reload(true);
     });
 
     function datetimepicker_load() {

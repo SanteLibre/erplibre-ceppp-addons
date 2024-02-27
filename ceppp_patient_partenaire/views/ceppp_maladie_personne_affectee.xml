@@ -12,6 +12,7 @@
                             widget="many2many_tags"
                             options="{'no_create': True, 'no_create_edit': True}"
                         />
+                        <field name="autre_maladie" />
                         <field name="detail_maladie" />
                         <field
                             name="relation"
@@ -44,6 +45,7 @@
             <kanban class="o_kanban_mobile">
                 <field name="name" />
                 <field name="maladie" />
+                <field name="autre_maladie" />
                 <field name="detail_maladie" />
                 <field name="relation" />
                 <field name="relation_autre" />
@@ -84,6 +86,7 @@
             <search string="Ceppp Maladie des personnes affectées">
                 <filter domain="[('name','!=',False)]" name="name" string="Name" />
                 <filter domain="[('maladie','!=',False)]" name="maladie" string="Maladies" />
+                <filter domain="[('autre_maladie','!=',False)]" name="autre_maladie" string="Autres maladies" />
                 <filter domain="[('detail_maladie','!=',False)]" name="detail_maladie" string="Détails des maladies" />
                 <filter
                     domain="[('relation','!=',False)]"
@@ -101,6 +104,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="maladie" widget="many2many_tags" />
+                <field name="autre_maladie" />
                 <field name="detail_maladie" />
                 <field name="relation" widget="many2many_tags" />
                 <field name="relation_is_autre" invisible="1" />

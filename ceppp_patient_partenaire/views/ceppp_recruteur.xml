@@ -5,6 +5,15 @@
         <field name="model">ceppp.recruteur</field>
         <field name="arch" type="xml">
             <form string="Titre">
+                <header>
+                    <widget
+                        name="attach_document"
+                        string="Ajouter document consentement"
+                        action="message_post"
+                        highlight="1"
+                        attrs="{'invisible': ['|',('consentement_file', '!=', False), ('id','=',False)]}"
+                    />
+                </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <button class="oe_stat_button" icon="fa-archive" name="toggle_active" type="object">
@@ -130,6 +139,11 @@
                                 <field name="consentement_notification" string="Notification" />
                                 <field name="consentement_recrutement" string="Recrutement" />
                                 <field name="consentement_recherche" string="Recherche" />
+                                <field
+                                    name="consentement_file"
+                                    string="Fichier consentement"
+                                    options="{'no_create': True}"
+                                />
                             </group>
                         </page>
                         <page name='competences' string="Compétences">

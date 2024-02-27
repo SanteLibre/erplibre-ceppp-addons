@@ -56,7 +56,20 @@
                         Fiche recruteur
                     </button>
                 </xpath>
+                <sheet position="before">
+                    <header>
+                        <widget
+                            name="widget_redirect_from_res_partner_to_discuss"
+                            attrs="{'invisible':[('ceppp_entity','not in',['recruteur','administrateur'])]}"
+                        />
+                    </header>
+                </sheet>
             </field>
         </record>
     </data>
+    <template id="assets_backend" name="ceppp backend assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/ceppp_patient_partenaire/static/src/js/res_partner.js" />
+        </xpath>
+    </template>
 </odoo>

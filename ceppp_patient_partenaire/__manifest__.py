@@ -12,6 +12,7 @@
         "mail",
         "portal",
         "l10n_ca",
+        "bus",
     ],
     "data": [
         "security/ceppp_patient_partenaire.xml",

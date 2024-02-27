@@ -430,6 +430,32 @@
                 <!--                    </div>-->
                 <!--                </div>-->
                 <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="maladie">Vos maladies</label>
+                    <div class="col-md-7 col-sm-8">
+                        <textarea
+                            id="maladie"
+                            name="maladie"
+                            rows="4"
+                            cols="60"
+                            maxlength="4096"
+                            tabindex="1"
+                            placeholder="Écrivez une maladie par auto-complétion"
+                        />
+                        <!--                        <input-->
+                        <!--                            id="maladie"-->
+                        <!--                            type="search"-->
+                        <!--                            dir="ltr"-->
+                        <!--                            spellcheck="false"-->
+                        <!--                            autocorrect="off"-->
+                        <!--                            autocomplete="off"-->
+                        <!--                            autocapitalize="off"-->
+                        <!--                            maxlength="2048"-->
+                        <!--                            tabindex="1"-->
+                        <!--                            placeholder="Auto-complétion..."-->
+                        <!--                        />-->
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="col-md-3 col-sm-4 control-label" for="detail_maladie">
                         Énumérez vos maladies et détaillez votre expérience
                     </label>
@@ -1046,8 +1072,24 @@
                                             </div>
                                             <div class="modal-body" id="sign-dialog">
                                                 <div class="form-group">
+                                                    <label class="control-label hdd4" for="maladie">
+                                                        Vos maladies :
+                                                    </label><br />
+                                                    <!-- prettier-ignore-start -->
+                                                    <textarea
+                                                        id="maladie"
+                                                        name="maladie"
+                                                        class="form-control o_website_form_input maladie"
+                                                        rows="4"
+                                                        cols="80"
+                                                        maxlength="4096"
+                                                        tabindex="1"
+                                                        placeholder="Écrivez une maladie par auto-complétion"
+                                                    ><t t-esc="maladie_autocomplete"/></textarea><!-- prettier-ignore-end -->
+                                                </div>
+                                                <div class="form-group">
                                                     <label class="control-label hdd4" for="detail_maladie">
-                                                        Liste de vos maladies et votre expérience :
+                                                        Votre expérience :
                                                     </label>
                                                     <!-- prettier-ignore-start --><textarea class="form-control o_website_form_input detail_maladie" name="detail_maladie" style="min-height: 120px"><t t-esc="ceppp_maladie_personne_affectee.detail_maladie"/></textarea><!-- prettier-ignore-end -->
                                                 </div>
@@ -1109,9 +1151,15 @@
                             <b>Maladies :</b>
                             <t t-foreach="ceppp_maladie_personne_affectee.maladie" t-as="mal">
                                 <!-- prettier-ignore-start -->
-                                <a t-attf-href="/my/ceppp_maladie/#{mal.id}" t-field="mal.nom" /><t t-if="not mal_last">, </t>
+                                <a t-attf-href="/my/ceppp_maladie/#{mal.id}" t-field="mal.nom" /><t t-if="not mal_last">; </t>
                                 <!-- prettier-ignore-end -->
                             </t>
+                            <t
+                                t-if="ceppp_maladie_personne_affectee.maladie and ceppp_maladie_personne_affectee.autre_maladie"
+                            >
+                                ;
+                            </t>
+                            <span t-field="ceppp_maladie_personne_affectee.autre_maladie" />
                         </div>
                         <!--                        <div class="col-12" style="display:none">-->
                         <!--                            <b>Recruteur:</b>-->
@@ -1150,13 +1198,22 @@
     <template
         id="assets_frontend_ceppp_patient_partenaire_portal"
         name="Portal assets frontend"
-        inherit_id="web.assets_frontend"
+        inherit_id="website.assets_frontend"
     >
+        <xpath expr="//link[last()]" position="after">
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="/ceppp_patient_partenaire/static/src/css/lib/autoComplete.css"
+            />
+        </xpath>
+
         <xpath expr="//script[last()]" position="after">
             <script
                 type="text/javascript"
                 src="/ceppp_patient_partenaire/static/src/js/portal.ceppp_patient_partenaire.js"
             />
+            <script type="text/javascript" src="/ceppp_patient_partenaire/static/src/js/lib/autoComplete.js" />
         </xpath>
     </template>
 
@@ -1372,7 +1429,7 @@
                     href="/new/ceppp_maladie_personne_affectee"
                 >
                     <i class="fa fa-plus-circle" />
-                    Vos maladies
+                    Vos expériences
                 </a>
             </t>
         </xpath>
