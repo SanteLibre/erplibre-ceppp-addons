@@ -74,7 +74,7 @@
             <field name="name">See only partner from is affiliation for recruteur with bot/main company</field>
             <field name="model_id" ref="base.model_res_partner" />
             <field name="domain_force">
-                ['|','|','|',('id','in', (1,2)),('ceppp_entity','=','recruteur'),('ceppp_entity','=','affiliation'),('ceppp_entity','=','administrateur')]
+                ['|','|','|','|',('id','in', (1,2)),('ceppp_entity','=','recruteur'),('ceppp_entity','=','affiliation'),('ceppp_entity','=','administrateur'),('user_ids', 'in', user.id)]
             </field>
             <field name="groups" eval="[(4, ref('group_ceppp_patient_partenaire_recruteur'))]" />
             <field name="perm_read" eval="True" />
