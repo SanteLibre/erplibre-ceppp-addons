@@ -123,7 +123,7 @@
                                     </button>
                                     <button
                                         type="button"
-                                        class="btn btn-default modifier_consentement_annuler"
+                                        class="btn btn-default close modifier_consentement_annuler"
                                         data-dismiss="modal"
                                     >
                                         Annuler
@@ -251,7 +251,13 @@
                                     <button t-attf-class="btn btn-primary modifier_preference_confirm">
                                         Confirmer
                                     </button>
-                                    <button type="button" class="close" data-dismiss="modal">Annuler</button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-default close modifier_preference_annuler"
+                                        data-dismiss="modal"
+                                    >
+                                        Annuler
+                                    </button>
                                 </div>
                             </div>
                         </form>
