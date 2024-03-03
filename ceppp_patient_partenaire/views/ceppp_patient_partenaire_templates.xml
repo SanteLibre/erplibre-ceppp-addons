@@ -98,6 +98,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="date_fin">Date de fin (facultatif)</label>
+                    <div class="col-md-7 col-sm-8">
+                        <div class="input-group date" data-target-input="nearest" t-attf-id="date_fin_datepicker">
+                            <input
+                                class="form-control datetimepicker-input o_website_form_input o_website_form_date"
+                                name="date_fin"
+                                t-att-value="default_date_fin"
+                                t-attf-data-target="#date_fin_datepicker"
+                                type="text"
+                            />
+                            <div
+                                class="input-group-append"
+                                t-attf-data-target="#date_fin_datepicker"
+                                data-toggle="datetimepicker"
+                            >
+                                <div class="input-group-text">
+                                    <i class="fa fa-calendar" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="form-group" style="display:none">
                     <label class="col-md-3 col-sm-4 control-label" for="recruteur_id">Recruteur_id</label>
                     <div class="col-md-7 col-sm-8">
@@ -554,6 +577,11 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-md-6">
+                            <div class="text-right">
+                                <button id="trash_formation">
+                                    <i class="fa fa-trash-o" />
+                                </button>
+                            </div>
                             <div>
                                 <button
                                     type="button"
@@ -626,6 +654,32 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
+                                                    <label for="date_fin_formation">Date de fin (facultatif) :</label>
+                                                    <div
+                                                        class='input-group date'
+                                                        data-target-input="nearest"
+                                                        t-attf-id="date_fin_formation_datepicker"
+                                                    >
+                                                        <input
+                                                            type="text"
+                                                            name="date_fin_formation"
+                                                            t-att-value="ceppp_formation.date_fin"
+                                                            class="form-control datetimepicker-input o_website_form_input o_website_form_date date_fin_formation"
+                                                            t-attf-data-target="#date_fin_formation_datepicker"
+                                                            placeholder="YYYY-MM-DD"
+                                                        />
+                                                        <div
+                                                            class="input-group-append"
+                                                            t-attf-data-target="#date_fin_formation_datepicker"
+                                                            data-toggle="datetimepicker"
+                                                        >
+                                                            <div class="input-group-text">
+                                                                <i class="fa fa-calendar" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
                                                     <fieldset>
                                                         <label for="titre_formation">La formation :</label>
                                                         <t t-foreach="ceppp_formation_titre" t-as="dom">
@@ -648,7 +702,7 @@
                                                         </t>
                                                     </fieldset>
                                                 </div>
-                                                <div class="form-group" id="div_autre_titre_formation">
+                                                <div class="form-group" id="div_autre_formation">
                                                     <label for="titre_formation_autre">Autre formation :</label>
                                                     <input
                                                         type="text"
@@ -699,6 +753,10 @@
                             <span t-field="ceppp_formation.date" />
                         </div>
                         <div class="col-12">
+                            <b>Date de fin :</b>
+                            <span t-field="ceppp_formation.date_fin" />
+                        </div>
+                        <div class="col-12">
                             <b>Autres formations :</b>
                             <span t-field="ceppp_formation.titre_formation_autre" />
                         </div>
@@ -732,6 +790,11 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-md-6">
+                            <div class="text-right">
+                                <button id="trash_implication">
+                                    <i class="fa fa-trash-o" />
+                                </button>
+                            </div>
                             <div>
                                 <button
                                     type="button"
@@ -1037,6 +1100,11 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-md-6">
+                            <div class="text-right">
+                                <button id="trash_maladie">
+                                    <i class="fa fa-trash-o" />
+                                </button>
+                            </div>
                             <div>
                                 <button
                                     type="button"
@@ -1243,10 +1311,11 @@
                         <td>
                             <a t-attf-href="/my/ceppp_formation/#{ceppp_formation.id}?{{ keep_query() }}">
                                 <span t-field="ceppp_formation.name" t-if="ceppp_formation.name" />
-                                <span t-else="">VIDE</span>
+                                <span t-else="">Aucune</span>
                             </a>
                         </td>
                         <td class="text-right" />
+                        <!--                        <td><i class="fa fa-trash-o" /></td>-->
                     </tr>
                 </tbody>
             </t>
@@ -1279,10 +1348,11 @@
                         <td>
                             <a t-attf-href="/my/ceppp_implication/#{ceppp_implication.id}?{{ keep_query() }}">
                                 <span t-field="ceppp_implication.name" t-if="ceppp_implication.name" />
-                                <span t-else="">VIDE</span>
+                                <span t-else="">Aucune</span>
                             </a>
                         </td>
                         <td class="text-right" />
+                        <!--                        <td><i class="fa fa-trash-o" /></td>-->
                     </tr>
                 </tbody>
             </t>
@@ -1312,9 +1382,14 @@
             <t t-if="not ceppp_maladie_personne_affectees">
                 <div class="alert alert-warning mt8" role="alert">Aucune expérience</div>
             </t>
-            <t t-if="ceppp_maladie_personne_affectees" t-call="portal.portal_table">
+            <h1 t-if="ceppp_maladie_personne_affectees_is_me">
+                Moi (
+                <t t-esc="count_is_me" />
+                )
+            </h1>
+            <t t-if="ceppp_maladie_personne_affectees_is_me" t-call="portal.portal_table">
                 <tbody>
-                    <tr t-foreach="ceppp_maladie_personne_affectees" t-as="ceppp_maladie_personne_affectee">
+                    <tr t-foreach="ceppp_maladie_personne_affectees_is_me" t-as="ceppp_maladie_personne_affectee">
                         <td>
                             <a
                                 t-attf-href="/my/ceppp_maladie_personne_affectee/#{ceppp_maladie_personne_affectee.id}?{{ keep_query() }}"
@@ -1323,10 +1398,41 @@
                                     t-field="ceppp_maladie_personne_affectee.name"
                                     t-if="ceppp_maladie_personne_affectee.name"
                                 />
-                                <span t-else="">VIDE</span>
+                                <span t-else="">Aucune</span>
                             </a>
                         </td>
                         <td class="text-right" />
+                        <!--                        <td><i class="fa fa-trash-o" /></td>-->
+                    </tr>
+                </tbody>
+            </t>
+            <h1 t-if="ceppp_maladie_personne_affectees_is_proche_aidant">
+                Proche aidant (
+                <t t-esc="count_is_proche_aidant" />
+                )
+            </h1>
+            <t t-if="ceppp_maladie_personne_affectees_is_proche_aidant" t-call="portal.portal_table">
+                <!--                <thead>-->
+                <!--                    <div class="alert alert-info mt8" role="info">Proche aidant</div>-->
+                <!--                </thead>-->
+                <tbody>
+                    <tr
+                        t-foreach="ceppp_maladie_personne_affectees_is_proche_aidant"
+                        t-as="ceppp_maladie_personne_affectee"
+                    >
+                        <td>
+                            <a
+                                t-attf-href="/my/ceppp_maladie_personne_affectee/#{ceppp_maladie_personne_affectee.id}?{{ keep_query() }}"
+                            >
+                                <span
+                                    t-field="ceppp_maladie_personne_affectee.name"
+                                    t-if="ceppp_maladie_personne_affectee.name"
+                                />
+                                <span t-else="">Aucune</span>
+                            </a>
+                        </td>
+                        <td class="text-right" />
+                        <!--                        <td><i class="fa fa-trash-o" /></td>-->
                     </tr>
                 </tbody>
             </t>
@@ -1440,6 +1546,10 @@
         name="Portal layout: Ceppp_Patient_Partenaire menu entry"
         inherit_id="portal.portal_breadcrumbs"
     >
+        <xpath expr="//i[hasclass('fa-home')]" position="replace">
+            <span>Mon profil</span>
+        </xpath>
+
         <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
             <li
                 t-if="page_name in ('ceppp_formation', 'create_ceppp_formation') or ceppp_formation"

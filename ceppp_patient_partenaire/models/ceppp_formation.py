@@ -23,12 +23,21 @@ class CepppFormation(models.Model):
     )
 
     date = fields.Date(
+        string="Date début",
         help=(
             "Quelle est la date de cette formation? Si vous ne vous en"
             " souvenez pas, veuillez indiquer la première journée du mois (ex."
             " 1 mai 2022) ou la première journée de l'année si vous ne vous"
             " rappellez plus du mois (ex. 1 janvier 2022)."
-        )
+        ),
+    )
+
+    date_fin = fields.Date(
+        string="Date fin",
+        help=(
+            "Si la date est différente de celle de début, ou que la formation"
+            " est sur plusieurs jours."
+        ),
     )
 
     titre_formation_is_autre = fields.Boolean(
@@ -69,6 +78,7 @@ class CepppFormation(models.Model):
         maladie_values = {
             "organisation": values["organisation"],
             "date": values["date"] or False,
+            "date_fin": values["date_fin"] or False,
             "titre_formation": titre_formation,
             "titre_formation_autre": values["titre_formation_autre"],
         }

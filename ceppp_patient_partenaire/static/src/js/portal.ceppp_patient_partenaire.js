@@ -8,6 +8,8 @@ odoo.define(
         let rpc = require('web.rpc');
         let ajax = require("web.ajax");
         let base = require("web_editor.base");
+        let core = require('web.core');
+        let _t = core._t;
         let context = require("web_editor.context");
 
         // Autocomplete
@@ -93,6 +95,76 @@ odoo.define(
 //                searchEngine: "strict",
             });
         }
+
+        // delete button
+        $("#trash_maladie").on("click", function (event) {
+            event.preventDefault();
+            let text = _t("Êtes-vous certains de vouloir effacer cette expérience, votre action sera irrévocable.");
+            if (confirm(text) == true) {
+                rpc.query({
+                    model: 'ceppp.maladie_personne_affectee',
+                    method: 'unlink',
+                    args: [[parseInt($('.modifier_maladie_form .ceppp_maladie_id').val())]],
+                })
+                .fail(function () {
+                    alert(_t("Une erreur est survenue au moment d'effacer cette donnée en lien avec cette expérience. Veuillez informer votre recruteur, merci."))
+                })
+                .done(function () {
+                    window.location.href = "/my/ceppp_maladie_personne_affectees";
+                });
+            }
+        });
+        $("#trash_formation").on("click", function (event) {
+            event.preventDefault();
+            let text = _t("Êtes-vous certains de vouloir effacer cette formation, votre action sera irrévocable.");
+            if (confirm(text) == true) {
+                rpc.query({
+                    model: 'ceppp.formation',
+                    method: 'unlink',
+                    args: [[parseInt($('.modifier_formation_form .ceppp_formation_id').val())]],
+                })
+                .fail(function () {
+                    alert(_t("Une erreur est survenue au moment d'effacer cette donnée en lien avec cette formation. Veuillez informer votre recruteur, merci."))
+                })
+                .done(function () {
+                    window.location.href = "/my/ceppp_formations";
+                });
+            }
+        });
+        $("#trash_implication").on("click", function (event) {
+            event.preventDefault();
+            let text = _t("Êtes-vous certains de vouloir effacer cette implication, votre action sera irrévocable.");
+            if (confirm(text) == true) {
+                rpc.query({
+                    model: 'ceppp.implication',
+                    method: 'unlink',
+                    args: [[parseInt($('.modifier_implication_form .ceppp_implication_id').val())]],
+                })
+                .fail(function () {
+                    alert(_t("Une erreur est survenue au moment d'effacer cette donnée en lien avec cette implication. Veuillez informer votre recruteur, merci."))
+                })
+                .done(function () {
+                    window.location.href = "/my/ceppp_implications";
+                });
+            }
+        });
+        $("#close_portal_account").on("click", function (event) {
+            event.preventDefault();
+            let text = _t("Êtes-vous certains de vouloir fermer votre compte?\nVotre recruteur sera avisé et votre compte sera archivé.");
+            if (confirm(text) == true) {
+                rpc.query({
+                    model: 'ceppp.recruteur',
+                    method: 'recruteur_ask_archive_account',
+                    args: [[parseInt($('.modifier_consentement_form .ceppp_recruteur_id').val())]],
+                })
+                .fail(function () {
+                    alert(_t("Une erreur est survenue au moment d'archiver votre compte. Veuillez informer votre recruteur, merci."))
+                })
+                .done(function () {
+                    window.location.href = "/web/session/logout?redirect=/";
+                });
+            }
+        });
 
         // Support autre rôle
         function check_role_autre () {
@@ -251,6 +323,7 @@ odoo.define(
                 args: [[parseInt($('.modifier_formation_form .ceppp_formation_id').val())], {
                     organisation: $('.modifier_formation_form .organisation').val(),
                     date: $('.modifier_formation_form .date_formation').val(),
+                    date_fin: $('.modifier_formation_form .date_fin_formation').val(),
                     titre_formation: selectedTitreFormationIds,
                     titre_formation_autre: $('.modifier_formation_form .titre_formation_autre').val(),
                 }],
@@ -377,6 +450,24 @@ odoo.define(
     });
 
     $('.modal_modifier_preference').on('hide.bs.modal', function (e) {
+        // Force reload information, the code will be more simple
+        // bug occur, the data is not restored
+        location.reload(true);
+    });
+
+    $('.modal_modifier_formation').on('hide.bs.modal', function (e) {
+        // Force reload information, the code will be more simple
+        // bug occur, the data is not restored
+        location.reload(true);
+    });
+
+    $('.modal_modifier_implication').on('hide.bs.modal', function (e) {
+        // Force reload information, the code will be more simple
+        // bug occur, the data is not restored
+        location.reload(true);
+    });
+
+    $('.modal_modifier_maladie').on('hide.bs.modal', function (e) {
         // Force reload information, the code will be more simple
         // bug occur, the data is not restored
         location.reload(true);

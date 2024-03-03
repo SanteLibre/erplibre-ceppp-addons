@@ -1,7 +1,10 @@
+import logging
 from datetime import date
 from uuid import uuid4
 
 from odoo import _, api, fields, models
+
+_logger = logging.getLogger(__name__)
 
 
 class CepppRecruteur(models.Model):
@@ -588,6 +591,37 @@ class CepppRecruteur(models.Model):
             "consentement_recherche": values["consentement_recherche"],
         }
         self.sudo().write(consentement_values)
+
+    @api.multi
+    def recruteur_ask_archive_account(self):
+        this_id = self.id
+        comment_value = {
+            "subject": f"Fermeture de compte - {self.name}",
+            "body": (
+                f"<p>La demande de"
+                f" fermeture de compte a été fait par le client via le"
+                f" portail.</p>"
+            ),
+            "parent_id": False,
+            "message_type": "comment",
+            "author_id": self.env.ref("base.partner_root").id,
+            "model": "ceppp.recruteur",
+            "res_id": self.id,
+        }
+        self.env["mail.message"].sudo().create(comment_value)
+        self.sudo().write({"active": False})
+        partner_id = self.sudo().patient_partner_id
+        if partner_id:
+            user_id = partner_id.user_ids
+            if user_id:
+                user_id.active = False
+            try:
+                partner_id.write({"active": False})
+            except Exception as e:
+                _logger.warning(
+                    f"Cannot archive res.partner ID {partner_id.id}"
+                )
+        _logger.info(f"Finish archive patient/partenaire ID {this_id}")
 
     @api.multi
     def update_recruteur_preference_portal(self, values):

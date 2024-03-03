@@ -5,7 +5,7 @@ class CepppMaladiePersonneAffectee(models.Model):
     _name = "ceppp.maladie_personne_affectee"
     _description = "ceppp_maladie_personne_affectee"
 
-    name = fields.Char(compute="_compute_name")
+    name = fields.Char(compute="_compute_name", store=True)
 
     maladie = fields.Many2many(
         comodel_name="ceppp.maladie",
@@ -32,7 +32,15 @@ class CepppMaladiePersonneAffectee(models.Model):
 
     relation_autre = fields.Char(string="Autre relation")
 
-    relation_is_autre = fields.Boolean(compute="_compute_relation_is_autre")
+    relation_is_autre = fields.Boolean(
+        compute="_compute_relation_is_autre", store=True
+    )
+
+    is_me = fields.Boolean(compute="_compute_relation_is_me", store=True)
+
+    is_proche_aidant = fields.Boolean(
+        compute="_compute_relation_is_me", store=True
+    )
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -65,6 +73,23 @@ class CepppMaladiePersonneAffectee(models.Model):
                 )
             ]
         return super(CepppMaladiePersonneAffectee, self).write(vals)
+
+    @api.depends("relation", "relation_is_autre")
+    def _compute_relation_is_me(self):
+        relation_moi_id = self.env.ref(
+            "ceppp_patient_partenaire.ceppp_relation_proche_0"
+        )
+        for record in self:
+            # is_me if missing relation or relation contains "me"
+            record.is_me = (
+                record.relation is False and record.relation_is_autre is False
+            ) or (
+                record.relation and relation_moi_id.id in record.relation.ids
+            )
+            # is_proche_aidant if any relation except "me" or other_relation
+            record.is_proche_aidant = record.relation_is_autre or any(
+                set(record.relation.ids) - {relation_moi_id.id}
+            )
 
     @api.depends("relation")
     def _compute_relation_is_autre(self):
