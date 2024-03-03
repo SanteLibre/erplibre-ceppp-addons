@@ -1474,6 +1474,10 @@
         name="Portal layout: Ceppp_Patient_Partenaire menu entry"
         inherit_id="portal.portal_breadcrumbs"
     >
+        <xpath expr="//i[hasclass('fa-home')]" position="replace">
+            <span>Mon profil</span>
+        </xpath>
+
         <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
             <li
                 t-if="page_name in ('ceppp_formation', 'create_ceppp_formation') or ceppp_formation"
