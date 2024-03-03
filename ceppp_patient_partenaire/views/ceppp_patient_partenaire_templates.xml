@@ -697,7 +697,7 @@
                                                         </t>
                                                     </fieldset>
                                                 </div>
-                                                <div class="form-group" id="div_autre_titre_formation">
+                                                <div class="form-group" id="div_autre_formation">
                                                     <label for="titre_formation_autre">Autre formation :</label>
                                                     <input
                                                         type="text"
