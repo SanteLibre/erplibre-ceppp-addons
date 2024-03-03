@@ -18,6 +18,11 @@ class CepppPatientPartenaireController(http.Controller):
             .default_get(["date"])
             .get("date")
         )
+        default_date_fin = (
+            http.request.env["ceppp.formation"]
+            .default_get(["date_fin"])
+            .get("date_fin")
+        )
         default_organisation = (
             http.request.env["ceppp.formation"]
             .default_get(["organisation"])
@@ -58,6 +63,7 @@ class CepppPatientPartenaireController(http.Controller):
                 "titre_formation": titre_formation,
                 "page_name": "create_ceppp_formation",
                 "default_date": default_date,
+                "default_date_fin": default_date_fin,
                 "default_organisation": default_organisation,
                 "default_recruteur_id": default_recruteur_id,
                 "default_titre_formation": default_titre_formation,
@@ -81,6 +87,9 @@ class CepppPatientPartenaireController(http.Controller):
 
         if kw.get("date"):
             vals["date"] = kw.get("date")
+
+        if kw.get("date_fin"):
+            vals["date_fin"] = kw.get("date_fin")
 
         if kw.get("organisation"):
             vals["organisation"] = kw.get("organisation")

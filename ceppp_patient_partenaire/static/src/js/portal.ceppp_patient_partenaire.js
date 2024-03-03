@@ -251,6 +251,7 @@ odoo.define(
                 args: [[parseInt($('.modifier_formation_form .ceppp_formation_id').val())], {
                     organisation: $('.modifier_formation_form .organisation').val(),
                     date: $('.modifier_formation_form .date_formation').val(),
+                    date_fin: $('.modifier_formation_form .date_fin_formation').val(),
                     titre_formation: selectedTitreFormationIds,
                     titre_formation_autre: $('.modifier_formation_form .titre_formation_autre').val(),
                 }],

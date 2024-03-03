@@ -98,6 +98,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-4 control-label" for="date_fin">Date de fin (facultatif)</label>
+                    <div class="col-md-7 col-sm-8">
+                        <div class="input-group date" data-target-input="nearest" t-attf-id="date_fin_datepicker">
+                            <input
+                                class="form-control datetimepicker-input o_website_form_input o_website_form_date"
+                                name="date_fin"
+                                t-att-value="default_date_fin"
+                                t-attf-data-target="#date_fin_datepicker"
+                                type="text"
+                            />
+                            <div
+                                class="input-group-append"
+                                t-attf-data-target="#date_fin_datepicker"
+                                data-toggle="datetimepicker"
+                            >
+                                <div class="input-group-text">
+                                    <i class="fa fa-calendar" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="form-group" style="display:none">
                     <label class="col-md-3 col-sm-4 control-label" for="recruteur_id">Recruteur_id</label>
                     <div class="col-md-7 col-sm-8">
@@ -626,6 +649,32 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
+                                                    <label for="date_fin_formation">Date de fin (facultatif) :</label>
+                                                    <div
+                                                        class='input-group date'
+                                                        data-target-input="nearest"
+                                                        t-attf-id="date_fin_formation_datepicker"
+                                                    >
+                                                        <input
+                                                            type="text"
+                                                            name="date_fin_formation"
+                                                            t-att-value="ceppp_formation.date_fin"
+                                                            class="form-control datetimepicker-input o_website_form_input o_website_form_date date_fin_formation"
+                                                            t-attf-data-target="#date_fin_formation_datepicker"
+                                                            placeholder="YYYY-MM-DD"
+                                                        />
+                                                        <div
+                                                            class="input-group-append"
+                                                            t-attf-data-target="#date_fin_formation_datepicker"
+                                                            data-toggle="datetimepicker"
+                                                        >
+                                                            <div class="input-group-text">
+                                                                <i class="fa fa-calendar" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
                                                     <fieldset>
                                                         <label for="titre_formation">La formation :</label>
                                                         <t t-foreach="ceppp_formation_titre" t-as="dom">
@@ -697,6 +746,10 @@
                         <div class="col-12">
                             <b>Date :</b>
                             <span t-field="ceppp_formation.date" />
+                        </div>
+                        <div class="col-12">
+                            <b>Date de fin :</b>
+                            <span t-field="ceppp_formation.date_fin" />
                         </div>
                         <div class="col-12">
                             <b>Autres formations :</b>
