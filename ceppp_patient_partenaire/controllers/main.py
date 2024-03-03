@@ -113,9 +113,10 @@ class CepppPatientPartenaireController(http.Controller):
         new_ceppp_formation = (
             request.env["ceppp.formation"].sudo().create(vals)
         )
-        return werkzeug.utils.redirect(
-            f"/my/ceppp_formation/{new_ceppp_formation.id}"
-        )
+        # return werkzeug.utils.redirect(
+        #     f"/my/ceppp_formation/{new_ceppp_formation.id}"
+        # )
+        return werkzeug.utils.redirect(f"/my/ceppp_formations")
 
     @http.route(
         "/new/ceppp_implication", type="http", auth="user", website=True
@@ -289,9 +290,10 @@ class CepppPatientPartenaireController(http.Controller):
         new_ceppp_implication = (
             request.env["ceppp.implication"].sudo().create(vals)
         )
-        return werkzeug.utils.redirect(
-            f"/my/ceppp_implication/{new_ceppp_implication.id}"
-        )
+        # return werkzeug.utils.redirect(
+        #     f"/my/ceppp_implication/{new_ceppp_implication.id}"
+        # )
+        return werkzeug.utils.redirect(f"/my/ceppp_implications")
 
     @http.route("/new/ceppp_maladie", type="http", auth="user", website=True)
     def create_new_ceppp_maladie(self, **kw):
@@ -336,9 +338,10 @@ class CepppPatientPartenaireController(http.Controller):
             vals["nom"] = kw.get("nom")
 
         new_ceppp_maladie = request.env["ceppp.maladie"].sudo().create(vals)
-        return werkzeug.utils.redirect(
-            f"/my/ceppp_maladie/{new_ceppp_maladie.id}"
-        )
+        # return werkzeug.utils.redirect(
+        #     f"/my/ceppp_maladie/{new_ceppp_maladie.id}"
+        # )
+        return werkzeug.utils.redirect(f"/my/ceppp_maladies")
 
     @http.route(
         "/new/ceppp_maladie_personne_affectee",
@@ -461,9 +464,10 @@ class CepppPatientPartenaireController(http.Controller):
         new_ceppp_maladie_personne_affectee = (
             request.env["ceppp.maladie_personne_affectee"].sudo().create(vals)
         )
-        return werkzeug.utils.redirect(
-            f"/my/ceppp_maladie_personne_affectee/{new_ceppp_maladie_personne_affectee.id}"
-        )
+        # return werkzeug.utils.redirect(
+        #     f"/my/ceppp_maladie_personne_affectee/{new_ceppp_maladie_personne_affectee.id}"
+        # )
+        return werkzeug.utils.redirect(f"/my/ceppp_maladie_personne_affectees")
 
     @http.route(
         "/ceppp_maladie_list_autocomplete",
