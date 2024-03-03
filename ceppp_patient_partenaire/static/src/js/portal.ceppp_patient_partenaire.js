@@ -148,6 +148,23 @@ odoo.define(
                 });
             }
         });
+        $("#close_portal_account").on("click", function (event) {
+            event.preventDefault();
+            let text = _t("Êtes-vous certains de vouloir fermer votre compte?\nVotre recruteur sera avisé et votre compte sera archivé.");
+            if (confirm(text) == true) {
+                rpc.query({
+                    model: 'ceppp.recruteur',
+                    method: 'recruteur_ask_archive_account',
+                    args: [[parseInt($('.modifier_consentement_form .ceppp_recruteur_id').val())]],
+                })
+                .fail(function () {
+                    alert(_t("Une erreur est survenue au moment d'archiver votre compte. Veuillez informer votre recruteur, merci."))
+                })
+                .done(function () {
+                    window.location.href = "/web/session/logout?redirect=/";
+                });
+            }
+        });
 
         // Support autre rôle
         function check_role_autre () {
