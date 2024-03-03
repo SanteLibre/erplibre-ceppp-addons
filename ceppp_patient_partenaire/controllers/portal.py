@@ -683,11 +683,32 @@ class CepppPatientPartenaireController(CustomerPortal):
             "my_ceppp_maladie_personne_affectees_history"
         ] = ceppp_maladie_personne_affectees.ids[:100]
 
+        domain_is_me = domain + [
+            ("is_me", "=", True),
+            ("id", "in", ceppp_maladie_personne_affectees.ids),
+        ]
+        ceppp_maladie_personne_affectees_is_me = (
+            ceppp_maladie_personne_affectees.search(domain_is_me, order=order)
+        )
+        domain_is_me = domain + [
+            ("is_proche_aidant", "=", True),
+            ("id", "in", ceppp_maladie_personne_affectees.ids),
+        ]
+        ceppp_maladie_personne_affectees_is_proche_aidant = (
+            ceppp_maladie_personne_affectees.search(domain_is_me, order=order)
+        )
+
         values.update(
             {
                 "date": date_begin,
                 "date_end": date_end,
                 "ceppp_maladie_personne_affectees": ceppp_maladie_personne_affectees,
+                "ceppp_maladie_personne_affectees_is_me": ceppp_maladie_personne_affectees_is_me,
+                "ceppp_maladie_personne_affectees_is_proche_aidant": ceppp_maladie_personne_affectees_is_proche_aidant,
+                "count_is_me": len(ceppp_maladie_personne_affectees_is_me),
+                "count_is_proche_aidant": len(
+                    ceppp_maladie_personne_affectees_is_proche_aidant
+                ),
                 "page_name": "ceppp_maladie_personne_affectee",
                 "archive_groups": archive_groups,
                 "default_url": "/my/ceppp_maladie_personne_affectees",

@@ -1243,7 +1243,7 @@
                         <td>
                             <a t-attf-href="/my/ceppp_formation/#{ceppp_formation.id}?{{ keep_query() }}">
                                 <span t-field="ceppp_formation.name" t-if="ceppp_formation.name" />
-                                <span t-else="">VIDE</span>
+                                <span t-else="">Aucune</span>
                             </a>
                         </td>
                         <td class="text-right" />
@@ -1279,7 +1279,7 @@
                         <td>
                             <a t-attf-href="/my/ceppp_implication/#{ceppp_implication.id}?{{ keep_query() }}">
                                 <span t-field="ceppp_implication.name" t-if="ceppp_implication.name" />
-                                <span t-else="">VIDE</span>
+                                <span t-else="">Aucune</span>
                             </a>
                         </td>
                         <td class="text-right" />
@@ -1312,9 +1312,14 @@
             <t t-if="not ceppp_maladie_personne_affectees">
                 <div class="alert alert-warning mt8" role="alert">Aucune expérience</div>
             </t>
-            <t t-if="ceppp_maladie_personne_affectees" t-call="portal.portal_table">
+            <h1 t-if="ceppp_maladie_personne_affectees_is_me">
+                Moi (
+                <t t-esc="count_is_me" />
+                )
+            </h1>
+            <t t-if="ceppp_maladie_personne_affectees_is_me" t-call="portal.portal_table">
                 <tbody>
-                    <tr t-foreach="ceppp_maladie_personne_affectees" t-as="ceppp_maladie_personne_affectee">
+                    <tr t-foreach="ceppp_maladie_personne_affectees_is_me" t-as="ceppp_maladie_personne_affectee">
                         <td>
                             <a
                                 t-attf-href="/my/ceppp_maladie_personne_affectee/#{ceppp_maladie_personne_affectee.id}?{{ keep_query() }}"
@@ -1323,7 +1328,36 @@
                                     t-field="ceppp_maladie_personne_affectee.name"
                                     t-if="ceppp_maladie_personne_affectee.name"
                                 />
-                                <span t-else="">VIDE</span>
+                                <span t-else="">Aucune</span>
+                            </a>
+                        </td>
+                        <td class="text-right" />
+                    </tr>
+                </tbody>
+            </t>
+            <h1 t-if="ceppp_maladie_personne_affectees_is_proche_aidant">
+                Proche aidant (
+                <t t-esc="count_is_proche_aidant" />
+                )
+            </h1>
+            <t t-if="ceppp_maladie_personne_affectees_is_proche_aidant" t-call="portal.portal_table">
+                <!--                <thead>-->
+                <!--                    <div class="alert alert-info mt8" role="info">Proche aidant</div>-->
+                <!--                </thead>-->
+                <tbody>
+                    <tr
+                        t-foreach="ceppp_maladie_personne_affectees_is_proche_aidant"
+                        t-as="ceppp_maladie_personne_affectee"
+                    >
+                        <td>
+                            <a
+                                t-attf-href="/my/ceppp_maladie_personne_affectee/#{ceppp_maladie_personne_affectee.id}?{{ keep_query() }}"
+                            >
+                                <span
+                                    t-field="ceppp_maladie_personne_affectee.name"
+                                    t-if="ceppp_maladie_personne_affectee.name"
+                                />
+                                <span t-else="">Aucune</span>
                             </a>
                         </td>
                         <td class="text-right" />
