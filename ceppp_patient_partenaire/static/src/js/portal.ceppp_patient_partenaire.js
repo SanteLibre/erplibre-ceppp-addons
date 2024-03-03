@@ -8,6 +8,8 @@ odoo.define(
         let rpc = require('web.rpc');
         let ajax = require("web.ajax");
         let base = require("web_editor.base");
+        let core = require('web.core');
+        let _t = core._t;
         let context = require("web_editor.context");
 
         // Autocomplete
@@ -93,6 +95,59 @@ odoo.define(
 //                searchEngine: "strict",
             });
         }
+
+        // delete button
+        $("#trash_maladie").on("click", function (event) {
+            event.preventDefault();
+            let text = _t("Êtes-vous certains de vouloir effacer cette expérience, votre action sera irrévocable.");
+            if (confirm(text) == true) {
+                rpc.query({
+                    model: 'ceppp.maladie_personne_affectee',
+                    method: 'unlink',
+                    args: [[parseInt($('.modifier_maladie_form .ceppp_maladie_id').val())]],
+                })
+                .fail(function () {
+                    alert(_t("Une erreur est survenue au moment d'effacer cette donnée en lien avec cette expérience. Veuillez informer votre recruteur, merci."))
+                })
+                .done(function () {
+                    window.location.href = "/my/ceppp_maladie_personne_affectees";
+                });
+            }
+        });
+        $("#trash_formation").on("click", function (event) {
+            event.preventDefault();
+            let text = _t("Êtes-vous certains de vouloir effacer cette formation, votre action sera irrévocable.");
+            if (confirm(text) == true) {
+                rpc.query({
+                    model: 'ceppp.formation',
+                    method: 'unlink',
+                    args: [[parseInt($('.modifier_formation_form .ceppp_formation_id').val())]],
+                })
+                .fail(function () {
+                    alert(_t("Une erreur est survenue au moment d'effacer cette donnée en lien avec cette formation. Veuillez informer votre recruteur, merci."))
+                })
+                .done(function () {
+                    window.location.href = "/my/ceppp_formations";
+                });
+            }
+        });
+        $("#trash_implication").on("click", function (event) {
+            event.preventDefault();
+            let text = _t("Êtes-vous certains de vouloir effacer cette implication, votre action sera irrévocable.");
+            if (confirm(text) == true) {
+                rpc.query({
+                    model: 'ceppp.implication',
+                    method: 'unlink',
+                    args: [[parseInt($('.modifier_implication_form .ceppp_implication_id').val())]],
+                })
+                .fail(function () {
+                    alert(_t("Une erreur est survenue au moment d'effacer cette donnée en lien avec cette implication. Veuillez informer votre recruteur, merci."))
+                })
+                .done(function () {
+                    window.location.href = "/my/ceppp_implications";
+                });
+            }
+        });
 
         // Support autre rôle
         function check_role_autre () {

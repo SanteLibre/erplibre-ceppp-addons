@@ -577,6 +577,11 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-md-6">
+                            <div class="text-right">
+                                <button id="trash_formation">
+                                    <i class="fa fa-trash-o" />
+                                </button>
+                            </div>
                             <div>
                                 <button
                                     type="button"
@@ -785,6 +790,11 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-md-6">
+                            <div class="text-right">
+                                <button id="trash_implication">
+                                    <i class="fa fa-trash-o" />
+                                </button>
+                            </div>
                             <div>
                                 <button
                                     type="button"
@@ -1090,6 +1100,11 @@
                 <t t-set="card_body">
                     <div class="row">
                         <div class="col-md-6">
+                            <div class="text-right">
+                                <button id="trash_maladie">
+                                    <i class="fa fa-trash-o" />
+                                </button>
+                            </div>
                             <div>
                                 <button
                                     type="button"
@@ -1300,6 +1315,7 @@
                             </a>
                         </td>
                         <td class="text-right" />
+                        <!--                        <td><i class="fa fa-trash-o" /></td>-->
                     </tr>
                 </tbody>
             </t>
@@ -1336,6 +1352,7 @@
                             </a>
                         </td>
                         <td class="text-right" />
+                        <!--                        <td><i class="fa fa-trash-o" /></td>-->
                     </tr>
                 </tbody>
             </t>
@@ -1385,6 +1402,7 @@
                             </a>
                         </td>
                         <td class="text-right" />
+                        <!--                        <td><i class="fa fa-trash-o" /></td>-->
                     </tr>
                 </tbody>
             </t>
@@ -1414,6 +1432,7 @@
                             </a>
                         </td>
                         <td class="text-right" />
+                        <!--                        <td><i class="fa fa-trash-o" /></td>-->
                     </tr>
                 </tbody>
             </t>
