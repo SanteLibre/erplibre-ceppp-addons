@@ -186,6 +186,15 @@
                                 <field name="implication" />
                             </group>
                         </page>
+                        <page name='administration' string="Administration" groups="base.group_no_one">
+                            <group>
+                                <group string="Champs de recherche">
+                                    <field name="search_formation" />
+                                    <field name="search_implication" />
+                                    <field name="search_maladie" />
+                                </group>
+                            </group>
+                        </page>
                     </notebook>
                 </sheet>
                 <div class="oe_chatter">
@@ -269,13 +278,14 @@
         <field name="arch" type="xml">
             <search string="Ceppp recruteur">
                 <field name="name" />
-                <field name="search_maladie" />
-                <field name="search_implication" />
-                <field name="sexe" />
-                <field name="genre" />
-                <field name="date_naissance" />
                 <field name="commentaires" />
+                <field name="date_naissance" />
+                <field name="genre" />
+                <field name="search_formation" />
+                <field name="search_implication" />
+                <field name="search_maladie" />
                 <field name="age" />
+                <field name="sexe" />
                 <!--                <filter-->
                 <!--                    domain="[('maladie_personne_affectee','!=',False)]"-->
                 <!--                    name="avec_proche_aidant"-->

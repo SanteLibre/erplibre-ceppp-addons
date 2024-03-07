@@ -101,8 +101,9 @@
         <field name="model">ceppp.patient</field>
         <field name="arch" type="xml">
             <search string="Ceppp patient">
+                <field name="search_formation" />
+                <field name="search_implication" />
                 <field name="search_maladie" />
-                <filter domain="[('uuid','!=',False)]" name="uuid" string="Code" />
             </search>
         </field>
     </record>
