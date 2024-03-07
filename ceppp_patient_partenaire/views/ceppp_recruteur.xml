@@ -33,6 +33,7 @@
                             icon="fa-vcard"
                             name="open_carnet_adresse_patient"
                             type="object"
+                            groups="base.group_no_one"
                             attrs="{'invisible':[('patient_partner_id','=',False)]}"
                         >
                             Contact
