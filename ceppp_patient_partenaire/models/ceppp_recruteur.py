@@ -346,17 +346,24 @@ class CepppRecruteur(models.Model):
     )
 
     search_maladie = fields.Char(
-        string="Maladies",
+        string="Clé recherche maladies",
         compute="_compute_search_maladie",
         store=True,
         help="Champs qui sert à la recherche parmis toutes les maladies.",
     )
 
     search_implication = fields.Char(
-        string="Implication",
+        string="Clé recherche implication",
         compute="compute_search_implication",
         store=True,
         help="Champs qui sert à la recherche parmis toutes les implications.",
+    )
+
+    search_formation = fields.Char(
+        string="Clé recherche formation",
+        compute="compute_search_formation",
+        store=True,
+        help="Champs qui sert à la recherche parmis toutes les formations.",
     )
 
     formation = fields.One2many(
@@ -517,7 +524,7 @@ class CepppRecruteur(models.Model):
             str_maladies = " ".join(
                 [
                     a.detail_maladie
-                    for a in self.maladie_personne_affectee
+                    for a in record.maladie_personne_affectee
                     if a and a.detail_maladie
                 ]
             )
@@ -526,7 +533,7 @@ class CepppRecruteur(models.Model):
             str_maladies = " ".join(
                 [
                     b.nom
-                    for a in self.maladie_personne_affectee
+                    for a in record.maladie_personne_affectee
                     for b in a.maladie
                     if a and a.maladie
                 ]
@@ -535,6 +542,8 @@ class CepppRecruteur(models.Model):
                 value += " " + str_maladies
             if value:
                 record.search_maladie = value.strip()
+            else:
+                record.search_maladie = ""
 
     @api.depends("implication")
     def compute_search_implication(self):
@@ -542,12 +551,25 @@ class CepppRecruteur(models.Model):
             value = " ".join(
                 [
                     f"{a.name} {a.description}".strip()
-                    for a in self.implication
+                    for a in record.implication
                     if a and (a.name or a.description)
                 ]
             )
             if value:
                 record.search_implication = value.strip()
+            else:
+                record.search_implication = ""
+
+    @api.depends("formation")
+    def compute_search_formation(self):
+        for record in self:
+            value = " ".join(
+                [a.name.strip() for a in record.formation if a and a.name]
+            )
+            if value:
+                record.search_formation = value.strip()
+            else:
+                record.search_formation = ""
 
     @api.depends("patient_partner_id")
     def _compute_user_is_admin(self):

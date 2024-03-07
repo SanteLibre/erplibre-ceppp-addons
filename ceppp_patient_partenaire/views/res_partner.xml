@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//filter[@name='type_company']" position="after">
                     <separator />
-                    <filter string="Patients" name="patient" domain="[('ceppp_entity','=','patient')]" />
+                    <!--                    <filter string="Patients" name="patient" domain="[('ceppp_entity','=','patient')]" />-->
                     <filter string="Recruteurs" name="recruteur" domain="[('ceppp_entity','=','recruteur')]" />
                     <filter
                         string="Administrateur"
@@ -64,6 +64,18 @@
                         />
                     </header>
                 </sheet>
+            </field>
+        </record>
+
+        <record id="contacts.action_contacts" model="ir.actions.act_window">
+            <field name="name">Contacts</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_type">form</field>
+            <field name="domain">[('ceppp_entity', '!=', 'patient')]</field>
+            <field name="context">
+                {'search_default_recruteur':1,'search_default_administrateur':1,'search_default_affiliation':1}
             </field>
         </record>
     </data>

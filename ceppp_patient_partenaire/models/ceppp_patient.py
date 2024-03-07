@@ -37,6 +37,10 @@ class CepppPatient(models.Model):
 
     search_maladie = fields.Char(related="recruteur_id.search_maladie")
 
+    search_implication = fields.Char(related="recruteur_id.search_implication")
+
+    search_formation = fields.Char(related="recruteur_id.search_formation")
+
     formation = fields.One2many(
         related="recruteur_id.formation",
     )

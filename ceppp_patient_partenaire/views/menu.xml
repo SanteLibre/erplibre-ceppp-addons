@@ -31,7 +31,7 @@
     />
 
     <menuitem
-        id="menu_patient_les_patient_affiliation"
+        id="menu_patient_mon_centre_les_patient_affiliation"
         name="Les patients de mon centre de recrutement"
         groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_recruteur"
         sequence="2"
@@ -40,7 +40,7 @@
     />
 
     <menuitem
-        id="menu_patient_les_patient_affiliation"
+        id="menu_patient_tous_centres_les_patient_affiliation"
         name="Les patients de tous les centres de recrutement"
         groups="ceppp_patient_partenaire.group_ceppp_patient_partenaire_manager"
         sequence="2"
