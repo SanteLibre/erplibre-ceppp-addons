@@ -73,8 +73,13 @@ class CepppPatientPartenaireController(CustomerPortal):
             values["ceppp_maladie_count"] = 0
             values["ceppp_maladie_personne_affectee_count"] = 0
             values["ceppp_recruteur"] = None
-        values["is_patient"] = (
-            request.env.user.partner_id.ceppp_entity == "patient"
+        values["is_patient"] = bool(
+            request.env.user.partner_id.ceppp_entity
+            in [
+                "patient",
+                "recruteur",
+            ]
+            and request.env.user.partner_id.patient_partner_ids
         )
         values["all_disponibilite"] = request.env[
             "ceppp.disponibilite"
