@@ -73,9 +73,8 @@
             <field name="res_model">res.partner</field>
             <field name="view_mode">tree,kanban,form</field>
             <field name="view_type">form</field>
-            <field name="domain">[('ceppp_entity', '!=', 'patient')]</field>
-            <field name="context">
-                {'search_default_recruteur':1,'search_default_administrateur':1,'search_default_affiliation':1}
+            <field name="domain">
+                ['|','|','|',('ceppp_entity','=',False),('ceppp_entity','=','administrateur'),('ceppp_entity','=','recruteur'),('ceppp_entity','=','affiliation')]
             </field>
         </record>
     </data>
